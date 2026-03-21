@@ -13,8 +13,8 @@ export function PlateCard({ plate, discovery, onToggle }: PlateCardProps) {
     ? formatCoordinates(discovery.latitude, discovery.longitude)
     : null;
   const imageBasePath = import.meta.env.BASE_URL;
-  const pngSource = new URL(`plates/${plate.imageKey}.png`, imageBasePath).toString();
-  const jpgSource = new URL(`plates/${plate.imageKey}.jpg`, imageBasePath).toString();
+  const pngSource = `${imageBasePath}plates/${plate.imageKey}.png`;
+  const jpgSource = `${imageBasePath}plates/${plate.imageKey}.jpg`;
 
   return (
     <button
