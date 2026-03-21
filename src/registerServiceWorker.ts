@@ -3,7 +3,48 @@ export function registerServiceWorker(): void {
     window.addEventListener("load", () => {
       const baseUrl = import.meta.env.BASE_URL;
       const serviceWorkerUrl = `${baseUrl}sw.js`;
-      void navigator.serviceWorker.register(serviceWorkerUrl, { scope: baseUrl });
+      let hasPendingRefresh = false;
+
+      void navigator.serviceWorker
+        .register(serviceWorkerUrl, { scope: baseUrl })
+        .then((registration) => {
+          const notifyUpdateReady = () => {
+            window.dispatchEvent(
+              new CustomEvent("fl-plates:update-ready", {
+                detail: { registration }
+              })
+            );
+          };
+
+          if (registration.waiting) {
+            notifyUpdateReady();
+          }
+
+          registration.addEventListener("updatefound", () => {
+            const installingWorker = registration.installing;
+            if (!installingWorker) {
+              return;
+            }
+
+            installingWorker.addEventListener("statechange", () => {
+              if (
+                installingWorker.state === "installed" &&
+                navigator.serviceWorker.controller
+              ) {
+                notifyUpdateReady();
+              }
+            });
+          });
+
+          navigator.serviceWorker.addEventListener("controllerchange", () => {
+            if (hasPendingRefresh) {
+              return;
+            }
+
+            hasPendingRefresh = true;
+            window.location.reload();
+          });
+        });
     });
   }
 }

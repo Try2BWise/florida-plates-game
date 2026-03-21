@@ -10,6 +10,7 @@ const THEME_STORAGE_KEY = "florida-plates-theme";
 
 type ThemeMode = "light" | "dark";
 type PlateVisibilityFilter = "all" | "found" | "missing";
+type PlateArrangement = "category" | "az" | "za";
 
 function getInitialTheme(): ThemeMode {
   const storedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
@@ -40,7 +41,9 @@ function App() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [visibilityFilter, setVisibilityFilter] =
     useState<PlateVisibilityFilter>("all");
+  const [arrangement, setArrangement] = useState<PlateArrangement>("category");
   const [shareStatus, setShareStatus] = useState<string | null>(null);
+  const [isUpdateReady, setIsUpdateReady] = useState(false);
   const [activeCategory, setActiveCategory] = useState<PlateCategory>(
     groupedPlates[0].category
   );
@@ -60,6 +63,16 @@ function App() {
     document.documentElement.dataset.theme = theme;
     window.localStorage.setItem(THEME_STORAGE_KEY, theme);
   }, [theme]);
+
+  useEffect(() => {
+    function handleUpdateReady() {
+      setIsUpdateReady(true);
+    }
+
+    window.addEventListener("fl-plates:update-ready", handleUpdateReady);
+    return () =>
+      window.removeEventListener("fl-plates:update-ready", handleUpdateReady);
+  }, []);
 
   useEffect(() => {
     const pendingEntry = Object.entries(discoveries).find(
@@ -113,27 +126,43 @@ function App() {
     [discoveries]
   );
   const normalizedSearchTerm = searchTerm.trim().toLowerCase();
-  const filteredGroups = useMemo(
+  const filteredPlates = useMemo(
     () =>
-      groupedPlates
-        .map(({ category, plates: categoryPlates }) => ({
-          category,
-          plates: categoryPlates.filter((plate) => {
-            const isFound = Boolean(discoveries[plate.id]);
-            const matchesVisibility =
-              visibilityFilter === "all" ||
-              (visibilityFilter === "found" && isFound) ||
-              (visibilityFilter === "missing" && !isFound);
-            const matchesSearch =
-              normalizedSearchTerm.length === 0 ||
-              plate.name.toLowerCase().includes(normalizedSearchTerm);
+      plates.filter((plate) => {
+        const isFound = Boolean(discoveries[plate.id]);
+        const matchesVisibility =
+          visibilityFilter === "all" ||
+          (visibilityFilter === "found" && isFound) ||
+          (visibilityFilter === "missing" && !isFound);
+        const matchesSearch =
+          normalizedSearchTerm.length === 0 ||
+          plate.name.toLowerCase().includes(normalizedSearchTerm);
 
-            return matchesVisibility && matchesSearch;
-          })
-        }))
-        .filter(({ plates: categoryPlates }) => categoryPlates.length > 0),
+        return matchesVisibility && matchesSearch;
+      }),
     [discoveries, normalizedSearchTerm, visibilityFilter]
   );
+  const filteredGroups = useMemo(() => {
+    if (arrangement === "category") {
+      return groupedPlates
+        .map(({ category, plates: categoryPlates }) => ({
+          category,
+          plates: categoryPlates.filter((plate) =>
+            filteredPlates.some((filteredPlate) => filteredPlate.id === plate.id)
+          )
+        }))
+        .filter(({ plates: categoryPlates }) => categoryPlates.length > 0);
+    }
+
+    const sortedPlates = [...filteredPlates].sort((left, right) => {
+      const comparison = left.name.localeCompare(right.name);
+      return arrangement === "az" ? comparison : -comparison;
+    });
+
+    return sortedPlates.length > 0
+      ? [{ category: "Miscellaneous" as PlateCategory, plates: sortedPlates }]
+      : [];
+  }, [arrangement, filteredPlates]);
   const visiblePlateCount = useMemo(
     () =>
       filteredGroups.reduce(
@@ -144,6 +173,10 @@ function App() {
   );
 
   useEffect(() => {
+    if (arrangement !== "category") {
+      return;
+    }
+
     if (filteredGroups.length === 0) {
       return;
     }
@@ -151,9 +184,13 @@ function App() {
     if (!filteredGroups.some((group) => group.category === activeCategory)) {
       setActiveCategory(filteredGroups[0].category);
     }
-  }, [activeCategory, filteredGroups]);
+  }, [activeCategory, arrangement, filteredGroups]);
 
   useEffect(() => {
+    if (arrangement !== "category") {
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         const visibleEntries = entries
@@ -187,7 +224,7 @@ function App() {
     }
 
     return () => observer.disconnect();
-  }, [filteredGroups]);
+  }, [arrangement, filteredGroups]);
 
   async function handleTogglePlate(plate: Plate, isFound: boolean) {
     if (isFound) {
@@ -256,6 +293,15 @@ function App() {
       setShareStatus("Share canceled");
       window.setTimeout(() => setShareStatus(null), 2000);
     }
+  }
+
+  function handleApplyUpdate() {
+    setIsUpdateReady(false);
+    void navigator.serviceWorker
+      .getRegistration(import.meta.env.BASE_URL)
+      .then((registration) => {
+        registration?.waiting?.postMessage({ type: "SKIP_WAITING" });
+      });
   }
 
   return (
@@ -345,21 +391,29 @@ function App() {
                 )}
               </label>
             ) : null}
-            <nav className="category-jump" aria-label="Jump to category">
-              {filteredGroups.map(({ category, plates: categoryPlates }) => (
-                <button
-                  type="button"
-                  key={category}
-                  className={`category-jump__chip ${
-                    activeCategory === category ? "category-jump__chip--active" : ""
-                  }`}
-                  onClick={() => handleJumpToCategory(category)}
-                >
-                  <span>{category}</span>
-                  <span className="category-jump__count">{categoryPlates.length}</span>
-                </button>
-              ))}
-            </nav>
+            {arrangement === "category" ? (
+              <nav className="category-jump" aria-label="Jump to category">
+                {filteredGroups.map(({ category, plates: categoryPlates }) => (
+                  <button
+                    type="button"
+                    key={category}
+                    className={`category-jump__chip ${
+                      activeCategory === category ? "category-jump__chip--active" : ""
+                    }`}
+                    onClick={() => handleJumpToCategory(category)}
+                  >
+                    <span>{category}</span>
+                    <span className="category-jump__count">{categoryPlates.length}</span>
+                  </button>
+                ))}
+              </nav>
+            ) : (
+              <div className="category-jump category-jump--summary" aria-live="polite">
+                <span className="category-jump__chip category-jump__chip--static">
+                  {arrangement === "az" ? "All plates A-Z" : "All plates Z-A"}
+                </span>
+              </div>
+            )}
           </div>
           <div className="control-panel__bottomline">
             <div
@@ -408,6 +462,38 @@ function App() {
               </button>
             ) : null}
           </div>
+          <div className="control-panel__arrangement" role="group" aria-label="Arrange plates">
+            <button
+              type="button"
+              className={`view-toggle__chip ${
+                arrangement === "category" ? "view-toggle__chip--active" : ""
+              }`}
+              onClick={() => setArrangement("category")}
+              aria-pressed={arrangement === "category"}
+            >
+              Categories
+            </button>
+            <button
+              type="button"
+              className={`view-toggle__chip ${
+                arrangement === "az" ? "view-toggle__chip--active" : ""
+              }`}
+              onClick={() => setArrangement("az")}
+              aria-pressed={arrangement === "az"}
+            >
+              A-Z
+            </button>
+            <button
+              type="button"
+              className={`view-toggle__chip ${
+                arrangement === "za" ? "view-toggle__chip--active" : ""
+              }`}
+              onClick={() => setArrangement("za")}
+              aria-pressed={arrangement === "za"}
+            >
+              Z-A
+            </button>
+          </div>
           <p className="control-panel__summary" aria-live="polite">
             Showing {visiblePlateCount} of {plates.length} plates
           </p>
@@ -416,17 +502,25 @@ function App() {
 
       <main className="plate-groups">
         {filteredGroups.length > 0 ? (
-          filteredGroups.map(({ category, plates: categoryPlates }) => (
+          filteredGroups.map(({ category, plates: categoryPlates }, index) => (
             <section
               className="plate-group"
-              key={category}
-              data-category={category}
+              key={arrangement === "category" ? category : `flat-${index}`}
+              data-category={arrangement === "category" ? category : null}
               ref={(node) => {
-                sectionRefs.current[category] = node;
+                if (arrangement === "category") {
+                  sectionRefs.current[category] = node;
+                }
               }}
             >
               <div className="plate-group__heading">
-                <h2>{category}</h2>
+                <h2>
+                  {arrangement === "category"
+                    ? category
+                    : arrangement === "az"
+                      ? "All Plates A-Z"
+                      : "All Plates Z-A"}
+                </h2>
                 <span>{categoryPlates.length}</span>
               </div>
               <div className="plate-list">
@@ -487,6 +581,18 @@ function App() {
       {shareStatus ? (
         <div className="saving-banner" role="status">
           {shareStatus}
+        </div>
+      ) : null}
+      {isUpdateReady ? (
+        <div className="update-banner" role="status">
+          <span>A new version is ready.</span>
+          <button
+            type="button"
+            className="update-banner__action"
+            onClick={handleApplyUpdate}
+          >
+            Update
+          </button>
         </div>
       ) : null}
     </div>
