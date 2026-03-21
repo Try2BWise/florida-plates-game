@@ -1,5 +1,5 @@
-const APP_CACHE = "florida-plates-app-v3";
-const RUNTIME_CACHE = "florida-plates-runtime-v3";
+const APP_CACHE = "florida-plates-app-v4";
+const RUNTIME_CACHE = "florida-plates-runtime-v4";
 const BASE_PATH = self.location.pathname.replace(/\/sw\.js$/, "");
 const APP_SHELL = [
   `${BASE_PATH}/`,

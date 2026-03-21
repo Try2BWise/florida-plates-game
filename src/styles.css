@@ -75,7 +75,7 @@ select {
 
 .app-header {
   position: sticky;
-  top: 0;
+  top: env(safe-area-inset-top, 0px);
   z-index: 20;
   display: grid;
   gap: 0.65rem;
@@ -528,7 +528,7 @@ select {
 .plate-group {
   display: grid;
   gap: 0.55rem;
-  scroll-margin-top: 8.5rem;
+  scroll-margin-top: calc(8.5rem + env(safe-area-inset-top, 0px));
 }
 
 .plate-group__heading {
@@ -778,7 +778,7 @@ select {
   }
 
   .plate-group {
-    scroll-margin-top: 6.8rem;
+    scroll-margin-top: calc(6.8rem + env(safe-area-inset-top, 0px));
   }
 
   .plate-group__heading {
