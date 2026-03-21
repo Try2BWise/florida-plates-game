@@ -512,6 +512,19 @@ select {
   text-underline-offset: 0.16em;
 }
 
+.app-footer__share {
+  justify-self: start;
+  min-height: 2.4rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #f8fcfd;
+  box-shadow: var(--card-shadow);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
 .plate-group {
   display: grid;
   gap: 0.55rem;
@@ -807,5 +820,12 @@ select {
 
   .plate-card--found .plate-card__name {
     font-size: 0.67rem;
+  }
+
+  .app-footer__share {
+    min-height: 2.05rem;
+    padding: 0.42rem 0.72rem;
+    font-size: 0.7rem;
+    box-shadow: none;
   }
 }

@@ -23,6 +23,14 @@ function getInitialTheme(): ThemeMode {
 }
 
 function App() {
+  const appShareUrl = "https://try2bwise.github.io/florida-plates-game/";
+  const shareMessage = [
+    "I’ve been playing FL Plates, a Florida specialty plate spotting game.",
+    "",
+    `Play it here: ${appShareUrl}`,
+    "",
+    "On iPhone: open the link in Safari, tap Share, then choose Add to Home Screen to install it like an app."
+  ].join("\n");
   const [discoveries, setDiscoveries] = useState<PlateDiscoveryMap>(() =>
     loadDiscoveries()
   );
@@ -32,6 +40,7 @@ function App() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [visibilityFilter, setVisibilityFilter] =
     useState<PlateVisibilityFilter>("all");
+  const [shareStatus, setShareStatus] = useState<string | null>(null);
   const [activeCategory, setActiveCategory] = useState<PlateCategory>(
     groupedPlates[0].category
   );
@@ -222,6 +231,31 @@ function App() {
 
     setDiscoveries({});
     setActivePlateId(null);
+  }
+
+  async function handleShareApp() {
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: "FL Plates",
+          text: shareMessage,
+          url: appShareUrl
+        });
+        return;
+      }
+
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(shareMessage);
+        setShareStatus("Share text copied");
+        window.setTimeout(() => setShareStatus(null), 2500);
+        return;
+      }
+
+      window.prompt("Copy and share this message:", shareMessage);
+    } catch {
+      setShareStatus("Share canceled");
+      window.setTimeout(() => setShareStatus(null), 2000);
+    }
   }
 
   return (
@@ -436,11 +470,23 @@ function App() {
           Motor Vehicles and are displayed here for identification purposes
           under a fair use claim.
         </p>
+        <button
+          type="button"
+          className="app-footer__share"
+          onClick={handleShareApp}
+        >
+          Share FL Plates
+        </button>
       </footer>
 
       {activePlateId ? (
         <div className="saving-banner" role="status">
           Saving sighting...
+        </div>
+      ) : null}
+      {shareStatus ? (
+        <div className="saving-banner" role="status">
+          {shareStatus}
         </div>
       ) : null}
     </div>
