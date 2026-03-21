@@ -1,13 +1,14 @@
 const APP_CACHE = "florida-plates-app-v2";
 const RUNTIME_CACHE = "florida-plates-runtime-v2";
+const BASE_PATH = self.location.pathname.replace(/\/sw\.js$/, "");
 const APP_SHELL = [
-  "/",
-  "/manifest.webmanifest",
-  "/app-icon.svg",
-  "/apple-touch-icon.png",
-  "/pwa-192.png",
-  "/pwa-512.png",
-  "/plate-assets.json"
+  `${BASE_PATH}/`,
+  `${BASE_PATH}/manifest.webmanifest`,
+  `${BASE_PATH}/app-icon.svg`,
+  `${BASE_PATH}/apple-touch-icon.png`,
+  `${BASE_PATH}/pwa-192.png`,
+  `${BASE_PATH}/pwa-512.png`,
+  `${BASE_PATH}/plate-assets.json`
 ];
 
 self.addEventListener("install", (event) => {
@@ -15,14 +16,16 @@ self.addEventListener("install", (event) => {
     caches.open(APP_CACHE).then(async (cache) => {
       await cache.addAll(APP_SHELL);
 
-      const assetResponse = await fetch("/plate-assets.json");
+      const assetResponse = await fetch(`${BASE_PATH}/plate-assets.json`);
       if (!assetResponse.ok) {
         throw new Error("Unable to load plate asset list");
       }
 
       const plateAssets = await assetResponse.json();
       if (Array.isArray(plateAssets) && plateAssets.length > 0) {
-        await cache.addAll(plateAssets);
+        await cache.addAll(
+          plateAssets.map((assetPath) => new URL(assetPath, `${BASE_PATH}/`).toString())
+        );
       }
     })
   );
@@ -53,7 +56,7 @@ self.addEventListener("fetch", (event) => {
 
   if (request.mode === "navigate") {
     event.respondWith(
-      fetch(request).catch(() => caches.match("/"))
+      fetch(request).catch(() => caches.match(`${BASE_PATH}/`))
     );
     return;
   }
@@ -95,7 +98,7 @@ self.addEventListener("fetch", (event) => {
           void caches.open(RUNTIME_CACHE).then((cache) => cache.put(request, responseClone));
           return response;
         })
-        .catch(() => caches.match("/"));
+        .catch(() => caches.match(`${BASE_PATH}/`));
     })
   );
 });

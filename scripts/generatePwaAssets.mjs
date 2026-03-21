@@ -12,7 +12,7 @@ const plateAssetsJsonPath = join(publicDir, "plate-assets.json");
 const plateAssets = readdirSync(platesDir)
   .filter((fileName) => /\.(png|jpg)$/i.test(fileName))
   .sort((left, right) => left.localeCompare(right))
-  .map((fileName) => `/plates/${fileName}`);
+  .map((fileName) => `plates/${fileName}`);
 
 writeFileSync(plateAssetsJsonPath, `${JSON.stringify(plateAssets, null, 2)}\n`);
 

@@ -12,6 +12,9 @@ export function PlateCard({ plate, discovery, onToggle }: PlateCardProps) {
   const coordinateLabel = discovery
     ? formatCoordinates(discovery.latitude, discovery.longitude)
     : null;
+  const imageBasePath = import.meta.env.BASE_URL;
+  const pngSource = new URL(`plates/${plate.imageKey}.png`, imageBasePath).toString();
+  const jpgSource = new URL(`plates/${plate.imageKey}.jpg`, imageBasePath).toString();
 
   return (
     <button
@@ -23,14 +26,14 @@ export function PlateCard({ plate, discovery, onToggle }: PlateCardProps) {
       <div className="plate-card__image-wrap">
         <img
           className="plate-card__image"
-          src={`/plates/${plate.imageKey}.png`}
+          src={pngSource}
           alt={plate.name}
           loading="lazy"
           onError={(event) => {
             const target = event.currentTarget;
             if (!target.dataset.fallbackApplied) {
               target.dataset.fallbackApplied = "true";
-              target.src = `/plates/${plate.imageKey}.jpg`;
+              target.src = jpgSource;
             }
           }}
         />
