@@ -1,0 +1,4 @@
+Generated 154 plate asset paths
+public\apple-touch-icon.png
+public\pwa-192.png
+public\pwa-512.png

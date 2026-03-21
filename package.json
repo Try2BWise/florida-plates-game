@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "dev:host": "vite --host 0.0.0.0",
+    "generate:pwa-assets": "node scripts/generatePwaAssets.mjs",
+    "prebuild": "node scripts/generatePwaAssets.mjs",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "preview:host": "vite preview --host 0.0.0.0"
