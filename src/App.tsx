@@ -1,16 +1,52 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { PlateCard } from "./components/PlateCard";
 import { groupedPlates, plates } from "./data/plates";
+import { formatDiscoveryTime } from "./lib/format";
 import { createDiscovery } from "./lib/geolocation";
 import { reverseGeocodeLocality } from "./lib/reverseGeocode";
 import { loadDiscoveries, saveDiscoveries } from "./lib/storage";
 import type { Plate, PlateCategory, PlateDiscoveryMap } from "./types";
 
 const THEME_STORAGE_KEY = "florida-plates-theme";
+const UI_PREFERENCES_STORAGE_KEY = "florida-plates-ui-preferences";
 
 type ThemeMode = "light" | "dark";
 type PlateVisibilityFilter = "all" | "found" | "missing";
 type PlateArrangement = "category" | "az" | "za";
+type UtilityTab = "recent" | "stats" | "map" | "settings";
+
+interface UiPreferences {
+  showThemeToggle: boolean;
+  showSearch: boolean;
+  showCategories: boolean;
+  showArrangement: boolean;
+}
+
+const defaultUiPreferences: UiPreferences = {
+  showThemeToggle: true,
+  showSearch: true,
+  showCategories: true,
+  showArrangement: true
+};
+
+function loadUiPreferences(): UiPreferences {
+  try {
+    const rawValue = window.localStorage.getItem(UI_PREFERENCES_STORAGE_KEY);
+    if (!rawValue) {
+      return defaultUiPreferences;
+    }
+
+    const parsed = JSON.parse(rawValue) as Partial<UiPreferences>;
+    return {
+      showThemeToggle: parsed.showThemeToggle ?? defaultUiPreferences.showThemeToggle,
+      showSearch: parsed.showSearch ?? defaultUiPreferences.showSearch,
+      showCategories: parsed.showCategories ?? defaultUiPreferences.showCategories,
+      showArrangement: parsed.showArrangement ?? defaultUiPreferences.showArrangement
+    };
+  } catch {
+    return defaultUiPreferences;
+  }
+}
 
 function getInitialTheme(): ThemeMode {
   const storedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
@@ -37,6 +73,9 @@ function App() {
   );
   const [activePlateId, setActivePlateId] = useState<string | null>(null);
   const [theme, setTheme] = useState<ThemeMode>(() => getInitialTheme());
+  const [uiPreferences, setUiPreferences] = useState<UiPreferences>(() =>
+    loadUiPreferences()
+  );
   const [searchTerm, setSearchTerm] = useState("");
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [visibilityFilter, setVisibilityFilter] =
@@ -44,6 +83,8 @@ function App() {
   const [arrangement, setArrangement] = useState<PlateArrangement>("category");
   const [shareStatus, setShareStatus] = useState<string | null>(null);
   const [isUpdateReady, setIsUpdateReady] = useState(false);
+  const [isUtilityPanelOpen, setIsUtilityPanelOpen] = useState(false);
+  const [activeUtilityTab, setActiveUtilityTab] = useState<UtilityTab>("recent");
   const [activeCategory, setActiveCategory] = useState<PlateCategory>(
     groupedPlates[0].category
   );
@@ -63,6 +104,20 @@ function App() {
     document.documentElement.dataset.theme = theme;
     window.localStorage.setItem(THEME_STORAGE_KEY, theme);
   }, [theme]);
+
+  useEffect(() => {
+    window.localStorage.setItem(
+      UI_PREFERENCES_STORAGE_KEY,
+      JSON.stringify(uiPreferences)
+    );
+  }, [uiPreferences]);
+
+  useEffect(() => {
+    if (!uiPreferences.showSearch) {
+      setIsSearchOpen(false);
+      setSearchTerm("");
+    }
+  }, [uiPreferences.showSearch]);
 
   useEffect(() => {
     function handleUpdateReady() {
@@ -125,6 +180,30 @@ function App() {
     () => Object.keys(discoveries).length,
     [discoveries]
   );
+  const discoveryEntries = useMemo(
+    () =>
+      Object.entries(discoveries)
+        .map(([plateId, discovery]) => {
+          const plate = plates.find((candidatePlate) => candidatePlate.id === plateId);
+          if (!plate) {
+            return null;
+          }
+
+          return {
+            plate,
+            discovery
+          };
+        })
+        .filter((entry): entry is { plate: Plate; discovery: (typeof discoveries)[string] } =>
+          entry !== null
+        )
+        .sort(
+          (left, right) =>
+            new Date(right.discovery.foundAtIso).getTime() -
+            new Date(left.discovery.foundAtIso).getTime()
+        ),
+    [discoveries]
+  );
   const normalizedSearchTerm = searchTerm.trim().toLowerCase();
   const filteredPlates = useMemo(
     () =>
@@ -171,6 +250,72 @@ function App() {
       ),
     [filteredGroups]
   );
+  const categoryStats = useMemo(
+    () =>
+      groupedPlates.map(({ category, plates: categoryPlates }) => {
+        const found = categoryPlates.filter((plate) => discoveries[plate.id]).length;
+        return {
+          category,
+          found,
+          total: categoryPlates.length,
+          percent: Math.round((found / categoryPlates.length) * 100)
+        };
+      }),
+    [discoveries]
+  );
+  const topLocalities = useMemo(() => {
+    const localityCounts = new Map<string, number>();
+
+    for (const { discovery } of discoveryEntries) {
+      const locality = discovery.locality;
+      if (!locality) {
+        continue;
+      }
+
+      localityCounts.set(locality, (localityCounts.get(locality) ?? 0) + 1);
+    }
+
+    return [...localityCounts.entries()]
+      .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))
+      .slice(0, 6);
+  }, [discoveryEntries]);
+  const mapPins = useMemo(
+    () =>
+      discoveryEntries
+        .filter(
+          ({ discovery }) =>
+            discovery.latitude !== null && discovery.longitude !== null
+        )
+        .map(({ plate, discovery }) => {
+          const minLatitude = 24.3;
+          const maxLatitude = 31.15;
+          const minLongitude = -87.75;
+          const maxLongitude = -79.75;
+          const x =
+            ((discovery.longitude! - minLongitude) /
+              (maxLongitude - minLongitude)) *
+            100;
+          const y =
+            (1 -
+              (discovery.latitude! - minLatitude) /
+                (maxLatitude - minLatitude)) *
+            100;
+
+          return {
+            id: plate.id,
+            plateName: plate.name,
+            locality: discovery.locality,
+            left: Math.min(96, Math.max(4, x)),
+            top: Math.min(94, Math.max(6, y))
+          };
+        }),
+    [discoveryEntries]
+  );
+  const newestSighting = discoveryEntries[0] ?? null;
+  const oldestSighting =
+    discoveryEntries.length > 0
+      ? discoveryEntries[discoveryEntries.length - 1]
+      : null;
 
   useEffect(() => {
     if (arrangement !== "category") {
@@ -304,6 +449,13 @@ function App() {
       });
   }
 
+  function toggleUiPreference(key: keyof UiPreferences) {
+    setUiPreferences((current) => ({
+      ...current,
+      [key]: !current[key]
+    }));
+  }
+
   return (
     <div className="app-shell">
       <header className="app-header">
@@ -323,75 +475,81 @@ function App() {
               </span>
               <span className="app-header__meter-label">found</span>
             </div>
-            <button
-              type="button"
-              className="theme-toggle"
-              onClick={() =>
-                setTheme((current) => (current === "light" ? "dark" : "light"))
-              }
-              aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-            >
-              <span className="theme-toggle__label">
-                {theme === "light" ? "Dark mode" : "Light mode"}
-              </span>
-            </button>
+            {uiPreferences.showThemeToggle ? (
+              <button
+                type="button"
+                className="theme-toggle"
+                onClick={() =>
+                  setTheme((current) => (current === "light" ? "dark" : "light"))
+                }
+                aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+              >
+                <span className="theme-toggle__label">
+                  {theme === "light" ? "Dark mode" : "Light mode"}
+                </span>
+              </button>
+            ) : null}
           </div>
         </div>
         <div className="control-panel">
           <div className="control-panel__topline">
-            <button
-              type="button"
-              className={`search-toggle ${
-                isSearchOpen || searchTerm ? "search-toggle--open" : ""
-              }`}
-              aria-expanded={isSearchOpen || searchTerm.length > 0}
-              aria-controls="plate-search"
-              aria-label="Search plates"
-              onClick={() => {
-                if (isSearchOpen && searchTerm.length === 0) {
-                  setIsSearchOpen(false);
-                  return;
-                }
+            {uiPreferences.showSearch ? (
+              <>
+                <button
+                  type="button"
+                  className={`search-toggle ${
+                    isSearchOpen || searchTerm ? "search-toggle--open" : ""
+                  }`}
+                  aria-expanded={isSearchOpen || searchTerm.length > 0}
+                  aria-controls="plate-search"
+                  aria-label="Search plates"
+                  onClick={() => {
+                    if (isSearchOpen && searchTerm.length === 0) {
+                      setIsSearchOpen(false);
+                      return;
+                    }
 
-                setIsSearchOpen(true);
-              }}
-            >
-              <span className="search-toggle__icon" aria-hidden="true">
-                o
-              </span>
-            </button>
-            {isSearchOpen || searchTerm ? (
-              <label className="search-inline" htmlFor="plate-search">
-                <input
-                  id="plate-search"
-                  className="search-inline__input"
-                  type="search"
-                  placeholder="Search by plate name"
-                  value={searchTerm}
-                  onChange={(event) => setSearchTerm(event.target.value)}
-                />
-                {searchTerm ? (
-                  <button
-                    type="button"
-                    className="search-inline__clear"
-                    onClick={() => setSearchTerm("")}
-                    aria-label="Clear search"
-                  >
-                    Clear
-                  </button>
-                ) : (
-                  <button
-                    type="button"
-                    className="search-inline__clear"
-                    onClick={() => setIsSearchOpen(false)}
-                    aria-label="Close search"
-                  >
-                    Close
-                  </button>
-                )}
-              </label>
+                    setIsSearchOpen(true);
+                  }}
+                >
+                  <span className="search-toggle__icon" aria-hidden="true">
+                    o
+                  </span>
+                </button>
+                {isSearchOpen || searchTerm ? (
+                  <label className="search-inline" htmlFor="plate-search">
+                    <input
+                      id="plate-search"
+                      className="search-inline__input"
+                      type="search"
+                      placeholder="Search by plate name"
+                      value={searchTerm}
+                      onChange={(event) => setSearchTerm(event.target.value)}
+                    />
+                    {searchTerm ? (
+                      <button
+                        type="button"
+                        className="search-inline__clear"
+                        onClick={() => setSearchTerm("")}
+                        aria-label="Clear search"
+                      >
+                        Clear
+                      </button>
+                    ) : (
+                      <button
+                        type="button"
+                        className="search-inline__clear"
+                        onClick={() => setIsSearchOpen(false)}
+                        aria-label="Close search"
+                      >
+                        Close
+                      </button>
+                    )}
+                  </label>
+                ) : null}
+              </>
             ) : null}
-            {arrangement === "category" ? (
+            {uiPreferences.showCategories && arrangement === "category" ? (
               <nav className="category-jump" aria-label="Jump to category">
                 {filteredGroups.map(({ category, plates: categoryPlates }) => (
                   <button
@@ -407,13 +565,13 @@ function App() {
                   </button>
                 ))}
               </nav>
-            ) : (
+            ) : uiPreferences.showCategories ? (
               <div className="category-jump category-jump--summary" aria-live="polite">
                 <span className="category-jump__chip category-jump__chip--static">
                   {arrangement === "az" ? "All plates A-Z" : "All plates Z-A"}
                 </span>
               </div>
-            )}
+            ) : null}
           </div>
           <div className="control-panel__bottomline">
             <div
@@ -462,38 +620,44 @@ function App() {
               </button>
             ) : null}
           </div>
-          <div className="control-panel__arrangement" role="group" aria-label="Arrange plates">
-            <button
-              type="button"
-              className={`view-toggle__chip ${
-                arrangement === "category" ? "view-toggle__chip--active" : ""
-              }`}
-              onClick={() => setArrangement("category")}
-              aria-pressed={arrangement === "category"}
+          {uiPreferences.showArrangement ? (
+            <div
+              className="control-panel__arrangement"
+              role="group"
+              aria-label="Arrange plates"
             >
-              Categories
-            </button>
-            <button
-              type="button"
-              className={`view-toggle__chip ${
-                arrangement === "az" ? "view-toggle__chip--active" : ""
-              }`}
-              onClick={() => setArrangement("az")}
-              aria-pressed={arrangement === "az"}
-            >
-              A-Z
-            </button>
-            <button
-              type="button"
-              className={`view-toggle__chip ${
-                arrangement === "za" ? "view-toggle__chip--active" : ""
-              }`}
-              onClick={() => setArrangement("za")}
-              aria-pressed={arrangement === "za"}
-            >
-              Z-A
-            </button>
-          </div>
+              <button
+                type="button"
+                className={`view-toggle__chip ${
+                  arrangement === "category" ? "view-toggle__chip--active" : ""
+                }`}
+                onClick={() => setArrangement("category")}
+                aria-pressed={arrangement === "category"}
+              >
+                Categories
+              </button>
+              <button
+                type="button"
+                className={`view-toggle__chip ${
+                  arrangement === "az" ? "view-toggle__chip--active" : ""
+                }`}
+                onClick={() => setArrangement("az")}
+                aria-pressed={arrangement === "az"}
+              >
+                A-Z
+              </button>
+              <button
+                type="button"
+                className={`view-toggle__chip ${
+                  arrangement === "za" ? "view-toggle__chip--active" : ""
+                }`}
+                onClick={() => setArrangement("za")}
+                aria-pressed={arrangement === "za"}
+              >
+                Z-A
+              </button>
+            </div>
+          ) : null}
           <p className="control-panel__summary" aria-live="polite">
             Showing {visiblePlateCount} of {plates.length} plates
           </p>
@@ -566,12 +730,265 @@ function App() {
         </p>
         <button
           type="button"
+          className="app-footer__share app-footer__share--secondary"
+          onClick={() => setIsUtilityPanelOpen(true)}
+        >
+          Explore
+        </button>
+        <button
+          type="button"
           className="app-footer__share"
           onClick={handleShareApp}
         >
           Share FL Plates
         </button>
       </footer>
+
+      {isUtilityPanelOpen ? (
+        <div
+          className="utility-panel-backdrop"
+          role="presentation"
+          onClick={() => setIsUtilityPanelOpen(false)}
+        >
+          <section
+            className="utility-panel"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Explore FL Plates"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="utility-panel__header">
+              <div>
+                <p className="utility-panel__eyebrow">Explore</p>
+                <h2 className="utility-panel__title">FL Plates utility panel</h2>
+              </div>
+              <button
+                type="button"
+                className="utility-panel__close"
+                onClick={() => setIsUtilityPanelOpen(false)}
+                aria-label="Close explore panel"
+              >
+                Close
+              </button>
+            </div>
+            <div className="utility-panel__tabs" role="tablist" aria-label="Explore views">
+              {(["recent", "stats", "map", "settings"] as UtilityTab[]).map((tab) => (
+                <button
+                  key={tab}
+                  type="button"
+                  className={`view-toggle__chip ${
+                    activeUtilityTab === tab ? "view-toggle__chip--active" : ""
+                  }`}
+                  role="tab"
+                  aria-selected={activeUtilityTab === tab}
+                  onClick={() => setActiveUtilityTab(tab)}
+                >
+                  {tab === "recent"
+                    ? "Recent"
+                    : tab === "stats"
+                      ? "Stats"
+                      : tab === "map"
+                        ? "Map"
+                        : "Settings"}
+                </button>
+              ))}
+            </div>
+            <div className="utility-panel__content">
+              {activeUtilityTab === "recent" ? (
+                discoveryEntries.length > 0 ? (
+                  <div className="utility-list">
+                    {discoveryEntries.slice(0, 20).map(({ plate, discovery }) => (
+                      <article className="utility-card" key={plate.id}>
+                        <div className="utility-card__header">
+                          <h3>{plate.name}</h3>
+                          <span>{plate.category}</span>
+                        </div>
+                        <p className="utility-card__meta">
+                          {formatDiscoveryTime(discovery.foundAtIso)}
+                        </p>
+                        <p className="utility-card__meta">
+                          {discovery.locality ?? "Location unavailable"}
+                        </p>
+                      </article>
+                    ))}
+                  </div>
+                ) : (
+                  <section className="empty-state">
+                    <h2>No sightings yet</h2>
+                    <p>Mark a plate as found to start building your recent sightings list.</p>
+                  </section>
+                )
+              ) : null}
+              {activeUtilityTab === "stats" ? (
+                <div className="utility-stack">
+                  <section className="utility-card utility-card--stat">
+                    <h3>Progress</h3>
+                    <p className="utility-card__metric">
+                      {foundCount} of {plates.length} plates found
+                    </p>
+                    <p className="utility-card__meta">
+                      {Math.round((foundCount / plates.length) * 100)}% complete
+                    </p>
+                  </section>
+                  <section className="utility-list">
+                    {categoryStats.map((stat) => (
+                      <article className="utility-card" key={stat.category}>
+                        <div className="utility-card__header">
+                          <h3>{stat.category}</h3>
+                          <span>{stat.percent}%</span>
+                        </div>
+                        <p className="utility-card__meta">
+                          {stat.found} of {stat.total} found
+                        </p>
+                      </article>
+                    ))}
+                  </section>
+                  <section className="utility-grid">
+                    <article className="utility-card">
+                      <h3>First sighting</h3>
+                      <p className="utility-card__meta">
+                        {oldestSighting
+                          ? `${oldestSighting.plate.name} on ${formatDiscoveryTime(
+                              oldestSighting.discovery.foundAtIso
+                            )}`
+                          : "No sightings yet"}
+                      </p>
+                    </article>
+                    <article className="utility-card">
+                      <h3>Most recent</h3>
+                      <p className="utility-card__meta">
+                        {newestSighting
+                          ? `${newestSighting.plate.name} on ${formatDiscoveryTime(
+                              newestSighting.discovery.foundAtIso
+                            )}`
+                          : "No sightings yet"}
+                      </p>
+                    </article>
+                  </section>
+                  <section className="utility-card">
+                    <h3>Top localities</h3>
+                    {topLocalities.length > 0 ? (
+                      <div className="utility-list utility-list--compact">
+                        {topLocalities.map(([locality, count]) => (
+                          <div className="utility-row" key={locality}>
+                            <span>{locality}</span>
+                            <strong>{count}</strong>
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="utility-card__meta">
+                        Locality counts will appear as sightings pick up place names.
+                      </p>
+                    )}
+                  </section>
+                </div>
+              ) : null}
+              {activeUtilityTab === "map" ? (
+                mapPins.length > 0 ? (
+                  <div className="utility-stack">
+                    <section className="map-card">
+                      <div className="map-card__surface">
+                        <div className="map-card__label map-card__label--panhandle">
+                          Panhandle
+                        </div>
+                        <div className="map-card__label map-card__label--peninsula">
+                          Peninsula
+                        </div>
+                        {mapPins.map((pin) => (
+                          <button
+                            key={pin.id}
+                            type="button"
+                            className="map-card__pin"
+                            style={{ left: `${pin.left}%`, top: `${pin.top}%` }}
+                            title={`${pin.plateName}${pin.locality ? ` - ${pin.locality}` : ""}`}
+                            aria-label={`${pin.plateName}${pin.locality ? ` in ${pin.locality}` : ""}`}
+                          />
+                        ))}
+                      </div>
+                      <p className="map-card__note">
+                        Approximate pushpin plot based on saved GPS sightings in Florida.
+                      </p>
+                    </section>
+                    <div className="utility-list utility-list--compact">
+                      {discoveryEntries
+                        .filter(
+                          ({ discovery }) =>
+                            discovery.latitude !== null && discovery.longitude !== null
+                        )
+                        .slice(0, 10)
+                        .map(({ plate, discovery }) => (
+                          <article className="utility-card" key={`${plate.id}-map`}>
+                            <div className="utility-card__header">
+                              <h3>{plate.name}</h3>
+                              <span>{discovery.locality ?? "Pinned"}</span>
+                            </div>
+                            <p className="utility-card__meta">
+                              {discovery.latitude?.toFixed(4)}, {discovery.longitude?.toFixed(4)}
+                            </p>
+                          </article>
+                        ))}
+                    </div>
+                  </div>
+                ) : (
+                  <section className="empty-state">
+                    <h2>No map pins yet</h2>
+                    <p>Find a few plates with location enabled and they will appear here.</p>
+                  </section>
+                )
+              ) : null}
+              {activeUtilityTab === "settings" ? (
+                <div className="utility-stack">
+                  <section className="utility-card">
+                    <h3>Main screen controls</h3>
+                    <div className="settings-list">
+                      <button
+                        type="button"
+                        className="settings-row"
+                        onClick={() => toggleUiPreference("showThemeToggle")}
+                      >
+                        <span>Show light/dark toggle</span>
+                        <strong>{uiPreferences.showThemeToggle ? "On" : "Off"}</strong>
+                      </button>
+                      <button
+                        type="button"
+                        className="settings-row"
+                        onClick={() => toggleUiPreference("showSearch")}
+                      >
+                        <span>Show search control</span>
+                        <strong>{uiPreferences.showSearch ? "On" : "Off"}</strong>
+                      </button>
+                      <button
+                        type="button"
+                        className="settings-row"
+                        onClick={() => toggleUiPreference("showCategories")}
+                      >
+                        <span>Show category buttons</span>
+                        <strong>{uiPreferences.showCategories ? "On" : "Off"}</strong>
+                      </button>
+                      <button
+                        type="button"
+                        className="settings-row"
+                        onClick={() => toggleUiPreference("showArrangement")}
+                      >
+                        <span>Show sort buttons</span>
+                        <strong>{uiPreferences.showArrangement ? "On" : "Off"}</strong>
+                      </button>
+                    </div>
+                  </section>
+                  <section className="utility-card">
+                    <h3>About these settings</h3>
+                    <p className="utility-card__meta">
+                      These toggles only change which controls appear on the main game screen.
+                      Your progress and filter state stay intact.
+                    </p>
+                  </section>
+                </div>
+              ) : null}
+            </div>
+          </section>
+        </div>
+      ) : null}
 
       {activePlateId ? (
         <div className="saving-banner" role="status">
