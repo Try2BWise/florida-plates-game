@@ -618,11 +618,11 @@ function App() {
               </div>
             ) : null}
           </div>
-          <div className="control-panel__bottomline">
+          <div className="control-panel__scroller">
             <div
               className="view-toggle"
               role="group"
-              aria-label="Filter by found status"
+              aria-label="Filter by found status and arrangement"
             >
               <button
                 type="button"
@@ -654,23 +654,8 @@ function App() {
               >
                 Not found
               </button>
-            </div>
-            {foundCount > 0 ? (
-              <button
-                type="button"
-                className="clear-discoveries"
-                onClick={handleClearDiscoveries}
-              >
-                Clear found
-              </button>
-            ) : null}
-          </div>
-          {uiPreferences.showArrangement ? (
-            <div
-              className="control-panel__arrangement"
-              role="group"
-              aria-label="Arrange plates"
-            >
+              {uiPreferences.showArrangement ? (
+                <>
               <button
                 type="button"
                 className={`view-toggle__chip ${
@@ -701,8 +686,19 @@ function App() {
               >
                 Z-A
               </button>
+                </>
+              ) : null}
+              {foundCount > 0 ? (
+                <button
+                  type="button"
+                  className="clear-discoveries"
+                  onClick={handleClearDiscoveries}
+                >
+                  Clear found
+                </button>
+              ) : null}
             </div>
-          ) : null}
+          </div>
           <p className="control-panel__summary" aria-live="polite">
             Showing {visiblePlateCount} of {plates.length} plates
           </p>
