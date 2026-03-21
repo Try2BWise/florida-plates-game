@@ -8,6 +8,7 @@ import type { Plate, PlateCategory, PlateDiscoveryMap } from "./types";
 const THEME_STORAGE_KEY = "florida-plates-theme";
 
 type ThemeMode = "light" | "dark";
+type PlateVisibilityFilter = "all" | "found" | "missing";
 
 function getInitialTheme(): ThemeMode {
   const storedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
@@ -26,6 +27,10 @@ function App() {
   );
   const [activePlateId, setActivePlateId] = useState<string | null>(null);
   const [theme, setTheme] = useState<ThemeMode>(() => getInitialTheme());
+  const [searchTerm, setSearchTerm] = useState("");
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [visibilityFilter, setVisibilityFilter] =
+    useState<PlateVisibilityFilter>("all");
   const [activeCategory, setActiveCategory] = useState<PlateCategory>(
     groupedPlates[0].category
   );
@@ -44,6 +49,51 @@ function App() {
     document.documentElement.dataset.theme = theme;
     window.localStorage.setItem(THEME_STORAGE_KEY, theme);
   }, [theme]);
+
+  const foundCount = useMemo(
+    () => Object.keys(discoveries).length,
+    [discoveries]
+  );
+  const normalizedSearchTerm = searchTerm.trim().toLowerCase();
+  const filteredGroups = useMemo(
+    () =>
+      groupedPlates
+        .map(({ category, plates: categoryPlates }) => ({
+          category,
+          plates: categoryPlates.filter((plate) => {
+            const isFound = Boolean(discoveries[plate.id]);
+            const matchesVisibility =
+              visibilityFilter === "all" ||
+              (visibilityFilter === "found" && isFound) ||
+              (visibilityFilter === "missing" && !isFound);
+            const matchesSearch =
+              normalizedSearchTerm.length === 0 ||
+              plate.name.toLowerCase().includes(normalizedSearchTerm);
+
+            return matchesVisibility && matchesSearch;
+          })
+        }))
+        .filter(({ plates: categoryPlates }) => categoryPlates.length > 0),
+    [discoveries, normalizedSearchTerm, visibilityFilter]
+  );
+  const visiblePlateCount = useMemo(
+    () =>
+      filteredGroups.reduce(
+        (total, group) => total + group.plates.length,
+        0
+      ),
+    [filteredGroups]
+  );
+
+  useEffect(() => {
+    if (filteredGroups.length === 0) {
+      return;
+    }
+
+    if (!filteredGroups.some((group) => group.category === activeCategory)) {
+      setActiveCategory(filteredGroups[0].category);
+    }
+  }, [activeCategory, filteredGroups]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -71,7 +121,7 @@ function App() {
       }
     );
 
-    for (const { category } of groupedPlates) {
+    for (const { category } of filteredGroups) {
       const section = sectionRefs.current[category];
       if (section) {
         observer.observe(section);
@@ -79,12 +129,7 @@ function App() {
     }
 
     return () => observer.disconnect();
-  }, []);
-
-  const foundCount = useMemo(
-    () => Object.keys(discoveries).length,
-    [discoveries]
-  );
+  }, [filteredGroups]);
 
   async function handleTogglePlate(plate: Plate, isFound: boolean) {
     if (isFound) {
@@ -117,11 +162,21 @@ function App() {
     <div className="app-shell">
       <header className="app-header">
         <div className="app-header__top">
-          <div>
-            <p className="app-header__eyebrow">Florida Specialty Plate Game</p>
-            <h1>Spot every plate</h1>
+          <div className="app-header__title-block app-header__title-block--sign">
+            <div className="welcome-sign" aria-label="Florida plate tracker">
+              <span className="welcome-sign__welcome">Welcome to</span>
+              <span className="welcome-sign__state">FLORIDA</span>
+              <span className="welcome-sign__tagline">the sunshine state</span>
+            </div>
+            <p className="app-header__eyebrow">Florida plate tracker</p>
           </div>
           <div className="app-header__actions">
+            <div className="app-header__meter app-header__meter--compact" aria-live="polite">
+              <span className="app-header__meter-value">
+                {foundCount}/{plates.length}
+              </span>
+              <span className="app-header__meter-label">found</span>
+            </div>
             <button
               type="button"
               className="theme-toggle"
@@ -134,57 +189,157 @@ function App() {
                 {theme === "light" ? "Dark mode" : "Light mode"}
               </span>
             </button>
-            <div className="app-header__meter" aria-live="polite">
-              <span className="app-header__meter-value">
-                {foundCount}/{plates.length}
-              </span>
-              <span className="app-header__meter-label">plates found</span>
-            </div>
           </div>
         </div>
-        <nav className="category-jump" aria-label="Jump to category">
-          {groupedPlates.map(({ category, plates: categoryPlates }) => (
+        <div className="control-panel">
+          <div className="control-panel__topline">
             <button
               type="button"
-              key={category}
-              className={`category-jump__chip ${
-                activeCategory === category ? "category-jump__chip--active" : ""
+              className={`search-toggle ${
+                isSearchOpen || searchTerm ? "search-toggle--open" : ""
               }`}
-              onClick={() => handleJumpToCategory(category)}
+              aria-expanded={isSearchOpen || searchTerm.length > 0}
+              aria-controls="plate-search"
+              aria-label="Search plates"
+              onClick={() => {
+                if (isSearchOpen && searchTerm.length === 0) {
+                  setIsSearchOpen(false);
+                  return;
+                }
+
+                setIsSearchOpen(true);
+              }}
             >
-              <span>{category}</span>
-              <span className="category-jump__count">{categoryPlates.length}</span>
+              <span className="search-toggle__icon" aria-hidden="true">
+                o
+              </span>
             </button>
-          ))}
-        </nav>
+            {isSearchOpen || searchTerm ? (
+              <label className="search-inline" htmlFor="plate-search">
+                <input
+                  id="plate-search"
+                  className="search-inline__input"
+                  type="search"
+                  placeholder="Search by plate name"
+                  value={searchTerm}
+                  onChange={(event) => setSearchTerm(event.target.value)}
+                />
+                {searchTerm ? (
+                  <button
+                    type="button"
+                    className="search-inline__clear"
+                    onClick={() => setSearchTerm("")}
+                    aria-label="Clear search"
+                  >
+                    Clear
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    className="search-inline__clear"
+                    onClick={() => setIsSearchOpen(false)}
+                    aria-label="Close search"
+                  >
+                    Close
+                  </button>
+                )}
+              </label>
+            ) : null}
+            <nav className="category-jump" aria-label="Jump to category">
+              {filteredGroups.map(({ category, plates: categoryPlates }) => (
+                <button
+                  type="button"
+                  key={category}
+                  className={`category-jump__chip ${
+                    activeCategory === category ? "category-jump__chip--active" : ""
+                  }`}
+                  onClick={() => handleJumpToCategory(category)}
+                >
+                  <span>{category}</span>
+                  <span className="category-jump__count">{categoryPlates.length}</span>
+                </button>
+              ))}
+            </nav>
+          </div>
+          <div className="control-panel__bottomline">
+            <div
+              className="view-toggle"
+              role="group"
+              aria-label="Filter by found status"
+            >
+              <button
+                type="button"
+                className={`view-toggle__chip ${
+                  visibilityFilter === "all" ? "view-toggle__chip--active" : ""
+                }`}
+                onClick={() => setVisibilityFilter("all")}
+                aria-pressed={visibilityFilter === "all"}
+              >
+                All
+              </button>
+              <button
+                type="button"
+                className={`view-toggle__chip ${
+                  visibilityFilter === "found" ? "view-toggle__chip--active" : ""
+                }`}
+                onClick={() => setVisibilityFilter("found")}
+                aria-pressed={visibilityFilter === "found"}
+              >
+                Found
+              </button>
+              <button
+                type="button"
+                className={`view-toggle__chip ${
+                  visibilityFilter === "missing" ? "view-toggle__chip--active" : ""
+                }`}
+                onClick={() => setVisibilityFilter("missing")}
+                aria-pressed={visibilityFilter === "missing"}
+              >
+                Not found
+              </button>
+            </div>
+          </div>
+          <p className="control-panel__summary" aria-live="polite">
+            Showing {visiblePlateCount} of {plates.length} plates
+          </p>
+        </div>
       </header>
 
       <main className="plate-groups">
-        {groupedPlates.map(({ category, plates: categoryPlates }) => (
-          <section
-            className="plate-group"
-            key={category}
-            data-category={category}
-            ref={(node) => {
-              sectionRefs.current[category] = node;
-            }}
-          >
-            <div className="plate-group__heading">
-              <h2>{category}</h2>
-              <span>{categoryPlates.length}</span>
-            </div>
-            <div className="plate-list">
-              {categoryPlates.map((plate) => (
-                <PlateCard
-                  key={plate.id}
-                  plate={plate}
-                  discovery={discoveries[plate.id]}
-                  onToggle={handleTogglePlate}
-                />
-              ))}
-            </div>
+        {filteredGroups.length > 0 ? (
+          filteredGroups.map(({ category, plates: categoryPlates }) => (
+            <section
+              className="plate-group"
+              key={category}
+              data-category={category}
+              ref={(node) => {
+                sectionRefs.current[category] = node;
+              }}
+            >
+              <div className="plate-group__heading">
+                <h2>{category}</h2>
+                <span>{categoryPlates.length}</span>
+              </div>
+              <div className="plate-list">
+                {categoryPlates.map((plate) => (
+                  <PlateCard
+                    key={plate.id}
+                    plate={plate}
+                    discovery={discoveries[plate.id]}
+                    onToggle={handleTogglePlate}
+                  />
+                ))}
+              </div>
+            </section>
+          ))
+        ) : (
+          <section className="empty-state">
+            <h2>No plates match this view</h2>
+            <p>
+              Try clearing the search or cycling back to a different filter.
+            </p>
           </section>
-        ))}
+        )}
       </main>
 
       <footer className="app-footer">
