@@ -1,0 +1,17 @@
+{
+  "name": "Florida Specialty Plates",
+  "short_name": "FL Plates",
+  "description": "Track Florida specialty plates you spot on the road.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f0da",
+  "theme_color": "#0f4c5c",
+  "icons": [
+    {
+      "src": "/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

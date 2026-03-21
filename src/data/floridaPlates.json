@@ -1,0 +1,1343 @@
+{
+  "Date": "3/5/2014",
+  "Version": "1.0",
+  "Environmental": [
+    {
+      "id": 1,
+      "plate": {
+        "LicensePlate": "Animal Friend",
+        "DateEnacted": "07/01/2004",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Animal Friend, Inc.",
+        "Url": "http://www.floridaanimalfriend.org",
+        "Image": "animal_friend"
+      }
+    },
+    {
+      "id": 2,
+      "plate": {
+        "LicensePlate": "Aquaculture",
+        "DateEnacted": "07/01/2004",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Harbor Branch Oceanographic Institution, Inc.",
+        "Url": "http://www.hboi.edu",
+        "Image": "Aquaculture"
+      }
+    },
+    {
+      "id": 3,
+      "plate": {
+        "LicensePlate": "Conserve Wildlife",
+        "DateEnacted": "07/01/1998",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Wildlife Foundation of Florida and Florida Fish and Wildlife Conservation Commission",
+        "Url": "http://floridaconservation.org/c-w-tag/index.html",
+        "Image": "conserve_wildlife"
+      }
+    },
+    {
+      "id": 4,
+      "plate": {
+        "LicensePlate": "Catch Me Release Me",
+        "DateEnacted": "10/01/2010",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Guy Harvey Ocean Foundation, Inc.",
+        "Url": "http://www.guyharvey.com",
+        "Image": "CatchMeReleaseMe"
+      }
+    },
+    {
+      "id": 5,
+      "plate": {
+        "LicensePlate": "Discover Florida's Oceans",
+        "DateEnacted": "07/01/2004",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Hubbs Florida Ocean Fund, Inc.",
+        "Url": "http://www.discoverfloridasoceans.com/",
+        "Image": "discover_florida_oceans"
+      }
+    },
+    {
+      "id": 6,
+      "plate": {
+        "LicensePlate": "Endless Summer",
+        "DateEnacted": "10/01/2010",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Surfing's Evolution and Preservation Foundation, Inc.",
+        "Url": "http://www.endlesssummerplate.com/",
+        "Image": "EndlessSummer"
+      }
+    },
+    {
+      "id": 7,
+      "plate": {
+        "LicensePlate": "Everglades River of Grass",
+        "DateEnacted": "07/01/1998",
+        "SpecialFee": "2",
+        "DistributionOfSpecialFee": "Everglades Trust Fund",
+        "Url": "Everglades Trust Fund",
+        "Image": "everglades_river_of_grass"
+      }
+    },
+    {
+      "id": 8,
+      "plate": {
+        "LicensePlate": "Fish Florida",
+        "DateEnacted": "10/01/2003",
+        "SpecialFee": "22",
+        "DistributionOfSpecialFee": "Florida Foundation for Responsible Angling, Inc.",
+        "Url": "http://www.fishfloridatag.org",
+        "Image": "fish_florida"
+      }
+    },
+    {
+      "id": 9,
+      "plate": {
+        "LicensePlate": "Indian River Lagoon",
+        "DateEnacted": "02/15/1995",
+        "SpecialFee": "15",
+        "DistributionOfSpecialFee": "St. Johns River Water Management District",
+        "Url": "http://irl.sjrwmd.com",
+        "Image": "indian_river_lagoon"
+      }
+    },
+    {
+      "id": 10,
+      "plate": {
+        "LicensePlate": "Large Mouth Bass",
+        "DateEnacted": "03/15/1997",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Fish and Wildlife Conservation Commission to fund conservation programs that maintain management of fish and wildlife resources including hunting, fishing and non-consumptive wildlife opportunities.",
+        "Url": "http://www.floridafisheries.com/plate/index.html",
+        "Image": "largemouth_bass"
+      }
+    },
+    {
+      "id": 11,
+      "plate": {
+        "LicensePlate": "Panther",
+        "DateEnacted": "10/15/1990",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "85% Florida Panther Research and Management Trust Fund to protect panther, 15% Florida Communities Trust Fund. For more information, visit the Panther Net.",
+        "Url": "http://www.panther.state.fl.us",
+        "Image": "panther"
+      }
+    },
+    {
+      "id": 12,
+      "plate": {
+        "LicensePlate": "Protect Florida Springs",
+        "DateEnacted": "10/01/2007",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Wildlife Foundation of Florida",
+        "Url": "http://69.33.187.224/webcatalog/StoreBuilder/WildlifeFoundation/default.tpl?PageID=59",
+        "Image": "Protect_Florida_Springs"
+      }
+    },
+    {
+      "id": 13,
+      "plate": {
+        "LicensePlate": "Protect Florida Whales",
+        "DateEnacted": "07/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Harbor Branch Oceanographic Institute, Inc.",
+        "Url": "http://www.hboi.edu",
+        "Image": "protect_florida_whales"
+      }
+    },
+    {
+      "id": 14,
+      "plate": {
+        "LicensePlate": "Protect Our Reefs",
+        "DateEnacted": "07/01/2003",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Mote Marine Laboratory",
+        "Url": "Mote Marine Laboratory",
+        "Image": "protect_our_reefs"
+      }
+    },
+    {
+      "id": 15,
+      "plate": {
+        "LicensePlate": "Protect Wild Dolphins",
+        "DateEnacted": "07/01/1998",
+        "SpecialFee": "2",
+        "DistributionOfSpecialFee": "100% Harbor Branch Oceanographic Institute, Inc.",
+        "Url": "http://www.hboi.edu",
+        "Image": "protect_wild_dolphins"
+      }
+    },
+    {
+      "id": 16,
+      "plate": {
+        "LicensePlate": "Save Our Seas",
+        "DateEnacted": "07/01/2004",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Harbor Branch Oceanographic Institution, Inc.",
+        "Url": "http://www.hboi.edu",
+        "Image": "Save_Our_Seas"
+      }
+    },
+    {
+      "id": 17,
+      "plate": {
+        "LicensePlate": "Save the Manatee",
+        "DateEnacted": "03/16/1990",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Save the Manatee Trust Fund",
+        "Url": "http://research.myfwc.com/features/category_sub.asp?id=3431",
+        "Image": "manatee"
+      }
+    },
+    {
+      "id": 18,
+      "plate": {
+        "LicensePlate": "Save Wild Florida",
+        "DateEnacted": "10/01/2010",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Biodiversity Foundation, Inc.",
+        "Url": "http://www.floridabiodiversityfoundation.com/",
+        "Image": "SaveWildFlorida"
+      }
+    },
+    {
+      "id": 19,
+      "plate": {
+        "LicensePlate": "Sea Turtle",
+        "DateEnacted": "02/01/1998",
+        "SpecialFee": "23",
+        "DistributionOfSpecialFee": "Marine Resources Conservation Trust Fund in the Florida Fish and Wildlife Conservation Commission to conduct sea turtle protection, research and recovery programs.",
+        "Url": "http://www.floridaconservation.org/psm",
+        "Image": "sea_turtle"
+      }
+    },
+    {
+      "id": 20,
+      "plate": {
+        "LicensePlate": "Sportsmen's National Land Trust",
+        "DateEnacted": "07/01/2004",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Sportsmen's National Land Trust",
+        "Url": "Sportsmen's National Land Trust",
+        "Image": "sportsmensNLT"
+      }
+    },
+    {
+      "id": 21,
+      "plate": {
+        "LicensePlate": "St. Johns River",
+        "DateEnacted": "10/01/2010",
+        "SpecialFee": "25,",
+        "DistributionOfSpecialFee": "St. Johns River Alliance",
+        "Url": "http://www.stjohnsriveralliance.com",
+        "Image": "StJohnsRiver"
+      }
+    },
+    {
+      "id": 22,
+      "plate": {
+        "LicensePlate": "State Wildflower",
+        "DateEnacted": "07/01/1999",
+        "SpecialFee": "15",
+        "DistributionOfSpecialFee": "Florida Wildflower Program",
+        "Url": "Florida Wildflower Program",
+        "Image": "state_wildflower"
+      }
+    },
+    {
+      "id": 23,
+      "plate": {
+        "LicensePlate": "Tampa Bay Estuary",
+        "DateEnacted": "06/10/1999",
+        "SpecialFee": "15",
+        "DistributionOfSpecialFee": "Tampa Bay Estuary Program",
+        "Url": "http://www.tbep.org",
+        "Image": "tampa_bay_estuary"
+      }
+    },
+    {
+      "id": 24,
+      "plate": {
+        "LicensePlate": "Trees Are Cool",
+        "DateEnacted": "10/01/2007",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Chapter International Society of Arboriculture www.floridaisa.org",
+        "Url": "http://www.floridaisa.org/",
+        "Image": "trees_are_cool"
+      }
+    }
+  ],
+  "Miscellaneous": [
+    {
+      "id": 1,
+      "plate": {
+        "LicensePlate": "A State of Vision",
+        "DateEnacted": "07/01/2006",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Association of Agencies Serving the Blind, Inc. www.faasb.com",
+        "Url": "http://www.faasb.com",
+        "Image": "state_of_vision"
+      }
+    },
+    {
+      "id": 2,
+      "plate": {
+        "LicensePlate": "Agricultural Education",
+        "DateEnacted": "07/01/2006",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Future Farmers of America Foundation, Inc.",
+        "Url": "Florida Future Farmers of America Foundation, Inc.",
+        "Image": "agricultural_education"
+      }
+    },
+    {
+      "id": 3,
+      "plate": {
+        "LicensePlate": "Agriculture",
+        "DateEnacted": "04/01/1997",
+        "SpecialFee": "2",
+        "DistributionOfSpecialFee": "Funding and promoting Florida Agriculture in the classroom program within Florida Agriculture in the Classroom, Inc.",
+        "Url": "http://www.flagintheclassroom.com/",
+        "Image": "agriculture"
+      }
+    },
+    {
+      "id": 4,
+      "plate": {
+        "LicensePlate": "American Red Cross",
+        "DateEnacted": "07/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "50% of annual use fees go to the Central Florida chapter of the Red Cross for use in education and disaster relief.50% of annual use fees go to three poison control centers to combat bio-terrorism.",
+        "Url": "50% of annual use fees go to the Central Florida chapter of the Red Cross for use in education and disaster relief. 50% of annual use fees go to three poison control centers to combat bio-terrorism.",
+        "Image": "american_red_cross"
+      }
+    },
+    {
+      "id": 5,
+      "plate": {
+        "LicensePlate": "Boy Scouts of America",
+        "DateEnacted": "02/15/1997",
+        "SpecialFee": "2",
+        "DistributionOfSpecialFee": "The Central Florida Council of the Boy Scouts of America to be used by the nine Boy Councils within the state for the Boy Scout programs.",
+        "Url": "The Central Florida Council of the Boy Scouts of America to be used by the nine Boy Councils within the state for the Boy Scout programs.",
+        "Image": "boy_scouts_of_america"
+      }
+    },
+    {
+      "id": 6,
+      "plate": {
+        "LicensePlate": "Challenger/Columbia",
+        "DateEnacted": "01/01/1987",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "50% Astronaut Memorial Foundation, 50% Technological Research and Development Authority",
+        "Url": "http://www.amfcse.org",
+        "Image": "challenger"
+      }
+    },
+    {
+      "id": 7,
+      "plate": {
+        "LicensePlate": "Choose Life",
+        "DateEnacted": "07/01/1999",
+        "SpecialFee": "2",
+        "DistributionOfSpecialFee": "Choose Life, Inc.",
+        "Url": "http://www.choose-life.org",
+        "Image": "choose_life"
+      }
+    },
+    {
+      "id": 8,
+      "plate": {
+        "LicensePlate": "Discover Florida's Horses",
+        "DateEnacted": "10/01/2010",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Agriculture Center and Horse Park Authority",
+        "Url": "http://www.flhorsepark.com",
+        "Image": "DiscoverFloridasHorses"
+      }
+    },
+    {
+      "id": 9,
+      "plate": {
+        "LicensePlate": "Donate Organs",
+        "DateEnacted": "07/01/2006",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Transplant Foundation, Inc. www.transplantfoundation.org",
+        "Url": "http://www.transplantfoundation.org",
+        "Image": "donate_organs"
+      }
+    },
+    {
+      "id": 10,
+      "plate": {
+        "LicensePlate": "End Breast Cancer",
+        "DateEnacted": "07/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Breast Cancer Coalition Research Foundation to fund education and research in the State of Florida and administrative costs",
+        "Url": "http://www.fbccrf.org/",
+        "Image": "end_breast_cancer"
+      }
+    },
+    {
+      "id": 11,
+      "plate": {
+        "LicensePlate": "Family First",
+        "DateEnacted": "07/01/2004",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Family First",
+        "Url": "http://www.familyfirst.net",
+        "Image": "Family_First"
+      }
+    },
+    {
+      "id": 12,
+      "plate": {
+        "LicensePlate": "Family Values",
+        "DateEnacted": "07/01/2004",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Sheridan House, Inc.",
+        "Url": "http://www.sheridanhouse.org",
+        "Image": "family_values"
+      }
+    },
+    {
+      "id": 13,
+      "plate": {
+        "LicensePlate": "Florida Arts",
+        "DateEnacted": "02/01/1995",
+        "SpecialFee": "2",
+        "DistributionOfSpecialFee": "Florida Fine Arts Trust Funds.",
+        "Url": "Florida Fine Arts Trust Funds.",
+        "Image": "florida_arts"
+      }
+    },
+    {
+      "id": 14,
+      "plate": {
+        "LicensePlate": "Florida Educational",
+        "DateEnacted": "10/01/1994",
+        "SpecialFee": "2",
+        "DistributionOfSpecialFee": "Enhancing Educational Programs",
+        "Url": "Enhancing Educational Programs",
+        "Image": "florida_educational"
+      }
+    },
+    {
+      "id": 15,
+      "plate": {
+        "LicensePlate": "Florida Golf Capital of the World",
+        "DateEnacted": "07/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Dade Amateur Golf Association for the operation of youth golf programs in Miami-Dade County. Florida Sports Foundation to establish a Florida Youth Golf Program. This program shall assist organizations for the benefit of teaching golf to youth.",
+        "Url": "http://www.dagagolf.org/",
+        "Image": "florida_golf_capital_of_the_world"
+      }
+    },
+    {
+      "id": 16,
+      "plate": {
+        "LicensePlate": "Florida Salutes Veterans",
+        "DateEnacted": "10/01/1989",
+        "SpecialFee": "15",
+        "DistributionOfSpecialFee": "State Homes for Veterans Trust Funds for the purpose of constructing, operating andmaintaining domiciliary and nursing homes.",
+        "Url": "http://www.floridavets.org/",
+        "Image": "florida_salutes_veterans"
+      }
+    },
+    {
+      "id": 17,
+      "plate": {
+        "LicensePlate": "Florida Sheriff's Youth Ranch",
+        "DateEnacted": "07/01/1998",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Sheriff's Youth Ranches",
+        "Url": "http://www.youthranches.org",
+        "Image": "florida_sheriff_youth_ranch"
+      }
+    },
+    {
+      "id": 18,
+      "plate": {
+        "LicensePlate": "Florida Special Olympic",
+        "DateEnacted": "01/01/1994",
+        "SpecialFee": "15",
+        "DistributionOfSpecialFee": "Florida Development Disabilities Planning Council for Special Olympics",
+        "Url": "Florida Development Disabilities Planning Council for Special Olympics",
+        "Image": "florida_special_olympic"
+      }
+    },
+    {
+      "id": 19,
+      "plate": {
+        "LicensePlate": "Fraternal Order of Police",
+        "DateEnacted": "07/01/2010",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida State Lodge of the Fraternal Order of Police",
+        "Url": "http://www.floridastatefop.org",
+        "Image": "FraternalOrderofPolice"
+      }
+    },
+    {
+      "id": 20,
+      "plate": {
+        "LicensePlate": "Freemasonry",
+        "DateEnacted": "10/01/2013",
+        "SpecialFee": "25,",
+        "DistributionOfSpecialFee": "Masonic Home Endowment Fund, Inc.",
+        "Url": "http://www.masonichomeofflorida.org/",
+        "Image": "freemasonry"
+      }
+    },
+    {
+      "id": 21,
+      "plate": {
+        "LicensePlate": "Horse Country",
+        "DateEnacted": "10/01/2008",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "PCMI Properties, Inc",
+        "Url": "http://www.floridahorsecountry.org/",
+        "Image": "HorseCountry"
+      }
+    },
+    {
+      "id": 22,
+      "plate": {
+        "LicensePlate": "Hispanic Achievers",
+        "DateEnacted": "09/01/2010",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "National Hispanic Corporate Achievers, Inc.",
+        "Url": "http://www.HispanicAchievers.org",
+        "Image": "HispanicAchievers"
+      }
+    },
+    {
+      "id": 23,
+      "plate": {
+        "LicensePlate": "Hospice: Every Day Is A Gift",
+        "DateEnacted": "07/01/2003",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Hospices and Palliative Care, Inc.",
+        "Url": "http://www.floridahospices.org",
+        "Image": "hospice_everyday_is_a_gift"
+      }
+    },
+    {
+      "id": 24,
+      "plate": {
+        "LicensePlate": "Imagine",
+        "DateEnacted": "07/01/2004",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Association of Food Banks, Inc.",
+        "Url": "http://www.imagineplate.com",
+        "Image": "imagine"
+      }
+    },
+    {
+      "id": 25,
+      "plate": {
+        "LicensePlate": "In God We Trust",
+        "DateEnacted": "10/01/2008",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "In God We Trust Foundation, Inc.",
+        "Url": "http://www.ingodwetrustfoundation.com/",
+        "Image": "InGodWeTrust"
+      }
+    },
+    {
+      "id": 26,
+      "plate": {
+        "LicensePlate": "Invest in Children",
+        "DateEnacted": "05/01/1995",
+        "SpecialFee": "2",
+        "DistributionOfSpecialFee": "Juvenile Crime Prevention and Early intervention.",
+        "Url": "Juvenile Crime Prevention and Early intervention.",
+        "Image": "invest_in_children"
+      }
+    },
+    {
+      "id": 27,
+      "plate": {
+        "LicensePlate": "Keep Kids Drug Free",
+        "DateEnacted": "07/01/1998",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Drug-abuse prevention programs",
+        "Url": "http://www.kkdf.org",
+        "Image": "keep_kids_drug_free"
+      }
+    },
+    {
+      "id": 28,
+      "plate": {
+        "LicensePlate": "Kids Deserve Justice",
+        "DateEnacted": "07/01/2004",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Bar Foundation, Inc.",
+        "Url": "http://www.flabarfndn.org/KidsDeserveJustice/",
+        "Image": "kids_deserve_justice"
+      }
+    },
+    {
+      "id": 29,
+      "plate": {
+        "LicensePlate": "Live the Dream",
+        "DateEnacted": "07/01/2004",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "The Dream Foundation, Inc.",
+        "Url": "http://www.dreamplate.com",
+        "Image": "live_the_dream"
+      }
+    },
+    {
+      "id": 30,
+      "plate": {
+        "LicensePlate": "Motocycle Specialty",
+        "DateEnacted": "10/01/2003",
+        "SpecialFee": "2",
+        "DistributionOfSpecialFee": "The Able Trust",
+        "Url": "http://www.abletrust.org",
+        "Image": "motorcycle_specialty"
+      }
+    },
+    {
+      "id": 31,
+      "plate": {
+        "LicensePlate": "NASCAR",
+        "DateEnacted": "10/01/2007",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "NASCAR",
+        "Url": "http://www.nascar.com",
+        "Image": "NASCAR"
+      }
+    },
+    {
+      "id": 32,
+      "plate": {
+        "LicensePlate": "Parents Make A Difference",
+        "DateEnacted": "07/01/2004",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "The Gathering USA, Inc.",
+        "Url": "http://www.thegathering.org",
+        "Image": "parents_make_a_difference"
+      }
+    },
+    {
+      "id": 33,
+      "plate": {
+        "LicensePlate": "Play Tennis",
+        "DateEnacted": "10/01/2008",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "US Tennis Association of Florida",
+        "Url": "http://www.ustafloridafoundation.com/",
+        "Image": "playTennis"
+      }
+    },
+    {
+      "id": 34,
+      "plate": {
+        "LicensePlate": "Police Athletic League",
+        "DateEnacted": "02/15/1997",
+        "SpecialFee": "2",
+        "DistributionOfSpecialFee": "The Florida Police Athletic League, Inc., to provide educational materials, athletic equipment, transportation, food, medical checkups, counseling, scholarships, and other direct expenses incurred by the league in conducting its youth programs.",
+        "Url": "The Florida Police Athletic League, Inc., to provide educational materials, athletic equipment, transportation, food, medical checkups, counseling, scholarships, and other direct expenses incurred by the league in conducting its youth programs.",
+        "Image": "police_athletic_league"
+      }
+    },
+    {
+      "id": 35,
+      "plate": {
+        "LicensePlate": "Police Benevolent Association",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "2",
+        "DistributionOfSpecialFee": "Florida Police Benevolent Association Heart Fund, Inc.",
+        "Url": "http://www.flpba.org",
+        "Image": "police_benevolent_association"
+      }
+    },
+    {
+      "id": 36,
+      "plate": {
+        "LicensePlate": "Salutes Firefighters",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "2",
+        "DistributionOfSpecialFee": "Florida Firefighters Charities",
+        "Url": "http://www.fpfp.org",
+        "Image": "salutes_firefighters"
+      }
+    },
+    {
+      "id": 37,
+      "plate": {
+        "LicensePlate": "Share the Road",
+        "DateEnacted": "06/10/1999",
+        "SpecialFee": "15",
+        "DistributionOfSpecialFee": "Annual use fees are distributed to Bike Florida, Inc. Up to 25 percent is used for marketing and promotion and the remaining funds are divided equally between Bike Florida, Inc. and Florida Bicycle Association, Inc.",
+        "Url": "http://www.bikeflorida.org",
+        "Image": "share_the_road"
+      }
+    },
+    {
+      "id": 38,
+      "plate": {
+        "LicensePlate": "Stop Child Abuse",
+        "DateEnacted": "07/01/2003",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Children?s Home Society of Florida andFlorida Network of Children?s Advocacy Centers",
+        "Url": "http://www.chsfl.org/",
+        "Image": "stop_child_abuse"
+      }
+    },
+    {
+      "id": 39,
+      "plate": {
+        "LicensePlate": "Stop Heart Disease",
+        "DateEnacted": "07/01/2003",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Heart Research Foundation, Inc.",
+        "Url": "http://www.heartplate.org",
+        "Image": "stop_heart_disease"
+      }
+    },
+    {
+      "id": 40,
+      "plate": {
+        "LicensePlate": "Support Autism Programs",
+        "DateEnacted": "09/01/2009",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Achievement and Rehabilitation Centers, Inc. www.arcbroward.com",
+        "Url": "http://www.arcbroward.com",
+        "Image": "SupportAutismPrograms"
+      }
+    },
+    {
+      "id": 41,
+      "plate": {
+        "LicensePlate": "Support Homeownership For All",
+        "DateEnacted": "07/01/2006",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Homeownership for All, Inc.",
+        "Url": "Homeownership for All, Inc.",
+        "Image": "homeownership"
+      }
+    },
+    {
+      "id": 42,
+      "plate": {
+        "LicensePlate": "Support Our Troops",
+        "DateEnacted": "10/01/2007",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Support Our Troops, Inc.",
+        "Url": "http://www.supportourtroops.org/florida/index.html",
+        "Image": "Support_Our_Troops"
+      }
+    },
+    {
+      "id": 43,
+      "plate": {
+        "LicensePlate": "Support Soccer",
+        "DateEnacted": "07/01/2004",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Soccerplate.com",
+        "Url": "http://www.soccerplate.com",
+        "Image": "support_soccer"
+      }
+    },
+    {
+      "id": 44,
+      "plate": {
+        "LicensePlate": "U.S. Air Force",
+        "DateEnacted": "07/01/2003",
+        "SpecialFee": "15",
+        "DistributionOfSpecialFee": "State Homes for Veterans Trust Fund",
+        "Url": "http://www.floridavets.org/",
+        "Image": "us_air_force"
+      }
+    },
+    {
+      "id": 45,
+      "plate": {
+        "LicensePlate": "U.S. Army",
+        "DateEnacted": "07/01/2003",
+        "SpecialFee": "15",
+        "DistributionOfSpecialFee": "State Homes for Veterans Trust Fund",
+        "Url": "http://www.floridavets.org/",
+        "Image": "us_army"
+      }
+    },
+    {
+      "id": 46,
+      "plate": {
+        "LicensePlate": "U.S. Coast Guard",
+        "DateEnacted": "07/01/2003",
+        "SpecialFee": "15",
+        "DistributionOfSpecialFee": "State Homes for Veterans Trust Fund",
+        "Url": "http://www.floridavets.org/",
+        "Image": "us_coast_guard"
+      }
+    },
+    {
+      "id": 47,
+      "plate": {
+        "LicensePlate": "U.S. Marine Corps",
+        "DateEnacted": "07/01/1999",
+        "SpecialFee": "15",
+        "DistributionOfSpecialFee": "State Homes for Veterans Trust Fund and the Marine Corps Scholarship Foundation, Inc.",
+        "Url": "http://www.floridavets.org/",
+        "Image": "us_marine_corps"
+      }
+    },
+    {
+      "id": 48,
+      "plate": {
+        "LicensePlate": "U.S. Navy",
+        "DateEnacted": "07/01/2003",
+        "SpecialFee": "15",
+        "DistributionOfSpecialFee": "State Homes for Veterans Trust Fund",
+        "Url": "http://www.floridavets.org/",
+        "Image": "us_navy"
+      }
+    },
+    {
+      "id": 49,
+      "plate": {
+        "LicensePlate": "U.S. Olympic",
+        "DateEnacted": "01/01/1994",
+        "SpecialFee": "15",
+        "DistributionOfSpecialFee": "Florida Sports Foundation",
+        "Url": "http://www.flasports.com/index.php?option=com_content&view=article&id=83&Itemid=86",
+        "Image": "us_olympic"
+      }
+    },
+    {
+      "id": 50,
+      "plate": {
+        "LicensePlate": "U.S. Paratroopers",
+        "DateEnacted": "07/01/2003",
+        "SpecialFee": "2",
+        "DistributionOfSpecialFee": "State Homes for Veterans Trust Fund",
+        "Url": "State Homes for Veterans Trust Fund",
+        "Image": "us_paratroopers"
+      }
+    },
+    {
+      "id": 51,
+      "plate": {
+        "LicensePlate": "United We Stand",
+        "DateEnacted": "07/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Secure Airports for Florida's Economy",
+        "Url": "http://www.safecouncil.com/Display.aspx?ID=35",
+        "Image": "united_we_stand"
+      }
+    },
+    {
+      "id": 52,
+      "plate": {
+        "LicensePlate": "Visit Our Lights",
+        "DateEnacted": "10/01/2008",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Lighthouse Association, Inc.",
+        "Url": "http://www.floridalighthouses.org",
+        "Image": "VisitOurLights"
+      }
+    }
+  ],
+  "Professional Sports": [
+    {
+      "id": 1,
+      "plate": {
+        "LicensePlate": "Florida Panthers (Hockey)",
+        "DateEnacted": "06/01/1995",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "55% Professional Sports Development Trust Fund. 45% FloridaSports Foundation.",
+        "Url": "http://www.flasports.com/page_prosports.shtml",
+        "Image": "florida_panthers"
+      }
+    },
+    {
+      "id": 2,
+      "plate": {
+        "LicensePlate": "Jacksonville Jaguars (Football)",
+        "DateEnacted": "06/01/1995",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "55% Professional Sports Development Trust Fund. 45% Florida Sports Foundation.",
+        "Url": "http://www.flasports.com/page_prosports.shtml",
+        "Image": "jacksonville_jaguars"
+      }
+    },
+    {
+      "id": 3,
+      "plate": {
+        "LicensePlate": "Miami Dolphins (Football)",
+        "DateEnacted": "04/01/1995",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "55% Professional Sports Development Trust Fund. 45% Florida Sports Foundation.",
+        "Url": "http://www.flasports.com/page_prosports.shtml",
+        "Image": "miami_dolphins"
+      }
+    },
+    {
+      "id": 4,
+      "plate": {
+        "LicensePlate": "Miami Heat (Basketball)",
+        "DateEnacted": "06/01/1995",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "55% Professional Sports Development Trust Fund. 45% Florida Sports Foundation.",
+        "Url": "http://www.flasports.com/page_prosports.shtml",
+        "Image": "miami_heat"
+      }
+    },
+    {
+      "id": 5,
+      "plate": {
+        "LicensePlate": "Miami Marlins (Baseball)",
+        "DateEnacted": "06/01/1995",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "55% Professional Sports Development Trust Fund. 45% Florida Sports Foundation.",
+        "Url": "http://www.flasports.com/page_prosports.shtml",
+        "Image": "miami_marlins"
+      }
+    },
+    {
+      "id": 6,
+      "plate": {
+        "LicensePlate": "Orlando Magic (Basketball)",
+        "DateEnacted": "06/01/1995",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "55% Professional Sports Development Trust Fund. 45% Florida Sports Foundation.",
+        "Url": "http://www.flasports.com/page_prosports.shtml",
+        "Image": "orlando_magic"
+      }
+    },
+    {
+      "id": 7,
+      "plate": {
+        "LicensePlate": "Tampa Bay Buccaneers (Football)",
+        "DateEnacted": "04/01/1998",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "55% Professional Sports Development Trust Fund. 45% Florida Sports Foundation.",
+        "Url": "http://www.flasports.com/page_prosports.shtml",
+        "Image": "tampa_bay_buccaneers"
+      }
+    },
+    {
+      "id": 8,
+      "plate": {
+        "LicensePlate": "Tampa Bay Rays (Baseball)",
+        "DateEnacted": "03/01/1997",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "55% Professional Sports Development Trust Fund. 45% Florida Sports Foundation.",
+        "Url": "http://www.flasports.com/page_prosports.shtml",
+        "Image": "tampa_bay_rays"
+      }
+    },
+    {
+      "id": 9,
+      "plate": {
+        "LicensePlate": "Tampa Bay Lightning (Hockey)",
+        "DateEnacted": "06/01/1995",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "55% Professional Sports Development Trust Fund. 45% Florida Sports Foundation.",
+        "Url": "http://www.flasports.com/page_prosports.shtml",
+        "Image": "tampa_bay_lightning"
+      }
+    }
+  ],
+  "Universities": [
+    {
+      "id": 1,
+      "plate": {
+        "LicensePlate": "Barry University",
+        "DateEnacted": "07/01/1998",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Barry University Alumni Endowed Scholarship Enhancement",
+        "Url": "http://www.barry.edu/iadv-alumni/license_plate.htm",
+        "Image": "barry_university"
+      }
+    },
+    {
+      "id": 2,
+      "plate": {
+        "LicensePlate": "Bethune-Cookman University",
+        "DateEnacted": "02/15/1997",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Bethune-Cookman University for Academic Enhancement",
+        "Url": "Bethune-Cookman University for Academic Enhancement",
+        "Image": "bethune_cookman_univ"
+      }
+    },
+    {
+      "id": 3,
+      "plate": {
+        "LicensePlate": "Clearwater Christian College",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Clear water Christian College",
+        "Url": "http://www.clearwater.edu/",
+        "Image": "clearwater_christian_college"
+      }
+    },
+    {
+      "id": 4,
+      "plate": {
+        "LicensePlate": "Eckerd College",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Eckerd College",
+        "Url": "http://www.eckerd.edu/",
+        "Image": "eckerd_college"
+      }
+    },
+    {
+      "id": 5,
+      "plate": {
+        "LicensePlate": "Edward Waters College",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Edward Waters College",
+        "Url": "Edward Waters College",
+        "Image": "edward_waters_college"
+      }
+    },
+    {
+      "id": 6,
+      "plate": {
+        "LicensePlate": "Edward Waters College",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Edward Waters College",
+        "Url": "Edward Waters College",
+        "Image": "edward_waters_college"
+      }
+    },
+    {
+      "id": 7,
+      "plate": {
+        "LicensePlate": "Flagler College",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Flagler College",
+        "Url": "http://www.flagler.edu",
+        "Image": "flagler_college"
+      }
+    },
+    {
+      "id": 8,
+      "plate": {
+        "LicensePlate": "Florida A & M University",
+        "DateEnacted": "10/01/1987",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida A & M University for Academic Enhancement.",
+        "Url": "http://www.famu.edu/alumni",
+        "Image": "florida_am_university"
+      }
+    },
+    {
+      "id": 9,
+      "plate": {
+        "LicensePlate": "Florida Atlantic University",
+        "DateEnacted": "10/01/1987",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Atlantic University Foundation for Academic Enhancement.",
+        "Url": "http://www.fau.edu/",
+        "Image": "florida_atlantic_university"
+      }
+    },
+    {
+      "id": 10,
+      "plate": {
+        "LicensePlate": "Florida College",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida College",
+        "Url": "http://www.flcoll.edu/",
+        "Image": "florida_college"
+      }
+    },
+    {
+      "id": 11,
+      "plate": {
+        "LicensePlate": "Florida Gulf Coast University",
+        "DateEnacted": "11/01/1997",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Gulf Coast University for Academic Enhancement.",
+        "Url": "Florida Gulf Coast University for Academic Enhancement.",
+        "Image": "florida_gulf_coast_university"
+      }
+    },
+    {
+      "id": 12,
+      "plate": {
+        "LicensePlate": "Florida Hospital College of Health Sciences",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Hospital College of Health Sciences",
+        "Url": "http://www.fhchs.edu/",
+        "Image": "florida_hospital_college_of_health_sciences"
+      }
+    },
+    {
+      "id": 13,
+      "plate": {
+        "LicensePlate": "Florida Institute of Technology",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Institute of Technology",
+        "Url": "Florida Institute of Technology",
+        "Image": "florida_institute_of_technology"
+      }
+    },
+    {
+      "id": 14,
+      "plate": {
+        "LicensePlate": "Florida International University",
+        "DateEnacted": "10/01/1987",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida International University for Academic Enhancement",
+        "Url": "http://www.fiu.edu/orgs/alumni/",
+        "Image": "florida_international_university"
+      }
+    },
+    {
+      "id": 15,
+      "plate": {
+        "LicensePlate": "Florida Memorial University",
+        "DateEnacted": "07/01/1999",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Memorial College",
+        "Url": "http://www.fmuniv.edu/",
+        "Image": "florida_memorial_university"
+      }
+    },
+    {
+      "id": 16,
+      "plate": {
+        "LicensePlate": "Florida Southern College",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida Southern College",
+        "Url": "http://www.flsouthern.edu/",
+        "Image": "florida_southern_college"
+      }
+    },
+    {
+      "id": 17,
+      "plate": {
+        "LicensePlate": "Florida State University",
+        "DateEnacted": "10/01/1987",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Florida State University for Academic Enhancement.",
+        "Url": "http://unirel.fsu.edu/FSU-License-Plate",
+        "Image": "florida_state_university"
+      }
+    },
+    {
+      "id": 18,
+      "plate": {
+        "LicensePlate": "Jacksonville University",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Jacksonville University",
+        "Url": "http://www.ju.edu/",
+        "Image": "jacksonville_university"
+      }
+    },
+    {
+      "id": 19,
+      "plate": {
+        "LicensePlate": "Lynn University",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Lynn University",
+        "Url": "http://www.lynn.edu/",
+        "Image": "lynn_university"
+      }
+    },
+    {
+      "id": 20,
+      "plate": {
+        "LicensePlate": "New College of Florida",
+        "DateEnacted": "07/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Distributed to New College of Florida for academic enhancement.",
+        "Url": "http://www.ncf.edu/",
+        "Image": "new_college_of_florida"
+      }
+    },
+    {
+      "id": 21,
+      "plate": {
+        "LicensePlate": "Nova Southeastern University",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Nova Southeastern University",
+        "Url": "http://www.nova.edu/",
+        "Image": "nova_southeastern_university"
+      }
+    },
+    {
+      "id": 22,
+      "plate": {
+        "LicensePlate": "Palm Beach Atlantic University",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Palm Beach Atlantic University",
+        "Url": "http://www.pba.edu/",
+        "Image": "palm_beach_atlantic_university"
+      }
+    },
+    {
+      "id": 23,
+      "plate": {
+        "LicensePlate": "Ringling School of Art and Design",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Ringling School of Art and Design",
+        "Url": "http://www.ringling.edu/",
+        "Image": "ringling_school_of_art_and_design"
+      }
+    },
+    {
+      "id": 24,
+      "plate": {
+        "LicensePlate": "Rollins College",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Rollins College",
+        "Url": "Rollins College",
+        "Image": "rollins_college"
+      }
+    },
+    {
+      "id": 25,
+      "plate": {
+        "LicensePlate": "Saint Leo University",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Saint Leo University",
+        "Url": "http://www.saintleo.edu/",
+        "Image": "saint_leo_university"
+      }
+    },
+    {
+      "id": 26,
+      "plate": {
+        "LicensePlate": "Saint Thomas University",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Saint Thomas University",
+        "Url": "http://www.stu.edu/",
+        "Image": "saint_thomas_university"
+      }
+    },
+    {
+      "id": 27,
+      "plate": {
+        "LicensePlate": "Southeastern University",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Southeastern University",
+        "Url": "http://www.seuniversity.edu/",
+        "Image": "southeastern_university"
+      }
+    },
+    {
+      "id": 28,
+      "plate": {
+        "LicensePlate": "Stetson University",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Stetson University",
+        "Url": "http://www.stetson.edu/",
+        "Image": "stetson_university"
+      }
+    },
+    {
+      "id": 29,
+      "plate": {
+        "LicensePlate": "University of Central Florida",
+        "DateEnacted": "10/01/1987",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "University of Central Florida for Academic Enhancement.",
+        "Url": "http://www.ucf.edu/",
+        "Image": "university_of_central_florida"
+      }
+    },
+    {
+      "id": 30,
+      "plate": {
+        "LicensePlate": "University of Florida",
+        "DateEnacted": "10/01/1987",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "University of Florida for Academic Enhancement.",
+        "Url": "http://www.floridafund.uff.ufl.edu/",
+        "Image": "university_of_florida"
+      }
+    },
+    {
+      "id": 31,
+      "plate": {
+        "LicensePlate": "University of Miami",
+        "DateEnacted": "10/01/1989",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "University of Miami for Academic Enhancement.",
+        "Url": "http://www.miami.edu/",
+        "Image": "university_of_miami"
+      }
+    },
+    {
+      "id": 32,
+      "plate": {
+        "LicensePlate": "University of North Florida",
+        "DateEnacted": "10/01/1987",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "University of North Florida for Academic Enhancement.",
+        "Url": "University of North Florida for Academic Enhancement.",
+        "Image": "university_of_north_florida"
+      }
+    },
+    {
+      "id": 33,
+      "plate": {
+        "LicensePlate": "University of South Florida",
+        "DateEnacted": "10/01/1987",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "University of South Florida for Academic Enhancement.",
+        "Url": "University of South Florida for Academic Enhancement.",
+        "Image": "university_of_south_florida"
+      }
+    },
+    {
+      "id": 34,
+      "plate": {
+        "LicensePlate": "University of Tampa",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "University of Tampa",
+        "Url": "http://www.utampa.edu/",
+        "Image": "university_of_tampa"
+      }
+    },
+    {
+      "id": 35,
+      "plate": {
+        "LicensePlate": "University of West Florida",
+        "DateEnacted": "10/01/1987",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "University of West Florida for Academic Enhancement.",
+        "Url": "http://www.uwf.edu/",
+        "Image": "university_of_west_florida"
+      }
+    },
+    {
+      "id": 36,
+      "plate": {
+        "LicensePlate": "Warner Southern College",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "25",
+        "DistributionOfSpecialFee": "Warner Southern College",
+        "Url": "http://www.warner.edu/",
+        "Image": "warner_southern_college"
+      }
+    }
+  ]
+}
