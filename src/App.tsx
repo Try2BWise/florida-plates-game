@@ -13,17 +13,15 @@ const UI_PREFERENCES_STORAGE_KEY = "florida-plates-ui-preferences";
 type ThemeMode = "light" | "dark";
 type PlateVisibilityFilter = "all" | "found" | "missing";
 type PlateArrangement = "category" | "az" | "za";
-type UtilityTab = "recent" | "stats" | "map" | "settings";
+type UtilityTab = "recent" | "stats" | "map" | "settings" | "help";
 
 interface UiPreferences {
-  showThemeToggle: boolean;
   showSearch: boolean;
   showCategories: boolean;
   showArrangement: boolean;
 }
 
 const defaultUiPreferences: UiPreferences = {
-  showThemeToggle: true,
   showSearch: true,
   showCategories: true,
   showArrangement: true
@@ -38,7 +36,6 @@ function loadUiPreferences(): UiPreferences {
 
     const parsed = JSON.parse(rawValue) as Partial<UiPreferences>;
     return {
-      showThemeToggle: parsed.showThemeToggle ?? defaultUiPreferences.showThemeToggle,
       showSearch: parsed.showSearch ?? defaultUiPreferences.showSearch,
       showCategories: parsed.showCategories ?? defaultUiPreferences.showCategories,
       showArrangement: parsed.showArrangement ?? defaultUiPreferences.showArrangement
@@ -280,37 +277,67 @@ function App() {
       .slice(0, 6);
   }, [discoveryEntries]);
   const mapPins = useMemo(
-    () =>
-      discoveryEntries
-        .filter(
-          ({ discovery }) =>
-            discovery.latitude !== null && discovery.longitude !== null
-        )
-        .map(({ plate, discovery }) => {
-          const minLatitude = 24.3;
-          const maxLatitude = 31.15;
-          const minLongitude = -87.75;
-          const maxLongitude = -79.75;
-          const x =
-            ((discovery.longitude! - minLongitude) /
-              (maxLongitude - minLongitude)) *
-            100;
-          const y =
-            (1 -
-              (discovery.latitude! - minLatitude) /
-                (maxLatitude - minLatitude)) *
-            100;
+    () => {
+      const plottedEntries = discoveryEntries.filter(
+        ({ discovery }) =>
+          discovery.latitude !== null && discovery.longitude !== null
+      );
 
-          return {
-            id: plate.id,
-            plateName: plate.name,
-            locality: discovery.locality,
-            left: Math.min(96, Math.max(4, x)),
-            top: Math.min(94, Math.max(6, y))
-          };
-        }),
+      if (plottedEntries.length === 0) {
+        return [];
+      }
+
+      const latitudes = plottedEntries.map(({ discovery }) => discovery.latitude!);
+      const longitudes = plottedEntries.map(({ discovery }) => discovery.longitude!);
+      const minLatitude = Math.min(...latitudes);
+      const maxLatitude = Math.max(...latitudes);
+      const minLongitude = Math.min(...longitudes);
+      const maxLongitude = Math.max(...longitudes);
+      const latitudePadding = Math.max(0.35, (maxLatitude - minLatitude) * 0.18);
+      const longitudePadding = Math.max(0.35, (maxLongitude - minLongitude) * 0.18);
+      const boundedMinLatitude = minLatitude - latitudePadding;
+      const boundedMaxLatitude = maxLatitude + latitudePadding;
+      const boundedMinLongitude = minLongitude - longitudePadding;
+      const boundedMaxLongitude = maxLongitude + longitudePadding;
+
+      return plottedEntries.map(({ plate, discovery }) => {
+        const x =
+          ((discovery.longitude! - boundedMinLongitude) /
+            (boundedMaxLongitude - boundedMinLongitude)) *
+          100;
+        const y =
+          (1 -
+            (discovery.latitude! - boundedMinLatitude) /
+              (boundedMaxLatitude - boundedMinLatitude)) *
+          100;
+
+        return {
+          id: plate.id,
+          plateName: plate.name,
+          locality: discovery.locality,
+          latitude: discovery.latitude!,
+          longitude: discovery.longitude!,
+          left: Math.min(96, Math.max(4, x)),
+          top: Math.min(94, Math.max(6, y))
+        };
+      });
+    },
     [discoveryEntries]
   );
+  const mapBounds = useMemo(() => {
+    if (mapPins.length === 0) {
+      return null;
+    }
+
+    const latitudes = mapPins.map((pin) => pin.latitude);
+    const longitudes = mapPins.map((pin) => pin.longitude);
+    return {
+      north: Math.max(...latitudes).toFixed(2),
+      south: Math.min(...latitudes).toFixed(2),
+      east: Math.max(...longitudes).toFixed(2),
+      west: Math.min(...longitudes).toFixed(2)
+    };
+  }, [mapPins]);
   const newestSighting = discoveryEntries[0] ?? null;
   const oldestSighting =
     discoveryEntries.length > 0
@@ -475,20 +502,44 @@ function App() {
               </span>
               <span className="app-header__meter-label">found</span>
             </div>
-            {uiPreferences.showThemeToggle ? (
+            <div className="app-header__shortcuts">
               <button
                 type="button"
-                className="theme-toggle"
-                onClick={() =>
-                  setTheme((current) => (current === "light" ? "dark" : "light"))
-                }
-                aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+                className="header-shortcut header-shortcut--explore"
+                onClick={() => {
+                  setActiveUtilityTab("recent");
+                  setIsUtilityPanelOpen(true);
+                }}
+                aria-label="Open Explore"
               >
-                <span className="theme-toggle__label">
-                  {theme === "light" ? "Dark mode" : "Light mode"}
+                <span className="header-shortcut__globe" aria-hidden="true" />
+                <span className="header-shortcut__label">Explore</span>
+              </button>
+              <button
+                type="button"
+                className="header-shortcut header-shortcut--settings"
+                onClick={() => {
+                  setActiveUtilityTab("settings");
+                  setIsUtilityPanelOpen(true);
+                }}
+                aria-label="Open Settings"
+              >
+                <span className="header-shortcut__gear" aria-hidden="true" />
+              </button>
+              <button
+                type="button"
+                className="header-shortcut header-shortcut--help"
+                onClick={() => {
+                  setActiveUtilityTab("help");
+                  setIsUtilityPanelOpen(true);
+                }}
+                aria-label="Open Help"
+              >
+                <span className="header-shortcut__question" aria-hidden="true">
+                  ?
                 </span>
               </button>
-            ) : null}
+            </div>
           </div>
         </div>
         <div className="control-panel">
@@ -730,13 +781,6 @@ function App() {
         </p>
         <button
           type="button"
-          className="app-footer__share app-footer__share--secondary"
-          onClick={() => setIsUtilityPanelOpen(true)}
-        >
-          Explore
-        </button>
-        <button
-          type="button"
           className="app-footer__share"
           onClick={handleShareApp}
         >
@@ -759,7 +803,13 @@ function App() {
           >
             <div className="utility-panel__header">
               <div>
-                <p className="utility-panel__eyebrow">Explore</p>
+                <p className="utility-panel__eyebrow">
+                  {activeUtilityTab === "settings"
+                    ? "Settings"
+                    : activeUtilityTab === "help"
+                      ? "Help"
+                      : "Explore"}
+                </p>
                 <h2 className="utility-panel__title">FL Plates utility panel</h2>
               </div>
               <button
@@ -772,7 +822,7 @@ function App() {
               </button>
             </div>
             <div className="utility-panel__tabs" role="tablist" aria-label="Explore views">
-              {(["recent", "stats", "map", "settings"] as UtilityTab[]).map((tab) => (
+              {(["recent", "stats", "map", "settings", "help"] as UtilityTab[]).map((tab) => (
                 <button
                   key={tab}
                   type="button"
@@ -787,9 +837,11 @@ function App() {
                     ? "Recent"
                     : tab === "stats"
                       ? "Stats"
-                      : tab === "map"
+                    : tab === "map"
                         ? "Map"
-                        : "Settings"}
+                        : tab === "settings"
+                          ? "Settings"
+                          : "Help"}
                 </button>
               ))}
             </div>
@@ -889,12 +941,23 @@ function App() {
                   <div className="utility-stack">
                     <section className="map-card">
                       <div className="map-card__surface">
-                        <div className="map-card__label map-card__label--panhandle">
-                          Panhandle
-                        </div>
-                        <div className="map-card__label map-card__label--peninsula">
-                          Peninsula
-                        </div>
+                        <div className="map-card__grid" />
+                        {mapBounds ? (
+                          <>
+                            <div className="map-card__label map-card__label--north">
+                              N {mapBounds.north}
+                            </div>
+                            <div className="map-card__label map-card__label--south">
+                              S {mapBounds.south}
+                            </div>
+                            <div className="map-card__label map-card__label--west">
+                              W {mapBounds.west}
+                            </div>
+                            <div className="map-card__label map-card__label--east">
+                              E {mapBounds.east}
+                            </div>
+                          </>
+                        ) : null}
                         {mapPins.map((pin) => (
                           <button
                             key={pin.id}
@@ -907,7 +970,7 @@ function App() {
                         ))}
                       </div>
                       <p className="map-card__note">
-                        Approximate pushpin plot based on saved GPS sightings in Florida.
+                        Dynamic pushpin plot based on the current spread of saved GPS sightings.
                       </p>
                     </section>
                     <div className="utility-list utility-list--compact">
@@ -945,10 +1008,12 @@ function App() {
                       <button
                         type="button"
                         className="settings-row"
-                        onClick={() => toggleUiPreference("showThemeToggle")}
+                        onClick={() =>
+                          setTheme((current) => (current === "light" ? "dark" : "light"))
+                        }
                       >
-                        <span>Show light/dark toggle</span>
-                        <strong>{uiPreferences.showThemeToggle ? "On" : "Off"}</strong>
+                        <span>Color mode</span>
+                        <strong>{theme === "light" ? "Light" : "Dark"}</strong>
                       </button>
                       <button
                         type="button"
@@ -981,6 +1046,50 @@ function App() {
                     <p className="utility-card__meta">
                       These toggles only change which controls appear on the main game screen.
                       Your progress and filter state stay intact.
+                    </p>
+                  </section>
+                </div>
+              ) : null}
+              {activeUtilityTab === "help" ? (
+                <div className="utility-stack">
+                  <section className="utility-card">
+                    <h3>How to play</h3>
+                    <div className="utility-list utility-list--compact">
+                      <p className="utility-card__meta">
+                        Tap a plate tile to mark it found.
+                      </p>
+                      <p className="utility-card__meta">
+                        Tap the same tile again to clear that sighting.
+                      </p>
+                      <p className="utility-card__meta">
+                        If location access is allowed, the app saves the time and a place name when available.
+                      </p>
+                      <p className="utility-card__meta">
+                        Use the visibility buttons to show all plates, only found plates, or only missing plates.
+                      </p>
+                      <p className="utility-card__meta">
+                        Use the arrangement buttons to keep category groups or switch to a flat A-Z or Z-A list.
+                      </p>
+                    </div>
+                  </section>
+                  <section className="utility-card">
+                    <h3>Useful tools</h3>
+                    <div className="utility-list utility-list--compact">
+                      <p className="utility-card__meta">
+                        <strong>Explore</strong> shows recent sightings, stats, and map pins.
+                      </p>
+                      <p className="utility-card__meta">
+                        <strong>Settings</strong> lets you hide optional controls and switch color mode.
+                      </p>
+                      <p className="utility-card__meta">
+                        <strong>Share FL Plates</strong> opens a share sheet with the app link and install instructions.
+                      </p>
+                    </div>
+                  </section>
+                  <section className="utility-card">
+                    <h3>Install on iPhone</h3>
+                    <p className="utility-card__meta">
+                      Open the game in Safari, tap Share, then choose Add to Home Screen. Once it loads online at least once, it can keep working offline.
                     </p>
                   </section>
                 </div>

@@ -188,19 +188,25 @@ select {
 }
 
 .app-header__actions {
-  display: flex;
-  align-items: stretch;
-  gap: 0.45rem;
+  display: grid;
+  gap: 0.35rem;
   flex-shrink: 0;
+  justify-items: end;
 }
 
-.theme-toggle {
-  flex-shrink: 0;
+.app-header__shortcuts {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.header-shortcut {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.7rem;
-  padding: 0.72rem 0.9rem;
+  gap: 0.4rem;
+  min-height: 2rem;
+  padding: 0.42rem 0.68rem;
   border: 1px solid var(--card-border);
   border-radius: 999px;
   background: var(--surface-strong);
@@ -208,9 +214,102 @@ select {
   box-shadow: var(--card-shadow);
 }
 
-.theme-toggle__label {
-  font-size: 0.78rem;
-  font-weight: 700;
+.header-shortcut__label {
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.header-shortcut__globe,
+.header-shortcut__gear,
+.header-shortcut__question {
+  position: relative;
+  display: inline-block;
+  width: 0.92rem;
+  height: 0.92rem;
+  flex-shrink: 0;
+}
+
+.header-shortcut__globe {
+  border: 0.12rem solid currentColor;
+  border-radius: 50%;
+}
+
+.header-shortcut__globe::before,
+.header-shortcut__globe::after {
+  content: "";
+  position: absolute;
+  inset: 0.12rem;
+  border: 0.08rem solid transparent;
+  border-radius: 50%;
+}
+
+.header-shortcut__globe::before {
+  left: 0.17rem;
+  right: 0.17rem;
+  border-left-color: currentColor;
+  border-right-color: currentColor;
+}
+
+.header-shortcut__globe::after {
+  top: 0.33rem;
+  bottom: 0.33rem;
+  inset-inline: 0.05rem;
+  border-top-color: currentColor;
+  border-bottom-color: currentColor;
+}
+
+.header-shortcut__gear {
+  border-radius: 50%;
+  border: 0.14rem solid currentColor;
+}
+
+.header-shortcut__gear::before,
+.header-shortcut__gear::after {
+  content: "";
+  position: absolute;
+  inset: -0.16rem;
+  border-radius: 50%;
+  background:
+    conic-gradient(
+      from 0deg,
+      transparent 0 10deg,
+      currentColor 10deg 24deg,
+      transparent 24deg 55deg,
+      currentColor 55deg 69deg,
+      transparent 69deg 100deg,
+      currentColor 100deg 114deg,
+      transparent 114deg 145deg,
+      currentColor 145deg 159deg,
+      transparent 159deg 190deg,
+      currentColor 190deg 204deg,
+      transparent 204deg 235deg,
+      currentColor 235deg 249deg,
+      transparent 249deg 280deg,
+      currentColor 280deg 294deg,
+      transparent 294deg 325deg,
+      currentColor 325deg 339deg,
+      transparent 339deg 360deg
+    );
+  -webkit-mask: radial-gradient(circle, transparent 0 45%, #000 46% 100%);
+  mask: radial-gradient(circle, transparent 0 45%, #000 46% 100%);
+}
+
+.header-shortcut__gear::after {
+  inset: 0.18rem;
+  background: currentColor;
+  -webkit-mask: none;
+  mask: none;
+}
+
+.header-shortcut__question {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.12rem solid currentColor;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 900;
+  line-height: 1;
 }
 
 .app-header__meter {
@@ -536,12 +635,6 @@ select {
   font-weight: 700;
 }
 
-.app-footer__share--secondary {
-  background: transparent;
-  border-color: var(--card-border);
-  color: var(--text);
-}
-
 .plate-group {
   display: grid;
   gap: 0.55rem;
@@ -852,23 +945,25 @@ select {
   overflow: hidden;
   border-radius: 1rem;
   background:
-    radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.8), transparent 18%),
-    radial-gradient(circle at 68% 58%, rgba(255, 255, 255, 0.36), transparent 12%),
-    linear-gradient(180deg, #b9e8f7 0%, #98d6ec 100%);
+    radial-gradient(circle at 24% 22%, rgba(255, 255, 255, 0.75), transparent 18%),
+    radial-gradient(circle at 72% 64%, rgba(255, 255, 255, 0.25), transparent 14%),
+    linear-gradient(180deg, #d9f2fb 0%, #a8dff0 100%);
 }
 
-.map-card__surface::before {
-  content: "";
+.map-card__grid {
   position: absolute;
-  inset: 12% 12% 10% 12%;
+  inset: 0;
   background:
-    radial-gradient(circle at 14% 22%, #7cbc63 0 9%, transparent 9.5%),
-    radial-gradient(circle at 31% 30%, #6fb45c 0 12%, transparent 12.5%),
-    radial-gradient(circle at 47% 47%, #6fb45c 0 11%, transparent 11.5%),
-    radial-gradient(circle at 62% 68%, #6fb45c 0 9%, transparent 9.5%),
-    radial-gradient(circle at 69% 83%, #6fb45c 0 8%, transparent 8.5%),
-    radial-gradient(circle at 58% 86%, #6fb45c 0 6%, transparent 6.5%);
-  opacity: 0.95;
+    repeating-linear-gradient(
+      0deg,
+      rgba(15, 76, 92, 0.08) 0 1px,
+      transparent 1px 20%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(15, 76, 92, 0.08) 0 1px,
+      transparent 1px 20%
+    );
 }
 
 .map-card__label {
@@ -881,14 +976,30 @@ select {
   text-transform: uppercase;
 }
 
-.map-card__label--panhandle {
-  top: 0.9rem;
-  left: 0.9rem;
+.map-card__label--north {
+  top: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.map-card__label--peninsula {
-  right: 0.9rem;
-  bottom: 0.9rem;
+.map-card__label--south {
+  bottom: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.map-card__label--west {
+  left: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left center;
+}
+
+.map-card__label--east {
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: right center;
 }
 
 .map-card__pin {
@@ -993,13 +1104,18 @@ select {
     font-size: 0.54rem;
   }
 
-  .theme-toggle {
-    min-height: 2.05rem;
-    padding: 0.42rem 0.58rem;
+  .app-header__shortcuts {
+    gap: 0.28rem;
   }
 
-  .theme-toggle__label {
-    font-size: 0.64rem;
+  .header-shortcut {
+    min-height: 1.75rem;
+    padding: 0.32rem 0.54rem;
+    box-shadow: none;
+  }
+
+  .header-shortcut__label {
+    font-size: 0.62rem;
   }
 
   .control-panel {
