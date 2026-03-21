@@ -9,6 +9,7 @@ interface PlateCardProps {
 
 export function PlateCard({ plate, discovery, onToggle }: PlateCardProps) {
   const isFound = Boolean(discovery);
+  const localityLabel = discovery?.locality ?? null;
   const coordinateLabel = discovery
     ? formatCoordinates(discovery.latitude, discovery.longitude)
     : null;
@@ -45,7 +46,9 @@ export function PlateCard({ plate, discovery, onToggle }: PlateCardProps) {
             <span className="plate-card__timestamp">
               {formatDiscoveryTime(discovery.foundAtIso)}
             </span>
-            {coordinateLabel ? (
+            {localityLabel ? (
+              <span className="plate-card__coordinates">{localityLabel}</span>
+            ) : coordinateLabel ? (
               <span className="plate-card__coordinates">{coordinateLabel}</span>
             ) : (
               <span className="plate-card__coordinates plate-card__coordinates--muted">

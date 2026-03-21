@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { PlateCard } from "./components/PlateCard";
 import { groupedPlates, plates } from "./data/plates";
 import { createDiscovery } from "./lib/geolocation";
+import { reverseGeocodeLocality } from "./lib/reverseGeocode";
 import { loadDiscoveries, saveDiscoveries } from "./lib/storage";
 import type { Plate, PlateCategory, PlateDiscoveryMap } from "./types";
 
@@ -40,6 +41,7 @@ function App() {
     "Professional Sports": null,
     Universities: null
   });
+  const resolvingLocalitiesRef = useRef<Set<string>>(new Set());
 
   useEffect(() => {
     saveDiscoveries(discoveries);
@@ -49,6 +51,53 @@ function App() {
     document.documentElement.dataset.theme = theme;
     window.localStorage.setItem(THEME_STORAGE_KEY, theme);
   }, [theme]);
+
+  useEffect(() => {
+    const pendingEntry = Object.entries(discoveries).find(
+      ([plateId, discovery]) =>
+        discovery.locality === null &&
+        discovery.latitude !== null &&
+        discovery.longitude !== null &&
+        !resolvingLocalitiesRef.current.has(plateId)
+    );
+
+    if (!pendingEntry) {
+      return;
+    }
+
+    const [plateId, discovery] = pendingEntry;
+    resolvingLocalitiesRef.current.add(plateId);
+
+    void reverseGeocodeLocality(discovery.latitude!, discovery.longitude!)
+      .then((locality) => {
+        if (!locality) {
+          return;
+        }
+
+        setDiscoveries((current) => {
+          const currentDiscovery = current[plateId];
+          if (
+            !currentDiscovery ||
+            currentDiscovery.locality !== null ||
+            currentDiscovery.latitude !== discovery.latitude ||
+            currentDiscovery.longitude !== discovery.longitude
+          ) {
+            return current;
+          }
+
+          return {
+            ...current,
+            [plateId]: {
+              ...currentDiscovery,
+              locality
+            }
+          };
+        });
+      })
+      .finally(() => {
+        resolvingLocalitiesRef.current.delete(plateId);
+      });
+  }, [discoveries]);
 
   const foundCount = useMemo(
     () => Object.keys(discoveries).length,
@@ -156,6 +205,23 @@ function App() {
       behavior: "smooth",
       block: "start"
     });
+  }
+
+  function handleClearDiscoveries() {
+    if (foundCount === 0) {
+      return;
+    }
+
+    const shouldClear = window.confirm(
+      "Clear all found plates? This will remove every saved timestamp and location."
+    );
+
+    if (!shouldClear) {
+      return;
+    }
+
+    setDiscoveries({});
+    setActivePlateId(null);
   }
 
   return (
@@ -298,6 +364,15 @@ function App() {
                 Not found
               </button>
             </div>
+            {foundCount > 0 ? (
+              <button
+                type="button"
+                className="clear-discoveries"
+                onClick={handleClearDiscoveries}
+              >
+                Clear found
+              </button>
+            ) : null}
           </div>
           <p className="control-panel__summary" aria-live="polite">
             Showing {visiblePlateCount} of {plates.length} plates

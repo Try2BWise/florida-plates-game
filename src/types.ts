@@ -16,6 +16,7 @@ export interface PlateDiscovery {
   foundAtIso: string;
   latitude: number | null;
   longitude: number | null;
+  locality: string | null;
 }
 
 export type PlateDiscoveryMap = Record<string, PlateDiscovery>;

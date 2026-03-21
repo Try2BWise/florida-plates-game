@@ -1,4 +1,5 @@
 import type { PlateDiscovery } from "../types";
+import { reverseGeocodeLocality } from "./reverseGeocode";
 
 function getCurrentPosition(): Promise<GeolocationPosition> {
   return new Promise((resolve, reject) => {
@@ -17,22 +18,29 @@ export async function createDiscovery(): Promise<PlateDiscovery> {
     return {
       foundAtIso,
       latitude: null,
-      longitude: null
+      longitude: null,
+      locality: null
     };
   }
 
   try {
     const position = await getCurrentPosition();
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    const locality = await reverseGeocodeLocality(latitude, longitude);
+
     return {
       foundAtIso,
-      latitude: position.coords.latitude,
-      longitude: position.coords.longitude
+      latitude,
+      longitude,
+      locality
     };
   } catch {
     return {
       foundAtIso,
       latitude: null,
-      longitude: null
+      longitude: null,
+      locality: null
     };
   }
 }

@@ -10,7 +10,19 @@ export function loadDiscoveries(): PlateDiscoveryMap {
     }
 
     const parsed = JSON.parse(rawValue) as PlateDiscoveryMap;
-    return parsed ?? {};
+    if (!parsed) {
+      return {};
+    }
+
+    return Object.fromEntries(
+      Object.entries(parsed).map(([plateId, discovery]) => [
+        plateId,
+        {
+          ...discovery,
+          locality: discovery.locality ?? null
+        }
+      ])
+    );
   } catch {
     return {};
   }
