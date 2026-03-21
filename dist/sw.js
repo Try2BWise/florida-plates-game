@@ -1,5 +1,5 @@
-const APP_CACHE = "florida-plates-app-v4";
-const RUNTIME_CACHE = "florida-plates-runtime-v4";
+const APP_CACHE = "florida-plates-app-v5";
+const RUNTIME_CACHE = "florida-plates-runtime-v5";
 const BASE_PATH = self.location.pathname.replace(/\/sw\.js$/, "");
 const APP_SHELL = [
   `${BASE_PATH}/`,
@@ -45,6 +45,12 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
+self.addEventListener("message", (event) => {
+  if (event.data?.type === "SKIP_WAITING") {
+    self.skipWaiting();
+  }
+});
+
 self.addEventListener("fetch", (event) => {
   const { request } = event;
   if (request.method !== "GET") {
@@ -57,6 +63,33 @@ self.addEventListener("fetch", (event) => {
   if (request.mode === "navigate") {
     event.respondWith(
       fetch(request).catch(() => caches.match(`${BASE_PATH}/`))
+    );
+    return;
+  }
+
+  const isAppShellAsset =
+    isSameOrigin &&
+    (
+      request.destination === "script" ||
+      request.destination === "style" ||
+      request.destination === "manifest" ||
+      requestUrl.pathname.startsWith(`${BASE_PATH}/assets/`) ||
+      requestUrl.pathname === `${BASE_PATH}/manifest.webmanifest`
+    );
+
+  if (isAppShellAsset) {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          if (!response.ok) {
+            return response;
+          }
+
+          const responseClone = response.clone();
+          void caches.open(RUNTIME_CACHE).then((cache) => cache.put(request, responseClone));
+          return response;
+        })
+        .catch(() => caches.match(request))
     );
     return;
   }
