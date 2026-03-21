@@ -1110,7 +1110,7 @@ function App() {
               ) : null}
               {activeExploreTab === "badges" ? (
                 <div className="utility-stack">
-                  <section className="utility-card">
+                  <section className="utility-card utility-card--about">
                     <h3>Merit badges</h3>
                     <p className="utility-card__metric">
                       {earnedBadges.length} of {evaluatedBadges.length} earned
