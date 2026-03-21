@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { PlateCard } from "./components/PlateCard";
 import { groupedPlates, plates } from "./data/plates";
+import { buildInfo } from "./generated/buildInfo";
 import { formatDiscoveryTime } from "./lib/format";
 import { createDiscovery } from "./lib/geolocation";
 import { reverseGeocodeLocality } from "./lib/reverseGeocode";
@@ -92,6 +93,17 @@ function App() {
     Universities: null
   });
   const resolvingLocalitiesRef = useRef<Set<string>>(new Set());
+  const buildDateLabel = useMemo(
+    () =>
+      new Intl.DateTimeFormat("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+        hour: "numeric",
+        minute: "2-digit"
+      }).format(new Date(buildInfo.builtAtIso)),
+    []
+  );
 
   useEffect(() => {
     saveDiscoveries(discoveries);
@@ -115,6 +127,26 @@ function App() {
       setSearchTerm("");
     }
   }, [uiPreferences.showSearch]);
+
+  useEffect(() => {
+    if (!isUtilityPanelOpen) {
+      return;
+    }
+
+    const previousBodyOverflow = document.body.style.overflow;
+    const previousDocumentOverflow = document.documentElement.style.overflow;
+    const previousBodyTouchAction = document.body.style.touchAction;
+
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.touchAction = "none";
+
+    return () => {
+      document.body.style.overflow = previousBodyOverflow;
+      document.documentElement.style.overflow = previousDocumentOverflow;
+      document.body.style.touchAction = previousBodyTouchAction;
+    };
+  }, [isUtilityPanelOpen]);
 
   useEffect(() => {
     function handleUpdateReady() {
@@ -779,6 +811,9 @@ function App() {
           Motor Vehicles and are displayed here for identification purposes
           under a fair use claim.
         </p>
+        <p className="app-footer__meta">
+          Version {buildInfo.version} • Built {buildDateLabel}
+        </p>
         <button
           type="button"
           className="app-footer__share"
@@ -1091,6 +1126,19 @@ function App() {
                     <p className="utility-card__meta">
                       Open the game in Safari, tap Share, then choose Add to Home Screen. Once it loads online at least once, it can keep working offline.
                     </p>
+                  </section>
+                  <section className="utility-card">
+                    <h3>Share and build info</h3>
+                    <p className="utility-card__meta">
+                      Version {buildInfo.version} • Built {buildDateLabel}
+                    </p>
+                    <button
+                      type="button"
+                      className="app-footer__share utility-card__action"
+                      onClick={handleShareApp}
+                    >
+                      Share FL Plates
+                    </button>
                   </section>
                 </div>
               ) : null}
