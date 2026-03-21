@@ -1,7 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { BadgeIcon } from "./components/BadgeIcon";
 import { PlateCard } from "./components/PlateCard";
 import { groupedPlates, plates } from "./data/plates";
 import { buildInfo } from "./generated/buildInfo";
+import { evaluateBadges, type BadgeGroup } from "./lib/badges";
 import { formatDiscoveryTime } from "./lib/format";
 import { createDiscovery } from "./lib/geolocation";
 import { reverseGeocodeLocality } from "./lib/reverseGeocode";
@@ -14,7 +16,8 @@ const UI_PREFERENCES_STORAGE_KEY = "florida-plates-ui-preferences";
 type ThemeMode = "light" | "dark";
 type PlateVisibilityFilter = "all" | "found" | "missing";
 type PlateArrangement = "category" | "az" | "za";
-type UtilityTab = "recent" | "stats" | "map" | "settings" | "help";
+type ExploreTab = "badges" | "stats" | "map";
+type UtilityTab = "settings" | "help" | "safe" | "about";
 
 interface UiPreferences {
   showSearch: boolean;
@@ -64,7 +67,9 @@ function App() {
     "",
     `Play it here: ${appShareUrl}`,
     "",
-    "On iPhone: open the link in Safari, tap Share, then choose Add to Home Screen to install it like an app."
+    "To install:",
+    "iPhone: open in Safari, tap Share, then Add to Home Screen.",
+    "Android: open in Chrome, then use Add to Home screen or Install app."
   ].join("\n");
   const [discoveries, setDiscoveries] = useState<PlateDiscoveryMap>(() =>
     loadDiscoveries()
@@ -81,8 +86,10 @@ function App() {
   const [arrangement, setArrangement] = useState<PlateArrangement>("category");
   const [shareStatus, setShareStatus] = useState<string | null>(null);
   const [isUpdateReady, setIsUpdateReady] = useState(false);
+  const [isExplorePanelOpen, setIsExplorePanelOpen] = useState(false);
   const [isUtilityPanelOpen, setIsUtilityPanelOpen] = useState(false);
-  const [activeUtilityTab, setActiveUtilityTab] = useState<UtilityTab>("recent");
+  const [activeExploreTab, setActiveExploreTab] = useState<ExploreTab>("badges");
+  const [activeUtilityTab, setActiveUtilityTab] = useState<UtilityTab>("settings");
   const [activeCategory, setActiveCategory] = useState<PlateCategory>(
     groupedPlates[0].category
   );
@@ -129,7 +136,7 @@ function App() {
   }, [uiPreferences.showSearch]);
 
   useEffect(() => {
-    if (!isUtilityPanelOpen) {
+    if (!isUtilityPanelOpen && !isExplorePanelOpen) {
       return;
     }
 
@@ -146,7 +153,7 @@ function App() {
       document.documentElement.style.overflow = previousDocumentOverflow;
       document.body.style.touchAction = previousBodyTouchAction;
     };
-  }, [isUtilityPanelOpen]);
+  }, [isExplorePanelOpen, isUtilityPanelOpen]);
 
   useEffect(() => {
     function handleUpdateReady() {
@@ -375,6 +382,54 @@ function App() {
     discoveryEntries.length > 0
       ? discoveryEntries[discoveryEntries.length - 1]
       : null;
+  const evaluatedBadges = useMemo(
+    () => evaluateBadges(plates, discoveries),
+    [discoveries]
+  );
+  const earnedBadges = useMemo(
+    () => evaluatedBadges.filter((badge) => badge.earned),
+    [evaluatedBadges]
+  );
+  const remainingBadges = useMemo(
+    () => evaluatedBadges.filter((badge) => !badge.earned),
+    [evaluatedBadges]
+  );
+  const badgeGroupLabels: Record<BadgeGroup, string> = {
+    progress: "Progress",
+    category: "Categories",
+    collection: "Collections",
+    college: "College Track",
+    locality: "Places"
+  };
+  const badgeGroupSymbols: Record<BadgeGroup, string> = {
+    progress: "star",
+    category: "grid",
+    collection: "rings",
+    college: "cap",
+    locality: "pin"
+  };
+  const earnedBadgeGroups = useMemo(
+    () =>
+      Object.entries(
+        earnedBadges.reduce<Record<string, typeof earnedBadges>>((groups, badge) => {
+          const key = badge.group;
+          groups[key] = [...(groups[key] ?? []), badge];
+          return groups;
+        }, {})
+      ) as Array<[BadgeGroup, typeof earnedBadges]>,
+    [earnedBadges]
+  );
+  const remainingBadgeGroups = useMemo(
+    () =>
+      Object.entries(
+        remainingBadges.reduce<Record<string, typeof remainingBadges>>((groups, badge) => {
+          const key = badge.group;
+          groups[key] = [...(groups[key] ?? []), badge];
+          return groups;
+        }, {})
+      ) as Array<[BadgeGroup, typeof remainingBadges]>,
+    [remainingBadges]
+  );
 
   useEffect(() => {
     if (arrangement !== "category") {
@@ -474,29 +529,47 @@ function App() {
     setActivePlateId(null);
   }
 
-  async function handleShareApp() {
+  async function handleShareText(title: string, text: string) {
     try {
       if (navigator.share) {
         await navigator.share({
-          title: "FL Plates",
-          text: shareMessage,
+          title,
+          text,
           url: appShareUrl
         });
         return;
       }
 
       if (navigator.clipboard?.writeText) {
-        await navigator.clipboard.writeText(shareMessage);
+        await navigator.clipboard.writeText(text);
         setShareStatus("Share text copied");
         window.setTimeout(() => setShareStatus(null), 2500);
         return;
       }
 
-      window.prompt("Copy and share this message:", shareMessage);
+      window.prompt("Copy and share this message:", text);
     } catch {
       setShareStatus("Share canceled");
       window.setTimeout(() => setShareStatus(null), 2000);
     }
+  }
+
+  async function handleShareApp() {
+    await handleShareText("FL Plates", shareMessage);
+  }
+
+  async function handleShareBadge(badgeName: string) {
+    const badgeShareMessage = [
+      `I just earned ${badgeName} on FL Plates!`,
+      "",
+      `Play it here: ${appShareUrl}`,
+      "",
+      "To install:",
+      "iPhone: open in Safari, tap Share, then Add to Home Screen.",
+      "Android: open in Chrome, then use Add to Home screen or Install app."
+    ].join("\n");
+
+    await handleShareText(`FL Plates - ${badgeName}`, badgeShareMessage);
   }
 
   function handleApplyUpdate() {
@@ -532,8 +605,26 @@ function App() {
               <span className="app-header__meter-value">
                 {foundCount}/{plates.length}
               </span>
-              <span className="app-header__meter-label">found</span>
+              <span className="app-header__meter-label">plates</span>
             </div>
+            <button
+              type="button"
+              className="app-header__meter app-header__meter--compact app-header__badge-meter"
+              aria-live="polite"
+              onClick={() => {
+                setActiveExploreTab("badges");
+                setIsUtilityPanelOpen(false);
+                setIsExplorePanelOpen(true);
+              }}
+              aria-label="Open merit badges"
+            >
+              <span className="app-header__meter-value app-header__badge-meter-value">
+                {earnedBadges.length}/{evaluatedBadges.length}
+              </span>
+              <span className="app-header__meter-label app-header__badge-meter-label">
+                badges
+              </span>
+            </button>
           </div>
         </div>
         <div className="control-panel">
@@ -753,8 +844,13 @@ function App() {
       <nav className="bottom-dock" aria-label="Primary app navigation">
         <button
           type="button"
-          className={`bottom-dock__item ${!isUtilityPanelOpen ? "bottom-dock__item--active" : ""}`}
-          onClick={() => setIsUtilityPanelOpen(false)}
+          className={`bottom-dock__item ${
+            !isUtilityPanelOpen && !isExplorePanelOpen ? "bottom-dock__item--active" : ""
+          }`}
+          onClick={() => {
+            setIsUtilityPanelOpen(false);
+            setIsExplorePanelOpen(false);
+          }}
           aria-label="Home"
         >
           <span className="bottom-dock__icon bottom-dock__icon--home" aria-hidden="true" />
@@ -762,13 +858,12 @@ function App() {
         <button
           type="button"
           className={`bottom-dock__item ${
-            isUtilityPanelOpen && activeUtilityTab !== "settings" && activeUtilityTab !== "help"
-              ? "bottom-dock__item--active"
-              : ""
+            isExplorePanelOpen ? "bottom-dock__item--active" : ""
           }`}
           onClick={() => {
-            setActiveUtilityTab("recent");
-            setIsUtilityPanelOpen(true);
+            setIsUtilityPanelOpen(false);
+            setActiveExploreTab("badges");
+            setIsExplorePanelOpen(true);
           }}
           aria-label="Explore"
         >
@@ -782,6 +877,7 @@ function App() {
               : ""
           }`}
           onClick={() => {
+            setIsExplorePanelOpen(false);
             setActiveUtilityTab("help");
             setIsUtilityPanelOpen(true);
           }}
@@ -799,6 +895,7 @@ function App() {
               : ""
           }`}
           onClick={() => {
+            setIsExplorePanelOpen(false);
             setActiveUtilityTab("settings");
             setIsUtilityPanelOpen(true);
           }}
@@ -808,145 +905,105 @@ function App() {
         </button>
       </nav>
 
-      <footer className="app-footer">
-        <p className="app-footer__credit">
-          Developed by{" "}
-          <a
-            className="app-footer__link"
-            href="https://gorillagrin.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Gorilla Grin
-          </a>
-          .
-        </p>
-        <p className="app-footer__disclaimer">
-          Specialty plate images are not the intellectual property of Gorilla
-          Grin. They belong to the Florida Department of Highway Safety and
-          Motor Vehicles and are displayed here for identification purposes
-          under a fair use claim.
-        </p>
-        <p className="app-footer__meta">
-          Version {buildInfo.version} • Built {buildDateLabel}
-        </p>
-        <button
-          type="button"
-          className="app-footer__share"
-          onClick={handleShareApp}
-        >
-          Share FL Plates
-        </button>
-      </footer>
-
-      {isUtilityPanelOpen ? (
+      {isExplorePanelOpen ? (
         <div
           className="utility-panel-backdrop"
           role="presentation"
-          onClick={() => setIsUtilityPanelOpen(false)}
+          onClick={() => setIsExplorePanelOpen(false)}
         >
           <section
             className="utility-panel"
             role="dialog"
             aria-modal="true"
-            aria-label="Explore FL Plates"
+            aria-label="FL Plates explore panel"
             onClick={(event) => event.stopPropagation()}
           >
             <div className="utility-panel__header">
               <div>
-                <p className="utility-panel__eyebrow">
-                  {activeUtilityTab === "settings"
-                    ? "Settings"
-                    : activeUtilityTab === "help"
-                      ? "Help"
-                      : "Explore"}
-                </p>
-                <h2 className="utility-panel__title">FL Plates utility panel</h2>
+                <p className="utility-panel__eyebrow">Explore</p>
+                <h2 className="utility-panel__title">FL Plates explore panel</h2>
               </div>
               <button
                 type="button"
                 className="utility-panel__close"
-                onClick={() => setIsUtilityPanelOpen(false)}
+                onClick={() => setIsExplorePanelOpen(false)}
                 aria-label="Close explore panel"
               >
                 Close
               </button>
             </div>
             <div className="utility-panel__tabs" role="tablist" aria-label="Explore views">
-              {(["recent", "stats", "map", "settings", "help"] as UtilityTab[]).map((tab) => (
+              {(["badges", "stats", "map"] as ExploreTab[]).map((tab) => (
                 <button
                   key={tab}
                   type="button"
                   className={`view-toggle__chip ${
-                    activeUtilityTab === tab ? "view-toggle__chip--active" : ""
+                    activeExploreTab === tab ? "view-toggle__chip--active" : ""
                   }`}
                   role="tab"
-                  aria-selected={activeUtilityTab === tab}
-                  onClick={() => setActiveUtilityTab(tab)}
+                  aria-selected={activeExploreTab === tab}
+                  onClick={() => setActiveExploreTab(tab)}
                 >
-                  {tab === "recent"
-                    ? "Recent"
-                    : tab === "stats"
-                      ? "Stats"
-                    : tab === "map"
-                        ? "Map"
-                        : tab === "settings"
-                          ? "Settings"
-                          : "Help"}
+                  {tab === "badges" ? "Badges" : tab === "stats" ? "Stats" : "Map"}
                 </button>
               ))}
             </div>
             <div className="utility-panel__content">
-              {activeUtilityTab === "recent" ? (
-                discoveryEntries.length > 0 ? (
-                  <div className="utility-list">
-                    {discoveryEntries.slice(0, 20).map(({ plate, discovery }) => (
-                      <article className="utility-card" key={plate.id}>
-                        <div className="utility-card__header">
-                          <h3>{plate.name}</h3>
-                          <span>{plate.category}</span>
-                        </div>
-                        <p className="utility-card__meta">
-                          {formatDiscoveryTime(discovery.foundAtIso)}
-                        </p>
-                        <p className="utility-card__meta">
-                          {discovery.locality ?? "Location unavailable"}
-                        </p>
-                      </article>
-                    ))}
-                  </div>
-                ) : (
-                  <section className="empty-state">
-                    <h2>No sightings yet</h2>
-                    <p>Mark a plate as found to start building your recent sightings list.</p>
+              {activeExploreTab === "stats" ? (
+                <div className="utility-stack stats-dashboard">
+                  <section className="stats-kpi-grid">
+                    <article className="utility-card utility-card--stat">
+                      <h3>Plates found</h3>
+                      <p className="utility-card__metric">{foundCount}</p>
+                      <p className="utility-card__meta">of {plates.length} total</p>
+                    </article>
+                    <article className="utility-card utility-card--stat">
+                      <h3>Completion</h3>
+                      <p className="utility-card__metric">
+                        {Math.round((foundCount / plates.length) * 100)}%
+                      </p>
+                      <p className="utility-card__meta">overall progress</p>
+                    </article>
+                    <article className="utility-card utility-card--stat">
+                      <h3>Badges earned</h3>
+                      <p className="utility-card__metric">{earnedBadges.length}</p>
+                      <p className="utility-card__meta">of {evaluatedBadges.length}</p>
+                    </article>
+                    <article className="utility-card utility-card--stat">
+                      <h3>Localities</h3>
+                      <p className="utility-card__metric">
+                        {new Set(
+                          Object.values(discoveries)
+                            .map((discovery) => discovery.locality)
+                            .filter((locality): locality is string => Boolean(locality))
+                        ).size}
+                      </p>
+                      <p className="utility-card__meta">distinct named places</p>
+                    </article>
                   </section>
-                )
-              ) : null}
-              {activeUtilityTab === "stats" ? (
-                <div className="utility-stack">
-                  <section className="utility-card utility-card--stat">
-                    <h3>Progress</h3>
-                    <p className="utility-card__metric">
-                      {foundCount} of {plates.length} plates found
-                    </p>
-                    <p className="utility-card__meta">
-                      {Math.round((foundCount / plates.length) * 100)}% complete
-                    </p>
+                  <section className="utility-card stats-card stats-card--span-2">
+                    <h3>Category progress</h3>
+                    <div className="utility-list">
+                      {categoryStats.map((stat) => (
+                        <article className="utility-card utility-card--stat-row" key={stat.category}>
+                          <div className="utility-card__header">
+                            <h3>{stat.category}</h3>
+                            <span>{stat.percent}%</span>
+                          </div>
+                          <div className="stats-bar">
+                            <span
+                              className="stats-bar__fill"
+                              style={{ width: `${stat.percent}%` }}
+                            />
+                          </div>
+                          <p className="utility-card__meta">
+                            {stat.found} of {stat.total} found
+                          </p>
+                        </article>
+                      ))}
+                    </div>
                   </section>
-                  <section className="utility-list">
-                    {categoryStats.map((stat) => (
-                      <article className="utility-card" key={stat.category}>
-                        <div className="utility-card__header">
-                          <h3>{stat.category}</h3>
-                          <span>{stat.percent}%</span>
-                        </div>
-                        <p className="utility-card__meta">
-                          {stat.found} of {stat.total} found
-                        </p>
-                      </article>
-                    ))}
-                  </section>
-                  <section className="utility-grid">
+                  <section className="utility-grid stats-grid">
                     <article className="utility-card">
                       <h3>First sighting</h3>
                       <p className="utility-card__meta">
@@ -968,7 +1025,7 @@ function App() {
                       </p>
                     </article>
                   </section>
-                  <section className="utility-card">
+                  <section className="utility-card stats-card stats-card--span-2">
                     <h3>Top localities</h3>
                     {topLocalities.length > 0 ? (
                       <div className="utility-list utility-list--compact">
@@ -987,7 +1044,7 @@ function App() {
                   </section>
                 </div>
               ) : null}
-              {activeUtilityTab === "map" ? (
+              {activeExploreTab === "map" ? (
                 mapPins.length > 0 ? (
                   <div className="utility-stack">
                     <section className="map-card">
@@ -1051,6 +1108,197 @@ function App() {
                   </section>
                 )
               ) : null}
+              {activeExploreTab === "badges" ? (
+                <div className="utility-stack">
+                  <section className="utility-card">
+                    <h3>Merit badges</h3>
+                    <p className="utility-card__metric">
+                      {earnedBadges.length} of {evaluatedBadges.length} earned
+                    </p>
+                    <p className="utility-card__meta">
+                      Badges in v1.1 reflect your current saved state.
+                    </p>
+                  </section>
+                  <section className="utility-card">
+                    <h3>Earned</h3>
+                    {earnedBadges.length > 0 ? (
+                      <div className="utility-stack">
+                        {earnedBadgeGroups.map(([group, badges]) => (
+                          <section className="badge-group" key={`earned-${group}`}>
+                            <div className="badge-group__header">
+                              <h4>
+                                <span
+                                  className={`badge-group__icon badge-group__icon--${badgeGroupSymbols[group]} badge-group__icon--${group}`}
+                                  aria-hidden="true"
+                                />
+                                {badgeGroupLabels[group]}
+                              </h4>
+                              <span>{badges.length}</span>
+                            </div>
+                            <div className="utility-list">
+                              {badges.map((badge) => (
+                                <article
+                                  className={`utility-card utility-card--badge utility-card--badge-${badge.group}`}
+                                  key={badge.id}
+                                >
+                                  <div className="badge-card__icon-shell">
+                                    <BadgeIcon badge={badge} />
+                                  </div>
+                                  <div className="badge-card__body">
+                                    <div className="utility-card__header badge-card__header">
+                                      <h3>{badge.name}</h3>
+                                      <span>Earned</span>
+                                    </div>
+                                    <div className="badge-card__meta-row">
+                                      <div className={`badge-chip badge-chip--${badge.group}`}>
+                                        <span
+                                          className={`badge-chip__icon badge-group__icon badge-group__icon--${badgeGroupSymbols[badge.group]} badge-group__icon--${badge.group}`}
+                                          aria-hidden="true"
+                                        />
+                                        <span>{badgeGroupLabels[badge.group]}</span>
+                                      </div>
+                                      {badge.progressCurrent !== undefined &&
+                                      badge.progressTarget !== undefined ? (
+                                        <span className="badge-progress-pill">
+                                          {badge.progressCurrent} / {badge.progressTarget}
+                                        </span>
+                                      ) : null}
+                                    </div>
+                                    <p className="utility-card__meta badge-card__description">
+                                      {badge.description}
+                                    </p>
+                                    <button
+                                      type="button"
+                                      className="app-footer__share utility-card__action badge-card__share"
+                                      onClick={() => handleShareBadge(badge.name)}
+                                    >
+                                      Share
+                                    </button>
+                                  </div>
+                                </article>
+                              ))}
+                            </div>
+                          </section>
+                        ))}
+                      </div>
+                    ) : (
+                      <p className="utility-card__meta">
+                        Earn your first plate to unlock your first merit badge.
+                      </p>
+                    )}
+                  </section>
+                  <section className="utility-card">
+                    <h3>Not yet earned</h3>
+                    <div className="utility-stack">
+                      {remainingBadgeGroups.map(([group, badges]) => (
+                        <section className="badge-group" key={`remaining-${group}`}>
+                          <div className="badge-group__header">
+                            <h4>
+                              <span
+                                className={`badge-group__icon badge-group__icon--${badgeGroupSymbols[group]} badge-group__icon--${group}`}
+                                aria-hidden="true"
+                              />
+                              {badgeGroupLabels[group]}
+                            </h4>
+                            <span>{badges.length}</span>
+                          </div>
+                          <div className="utility-list">
+                            {badges.map((badge) => (
+                              <article
+                                className={`utility-card utility-card--badge utility-card--badge-muted utility-card--badge-${badge.group}`}
+                                key={badge.id}
+                              >
+                                <div className="badge-card__icon-shell">
+                                  <BadgeIcon badge={badge} />
+                                </div>
+                                <div className="badge-card__body">
+                                  <div className="utility-card__header badge-card__header">
+                                    <h3>{badge.name}</h3>
+                                    <span>Not yet</span>
+                                  </div>
+                                  <div className="badge-card__meta-row">
+                                    <div className={`badge-chip badge-chip--${badge.group}`}>
+                                      <span
+                                        className={`badge-chip__icon badge-group__icon badge-group__icon--${badgeGroupSymbols[badge.group]} badge-group__icon--${badge.group}`}
+                                        aria-hidden="true"
+                                      />
+                                      <span>{badgeGroupLabels[badge.group]}</span>
+                                    </div>
+                                    {badge.progressCurrent !== undefined &&
+                                    badge.progressTarget !== undefined ? (
+                                      <span className="badge-progress-pill">
+                                        {badge.progressCurrent} / {badge.progressTarget}
+                                      </span>
+                                    ) : null}
+                                  </div>
+                                  <p className="utility-card__meta badge-card__description">
+                                    {badge.description}
+                                  </p>
+                                </div>
+                              </article>
+                            ))}
+                          </div>
+                        </section>
+                      ))}
+                    </div>
+                  </section>
+                </div>
+              ) : null}
+            </div>
+          </section>
+        </div>
+      ) : null}
+
+      {isUtilityPanelOpen ? (
+        <div
+          className="utility-panel-backdrop"
+          role="presentation"
+          onClick={() => setIsUtilityPanelOpen(false)}
+        >
+          <section
+            className="utility-panel"
+            role="dialog"
+            aria-modal="true"
+            aria-label="FL Plates utility panel"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="utility-panel__header">
+              <div>
+                <p className="utility-panel__eyebrow">Utility</p>
+                <h2 className="utility-panel__title">FL Plates utility panel</h2>
+              </div>
+              <button
+                type="button"
+                className="utility-panel__close"
+                onClick={() => setIsUtilityPanelOpen(false)}
+                aria-label="Close utility panel"
+              >
+                Close
+              </button>
+            </div>
+            <div className="utility-panel__tabs" role="tablist" aria-label="Utility views">
+              {(["settings", "help", "safe", "about"] as UtilityTab[]).map((tab) => (
+                <button
+                  key={tab}
+                  type="button"
+                  className={`view-toggle__chip ${
+                    activeUtilityTab === tab ? "view-toggle__chip--active" : ""
+                  }`}
+                  role="tab"
+                  aria-selected={activeUtilityTab === tab}
+                  onClick={() => setActiveUtilityTab(tab)}
+                >
+                  {tab === "settings"
+                    ? "Settings"
+                    : tab === "help"
+                      ? "Help"
+                      : tab === "safe"
+                        ? "Safe Use"
+                        : "About"}
+                </button>
+              ))}
+            </div>
+            <div className="utility-panel__content">
               {activeUtilityTab === "settings" ? (
                 <div className="utility-stack">
                   <section className="utility-card">
@@ -1127,7 +1375,7 @@ function App() {
                     <h3>Useful tools</h3>
                     <div className="utility-list utility-list--compact">
                       <p className="utility-card__meta">
-                        <strong>Explore</strong> shows recent sightings, stats, and map pins.
+                        <strong>Explore</strong> opens badges, a stats dashboard, and your map view.
                       </p>
                       <p className="utility-card__meta">
                         <strong>Settings</strong> lets you hide optional controls and switch color mode.
@@ -1138,23 +1386,106 @@ function App() {
                     </div>
                   </section>
                   <section className="utility-card">
-                    <h3>Install on iPhone</h3>
+                    <h3>Install the app</h3>
                     <p className="utility-card__meta">
-                      Open the game in Safari, tap Share, then choose Add to Home Screen. Once it loads online at least once, it can keep working offline.
+                      iPhone: open the game in Safari, tap Share, then choose Add to Home Screen.
+                    </p>
+                    <p className="utility-card__meta">
+                      Android: open the game in Chrome, then use Add to Home screen or Install app.
+                    </p>
+                    <p className="utility-card__meta">
+                      Once it loads online at least once, it can keep working offline.
                     </p>
                   </section>
+                </div>
+              ) : null}
+              {activeUtilityTab === "safe" ? (
+                <div className="utility-stack">
+                  <section className="utility-card utility-card--warning">
+                    <h3>
+                      <span className="warning-heading__icon" aria-hidden="true">
+                        !
+                      </span>
+                      <span>Safe use</span>
+                    </h3>
+                    <div className="utility-list utility-list--compact">
+                      <p className="utility-card__meta">
+                        For your safety and the safety of others, never use this app while driving.
+                      </p>
+                      <p className="utility-card__meta">
+                        Always comply with all applicable traffic laws, including hands-free and
+                        distracted-driving regulations in your area.
+                      </p>
+                      <p className="utility-card__meta">
+                        Use this app only when your vehicle is parked in a safe location or when
+                        operated by a passenger.
+                      </p>
+                      <p className="utility-card__meta">
+                        By using this app, you agree that you are solely responsible for how and
+                        when it is used.
+                      </p>
+                    </div>
+                  </section>
+                </div>
+              ) : null}
+              {activeUtilityTab === "about" ? (
+                <div className="utility-stack">
                   <section className="utility-card">
-                    <h3>Share and build info</h3>
-                    <p className="utility-card__meta">
-                      Version {buildInfo.version} • Built {buildDateLabel}
-                    </p>
-                    <button
-                      type="button"
-                      className="app-footer__share utility-card__action"
-                      onClick={handleShareApp}
-                    >
-                      Share FL Plates
-                    </button>
+                    <h3>About</h3>
+                    <div className="about-card">
+                      <div className="about-card__brand">
+                        <a
+                          className="about-card__logo-link"
+                          href="https://gorillagrin.com"
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label="Visit Gorilla Grin"
+                        >
+                          <img
+                            className="about-card__logo"
+                            src={`${import.meta.env.BASE_URL}gorilla-grin-horizontal.png`}
+                            alt="Gorilla Grin"
+                          />
+                        </a>
+                        <button
+                          type="button"
+                          className="app-footer__share utility-card__action about-card__share"
+                          onClick={handleShareApp}
+                        >
+                          Share FL Plates
+                        </button>
+                      </div>
+                      <div className="about-card__body">
+                        <p className="utility-card__meta">
+                          Developed by{" "}
+                          <a
+                            className="app-footer__link"
+                            href="https://gorillagrin.com"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Gorilla Grin
+                          </a>
+                          .
+                        </p>
+                        <p className="utility-card__meta">
+                          Specialty plate images are not the intellectual property of Gorilla
+                          Grin. They belong to the Florida Department of Highway Safety and Motor
+                          Vehicles and are displayed here for identification, educational, and
+                          entertainment purposes under a fair use claim.
+                        </p>
+                        <p className="utility-card__meta">
+                          Version {buildInfo.version} • Built {buildDateLabel}
+                        </p>
+                        {buildInfo.branch || buildInfo.commit ? (
+                          <p className="utility-card__meta">
+                            {buildInfo.branch ? `Branch ${buildInfo.branch}` : null}
+                            {buildInfo.branch && buildInfo.commit ? " • " : null}
+                            {buildInfo.commit ? `Commit ${buildInfo.commit}` : null}
+                          </p>
+                        ) : null}
+                      </div>
+                    </div>
                   </section>
                 </div>
               ) : null}
