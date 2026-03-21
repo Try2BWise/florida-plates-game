@@ -534,44 +534,6 @@ function App() {
               </span>
               <span className="app-header__meter-label">found</span>
             </div>
-            <div className="app-header__shortcuts">
-              <button
-                type="button"
-                className="header-shortcut header-shortcut--explore"
-                onClick={() => {
-                  setActiveUtilityTab("recent");
-                  setIsUtilityPanelOpen(true);
-                }}
-                aria-label="Open Explore"
-              >
-                <span className="header-shortcut__globe" aria-hidden="true" />
-                <span className="header-shortcut__label">Explore</span>
-              </button>
-              <button
-                type="button"
-                className="header-shortcut header-shortcut--settings"
-                onClick={() => {
-                  setActiveUtilityTab("settings");
-                  setIsUtilityPanelOpen(true);
-                }}
-                aria-label="Open Settings"
-              >
-                <span className="header-shortcut__gear" aria-hidden="true" />
-              </button>
-              <button
-                type="button"
-                className="header-shortcut header-shortcut--help"
-                onClick={() => {
-                  setActiveUtilityTab("help");
-                  setIsUtilityPanelOpen(true);
-                }}
-                aria-label="Open Help"
-              >
-                <span className="header-shortcut__question" aria-hidden="true">
-                  ?
-                </span>
-              </button>
-            </div>
           </div>
         </div>
         <div className="control-panel">
@@ -791,6 +753,64 @@ function App() {
           </section>
         )}
       </main>
+
+      <nav className="bottom-dock" aria-label="Primary app navigation">
+        <button
+          type="button"
+          className={`bottom-dock__item ${!isUtilityPanelOpen ? "bottom-dock__item--active" : ""}`}
+          onClick={() => setIsUtilityPanelOpen(false)}
+          aria-label="Home"
+        >
+          <span className="bottom-dock__icon bottom-dock__icon--home" aria-hidden="true" />
+        </button>
+        <button
+          type="button"
+          className={`bottom-dock__item ${
+            isUtilityPanelOpen && activeUtilityTab !== "settings" && activeUtilityTab !== "help"
+              ? "bottom-dock__item--active"
+              : ""
+          }`}
+          onClick={() => {
+            setActiveUtilityTab("recent");
+            setIsUtilityPanelOpen(true);
+          }}
+          aria-label="Explore"
+        >
+          <span className="bottom-dock__icon bottom-dock__icon--globe" aria-hidden="true" />
+        </button>
+        <button
+          type="button"
+          className={`bottom-dock__item ${
+            isUtilityPanelOpen && activeUtilityTab === "help"
+              ? "bottom-dock__item--active"
+              : ""
+          }`}
+          onClick={() => {
+            setActiveUtilityTab("help");
+            setIsUtilityPanelOpen(true);
+          }}
+          aria-label="Help"
+        >
+          <span className="bottom-dock__icon bottom-dock__icon--help" aria-hidden="true">
+            ?
+          </span>
+        </button>
+        <button
+          type="button"
+          className={`bottom-dock__item ${
+            isUtilityPanelOpen && activeUtilityTab === "settings"
+              ? "bottom-dock__item--active"
+              : ""
+          }`}
+          onClick={() => {
+            setActiveUtilityTab("settings");
+            setIsUtilityPanelOpen(true);
+          }}
+          aria-label="Settings"
+        >
+          <span className="bottom-dock__icon bottom-dock__icon--gear" aria-hidden="true" />
+        </button>
+      </nav>
 
       <footer className="app-footer">
         <p className="app-footer__credit">
