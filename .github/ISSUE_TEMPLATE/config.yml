@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: FL Plates roadmap
+    url: https://github.com/Try2BWise/florida-plates-game/blob/master/ROADMAP.md
+    about: Review the roadmap before opening large future-facing feature requests.
