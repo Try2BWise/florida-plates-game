@@ -88,6 +88,7 @@ function App() {
   const [isUpdateReady, setIsUpdateReady] = useState(false);
   const [isExplorePanelOpen, setIsExplorePanelOpen] = useState(false);
   const [isUtilityPanelOpen, setIsUtilityPanelOpen] = useState(false);
+  const [previewPlate, setPreviewPlate] = useState<Plate | null>(null);
   const [activeExploreTab, setActiveExploreTab] = useState<ExploreTab>("badges");
   const [activeUtilityTab, setActiveUtilityTab] = useState<UtilityTab>("settings");
   const [activeCategory, setActiveCategory] = useState<PlateCategory>(
@@ -136,7 +137,7 @@ function App() {
   }, [uiPreferences.showSearch]);
 
   useEffect(() => {
-    if (!isUtilityPanelOpen && !isExplorePanelOpen) {
+    if (!isUtilityPanelOpen && !isExplorePanelOpen && !previewPlate) {
       return;
     }
 
@@ -153,7 +154,7 @@ function App() {
       document.documentElement.style.overflow = previousDocumentOverflow;
       document.body.style.touchAction = previousBodyTouchAction;
     };
-  }, [isExplorePanelOpen, isUtilityPanelOpen]);
+  }, [isExplorePanelOpen, isUtilityPanelOpen, previewPlate]);
 
   useEffect(() => {
     function handleUpdateReady() {
@@ -826,6 +827,7 @@ function App() {
                     plate={plate}
                     discovery={discoveries[plate.id]}
                     onToggle={handleTogglePlate}
+                    onPreview={setPreviewPlate}
                   />
                 ))}
               </div>
@@ -904,6 +906,49 @@ function App() {
           <span className="bottom-dock__icon bottom-dock__icon--gear" aria-hidden="true" />
         </button>
       </nav>
+
+      {previewPlate ? (
+        <div
+          className="plate-preview-backdrop"
+          role="presentation"
+          onClick={() => setPreviewPlate(null)}
+        >
+          <div
+            className="plate-preview"
+            role="dialog"
+            aria-modal="true"
+            aria-label={`${previewPlate.name} plate preview`}
+            onClick={() => setPreviewPlate(null)}
+          >
+            <img
+              className="plate-preview__image"
+              src={`${import.meta.env.BASE_URL}plates/${previewPlate.imageKey}.png`}
+              alt={previewPlate.name}
+              onError={(event) => {
+                const target = event.currentTarget;
+                if (!target.dataset.fallbackApplied) {
+                  target.dataset.fallbackApplied = "true";
+                  target.src = `${import.meta.env.BASE_URL}plates/${previewPlate.imageKey}.jpg`;
+                }
+              }}
+            />
+            <p className="plate-preview__caption">{previewPlate.name}</p>
+            {!discoveries[previewPlate.id] ? (
+              <button
+                type="button"
+                className="plate-preview__action"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  handleTogglePlate(previewPlate, false);
+                  setPreviewPlate(null);
+                }}
+              >
+                Found
+              </button>
+            ) : null}
+          </div>
+        </div>
+      ) : null}
 
       {isExplorePanelOpen ? (
         <div
