@@ -5,8 +5,12 @@ Installable offline-friendly tracker for Florida specialty plates.
 ## What It Does
 
 - Track found plates with timestamp, GPS coordinates, and best-effort locality name.
+- Browse an expanded `v1.3` catalog with current and legacy plate designs.
+- Open a plate image to view a larger preview and switch between available versions.
+- Read beneficiary and plate details directly in the enlarged plate modal.
 - Filter by `All`, `Found`, or `Not found`.
 - Arrange plates by `Categories`, `A-Z`, or `Z-A`.
+- Use a more granular category model instead of the old large miscellaneous bucket.
 - Open `Explore` for recent sightings, stats, and a dynamic pushpin map.
 - Open `Settings` to switch color mode and hide or show optional main-screen controls.
 - Open `Help` for a quick how-to-play sheet.
@@ -29,6 +33,12 @@ npm run build
 ```
 
 The build step also regenerates the PWA icons and plate asset manifest used by the service worker.
+
+To regenerate the normalized `v1.3` plate catalog from the staged source inputs:
+
+```powershell
+npm run generate:v13-catalog
+```
 
 ## GitHub Pages Deployment
 
@@ -84,3 +94,8 @@ For the current repo name, the site URL is:
 - Offline use works after the app shell and plate assets have been loaded successfully once.
 - If a home-screen install ever appears stuck on an older version, open the site in the browser first so the latest service worker can update.
 - Specialty plate images are not the intellectual property of Gorilla Grin. They belong to the Florida Department of Highway Safety and Motor Vehicles and are displayed here for identification purposes under a fair use claim.
+
+## Project Docs
+
+- Release process: [C:\Users\bwise\Documents\florida-plates-game\RELEASING.md](C:\Users\bwise\Documents\florida-plates-game\RELEASING.md)
+- Version roadmap: [C:\Users\bwise\Documents\florida-plates-game\ROADMAP.md](C:\Users\bwise\Documents\florida-plates-game\ROADMAP.md)

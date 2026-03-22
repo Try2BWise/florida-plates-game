@@ -1,0 +1,303 @@
+export const APP_CATEGORIES = [
+  "Universities",
+  "Professional Sports",
+  "Nature & Wildlife",
+  "Military & Veterans",
+  "Public Safety",
+  "Health & Family",
+  "Civic & Causes",
+  "Education & Culture",
+  "Recreation & Tourism"
+];
+
+export const LEGACY_CATEGORY_MAP = {
+  Environmental: "Nature & Wildlife",
+  "Professional Sports": "Professional Sports",
+  Universities: "Universities"
+};
+
+export const ZIP_CATEGORY_MAP = {
+  Environmental: "Nature & Wildlife",
+  Universities: "Universities",
+  Military: "Military & Veterans"
+};
+
+export const CHARITY_CATEGORY_RULES = [
+  { match: /^Collegiate$/i, appCategory: "Universities" },
+  { match: /^Sports$/i, appCategory: "Professional Sports" },
+  { match: /^Environment\b/i, appCategory: "Nature & Wildlife" },
+  { match: /^(Military|Patriotic \/ veterans)/i, appCategory: "Military & Veterans" },
+  { match: /^Public safety\b/i, appCategory: "Public Safety" },
+  { match: /^(Health|Family|Child|Housing|Hunger relief)/i, appCategory: "Health & Family" },
+  { match: /^(Arts|Culture|Historic preservation|Education|Community)/i, appCategory: "Education & Culture" },
+  { match: /^(Sports \/|Equine \/ tourism|Tourism \/)/i, appCategory: "Recreation & Tourism" },
+  { match: /^(Civic|Social cause|Patriotic \/ humanitarian|Patriotic \/ youth \/ service|Youth mentoring|Divine Nine)/i, appCategory: "Civic & Causes" }
+];
+
+export const CATEGORY_OVERRIDES = {
+  "American Red Cross": "Civic & Causes",
+  "Boy Scouts of America": "Civic & Causes",
+  "Choose Life": "Health & Family",
+  "Challenger/Columbia": "Education & Culture",
+  "Discover Florida's Horses": "Recreation & Tourism",
+  "Donate Organs": "Health & Family",
+  "End Breast Cancer": "Health & Family",
+  "Family First": "Health & Family",
+  "Family Values": "Health & Family",
+  "Florida Arts": "Education & Culture",
+  "Florida Educational": "Education & Culture",
+  "Florida Golf Capital of the World": "Recreation & Tourism",
+  "Florida Salutes Veterans": "Military & Veterans",
+  "Florida Sheriff's Youth Ranch": "Health & Family",
+  "Florida Special Olympic": "Recreation & Tourism",
+  "Fraternal Order of Police": "Public Safety",
+  "Freemasonry": "Civic & Causes",
+  "Hispanic Achievers": "Education & Culture",
+  "Horse Country": "Recreation & Tourism",
+  "Hospice: Every Day Is A Gift": "Health & Family",
+  "Imagine": "Education & Culture",
+  "In God We Trust": "Civic & Causes",
+  "Invest in Children": "Health & Family",
+  "Keep Kids Drug Free": "Health & Family",
+  "Kids Deserve Justice": "Health & Family",
+  "Live the Dream": "Education & Culture",
+  "Motocycle Specialty": "Recreation & Tourism",
+  "NASCAR": "Recreation & Tourism",
+  "Parents Make A Difference": "Health & Family",
+  "Play Tennis": "Recreation & Tourism",
+  "Police Athletic League": "Public Safety",
+  "Police Benevolent Association": "Public Safety",
+  "Salutes Firefighters": "Public Safety",
+  "Share the Road": "Recreation & Tourism",
+  "Stop Child Abuse": "Health & Family",
+  "Stop Heart Disease": "Health & Family",
+  "Support Autism Programs": "Health & Family",
+  "Support Homeownership For All": "Health & Family",
+  "Support Our Troops": "Military & Veterans",
+  "Support Soccer": "Recreation & Tourism",
+  "U.S. Air Force": "Military & Veterans",
+  "U.S. Army": "Military & Veterans",
+  "U.S. Coast Guard": "Military & Veterans",
+  "U.S. Marine Corps": "Military & Veterans",
+  "U.S. Navy": "Military & Veterans",
+  "U.S. Olympic": "Recreation & Tourism",
+  "U.S. Paratroopers": "Military & Veterans",
+  "United We Stand": "Civic & Causes",
+  "Visit Our Lights": "Recreation & Tourism",
+  "Florida Panthers (Hockey)": "Professional Sports",
+  "Jacksonville Jaguars (Football)": "Professional Sports",
+  "Miami Dolphins (Football)": "Professional Sports",
+  "Miami Heat (Basketball)": "Professional Sports",
+  "Miami Marlins (Baseball)": "Professional Sports",
+  "Orlando Magic (Basketball)": "Professional Sports",
+  "Tampa Bay Buccaneers (Football)": "Professional Sports",
+  "Tampa Bay Lightning (Hockey)": "Professional Sports",
+  "Tampa Bay Rays (Baseball)": "Professional Sports"
+};
+
+export const LEGACY_TO_CURRENT_NAME_OVERRIDES = {
+  "Boy Scouts of America": "Scouting Teaches Values",
+  "Discover Florida's Oceans": "Discover Florida Oceans",
+  "Discover Florida's Horses": "Discover Florida Horses",
+  "Fish Florida": "Fish",
+  "Florida Educational": "Support Education",
+  "Florida Panthers (Hockey)": "Florida Panthers",
+  "Florida A & M University": "Florida A&M University",
+  "Florida Atlantic University": "Florida Atlantic University FAU",
+  "Florida Gulf Coast University": "Florida Gulf Coast",
+  "Florida International University": "FIU",
+  "Florida Special Olympic": "Support Florida Special Olympics",
+  "Florida State University": "FSU",
+  "Jacksonville Jaguars (Football)": "Jacksonville Jaguars",
+  "Miami Dolphins (Football)": "Miami Dolphins",
+  "Miami Heat (Basketball)": "Miami Heat",
+  "Miami Marlins (Baseball)": "Miami Marlins",
+  "Nova Southeastern University": "Nova Southeastern University NSU",
+  "Orlando Magic (Basketball)": "Orlando Magic",
+  "Sea Turtle": "Helping Sea Turtles",
+  "Support Homeownership For All": "Support Homeownership For All",
+  "Tampa Bay Buccaneers (Football)": "Tampa Bay Buccaneers NFL",
+  "Tampa Bay Lightning (Hockey)": "Tampa Bay Lightning",
+  "Tampa Bay Rays (Baseball)": "Tampa Bay Rays MLB",
+  "U.S. Air Force": "US Air Force",
+  "U.S. Army": "US Army",
+  "U.S. Coast Guard": "US Coast Guard",
+  "U.S. Marine Corps": "US Marine Corps",
+  "U.S. Navy": "US Navy",
+  "U.S. Olympic": "US Olympics",
+  "U.S. Paratroopers": "US Paratrooper",
+  "University of Central Florida": "University of Central Florida",
+  "University of Florida": "University of Florida UF",
+  "University of North Florida": "University Of North Florida UNF",
+  "University of South Florida": "USF",
+  "Warner Southern College": "Warner University"
+};
+
+export const CURRENT_NAME_CANONICAL_OVERRIDES = {
+  "Alpha Kappa Alpha Sorority Divine Nine": "Divine Nines: Alpha Kappa Alpha Sorority",
+  "Alpha Phi Alpha Sorority Divine Nine": "Divine Nines: Alpha Phi Alpha Sorority",
+  "Bethune Cookman University": "Bethune-Cookman University",
+  "Delta Sigma Theta Sorority Divine Nine": "Divine Nines: Delta Sigma Theta Sorority",
+  "Discover Florida Horses": "Discover Florida's Horses",
+  "Discover Florida Oceans": "Discover Florida's Oceans",
+  "FIU": "Florida International University",
+  "FSU": "Florida State University",
+  "Florida Panthers": "Florida Panthers (Hockey)",
+  "Florida A&M University": "Florida A & M University",
+  "Florida Atlantic University FAU": "Florida Atlantic University",
+  "Florida Gulf Coast": "Florida Gulf Coast University",
+  "Hospice": "Hospice Every Day Is A Gift",
+  "Helping Sea Turtles Survive": "Helping Sea Turtles",
+  "Jacksonville Jaguars": "Jacksonville Jaguars (Football)",
+  "Miami Dolphins": "Miami Dolphins (Football)",
+  "Miami Heat": "Miami Heat (Basketball)",
+  "Miami Marlins": "Miami Marlins (Baseball)",
+  "Nova Southeastern University NSU": "Nova Southeastern University",
+  "Orlando Magic": "Orlando Magic (Basketball)",
+  "Iota Phi Theta Fraternity Divine Nine": "Divine Nines: Iota Phi Theta Fraternity",
+  "Kappa Alpha Psi Fraternity Divine Nine": "Divine Nines: Kappa Alpha Psi Fraternity",
+  "Omega Psi Phi Fraternity Divine Nine": "Divine Nines: Omega Psi Phi Fraternity",
+  "Phi Beta Sigma Fraternity Divine Nine": "Divine Nines: Phi Beta Sigma Fraternity",
+  "Sigma Gamma Rho Sorority Divine Nine": "Divine Nines: Sigma Gamma Rho Sorority",
+  "Scouting Teaches Values": "Boy Scouts of America",
+  "Support Home Ownership": "Support Homeownership For All",
+  "Support Florida Special Olympics": "Florida Special Olympic",
+  "Tampa Bay Buccaneers NFL": "Tampa Bay Buccaneers (Football)",
+  "Tampa Bay Lightning": "Tampa Bay Lightning (Hockey)",
+  "Tampa Bay Rays MLB": "Tampa Bay Rays (Baseball)",
+  "UCF": "University of Central Florida",
+  "UCF University Of Central": "University of Central Florida",
+  "UF": "University of Florida",
+  "University of Florida UF": "University of Florida",
+  "UNF": "University of North Florida",
+  "University Of North Florida UNF": "University of North Florida",
+  "US Air Force": "U.S. Air Force",
+  "US Army": "U.S. Army",
+  "US Coast Guard": "U.S. Coast Guard",
+  "US Marine Corps": "U.S. Marine Corps",
+  "US Navy": "U.S. Navy",
+  "US Olympics": "U.S. Olympic",
+  "US Paratrooper": "U.S. Paratroopers",
+  "USF": "University of South Florida",
+  "Warner Southern College": "Warner University",
+  "Wildlife Foundation Of": "Wildlife Foundation of Florida",
+  "Zeta Phi Beta Sorority Divine Nine": "Divine Nines: Zeta Phi Beta Sorority"
+};
+
+export const LEGACY_NAME_CANONICAL_OVERRIDES = {
+  "Florida Educational": "Support Education",
+  "Hospice: Every Day Is A Gift": "Hospice Every Day Is A Gift",
+  "Sea Turtle": "Helping Sea Turtles",
+  "Support Homeownership For All": "Support Homeownership For All",
+  "University of Central Florida": "University of Central Florida",
+  "Warner Southern College": "Warner University"
+};
+
+export const CONFIRMED_CURRENT_ONLY_PLATES = new Set([
+  "Adventist University",
+  "Air Force Combat Action Medal",
+  "Air Force Cross",
+  "Army of Occupation",
+  "Auburn University",
+  "Beacon College",
+  "Conserve Florida Fisheries",
+  "Everglades University"
+]);
+
+export const SUPPRESSED_ZIP_SOURCE_TITLES = new Set([
+  "Florida Gulf Coast University",
+  "Warner Southern College"
+]);
+
+export const ZIP_VERSION_GROUP_OVERRIDES = {
+  "Blue Angels Florida MOTORCYCLE": {
+    canonicalName: "Blue Angels",
+    label: "Motorcycle",
+    isDefault: false
+  },
+  "Hospice": {
+    canonicalName: "Hospice Every Day Is A Gift",
+    label: "Current",
+    isDefault: true
+  },
+  "Warner Southern College": {
+    canonicalName: "Warner University",
+    label: "Legacy",
+    isDefault: false
+  }
+};
+
+export const MANUAL_EXTRA_VERSIONS = {
+  "Walt Disney World": [
+    {
+      id: "walt-disney-world-legacy",
+      label: "Legacy",
+      source: "legacy",
+      isDefault: false,
+      imageKey: "walt_disney_world_legacy",
+      imagePath: "plates/walt_disney_world_legacy.png",
+      productUrl: null,
+      notes: null
+    }
+  ]
+};
+
+export const SUPPRESSED_LEGACY_DUPLICATE_PLATES = new Set([
+  "Agricultural Education",
+  "Agriculture",
+  "Aquaculture",
+  "Bethune-Cookman University",
+  "Boy Scouts of America",
+  "Challenger/Columbia",
+  "Choose Life",
+  "Discover Florida's Horses",
+  "Discover Florida's Oceans",
+  "End Breast Cancer",
+  "Endless Summer",
+  "Everglades River of Grass",
+  "Family First",
+  "Florida A & M University",
+  "Florida Golf Capital of the World",
+  "Fish Florida",
+  "Florida Salutes Veterans",
+  "Fraternal Order of Police",
+  "Freemasonry",
+  "Horse Country",
+  "Imagine",
+  "In God We Trust",
+  "Invest in Children",
+  "Jacksonville Jaguars (Football)",
+  "Kids Deserve Justice",
+  "Live the Dream",
+  "New College of Florida",
+  "Orlando Magic (Basketball)",
+  "Play Tennis",
+  "Police Athletic League",
+  "Protect Florida Springs",
+  "Protect Florida Whales",
+  "Protect Our Reefs",
+  "Protect Wild Dolphins",
+  "Salutes Firefighters",
+  "Save Our Seas",
+  "Save the Manatee",
+  "Save Wild Florida",
+  "Share the Road",
+  "Stop Child Abuse",
+  "Stop Heart Disease",
+  "Support Autism Programs",
+  "Support Our Troops",
+  "Tampa Bay Rays (Baseball)",
+  "Tampa Bay Estuary",
+  "Trees Are Cool",
+  "U.S. Air Force",
+  "U.S. Army",
+  "U.S. Coast Guard",
+  "U.S. Marine Corps",
+  "U.S. Navy",
+  "U.S. Olympic",
+  "U.S. Paratroopers",
+  "United We Stand"
+  ,
+  "Warner Southern College",
+  "Warner University"
+]);

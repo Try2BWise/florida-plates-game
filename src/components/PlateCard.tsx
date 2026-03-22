@@ -19,9 +19,7 @@ export function PlateCard({
   const coordinateLabel = discovery
     ? formatCoordinates(discovery.latitude, discovery.longitude)
     : null;
-  const imageBasePath = import.meta.env.BASE_URL;
-  const pngSource = `${imageBasePath}plates/${plate.imageKey}.png`;
-  const jpgSource = `${imageBasePath}plates/${plate.imageKey}.jpg`;
+  const imageSource = `${import.meta.env.BASE_URL}${plate.defaultVersion.imagePath}`;
 
   return (
     <article className={`plate-card ${isFound ? "plate-card--found" : ""}`}>
@@ -34,16 +32,9 @@ export function PlateCard({
         <div className="plate-card__image-wrap">
           <img
             className="plate-card__image"
-            src={pngSource}
+            src={imageSource}
             alt={plate.name}
             loading="lazy"
-            onError={(event) => {
-              const target = event.currentTarget;
-              if (!target.dataset.fallbackApplied) {
-                target.dataset.fallbackApplied = "true";
-                target.src = jpgSource;
-              }
-            }}
           />
         </div>
       </button>
