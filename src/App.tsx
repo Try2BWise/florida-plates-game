@@ -1,17 +1,18 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { BadgeIcon } from "./components/BadgeIcon";
 import { PlateCard } from "./components/PlateCard";
-import { groupedPlates, plates } from "./data/plates";
+import { getPlateVersionById, groupedPlates, plates } from "./data/plates";
 import { buildInfo } from "./generated/buildInfo";
 import { evaluateBadges, type BadgeGroup } from "./lib/badges";
 import { formatDiscoveryTime } from "./lib/format";
 import { createDiscovery } from "./lib/geolocation";
 import { reverseGeocodeLocality } from "./lib/reverseGeocode";
 import { loadDiscoveries, saveDiscoveries } from "./lib/storage";
-import type { Plate, PlateCategory, PlateDiscoveryMap } from "./types";
+import type { Plate, PlateCategory, PlateDiscoveryMap, PlateVersion } from "./types";
 
 const THEME_STORAGE_KEY = "florida-plates-theme";
 const UI_PREFERENCES_STORAGE_KEY = "florida-plates-ui-preferences";
+const ONBOARDING_HINT_DISMISSED_STORAGE_KEY = "florida-plates-onboarding-dismissed";
 
 type ThemeMode = "light" | "dark";
 type PlateVisibilityFilter = "all" | "found" | "missing";
@@ -60,6 +61,14 @@ function getInitialTheme(): ThemeMode {
     : "light";
 }
 
+function loadOnboardingHintDismissed(): boolean {
+  try {
+    return window.localStorage.getItem(ONBOARDING_HINT_DISMISSED_STORAGE_KEY) === "true";
+  } catch {
+    return false;
+  }
+}
+
 function App() {
   const appShareUrl = "https://try2bwise.github.io/florida-plates-game/";
   const shareMessage = [
@@ -85,22 +94,28 @@ function App() {
     useState<PlateVisibilityFilter>("all");
   const [arrangement, setArrangement] = useState<PlateArrangement>("category");
   const [shareStatus, setShareStatus] = useState<string | null>(null);
+  const [isOnboardingHintDismissed, setIsOnboardingHintDismissed] = useState<boolean>(() =>
+    loadOnboardingHintDismissed()
+  );
   const [isUpdateReady, setIsUpdateReady] = useState(false);
+  const [isClearConfirmOpen, setIsClearConfirmOpen] = useState(false);
   const [isExplorePanelOpen, setIsExplorePanelOpen] = useState(false);
   const [isUtilityPanelOpen, setIsUtilityPanelOpen] = useState(false);
   const [previewPlate, setPreviewPlate] = useState<Plate | null>(null);
+  const [previewVersionId, setPreviewVersionId] = useState<string | null>(null);
   const [activeExploreTab, setActiveExploreTab] = useState<ExploreTab>("badges");
   const [activeUtilityTab, setActiveUtilityTab] = useState<UtilityTab>("settings");
   const [activeCategory, setActiveCategory] = useState<PlateCategory>(
     groupedPlates[0].category
   );
-  const sectionRefs = useRef<Record<PlateCategory, HTMLElement | null>>({
-    Environmental: null,
-    Miscellaneous: null,
-    "Professional Sports": null,
-    Universities: null
-  });
+  const sectionRefs = useRef<Record<PlateCategory, HTMLElement | null>>(
+    {} as Record<PlateCategory, HTMLElement | null>
+  );
   const resolvingLocalitiesRef = useRef<Set<string>>(new Set());
+  const plateById = useMemo(
+    () => new Map(plates.map((plate) => [plate.id, plate])),
+    []
+  );
   const buildDateLabel = useMemo(
     () =>
       new Intl.DateTimeFormat("en-US", {
@@ -130,6 +145,13 @@ function App() {
   }, [uiPreferences]);
 
   useEffect(() => {
+    window.localStorage.setItem(
+      ONBOARDING_HINT_DISMISSED_STORAGE_KEY,
+      String(isOnboardingHintDismissed)
+    );
+  }, [isOnboardingHintDismissed]);
+
+  useEffect(() => {
     if (!uiPreferences.showSearch) {
       setIsSearchOpen(false);
       setSearchTerm("");
@@ -137,7 +159,7 @@ function App() {
   }, [uiPreferences.showSearch]);
 
   useEffect(() => {
-    if (!isUtilityPanelOpen && !isExplorePanelOpen && !previewPlate) {
+    if (!isUtilityPanelOpen && !isExplorePanelOpen && !previewPlate && !isClearConfirmOpen) {
       return;
     }
 
@@ -154,7 +176,7 @@ function App() {
       document.documentElement.style.overflow = previousDocumentOverflow;
       document.body.style.touchAction = previousBodyTouchAction;
     };
-  }, [isExplorePanelOpen, isUtilityPanelOpen, previewPlate]);
+  }, [isExplorePanelOpen, isUtilityPanelOpen, previewPlate, isClearConfirmOpen]);
 
   useEffect(() => {
     function handleUpdateReady() {
@@ -213,15 +235,11 @@ function App() {
       });
   }, [discoveries]);
 
-  const foundCount = useMemo(
-    () => Object.keys(discoveries).length,
-    [discoveries]
-  );
   const discoveryEntries = useMemo(
     () =>
       Object.entries(discoveries)
         .map(([plateId, discovery]) => {
-          const plate = plates.find((candidatePlate) => candidatePlate.id === plateId);
+          const plate = plateById.get(plateId);
           if (!plate) {
             return null;
           }
@@ -239,24 +257,32 @@ function App() {
             new Date(right.discovery.foundAtIso).getTime() -
             new Date(left.discovery.foundAtIso).getTime()
         ),
-    [discoveries]
+    [discoveries, plateById]
   );
+  const normalizedDiscoveries = useMemo(
+    () =>
+      Object.fromEntries(
+        discoveryEntries.map(({ plate, discovery }) => [plate.id, discovery])
+      ),
+    [discoveryEntries]
+  );
+  const foundCount = discoveryEntries.length;
   const normalizedSearchTerm = searchTerm.trim().toLowerCase();
   const filteredPlates = useMemo(
     () =>
       plates.filter((plate) => {
-        const isFound = Boolean(discoveries[plate.id]);
+        const isFound = Boolean(normalizedDiscoveries[plate.id]);
         const matchesVisibility =
           visibilityFilter === "all" ||
           (visibilityFilter === "found" && isFound) ||
           (visibilityFilter === "missing" && !isFound);
         const matchesSearch =
           normalizedSearchTerm.length === 0 ||
-          plate.name.toLowerCase().includes(normalizedSearchTerm);
+          plate.searchText.includes(normalizedSearchTerm);
 
         return matchesVisibility && matchesSearch;
       }),
-    [discoveries, normalizedSearchTerm, visibilityFilter]
+    [normalizedDiscoveries, normalizedSearchTerm, visibilityFilter]
   );
   const filteredGroups = useMemo(() => {
     if (arrangement === "category") {
@@ -276,7 +302,7 @@ function App() {
     });
 
     return sortedPlates.length > 0
-      ? [{ category: "Miscellaneous" as PlateCategory, plates: sortedPlates }]
+      ? [{ category: groupedPlates[0].category, plates: sortedPlates }]
       : [];
   }, [arrangement, filteredPlates]);
   const visiblePlateCount = useMemo(
@@ -290,7 +316,7 @@ function App() {
   const categoryStats = useMemo(
     () =>
       groupedPlates.map(({ category, plates: categoryPlates }) => {
-        const found = categoryPlates.filter((plate) => discoveries[plate.id]).length;
+        const found = categoryPlates.filter((plate) => normalizedDiscoveries[plate.id]).length;
         return {
           category,
           found,
@@ -298,7 +324,7 @@ function App() {
           percent: Math.round((found / categoryPlates.length) * 100)
         };
       }),
-    [discoveries]
+    [normalizedDiscoveries]
   );
   const topLocalities = useMemo(() => {
     const localityCounts = new Map<string, number>();
@@ -384,8 +410,8 @@ function App() {
       ? discoveryEntries[discoveryEntries.length - 1]
       : null;
   const evaluatedBadges = useMemo(
-    () => evaluateBadges(plates, discoveries),
-    [discoveries]
+    () => evaluateBadges(plates, normalizedDiscoveries),
+    [normalizedDiscoveries]
   );
   const earnedBadges = useMemo(
     () => evaluatedBadges.filter((badge) => badge.earned),
@@ -486,6 +512,20 @@ function App() {
     return () => observer.disconnect();
   }, [arrangement, filteredGroups]);
 
+  useEffect(() => {
+    if (!previewPlate) {
+      setPreviewVersionId(null);
+      return;
+    }
+
+    setPreviewVersionId(previewPlate.defaultVersion.id);
+  }, [previewPlate]);
+
+  const previewVersion = useMemo<PlateVersion | null>(
+    () => (previewPlate ? getPlateVersionById(previewPlate, previewVersionId) : null),
+    [previewPlate, previewVersionId]
+  );
+
   async function handleTogglePlate(plate: Plate, isFound: boolean) {
     if (isFound) {
       setDiscoveries((current) => {
@@ -517,17 +557,18 @@ function App() {
     if (foundCount === 0) {
       return;
     }
+    setIsClearConfirmOpen(true);
+  }
 
-    const shouldClear = window.confirm(
-      "Clear all found plates? This will remove every saved timestamp and location."
-    );
-
-    if (!shouldClear) {
-      return;
-    }
-
+  function confirmClearDiscoveries() {
     setDiscoveries({});
     setActivePlateId(null);
+    setIsClearConfirmOpen(false);
+  }
+
+  function setTransientStatus(message: string, durationMs = 2500) {
+    setShareStatus(message);
+    window.setTimeout(() => setShareStatus(null), durationMs);
   }
 
   async function handleShareText(title: string, text: string) {
@@ -543,15 +584,13 @@ function App() {
 
       if (navigator.clipboard?.writeText) {
         await navigator.clipboard.writeText(text);
-        setShareStatus("Share text copied");
-        window.setTimeout(() => setShareStatus(null), 2500);
+        setTransientStatus("Share text copied");
         return;
       }
 
       window.prompt("Copy and share this message:", text);
     } catch {
-      setShareStatus("Share canceled");
-      window.setTimeout(() => setShareStatus(null), 2000);
+      setTransientStatus("Share canceled", 2000);
     }
   }
 
@@ -659,7 +698,7 @@ function App() {
                       id="plate-search"
                       className="search-inline__input"
                       type="search"
-                      placeholder="Search by plate name"
+                      placeholder="Search names, aliases, and causes"
                       value={searchTerm}
                       onChange={(event) => setSearchTerm(event.target.value)}
                     />
@@ -794,6 +833,25 @@ function App() {
           <p className="control-panel__summary" aria-live="polite">
             Showing {visiblePlateCount} of {plates.length} plates
           </p>
+          {!isOnboardingHintDismissed ? (
+            <section className="onboarding-tip" aria-label="How to interact with plate tiles">
+              <div className="onboarding-tip__content">
+                <p className="onboarding-tip__title">Quick tip</p>
+                <p className="onboarding-tip__text">Tap a plate image to enlarge it.</p>
+                <p className="onboarding-tip__text">
+                  Tap the title area to mark it found.
+                </p>
+              </div>
+              <button
+                type="button"
+                className="onboarding-tip__dismiss"
+                onClick={() => setIsOnboardingHintDismissed(true)}
+                aria-label="Dismiss quick tip"
+              >
+                Dismiss
+              </button>
+            </section>
+          ) : null}
         </div>
       </header>
 
@@ -825,7 +883,7 @@ function App() {
                   <PlateCard
                     key={plate.id}
                     plate={plate}
-                    discovery={discoveries[plate.id]}
+                    discovery={normalizedDiscoveries[plate.id]}
                     onToggle={handleTogglePlate}
                     onPreview={setPreviewPlate}
                   />
@@ -907,7 +965,7 @@ function App() {
         </button>
       </nav>
 
-      {previewPlate ? (
+      {previewPlate && previewVersion ? (
         <div
           className="plate-preview-backdrop"
           role="presentation"
@@ -920,20 +978,40 @@ function App() {
             aria-label={`${previewPlate.name} plate preview`}
             onClick={() => setPreviewPlate(null)}
           >
-            <img
-              className="plate-preview__image"
-              src={`${import.meta.env.BASE_URL}plates/${previewPlate.imageKey}.png`}
-              alt={previewPlate.name}
-              onError={(event) => {
-                const target = event.currentTarget;
-                if (!target.dataset.fallbackApplied) {
-                  target.dataset.fallbackApplied = "true";
-                  target.src = `${import.meta.env.BASE_URL}plates/${previewPlate.imageKey}.jpg`;
-                }
-              }}
-            />
+            <div className="plate-preview__image-stage">
+              <img
+                className="plate-preview__image"
+                src={`${import.meta.env.BASE_URL}${previewVersion.imagePath}`}
+                alt={previewPlate.name}
+              />
+            </div>
             <p className="plate-preview__caption">{previewPlate.name}</p>
-            {!discoveries[previewPlate.id] ? (
+            {previewPlate.versions.length > 1 ? (
+              <div
+                className="plate-preview__versions"
+                role="tablist"
+                aria-label={`${previewPlate.name} versions`}
+                onClick={(event) => event.stopPropagation()}
+              >
+                {previewPlate.versions.map((version) => (
+                  <button
+                    key={version.id}
+                    type="button"
+                    className={`plate-preview__version-chip ${
+                      previewVersion.id === version.id
+                        ? "plate-preview__version-chip--active"
+                        : ""
+                    }`}
+                    role="tab"
+                    aria-selected={previewVersion.id === version.id}
+                    onClick={() => setPreviewVersionId(version.id)}
+                  >
+                    {version.label}
+                  </button>
+                ))}
+              </div>
+            ) : null}
+            {!normalizedDiscoveries[previewPlate.id] ? (
               <button
                 type="button"
                 className="plate-preview__action"
@@ -946,7 +1024,69 @@ function App() {
                 Found
               </button>
             ) : null}
+            <div
+              className="plate-preview__details"
+              onClick={(event) => event.stopPropagation()}
+            >
+              {previewPlate.sponsor.name ? (
+                <div className="plate-preview__detail-row">
+                  <span className="plate-preview__detail-label">Beneficiary</span>
+                  <strong>{previewPlate.sponsor.name}</strong>
+                </div>
+              ) : null}
+              <div className="plate-preview__detail-row">
+                <span className="plate-preview__detail-label">Category</span>
+                <strong>{previewPlate.category}</strong>
+              </div>
+              {previewPlate.sponsor.notes ? (
+                <p className="plate-preview__notes">{previewPlate.sponsor.notes}</p>
+              ) : previewVersion.notes ? (
+                <p className="plate-preview__notes">{previewVersion.notes}</p>
+              ) : null}
+            </div>
           </div>
+        </div>
+      ) : null}
+
+      {isClearConfirmOpen ? (
+        <div
+          className="confirm-modal-backdrop"
+          role="presentation"
+          onClick={() => setIsClearConfirmOpen(false)}
+        >
+          <section
+            className="confirm-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="clear-confirm-title"
+            aria-describedby="clear-confirm-description"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <p className="confirm-modal__eyebrow">Clear found plates</p>
+            <h2 className="confirm-modal__title" id="clear-confirm-title">
+              Remove all saved sightings?
+            </h2>
+            <p className="confirm-modal__description" id="clear-confirm-description">
+              This will clear every found plate, timestamp, and saved location from this
+              device.
+            </p>
+            <div className="confirm-modal__actions">
+              <button
+                type="button"
+                className="confirm-modal__button confirm-modal__button--secondary"
+                onClick={() => setIsClearConfirmOpen(false)}
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                className="confirm-modal__button confirm-modal__button--danger"
+                onClick={confirmClearDiscoveries}
+              >
+                Clear found
+              </button>
+            </div>
+          </section>
         </div>
       ) : null}
 
@@ -1400,10 +1540,13 @@ function App() {
                     <h3>How to play</h3>
                     <div className="utility-list utility-list--compact">
                       <p className="utility-card__meta">
-                        Tap a plate tile to mark it found.
+                        Tap a plate image to enlarge it.
                       </p>
                       <p className="utility-card__meta">
-                        Tap the same tile again to clear that sighting.
+                        Tap the title area to mark it found.
+                      </p>
+                      <p className="utility-card__meta">
+                        Tap the title area again to clear that sighting.
                       </p>
                       <p className="utility-card__meta">
                         If location access is allowed, the app saves the time and a place name when available.
