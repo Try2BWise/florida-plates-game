@@ -3,10 +3,10 @@ import { BadgeIcon } from "./components/BadgeIcon";
 import { PlateCard } from "./components/PlateCard";
 import { getPlateVersionById, groupedPlates, plates } from "./data/plates";
 import { buildInfo } from "./generated/buildInfo";
-import { evaluateBadges, type BadgeGroup } from "./lib/badges";
+import { evaluateBadges, type BadgeGroup, type EvaluatedBadge } from "./lib/badges";
 import { formatDiscoveryTime } from "./lib/format";
 import { createDiscovery } from "./lib/geolocation";
-import { reverseGeocodeLocality } from "./lib/reverseGeocode";
+import { reverseGeocodePlace } from "./lib/reverseGeocode";
 import { loadDiscoveries, saveDiscoveries } from "./lib/storage";
 import type { Plate, PlateCategory, PlateDiscoveryMap, PlateVersion } from "./types";
 
@@ -17,8 +17,107 @@ const ONBOARDING_HINT_DISMISSED_STORAGE_KEY = "florida-plates-onboarding-dismiss
 type ThemeMode = "light" | "dark";
 type PlateVisibilityFilter = "all" | "found" | "missing";
 type PlateArrangement = "category" | "az" | "za";
-type ExploreTab = "badges" | "stats" | "map";
+type ExploreTab = "badges" | "stats" | "map" | "timeline";
 type UtilityTab = "settings" | "help" | "safe" | "about";
+type TimelineSort = "desc" | "asc";
+
+const panhandleScoutCounties = new Set([
+  "Escambia",
+  "Bay",
+  "Calhoun",
+  "Franklin",
+  "Gulf",
+  "Holmes",
+  "Jackson",
+  "Liberty",
+  "Okaloosa",
+  "Santa Rosa",
+  "Walton",
+  "Washington"
+]);
+
+const badgePlateSets: Record<string, string[]> = {
+  "grand-slam": ["Miami Marlins (Baseball)", "Tampa Bay Rays (Baseball)"],
+  touchdown: [
+    "Jacksonville Jaguars (Football)",
+    "Miami Dolphins (Football)",
+    "Tampa Bay Buccaneers (Football)"
+  ],
+  "hat-trick": ["Florida Panthers (Hockey)", "Tampa Bay Lightning (Hockey)"],
+  "slam-dunk": ["Miami Heat (Basketball)", "Orlando Magic (Basketball)"],
+  "all-branches": [
+    "U.S. Army",
+    "U.S. Navy",
+    "U.S. Air Force",
+    "U.S. Marine Corps",
+    "U.S. Coast Guard"
+  ],
+  "back-the-blue": [
+    "Fallen Law Enforcement Officers",
+    "Florida Sheriffs Association",
+    "Fraternal Order of Police",
+    "Police Athletic League",
+    "Police Benevolent Association",
+    "Support Law Enforcement"
+  ],
+  "fire-watch": ["Salutes Firefighters"],
+  "united-front": [
+    "Fallen Law Enforcement Officers",
+    "Florida Sheriffs Association",
+    "Fraternal Order of Police",
+    "Police Athletic League",
+    "Police Benevolent Association",
+    "Support Law Enforcement",
+    "Salutes Firefighters"
+  ],
+  "air-support": ["Blue Angels"],
+  airborne: ["U.S. Paratroopers"],
+  "bronze-star-honor": ["Bronze Star"],
+  distinguished: ["Air Force Cross", "Distinguished Flying Cross", "Distinguished Service Cross"],
+  "combat-ready": [
+    "Combat Action Badge",
+    "Combat Action Ribbon",
+    "Combat Infantry Badge",
+    "Combat Medical Badge"
+  ],
+  "decorated-service": [
+    "Air Force Combat Action Medal",
+    "Air Force Cross",
+    "Army of Occupation",
+    "Bronze Star",
+    "Combat Action Badge",
+    "Combat Action Ribbon",
+    "Combat Infantry Badge",
+    "Combat Medical Badge",
+    "Distinguished Flying Cross",
+    "Distinguished Service Cross"
+  ]
+};
+
+const floridaBadgeCounties: Record<string, string[]> = {
+  "emerald-coast-explorer": ["Escambia", "Santa Rosa", "Okaloosa", "Walton"],
+  "forgotten-coast-explorer": ["Bay", "Calhoun", "Gulf", "Franklin", "Liberty"],
+  "big-bend-explorer": ["Wakulla", "Jefferson", "Madison", "Taylor", "Lafayette"],
+  "capital-region-explorer": ["Leon", "Gadsden", "Jackson", "Holmes", "Washington"],
+  "suwannee-valley-explorer": ["Hamilton", "Suwannee", "Columbia", "Baker", "Union", "Bradford"],
+  "first-coast-explorer": ["Nassau", "Duval", "St. Johns", "Flagler"],
+  "nature-coast-explorer": ["Dixie", "Levy", "Citrus", "Hernando"],
+  "suncoast-explorer": ["Pasco", "Pinellas", "Hillsborough", "Manatee", "Sarasota"],
+  "florida-heartland-explorer": ["Polk", "Hardee", "Highlands", "DeSoto", "Okeechobee"],
+  "treasure-coast-explorer": ["Indian River", "St. Lucie", "Martin"],
+  "space-coast-explorer": ["Brevard"],
+  "gold-coast-explorer": ["Palm Beach", "Broward", "Miami-Dade"],
+  "paradise-coast-explorer": ["Charlotte", "Lee", "Collier", "Hendry", "Glades"],
+  "florida-keys-explorer": ["Monroe"]
+};
+
+const mixedBagCategories = new Set([
+  "Civic & Causes",
+  "Health & Family",
+  "Education & Culture",
+  "Public Safety",
+  "Recreation & Tourism"
+]);
 
 interface UiPreferences {
   showSearch: boolean;
@@ -103,7 +202,12 @@ function App() {
   const [isUtilityPanelOpen, setIsUtilityPanelOpen] = useState(false);
   const [previewPlate, setPreviewPlate] = useState<Plate | null>(null);
   const [previewVersionId, setPreviewVersionId] = useState<string | null>(null);
+  const [activeBadgeDetail, setActiveBadgeDetail] = useState<EvaluatedBadge | null>(null);
   const [activeExploreTab, setActiveExploreTab] = useState<ExploreTab>("badges");
+  const [timelineSort, setTimelineSort] = useState<TimelineSort>("desc");
+  const [collapsedTimelineDates, setCollapsedTimelineDates] = useState<Set<string>>(
+    () => new Set()
+  );
   const [activeUtilityTab, setActiveUtilityTab] = useState<UtilityTab>("settings");
   const [activeCategory, setActiveCategory] = useState<PlateCategory>(
     groupedPlates[0].category
@@ -111,6 +215,7 @@ function App() {
   const sectionRefs = useRef<Record<PlateCategory, HTMLElement | null>>(
     {} as Record<PlateCategory, HTMLElement | null>
   );
+  const searchInputRef = useRef<HTMLInputElement | null>(null);
   const resolvingLocalitiesRef = useRef<Set<string>>(new Set());
   const plateById = useMemo(
     () => new Map(plates.map((plate) => [plate.id, plate])),
@@ -159,7 +264,26 @@ function App() {
   }, [uiPreferences.showSearch]);
 
   useEffect(() => {
-    if (!isUtilityPanelOpen && !isExplorePanelOpen && !previewPlate && !isClearConfirmOpen) {
+    if (!isSearchOpen || !uiPreferences.showSearch) {
+      return;
+    }
+
+    const focusHandle = window.setTimeout(() => {
+      searchInputRef.current?.focus();
+      searchInputRef.current?.select();
+    }, 0);
+
+    return () => window.clearTimeout(focusHandle);
+  }, [isSearchOpen, uiPreferences.showSearch]);
+
+  useEffect(() => {
+    if (
+      !isUtilityPanelOpen &&
+      !isExplorePanelOpen &&
+      !previewPlate &&
+      !isClearConfirmOpen &&
+      !activeBadgeDetail
+    ) {
       return;
     }
 
@@ -176,7 +300,7 @@ function App() {
       document.documentElement.style.overflow = previousDocumentOverflow;
       document.body.style.touchAction = previousBodyTouchAction;
     };
-  }, [isExplorePanelOpen, isUtilityPanelOpen, previewPlate, isClearConfirmOpen]);
+  }, [isExplorePanelOpen, isUtilityPanelOpen, previewPlate, isClearConfirmOpen, activeBadgeDetail]);
 
   useEffect(() => {
     function handleUpdateReady() {
@@ -191,7 +315,7 @@ function App() {
   useEffect(() => {
     const pendingEntry = Object.entries(discoveries).find(
       ([plateId, discovery]) =>
-        discovery.locality === null &&
+        (discovery.locality === null || discovery.county === null || discovery.state === null) &&
         discovery.latitude !== null &&
         discovery.longitude !== null &&
         !resolvingLocalitiesRef.current.has(plateId)
@@ -204,9 +328,9 @@ function App() {
     const [plateId, discovery] = pendingEntry;
     resolvingLocalitiesRef.current.add(plateId);
 
-    void reverseGeocodeLocality(discovery.latitude!, discovery.longitude!)
-      .then((locality) => {
-        if (!locality) {
+    void reverseGeocodePlace(discovery.latitude!, discovery.longitude!)
+      .then((place) => {
+        if (!place.locality && !place.county && !place.state) {
           return;
         }
 
@@ -214,7 +338,6 @@ function App() {
           const currentDiscovery = current[plateId];
           if (
             !currentDiscovery ||
-            currentDiscovery.locality !== null ||
             currentDiscovery.latitude !== discovery.latitude ||
             currentDiscovery.longitude !== discovery.longitude
           ) {
@@ -225,7 +348,9 @@ function App() {
             ...current,
             [plateId]: {
               ...currentDiscovery,
-              locality
+              locality: currentDiscovery.locality ?? place.locality,
+              county: currentDiscovery.county ?? place.county,
+              state: currentDiscovery.state ?? place.state
             }
           };
         });
@@ -342,6 +467,41 @@ function App() {
       .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))
       .slice(0, 6);
   }, [discoveryEntries]);
+  const timelineGroups = useMemo(() => {
+    const sortedEntries = [...discoveryEntries].sort((left, right) => {
+      const comparison =
+        new Date(left.discovery.foundAtIso).getTime() -
+        new Date(right.discovery.foundAtIso).getTime();
+      return timelineSort === "asc" ? comparison : -comparison;
+    });
+
+    const formatter = new Intl.DateTimeFormat("en-US", {
+      weekday: "long",
+      month: "long",
+      day: "numeric",
+      year: "numeric"
+    });
+
+    const groups = new Map<
+      string,
+      Array<(typeof discoveryEntries)[number]>
+    >();
+
+    for (const entry of sortedEntries) {
+      const key = formatter.format(new Date(entry.discovery.foundAtIso));
+      groups.set(key, [...(groups.get(key) ?? []), entry]);
+    }
+
+    return [...groups.entries()];
+  }, [discoveryEntries, timelineSort]);
+
+  useEffect(() => {
+    setCollapsedTimelineDates((current) => {
+      const availableDates = new Set(timelineGroups.map(([dateLabel]) => dateLabel));
+      return new Set([...current].filter((dateLabel) => availableDates.has(dateLabel)));
+    });
+  }, [timelineGroups]);
+
   const mapPins = useMemo(
     () => {
       const plottedEntries = discoveryEntries.filter(
@@ -426,14 +586,18 @@ function App() {
     category: "Categories",
     collection: "Collections",
     college: "College Track",
-    locality: "Places"
+    locality: "Places",
+    service: "Those Who Serve",
+    florida: "All Around Florida"
   };
   const badgeGroupSymbols: Record<BadgeGroup, string> = {
     progress: "star",
     category: "grid",
     collection: "rings",
     college: "cap",
-    locality: "pin"
+    locality: "pin",
+    service: "shield",
+    florida: "compass"
   };
   const earnedBadgeGroups = useMemo(
     () =>
@@ -525,6 +689,12 @@ function App() {
     () => (previewPlate ? getPlateVersionById(previewPlate, previewVersionId) : null),
     [previewPlate, previewVersionId]
   );
+  const activeBadgeProgressLabel = activeBadgeDetail
+    ? getBadgeProgressLabel(activeBadgeDetail)
+    : null;
+  const activeBadgeSupportingDiscoveries = activeBadgeDetail
+    ? getBadgeSupportingDiscoveries(activeBadgeDetail)
+    : [];
 
   async function handleTogglePlate(plate: Plate, isFound: boolean) {
     if (isFound) {
@@ -612,6 +782,161 @@ function App() {
     await handleShareText(`FL Plates - ${badgeName}`, badgeShareMessage);
   }
 
+  function toggleTimelineDate(dateLabel: string) {
+    setCollapsedTimelineDates((current) => {
+      const next = new Set(current);
+      if (next.has(dateLabel)) {
+        next.delete(dateLabel);
+      } else {
+        next.add(dateLabel);
+      }
+      return next;
+    });
+  }
+
+  function getBadgeProgressLabel(badge: EvaluatedBadge): string | null {
+    if (
+      badge.progressCurrent === undefined ||
+      badge.progressTarget === undefined ||
+      badge.progressTarget <= 1
+    ) {
+      return null;
+    }
+
+    return `${Math.min(badge.progressCurrent, badge.progressTarget)} / ${badge.progressTarget}`;
+  }
+
+  function findDiscoveriesForPlateNames(plateNames: string[]) {
+    const plateNameSet = new Set(plateNames);
+    return discoveryEntries.filter(({ plate }) => plateNameSet.has(plate.name));
+  }
+
+  function findDiscoveriesForCounties(counties: string[]) {
+    const countySet = new Set(counties);
+    return discoveryEntries.filter(({ discovery }) => {
+      const county = discovery.county?.replace(/\s+County$/i, "").trim() ?? null;
+      return county ? countySet.has(county) : false;
+    });
+  }
+
+  function findDiscoveriesForCategories(categories: string[]) {
+    const categorySet = new Set(categories);
+    return discoveryEntries.filter(({ plate }) => categorySet.has(plate.category));
+  }
+
+  function getBadgeSupportingDiscoveries(badge: EvaluatedBadge) {
+    switch (badge.id) {
+      case "first-spot":
+        return oldestSighting ? [oldestSighting] : [];
+      case "five-alive":
+        return discoveryEntries.slice(-5);
+      case "ten-down":
+        return discoveryEntries.slice(-10);
+      case "quarter-mark":
+      case "halfway-home":
+      case "closing-in":
+      case "complete-set":
+        return discoveryEntries;
+      case "first-day-of-school":
+        return discoveryEntries.filter(({ plate }) => plate.category === "Universities").slice(-1);
+      case "campus-tour":
+      case "freshman":
+      case "sophomore":
+      case "junior":
+      case "senior":
+      case "graduation-day":
+        return findDiscoveriesForCategories(["Universities"]);
+      case "green-light":
+      case "eco-scout":
+        return findDiscoveriesForCategories(["Nature & Wildlife"]);
+      case "sports-fan":
+      case "all-teams":
+        return findDiscoveriesForCategories(["Professional Sports"]);
+      case "mixed-bag":
+      case "full-spectrum":
+        return discoveryEntries.filter(({ plate }) => mixedBagCategories.has(plate.category));
+      case "reporting-for-duty":
+      case "on-call":
+      case "in-service":
+      case "those-who-serve":
+        return discoveryEntries.filter(
+          ({ plate }) =>
+            plate.category === "Military & Veterans" || plate.category === "Public Safety"
+        );
+      case "i-get-around":
+      case "road-trip": {
+        const seenLocalities = new Set<string>();
+        return discoveryEntries.filter(({ discovery }) => {
+          const locality = discovery.locality;
+          if (!locality || seenLocalities.has(locality)) {
+            return false;
+          }
+          seenLocalities.add(locality);
+          return true;
+        });
+      }
+      case "escapee":
+        return discoveryEntries.filter(({ discovery }) => {
+          if (discovery.state) {
+            return discovery.state !== "Florida";
+          }
+
+          if (discovery.latitude !== null && discovery.longitude !== null) {
+            return !(
+              discovery.latitude >= 24.3 &&
+              discovery.latitude <= 31.1 &&
+              discovery.longitude >= -87.8 &&
+              discovery.longitude <= -79.7
+            );
+          }
+
+          return false;
+        });
+      case "panhandle-scout":
+        return discoveryEntries.filter(({ discovery }) => {
+          const county = discovery.county?.replace(/\s+County$/i, "").trim() ?? null;
+          return county ? panhandleScoutCounties.has(county) : false;
+        });
+      default:
+        if (badgePlateSets[badge.id]) {
+          return findDiscoveriesForPlateNames(badgePlateSets[badge.id]);
+        }
+
+        if (floridaBadgeCounties[badge.id]) {
+          return findDiscoveriesForCounties(floridaBadgeCounties[badge.id]);
+        }
+
+        return [];
+    }
+  }
+
+  function renderBadgeCard(badge: EvaluatedBadge) {
+    return (
+      <button
+        type="button"
+        className={`utility-card utility-card--badge utility-card--badge-${badge.group} ${
+          badge.earned ? "" : "utility-card--badge-muted"
+        }`}
+        key={badge.id}
+        onClick={() => setActiveBadgeDetail(badge)}
+      >
+        <div className="badge-card__icon-shell">
+          <BadgeIcon badge={badge} />
+        </div>
+        <div className="badge-card__body">
+          <h3>{badge.name}</h3>
+          <span
+            className={`badge-card__status ${
+              badge.earned ? "badge-card__status--earned" : "badge-card__status--pending"
+            }`}
+          >
+            {badge.earned ? "Earned" : "Not yet"}
+          </span>
+        </div>
+      </button>
+    );
+  }
+
   function handleApplyUpdate() {
     setIsUpdateReady(false);
     void navigator.serviceWorker
@@ -695,6 +1020,7 @@ function App() {
                 {isSearchOpen || searchTerm ? (
                   <label className="search-inline" htmlFor="plate-search">
                     <input
+                      ref={searchInputRef}
                       id="plate-search"
                       className="search-inline__input"
                       type="search"
@@ -818,15 +1144,6 @@ function App() {
                 Z-A
               </button>
                 </>
-              ) : null}
-              {foundCount > 0 ? (
-                <button
-                  type="button"
-                  className="clear-discoveries"
-                  onClick={handleClearDiscoveries}
-                >
-                  Clear found
-                </button>
               ) : null}
             </div>
           </div>
@@ -1118,7 +1435,7 @@ function App() {
               </button>
             </div>
             <div className="utility-panel__tabs" role="tablist" aria-label="Explore views">
-              {(["badges", "stats", "map"] as ExploreTab[]).map((tab) => (
+              {(["badges", "stats", "timeline", "map"] as ExploreTab[]).map((tab) => (
                 <button
                   key={tab}
                   type="button"
@@ -1129,7 +1446,13 @@ function App() {
                   aria-selected={activeExploreTab === tab}
                   onClick={() => setActiveExploreTab(tab)}
                 >
-                  {tab === "badges" ? "Badges" : tab === "stats" ? "Stats" : "Map"}
+                  {tab === "badges"
+                    ? "Badges"
+                    : tab === "stats"
+                      ? "Stats"
+                      : tab === "timeline"
+                        ? "Timeline"
+                        : "Map"}
                 </button>
               ))}
             </div>
@@ -1293,6 +1616,103 @@ function App() {
                   </section>
                 )
               ) : null}
+              {activeExploreTab === "timeline" ? (
+                <div className="utility-stack">
+                  <section className="utility-card utility-card--about">
+                    <div className="utility-card__header">
+                      <div>
+                        <h3>Timeline</h3>
+                        <p className="utility-card__meta">
+                          Plate sightings grouped by date.
+                        </p>
+                      </div>
+                      <div className="view-toggle" role="group" aria-label="Timeline sort">
+                        <button
+                          type="button"
+                          className={`view-toggle__chip ${
+                            timelineSort === "desc" ? "view-toggle__chip--active" : ""
+                          }`}
+                          onClick={() => setTimelineSort("desc")}
+                          aria-pressed={timelineSort === "desc"}
+                        >
+                          Newest first
+                        </button>
+                        <button
+                          type="button"
+                          className={`view-toggle__chip ${
+                            timelineSort === "asc" ? "view-toggle__chip--active" : ""
+                          }`}
+                          onClick={() => setTimelineSort("asc")}
+                          aria-pressed={timelineSort === "asc"}
+                        >
+                          Oldest first
+                        </button>
+                      </div>
+                    </div>
+                  </section>
+                  {timelineGroups.length > 0 ? (
+                    <div className="timeline-groups">
+                      {timelineGroups.map(([dateLabel, entries]) => (
+                        <section className="utility-card timeline-group" key={dateLabel}>
+                          <button
+                            type="button"
+                            className="timeline-group__header"
+                            onClick={() => toggleTimelineDate(dateLabel)}
+                            aria-expanded={!collapsedTimelineDates.has(dateLabel)}
+                          >
+                            <h3>{dateLabel}</h3>
+                            <span>
+                              {entries.length}
+                              <strong
+                                className={`timeline-group__chevron ${
+                                  collapsedTimelineDates.has(dateLabel)
+                                    ? "timeline-group__chevron--collapsed"
+                                    : ""
+                                }`}
+                                aria-hidden="true"
+                              >
+                                ▾
+                              </strong>
+                            </span>
+                          </button>
+                          {!collapsedTimelineDates.has(dateLabel) ? (
+                            <div className="timeline-list">
+                              {entries.map(({ plate, discovery }) => (
+                                <article
+                                  className="utility-card timeline-entry"
+                                  key={`${plate.id}-${discovery.foundAtIso}`}
+                                >
+                                  <div className="timeline-entry__plate">
+                                    <img
+                                      className="timeline-entry__image"
+                                      src={`${import.meta.env.BASE_URL}${plate.defaultVersion.imagePath}`}
+                                      alt={plate.name}
+                                    />
+                                    <div className="timeline-entry__copy">
+                                      <h4>{plate.name}</h4>
+                                      <p className="utility-card__meta">
+                                        {formatDiscoveryTime(discovery.foundAtIso)}
+                                      </p>
+                                      <p className="utility-card__meta">
+                                        {discovery.locality ?? "Location unavailable"}
+                                      </p>
+                                    </div>
+                                  </div>
+                                </article>
+                              ))}
+                            </div>
+                          ) : null}
+                        </section>
+                      ))}
+                    </div>
+                  ) : (
+                    <section className="empty-state">
+                      <h2>No timeline yet</h2>
+                      <p>Find a few plates and your sightings will appear here.</p>
+                    </section>
+                  )}
+                </div>
+              ) : null}
               {activeExploreTab === "badges" ? (
                 <div className="utility-stack">
                   <section className="utility-card utility-card--about">
@@ -1301,7 +1721,7 @@ function App() {
                       {earnedBadges.length} of {evaluatedBadges.length} earned
                     </p>
                     <p className="utility-card__meta">
-                      Badges in v1.1 reflect your current saved state.
+                      Badges currently reflect your saved state.
                     </p>
                   </section>
                   <section className="utility-card">
@@ -1320,48 +1740,8 @@ function App() {
                               </h4>
                               <span>{badges.length}</span>
                             </div>
-                            <div className="utility-list">
-                              {badges.map((badge) => (
-                                <article
-                                  className={`utility-card utility-card--badge utility-card--badge-${badge.group}`}
-                                  key={badge.id}
-                                >
-                                  <div className="badge-card__icon-shell">
-                                    <BadgeIcon badge={badge} />
-                                  </div>
-                                  <div className="badge-card__body">
-                                    <div className="utility-card__header badge-card__header">
-                                      <h3>{badge.name}</h3>
-                                      <span>Earned</span>
-                                    </div>
-                                    <div className="badge-card__meta-row">
-                                      <div className={`badge-chip badge-chip--${badge.group}`}>
-                                        <span
-                                          className={`badge-chip__icon badge-group__icon badge-group__icon--${badgeGroupSymbols[badge.group]} badge-group__icon--${badge.group}`}
-                                          aria-hidden="true"
-                                        />
-                                        <span>{badgeGroupLabels[badge.group]}</span>
-                                      </div>
-                                      {badge.progressCurrent !== undefined &&
-                                      badge.progressTarget !== undefined ? (
-                                        <span className="badge-progress-pill">
-                                          {badge.progressCurrent} / {badge.progressTarget}
-                                        </span>
-                                      ) : null}
-                                    </div>
-                                    <p className="utility-card__meta badge-card__description">
-                                      {badge.description}
-                                    </p>
-                                    <button
-                                      type="button"
-                                      className="app-footer__share utility-card__action badge-card__share"
-                                      onClick={() => handleShareBadge(badge.name)}
-                                    >
-                                      Share
-                                    </button>
-                                  </div>
-                                </article>
-                              ))}
+                            <div className="badge-grid">
+                              {badges.map((badge) => renderBadgeCard(badge))}
                             </div>
                           </section>
                         ))}
@@ -1387,41 +1767,8 @@ function App() {
                             </h4>
                             <span>{badges.length}</span>
                           </div>
-                          <div className="utility-list">
-                            {badges.map((badge) => (
-                              <article
-                                className={`utility-card utility-card--badge utility-card--badge-muted utility-card--badge-${badge.group}`}
-                                key={badge.id}
-                              >
-                                <div className="badge-card__icon-shell">
-                                  <BadgeIcon badge={badge} />
-                                </div>
-                                <div className="badge-card__body">
-                                  <div className="utility-card__header badge-card__header">
-                                    <h3>{badge.name}</h3>
-                                    <span>Not yet</span>
-                                  </div>
-                                  <div className="badge-card__meta-row">
-                                    <div className={`badge-chip badge-chip--${badge.group}`}>
-                                      <span
-                                        className={`badge-chip__icon badge-group__icon badge-group__icon--${badgeGroupSymbols[badge.group]} badge-group__icon--${badge.group}`}
-                                        aria-hidden="true"
-                                      />
-                                      <span>{badgeGroupLabels[badge.group]}</span>
-                                    </div>
-                                    {badge.progressCurrent !== undefined &&
-                                    badge.progressTarget !== undefined ? (
-                                      <span className="badge-progress-pill">
-                                        {badge.progressCurrent} / {badge.progressTarget}
-                                      </span>
-                                    ) : null}
-                                  </div>
-                                  <p className="utility-card__meta badge-card__description">
-                                    {badge.description}
-                                  </p>
-                                </div>
-                              </article>
-                            ))}
+                          <div className="badge-grid">
+                            {badges.map((badge) => renderBadgeCard(badge))}
                           </div>
                         </section>
                       ))}
@@ -1525,12 +1872,26 @@ function App() {
                       </button>
                     </div>
                   </section>
-                  <section className="utility-card">
+                  <section className="utility-card utility-card--about">
                     <h3>About these settings</h3>
                     <p className="utility-card__meta">
                       These toggles only change which controls appear on the main game screen.
                       Your progress and filter state stay intact.
                     </p>
+                  </section>
+                  <section className="utility-card">
+                    <h3>Progress</h3>
+                    <p className="utility-card__meta">
+                      Clear all found plates, timestamps, and saved locations from this device.
+                    </p>
+                    <button
+                      type="button"
+                      className="clear-discoveries utility-card__action"
+                      onClick={handleClearDiscoveries}
+                      disabled={foundCount === 0}
+                    >
+                      Clear found
+                    </button>
                   </section>
                 </div>
               ) : null}
@@ -1676,6 +2037,100 @@ function App() {
                     </div>
                   </section>
                 </div>
+              ) : null}
+            </div>
+          </section>
+        </div>
+      ) : null}
+
+      {activeBadgeDetail ? (
+        <div
+          className="utility-panel-backdrop"
+          role="presentation"
+          onClick={() => setActiveBadgeDetail(null)}
+        >
+          <section
+            className="badge-detail-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-label={`${activeBadgeDetail.name} badge details`}
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="badge-detail-modal__header">
+              <div
+                className={`badge-detail-modal__icon-shell badge-detail-modal__icon-shell--${activeBadgeDetail.group}`}
+              >
+                <BadgeIcon badge={activeBadgeDetail} />
+              </div>
+              <div className="badge-detail-modal__intro">
+                <div className="badge-detail-modal__intro-copy">
+                  <p className="utility-panel__eyebrow">Merit badge</p>
+                  <h2 className="badge-detail-modal__title">{activeBadgeDetail.name}</h2>
+                  <p className="badge-detail-modal__lede">
+                    {activeBadgeDetail.description}
+                  </p>
+                </div>
+                <div className="badge-detail-modal__header-actions">
+                  <span
+                    className={`badge-card__status ${
+                      activeBadgeDetail.earned
+                        ? "badge-card__status--earned"
+                        : "badge-card__status--pending"
+                    }`}
+                  >
+                    {activeBadgeDetail.earned ? "Earned" : "Not yet"}
+                  </span>
+                  {activeBadgeDetail.earned ? (
+                    <button
+                      type="button"
+                      className="app-footer__share badge-detail-modal__share"
+                      onClick={() => handleShareBadge(activeBadgeDetail.name)}
+                    >
+                      Share
+                    </button>
+                  ) : null}
+                </div>
+              </div>
+            </div>
+            <div className="badge-detail-modal__body">
+              <div className="badge-detail-modal__meta">
+                <div className={`badge-chip badge-chip--${activeBadgeDetail.group}`}>
+                  <span
+                    className={`badge-chip__icon badge-group__icon badge-group__icon--${badgeGroupSymbols[activeBadgeDetail.group]} badge-group__icon--${activeBadgeDetail.group}`}
+                    aria-hidden="true"
+                  />
+                  <span>{badgeGroupLabels[activeBadgeDetail.group]}</span>
+                </div>
+                {activeBadgeProgressLabel ? (
+                  <span className="badge-progress-pill badge-progress-pill--modal">
+                    {activeBadgeProgressLabel}
+                  </span>
+                ) : null}
+              </div>
+              {activeBadgeDetail.earned && activeBadgeSupportingDiscoveries.length > 0 ? (
+                <section className="utility-card badge-detail-modal__section">
+                  <h3>
+                    {activeBadgeSupportingDiscoveries.length === 1
+                      ? "Supporting sighting"
+                      : "Supporting sightings"}
+                  </h3>
+                  <div className="badge-detail-modal__sightings">
+                    {activeBadgeSupportingDiscoveries.map(({ plate, discovery }) => (
+                      <article
+                        className="badge-detail-modal__sighting"
+                        key={`${activeBadgeDetail.id}-${plate.id}-${discovery.foundAtIso}`}
+                      >
+                        <h4>{plate.name}</h4>
+                        <p className="utility-card__meta">
+                          {formatDiscoveryTime(discovery.foundAtIso)}
+                        </p>
+                        <p className="utility-card__meta">
+                          {discovery.locality ?? "Location unavailable"}
+                        </p>
+                      </article>
+                    ))}
+                  </div>
+                </section>
               ) : null}
             </div>
           </section>

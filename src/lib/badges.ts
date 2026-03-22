@@ -5,14 +5,18 @@ export type BadgeGroup =
   | "category"
   | "collection"
   | "college"
-  | "locality";
+  | "locality"
+  | "service"
+  | "florida";
+
+type BadgeAvailability = "v1.4" | "later";
 
 export interface BadgeDefinition {
   id: string;
   name: string;
   description: string;
   group: BadgeGroup;
-  availableIn: "v1.1";
+  availableIn: BadgeAvailability;
 }
 
 export interface EvaluatedBadge extends BadgeDefinition {
@@ -24,15 +28,104 @@ export interface EvaluatedBadge extends BadgeDefinition {
 const natureCategory: PlateCategory = "Nature & Wildlife";
 const sportsCategory: PlateCategory = "Professional Sports";
 const universitiesCategory: PlateCategory = "Universities";
+const militaryCategory: PlateCategory = "Military & Veterans";
+const publicSafetyCategory: PlateCategory = "Public Safety";
 
-const legacyMiscCategories = new Set<PlateCategory>([
-  "Military & Veterans",
-  "Public Safety",
-  "Health & Family",
+const mixedBagCategories = new Set<PlateCategory>([
   "Civic & Causes",
+  "Health & Family",
   "Education & Culture",
+  "Public Safety",
   "Recreation & Tourism"
 ]);
+
+const floridaPanhandleCounties = new Set([
+  "Escambia",
+  "Bay",
+  "Calhoun",
+  "Franklin",
+  "Gulf",
+  "Holmes",
+  "Jackson",
+  "Liberty",
+  "Okaloosa",
+  "Santa Rosa",
+  "Walton",
+  "Washington"
+]);
+
+const allAroundFloridaRegions = [
+  {
+    id: "emerald-coast-explorer",
+    name: "Emerald Coast Explorer",
+    counties: ["Escambia", "Santa Rosa", "Okaloosa", "Walton"]
+  },
+  {
+    id: "forgotten-coast-explorer",
+    name: "Forgotten Coast Explorer",
+    counties: ["Bay", "Calhoun", "Gulf", "Franklin", "Liberty"]
+  },
+  {
+    id: "big-bend-explorer",
+    name: "Big Bend Explorer",
+    counties: ["Wakulla", "Jefferson", "Madison", "Taylor", "Lafayette"]
+  },
+  {
+    id: "capital-region-explorer",
+    name: "Capital Region Explorer",
+    counties: ["Leon", "Gadsden", "Jackson", "Holmes", "Washington"]
+  },
+  {
+    id: "suwannee-valley-explorer",
+    name: "Suwannee Valley Explorer",
+    counties: ["Hamilton", "Suwannee", "Columbia", "Baker", "Union", "Bradford"]
+  },
+  {
+    id: "first-coast-explorer",
+    name: "First Coast Explorer",
+    counties: ["Nassau", "Duval", "St. Johns", "Flagler"]
+  },
+  {
+    id: "nature-coast-explorer",
+    name: "Nature Coast Explorer",
+    counties: ["Dixie", "Levy", "Citrus", "Hernando"]
+  },
+  {
+    id: "suncoast-explorer",
+    name: "Suncoast Explorer",
+    counties: ["Pasco", "Pinellas", "Hillsborough", "Manatee", "Sarasota"]
+  },
+  {
+    id: "florida-heartland-explorer",
+    name: "Florida Heartland Explorer",
+    counties: ["Polk", "Hardee", "Highlands", "DeSoto", "Okeechobee"]
+  },
+  {
+    id: "treasure-coast-explorer",
+    name: "Treasure Coast Explorer",
+    counties: ["Indian River", "St. Lucie", "Martin"]
+  },
+  {
+    id: "space-coast-explorer",
+    name: "Space Coast Explorer",
+    counties: ["Brevard"]
+  },
+  {
+    id: "gold-coast-explorer",
+    name: "Gold Coast Explorer",
+    counties: ["Palm Beach", "Broward", "Miami-Dade"]
+  },
+  {
+    id: "paradise-coast-explorer",
+    name: "Paradise Coast Explorer",
+    counties: ["Charlotte", "Lee", "Collier", "Hendry", "Glades"]
+  },
+  {
+    id: "florida-keys-explorer",
+    name: "Florida Keys Explorer",
+    counties: ["Monroe"]
+  }
+] as const;
 
 const baseballPlateNames = ["Miami Marlins (Baseball)", "Tampa Bay Rays (Baseball)"];
 const footballPlateNames = [
@@ -42,189 +135,516 @@ const footballPlateNames = [
 ];
 const hockeyPlateNames = ["Florida Panthers (Hockey)", "Tampa Bay Lightning (Hockey)"];
 const basketballPlateNames = ["Miami Heat (Basketball)", "Orlando Magic (Basketball)"];
+const allBranchesPlateNames = [
+  "U.S. Army",
+  "U.S. Navy",
+  "U.S. Air Force",
+  "U.S. Marine Corps",
+  "U.S. Coast Guard"
+];
+const lawEnforcementPlateNames = [
+  "Fallen Law Enforcement Officers",
+  "Florida Sheriffs Association",
+  "Fraternal Order of Police",
+  "Police Athletic League",
+  "Police Benevolent Association",
+  "Support Law Enforcement"
+];
+const publicSafetyPlateNames = [
+  ...lawEnforcementPlateNames,
+  "Salutes Firefighters"
+];
+const distinguishedPlateNames = [
+  "Distinguished Flying Cross",
+  "Distinguished Service Cross",
+  "Air Force Cross"
+];
+const combatBadgePlateNames = [
+  "Combat Action Badge",
+  "Combat Action Ribbon",
+  "Combat Infantry Badge",
+  "Combat Medical Badge"
+];
+const honorAndMedalPlateNames = [
+  "Air Force Combat Action Medal",
+  "Air Force Cross",
+  "Army of Occupation",
+  "Bronze Star",
+  "Combat Action Badge",
+  "Combat Action Ribbon",
+  "Combat Infantry Badge",
+  "Combat Medical Badge",
+  "Distinguished Flying Cross",
+  "Distinguished Service Cross"
+];
 
 export const badgeDefinitions: BadgeDefinition[] = [
   {
     id: "first-spot",
     name: "First Spot",
-    description: "Earn your first plate.",
+    description: "Spot your first plate.",
     group: "progress",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
     id: "five-alive",
     name: "Five Alive",
-    description: "Find 5 plates.",
+    description: "Spot 5 plates.",
     group: "progress",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
     id: "ten-down",
     name: "Ten Down",
-    description: "Find 10 plates.",
+    description: "Spot 10 plates.",
     group: "progress",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
-    id: "quarter-way-there",
-    name: "Quarter Way There",
-    description: "Find 25% of all plates.",
+    id: "quarter-mark",
+    name: "Quarter Mark",
+    description: "Spot 25% of all plates.",
     group: "progress",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
     id: "halfway-home",
     name: "Halfway Home",
-    description: "Find 50% of all plates.",
+    description: "Spot 50% of all plates.",
     group: "progress",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
     id: "closing-in",
     name: "Closing In",
-    description: "Find 75% of all plates.",
+    description: "Spot 75% of all plates.",
     group: "progress",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
-    id: "full-collection",
-    name: "Full Collection",
-    description: "Find every plate in the game.",
+    id: "complete-set",
+    name: "Complete Set",
+    description: "Spot every plate in the game.",
     group: "progress",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
+  },
+  {
+    id: "mixed-bag",
+    name: "Mixed Bag",
+    description:
+      "Find 5 plates from the civic, health, culture, safety, and tourism groups.",
+    group: "category",
+    availableIn: "v1.4"
   },
   {
     id: "green-light",
     name: "Green Light",
     description: "Find 5 nature and wildlife plates.",
     group: "category",
-    availableIn: "v1.1"
-  },
-  {
-    id: "campus-tour",
-    name: "Campus Tour",
-    description: "Find 5 university plates.",
-    group: "college",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
     id: "sports-fan",
     name: "Sports Fan",
     description: "Find 5 professional sports plates.",
     group: "category",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
-    id: "odds-and-ends",
-    name: "Odds and Ends",
-    description: "Find 5 plates from the broader civic, health, culture, safety, and tourism groups.",
-    group: "category",
-    availableIn: "v1.1"
+    id: "reporting-for-duty",
+    name: "Reporting for Duty",
+    description: "Find your first Those Who Serve plate.",
+    group: "service",
+    availableIn: "v1.4"
+  },
+  {
+    id: "on-call",
+    name: "On Call",
+    description: "Find 5 Those Who Serve plates.",
+    group: "service",
+    availableIn: "v1.4"
+  },
+  {
+    id: "in-service",
+    name: "In Service",
+    description: "Find 10 Those Who Serve plates.",
+    group: "service",
+    availableIn: "v1.4"
   },
   {
     id: "eco-scout",
     name: "Eco Scout",
     description: "Complete the nature and wildlife category.",
     group: "category",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
-    id: "sideline-complete",
-    name: "Sideline Complete",
+    id: "all-teams",
+    name: "All Teams",
     description: "Complete the professional sports category.",
     group: "category",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
-    id: "campus-complete",
-    name: "Campus Complete",
-    description: "Complete the universities category.",
-    group: "college",
-    availableIn: "v1.1"
-  },
-  {
-    id: "catch-all-complete",
-    name: "Catch-All Complete",
-    description: "Complete the broader civic, health, culture, safety, and tourism groups.",
+    id: "full-spectrum",
+    name: "Full Spectrum",
+    description:
+      "Complete the civic, health, culture, safety, and tourism groups.",
     group: "category",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
-    id: "diamond-run",
-    name: "Diamond Run",
-    description: "Find all baseball team plates.",
-    group: "collection",
-    availableIn: "v1.1"
+    id: "all-branches",
+    name: "All Branches",
+    description: "Find all five U.S. military branch plates.",
+    group: "service",
+    availableIn: "v1.4"
   },
   {
-    id: "sunday-lineup",
-    name: "Sunday Lineup",
-    description: "Find all football team plates.",
-    group: "collection",
-    availableIn: "v1.1"
+    id: "back-the-blue",
+    name: "Back the Blue",
+    description: "Find any 3 law enforcement plates.",
+    group: "service",
+    availableIn: "v1.4"
   },
   {
-    id: "center-ice",
-    name: "Center Ice",
-    description: "Find all hockey team plates.",
-    group: "collection",
-    availableIn: "v1.1"
+    id: "fire-watch",
+    name: "Fire Watch",
+    description: "Find the Salutes Firefighters plate.",
+    group: "service",
+    availableIn: "v1.4"
   },
   {
-    id: "tip-off",
-    name: "Tip-Off",
-    description: "Find all basketball team plates.",
-    group: "collection",
-    availableIn: "v1.1"
+    id: "united-front",
+    name: "United Front",
+    description: "Find 5 public safety plates.",
+    group: "service",
+    availableIn: "v1.4"
   },
   {
-    id: "state-school-start",
-    name: "State School Start",
-    description: "Find your first college plate.",
+    id: "air-support",
+    name: "Air Support",
+    description: "Find the Blue Angels plate.",
+    group: "service",
+    availableIn: "v1.4"
+  },
+  {
+    id: "airborne",
+    name: "Airborne",
+    description: "Find the U.S. Paratroopers plate.",
+    group: "service",
+    availableIn: "v1.4"
+  },
+  {
+    id: "those-who-serve",
+    name: "Those Who Serve",
+    description: "Find all standard military and public safety plates.",
+    group: "service",
+    availableIn: "v1.4"
+  },
+  {
+    id: "bronze-star-honor",
+    name: "Bronze Star",
+    description: "Find the Bronze Star plate.",
+    group: "service",
+    availableIn: "v1.4"
+  },
+  {
+    id: "distinguished",
+    name: "Distinguished",
+    description: "Find any Distinguished Cross plate.",
+    group: "service",
+    availableIn: "v1.4"
+  },
+  {
+    id: "combat-ready",
+    name: "Combat Ready",
+    description: "Find any combat badge plate.",
+    group: "service",
+    availableIn: "v1.4"
+  },
+  {
+    id: "decorated-service",
+    name: "Decorated Service",
+    description: "Find 3 different medal or honor plates.",
+    group: "service",
+    availableIn: "v1.4"
+  },
+  {
+    id: "first-day-of-school",
+    name: "First Day of School",
+    description: "Find your first university plate.",
     group: "college",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
+  },
+  {
+    id: "campus-tour",
+    name: "Campus Tour",
+    description: "Find 5 university plates.",
+    group: "college",
+    availableIn: "v1.4"
   },
   {
     id: "freshman",
     name: "Freshman",
-    description: "Find 5 college plates.",
+    description: "Find 20% of university plates.",
     group: "college",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
     id: "sophomore",
     name: "Sophomore",
-    description: "Find 10 college plates.",
+    description: "Find 40% of university plates.",
     group: "college",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
     id: "junior",
     name: "Junior",
-    description: "Find 20 college plates.",
+    description: "Find 60% of university plates.",
     group: "college",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
     id: "senior",
     name: "Senior",
-    description: "Find 30 college plates.",
+    description: "Find 80% of university plates.",
     group: "college",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
-    id: "commencement",
-    name: "Commencement",
-    description: "Complete all college plates.",
+    id: "graduation-day",
+    name: "Graduation Day",
+    description: "Complete all university plates.",
     group: "college",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
   },
   {
-    id: "everywhere-all-at-once",
-    name: "Everywhere All at Once",
-    description: "Find plates in 10 different localities.",
+    id: "grand-slam",
+    name: "Grand Slam",
+    description: "Find all baseball team plates.",
+    group: "collection",
+    availableIn: "v1.4"
+  },
+  {
+    id: "touchdown",
+    name: "Touchdown",
+    description: "Find all football team plates.",
+    group: "collection",
+    availableIn: "v1.4"
+  },
+  {
+    id: "hat-trick",
+    name: "Hat Trick",
+    description: "Find all hockey team plates.",
+    group: "collection",
+    availableIn: "v1.4"
+  },
+  {
+    id: "slam-dunk",
+    name: "Slam Dunk",
+    description: "Find all basketball team plates.",
+    group: "collection",
+    availableIn: "v1.4"
+  },
+  {
+    id: "escapee",
+    name: "Escapee",
+    description: "Find a plate outside of Florida.",
     group: "locality",
-    availableIn: "v1.1"
+    availableIn: "v1.4"
+  },
+  {
+    id: "i-get-around",
+    name: "I Get Around",
+    description: "Find plates in 5 different places.",
+    group: "locality",
+    availableIn: "v1.4"
+  },
+  {
+    id: "road-trip",
+    name: "Road Trip",
+    description: "Find plates in 10 different places.",
+    group: "locality",
+    availableIn: "v1.4"
+  },
+  {
+    id: "panhandle-scout",
+    name: "Panhandle Scout",
+    description: "Find a plate in a Florida panhandle county.",
+    group: "locality",
+    availableIn: "v1.4"
+  },
+  {
+    id: "emerald-coast-explorer",
+    name: "Emerald Coast Explorer",
+    description: "Find a plate in Escambia, Santa Rosa, Okaloosa, and Walton counties.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "forgotten-coast-explorer",
+    name: "Forgotten Coast Explorer",
+    description: "Find a plate in Bay, Calhoun, Gulf, Franklin, and Liberty counties.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "big-bend-explorer",
+    name: "Big Bend Explorer",
+    description: "Find a plate in Wakulla, Jefferson, Madison, Taylor, and Lafayette counties.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "capital-region-explorer",
+    name: "Capital Region Explorer",
+    description: "Find a plate in Leon, Gadsden, Jackson, Holmes, and Washington counties.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "suwannee-valley-explorer",
+    name: "Suwannee Valley Explorer",
+    description: "Find a plate in Hamilton, Suwannee, Columbia, Baker, Union, and Bradford counties.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "first-coast-explorer",
+    name: "First Coast Explorer",
+    description: "Find a plate in Nassau, Duval, St. Johns, and Flagler counties.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "nature-coast-explorer",
+    name: "Nature Coast Explorer",
+    description: "Find a plate in Dixie, Levy, Citrus, and Hernando counties.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "suncoast-explorer",
+    name: "Suncoast Explorer",
+    description: "Find a plate in Pasco, Pinellas, Hillsborough, Manatee, and Sarasota counties.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "florida-heartland-explorer",
+    name: "Florida Heartland Explorer",
+    description: "Find a plate in Polk, Hardee, Highlands, DeSoto, and Okeechobee counties.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "treasure-coast-explorer",
+    name: "Treasure Coast Explorer",
+    description: "Find a plate in Indian River, St. Lucie, and Martin counties.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "space-coast-explorer",
+    name: "Space Coast Explorer",
+    description: "Find a plate in Brevard County.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "gold-coast-explorer",
+    name: "Gold Coast Explorer",
+    description: "Find a plate in Palm Beach, Broward, and Miami-Dade counties.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "paradise-coast-explorer",
+    name: "Paradise Coast Explorer",
+    description: "Find a plate in Charlotte, Lee, Collier, Hendry, and Glades counties.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "florida-keys-explorer",
+    name: "Florida Keys Explorer",
+    description: "Find a plate in Monroe County.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-florida",
+    name: "All Around Florida",
+    description: "Earn every regional explorer badge.",
+    group: "florida",
+    availableIn: "v1.4"
+  }
+];
+
+export const deferredBadgeIdeas: BadgeDefinition[] = [
+  {
+    id: "afternoon-delight",
+    name: "Afternoon Delight",
+    description: "Find a plate between 1:00 PM and 4:59 PM.",
+    group: "progress",
+    availableIn: "later"
+  },
+  {
+    id: "happy-hour",
+    name: "Happy Hour",
+    description: "Find a plate between 5:00 PM and 6:59 PM.",
+    group: "progress",
+    availableIn: "later"
+  },
+  {
+    id: "prime-time",
+    name: "Prime Time",
+    description: "Find a plate between 7:00 PM and 10:59 PM.",
+    group: "progress",
+    availableIn: "later"
+  },
+  {
+    id: "late-night",
+    name: "Late Night",
+    description: "Find a plate between 11:00 PM and 1:59 AM.",
+    group: "progress",
+    availableIn: "later"
+  },
+  {
+    id: "graveyard-shift",
+    name: "Graveyard Shift",
+    description: "Find a plate between 2:00 AM and 4:59 AM.",
+    group: "progress",
+    availableIn: "later"
+  },
+  {
+    id: "early-bird",
+    name: "Early Bird",
+    description: "Find a plate between 5:00 AM and 6:59 AM.",
+    group: "progress",
+    availableIn: "later"
+  },
+  {
+    id: "morning-rush",
+    name: "Morning Rush",
+    description: "Find a plate between 7:00 AM and 9:59 AM.",
+    group: "progress",
+    availableIn: "later"
+  },
+  {
+    id: "brunch-time",
+    name: "Brunch Time",
+    description: "Find a plate between 10:00 AM and 11:59 AM.",
+    group: "progress",
+    availableIn: "later"
+  },
+  {
+    id: "lunch-break",
+    name: "Lunch Break",
+    description: "Find a plate between 12:00 PM and 12:59 PM.",
+    group: "progress",
+    availableIn: "later"
   }
 ];
 
@@ -238,17 +658,17 @@ function countFoundInCategory(
   ).length;
 }
 
-function countFoundInLegacyMisc(
+function countFoundInMixedBag(
   plates: Plate[],
   discoveries: PlateDiscoveryMap
 ): number {
   return plates.filter(
-    (plate) => legacyMiscCategories.has(plate.category) && discoveries[plate.id]
+    (plate) => mixedBagCategories.has(plate.category) && discoveries[plate.id]
   ).length;
 }
 
-function countTotalInLegacyMisc(plates: Plate[]): number {
-  return plates.filter((plate) => legacyMiscCategories.has(plate.category)).length;
+function countTotalInMixedBag(plates: Plate[]): number {
+  return plates.filter((plate) => mixedBagCategories.has(plate.category)).length;
 }
 
 function countFoundInCollection(
@@ -260,6 +680,60 @@ function countFoundInCollection(
     const plate = plates.find((candidatePlate) => candidatePlate.name === plateName);
     return plate ? Boolean(discoveries[plate.id]) : false;
   }).length;
+}
+
+function isHonorOrMedalPlate(plate: Plate): boolean {
+  return honorAndMedalPlateNames.includes(plate.name);
+}
+
+function isServiceCategoryPlate(plate: Plate): boolean {
+  return plate.category === militaryCategory || plate.category === publicSafetyCategory;
+}
+
+function isThoseWhoServeCompletionPlate(plate: Plate): boolean {
+  return isServiceCategoryPlate(plate) && !isHonorOrMedalPlate(plate);
+}
+
+function countFoundInServiceCategory(
+  plates: Plate[],
+  discoveries: PlateDiscoveryMap
+): number {
+  return plates.filter((plate) => isServiceCategoryPlate(plate) && discoveries[plate.id]).length;
+}
+
+function countFoundInThoseWhoServeCompletion(
+  plates: Plate[],
+  discoveries: PlateDiscoveryMap
+): number {
+  return plates.filter((plate) => isThoseWhoServeCompletionPlate(plate) && discoveries[plate.id]).length;
+}
+
+function countTotalInThoseWhoServeCompletion(plates: Plate[]): number {
+  return plates.filter((plate) => isThoseWhoServeCompletionPlate(plate)).length;
+}
+
+function countFoundByNames(
+  plates: Plate[],
+  discoveries: PlateDiscoveryMap,
+  plateNames: string[]
+): number {
+  return countFoundInCollection(plates, discoveries, plateNames);
+}
+
+function createBadgeDefinitionLookup(definitions: BadgeDefinition[]) {
+  return new Map(definitions.map((definition) => [definition.id, definition]));
+}
+
+function getBadgeDefinition(
+  definitionsById: Map<string, BadgeDefinition>,
+  id: string
+): BadgeDefinition {
+  const definition = definitionsById.get(id);
+  if (!definition) {
+    throw new Error(`Missing badge definition for ${id}`);
+  }
+
+  return definition;
 }
 
 function createThresholdBadge(
@@ -275,94 +749,285 @@ function createThresholdBadge(
   };
 }
 
+function normalizeCountyName(county: string | null | undefined): string | null {
+  if (!county) {
+    return null;
+  }
+
+  return county.replace(/\s+county$/i, "").trim();
+}
+
+function getVisitedCountySet(discoveries: PlateDiscoveryMap): Set<string> {
+  return new Set(
+    Object.values(discoveries)
+      .map((discovery) => normalizeCountyName(discovery.county))
+      .filter((county): county is string => Boolean(county))
+  );
+}
+
+function countVisitedCounties(
+  visitedCounties: Set<string>,
+  counties: readonly string[]
+): number {
+  return counties.filter((county) => visitedCounties.has(county)).length;
+}
+
+function isLikelyInFlorida(latitude: number, longitude: number): boolean {
+  return latitude >= 24.3 && latitude <= 31.1 && longitude >= -87.8 && longitude <= -79.7;
+}
+
 export function evaluateBadges(
   plates: Plate[],
   discoveries: PlateDiscoveryMap
 ): EvaluatedBadge[] {
   const totalFound = Object.keys(discoveries).length;
   const totalPlates = plates.length;
-  const environmentalFound = countFoundInCategory(plates, discoveries, natureCategory);
-  const miscellaneousFound = countFoundInLegacyMisc(plates, discoveries);
+  const natureFound = countFoundInCategory(plates, discoveries, natureCategory);
   const sportsFound = countFoundInCategory(plates, discoveries, sportsCategory);
   const universitiesFound = countFoundInCategory(plates, discoveries, universitiesCategory);
-  const environmentalTotal = plates.filter(
-    (plate) => plate.category === natureCategory
-  ).length;
-  const miscellaneousTotal = countTotalInLegacyMisc(plates);
+  const thoseWhoServeFound = countFoundInServiceCategory(plates, discoveries);
+  const thoseWhoServeCompletionFound = countFoundInThoseWhoServeCompletion(plates, discoveries);
+  const mixedBagFound = countFoundInMixedBag(plates, discoveries);
+  const natureTotal = plates.filter((plate) => plate.category === natureCategory).length;
   const sportsTotal = plates.filter((plate) => plate.category === sportsCategory).length;
   const universitiesTotal = plates.filter(
     (plate) => plate.category === universitiesCategory
   ).length;
+  const thoseWhoServeCompletionTotal = countTotalInThoseWhoServeCompletion(plates);
+  const mixedBagTotal = countTotalInMixedBag(plates);
+  const definitionsById = createBadgeDefinitionLookup(badgeDefinitions);
+
   const uniqueLocalities = new Set(
     Object.values(discoveries)
       .map((discovery) => discovery.locality)
       .filter((locality): locality is string => Boolean(locality))
   ).size;
 
+  const outsideFloridaCount = Object.values(discoveries).filter((discovery) => {
+    if (discovery.state) {
+      return discovery.state !== "Florida";
+    }
+
+    if (discovery.latitude !== null && discovery.longitude !== null) {
+      return !isLikelyInFlorida(discovery.latitude, discovery.longitude);
+    }
+
+    return false;
+  }).length;
+
+  const panhandleCount = Object.values(discoveries).filter((discovery) => {
+    const county = normalizeCountyName(discovery.county);
+    return county ? floridaPanhandleCounties.has(county) : false;
+  }).length;
+  const visitedCounties = getVisitedCountySet(discoveries);
+  const earnedFloridaExplorerCount = allAroundFloridaRegions.filter((region) =>
+    region.counties.every((county) => visitedCounties.has(county))
+  ).length;
+
   const lookup = new Map<string, EvaluatedBadge>([
-    ["first-spot", createThresholdBadge(badgeDefinitions[0], totalFound, 1)],
-    ["five-alive", createThresholdBadge(badgeDefinitions[1], totalFound, 5)],
-    ["ten-down", createThresholdBadge(badgeDefinitions[2], totalFound, 10)],
+    ["first-spot", createThresholdBadge(getBadgeDefinition(definitionsById, "first-spot"), totalFound, 1)],
+    ["five-alive", createThresholdBadge(getBadgeDefinition(definitionsById, "five-alive"), totalFound, 5)],
+    ["ten-down", createThresholdBadge(getBadgeDefinition(definitionsById, "ten-down"), totalFound, 10)],
     [
-      "quarter-way-there",
-      createThresholdBadge(badgeDefinitions[3], totalFound, Math.ceil(totalPlates * 0.25))
+      "quarter-mark",
+      createThresholdBadge(getBadgeDefinition(definitionsById, "quarter-mark"), totalFound, Math.ceil(totalPlates * 0.25))
     ],
     [
       "halfway-home",
-      createThresholdBadge(badgeDefinitions[4], totalFound, Math.ceil(totalPlates * 0.5))
+      createThresholdBadge(getBadgeDefinition(definitionsById, "halfway-home"), totalFound, Math.ceil(totalPlates * 0.5))
     ],
     [
       "closing-in",
-      createThresholdBadge(badgeDefinitions[5], totalFound, Math.ceil(totalPlates * 0.75))
+      createThresholdBadge(getBadgeDefinition(definitionsById, "closing-in"), totalFound, Math.ceil(totalPlates * 0.75))
     ],
-    ["full-collection", createThresholdBadge(badgeDefinitions[6], totalFound, totalPlates)],
-    ["green-light", createThresholdBadge(badgeDefinitions[7], environmentalFound, 5)],
-    ["campus-tour", createThresholdBadge(badgeDefinitions[8], universitiesFound, 5)],
-    ["sports-fan", createThresholdBadge(badgeDefinitions[9], sportsFound, 5)],
-    ["odds-and-ends", createThresholdBadge(badgeDefinitions[10], miscellaneousFound, 5)],
-    ["eco-scout", createThresholdBadge(badgeDefinitions[11], environmentalFound, environmentalTotal)],
-    ["sideline-complete", createThresholdBadge(badgeDefinitions[12], sportsFound, sportsTotal)],
-    ["campus-complete", createThresholdBadge(badgeDefinitions[13], universitiesFound, universitiesTotal)],
-    ["catch-all-complete", createThresholdBadge(badgeDefinitions[14], miscellaneousFound, miscellaneousTotal)],
+    ["complete-set", createThresholdBadge(getBadgeDefinition(definitionsById, "complete-set"), totalFound, totalPlates)],
+    ["mixed-bag", createThresholdBadge(getBadgeDefinition(definitionsById, "mixed-bag"), mixedBagFound, 5)],
+    ["green-light", createThresholdBadge(getBadgeDefinition(definitionsById, "green-light"), natureFound, 5)],
+    ["sports-fan", createThresholdBadge(getBadgeDefinition(definitionsById, "sports-fan"), sportsFound, 5)],
+    ["reporting-for-duty", createThresholdBadge(getBadgeDefinition(definitionsById, "reporting-for-duty"), thoseWhoServeFound, 1)],
+    ["on-call", createThresholdBadge(getBadgeDefinition(definitionsById, "on-call"), thoseWhoServeFound, 5)],
+    ["in-service", createThresholdBadge(getBadgeDefinition(definitionsById, "in-service"), thoseWhoServeFound, 10)],
+    ["eco-scout", createThresholdBadge(getBadgeDefinition(definitionsById, "eco-scout"), natureFound, natureTotal)],
+    ["all-teams", createThresholdBadge(getBadgeDefinition(definitionsById, "all-teams"), sportsFound, sportsTotal)],
+    ["full-spectrum", createThresholdBadge(getBadgeDefinition(definitionsById, "full-spectrum"), mixedBagFound, mixedBagTotal)],
     [
-      "diamond-run",
+      "all-branches",
       createThresholdBadge(
-        badgeDefinitions[15],
+        getBadgeDefinition(definitionsById, "all-branches"),
+        countFoundByNames(plates, discoveries, allBranchesPlateNames),
+        allBranchesPlateNames.length
+      )
+    ],
+    [
+      "back-the-blue",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "back-the-blue"),
+        countFoundByNames(plates, discoveries, lawEnforcementPlateNames),
+        3
+      )
+    ],
+    [
+      "fire-watch",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "fire-watch"),
+        countFoundByNames(plates, discoveries, ["Salutes Firefighters"]),
+        1
+      )
+    ],
+    [
+      "united-front",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "united-front"),
+        countFoundByNames(plates, discoveries, publicSafetyPlateNames),
+        5
+      )
+    ],
+    [
+      "air-support",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "air-support"),
+        countFoundByNames(plates, discoveries, ["Blue Angels"]),
+        1
+      )
+    ],
+    [
+      "airborne",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "airborne"),
+        countFoundByNames(plates, discoveries, ["U.S. Paratroopers"]),
+        1
+      )
+    ],
+    [
+      "those-who-serve",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "those-who-serve"),
+        thoseWhoServeCompletionFound,
+        thoseWhoServeCompletionTotal
+      )
+    ],
+    [
+      "bronze-star-honor",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "bronze-star-honor"),
+        countFoundByNames(plates, discoveries, ["Bronze Star"]),
+        1
+      )
+    ],
+    [
+      "distinguished",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "distinguished"),
+        countFoundByNames(plates, discoveries, distinguishedPlateNames),
+        1
+      )
+    ],
+    [
+      "combat-ready",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "combat-ready"),
+        countFoundByNames(plates, discoveries, combatBadgePlateNames),
+        1
+      )
+    ],
+    [
+      "decorated-service",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "decorated-service"),
+        countFoundByNames(plates, discoveries, honorAndMedalPlateNames),
+        3
+      )
+    ],
+    ["first-day-of-school", createThresholdBadge(getBadgeDefinition(definitionsById, "first-day-of-school"), universitiesFound, 1)],
+    ["campus-tour", createThresholdBadge(getBadgeDefinition(definitionsById, "campus-tour"), universitiesFound, 5)],
+    [
+      "freshman",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "freshman"),
+        universitiesFound,
+        Math.ceil(universitiesTotal * 0.2)
+      )
+    ],
+    [
+      "sophomore",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "sophomore"),
+        universitiesFound,
+        Math.ceil(universitiesTotal * 0.4)
+      )
+    ],
+    [
+      "junior",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "junior"),
+        universitiesFound,
+        Math.ceil(universitiesTotal * 0.6)
+      )
+    ],
+    [
+      "senior",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "senior"),
+        universitiesFound,
+        Math.ceil(universitiesTotal * 0.8)
+      )
+    ],
+    [
+      "graduation-day",
+      createThresholdBadge(getBadgeDefinition(definitionsById, "graduation-day"), universitiesFound, universitiesTotal)
+    ],
+    [
+      "grand-slam",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "grand-slam"),
         countFoundInCollection(plates, discoveries, baseballPlateNames),
         baseballPlateNames.length
       )
     ],
     [
-      "sunday-lineup",
+      "touchdown",
       createThresholdBadge(
-        badgeDefinitions[16],
+        getBadgeDefinition(definitionsById, "touchdown"),
         countFoundInCollection(plates, discoveries, footballPlateNames),
         footballPlateNames.length
       )
     ],
     [
-      "center-ice",
+      "hat-trick",
       createThresholdBadge(
-        badgeDefinitions[17],
+        getBadgeDefinition(definitionsById, "hat-trick"),
         countFoundInCollection(plates, discoveries, hockeyPlateNames),
         hockeyPlateNames.length
       )
     ],
     [
-      "tip-off",
+      "slam-dunk",
       createThresholdBadge(
-        badgeDefinitions[18],
+        getBadgeDefinition(definitionsById, "slam-dunk"),
         countFoundInCollection(plates, discoveries, basketballPlateNames),
         basketballPlateNames.length
       )
     ],
-    ["state-school-start", createThresholdBadge(badgeDefinitions[19], universitiesFound, 1)],
-    ["freshman", createThresholdBadge(badgeDefinitions[20], universitiesFound, 5)],
-    ["sophomore", createThresholdBadge(badgeDefinitions[21], universitiesFound, 10)],
-    ["junior", createThresholdBadge(badgeDefinitions[22], universitiesFound, 20)],
-    ["senior", createThresholdBadge(badgeDefinitions[23], universitiesFound, 30)],
-    ["commencement", createThresholdBadge(badgeDefinitions[24], universitiesFound, universitiesTotal)],
-    ["everywhere-all-at-once", createThresholdBadge(badgeDefinitions[25], uniqueLocalities, 10)]
+    ["escapee", createThresholdBadge(getBadgeDefinition(definitionsById, "escapee"), outsideFloridaCount, 1)],
+    ["i-get-around", createThresholdBadge(getBadgeDefinition(definitionsById, "i-get-around"), uniqueLocalities, 5)],
+    ["road-trip", createThresholdBadge(getBadgeDefinition(definitionsById, "road-trip"), uniqueLocalities, 10)],
+    ["panhandle-scout", createThresholdBadge(getBadgeDefinition(definitionsById, "panhandle-scout"), panhandleCount, 1)],
+    ...allAroundFloridaRegions.map((region) => [
+      region.id,
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, region.id),
+        countVisitedCounties(visitedCounties, region.counties),
+        region.counties.length
+      )
+    ] as const),
+    [
+      "all-around-florida",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "all-around-florida"),
+        earnedFloridaExplorerCount,
+        allAroundFloridaRegions.length
+      )
+    ]
   ]);
 
   return badgeDefinitions.map((definition) => lookup.get(definition.id) ?? { ...definition, earned: false });

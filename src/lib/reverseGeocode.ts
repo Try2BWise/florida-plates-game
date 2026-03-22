@@ -10,6 +10,12 @@ interface NominatimResponse {
   };
 }
 
+export interface ReverseGeocodePlace {
+  locality: string | null;
+  county: string | null;
+  state: string | null;
+}
+
 function buildLocalityLabel(address: NominatimResponse["address"]): string | null {
   if (!address) {
     return null;
@@ -30,10 +36,14 @@ function buildLocalityLabel(address: NominatimResponse["address"]): string | nul
   return address.state ? `${locality}, ${address.state}` : locality;
 }
 
-export async function reverseGeocodeLocality(
+function buildCountyLabel(address: NominatimResponse["address"]): string | null {
+  return address?.county?.replace(/\s+County$/i, "").trim() ?? null;
+}
+
+export async function reverseGeocodePlace(
   latitude: number,
   longitude: number
-): Promise<string | null> {
+): Promise<ReverseGeocodePlace> {
   const abortController = new AbortController();
   const timeoutId = window.setTimeout(() => abortController.abort(), 4500);
 
@@ -49,14 +59,34 @@ export async function reverseGeocodeLocality(
     );
 
     if (!response.ok) {
-      return null;
+      return {
+        locality: null,
+        county: null,
+        state: null
+      };
     }
 
     const payload = (await response.json()) as NominatimResponse;
-    return buildLocalityLabel(payload.address);
+    return {
+      locality: buildLocalityLabel(payload.address),
+      county: buildCountyLabel(payload.address),
+      state: payload.address?.state ?? null
+    };
   } catch {
-    return null;
+    return {
+      locality: null,
+      county: null,
+      state: null
+    };
   } finally {
     window.clearTimeout(timeoutId);
   }
+}
+
+export async function reverseGeocodeLocality(
+  latitude: number,
+  longitude: number
+): Promise<string | null> {
+  const place = await reverseGeocodePlace(latitude, longitude);
+  return place.locality;
 }

@@ -51,6 +51,8 @@ export interface PlateDiscovery {
   latitude: number | null;
   longitude: number | null;
   locality: string | null;
+  county: string | null;
+  state: string | null;
 }
 
 export type PlateDiscoveryMap = Record<string, PlateDiscovery>;

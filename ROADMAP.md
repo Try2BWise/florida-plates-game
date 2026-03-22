@@ -1,10 +1,10 @@
 # FL Plates Roadmap
 
-This roadmap reflects the current released state of `FL Plates` after `v1.3.0` and outlines the next likely release tracks.
+This roadmap reflects the current released state of `FL Plates` after `v1.4.0` and outlines the next likely release tracks.
 
 ## Current Release
 
-Current public release: `v1.3.0`
+Current public release: `v1.4.0`
 
 ## Shipped In v1.3.0
 
@@ -34,7 +34,38 @@ Current public release: `v1.3.0`
 - current and legacy plate designs can coexist cleanly
 - details are available in-context without cluttering the main list
 
-## v1.4
+## Shipped In v1.4.0
+
+`v1.4.0` focused on a full merit badge refresh, richer place-aware progress, and a more compact Explore experience.
+
+### Delivered
+
+- refreshed the merit badge set to match the revised badge definitions
+- added new badge families for:
+  - Those Who Serve
+  - All Around Florida
+- reworked Places badges while keeping them distinct from All Around Florida
+- extended discovery storage to capture county and state metadata
+- kept time-of-day badges defined but unshipped
+- redesigned badge cards into a denser two-column layout
+- moved most badge details into a dedicated badge modal
+- improved supporting sighting details in the badge modal
+- added a Timeline tab to Explore with:
+  - date grouping
+  - ascending / descending sort
+  - expandable and collapsible day groups
+- improved control readability in dark mode
+- moved `Clear found` into Settings while keeping the in-app confirmation flow
+- enlarged and centered the Explore panel and badge modal
+- improved the search affordance so opening search focuses the field and raises the keyboard on mobile
+
+### Result
+
+- badge progress is richer, more location-aware, and easier to browse
+- Explore scales better as the badge catalog grows
+- the app is better prepared for future social, rarity, and search improvements
+
+## v1.5
 
 Curated search and discovery improvements.
 
@@ -55,7 +86,7 @@ Curated search and discovery improvements.
   - curated search terms
 - draft a first-pass keyword set for the full current catalog
 - include school abbreviations and nicknames
-- include sports team aliases
+- include sports aliases
 - include strong visual motifs
 - include useful color/theme descriptors
 - review noisy or overly broad terms
@@ -69,14 +100,14 @@ Curated search and discovery improvements.
 
 - search finds plates by what players notice, not just by exact plate title text
 
-## v1.5
+## v1.6
 
-Metadata refinement and optional collection depth.
+Metadata refinement and future expansion support.
 
 ### Goals
 
 - improve the quality and usefulness of plate metadata without cluttering the UI
-- decide which metadata should stay informational versus becoming gameplay
+- prepare for the next source expansion without destabilizing search or the current taxonomy
 
 ### Checklist
 
@@ -89,22 +120,6 @@ Metadata refinement and optional collection depth.
   - charity/cause collections
   - version collections
 - keep scoring untouched unless the data quality becomes trustworthy enough
-
-### Definition Of Done
-
-- metadata feels more polished and useful without making the app visually busier or less trustworthy
-
-## v1.6
-
-Future catalog expansion and richer browsing.
-
-### Goals
-
-- prepare for the next source expansion without destabilizing search or the current taxonomy
-- make it easier to browse a larger catalog once more plates arrive
-
-### Checklist
-
 - review the next incoming image/metadata package
 - extend the generator/mapping rules for the next source
 - preserve logical plate identity and version continuity
@@ -113,29 +128,95 @@ Future catalog expansion and richer browsing.
 
 ### Definition Of Done
 
+- metadata feels more polished and useful without making the app visually busier or less trustworthy
 - the app can absorb another plate expansion without undoing the clarity gained in `v1.3`
+
+## v1.7+
+
+Optional social layer and cloud identity.
+
+### Goals
+
+- add an optional social layer without making accounts required to play
+- keep identity low-friction, anonymous-first, and privacy-first
+- support future friend/buddy features and global leaderboard concepts
+- preserve extra protections around name and location data, especially for minors
+
+### Vision
+
+- players can remain fully local and unhooked if they want
+- players can optionally create a persistent identity
+- identity can begin as a generated anonymous handle
+- players can later add an optional display name and eventually link external networks
+- the social model should feel more like gaming buddies than general social media
+
+### Default Shareable Data
+
+- total plates found
+- badges earned:
+  - count
+  - detail
+- recent finds
+- category completion percentages
+- rarity / hard-to-find progress
+
+### Optional Shareable Data
+
+- region-based badge progress
+- map pins / location-based views
+
+### Default Private Data
+
+- precise coordinates
+- real name
+- detailed location data unless explicitly enabled
+
+### Privacy Expectations
+
+- privacy-first defaults
+- optional social participation, never required for play
+- anonymous handles are acceptable as a starting point
+- location sharing must be opt-in
+- precise location sharing may need stronger restrictions or age gating
+
+### Likely Phases
+
+- optional cloud identity and sync
+- privacy-aware public/private player profile
+- global leaderboard
+- badge rarity and difficulty percentages based on the player base
+- friends / buddy connections
+- optional regional or map-based social views
+
+### Definition Of Done
+
+- a future social release should work without requiring a native app first
+- social participation remains optional
+- privacy defaults are strong enough that players, including minors, are not pushed into oversharing
 
 ## Parking Lot
 
 These are intentionally not committed to the next release yet.
 
 - persistent “once earned, always earned” badges
+- shipped time-of-day badges
 - rarity-based scoring
 - history/year-based gameplay
 - in-app miscategorization reporting
 - richer map provider or real slippy-map implementation
 - custom badge artwork beyond the current icon system
+- optional social identity, leaderboard, and buddy-sharing features
 
 ## Recommended Order
 
-1. `v1.4` curated search
-2. `v1.5` metadata refinement and optional rarity/badge work
-3. `v1.6` next catalog expansion support
+1. `v1.5` curated search
+2. `v1.6` metadata refinement and next catalog expansion support
+3. `v1.7+` optional social layer and cloud identity
 
 ## Immediate Next Step
 
 For the next cycle, the best target is:
 
-- build the curated `searchTerms` system
-- draft the first-pass keyword set for the current `v1.3` catalog
-- test it against the kinds of “visual memory” searches players actually use
+- implement curated search terms for the stabilized catalog
+- test search against the most visually distinctive plates
+- keep the time-of-day badge set documented for a later release
