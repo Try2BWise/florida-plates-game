@@ -22,7 +22,9 @@ export function loadDiscoveries(): PlateDiscoveryMap {
         typedLegacyMap[plateId] ?? plateId,
         {
           ...discovery,
-          locality: discovery.locality ?? null
+          locality: discovery.locality ?? null,
+          county: discovery.county ?? null,
+          state: discovery.state ?? null
         }
       ])
     );

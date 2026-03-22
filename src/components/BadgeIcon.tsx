@@ -42,6 +42,18 @@ const palettes: Record<EvaluatedBadge["group"], BadgePalette> = {
     inner: "#ccfbf1",
     accent: "#2dd4bf",
     ink: "#134e4a"
+  },
+  service: {
+    outer: "#4f46e5",
+    inner: "#e0e7ff",
+    accent: "#818cf8",
+    ink: "#312e81"
+  },
+  florida: {
+    outer: "#047857",
+    inner: "#d1fae5",
+    accent: "#34d399",
+    ink: "#065f46"
   }
 };
 
@@ -248,6 +260,14 @@ function PinGlyph({ badge }: { badge: EvaluatedBadge }) {
 }
 
 function renderBadgeGlyph(badge: EvaluatedBadge) {
+  if (badge.group === "florida") {
+    if (badge.id === "all-around-florida") {
+      return <CenterText badge={badge} primary="ALL" secondary="FLA" />;
+    }
+
+    return <PinGlyph badge={badge} />;
+  }
+
   switch (badge.id) {
     case "first-spot":
       return <PlateGlyph badge={badge} />;
@@ -255,46 +275,77 @@ function renderBadgeGlyph(badge: EvaluatedBadge) {
       return <CenterText badge={badge} primary="5" secondary="PLATES" />;
     case "ten-down":
       return <CenterText badge={badge} primary="10" secondary="PLATES" />;
-    case "quarter-way-there":
+    case "quarter-mark":
       return <CenterText badge={badge} primary="25" secondary="PCT" />;
     case "halfway-home":
       return <CenterText badge={badge} primary="50" secondary="PCT" />;
     case "closing-in":
       return <CenterText badge={badge} primary="75" secondary="PCT" />;
-    case "full-collection":
+    case "complete-set":
       return <RingStar badge={badge} />;
     case "green-light":
     case "eco-scout":
       return <LeafGlyph badge={badge} />;
     case "sports-fan":
-    case "sideline-complete":
+    case "all-teams":
       return <BallGlyph badge={badge} sport="football" />;
-    case "odds-and-ends":
-    case "catch-all-complete":
+    case "mixed-bag":
+    case "full-spectrum":
       return <CenterText badge={badge} primary="MIX" />;
+    case "reporting-for-duty":
+    case "on-call":
+      return <CenterText badge={badge} primary="USA" />;
+    case "in-service":
+      return <CenterText badge={badge} primary="10" secondary="SERVE" />;
+    case "all-branches":
+      return <CenterText badge={badge} primary="5" secondary="BRANCH" />;
+    case "back-the-blue":
+      return <CenterText badge={badge} primary="3" secondary="BLUE" />;
+    case "fire-watch":
+      return <CenterText badge={badge} primary="FIRE" />;
+    case "united-front":
+      return <CenterText badge={badge} primary="5" secondary="SAFETY" />;
+    case "air-support":
+      return <CenterText badge={badge} primary="AIR" />;
+    case "airborne":
+      return <CenterText badge={badge} primary="JUMP" />;
+    case "those-who-serve":
+      return <CenterText badge={badge} primary="USA" />;
+    case "bronze-star-honor":
+      return <RingStar badge={badge} />;
+    case "distinguished":
+      return <CenterText badge={badge} primary="X" secondary="CROSS" />;
+    case "combat-ready":
+      return <CenterText badge={badge} primary="CMBT" />;
+    case "decorated-service":
+      return <CenterText badge={badge} primary="3" secondary="HONOR" />;
     case "campus-tour":
-    case "campus-complete":
-    case "state-school-start":
-    case "commencement":
+    case "first-day-of-school":
+    case "graduation-day":
       return <CapGlyph badge={badge} />;
-    case "diamond-run":
+    case "grand-slam":
       return <BallGlyph badge={badge} sport="baseball" />;
-    case "sunday-lineup":
+    case "touchdown":
       return <BallGlyph badge={badge} sport="football" />;
-    case "center-ice":
+    case "hat-trick":
       return <BallGlyph badge={badge} sport="hockey" />;
-    case "tip-off":
+    case "slam-dunk":
       return <BallGlyph badge={badge} sport="basketball" />;
     case "freshman":
-      return <CenterText badge={badge} primary="I" secondary="5" />;
+      return <CenterText badge={badge} primary="I" secondary="20%" />;
     case "sophomore":
-      return <CenterText badge={badge} primary="II" secondary="10" />;
+      return <CenterText badge={badge} primary="II" secondary="40%" />;
     case "junior":
-      return <CenterText badge={badge} primary="III" secondary="20" />;
+      return <CenterText badge={badge} primary="III" secondary="60%" />;
     case "senior":
-      return <CenterText badge={badge} primary="IV" secondary="30" />;
-    case "everywhere-all-at-once":
+      return <CenterText badge={badge} primary="IV" secondary="80%" />;
+    case "road-trip":
+    case "i-get-around":
       return <PinGlyph badge={badge} />;
+    case "escapee":
+      return <CenterText badge={badge} primary="OUT" />;
+    case "panhandle-scout":
+      return <CenterText badge={badge} primary="PAN" />;
     default:
       return <CenterText badge={badge} primary="FL" />;
   }
