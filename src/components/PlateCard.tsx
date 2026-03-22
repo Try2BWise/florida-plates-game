@@ -5,9 +5,15 @@ interface PlateCardProps {
   plate: Plate;
   discovery?: PlateDiscovery;
   onToggle: (plate: Plate, isFound: boolean) => void;
+  onPreview: (plate: Plate) => void;
 }
 
-export function PlateCard({ plate, discovery, onToggle }: PlateCardProps) {
+export function PlateCard({
+  plate,
+  discovery,
+  onToggle,
+  onPreview
+}: PlateCardProps) {
   const isFound = Boolean(discovery);
   const localityLabel = discovery?.locality ?? null;
   const coordinateLabel = discovery
@@ -18,28 +24,38 @@ export function PlateCard({ plate, discovery, onToggle }: PlateCardProps) {
   const jpgSource = `${imageBasePath}plates/${plate.imageKey}.jpg`;
 
   return (
-    <button
-      type="button"
-      className={`plate-card ${isFound ? "plate-card--found" : ""}`}
-      onClick={() => onToggle(plate, isFound)}
-      aria-pressed={isFound}
-    >
-      <div className="plate-card__image-wrap">
-        <img
-          className="plate-card__image"
-          src={pngSource}
-          alt={plate.name}
-          loading="lazy"
-          onError={(event) => {
-            const target = event.currentTarget;
-            if (!target.dataset.fallbackApplied) {
-              target.dataset.fallbackApplied = "true";
-              target.src = jpgSource;
-            }
-          }}
-        />
-      </div>
-      <div className="plate-card__content">
+    <article className={`plate-card ${isFound ? "plate-card--found" : ""}`}>
+      <button
+        type="button"
+        className="plate-card__image-button"
+        onClick={() => onPreview(plate)}
+        aria-label={`Preview ${plate.name} plate image`}
+      >
+        <div className="plate-card__image-wrap">
+          <img
+            className="plate-card__image"
+            src={pngSource}
+            alt={plate.name}
+            loading="lazy"
+            onError={(event) => {
+              const target = event.currentTarget;
+              if (!target.dataset.fallbackApplied) {
+                target.dataset.fallbackApplied = "true";
+                target.src = jpgSource;
+              }
+            }}
+          />
+        </div>
+      </button>
+      <button
+        type="button"
+        className="plate-card__content"
+        onClick={() => onToggle(plate, isFound)}
+        aria-pressed={isFound}
+        aria-label={
+          isFound ? `Mark ${plate.name} as not found` : `Mark ${plate.name} as found`
+        }
+      >
         <span className="plate-card__name">{plate.name}</span>
         {discovery ? (
           <>
@@ -57,7 +73,7 @@ export function PlateCard({ plate, discovery, onToggle }: PlateCardProps) {
             )}
           </>
         ) : null}
-      </div>
-    </button>
+      </button>
+    </article>
   );
 }
