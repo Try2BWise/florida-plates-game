@@ -1,14 +1,14 @@
 {
-  "generatedAtIso": "2026-03-22T07:58:21.727Z",
+  "generatedAtIso": "2026-03-24T05:11:58.864Z",
   "zipPath": "C:\\Users\\bwise\\Documents\\scrape-florida-plates\\florida_specialty_plates.zip",
   "charityPath": "C:\\Users\\bwise\\Downloads\\florida_specialty_plates_charity_dataset.json",
   "summary": {
-    "logicalPlates": 176,
+    "logicalPlates": 175,
     "withMultipleVersions": 50,
-    "legacyOnly": 17,
-    "currentOnly": 56,
+    "legacyOnly": 16,
+    "currentOnly": 55,
     "normalizedMatches": 68,
-    "manualOverrideMatches": 35,
+    "manualOverrideMatches": 36,
     "byCategory": [
       {
         "category": "Universities",
@@ -40,7 +40,7 @@
       },
       {
         "category": "Education & Culture",
-        "count": 9
+        "count": 8
       },
       {
         "category": "Recreation & Tourism",
@@ -81,26 +81,41 @@
       "suggestedLegacyMatches": []
     },
     {
-      "id": "adventist-university",
-      "name": "Adventist University",
+      "id": "adventhealth-university",
+      "name": "AdventHealth University",
       "appCategory": "Universities",
       "sourceCategories": [
         "Universities"
       ],
-      "aliases": [],
+      "aliases": [
+        "Adventist University"
+      ],
       "introducedYear": null,
       "introducedYearConfidence": null,
-      "popularityWeight": null,
+      "popularityWeight": 2,
       "sponsor": {
-        "name": null,
+        "name": "AdventHealth University foundation",
         "notes": "Annual use fees go to Adventist University, for academic enhancement. These funds help Adventist University grow, expand and enhance the student experience.",
         "url": "https://buyfloridaspecialtyplates.com/specialty-license-plates/Adventist-University-Florida-Specialty-License-Plate-p542698847"
       },
       "matchSource": "current_only",
-      "suggestedLegacyMatches": [],
+      "suggestedLegacyMatches": [
+        {
+          "name": "Barry University",
+          "score": 0.5
+        },
+        {
+          "name": "Florida A & M University",
+          "score": 0.5
+        },
+        {
+          "name": "Florida Atlantic University",
+          "score": 0.5
+        }
+      ],
       "versions": [
         {
-          "id": "adventist-university-current",
+          "id": "adventhealth-university-current",
           "label": "Current",
           "source": "zip",
           "isDefault": true,
@@ -2142,37 +2157,6 @@
       "suggestedLegacyMatches": []
     },
     {
-      "id": "Miscellaneous-13",
-      "name": "Florida Arts",
-      "appCategory": "Education & Culture",
-      "sourceCategories": [
-        "Miscellaneous"
-      ],
-      "aliases": [],
-      "introducedYear": null,
-      "introducedYearConfidence": null,
-      "popularityWeight": null,
-      "sponsor": {
-        "name": null,
-        "notes": null,
-        "url": null
-      },
-      "matchSource": "legacy_only",
-      "versions": [
-        {
-          "id": "arts-legacy",
-          "label": "Legacy",
-          "source": "legacy",
-          "isDefault": true,
-          "imageKey": "florida_arts",
-          "imagePath": "plates/florida_arts.png",
-          "productUrl": "Florida Fine Arts Trust Funds.",
-          "notes": null
-        }
-      ],
-      "suggestedLegacyMatches": []
-    },
-    {
       "id": "Universities-9",
       "name": "Florida Atlantic University",
       "appCategory": "Universities",
@@ -3149,16 +3133,6 @@
       },
       "matchSource": "normalized_name",
       "versions": [
-        {
-          "id": "hospice-every-day-is-a-gift-legacy",
-          "label": "Legacy",
-          "source": "legacy",
-          "isDefault": false,
-          "imageKey": "hospice_everyday_is_a_gift",
-          "imagePath": "plates/hospice_everyday_is_a_gift.png",
-          "productUrl": "http://www.floridahospices.org",
-          "notes": null
-        },
         {
           "id": "hospice-every-day-is-a-gift-current",
           "label": "Current",
@@ -4882,11 +4856,16 @@
       "suggestedLegacyMatches": []
     },
     {
-      "id": "state-of-the-arts",
-      "name": "State Of The Arts",
+      "id": "Miscellaneous-13",
+      "name": "State of the Arts",
       "appCategory": "Education & Culture",
-      "sourceCategories": [],
-      "aliases": [],
+      "sourceCategories": [
+        "Miscellaneous"
+      ],
+      "aliases": [
+        "Florida Arts",
+        "State Of The Arts"
+      ],
       "introducedYear": 1990,
       "introducedYearConfidence": null,
       "popularityWeight": null,
@@ -4895,9 +4874,18 @@
         "notes": "The 'State of the Arts' plate supports arts organizations, arts programs, and arts activities.The Florida Arts License Plate Program was created by the Legislature in 1994. Funds collected through the sale of these specialty plates are distributed to the counties where the plates are sold and are used to support arts organizations, programs, and activities within that county. Each county must designate a recipient organization to administer funds that support arts activities within that county. During the 2003 legislative session, Senate Bill 1954 passed, removing the Department of State from the revenue flow cycle for the Florida Arts License Plate Program. As a result of the legislation, counties receive money directly from the Department of Highway, Safety and Motor Vehicles.",
         "url": "https://buyfloridaspecialtyplates.com/specialty-license-plates/State-Of-The-Arts-Florida-Specialty-License-Plate-p265833433"
       },
-      "matchSource": "current_only",
-      "suggestedLegacyMatches": [],
+      "matchSource": "manual_override",
       "versions": [
+        {
+          "id": "state-of-the-arts-legacy",
+          "label": "Legacy",
+          "source": "legacy",
+          "isDefault": false,
+          "imageKey": "florida_arts",
+          "imagePath": "plates/florida_arts.png",
+          "productUrl": "Florida Fine Arts Trust Funds.",
+          "notes": null
+        },
         {
           "id": "state-of-the-arts-current",
           "label": "Current",
@@ -4909,7 +4897,8 @@
           "productUrl": "https://buyfloridaspecialtyplates.com/specialty-license-plates/State-Of-The-Arts-Florida-Specialty-License-Plate-p265833433",
           "notes": "The 'State of the Arts' plate supports arts organizations, arts programs, and arts activities.The Florida Arts License Plate Program was created by the Legislature in 1994. Funds collected through the sale of these specialty plates are distributed to the counties where the plates are sold and are used to support arts organizations, programs, and activities within that county. Each county must designate a recipient organization to administer funds that support arts activities within that county. During the 2003 legislative session, Senate Bill 1954 passed, removing the Department of State from the revenue flow cycle for the Florida Arts License Plate Program. As a result of the legislation, counties receive money directly from the Department of Highway, Safety and Motor Vehicles."
         }
-      ]
+      ],
+      "suggestedLegacyMatches": []
     },
     {
       "id": "Environmental-22",

@@ -2,12 +2,12 @@
 
 ## Summary
 
-- Logical plates in merged catalog: 176
+- Logical plates in merged catalog: 175
 - Plates with both legacy and current versions: 50
-- Legacy-only plates: 17
-- Current-only plates: 56
+- Legacy-only plates: 16
+- Current-only plates: 55
 - Normalized-name matches: 68
-- Manual override matches: 35
+- Manual override matches: 36
 - ZIP source rows after cleanup: 160
 - Charity metadata rows: 150
 
@@ -20,7 +20,7 @@
 - Public Safety: 7
 - Health & Family: 17
 - Civic & Causes: 21
-- Education & Culture: 9
+- Education & Culture: 8
 - Recreation & Tourism: 12
 
 ## Multi-Version Samples
@@ -45,15 +45,15 @@
 - Florida Special Olympic (aliases: Support Florida Special Olympics)
 - Florida State University (aliases: FSU)
 - Helping Sea Turtles (aliases: Sea Turtle, Helping Sea Turtles Survive)
-- Hospice Every Day Is A Gift (aliases: Hospice: Every Day Is A Gift, Hospice)
 - Indian River Lagoon
 - Jacksonville University
 - Lynn University
 - Miami Dolphins (Football) (aliases: Miami Dolphins)
+- Miami Heat (Basketball) (aliases: Miami Heat)
 
 ## Current-Only Samples
 
-- Adventist University
+- AdventHealth University -> possible legacy matches: Barry University (0.50), Florida A & M University (0.50), Florida Atlantic University (0.50)
 - Air Force Combat Action Medal
 - Air Force Cross
 - America The Beautiful
@@ -91,7 +91,6 @@
 - Catch Me Release Me
 - Clearwater Christian College
 - Donate Organs
-- Florida Arts
 - Florida Sheriff's Youth Ranch
 - Hispanic Achievers
 - Keep Kids Drug Free

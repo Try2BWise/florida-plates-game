@@ -100,6 +100,7 @@ export const LEGACY_TO_CURRENT_NAME_OVERRIDES = {
   "Discover Florida's Oceans": "Discover Florida Oceans",
   "Discover Florida's Horses": "Discover Florida Horses",
   "Fish Florida": "Fish",
+  "Florida Arts": "State of the Arts",
   "Florida Educational": "Support Education",
   "Florida Panthers (Hockey)": "Florida Panthers",
   "Florida A & M University": "Florida A&M University",
@@ -134,6 +135,7 @@ export const LEGACY_TO_CURRENT_NAME_OVERRIDES = {
 };
 
 export const CURRENT_NAME_CANONICAL_OVERRIDES = {
+  "Adventist University": "AdventHealth University",
   "Alpha Kappa Alpha Sorority Divine Nine": "Divine Nines: Alpha Kappa Alpha Sorority",
   "Alpha Phi Alpha Sorority Divine Nine": "Divine Nines: Alpha Phi Alpha Sorority",
   "Bethune Cookman University": "Bethune-Cookman University",
@@ -145,6 +147,7 @@ export const CURRENT_NAME_CANONICAL_OVERRIDES = {
   "Florida Panthers": "Florida Panthers (Hockey)",
   "Florida A&M University": "Florida A & M University",
   "Florida Atlantic University FAU": "Florida Atlantic University",
+  "Florida Arts": "State of the Arts",
   "Florida Gulf Coast": "Florida Gulf Coast University",
   "Hospice": "Hospice Every Day Is A Gift",
   "Helping Sea Turtles Survive": "Helping Sea Turtles",
@@ -160,6 +163,7 @@ export const CURRENT_NAME_CANONICAL_OVERRIDES = {
   "Phi Beta Sigma Fraternity Divine Nine": "Divine Nines: Phi Beta Sigma Fraternity",
   "Sigma Gamma Rho Sorority Divine Nine": "Divine Nines: Sigma Gamma Rho Sorority",
   "Scouting Teaches Values": "Boy Scouts of America",
+  "State of the Arts": "State of the Arts",
   "Support Home Ownership": "Support Homeownership For All",
   "Support Florida Special Olympics": "Florida Special Olympic",
   "Tampa Bay Buccaneers NFL": "Tampa Bay Buccaneers (Football)",
@@ -185,6 +189,7 @@ export const CURRENT_NAME_CANONICAL_OVERRIDES = {
 };
 
 export const LEGACY_NAME_CANONICAL_OVERRIDES = {
+  "Florida Arts": "State of the Arts",
   "Florida Educational": "Support Education",
   "Hospice: Every Day Is A Gift": "Hospice Every Day Is A Gift",
   "Sea Turtle": "Helping Sea Turtles",
@@ -263,6 +268,7 @@ export const SUPPRESSED_LEGACY_DUPLICATE_PLATES = new Set([
   "Fraternal Order of Police",
   "Freemasonry",
   "Horse Country",
+  "Hospice Every Day Is A Gift",
   "Imagine",
   "In God We Trust",
   "Invest in Children",
