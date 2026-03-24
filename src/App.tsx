@@ -209,12 +209,7 @@ function App() {
     () => new Set()
   );
   const [activeUtilityTab, setActiveUtilityTab] = useState<UtilityTab>("settings");
-  const [activeCategory, setActiveCategory] = useState<PlateCategory>(
-    groupedPlates[0].category
-  );
-  const sectionRefs = useRef<Record<PlateCategory, HTMLElement | null>>(
-    {} as Record<PlateCategory, HTMLElement | null>
-  );
+  const [selectedCategoryFilter, setSelectedCategoryFilter] = useState<PlateCategory | null>(null);
   const searchInputRef = useRef<HTMLInputElement | null>(null);
   const resolvingLocalitiesRef = useRef<Set<string>>(new Set());
   const plateById = useMemo(
@@ -393,7 +388,7 @@ function App() {
   );
   const foundCount = discoveryEntries.length;
   const normalizedSearchTerm = searchTerm.trim().toLowerCase();
-  const filteredPlates = useMemo(
+  const visibilityAndSearchFilteredPlates = useMemo(
     () =>
       plates.filter((plate) => {
         const isFound = Boolean(normalizedDiscoveries[plate.id]);
@@ -408,6 +403,29 @@ function App() {
         return matchesVisibility && matchesSearch;
       }),
     [normalizedDiscoveries, normalizedSearchTerm, visibilityFilter]
+  );
+  const categoryFilterOptions = useMemo(
+    () =>
+      groupedPlates
+        .map(({ category, plates: categoryPlates }) => ({
+          category,
+          plates: categoryPlates.filter((plate) =>
+            visibilityAndSearchFilteredPlates.some(
+              (filteredPlate) => filteredPlate.id === plate.id
+            )
+          )
+        }))
+        .filter(({ plates: categoryPlates }) => categoryPlates.length > 0),
+    [visibilityAndSearchFilteredPlates]
+  );
+  const filteredPlates = useMemo(
+    () =>
+      selectedCategoryFilter === null
+        ? visibilityAndSearchFilteredPlates
+        : visibilityAndSearchFilteredPlates.filter(
+            (plate) => plate.category === selectedCategoryFilter
+          ),
+    [selectedCategoryFilter, visibilityAndSearchFilteredPlates]
   );
   const filteredGroups = useMemo(() => {
     if (arrangement === "category") {
@@ -623,58 +641,13 @@ function App() {
   );
 
   useEffect(() => {
-    if (arrangement !== "category") {
-      return;
+    if (
+      selectedCategoryFilter !== null &&
+      !categoryFilterOptions.some(({ category }) => category === selectedCategoryFilter)
+    ) {
+      setSelectedCategoryFilter(null);
     }
-
-    if (filteredGroups.length === 0) {
-      return;
-    }
-
-    if (!filteredGroups.some((group) => group.category === activeCategory)) {
-      setActiveCategory(filteredGroups[0].category);
-    }
-  }, [activeCategory, arrangement, filteredGroups]);
-
-  useEffect(() => {
-    if (arrangement !== "category") {
-      return;
-    }
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleEntries = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((left, right) => right.intersectionRatio - left.intersectionRatio);
-
-        const [mostVisibleEntry] = visibleEntries;
-        if (!mostVisibleEntry) {
-          return;
-        }
-
-        const category = mostVisibleEntry.target.getAttribute(
-          "data-category"
-        ) as PlateCategory | null;
-
-        if (category) {
-          setActiveCategory(category);
-        }
-      },
-      {
-        rootMargin: "-35% 0px -45% 0px",
-        threshold: [0.2, 0.45, 0.7]
-      }
-    );
-
-    for (const { category } of filteredGroups) {
-      const section = sectionRefs.current[category];
-      if (section) {
-        observer.observe(section);
-      }
-    }
-
-    return () => observer.disconnect();
-  }, [arrangement, filteredGroups]);
+  }, [categoryFilterOptions, selectedCategoryFilter]);
 
   useEffect(() => {
     if (!previewPlate) {
@@ -715,12 +688,8 @@ function App() {
     setActivePlateId(null);
   }
 
-  function handleJumpToCategory(category: PlateCategory) {
-    setActiveCategory(category);
-    sectionRefs.current[category]?.scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
+  function handleToggleCategoryFilter(category: PlateCategory) {
+    setSelectedCategoryFilter((current) => (current === category ? null : category));
   }
 
   function handleClearDiscoveries() {
@@ -1051,28 +1020,23 @@ function App() {
                 ) : null}
               </>
             ) : null}
-            {uiPreferences.showCategories && arrangement === "category" ? (
-              <nav className="category-jump" aria-label="Jump to category">
-                {filteredGroups.map(({ category, plates: categoryPlates }) => (
+            {uiPreferences.showCategories ? (
+              <nav className="category-jump" aria-label="Filter by category">
+                {categoryFilterOptions.map(({ category, plates: categoryPlates }) => (
                   <button
                     type="button"
                     key={category}
                     className={`category-jump__chip ${
-                      activeCategory === category ? "category-jump__chip--active" : ""
+                      selectedCategoryFilter === category ? "category-jump__chip--active" : ""
                     }`}
-                    onClick={() => handleJumpToCategory(category)}
+                    onClick={() => handleToggleCategoryFilter(category)}
+                    aria-pressed={selectedCategoryFilter === category}
                   >
                     <span>{category}</span>
                     <span className="category-jump__count">{categoryPlates.length}</span>
                   </button>
                 ))}
               </nav>
-            ) : uiPreferences.showCategories ? (
-              <div className="category-jump category-jump--summary" aria-live="polite">
-                <span className="category-jump__chip category-jump__chip--static">
-                  {arrangement === "az" ? "All plates A-Z" : "All plates Z-A"}
-                </span>
-              </div>
             ) : null}
           </div>
           <div className="control-panel__scroller">
@@ -1178,20 +1142,16 @@ function App() {
             <section
               className="plate-group"
               key={arrangement === "category" ? category : `flat-${index}`}
-              data-category={arrangement === "category" ? category : null}
-              ref={(node) => {
-                if (arrangement === "category") {
-                  sectionRefs.current[category] = node;
-                }
-              }}
             >
               <div className="plate-group__heading">
                 <h2>
                   {arrangement === "category"
                     ? category
-                    : arrangement === "az"
-                      ? "All Plates A-Z"
-                      : "All Plates Z-A"}
+                    : selectedCategoryFilter
+                      ? `${selectedCategoryFilter} ${arrangement === "az" ? "A-Z" : "Z-A"}`
+                      : arrangement === "az"
+                        ? "All Plates A-Z"
+                        : "All Plates Z-A"}
                 </h2>
                 <span>{categoryPlates.length}</span>
               </div>
