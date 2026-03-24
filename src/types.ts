@@ -56,3 +56,23 @@ export interface PlateDiscovery {
 }
 
 export type PlateDiscoveryMap = Record<string, PlateDiscovery>;
+
+export interface GameInstallInstructions {
+  ios: string;
+  android: string;
+}
+
+export interface GameBranding {
+  appName: string;
+  appShareName: string;
+  shareUrl: string;
+  appTagline: string;
+  developerName: string;
+  developerUrl: string;
+  developerLogoPath: string;
+}
+
+export interface GameDefinition {
+  id: string;
+  branding: GameBranding;
+}

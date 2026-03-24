@@ -65,6 +65,34 @@ Current public release: `v1.4.0`
 - Explore scales better as the badge catalog grows
 - the app is better prepared for future social, rarity, and search improvements
 
+## Architecture Groundwork
+
+This project now has an explicit tracked direction toward a reusable specialty-plate game framework, but without forcing a premature rewrite.
+
+### Phase 0: Track The Direction
+
+Completed.
+
+- identified the reusable-framework effort as a real architectural track
+- documented the phased extraction strategy so future work can be evaluated against it
+- established the rule that new Florida-only rules should prefer Florida-specific config/domain files over being added directly to `App.tsx`
+
+### Phase 1: Low-Risk Preparation
+
+Completed.
+
+- introduced a lightweight `GameDefinition` type
+- created a first Florida game config/module
+- moved branding/share/help/about copy into the Florida config
+- moved Florida badge group labels and symbols out of the main component
+- moved Florida regional/county badge constants out of the main component
+
+### Why This Matters
+
+- future Florida work has a clearer place to live
+- the app now has a real seam for state/game-specific configuration
+- future extraction work can happen incrementally instead of as a risky rewrite
+
 ## v1.5
 
 Curated search and discovery improvements.

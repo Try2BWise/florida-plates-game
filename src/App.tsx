@@ -1,5 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { BadgeIcon } from "./components/BadgeIcon";
+import {
+  floridaBadgeCounties,
+  floridaBadgeGroupLabels,
+  floridaBadgeGroupSymbols,
+  floridaGame,
+  floridaMixedBagCategories,
+  floridaPanhandleScoutCounties
+} from "./config/floridaGame";
 import { PlateCard } from "./components/PlateCard";
 import { getPlateVersionById, groupedPlates, plates } from "./data/plates";
 import { buildInfo } from "./generated/buildInfo";
@@ -20,21 +28,6 @@ type PlateArrangement = "category" | "az" | "za";
 type ExploreTab = "badges" | "stats" | "map" | "timeline";
 type UtilityTab = "settings" | "help" | "safe" | "about";
 type TimelineSort = "desc" | "asc";
-
-const panhandleScoutCounties = new Set([
-  "Escambia",
-  "Bay",
-  "Calhoun",
-  "Franklin",
-  "Gulf",
-  "Holmes",
-  "Jackson",
-  "Liberty",
-  "Okaloosa",
-  "Santa Rosa",
-  "Walton",
-  "Washington"
-]);
 
 const badgePlateSets: Record<string, string[]> = {
   "grand-slam": ["Miami Marlins (Baseball)", "Tampa Bay Rays (Baseball)"],
@@ -94,30 +87,6 @@ const badgePlateSets: Record<string, string[]> = {
   ]
 };
 
-const floridaBadgeCounties: Record<string, string[]> = {
-  "emerald-coast-explorer": ["Escambia", "Santa Rosa", "Okaloosa", "Walton"],
-  "forgotten-coast-explorer": ["Bay", "Calhoun", "Gulf", "Franklin", "Liberty"],
-  "big-bend-explorer": ["Wakulla", "Jefferson", "Madison", "Taylor", "Lafayette"],
-  "capital-region-explorer": ["Leon", "Gadsden", "Jackson", "Holmes", "Washington"],
-  "suwannee-valley-explorer": ["Hamilton", "Suwannee", "Columbia", "Baker", "Union", "Bradford"],
-  "first-coast-explorer": ["Nassau", "Duval", "St. Johns", "Flagler"],
-  "nature-coast-explorer": ["Dixie", "Levy", "Citrus", "Hernando"],
-  "suncoast-explorer": ["Pasco", "Pinellas", "Hillsborough", "Manatee", "Sarasota"],
-  "florida-heartland-explorer": ["Polk", "Hardee", "Highlands", "DeSoto", "Okeechobee"],
-  "treasure-coast-explorer": ["Indian River", "St. Lucie", "Martin"],
-  "space-coast-explorer": ["Brevard"],
-  "gold-coast-explorer": ["Palm Beach", "Broward", "Miami-Dade"],
-  "paradise-coast-explorer": ["Charlotte", "Lee", "Collier", "Hendry", "Glades"],
-  "florida-keys-explorer": ["Monroe"]
-};
-
-const mixedBagCategories = new Set([
-  "Civic & Causes",
-  "Health & Family",
-  "Education & Culture",
-  "Public Safety",
-  "Recreation & Tourism"
-]);
 
 interface UiPreferences {
   showSearch: boolean;
@@ -169,16 +138,8 @@ function loadOnboardingHintDismissed(): boolean {
 }
 
 function App() {
-  const appShareUrl = "https://try2bwise.github.io/florida-plates-game/";
-  const shareMessage = [
-    "I’ve been playing FL Plates, a Florida specialty plate spotting game.",
-    "",
-    `Play it here: ${appShareUrl}`,
-    "",
-    "To install:",
-    "iPhone: open in Safari, tap Share, then Add to Home Screen.",
-    "Android: open in Chrome, then use Add to Home screen or Install app."
-  ].join("\n");
+  const appShareUrl = floridaGame.branding.shareUrl;
+  const shareMessage = floridaGame.share.appMessage;
   const [discoveries, setDiscoveries] = useState<PlateDiscoveryMap>(() =>
     loadDiscoveries()
   );
@@ -599,24 +560,8 @@ function App() {
     () => evaluatedBadges.filter((badge) => !badge.earned),
     [evaluatedBadges]
   );
-  const badgeGroupLabels: Record<BadgeGroup, string> = {
-    progress: "Progress",
-    category: "Categories",
-    collection: "Collections",
-    college: "College Track",
-    locality: "Places",
-    service: "Those Who Serve",
-    florida: "All Around Florida"
-  };
-  const badgeGroupSymbols: Record<BadgeGroup, string> = {
-    progress: "star",
-    category: "grid",
-    collection: "rings",
-    college: "cap",
-    locality: "pin",
-    service: "shield",
-    florida: "compass"
-  };
+  const badgeGroupLabels: Record<BadgeGroup, string> = floridaBadgeGroupLabels;
+  const badgeGroupSymbols: Record<BadgeGroup, string> = floridaBadgeGroupSymbols;
   const earnedBadgeGroups = useMemo(
     () =>
       Object.entries(
@@ -734,21 +679,13 @@ function App() {
   }
 
   async function handleShareApp() {
-    await handleShareText("FL Plates", shareMessage);
+    await handleShareText(floridaGame.branding.appShareName, shareMessage);
   }
 
   async function handleShareBadge(badgeName: string) {
-    const badgeShareMessage = [
-      `I just earned ${badgeName} on FL Plates!`,
-      "",
-      `Play it here: ${appShareUrl}`,
-      "",
-      "To install:",
-      "iPhone: open in Safari, tap Share, then Add to Home Screen.",
-      "Android: open in Chrome, then use Add to Home screen or Install app."
-    ].join("\n");
+    const badgeShareMessage = floridaGame.share.badgeMessage(badgeName);
 
-    await handleShareText(`FL Plates - ${badgeName}`, badgeShareMessage);
+    await handleShareText(`${floridaGame.branding.appShareName} - ${badgeName}`, badgeShareMessage);
   }
 
   function toggleTimelineDate(dateLabel: string) {
@@ -823,7 +760,7 @@ function App() {
         return findDiscoveriesForCategories(["Professional Sports"]);
       case "mixed-bag":
       case "full-spectrum":
-        return discoveryEntries.filter(({ plate }) => mixedBagCategories.has(plate.category));
+        return discoveryEntries.filter(({ plate }) => floridaMixedBagCategories.has(plate.category));
       case "reporting-for-duty":
       case "on-call":
       case "in-service":
@@ -864,7 +801,7 @@ function App() {
       case "panhandle-scout":
         return discoveryEntries.filter(({ discovery }) => {
           const county = discovery.county?.replace(/\s+County$/i, "").trim() ?? null;
-          return county ? panhandleScoutCounties.has(county) : false;
+          return county ? floridaPanhandleScoutCounties.has(county) : false;
         });
       default:
         if (badgePlateSets[badge.id]) {
@@ -932,7 +869,7 @@ function App() {
               <span className="welcome-sign__state">FLORIDA</span>
               <span className="welcome-sign__tagline">the sunshine state</span>
             </div>
-            <p className="app-header__eyebrow">Florida plate tracker</p>
+            <p className="app-header__eyebrow">{floridaGame.branding.appTagline}</p>
           </div>
           <div className="app-header__actions">
             <div className="app-header__meter app-header__meter--compact" aria-live="polite">
@@ -1377,13 +1314,13 @@ function App() {
             className="utility-panel"
             role="dialog"
             aria-modal="true"
-            aria-label="FL Plates explore panel"
+            aria-label={`${floridaGame.branding.appName} explore panel`}
             onClick={(event) => event.stopPropagation()}
           >
             <div className="utility-panel__header">
               <div>
                 <p className="utility-panel__eyebrow">Explore</p>
-                <h2 className="utility-panel__title">FL Plates explore panel</h2>
+                <h2 className="utility-panel__title">{floridaGame.branding.appName} explore panel</h2>
               </div>
               <button
                 type="button"
@@ -1751,13 +1688,13 @@ function App() {
             className="utility-panel"
             role="dialog"
             aria-modal="true"
-            aria-label="FL Plates utility panel"
+            aria-label={`${floridaGame.branding.appName} utility panel`}
             onClick={(event) => event.stopPropagation()}
           >
             <div className="utility-panel__header">
               <div>
                 <p className="utility-panel__eyebrow">Utility</p>
-                <h2 className="utility-panel__title">FL Plates utility panel</h2>
+                <h2 className="utility-panel__title">{floridaGame.branding.appName} utility panel</h2>
               </div>
               <button
                 type="button"
@@ -1860,51 +1797,30 @@ function App() {
                   <section className="utility-card">
                     <h3>How to play</h3>
                     <div className="utility-list utility-list--compact">
-                      <p className="utility-card__meta">
-                        Tap a plate image to enlarge it.
-                      </p>
-                      <p className="utility-card__meta">
-                        Tap the title area to mark it found.
-                      </p>
-                      <p className="utility-card__meta">
-                        Tap the title area again to clear that sighting.
-                      </p>
-                      <p className="utility-card__meta">
-                        If location access is allowed, the app saves the time and a place name when available.
-                      </p>
-                      <p className="utility-card__meta">
-                        Use the visibility buttons to show all plates, only found plates, or only missing plates.
-                      </p>
-                      <p className="utility-card__meta">
-                        Use the arrangement buttons to keep category groups or switch to a flat A-Z or Z-A list.
-                      </p>
+                      {floridaGame.help.howToPlay.map((item) => (
+                        <p className="utility-card__meta" key={item}>
+                          {item}
+                        </p>
+                      ))}
                     </div>
                   </section>
                   <section className="utility-card">
                     <h3>Useful tools</h3>
                     <div className="utility-list utility-list--compact">
-                      <p className="utility-card__meta">
-                        <strong>Explore</strong> opens badges, a stats dashboard, and your map view.
-                      </p>
-                      <p className="utility-card__meta">
-                        <strong>Settings</strong> lets you hide optional controls and switch color mode.
-                      </p>
-                      <p className="utility-card__meta">
-                        <strong>Share FL Plates</strong> opens a share sheet with the app link and install instructions.
-                      </p>
+                      {floridaGame.help.usefulTools.map((item) => (
+                        <p className="utility-card__meta" key={item}>
+                          {item}
+                        </p>
+                      ))}
                     </div>
                   </section>
                   <section className="utility-card">
                     <h3>Install the app</h3>
-                    <p className="utility-card__meta">
-                      iPhone: open the game in Safari, tap Share, then choose Add to Home Screen.
-                    </p>
-                    <p className="utility-card__meta">
-                      Android: open the game in Chrome, then use Add to Home screen or Install app.
-                    </p>
-                    <p className="utility-card__meta">
-                      Once it loads online at least once, it can keep working offline.
-                    </p>
+                    {floridaGame.help.install.map((item) => (
+                      <p className="utility-card__meta" key={item}>
+                        {item}
+                      </p>
+                    ))}
                   </section>
                 </div>
               ) : null}
@@ -1918,21 +1834,11 @@ function App() {
                       <span>Safe use</span>
                     </h3>
                     <div className="utility-list utility-list--compact">
-                      <p className="utility-card__meta">
-                        For your safety and the safety of others, never use this app while driving.
-                      </p>
-                      <p className="utility-card__meta">
-                        Always comply with all applicable traffic laws, including hands-free and
-                        distracted-driving regulations in your area.
-                      </p>
-                      <p className="utility-card__meta">
-                        Use this app only when your vehicle is parked in a safe location or when
-                        operated by a passenger.
-                      </p>
-                      <p className="utility-card__meta">
-                        By using this app, you agree that you are solely responsible for how and
-                        when it is used.
-                      </p>
+                      {floridaGame.help.safeUse.map((item) => (
+                        <p className="utility-card__meta" key={item}>
+                          {item}
+                        </p>
+                      ))}
                     </div>
                   </section>
                 </div>
@@ -1945,15 +1851,15 @@ function App() {
                       <div className="about-card__brand">
                         <a
                           className="about-card__logo-link"
-                          href="https://gorillagrin.com"
+                          href={floridaGame.branding.developerUrl}
                           target="_blank"
                           rel="noreferrer"
-                          aria-label="Visit Gorilla Grin"
+                          aria-label={`Visit ${floridaGame.branding.developerName}`}
                         >
                           <img
                             className="about-card__logo"
-                            src={`${import.meta.env.BASE_URL}gorilla-grin-horizontal.png`}
-                            alt="Gorilla Grin"
+                            src={`${import.meta.env.BASE_URL}${floridaGame.branding.developerLogoPath}`}
+                            alt={floridaGame.branding.developerName}
                           />
                         </a>
                         <button
@@ -1969,19 +1875,16 @@ function App() {
                           Developed by{" "}
                           <a
                             className="app-footer__link"
-                            href="https://gorillagrin.com"
+                            href={floridaGame.branding.developerUrl}
                             target="_blank"
                             rel="noreferrer"
                           >
-                            Gorilla Grin
+                            {floridaGame.branding.developerName}
                           </a>
                           .
                         </p>
                         <p className="utility-card__meta">
-                          Specialty plate images are not the intellectual property of Gorilla
-                          Grin. They belong to the Florida Department of Highway Safety and Motor
-                          Vehicles and are displayed here for identification, educational, and
-                          entertainment purposes under a fair use claim.
+                          {floridaGame.about.fairUseNotice}
                         </p>
                         <p className="utility-card__meta">
                           Version {buildInfo.version} • Built {buildDateLabel}
