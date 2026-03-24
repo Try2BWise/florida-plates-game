@@ -1,10 +1,10 @@
 {
-  "generatedAtIso": "2026-03-24T05:11:58.864Z",
+  "generatedAtIso": "2026-03-24T05:16:56.666Z",
   "zipPath": "C:\\Users\\bwise\\Documents\\scrape-florida-plates\\florida_specialty_plates.zip",
   "charityPath": "C:\\Users\\bwise\\Downloads\\florida_specialty_plates_charity_dataset.json",
   "summary": {
     "logicalPlates": 175,
-    "withMultipleVersions": 50,
+    "withMultipleVersions": 49,
     "legacyOnly": 16,
     "currentOnly": 55,
     "normalizedMatches": 68,
@@ -4876,16 +4876,6 @@
       },
       "matchSource": "manual_override",
       "versions": [
-        {
-          "id": "state-of-the-arts-legacy",
-          "label": "Legacy",
-          "source": "legacy",
-          "isDefault": false,
-          "imageKey": "florida_arts",
-          "imagePath": "plates/florida_arts.png",
-          "productUrl": "Florida Fine Arts Trust Funds.",
-          "notes": null
-        },
         {
           "id": "state-of-the-arts-current",
           "label": "Current",

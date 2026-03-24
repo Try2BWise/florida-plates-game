@@ -4827,16 +4827,6 @@
     "matchSource": "manual_override",
     "versions": [
       {
-        "id": "state-of-the-arts-legacy",
-        "label": "Legacy",
-        "source": "legacy",
-        "isDefault": false,
-        "imageKey": "florida_arts",
-        "imagePath": "plates/florida_arts.png",
-        "productUrl": "Florida Fine Arts Trust Funds.",
-        "notes": null
-      },
-      {
         "id": "state-of-the-arts-current",
         "label": "Current",
         "source": "zip",

@@ -3,7 +3,7 @@
 ## Summary
 
 - Logical plates in merged catalog: 175
-- Plates with both legacy and current versions: 50
+- Plates with both legacy and current versions: 49
 - Legacy-only plates: 16
 - Current-only plates: 55
 - Normalized-name matches: 68

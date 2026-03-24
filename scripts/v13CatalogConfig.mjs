@@ -288,6 +288,7 @@ export const SUPPRESSED_LEGACY_DUPLICATE_PLATES = new Set([
   "Save the Manatee",
   "Save Wild Florida",
   "Share the Road",
+  "State of the Arts",
   "Stop Child Abuse",
   "Stop Heart Disease",
   "Support Autism Programs",
