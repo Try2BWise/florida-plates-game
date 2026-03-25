@@ -25,21 +25,38 @@ export const floridaPanhandleScoutCounties = new Set([
 ]);
 
 export const floridaBadgeCounties: Record<string, string[]> = {
-  "emerald-coast-explorer": ["Escambia", "Santa Rosa", "Okaloosa", "Walton"],
-  "forgotten-coast-explorer": ["Bay", "Calhoun", "Gulf", "Franklin", "Liberty"],
-  "big-bend-explorer": ["Wakulla", "Jefferson", "Madison", "Taylor", "Lafayette"],
-  "capital-region-explorer": ["Leon", "Gadsden", "Jackson", "Holmes", "Washington"],
-  "suwannee-valley-explorer": ["Hamilton", "Suwannee", "Columbia", "Baker", "Union", "Bradford"],
-  "first-coast-explorer": ["Nassau", "Duval", "St. Johns", "Flagler"],
-  "nature-coast-explorer": ["Dixie", "Levy", "Citrus", "Hernando"],
-  "suncoast-explorer": ["Pasco", "Pinellas", "Hillsborough", "Manatee", "Sarasota"],
-  "florida-heartland-explorer": ["Polk", "Hardee", "Highlands", "DeSoto", "Okeechobee"],
-  "treasure-coast-explorer": ["Indian River", "St. Lucie", "Martin"],
-  "space-coast-explorer": ["Brevard"],
-  "gold-coast-explorer": ["Palm Beach", "Broward", "Miami-Dade"],
-  "paradise-coast-explorer": ["Charlotte", "Lee", "Collier", "Hendry", "Glades"],
+  "northwest-florida-explorer": [
+    "Escambia", "Santa Rosa", "Okaloosa", "Walton", "Holmes", "Washington", "Bay", "Jackson", "Calhoun", "Gulf", "Franklin", "Liberty", "Gadsden", "Leon", "Wakulla"
+  ],
+  "north-central-florida-explorer": [
+    "Jefferson", "Madison", "Taylor", "Lafayette", "Suwannee", "Dixie", "Levy", "Gilchrist"
+  ],
+  "northeast-florida-explorer": [
+    "Nassau", "Duval", "Clay", "St. Johns", "Putnam", "Flagler"
+  ],
+  "central-west-florida-explorer": [
+    "Pinellas", "Hillsborough", "Pasco", "Hernando", "Citrus", "Manatee", "Sarasota"
+  ],
+  "central-florida-explorer": [
+    "Orange", "Seminole", "Osceola", "Lake", "Polk", "Sumter", "Hardee", "Highlands", "Marion"
+  ],
+  "central-east-florida-explorer": [
+    "Volusia", "Brevard", "Indian River", "St. Lucie"
+  ],
+  "southwest-florida-explorer": [
+    "Charlotte", "Lee", "Collier", "Hendry", "Glades"
+  ],
+  "southeast-florida-explorer": [
+    "Martin", "Palm Beach", "Broward", "Miami-Dade"
+  ],
   "florida-keys-explorer": ["Monroe"]
 };
+
+// Expose county groupings for badge detail UI
+if (typeof window !== "undefined") {
+  // @ts-ignore
+  window.floridaBadgeCounties = floridaBadgeCounties;
+}
 
 export const floridaBadgeGroupLabels: Record<BadgeGroup, string> = {
   progress: "Progress",
@@ -48,7 +65,7 @@ export const floridaBadgeGroupLabels: Record<BadgeGroup, string> = {
   college: "College Track",
   locality: "Places",
   service: "Those Who Serve",
-  florida: "All Around Florida"
+  florida: "All Florida Explorer"
 };
 
 export const floridaBadgeGroupSymbols: Record<BadgeGroup, string> = {
