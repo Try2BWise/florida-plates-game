@@ -846,6 +846,23 @@ function App() {
       });
   }
 
+  // Force reload the PWA and check for updates
+  function handleForceReload() {
+    if (navigator.serviceWorker?.controller) {
+      navigator.serviceWorker.getRegistration(import.meta.env.BASE_URL).then((registration) => {
+        if (registration?.waiting) {
+          registration.waiting.postMessage({ type: "SKIP_WAITING" });
+        } else {
+          registration?.update();
+        }
+        // Always reload the page to ensure the latest version
+        window.location.reload();
+      });
+    } else {
+      window.location.reload();
+    }
+  }
+
   function toggleUiPreference(key: keyof UiPreferences) {
     setUiPreferences((current) => ({
       ...current,
@@ -1738,6 +1755,14 @@ function App() {
                       These toggles only change which controls appear on the main game screen.
                       Your progress and filter state stay intact.
                     </p>
+                    <button
+                      type="button"
+                      className="settings-row"
+                      style={{ marginTop: 12 }}
+                      onClick={handleForceReload}
+                    >
+                      Force Reload / Sync
+                    </button>
                   </section>
                   <section className="utility-card">
                     <h3>Progress</h3>
@@ -1933,6 +1958,22 @@ function App() {
                   </span>
                 ) : null}
               </div>
+              {/* Show counties for regional badges */}
+              {activeBadgeDetail.group === "florida" &&
+                typeof activeBadgeDetail.id === "string" &&
+                activeBadgeDetail.id.endsWith("-explorer") &&
+                window.floridaBadgeCounties &&
+                window.floridaBadgeCounties[activeBadgeDetail.id] ? (
+                  <section className="utility-card badge-detail-modal__section">
+                    <h3>Counties in this region</h3>
+                    <ul className="badge-detail-modal__county-list">
+                      {window.floridaBadgeCounties[activeBadgeDetail.id].map((county: string) => (
+                        <li key={county}>{county} County</li>
+                      ))}
+                    </ul>
+                  </section>
+                ) : null}
+
               {activeBadgeDetail.earned && activeBadgeSupportingDiscoveries.length > 0 ? (
                 <section className="utility-card badge-detail-modal__section">
                   <h3>
