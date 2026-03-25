@@ -631,10 +631,6 @@ function App() {
     setActivePlateId(null);
   }
 
-  function handleToggleCategoryFilter(category: PlateCategory) {
-    setSelectedCategoryFilter((current) => (current === category ? null : category));
-  }
-
   function handleClearDiscoveries() {
     if (foundCount === 0) {
       return;
@@ -922,22 +918,25 @@ function App() {
               </label>
             ) : null}
             {uiPreferences.showCategories ? (
-              <nav className="category-jump" aria-label="Filter by category">
-                {categoryFilterOptions.map(({ category, plates: categoryPlates }) => (
-                  <button
-                    type="button"
-                    key={category}
-                    className={`category-jump__chip ${
-                      selectedCategoryFilter === category ? "category-jump__chip--active" : ""
-                    }`}
-                    onClick={() => handleToggleCategoryFilter(category)}
-                    aria-pressed={selectedCategoryFilter === category}
-                  >
-                    <span>{category}</span>
-                    <span className="category-jump__count">{categoryPlates.length}</span>
-                  </button>
-                ))}
-              </nav>
+              <label className="category-select-inline" htmlFor="category-filter">
+                <span className="visually-hidden">Filter by category</span>
+                <select
+                  id="category-filter"
+                  className="category-select-inline__select"
+                  value={selectedCategoryFilter ?? ""}
+                  onChange={(event) => {
+                    const value = event.target.value as PlateCategory | "";
+                    setSelectedCategoryFilter(value || null);
+                  }}
+                >
+                  <option value="">All Categories</option>
+                  {categoryFilterOptions.map(({ category }) => (
+                    <option key={category} value={category}>
+                      {category}
+                    </option>
+                  ))}
+                </select>
+              </label>
             ) : null}
           </div>
           <div className="control-panel__scroller">
