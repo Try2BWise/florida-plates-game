@@ -8,6 +8,8 @@ export function registerServiceWorker(): void {
       void navigator.serviceWorker
         .register(serviceWorkerUrl, { scope: baseUrl })
         .then((registration) => {
+          // Always check for updates after registration
+          registration.update();
           const notifyUpdateReady = () => {
             window.dispatchEvent(
               new CustomEvent("fl-plates:update-ready", {
@@ -40,9 +42,13 @@ export function registerServiceWorker(): void {
             if (hasPendingRefresh) {
               return;
             }
-
             hasPendingRefresh = true;
             window.location.reload();
+          });
+
+          // Also check for updates on every page load
+          window.addEventListener("focus", () => {
+            registration.update();
           });
         });
     });

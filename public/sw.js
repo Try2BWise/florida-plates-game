@@ -40,9 +40,15 @@ self.addEventListener("activate", (event) => {
           .filter((key) => ![APP_CACHE, RUNTIME_CACHE].includes(key))
           .map((key) => caches.delete(key))
       )
-    )
+    ).then(async () => {
+      self.clients.claim();
+      // Aggressively reload all clients after activation
+      const clients = await self.clients.matchAll({ type: 'window' });
+      for (const client of clients) {
+        client.navigate(client.url);
+      }
+    })
   );
-  self.clients.claim();
 });
 
 self.addEventListener("message", (event) => {

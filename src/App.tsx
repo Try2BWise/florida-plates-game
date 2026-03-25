@@ -848,6 +848,44 @@ function App() {
 
   // Force reload the PWA and check for updates
   function handleForceReload() {
+      // Export discoveries as JSON file
+      function handleExportProgress() {
+        const data = JSON.stringify(discoveries, null, 2);
+        const blob = new Blob([data], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'florida-plates-progress.json';
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(() => {
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+        }, 0);
+      }
+
+      // Import discoveries from JSON file
+      function handleImportProgress(event: React.ChangeEvent<HTMLInputElement>) {
+        const file = event.target.files?.[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          try {
+            const imported = JSON.parse(e.target?.result as string);
+            if (imported && typeof imported === 'object') {
+              setDiscoveries(imported);
+              setTransientStatus('Progress imported!');
+            } else {
+              setTransientStatus('Invalid file format');
+            }
+          } catch {
+            setTransientStatus('Import failed');
+          }
+        };
+        reader.readAsText(file);
+        // Reset input value so same file can be re-imported if needed
+        event.target.value = '';
+      }
     if (navigator.serviceWorker?.controller) {
       navigator.serviceWorker.getRegistration(import.meta.env.BASE_URL).then((registration) => {
         if (registration?.waiting) {
@@ -1769,14 +1807,43 @@ function App() {
                     <p className="utility-card__meta">
                       Clear all found plates, timestamps, and saved locations from this device.
                     </p>
-                    <button
-                      type="button"
-                      className="clear-discoveries utility-card__action"
-                      onClick={handleClearDiscoveries}
-                      disabled={foundCount === 0}
-                    >
-                      Clear found
-                    </button>
+                    <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+                      <button
+                        type="button"
+                        className="clear-discoveries utility-card__action"
+                        onClick={handleClearDiscoveries}
+                        disabled={foundCount === 0}
+                      >
+                        Clear found
+                      </button>
+                      <button
+                        type="button"
+                        className="utility-card__action"
+                        onClick={handleExportProgress}
+                        disabled={foundCount === 0}
+                      >
+                        Export Progress
+                      </button>
+                      <label style={{ display: 'inline-block' }}>
+                        <span style={{ display: 'none' }}>Import Progress</span>
+                        <input
+                          type="file"
+                          accept="application/json"
+                          style={{ display: 'none' }}
+                          onChange={handleImportProgress}
+                        />
+                        <button
+                          type="button"
+                          className="utility-card__action"
+                          onClick={e => {
+                            const input = (e.currentTarget.previousSibling as HTMLInputElement);
+                            input?.click();
+                          }}
+                        >
+                          Import Progress
+                        </button>
+                      </label>
+                    </div>
                   </section>
                 </div>
               ) : null}
