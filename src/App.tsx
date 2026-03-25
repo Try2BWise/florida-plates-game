@@ -149,7 +149,6 @@ function App() {
     loadUiPreferences()
   );
   const [searchTerm, setSearchTerm] = useState("");
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [visibilityFilter, setVisibilityFilter] =
     useState<PlateVisibilityFilter>("all");
   const [arrangement, setArrangement] = useState<PlateArrangement>("category");
@@ -214,13 +213,12 @@ function App() {
 
   useEffect(() => {
     if (!uiPreferences.showSearch) {
-      setIsSearchOpen(false);
       setSearchTerm("");
     }
   }, [uiPreferences.showSearch]);
 
   useEffect(() => {
-    if (!isSearchOpen || !uiPreferences.showSearch) {
+    if (!uiPreferences.showSearch) {
       return;
     }
 
@@ -230,7 +228,7 @@ function App() {
     }, 0);
 
     return () => window.clearTimeout(focusHandle);
-  }, [isSearchOpen, uiPreferences.showSearch]);
+  }, [uiPreferences.showSearch]);
 
   useEffect(() => {
     if (
@@ -901,61 +899,27 @@ function App() {
         <div className="control-panel">
           <div className="control-panel__topline">
             {uiPreferences.showSearch ? (
-              <>
-                <button
-                  type="button"
-                  className={`search-toggle ${
-                    isSearchOpen || searchTerm ? "search-toggle--open" : ""
-                  }`}
-                  aria-expanded={isSearchOpen || searchTerm.length > 0}
-                  aria-controls="plate-search"
-                  aria-label="Search plates"
-                  onClick={() => {
-                    if (isSearchOpen && searchTerm.length === 0) {
-                      setIsSearchOpen(false);
-                      return;
-                    }
-
-                    setIsSearchOpen(true);
-                  }}
-                >
-                  <span className="search-toggle__icon" aria-hidden="true">
-                    o
-                  </span>
-                </button>
-                {isSearchOpen || searchTerm ? (
-                  <label className="search-inline" htmlFor="plate-search">
-                    <input
-                      ref={searchInputRef}
-                      id="plate-search"
-                      className="search-inline__input"
-                      type="search"
-                      placeholder="Search names, aliases, and causes"
-                      value={searchTerm}
-                      onChange={(event) => setSearchTerm(event.target.value)}
-                    />
-                    {searchTerm ? (
-                      <button
-                        type="button"
-                        className="search-inline__clear"
-                        onClick={() => setSearchTerm("")}
-                        aria-label="Clear search"
-                      >
-                        Clear
-                      </button>
-                    ) : (
-                      <button
-                        type="button"
-                        className="search-inline__clear"
-                        onClick={() => setIsSearchOpen(false)}
-                        aria-label="Close search"
-                      >
-                        Close
-                      </button>
-                    )}
-                  </label>
+              <label className="search-inline" htmlFor="plate-search">
+                <input
+                  ref={searchInputRef}
+                  id="plate-search"
+                  className="search-inline__input"
+                  type="search"
+                  placeholder="Search names, aliases, and causes"
+                  value={searchTerm}
+                  onChange={(event) => setSearchTerm(event.target.value)}
+                />
+                {searchTerm ? (
+                  <button
+                    type="button"
+                    className="search-inline__clear"
+                    onClick={() => setSearchTerm("")}
+                    aria-label="Clear search"
+                  >
+                    Clear
+                  </button>
                 ) : null}
-              </>
+              </label>
             ) : null}
             {uiPreferences.showCategories ? (
               <nav className="category-jump" aria-label="Filter by category">
