@@ -53,8 +53,12 @@ export const floridaBadgeCounties: Record<string, string[]> = {
 };
 
 // Expose county groupings for badge detail UI
+declare global {
+  interface Window {
+    floridaBadgeCounties?: Record<string, string[]>;
+  }
+}
 if (typeof window !== "undefined") {
-  // @ts-ignore
   window.floridaBadgeCounties = floridaBadgeCounties;
 }
 
