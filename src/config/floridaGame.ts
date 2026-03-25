@@ -53,6 +53,7 @@ export const floridaBadgeCounties: Record<string, string[]> = {
 };
 
 // Expose county groupings for badge detail UI
+// Tickle: 2026-03-25 - force redeploy for badge update
 declare global {
   interface Window {
     floridaBadgeCounties?: Record<string, string[]>;
