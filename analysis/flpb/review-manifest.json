@@ -518,19 +518,19 @@
     },
     {
       "plate_id": "Environmental-11",
-      "plate_name": "Panther",
+      "plate_name": "Protect The Panther (Legacy)",
       "category": "Environmental",
       "image_key": "panther",
       "confidence": "high_confidence",
       "best_match": {
         "page": 6,
-        "snippet": "Panther",
+        "snippet": "Protect The Panther (Legacy)",
         "score": 1.0
       },
       "candidate_matches": [
         {
           "page": 6,
-          "snippet": "Panther",
+          "snippet": "Protect The Panther (Legacy)",
           "score": 1.0
         },
         {

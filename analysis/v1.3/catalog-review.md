@@ -96,7 +96,7 @@
 - Keep Kids Drug Free
 - Large Mouth Bass
 - Motocycle Specialty
-- Panther
+- Protect The Panther (Legacy)
 - Parents Make A Difference
 - Police Benevolent Association
 - Sportsmen's National Land Trust
