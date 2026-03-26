@@ -588,20 +588,6 @@ function normalizeCountyName(county: string | null | undefined): string | null {
   return county.replace(/\s+county$/i, "").trim();
 }
 
-function getVisitedCountySet(discoveries: PlateDiscoveryMap): Set<string> {
-  return new Set(
-    Object.values(discoveries)
-      .map((discovery) => normalizeCountyName(discovery.county))
-      .filter((county): county is string => Boolean(county))
-  );
-}
-
-function countVisitedCounties(
-  visitedCounties: Set<string>,
-  counties: readonly string[]
-): number {
-  return counties.filter((county) => visitedCounties.has(county)).length;
-}
 
 function isLikelyInFlorida(latitude: number, longitude: number): boolean {
   return latitude >= 24.3 && latitude <= 31.1 && longitude >= -87.8 && longitude <= -79.7;
@@ -650,7 +636,7 @@ export function evaluateBadges(
     const county = normalizeCountyName(discovery.county);
     return county ? floridaPanhandleCounties.has(county) : false;
   }).length;
-  const visitedCounties = getVisitedCountySet(discoveries);
+  // Removed visitedCounties and countVisitedCounties (no longer used)
 
   const lookup = new Map<string, EvaluatedBadge>([
     ["first-spot", createThresholdBadge(getBadgeDefinition(definitionsById, "first-spot"), totalFound, 1)],
