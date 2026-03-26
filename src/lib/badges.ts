@@ -737,7 +737,7 @@ export function evaluateBadges(
   });
 
   // Compose region badge entries for lookup (earned if ANY county in region is found)
-  const regionBadgeEntries = Object.entries(floridaBadgeCounties).map(([regionId, counties]) => [
+  const regionBadgeEntries: [string, EvaluatedBadge][] = Object.entries(floridaBadgeCounties).map(([regionId, counties]) => [
     regionId,
     createThresholdBadge(
       getBadgeDefinition(definitionsById, regionId),

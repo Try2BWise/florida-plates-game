@@ -694,7 +694,7 @@ function App() {
   function findDiscoveriesForPlateNames(plateNames: string[]) {
     const plateNameSet = new Set(plateNames);
     return discoveryEntries.filter(({ plate }) => plateNameSet.has(plate.name));
-  }
+      // (Removed unused getBadgeProgressLabel)
 
   function findDiscoveriesForCounties(counties: string[]) {
     const countySet = new Set(counties);

@@ -123,7 +123,7 @@ function CenterText({
         fontWeight="900"
         fontSize={secondary ? "22" : "24"}
         fill={palette.ink}
-      >
+      // (Removed unused MedalBase)
         {primary}
       </text>
       {secondary ? (
@@ -372,7 +372,7 @@ function renderBadgeGlyph(badge: EvaluatedBadge) {
       return <CenterText badge={badge} primary="FL" />;
   }
 }
-
+      // (Removed unused renderBadgeGlyph)
 export function BadgeIcon({ badge }: BadgeIconProps) {
   // Select medal type based on badge requirements
   let medal = "gold";
