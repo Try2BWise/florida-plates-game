@@ -1328,5 +1328,29 @@
         "Image": "warner_southern_college"
       }
     }
+  ],
+  "Standard": [
+    {
+      "id": 37,
+      "plate": {
+        "LicensePlate": "Sunshine State (Standard)",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "0",
+        "DistributionOfSpecialFee": "n/a",
+        "Url": "http://www.myflorida.com/",
+        "Image": "standard_sunshine_state"
+      }
+    },
+    {
+      "id": 38,
+      "plate": {
+        "LicensePlate": "In God We Trust (Standard)",
+        "DateEnacted": "10/01/2002",
+        "SpecialFee": "0",
+        "DistributionOfSpecialFee": "n/a",
+        "Url": "http://www.myflorida.com/",
+        "Image": "standard_in_god_we_trust"
+      }
+    }
   ]
 }

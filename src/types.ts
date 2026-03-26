@@ -7,6 +7,7 @@ export const plateCategories = [
   "Professional Sports",
   "Public Safety",
   "Recreation & Tourism",
+  "Standard",
   "Universities"
 ] as const;
 

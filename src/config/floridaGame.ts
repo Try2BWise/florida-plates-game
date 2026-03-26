@@ -79,7 +79,8 @@ export const floridaBadgeGroupLabels: Record<BadgeGroup, string> = {
   college: "College Track",
   locality: "Places",
   service: "Those Who Serve",
-  florida: "Florida Explorer"
+  florida: "Florida Explorer",
+  test: "Test"
 };
 
 export const floridaBadgeGroupSymbols: Record<BadgeGroup, string> = {
@@ -89,7 +90,8 @@ export const floridaBadgeGroupSymbols: Record<BadgeGroup, string> = {
   college: "cap",
   locality: "pin",
   service: "shield",
-  florida: "compass"
+  florida: "compass",
+  test: "star"
 };
 
 export const floridaGame: GameDefinition & {

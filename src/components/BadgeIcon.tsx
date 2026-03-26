@@ -13,6 +13,12 @@ interface BadgePalette {
 }
 
 const palettes: Record<EvaluatedBadge["group"], BadgePalette> = {
+    test: {
+      outer: "#888",
+      inner: "#eee",
+      accent: "#b0b0b0",
+      ink: "#222"
+    },
   progress: {
     outer: "#1d4ed8",
     inner: "#dbeafe",
@@ -260,6 +266,22 @@ function PinGlyph({ badge }: { badge: EvaluatedBadge }) {
 }
 
 function renderBadgeGlyph(badge: EvaluatedBadge) {
+  // Custom image for Platinum Test badge
+  if (badge.id === "platinum-test") {
+    const imgSrc = badge.earned
+      ? `${import.meta.env.BASE_URL}plates/badge_platinum_unlocked.png`
+      : `${import.meta.env.BASE_URL}plates/badge_platinum_locked.png`;
+    return (
+      <image
+        href={imgSrc}
+        x="14" y="14" width="36" height="36"
+        className={badge.earned ? "badge-platinum-img" : "badge-platinum-img badge-platinum-img--locked"}
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <title>Platinum Test Badge</title>
+      </image>
+    );
+  }
   if (badge.group === "florida") {
     if (badge.id === "all-around-florida") {
       return <CenterText badge={badge} primary="ALL" secondary="FLA" />;
@@ -352,5 +374,34 @@ function renderBadgeGlyph(badge: EvaluatedBadge) {
 }
 
 export function BadgeIcon({ badge }: BadgeIconProps) {
-  return <MedalBase badge={badge}>{renderBadgeGlyph(badge)}</MedalBase>;
+  // Select medal type based on badge requirements
+  let medal = "gold";
+  if (typeof badge.progressTarget === "number" && typeof badge.progressCurrent === "number") {
+    if (badge.progressTarget <= 9) {
+      medal = "bronze";
+    } else {
+      // If badge is based on percent, use progressTarget as percent (e.g., 0.75 for 75%)
+      // But most badges use count, so check if target is a count or percent
+      // We'll use 75% of a category as threshold for gold
+      // If target is less than 75% of a plausible category size, use silver
+      // For simplicity, if target >= 10 and <= 0.75 * plausible max, use silver
+      // If target > 0.75 * plausible max, use gold
+      // But since we don't have category size here, fallback: if target >= 10 and <= 75, silver; >75 gold
+      if (badge.progressTarget >= 10 && badge.progressTarget <= 75) {
+        medal = "silver";
+      } else if (badge.progressTarget > 75) {
+        medal = "gold";
+      }
+    }
+  }
+  const imgSrc = `${import.meta.env.BASE_URL}plates/${medal}-medal.png`;
+  return (
+    <img
+      src={imgSrc}
+      alt={badge.name}
+      className={badge.earned ? "badge-medal-img" : "badge-medal-img badge-medal-img--dimmed"}
+      style={{ width: 96, height: 96, objectFit: "contain", display: "block" }}
+      draggable={false}
+    />
+  );
 }

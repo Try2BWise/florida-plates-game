@@ -24,7 +24,7 @@ self.addEventListener("install", (event) => {
       const plateAssets = await assetResponse.json();
       if (Array.isArray(plateAssets) && plateAssets.length > 0) {
         await cache.addAll(
-          plateAssets.map((assetPath) => new URL(assetPath, `${BASE_PATH}/`).toString())
+          plateAssets.map((assetPath) => new URL(assetPath, self.location.origin + BASE_PATH + "/").toString())
         );
       }
     })

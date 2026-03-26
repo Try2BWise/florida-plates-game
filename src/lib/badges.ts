@@ -7,7 +7,8 @@ export type BadgeGroup =
   | "college"
   | "locality"
   | "service"
-  | "florida";
+  | "florida"
+  | "test";
 
 type BadgeAvailability = "v1.4" | "later";
 
@@ -62,15 +63,6 @@ const footballPlateNames = [
   "Miami Dolphins (Football)",
   "Tampa Bay Buccaneers (Football)"
 ];
-const hockeyPlateNames = ["Florida Panthers (Hockey)", "Tampa Bay Lightning (Hockey)"];
-const basketballPlateNames = ["Miami Heat (Basketball)", "Orlando Magic (Basketball)"];
-const allBranchesPlateNames = [
-  "U.S. Army",
-  "U.S. Navy",
-  "U.S. Air Force",
-  "U.S. Marine Corps",
-  "U.S. Coast Guard"
-];
 const lawEnforcementPlateNames = [
   "Fallen Law Enforcement Officers",
   "Florida Sheriffs Association",
@@ -105,6 +97,26 @@ const honorAndMedalPlateNames = [
   "Combat Medical Badge",
   "Distinguished Flying Cross",
   "Distinguished Service Cross"
+];
+
+import { floridaBadgeCounties } from "../config/floridaGame";
+
+const allBranchesPlateNames = [
+  "U.S. Army",
+  "U.S. Navy",
+  "U.S. Air Force",
+  "U.S. Marine Corps",
+  "U.S. Coast Guard"
+];
+
+const hockeyPlateNames = [
+  "Florida Panthers (Hockey)",
+  "Tampa Bay Lightning (Hockey)"
+];
+
+const basketballPlateNames = [
+  "Miami Heat (Basketball)",
+  "Orlando Magic (Basketball)"
 ];
 
 export const badgeDefinitions: BadgeDefinition[] = [
@@ -404,6 +416,70 @@ export const badgeDefinitions: BadgeDefinition[] = [
     group: "locality",
     availableIn: "v1.4"
   },
+  // Florida Explorer region badges
+  {
+    id: "northwest-florida-explorer",
+    name: "Northwest Florida Explorer",
+    description: "Find a plate in every Northwest Florida (Panhandle) county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "north-central-florida-explorer",
+    name: "North Central Florida Explorer",
+    description: "Find a plate in every North Central Florida (Big Bend) county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "northeast-florida-explorer",
+    name: "Northeast Florida Explorer",
+    description: "Find a plate in every Northeast Florida (First Coast) county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "central-west-florida-explorer",
+    name: "Central West Florida Explorer",
+    description: "Find a plate in every Central West Florida (Suncoast) county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "central-florida-explorer",
+    name: "Central Florida Explorer",
+    description: "Find a plate in every Central Florida (Heart of Florida) county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "central-east-florida-explorer",
+    name: "Central East Florida Explorer",
+    description: "Find a plate in every Central East Florida (Space Coast) county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "southwest-florida-explorer",
+    name: "Southwest Florida Explorer",
+    description: "Find a plate in every Southwest Florida (Paradise Coast) county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "southeast-florida-explorer",
+    name: "Southeast Florida Explorer",
+    description: "Find a plate in every Southeast Florida (Gold Coast) county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "florida-keys-explorer",
+    name: "Florida Keys Explorer",
+    description: "Find a plate in Monroe County (Florida Keys).",
+    group: "florida",
+    availableIn: "v1.4"
+  },
   {
     id: "all-around-florida",
     name: "All Around Florida",
@@ -638,6 +714,47 @@ export function evaluateBadges(
   }).length;
   // Removed visitedCounties and countVisitedCounties (no longer used)
 
+  // Florida Explorer region badge logic
+  // Helper: map county name to normalized form
+  function normalizeCounty(county: string | null | undefined): string | null {
+    if (!county) return null;
+    return county.replace(/\s+county$/i, "").trim();
+  }
+
+  // For each region, count unique counties found
+  const foundCountiesByRegion: Record<string, Set<string>> = {};
+  Object.keys(floridaBadgeCounties).forEach((regionId) => {
+    foundCountiesByRegion[regionId] = new Set<string>();
+  });
+  Object.values(discoveries).forEach((discovery) => {
+    const county = normalizeCounty(discovery.county);
+    if (!county) return;
+    for (const [regionId, counties] of Object.entries(floridaBadgeCounties)) {
+      if (counties.includes(county)) {
+        foundCountiesByRegion[regionId].add(county);
+      }
+    }
+  });
+
+  // Compose region badge entries for lookup (earned if ANY county in region is found)
+  const regionBadgeEntries = Object.entries(floridaBadgeCounties).map(([regionId, counties]) => [
+    regionId,
+    createThresholdBadge(
+      getBadgeDefinition(definitionsById, regionId),
+      foundCountiesByRegion[regionId].size,
+      1 // Only one county needed to earn the badge
+    )
+  ]);
+
+  // All Around Florida badge: earned if all region badges are earned
+  const allRegionBadgesEarned = regionBadgeEntries.every(([, badge]) => badge.earned);
+  const allAroundFloridaBadge = {
+    ...getBadgeDefinition(definitionsById, "all-around-florida"),
+    earned: allRegionBadgesEarned,
+    progressCurrent: regionBadgeEntries.filter(([, badge]) => badge.earned).length,
+    progressTarget: regionBadgeEntries.length
+  };
+
   const lookup = new Map<string, EvaluatedBadge>([
     ["first-spot", createThresholdBadge(getBadgeDefinition(definitionsById, "first-spot"), totalFound, 1)],
     ["five-alive", createThresholdBadge(getBadgeDefinition(definitionsById, "five-alive"), totalFound, 5)],
@@ -826,7 +943,8 @@ export function evaluateBadges(
     ["i-get-around", createThresholdBadge(getBadgeDefinition(definitionsById, "i-get-around"), uniqueLocalities, 5)],
     ["road-trip", createThresholdBadge(getBadgeDefinition(definitionsById, "road-trip"), uniqueLocalities, 10)],
     ["panhandle-scout", createThresholdBadge(getBadgeDefinition(definitionsById, "panhandle-scout"), panhandleCount, 1)],
-    // Florida Explorer badges removed
+    ...regionBadgeEntries,
+    ["all-around-florida", allAroundFloridaBadge],
   ]);
 
   return badgeDefinitions.map((definition) => lookup.get(definition.id) ?? { ...definition, earned: false });

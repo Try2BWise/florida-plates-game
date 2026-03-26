@@ -592,9 +592,7 @@ function App() {
     () => (previewPlate ? getPlateVersionById(previewPlate, previewVersionId) : null),
     [previewPlate, previewVersionId]
   );
-  const activeBadgeProgressLabel = activeBadgeDetail
-    ? getBadgeProgressLabel(activeBadgeDetail)
-    : null;
+  // Removed unused activeBadgeProgressLabel
   const activeBadgeSupportingDiscoveries = activeBadgeDetail
     ? getBadgeSupportingDiscoveries(activeBadgeDetail)
     : [];
@@ -1621,7 +1619,6 @@ function App() {
                     </p>
                   </section>
                   <section className="utility-card">
-                    <h3>Earned</h3>
                     {earnedBadges.length > 0 ? (
                       <div className="utility-stack">
                         {allBadgeGroups.map(([group, badges]) => (
@@ -1961,26 +1958,24 @@ function App() {
             onClick={(event) => event.stopPropagation()}
           >
             {/* Badge image removed as requested */}
-            <section className="utility-card badge-detail-modal__section">
-              <div className="badge-detail-modal__detail-line badge-detail-modal__category">
+            <section className="badge-modal-main-card">
+              <div className="badge-modal-main-card__category">
                 <span className={`badge-chip badge-chip--${activeBadgeDetail.group}`}> 
                   <span className={`badge-chip__icon badge-group__icon badge-group__icon--${badgeGroupSymbols[activeBadgeDetail.group]} badge-group__icon--${activeBadgeDetail.group}`} aria-hidden="true" />
                   <span>{badgeGroupLabels[activeBadgeDetail.group]}</span>
                 </span>
               </div>
-              <div className="badge-detail-modal__detail-line badge-detail-modal__name">
-                {activeBadgeDetail.name}
+              <div className="badge-modal-main-card__name">{activeBadgeDetail.name}</div>
+              <div className="badge-modal-main-card__desc">{activeBadgeDetail.description}</div>
+              <div className="badge-modal-main-card__actions">
+                <button
+                  type="button"
+                  className="app-footer__share badge-modal-main-card__share"
+                  onClick={() => handleShareBadge(activeBadgeDetail.name)}
+                >
+                  Share
+                </button>
               </div>
-              <div className="badge-detail-modal__detail-line badge-detail-modal__desc">
-                {activeBadgeDetail.description}
-              </div>
-              <button
-                type="button"
-                className="app-footer__share badge-detail-modal__share"
-                onClick={() => handleShareBadge(activeBadgeDetail.name)}
-              >
-                Share
-              </button>
             </section>
             {/* Show counties for regional badges */}
             {activeBadgeDetail.group === "florida" &&
