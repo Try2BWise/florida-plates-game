@@ -651,9 +651,6 @@ export function evaluateBadges(
     return county ? floridaPanhandleCounties.has(county) : false;
   }).length;
   const visitedCounties = getVisitedCountySet(discoveries);
-  const earnedFloridaExplorerCount = allAroundFloridaRegions.filter((region) =>
-    region.counties.every((county) => visitedCounties.has(county))
-  ).length;
 
   const lookup = new Map<string, EvaluatedBadge>([
     ["first-spot", createThresholdBadge(getBadgeDefinition(definitionsById, "first-spot"), totalFound, 1)],
@@ -843,22 +840,7 @@ export function evaluateBadges(
     ["i-get-around", createThresholdBadge(getBadgeDefinition(definitionsById, "i-get-around"), uniqueLocalities, 5)],
     ["road-trip", createThresholdBadge(getBadgeDefinition(definitionsById, "road-trip"), uniqueLocalities, 10)],
     ["panhandle-scout", createThresholdBadge(getBadgeDefinition(definitionsById, "panhandle-scout"), panhandleCount, 1)],
-    ...allAroundFloridaRegions.map((region) => [
-      region.id,
-      createThresholdBadge(
-        getBadgeDefinition(definitionsById, region.id),
-        countVisitedCounties(visitedCounties, region.counties),
-        region.counties.length
-      )
-    ] as const),
-    [
-      "all-around-florida",
-      createThresholdBadge(
-        getBadgeDefinition(definitionsById, "all-around-florida"),
-        earnedFloridaExplorerCount,
-        allAroundFloridaRegions.length
-      )
-    ]
+    // Florida Explorer badges removed
   ]);
 
   return badgeDefinitions.map((definition) => lookup.get(definition.id) ?? { ...definition, earned: false });
