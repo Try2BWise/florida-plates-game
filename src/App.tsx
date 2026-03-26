@@ -679,22 +679,14 @@ function App() {
     });
   }
 
-  function getBadgeProgressLabel(badge: EvaluatedBadge): string | null {
-    if (
-      badge.progressCurrent === undefined ||
-      badge.progressTarget === undefined ||
-      badge.progressTarget <= 1
-    ) {
-      return null;
-    }
-
-    return `${Math.min(badge.progressCurrent, badge.progressTarget)} / ${badge.progressTarget}`;
-  }
+  // Removed unused getBadgeProgressLabel function
 
   function findDiscoveriesForPlateNames(plateNames: string[]) {
     const plateNameSet = new Set(plateNames);
     return discoveryEntries.filter(({ plate }) => plateNameSet.has(plate.name));
-      // (Removed unused getBadgeProgressLabel)
+  }
+
+  // (Removed unused getBadgeProgressLabel)
 
   function findDiscoveriesForCounties(counties: string[]) {
     const countySet = new Set(counties);
