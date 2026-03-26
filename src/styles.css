@@ -1,3 +1,11 @@
+.toggle-label {
+  cursor: pointer;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+}
 :root {
   color-scheme: light;
   font-family: "Avenir Next", "Trebuchet MS", "Gill Sans", sans-serif;

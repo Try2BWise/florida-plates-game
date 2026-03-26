@@ -1752,10 +1752,13 @@ function App() {
                 <div className="utility-stack">
                   <section className="utility-card">
                     <h3>Main screen controls</h3>
+                    <p className="utility-card__meta" style={{ marginBottom: 8 }}>
+                      These toggles only change which controls appear on the main game screen. Your progress and filter state stay intact.
+                    </p>
                     <div className="settings-list">
                       <button
                         type="button"
-                        className="settings-row"
+                        className="settings-row settings-row--compact"
                         onClick={() =>
                           setTheme((current) => (current === "light" ? "dark" : "light"))
                         }
@@ -1765,7 +1768,7 @@ function App() {
                       </button>
                       <button
                         type="button"
-                        className="settings-row"
+                        className="settings-row settings-row--compact"
                         onClick={() => toggleUiPreference("showSearch")}
                       >
                         <span>Show search control</span>
@@ -1773,7 +1776,7 @@ function App() {
                       </button>
                       <button
                         type="button"
-                        className="settings-row"
+                        className="settings-row settings-row--compact"
                         onClick={() => toggleUiPreference("showCategories")}
                       >
                         <span>Show category buttons</span>
@@ -1781,7 +1784,7 @@ function App() {
                       </button>
                       <button
                         type="button"
-                        className="settings-row"
+                        className="settings-row settings-row--compact"
                         onClick={() => toggleUiPreference("showArrangement")}
                       >
                         <span>Show sort buttons</span>
@@ -1790,37 +1793,29 @@ function App() {
                     </div>
                   </section>
                   <section className="utility-card utility-card--about">
-                    <h3>About these settings</h3>
-                    <p className="utility-card__meta">
-                      These toggles only change which controls appear on the main game screen.
-                      Your progress and filter state stay intact.
-                    </p>
+                    <h3>App Management</h3>
                     <button
                       type="button"
-                      className="settings-row"
-                      style={{ marginTop: 12 }}
+                      className="view-toggle__chip"
+                      style={{ marginTop: 12, width: undefined, minWidth: 0, whiteSpace: 'nowrap', maxWidth: 'max-content', alignSelf: 'start' }}
                       onClick={handleForceReload}
                     >
                       Force Reload / Sync
                     </button>
                   </section>
                   <section className="utility-card">
-                    <h3>Progress</h3>
-                    <p className="utility-card__meta">
-                      Clear all found plates, timestamps, and saved locations from this device.
-                    </p>
-                    <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+                    <h3>Progress Management</h3>
+                    <div className="utility-card__meta" style={{ marginBottom: 12 }}>
+                      <ol style={{ paddingLeft: 18, margin: 0 }}>
+                        <li>To export your progress, click <strong>Export Progress</strong>. This will download a backup file of your found plates and stats.</li>
+                        <li>To import progress, click <strong>Import Progress</strong> and select a previously exported file. This will restore your found plates and stats from that backup.</li>
+                        <li>Your progress is stored only on this device unless you export and import it elsewhere.</li>
+                      </ol>
+                    </div>
+                    <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 16 }}>
                       <button
                         type="button"
-                        className="clear-discoveries utility-card__action"
-                        onClick={handleClearDiscoveries}
-                        disabled={foundCount === 0}
-                      >
-                        Clear found
-                      </button>
-                      <button
-                        type="button"
-                        className="utility-card__action"
+                        className="view-toggle__chip"
                         onClick={handleExportProgress}
                         disabled={foundCount === 0}
                       >
@@ -1836,7 +1831,7 @@ function App() {
                         />
                         <button
                           type="button"
-                          className="utility-card__action"
+                          className="view-toggle__chip"
                           onClick={e => {
                             const input = (e.currentTarget.previousSibling as HTMLInputElement);
                             input?.click();
@@ -1846,11 +1841,30 @@ function App() {
                         </button>
                       </label>
                     </div>
+                    <div className="utility-card__meta" style={{ marginBottom: 8 }}>
+                      Clear all found plates, timestamps, and saved locations from this device.
+                    </div>
+                    <button
+                      type="button"
+                      className="clear-discoveries utility-card__action"
+                      onClick={handleClearDiscoveries}
+                      disabled={foundCount === 0}
+                    >
+                      Clear found
+                    </button>
                   </section>
                 </div>
               ) : null}
               {activeUtilityTab === "help" ? (
                 <div className="utility-stack">
+                  <section className="utility-card">
+                    <h3>Install the app</h3>
+                    {floridaGame.help.install.map((item) => (
+                      <p className="utility-card__meta" key={item}>
+                        {item}
+                      </p>
+                    ))}
+                  </section>
                   <section className="utility-card">
                     <h3>How to play</h3>
                     <div className="utility-list utility-list--compact">
@@ -1870,14 +1884,6 @@ function App() {
                         </p>
                       ))}
                     </div>
-                  </section>
-                  <section className="utility-card">
-                    <h3>Install the app</h3>
-                    {floridaGame.help.install.map((item) => (
-                      <p className="utility-card__meta" key={item}>
-                        {item}
-                      </p>
-                    ))}
                   </section>
                 </div>
               ) : null}
@@ -1904,8 +1910,9 @@ function App() {
                 <div className="utility-stack">
                   <section className="utility-card">
                     <h3>About</h3>
-                    <div className="about-card">
-                      <div className="about-card__brand">
+                    <div className="about-table" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 16, alignItems: 'start', width: '100%' }}>
+                      {/* Row 1 */}
+                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, width: 140, justifySelf: 'center' }}>
                         <a
                           className="about-card__logo-link"
                           href={floridaGame.branding.developerUrl}
@@ -1917,19 +1924,13 @@ function App() {
                             className="about-card__logo"
                             src={`${import.meta.env.BASE_URL}${floridaGame.branding.developerLogoPath}`}
                             alt={floridaGame.branding.developerName}
+                            style={{ maxWidth: 120, height: 'auto', marginBottom: 8, display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
                           />
                         </a>
-                        <button
-                          type="button"
-                          className="app-footer__share utility-card__action about-card__share"
-                          onClick={handleShareApp}
-                        >
-                          Share FL Plates
-                        </button>
                       </div>
-                      <div className="about-card__body">
-                        <p className="utility-card__meta">
-                          Developed by{" "}
+                      <div>
+                        <p className="utility-card__meta" style={{ marginBottom: 4 }}>
+                          Developed by{' '}
                           <a
                             className="app-footer__link"
                             href={floridaGame.branding.developerUrl}
@@ -1940,19 +1941,44 @@ function App() {
                           </a>
                           .
                         </p>
-                        <p className="utility-card__meta">
-                          {floridaGame.about.fairUseNotice}
-                        </p>
-                        <p className="utility-card__meta">
+                        <p className="utility-card__meta" style={{ marginBottom: 4 }}>
                           Version {buildInfo.version} • Built {buildDateLabel}
                         </p>
                         {buildInfo.branch || buildInfo.commit ? (
-                          <p className="utility-card__meta">
+                          <p className="utility-card__meta" style={{ marginBottom: 4 }}>
                             {buildInfo.branch ? `Branch ${buildInfo.branch}` : null}
-                            {buildInfo.branch && buildInfo.commit ? " • " : null}
+                            {buildInfo.branch && buildInfo.commit ? ' • ' : null}
                             {buildInfo.commit ? `Commit ${buildInfo.commit}` : null}
                           </p>
                         ) : null}
+                        <button
+                          type="button"
+                          className="app-footer__share utility-card__action about-card__share"
+                          onClick={handleShareApp}
+                          style={{ width: 'auto', marginTop: 8 }}
+                        >
+                          Share FL Plates
+                        </button>
+                      </div>
+                      {/* Row 2 */}
+                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, width: 140, justifySelf: 'center' }}>
+                        <div style={{ background: '#fff', borderRadius: 8, padding: 8, boxSizing: 'border-box', width: 120, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                          <img
+                            src="https://www.flhsmv.gov/wp-content/themes/flhsmv/images/logo.png"
+                            alt="FLHSMV logo"
+                            style={{ maxWidth: 104, height: 'auto', display: 'block' }}
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <p
+                          className="utility-card__meta"
+                          style={{ marginBottom: 0 }}
+                          dangerouslySetInnerHTML={{ __html: floridaGame.about.fairUseNotice.replace(
+                            'Florida Department of Highway Safety and Motor Vehicles',
+                            '<a href="https://www.flhsmv.gov/" target="_blank" rel="noopener noreferrer">Florida Department of Highway Safety and Motor Vehicles</a>'
+                          ) }}
+                        />
                       </div>
                     </div>
                   </section>
