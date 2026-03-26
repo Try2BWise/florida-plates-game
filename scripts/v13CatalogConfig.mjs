@@ -7,7 +7,8 @@ export const APP_CATEGORIES = [
   "Health & Family",
   "Civic & Causes",
   "Education & Culture",
-  "Recreation & Tourism"
+  "Recreation & Tourism",
+  "Standard Plates",
 ];
 
 export const LEGACY_CATEGORY_MAP = {
@@ -303,8 +304,7 @@ export const SUPPRESSED_LEGACY_DUPLICATE_PLATES = new Set([
   "U.S. Navy",
   "U.S. Olympic",
   "U.S. Paratroopers",
-  "United We Stand"
-  ,
+  "United We Stand",
   "Warner Southern College",
   "Warner University"
 ]);

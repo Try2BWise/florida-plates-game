@@ -2472,8 +2472,8 @@
   },
   {
     "id": "motorcycle",
-    "name": "Florida Motorcycle",
-    "appCategory": "Civic & Causes",
+    "name": "Motorcycle",
+    "appCategory": "Standard Plates",
     "sourceCategories": [],
     "aliases": [],
     "introducedYear": null,
@@ -6244,6 +6244,102 @@
         "imageUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4758633199.jpg",
         "productUrl": "https://buyfloridaspecialtyplates.com/specialty-license-plates/Wildlife-Foundation-Of-Florida-Specialty-License-Plate-p243928110",
         "notes": null
+      }
+    ]
+  },
+  {
+    "id": "standard-sunshine-state-plate",
+    "name": "Sunshine State",
+    "appCategory": "Standard Plates",
+    "sourceCategories": [
+      "Miscellaneous"
+    ],
+    "aliases": [
+      ""
+    ],
+    "introducedYear": null,
+    "introducedYearConfidence": null,
+    "popularityWeight": 2,
+    "sponsor": {
+      "name": "",
+      "notes": "Standard plate with the Sunshine State wording.",
+      "url": "https://myflorida.com"
+    },
+    "versions": [
+      {
+        "id": "sunshine-state-current",
+        "label": "Current",
+        "source": "manual",
+        "isDefault": true,
+        "imageKey": "standard_sunshine_state.jpg",
+        "imagePath": "plates/standard_sunshine_state.jpg",
+        "imageUrl": "",
+        "productUrl": "https://myflorida.com",
+        "notes": "Standard license plates are metal plates governed by section 320.06, Florida Statutes.Standard plate with the Sunshine State wording."
+      }
+    ]
+  },
+  {
+    "id": "standard-in-god-we-trust-plate",
+    "name": "In God We Trust",
+    "appCategory": "Standard Plates",
+    "sourceCategories": [
+      "Miscellaneous"
+    ],
+    "aliases": [
+      ""
+    ],
+    "introducedYear": null,
+    "introducedYearConfidence": null,
+    "popularityWeight": 2,
+    "sponsor": {
+      "name": "",
+      "notes": "Standard license plates are metal plates governed by section 320.06, Florida Statutes. Standard plate with the In God We Trust wording.",
+      "url": "https://myflorida.com"
+    },
+    "versions": [
+      {
+        "id": "in-god-we-trust-current",
+        "label": "Current",
+        "source": "manual",
+        "isDefault": true,
+        "imageKey": "standard_in_god_we_trust",
+        "imagePath": "plates/standard_in_god_we_trust.jpg",
+        "imageUrl": "",
+        "productUrl": "https://myflorida.com",
+        "notes": "Standard plate with the In God We Trust wording."
+      }
+    ]
+  },
+  {
+    "id": "america-250-florida-plate",
+    "name": "America 250",
+    "appCategory": "Standard Plates",
+    "sourceCategories": [
+      "Miscellaneous"
+    ],
+    "aliases": [
+      ""
+    ],
+    "introducedYear": null,
+    "introducedYearConfidence": null,
+    "popularityWeight": 2,
+    "sponsor": {
+      "name": "",
+      "notes": " In honor of the United States’ 250th anniversary on July 4th, 2026, the Florida Department of Highway Safety and Motor Vehicles is proud to announce the release of the new America 250 license plate. Unlike specialty plates, the America 250 plate serves as an alternative to the standard Florida license plate, with all regular fees applying.",
+      "url": "https://myflorida.com"
+    },
+    "versions": [
+      {
+        "id": "florida-current",
+        "label": "Current",
+        "source": "manual",
+        "isDefault": true,
+        "imageKey": "america-250-lp_original",
+        "imagePath": "plates/america-250-lp_original.png",
+        "imageUrl": "",
+        "productUrl": "https://myflorida.com",
+        "notes": "Unlike specialty plates, the America 250 plate serves as an alternative to the standard Florida license plate, with all regular fees applying."
       }
     ]
   }
