@@ -550,37 +550,24 @@ function App() {
     () => evaluateBadges(plates, normalizedDiscoveries),
     [normalizedDiscoveries]
   );
+  // Filter for earned badges
   const earnedBadges = useMemo(
     () => evaluatedBadges.filter((badge) => badge.earned),
     [evaluatedBadges]
   );
-  const remainingBadges = useMemo(
-    () => evaluatedBadges.filter((badge) => !badge.earned),
-    [evaluatedBadges]
-  );
+  // Group all badges (earned and unearned) by group for display
   const badgeGroupLabels: Record<BadgeGroup, string> = floridaBadgeGroupLabels;
   const badgeGroupSymbols: Record<BadgeGroup, string> = floridaBadgeGroupSymbols;
-  const earnedBadgeGroups = useMemo(
+  const allBadgeGroups = useMemo(
     () =>
       Object.entries(
-        earnedBadges.reduce<Record<string, typeof earnedBadges>>((groups, badge) => {
+        evaluatedBadges.reduce<Record<string, typeof evaluatedBadges>>((groups, badge) => {
           const key = badge.group;
           groups[key] = [...(groups[key] ?? []), badge];
           return groups;
         }, {})
-      ) as Array<[BadgeGroup, typeof earnedBadges]>,
-    [earnedBadges]
-  );
-  const remainingBadgeGroups = useMemo(
-    () =>
-      Object.entries(
-        remainingBadges.reduce<Record<string, typeof remainingBadges>>((groups, badge) => {
-          const key = badge.group;
-          groups[key] = [...(groups[key] ?? []), badge];
-          return groups;
-        }, {})
-      ) as Array<[BadgeGroup, typeof remainingBadges]>,
-    [remainingBadges]
+      ) as Array<[BadgeGroup, typeof evaluatedBadges]>,
+    [evaluatedBadges]
   );
 
   useEffect(() => {
@@ -811,29 +798,21 @@ function App() {
   }
 
   function renderBadgeCard(badge: EvaluatedBadge) {
+    // All badges are now medals: icon + text, no container, no pill
     return (
-      <button
-        type="button"
-        className={`utility-card utility-card--badge utility-card--badge-${badge.group} ${
-          badge.earned ? "" : "utility-card--badge-muted"
-        }`}
+      <div
+        className="badge-icon-grid-item"
         key={badge.id}
+        tabIndex={0}
+        role="button"
+        aria-label={badge.name}
         onClick={() => setActiveBadgeDetail(badge)}
+        onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') setActiveBadgeDetail(badge); }}
+        style={{ outline: 'none', cursor: 'pointer' }}
       >
-        <div className="badge-card__icon-shell">
-          <BadgeIcon badge={badge} />
-        </div>
-        <div className="badge-card__body">
-          <h3>{badge.name}</h3>
-          <span
-            className={`badge-card__status ${
-              badge.earned ? "badge-card__status--earned" : "badge-card__status--pending"
-            }`}
-          >
-            {badge.earned ? "Earned" : "Not yet"}
-          </span>
-        </div>
-      </button>
+        <BadgeIcon badge={badge} />
+        <span className="badge-medal-label">{badge.name}</span>
+      </div>
     );
   }
 
@@ -1645,7 +1624,7 @@ function App() {
                     <h3>Earned</h3>
                     {earnedBadges.length > 0 ? (
                       <div className="utility-stack">
-                        {earnedBadgeGroups.map(([group, badges]) => (
+                        {allBadgeGroups.map(([group, badges]) => (
                           <section className="badge-group" key={`earned-${group}`}>
                             <div className="badge-group__header">
                               <h4>
@@ -1657,7 +1636,7 @@ function App() {
                               </h4>
                               <span>{badges.length}</span>
                             </div>
-                            <div className="badge-grid">
+                            <div className="badge-icon-grid">
                               {badges.map((badge) => renderBadgeCard(badge))}
                             </div>
                           </section>
@@ -1669,28 +1648,7 @@ function App() {
                       </p>
                     )}
                   </section>
-                  <section className="utility-card">
-                    <h3>Not yet earned</h3>
-                    <div className="utility-stack">
-                      {remainingBadgeGroups.map(([group, badges]) => (
-                        <section className="badge-group" key={`remaining-${group}`}>
-                          <div className="badge-group__header">
-                            <h4>
-                              <span
-                                className={`badge-group__icon badge-group__icon--${badgeGroupSymbols[group]} badge-group__icon--${group}`}
-                                aria-hidden="true"
-                              />
-                              {badgeGroupLabels[group]}
-                            </h4>
-                            <span>{badges.length}</span>
-                          </div>
-                          <div className="badge-grid">
-                            {badges.map((badge) => renderBadgeCard(badge))}
-                          </div>
-                        </section>
-                      ))}
-                    </div>
-                  </section>
+                  {/* Remove Not yet earned section, all badges shown in one grid by group */}
                 </div>
               ) : null}
             </div>
@@ -2002,99 +1960,69 @@ function App() {
             aria-label={`${activeBadgeDetail.name} badge details`}
             onClick={(event) => event.stopPropagation()}
           >
-            <div className="badge-detail-modal__header">
-              <div
-                className={`badge-detail-modal__icon-shell badge-detail-modal__icon-shell--${activeBadgeDetail.group}`}
-              >
-                <BadgeIcon badge={activeBadgeDetail} />
-              </div>
-              <div className="badge-detail-modal__intro">
-                <div className="badge-detail-modal__intro-copy">
-                  <p className="utility-panel__eyebrow">Merit badge</p>
-                  <h2 className="badge-detail-modal__title">{activeBadgeDetail.name}</h2>
-                  <p className="badge-detail-modal__lede">
-                    {activeBadgeDetail.description}
-                  </p>
-                </div>
-                <div className="badge-detail-modal__header-actions">
-                  <span
-                    className={`badge-card__status ${
-                      activeBadgeDetail.earned
-                        ? "badge-card__status--earned"
-                        : "badge-card__status--pending"
-                    }`}
-                  >
-                    {activeBadgeDetail.earned ? "Earned" : "Not yet"}
-                  </span>
-                  {activeBadgeDetail.earned ? (
-                    <button
-                      type="button"
-                      className="app-footer__share badge-detail-modal__share"
-                      onClick={() => handleShareBadge(activeBadgeDetail.name)}
-                    >
-                      Share
-                    </button>
-                  ) : null}
-                </div>
-              </div>
-            </div>
-            <div className="badge-detail-modal__body">
-              <div className="badge-detail-modal__meta">
-                <div className={`badge-chip badge-chip--${activeBadgeDetail.group}`}>
-                  <span
-                    className={`badge-chip__icon badge-group__icon badge-group__icon--${badgeGroupSymbols[activeBadgeDetail.group]} badge-group__icon--${activeBadgeDetail.group}`}
-                    aria-hidden="true"
-                  />
+            {/* Badge image removed as requested */}
+            <section className="utility-card badge-detail-modal__section">
+              <div className="badge-detail-modal__detail-line badge-detail-modal__category">
+                <span className={`badge-chip badge-chip--${activeBadgeDetail.group}`}> 
+                  <span className={`badge-chip__icon badge-group__icon badge-group__icon--${badgeGroupSymbols[activeBadgeDetail.group]} badge-group__icon--${activeBadgeDetail.group}`} aria-hidden="true" />
                   <span>{badgeGroupLabels[activeBadgeDetail.group]}</span>
-                </div>
-                {activeBadgeProgressLabel ? (
-                  <span className="badge-progress-pill badge-progress-pill--modal">
-                    {activeBadgeProgressLabel}
-                  </span>
-                ) : null}
+                </span>
               </div>
-              {/* Show counties for regional badges */}
-              {activeBadgeDetail.group === "florida" &&
-                typeof activeBadgeDetail.id === "string" &&
-                activeBadgeDetail.id.endsWith("-explorer") &&
-                window.floridaBadgeCounties &&
-                window.floridaBadgeCounties[activeBadgeDetail.id] ? (
-                  <section className="utility-card badge-detail-modal__section">
-                    <h3>Counties in this region</h3>
-                    <ul className="badge-detail-modal__county-list">
-                      {window.floridaBadgeCounties[activeBadgeDetail.id].map((county: string) => (
-                        <li key={county}>{county} County</li>
-                      ))}
-                    </ul>
-                  </section>
-                ) : null}
-
-              {activeBadgeDetail.earned && activeBadgeSupportingDiscoveries.length > 0 ? (
+              <div className="badge-detail-modal__detail-line badge-detail-modal__name">
+                {activeBadgeDetail.name}
+              </div>
+              <div className="badge-detail-modal__detail-line badge-detail-modal__desc">
+                {activeBadgeDetail.description}
+              </div>
+              <button
+                type="button"
+                className="app-footer__share badge-detail-modal__share"
+                onClick={() => handleShareBadge(activeBadgeDetail.name)}
+              >
+                Share
+              </button>
+            </section>
+            {/* Show counties for regional badges */}
+            {activeBadgeDetail.group === "florida" &&
+              typeof activeBadgeDetail.id === "string" &&
+              activeBadgeDetail.id.endsWith("-explorer") &&
+              window.floridaBadgeCounties &&
+              window.floridaBadgeCounties[activeBadgeDetail.id] ? (
                 <section className="utility-card badge-detail-modal__section">
-                  <h3>
-                    {activeBadgeSupportingDiscoveries.length === 1
-                      ? "Supporting sighting"
-                      : "Supporting sightings"}
-                  </h3>
-                  <div className="badge-detail-modal__sightings">
-                    {activeBadgeSupportingDiscoveries.map(({ plate, discovery }) => (
-                      <article
-                        className="badge-detail-modal__sighting"
-                        key={`${activeBadgeDetail.id}-${plate.id}-${discovery.foundAtIso}`}
-                      >
-                        <h4>{plate.name}</h4>
-                        <p className="utility-card__meta">
-                          {formatDiscoveryTime(discovery.foundAtIso)}
-                        </p>
-                        <p className="utility-card__meta">
-                          {discovery.locality ?? "Location unavailable"}
-                        </p>
-                      </article>
+                  <h3>Counties in this region</h3>
+                  <ul className="badge-detail-modal__county-list">
+                    {window.floridaBadgeCounties[activeBadgeDetail.id].map((county: string) => (
+                      <li key={county}>{county} County</li>
                     ))}
-                  </div>
+                  </ul>
                 </section>
               ) : null}
-            </div>
+            {/* Supported Sightings section (unchanged) */}
+            {activeBadgeDetail.earned && activeBadgeSupportingDiscoveries.length > 0 ? (
+              <section className="utility-card badge-detail-modal__section">
+                <h3>
+                  {activeBadgeSupportingDiscoveries.length === 1
+                    ? "Supporting sighting"
+                    : "Supporting sightings"}
+                </h3>
+                <div className="badge-detail-modal__sightings">
+                  {activeBadgeSupportingDiscoveries.map(({ plate, discovery }) => (
+                    <article
+                      className="badge-detail-modal__sighting"
+                      key={`${activeBadgeDetail.id}-${plate.id}-${discovery.foundAtIso}`}
+                    >
+                      <h4>{plate.name}</h4>
+                      <p className="utility-card__meta">
+                        {formatDiscoveryTime(discovery.foundAtIso)}
+                      </p>
+                      <p className="utility-card__meta">
+                        {discovery.locality ?? "Location unavailable"}
+                      </p>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            ) : null}
           </section>
         </div>
       ) : null}

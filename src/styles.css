@@ -1,3 +1,49 @@
+/* Platinum Test badge image styles */
+
+/* Medal badge image styles */
+
+.badge-icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem 0.6rem;
+  justify-items: center;
+  align-items: start;
+  margin-bottom: 1.2rem;
+}
+.badge-icon-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  min-width: 0;
+}
+.badge-medal-img {
+  image-rendering: auto;
+  transition: opacity 0.2s;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 0.32rem;
+}
+.badge-medal-img--dimmed {
+  opacity: 0.28;
+  filter: grayscale(100%) brightness(0.6) contrast(1.1);
+}
+.badge-medal-label {
+  display: block;
+  font-size: 1.02rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text);
+  word-break: break-word;
+  margin-top: 0.18rem;
+  line-height: 1.18;
+}
 .toggle-label {
   cursor: pointer;
 }
@@ -814,6 +860,22 @@ select {
 }
 
 .plate-preview__image-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.plate-preview__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.plate-preview__image-stage {
   display: grid;
   place-items: center;
   width: min(92vw, 42rem);
@@ -825,14 +887,6 @@ select {
   box-shadow:
     0 22px 44px rgba(0, 0, 0, 0.32),
     inset 0 0 0 1px color-mix(in srgb, var(--surface-elevated) 28%, transparent);
-}
-
-.plate-preview__image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 1rem;
 }
 
 .plate-preview__caption {
