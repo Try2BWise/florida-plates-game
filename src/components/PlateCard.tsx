@@ -1,5 +1,3 @@
-import type { Plate, PlateDiscovery } from "../types";
-import { formatCoordinates, formatDiscoveryTime } from "../lib/format";
 
 interface PlateCardProps {
   plate: Plate;
@@ -14,12 +12,13 @@ export function PlateCard({
   onToggle,
   onPreview
 }: PlateCardProps) {
+
   const isFound = Boolean(discovery);
   const localityLabel = discovery?.locality ?? null;
   const coordinateLabel = discovery
     ? formatCoordinates(discovery.latitude, discovery.longitude)
     : null;
-  const imageSource = `${import.meta.env.BASE_URL}${plate.defaultVersion.imagePath}`;
+  const imageSource = `${import.meta.env.BASE_URL}${plate.image.path}`;
 
   return (
     <article className={`plate-card ${isFound ? "plate-card--found" : ""}`}>

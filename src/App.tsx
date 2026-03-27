@@ -9,14 +9,14 @@ import {
   floridaPanhandleScoutCounties
 } from "./config/floridaGame";
 import { PlateCard } from "./components/PlateCard";
-import { getPlateVersionById, groupedPlates, plates } from "./data/plates";
+import { groupedPlates, plates } from "./data/plates";
 import { buildInfo } from "./generated/buildInfo";
 import { evaluateBadges, type BadgeGroup, type EvaluatedBadge } from "./lib/badges";
 import { formatDiscoveryTime } from "./lib/format";
 import { createDiscovery } from "./lib/geolocation";
 import { reverseGeocodePlace } from "./lib/reverseGeocode";
 import { loadDiscoveries, saveDiscoveries } from "./lib/storage";
-import type { Plate, PlateCategory, PlateDiscoveryMap, PlateVersion } from "./types";
+import type { Plate, PlateCategory, PlateDiscoveryMap } from "./types";
 
 const THEME_STORAGE_KEY = "florida-plates-theme";
 const UI_PREFERENCES_STORAGE_KEY = "florida-plates-ui-preferences";
@@ -357,7 +357,15 @@ function App() {
           (visibilityFilter === "missing" && !isFound);
         const matchesSearch =
           normalizedSearchTerm.length === 0 ||
-          plate.searchText.includes(normalizedSearchTerm);
+          (
+            (Array.isArray(plate.searchTerms) &&
+              plate.searchTerms.some(term =>
+                term && term.toLowerCase().includes(normalizedSearchTerm)
+              )) ||
+            (plate.name && plate.name.toLowerCase().includes(normalizedSearchTerm)) ||
+            (plate.displayName && plate.displayName.toLowerCase().includes(normalizedSearchTerm)) ||
+            (plate.baseName && plate.baseName.toLowerCase().includes(normalizedSearchTerm))
+          );
 
         return matchesVisibility && matchesSearch;
       }),
@@ -579,19 +587,16 @@ function App() {
     }
   }, [categoryFilterOptions, selectedCategoryFilter]);
 
+  // With flat plate structure, previewPlate is the only context needed for preview
   useEffect(() => {
     if (!previewPlate) {
       setPreviewVersionId(null);
       return;
     }
-
-    setPreviewVersionId(previewPlate.defaultVersion.id);
+    setPreviewVersionId(previewPlate.id);
   }, [previewPlate]);
 
-  const previewVersion = useMemo<PlateVersion | null>(
-    () => (previewPlate ? getPlateVersionById(previewPlate, previewVersionId) : null),
-    [previewPlate, previewVersionId]
-  );
+  const previewVersion = previewPlate;
   // Removed unused activeBadgeProgressLabel
   const activeBadgeSupportingDiscoveries = activeBadgeDetail
     ? getBadgeSupportingDiscoveries(activeBadgeDetail)
@@ -1184,36 +1189,11 @@ function App() {
             <div className="plate-preview__image-stage">
               <img
                 className="plate-preview__image"
-                src={`${import.meta.env.BASE_URL}${previewVersion.imagePath}`}
+                src={`${import.meta.env.BASE_URL}${previewPlate.image.path}`}
                 alt={previewPlate.name}
               />
             </div>
             <p className="plate-preview__caption">{previewPlate.name}</p>
-            {previewPlate.versions.length > 1 ? (
-              <div
-                className="plate-preview__versions"
-                role="tablist"
-                aria-label={`${previewPlate.name} versions`}
-                onClick={(event) => event.stopPropagation()}
-              >
-                {previewPlate.versions.map((version) => (
-                  <button
-                    key={version.id}
-                    type="button"
-                    className={`plate-preview__version-chip ${
-                      previewVersion.id === version.id
-                        ? "plate-preview__version-chip--active"
-                        : ""
-                    }`}
-                    role="tab"
-                    aria-selected={previewVersion.id === version.id}
-                    onClick={() => setPreviewVersionId(version.id)}
-                  >
-                    {version.label}
-                  </button>
-                ))}
-              </div>
-            ) : null}
             {!normalizedDiscoveries[previewPlate.id] ? (
               <button
                 type="button"
@@ -1231,20 +1211,18 @@ function App() {
               className="plate-preview__details"
               onClick={(event) => event.stopPropagation()}
             >
-              {previewPlate.sponsor.name ? (
+              {previewPlate.sponsor ? (
                 <div className="plate-preview__detail-row">
                   <span className="plate-preview__detail-label">Beneficiary</span>
-                  <strong>{previewPlate.sponsor.name}</strong>
+                  <strong>{previewPlate.sponsor}</strong>
                 </div>
               ) : null}
               <div className="plate-preview__detail-row">
                 <span className="plate-preview__detail-label">Category</span>
                 <strong>{previewPlate.category}</strong>
               </div>
-              {previewPlate.sponsor.notes ? (
-                <p className="plate-preview__notes">{previewPlate.sponsor.notes}</p>
-              ) : previewVersion.notes ? (
-                <p className="plate-preview__notes">{previewVersion.notes}</p>
+              {previewPlate.notes ? (
+                <p className="plate-preview__notes">{previewPlate.notes}</p>
               ) : null}
             </div>
           </div>

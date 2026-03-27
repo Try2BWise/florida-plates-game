@@ -13,38 +13,58 @@ export const plateCategories = [
 
 export type PlateCategory = (typeof plateCategories)[number];
 
-export interface PlateVersion {
-  id: string;
-  label: string;
-  source: "legacy" | "zip";
-  isDefault: boolean;
-  imageKey: string;
-  imagePath: string;
-  imageUrl?: string | null;
-  productUrl?: string | null;
-  notes?: string | null;
+
+export interface PlateImage {
+  path: string;
+  remoteUrl: string | null;
 }
 
-export interface PlateSponsor {
-  name?: string | null;
-  notes?: string | null;
-  url?: string | null;
+export interface PlateMetadataBlob {
+  sponsorCandidates?: Array<{
+    source: string;
+    priority: number;
+    value: string;
+  }>;
+  noteCandidates?: Array<{
+    source: string;
+    priority: number;
+    value: string;
+  }>;
+  sourceCategories?: string[];
+  aliases?: string[];
+  rawNames?: string[];
+  filenames?: string[];
+  urls?: string[];
 }
 
 export interface Plate {
   id: string;
+  slug: string;
   name: string;
+  displayName: string;
+  baseName: string;
+  variantLabel: string | null;
+  plateType: string;
+  isCurrent: boolean;
+  isActive: boolean;
   category: PlateCategory;
-  sourceCategories: string[];
-  aliases: string[];
-  introducedYear?: number | null;
-  introducedYearConfidence?: "high" | "medium" | "low" | null;
-  popularityWeight?: 1 | 2 | 3 | 4 | 5 | null;
-  sponsor: PlateSponsor;
-  matchSource: "legacy_only" | "current_only" | "normalized_name" | "manual_override";
-  versions: PlateVersion[];
-  defaultVersion: PlateVersion;
-  searchText: string;
+  tags: string[];
+  image: PlateImage;
+  sponsor: string | null;
+  notes: string | null;
+  metadataBlob?: PlateMetadataBlob;
+  searchTerms?: string[];
+  variantOf?: string | null;
+  relatedPlates?: string[];
+  sourceRefs?: Array<{
+    source: string;
+    sourceId: string | number;
+    versionId?: string;
+    filename?: string;
+    section?: string;
+    imageKey?: string;
+    variant?: string;
+  }>;
 }
 
 export interface PlateDiscovery {
