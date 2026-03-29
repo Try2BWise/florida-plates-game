@@ -1,14 +1,14 @@
 # FL Plates Roadmap
 
-This roadmap reflects the current released state of `FL Plates` after `v1.4.0` and outlines the next likely release tracks.
+This roadmap reflects the current released state of `FL Plates` after `v1.5.0` and outlines the most useful next release tracks.
 
 ## Current Release
 
-Current public release: `v1.4.0`
+Current public release: `v1.5.0`
 
 ## Shipped In v1.3.0
 
-`v1.3.0` ended up covering the original data-foundation goals plus a meaningful amount of metadata and UX polish.
+`v1.3.0` established the modern catalog foundation.
 
 ### Delivered
 
@@ -30,13 +30,13 @@ Current public release: `v1.4.0`
 
 ### Result
 
-- the live catalog is now based on a normalized generated source
+- the live catalog moved to a normalized generated source
 - current and legacy plate designs can coexist cleanly
 - details are available in-context without cluttering the main list
 
 ## Shipped In v1.4.0
 
-`v1.4.0` focused on a full merit badge refresh, richer place-aware progress, and a more compact Explore experience.
+`v1.4.0` focused on merit badges, place-aware progress, and a denser Explore experience.
 
 ### Delivered
 
@@ -47,9 +47,7 @@ Current public release: `v1.4.0`
 - reworked Places badges while keeping them distinct from All Around Florida
 - extended discovery storage to capture county and state metadata
 - kept time-of-day badges defined but unshipped
-- redesigned badge cards into a denser two-column layout
-- moved most badge details into a dedicated badge modal
-- improved supporting sighting details in the badge modal
+- redesigned badge browsing around a denser Explore experience
 - added a Timeline tab to Explore with:
   - date grouping
   - ascending / descending sort
@@ -61,13 +59,58 @@ Current public release: `v1.4.0`
 
 ### Result
 
-- badge progress is richer, more location-aware, and easier to browse
+- badge progress became richer and more location-aware
 - Explore scales better as the badge catalog grows
-- the app is better prepared for future social, rarity, and search improvements
+- the app became better prepared for future social, rarity, and search improvements
+
+## Shipped In v1.5.0
+
+`v1.5.0` was a major data and asset refactor release that also cleaned up the project for future state expansion.
+
+### Delivered
+
+- replaced the old single runtime dataset with a two-file plate data flow:
+  - editable master dataset
+  - generated runtime driver
+- added a dedicated plate-driver generator and folded legacy ID migration into it
+- retired the old `v1.3` catalog-generation pipeline and older brochure-era helper scripts
+- stopped tracking `dist/` and added repo cleanup via `.gitignore`
+- moved badge graphics into a dedicated `public/badges` asset folder
+- added and assigned new badge art selectively
+- refined the badge modal to better match the plate modal
+- merged `tags` into normalized lowercase `searchTerms`
+- added first-pass visual search-term enrichment for a few distinctive plates
+- reorganized categories to better fit the larger catalog, including:
+  - `Public Service`
+  - `Professional Sports`
+  - `Sports & Recreation`
+  - `Travel & Tourism`
+  - `Military Service`
+  - `Military Honors & History`
+  - `Motorcycle Plates` as a category override
+- cleaned up additional duplicate and naming issues in the imported catalog
+- updated user-facing wording from `specialty plates` to `license plates`
+- updated repo/app references for the `gorillagrin.com/florida-plates-game` custom domain
+- completed framework groundwork beyond the original Phase 1 seam by:
+  - shifting the runtime app to the generated plate driver
+  - making future state-swapping more realistic without a rewrite
+
+### Post-release maintenance already applied
+
+- fixed badge browsing so all badges are always visible, with unearned badges dimmed
+- ensured motorcycle-category plates display `(Motorcycle)` consistently in sorted views
+- corrected a few motorcycle and category placement issues discovered after release
+
+### Result
+
+- the project now has a cleaner source-of-truth data model
+- runtime plate data is smaller and easier to reason about
+- badge assets and plate assets have clearer separation
+- future framework extraction and editor tooling are much easier to envision
 
 ## Architecture Groundwork
 
-This project now has an explicit tracked direction toward a reusable specialty-plate game framework, but without forcing a premature rewrite.
+This project now has an explicit tracked direction toward a reusable plate-game framework, but without forcing a premature rewrite.
 
 ### Phase 0: Track The Direction
 
@@ -87,79 +130,89 @@ Completed.
 - moved Florida badge group labels and symbols out of the main component
 - moved Florida regional/county badge constants out of the main component
 
-### Why This Matters
+### Phase 2: Isolate Domain Logic
 
-- future Florida work has a clearer place to live
-- the app now has a real seam for state/game-specific configuration
-- future extraction work can happen incrementally instead of as a risky rewrite
+Started, but not finished.
 
-## v1.5
+Already moving in this direction:
 
-Curated search and discovery improvements.
+- the app now consumes a generated plate driver instead of a Florida-only hand-shaped runtime catalog
+- Florida-specific category and naming rules are increasingly data-driven
+- the new master/runtime split creates a better seam for future tooling and future states
 
-### Goals
+Still to do:
 
-- make search useful for visual cues, aliases, nicknames, and themes
-- support the current stabilized catalog before another big import wave
-- improve “I saw a butterfly / gator / sunset / orange plate” style lookup
-
-### Checklist
-
-- add `searchTerms` support to the canonical plate schema
-- update search to include:
-  - plate name
-  - category
-  - aliases
-  - sponsor/beneficiary text where helpful
-  - curated search terms
-- draft a first-pass keyword set for the full current catalog
-- include school abbreviations and nicknames
-- include sports aliases
-- include strong visual motifs
-- include useful color/theme descriptors
-- review noisy or overly broad terms
-- test against real examples like:
-  - `butterfly`
-  - `surf`
-  - `gators`
-  - `orange`
-
-### Definition Of Done
-
-- search finds plates by what players notice, not just by exact plate title text
+- separate generic badge evaluation from Florida badge definitions
+- move more Florida-specific grouping and progression logic out of the main app flow
+- make more of the browse/search behavior consume declarative game data rather than Florida assumptions
 
 ## v1.6
 
-Metadata refinement and future expansion support.
+Search enrichment and taxonomy polish.
 
 ### Goals
 
-- improve the quality and usefulness of plate metadata without cluttering the UI
-- prepare for the next source expansion without destabilizing search or the current taxonomy
+- make search genuinely useful for what players notice at a glance
+- finish the catalog curation work that `v1.5.0` only started
+- tighten category placement now that the expanded dataset is in place
 
 ### Checklist
 
-- review sponsor/beneficiary text for any remaining noise
-- decide whether sponsor URLs should be shown or linked
-- decide whether introduction-year data should remain hidden or return in a lighter form
-- evaluate whether popularity/rarity should appear visually in the modal
-- consider new badge families driven by:
-  - rarity
-  - charity/cause collections
-  - version collections
-- keep scoring untouched unless the data quality becomes trustworthy enough
-- review the next incoming image/metadata package
-- extend the generator/mapping rules for the next source
-- preserve logical plate identity and version continuity
-- decide whether additional browse modes are needed for a larger catalog
-- consider richer grouping options that do not overcomplicate the main game screen
+- curate `searchTerms` across the full catalog, not just a few test plates
+- add school abbreviations and nicknames where still missing
+- add professional sports aliases and common fan terms
+- add strong visual descriptors where helpful:
+  - animals
+  - colors
+  - scenery
+  - symbols
+- decide whether sponsor and note text should also participate in search
+- continue category cleanup for obvious misfits
+- review sorted-list naming for clarity and consistency
+- test search against real examples like:
+  - `orange`
+  - `butterfly`
+  - `gators`
+  - `police`
+  - `beach`
+  - `horse`
 
 ### Definition Of Done
 
-- metadata feels more polished and useful without making the app visually busier or less trustworthy
-- the app can absorb another plate expansion without undoing the clarity gained in `v1.3`
+- search finds plates by what players notice, not just by exact title text
+- category placement feels stable enough that future cleanup becomes occasional maintenance instead of a rework
 
-## v1.7+
+## v1.7
+
+Framework extraction Phase 2 and editor-readiness.
+
+### Goals
+
+- keep paying down the Florida-specific technical debt without over-abstracting
+- shape the codebase so a separate future driver editor has a clean target
+- make another state feasible without committing to it yet
+
+### Checklist
+
+- separate generic badge evaluation from Florida badge definitions
+- move more Florida-specific constants and rules out of `App.tsx`
+- document the master-data editing workflow more clearly
+- decide which runtime fields are truly required for game operation
+- further trim authoring-only clutter from runtime output where safe
+- identify what a future external editor would need to manage:
+  - plate naming
+  - category assignment
+  - image binding
+  - search term curation
+  - variant relationships
+- decide whether `variantOf` / `relatedPlates` stay as-is or evolve into a cleaner relationship model
+
+### Definition Of Done
+
+- the app shell is more clearly separable from Florida-specific game rules
+- the future standalone editor has a more stable schema target
+
+## v1.8+
 
 Optional social layer and cloud identity.
 
@@ -216,12 +269,6 @@ Optional social layer and cloud identity.
 - friends / buddy connections
 - optional regional or map-based social views
 
-### Definition Of Done
-
-- a future social release should work without requiring a native app first
-- social participation remains optional
-- privacy defaults are strong enough that players, including minors, are not pushed into oversharing
-
 ## Parking Lot
 
 These are intentionally not committed to the next release yet.
@@ -234,17 +281,18 @@ These are intentionally not committed to the next release yet.
 - richer map provider or real slippy-map implementation
 - custom badge artwork beyond the current icon system
 - optional social identity, leaderboard, and buddy-sharing features
+- a standalone external driver editor
 
 ## Recommended Order
 
-1. `v1.5` curated search
-2. `v1.6` metadata refinement and next catalog expansion support
-3. `v1.7+` optional social layer and cloud identity
+1. `v1.6` search enrichment and taxonomy polish
+2. `v1.7` framework extraction Phase 2 and editor-readiness
+3. `v1.8+` optional social layer and cloud identity
 
 ## Immediate Next Step
 
 For the next cycle, the best target is:
 
-- implement curated search terms for the stabilized catalog
-- test search against the most visually distinctive plates
-- keep the time-of-day badge set documented for a later release
+- curate search terms across the full catalog
+- keep tightening category placement as outliers are found
+- avoid major UI or platform work until search and taxonomy feel settled
