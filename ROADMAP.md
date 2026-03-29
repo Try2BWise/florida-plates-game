@@ -182,6 +182,32 @@ Search enrichment and taxonomy polish.
 - search finds plates by what players notice, not just by exact title text
 - category placement feels stable enough that future cleanup becomes occasional maintenance instead of a rework
 
+## v1.6.x
+
+Mapping and geography polish.
+
+### Goals
+
+- make the map feel like a real part of the game instead of a rough secondary view
+- improve confidence in saved sightings, pins, and regional progress
+- strengthen low-signal and offline behavior for mapping-related features
+
+### Checklist
+
+- review how quickly newly found plates appear on the map after background location enrichment
+- improve handling for finds with no resolved locality or delayed geocode data
+- refine the current pin display so dense areas are easier to read
+- evaluate whether clustering, regional summaries, or lighter grouping would improve usability
+- tighten map copy and empty states so players understand what the map is showing
+- review county and regional mapping data for consistency with badge logic
+- test the map and location workflow in weak-signal travel conditions
+- decide when the current custom pin map should give way to a richer slippy-map experience
+
+### Definition Of Done
+
+- the map is useful for reviewing discoveries instead of feeling experimental
+- pins, locality data, and regional progress behave predictably enough to support future social and pack-based expansion
+
 ## v1.7
 
 Framework extraction Phase 2 and editor-readiness.
