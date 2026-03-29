@@ -1,5 +1,5 @@
-const APP_CACHE = "florida-plates-app-v5";
-const RUNTIME_CACHE = "florida-plates-runtime-v5";
+const APP_CACHE = "florida-plates-app-v6";
+const RUNTIME_CACHE = "florida-plates-runtime-v6";
 const BASE_PATH = self.location.pathname.replace(/\/sw\.js$/, "");
 const APP_SHELL = [
   `${BASE_PATH}/`,
@@ -8,7 +8,8 @@ const APP_SHELL = [
   `${BASE_PATH}/apple-touch-icon.png`,
   `${BASE_PATH}/pwa-192.png`,
   `${BASE_PATH}/pwa-512.png`,
-  `${BASE_PATH}/plate-assets.json`
+  `${BASE_PATH}/plate-assets.json`,
+  `${BASE_PATH}/badge-assets.json`
 ];
 
 self.addEventListener("install", (event) => {
@@ -21,10 +22,21 @@ self.addEventListener("install", (event) => {
         throw new Error("Unable to load plate asset list");
       }
 
+      const badgeAssetResponse = await fetch(`${BASE_PATH}/badge-assets.json`);
+      if (!badgeAssetResponse.ok) {
+        throw new Error("Unable to load badge asset list");
+      }
+
       const plateAssets = await assetResponse.json();
+      const badgeAssets = await badgeAssetResponse.json();
       if (Array.isArray(plateAssets) && plateAssets.length > 0) {
         await cache.addAll(
           plateAssets.map((assetPath) => new URL(assetPath, self.location.origin + BASE_PATH + "/").toString())
+        );
+      }
+      if (Array.isArray(badgeAssets) && badgeAssets.length > 0) {
+        await cache.addAll(
+          badgeAssets.map((assetPath) => new URL(assetPath, self.location.origin + BASE_PATH + "/").toString())
         );
       }
     })

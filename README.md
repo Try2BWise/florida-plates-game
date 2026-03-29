@@ -1,6 +1,6 @@
 # FL Plates
 
-Installable offline-friendly tracker for Florida specialty plates.
+Installable offline-friendly tracker for Florida license plates.
 
 ## What It Does
 
@@ -32,12 +32,12 @@ For LAN testing on the same Wi-Fi, open the host IP and Vite port shown in the t
 npm run build
 ```
 
-The build step also regenerates the PWA icons and plate asset manifest used by the service worker.
+The build step also regenerates the runtime plate driver, the PWA icons, and the plate asset manifest used by the service worker.
 
-To regenerate the normalized `v1.3` plate catalog from the staged source inputs:
+To regenerate the runtime plate driver without doing a full build:
 
 ```powershell
-npm run generate:v13-catalog
+npm run generate:plate-driver
 ```
 
 ## GitHub Pages Deployment
@@ -69,9 +69,9 @@ After that, each push to `master` will build and deploy the app automatically.
 
 ### 4. Open the live site
 
-For the current repo name, the site URL is:
+For the current custom domain, the site URL is:
 
-[https://try2bwise.github.io/florida-plates-game/](https://try2bwise.github.io/florida-plates-game/)
+[https://gorillagrin.com/florida-plates-game/](https://gorillagrin.com/florida-plates-game/)
 
 ### 5. Install on iPhone
 

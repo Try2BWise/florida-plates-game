@@ -1,15 +1,15 @@
 {
   "name": "florida-plates-game",
   "private": true,
-  "version": "1.4.0",
+  "version": "1.5.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "dev:host": "vite --host 0.0.0.0",
     "generate:build-info": "node scripts/generateBuildInfo.mjs",
+    "generate:plate-driver": "node scripts/generatePlateDriver.mjs",
     "generate:pwa-assets": "node scripts/generatePwaAssets.mjs",
-    "generate:v13-catalog": "node scripts/buildV13Catalog.mjs",
-    "prebuild": "node scripts/generatePwaAssets.mjs && node scripts/generateBuildInfo.mjs",
+    "prebuild": "node scripts/generatePlateDriver.mjs && node scripts/generatePwaAssets.mjs && node scripts/generateBuildInfo.mjs",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "preview:host": "vite preview --host 0.0.0.0"

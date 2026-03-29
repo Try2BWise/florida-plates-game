@@ -5,8 +5,8 @@ export const floridaMixedBagCategories = new Set<PlateCategory>([
   "Civic & Causes",
   "Health & Family",
   "Education & Culture",
-  "Public Safety",
-  "Recreation & Tourism"
+  "Public Service",
+  "Travel & Tourism"
 ]);
 
 export const floridaPanhandleScoutCounties = new Set([
@@ -113,7 +113,7 @@ export const floridaGame: GameDefinition & {
   branding: {
     appName: "FL Plates",
     appShareName: "FL Plates",
-    shareUrl: "https://try2bwise.github.io/florida-plates-game/",
+    shareUrl: "https://gorillagrin.com/florida-plates-game/",
     appTagline: "Florida plate tracker",
     developerName: "Gorilla Grin",
     developerUrl: "https://gorillagrin.com",
@@ -121,9 +121,9 @@ export const floridaGame: GameDefinition & {
   },
   share: {
     appMessage: [
-      "I’ve been playing FL Plates, a Florida specialty plate spotting game.",
+      "I’ve been playing FL Plates, a Florida license plate spotting game.",
       "",
-      "Play it here: https://try2bwise.github.io/florida-plates-game/",
+      "Play it here: https://gorillagrin.com/florida-plates-game/",
       "",
       "To install:",
       "iPhone: open in Safari, tap Share, then Add to Home Screen.",
@@ -133,7 +133,7 @@ export const floridaGame: GameDefinition & {
       [
         `I just earned ${badgeName} on FL Plates!`,
         "",
-        "Play it here: https://try2bwise.github.io/florida-plates-game/",
+        "Play it here: https://gorillagrin.com/florida-plates-game/",
         "",
         "To install:",
         "iPhone: open in Safari, tap Share, then Add to Home Screen.",

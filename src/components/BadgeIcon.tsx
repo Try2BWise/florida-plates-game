@@ -3,31 +3,34 @@ import type { EvaluatedBadge } from "../lib/badges";
 
 interface BadgeIconProps {
   badge: EvaluatedBadge;
+  size?: number;
+  className?: string;
 }
 
-// Removed unused BadgePalette interface
+const customBadgeArtById: Record<string, string> = {
+  "first-spot": "start.png",
+  "complete-set": "trophy.png",
+  "thrill-ride": "roller-coaster.png",
+  escapee: "3d-map.png",
+  "i-get-around": "3d-map.png",
+  "road-trip": "3d-map.png",
+  "panhandle-scout": "3d-map.png",
+  "northwest-florida-explorer": "compass.png",
+  "north-central-florida-explorer": "compass.png",
+  "northeast-florida-explorer": "compass.png",
+  "central-west-florida-explorer": "compass.png",
+  "central-florida-explorer": "compass.png",
+  "central-east-florida-explorer": "compass.png",
+  "southwest-florida-explorer": "compass.png",
+  "southeast-florida-explorer": "compass.png",
+  "florida-keys-explorer": "compass.png",
+  "all-around-florida": "compass.png",
+  "those-who-serve": "badge.png"
+};
 
-// Removed unused palettes constant
+export function BadgeIcon({ badge, size = 96, className = "" }: BadgeIconProps) {
+  const customArt = customBadgeArtById[badge.id];
 
-// Removed unused MedalBase function
-
-// Removed unused CenterText function
-
-// Removed unused RingStar function
-
-// Removed unused PlateGlyph function
-
-// Removed unused LeafGlyph function
-
-// Removed unused CapGlyph function
-
-// Removed unused BallGlyph function
-
-// Removed unused PinGlyph function
-
-// Removed unused renderBadgeGlyph function
-
-export function BadgeIcon({ badge }: BadgeIconProps) {
   // Select medal type based on badge requirements
   let medal = "gold";
   if (typeof badge.progressTarget === "number" && typeof badge.progressCurrent === "number") {
@@ -48,13 +51,13 @@ export function BadgeIcon({ badge }: BadgeIconProps) {
       }
     }
   }
-  const imgSrc = `${import.meta.env.BASE_URL}plates/${medal}-medal.png`;
+  const imgSrc = `${import.meta.env.BASE_URL}badges/${customArt ?? `${medal}-medal.png`}`;
   return (
     <img
       src={imgSrc}
       alt={badge.name}
-      className={badge.earned ? "badge-medal-img" : "badge-medal-img badge-medal-img--dimmed"}
-      style={{ width: 96, height: 96, objectFit: "contain", display: "block" }}
+      className={`${badge.earned ? "badge-medal-img" : "badge-medal-img badge-medal-img--dimmed"} ${className}`.trim()}
+      style={{ width: size, height: size, objectFit: "contain", display: "block" }}
       draggable={false}
     />
   );

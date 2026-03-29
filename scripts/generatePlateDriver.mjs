@@ -1,0 +1,108 @@
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { dirname, join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+const masterPath = join(repoRoot, "src", "data", "florida-plate-master.json");
+const generatedDir = join(repoRoot, "src", "data", "generated");
+const runtimePath = join(generatedDir, "florida-plate-driver.generated.json");
+const legacyMapPath = join(generatedDir, "legacy-id-map.generated.json");
+
+function loadMasterDataset() {
+  return JSON.parse(readFileSync(masterPath, "utf8"));
+}
+
+function normalizeSearchTerms(...termLists) {
+  const normalized = new Set();
+
+  for (const termList of termLists) {
+    if (!Array.isArray(termList)) {
+      continue;
+    }
+
+    for (const term of termList) {
+      if (typeof term !== "string") {
+        continue;
+      }
+
+      const cleaned = term.trim().toLowerCase();
+      if (cleaned) {
+        normalized.add(cleaned);
+      }
+    }
+  }
+
+  return Array.from(normalized);
+}
+
+function buildRuntimePlate(plate) {
+  return {
+    id: plate.id,
+    slug: plate.slug,
+    name: plate.name,
+    displayName: plate.displayName,
+    baseName: plate.baseName,
+    variantLabel: plate.variantLabel ?? null,
+    plateType: plate.plateType,
+    isCurrent: Boolean(plate.isCurrent),
+    isActive: Boolean(plate.isActive),
+    category: plate.category,
+    image: {
+      path: plate.image?.path ?? "",
+      remoteUrl: plate.image?.remoteUrl ?? null
+    },
+    sponsor: plate.sponsor ?? null,
+    notes: plate.notes ?? null,
+    searchTerms: normalizeSearchTerms(plate.searchTerms, plate.tags),
+    variantOf: plate.variantOf ?? null,
+    relatedPlates: Array.isArray(plate.relatedPlates) ? plate.relatedPlates : []
+  };
+}
+
+function buildRuntimeDataset(master) {
+  return {
+    schemaVersion: master.schemaVersion ?? 1,
+    generatedDate: new Date().toISOString().slice(0, 10),
+    generatedFrom: "src/data/florida-plate-master.json",
+    plateCount: Array.isArray(master.plates) ? master.plates.length : 0,
+    plates: Array.isArray(master.plates) ? master.plates.map(buildRuntimePlate) : []
+  };
+}
+
+function buildLegacyIdMap(master) {
+  const legacyIdMap = {};
+
+  if (!Array.isArray(master.plates)) {
+    return legacyIdMap;
+  }
+
+  for (const plate of master.plates) {
+    if (!Array.isArray(plate.sourceRefs)) {
+      continue;
+    }
+
+    for (const sourceRef of plate.sourceRefs) {
+      if (
+        sourceRef?.source === "catalog.generated.json" &&
+        typeof sourceRef.sourceId === "string" &&
+        sourceRef.sourceId.length > 0
+      ) {
+        legacyIdMap[sourceRef.sourceId] = plate.id;
+      }
+    }
+  }
+
+  return legacyIdMap;
+}
+
+mkdirSync(generatedDir, { recursive: true });
+
+const masterDataset = loadMasterDataset();
+const runtimeDataset = buildRuntimeDataset(masterDataset);
+const legacyIdMap = buildLegacyIdMap(masterDataset);
+
+writeFileSync(runtimePath, `${JSON.stringify(runtimeDataset, null, 2)}\n`, "utf8");
+writeFileSync(legacyMapPath, `${JSON.stringify(legacyIdMap, null, 2)}\n`, "utf8");
+
+console.log(`Wrote ${runtimePath}`);
+console.log(`Wrote ${legacyMapPath}`);

@@ -1,7 +1,0 @@
-analysis\flpb\images\obj-0186.png
-analysis\flpb\images\obj-0187.png
-analysis\flpb\images\obj-0188.png
-analysis\flpb\images\obj-0189.png
-analysis\flpb\images\obj-0190.png
-analysis\flpb\images\obj-0191.png
-analysis\flpb\images\obj-0192.png

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+
+# Local scratch and temporary artifacts
+tmp_*.json
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

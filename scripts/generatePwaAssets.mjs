@@ -6,15 +6,23 @@ import { dirname, join, relative, resolve } from "node:path";
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const publicDir = join(repoRoot, "public");
 const platesDir = join(publicDir, "plates");
+const badgesDir = join(publicDir, "badges");
 const iconSvgPath = join(publicDir, "app-icon.svg");
 const plateAssetsJsonPath = join(publicDir, "plate-assets.json");
+const badgeAssetsJsonPath = join(publicDir, "badge-assets.json");
 
 const plateAssets = readdirSync(platesDir)
   .filter((fileName) => /\.(png|jpg)$/i.test(fileName))
   .sort((left, right) => left.localeCompare(right))
   .map((fileName) => `plates/${fileName}`);
 
+const badgeAssets = readdirSync(badgesDir)
+  .filter((fileName) => /\.(png|jpg)$/i.test(fileName))
+  .sort((left, right) => left.localeCompare(right))
+  .map((fileName) => `badges/${fileName}`);
+
 writeFileSync(plateAssetsJsonPath, `${JSON.stringify(plateAssets, null, 2)}\n`);
+writeFileSync(badgeAssetsJsonPath, `${JSON.stringify(badgeAssets, null, 2)}\n`);
 
 const svgSource = readFileSync(iconSvgPath, "utf8");
 const iconTargets = [
@@ -51,6 +59,7 @@ writeFileSync(
   join(repoRoot, "analysis", "pwa", "asset-summary.txt"),
   [
     `Generated ${plateAssets.length} plate asset paths`,
+    `Generated ${badgeAssets.length} badge asset paths`,
     ...iconTargets.map((target) => relative(repoRoot, join(publicDir, target.fileName)))
   ].join("\n") + "\n"
 );
