@@ -1,4 +1,7 @@
 
+import { formatCoordinates, formatDiscoveryTime } from "../lib/format";
+import type { Plate, PlateDiscovery } from "../types";
+
 interface PlateCardProps {
   plate: Plate;
   discovery?: PlateDiscovery;

@@ -1,5 +1,0 @@
-analysis\flpb\images\obj-0105.png
-analysis\flpb\images\obj-0106.png
-analysis\flpb\images\obj-0107.png
-analysis\flpb\images\obj-0108.png
-analysis\flpb\images\obj-0109.png

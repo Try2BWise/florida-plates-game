@@ -29,15 +29,16 @@ export interface EvaluatedBadge extends BadgeDefinition {
 const natureCategory: PlateCategory = "Nature & Wildlife";
 const sportsCategory: PlateCategory = "Professional Sports";
 const universitiesCategory: PlateCategory = "Universities";
-const militaryCategory: PlateCategory = "Military & Veterans";
-const publicSafetyCategory: PlateCategory = "Public Safety";
+const militaryServiceCategory: PlateCategory = "Military Service";
+const militaryHonorsCategory: PlateCategory = "Military Honors & History";
+const publicServiceCategory: PlateCategory = "Public Service";
 
 const mixedBagCategories = new Set<PlateCategory>([
   "Civic & Causes",
   "Health & Family",
   "Education & Culture",
-  "Public Safety",
-  "Recreation & Tourism"
+  "Public Service",
+  "Travel & Tourism"
 ]);
 
 const floridaPanhandleCounties = new Set([
@@ -173,7 +174,7 @@ export const badgeDefinitions: BadgeDefinition[] = [
     id: "mixed-bag",
     name: "Mixed Bag",
     description:
-      "Find 5 plates from the civic, health, culture, safety, and tourism groups.",
+      "Find 5 plates from the civic, health, culture, service, and tourism groups.",
     group: "category",
     availableIn: "v1.4"
   },
@@ -389,6 +390,13 @@ export const badgeDefinitions: BadgeDefinition[] = [
     availableIn: "v1.4"
   },
   {
+    id: "thrill-ride",
+    name: "Thrill Ride",
+    description: "Find the Walt Disney World plate.",
+    group: "collection",
+    availableIn: "v1.4"
+  },
+  {
     id: "escapee",
     name: "Escapee",
     description: "Find a plate outside of Florida.",
@@ -584,8 +592,9 @@ function countFoundInCollection(
   plateNames: string[]
 ): number {
   return plateNames.filter((plateName) => {
-    const plate = plates.find((candidatePlate) => candidatePlate.name === plateName);
-    return plate ? Boolean(discoveries[plate.id]) : false;
+    return plates.some(
+      (candidatePlate) => candidatePlate.name === plateName && Boolean(discoveries[candidatePlate.id])
+    );
   }).length;
 }
 
@@ -594,11 +603,18 @@ function isHonorOrMedalPlate(plate: Plate): boolean {
 }
 
 function isServiceCategoryPlate(plate: Plate): boolean {
-  return plate.category === militaryCategory || plate.category === publicSafetyCategory;
+  return (
+    plate.category === militaryServiceCategory ||
+    plate.category === militaryHonorsCategory ||
+    plate.category === publicServiceCategory
+  );
 }
 
 function isThoseWhoServeCompletionPlate(plate: Plate): boolean {
-  return isServiceCategoryPlate(plate) && !isHonorOrMedalPlate(plate);
+  return (
+    (plate.category === militaryServiceCategory || plate.category === publicServiceCategory) &&
+    !isHonorOrMedalPlate(plate)
+  );
 }
 
 function countFoundInServiceCategory(
@@ -937,6 +953,14 @@ export function evaluateBadges(
         getBadgeDefinition(definitionsById, "slam-dunk"),
         countFoundInCollection(plates, discoveries, basketballPlateNames),
         basketballPlateNames.length
+      )
+    ],
+    [
+      "thrill-ride",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "thrill-ride"),
+        countFoundInCollection(plates, discoveries, ["Walt Disney World"]),
+        1
       )
     ],
     ["escapee", createThresholdBadge(getBadgeDefinition(definitionsById, "escapee"), outsideFloridaCount, 1)],

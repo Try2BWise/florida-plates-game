@@ -38,6 +38,7 @@ const badgePlateSets: Record<string, string[]> = {
   ],
   "hat-trick": ["Florida Panthers (Hockey)", "Tampa Bay Lightning (Hockey)"],
   "slam-dunk": ["Miami Heat (Basketball)", "Orlando Magic (Basketball)"],
+  "thrill-ride": ["Walt Disney World"],
   "all-branches": [
     "U.S. Army",
     "U.S. Navy",
@@ -161,7 +162,6 @@ function App() {
   const [isExplorePanelOpen, setIsExplorePanelOpen] = useState(false);
   const [isUtilityPanelOpen, setIsUtilityPanelOpen] = useState(false);
   const [previewPlate, setPreviewPlate] = useState<Plate | null>(null);
-  const [previewVersionId, setPreviewVersionId] = useState<string | null>(null);
   const [activeBadgeDetail, setActiveBadgeDetail] = useState<EvaluatedBadge | null>(null);
   const [activeExploreTab, setActiveExploreTab] = useState<ExploreTab>("badges");
   const [timelineSort, setTimelineSort] = useState<TimelineSort>("desc");
@@ -587,15 +587,6 @@ function App() {
     }
   }, [categoryFilterOptions, selectedCategoryFilter]);
 
-  // With flat plate structure, previewPlate is the only context needed for preview
-  useEffect(() => {
-    if (!previewPlate) {
-      setPreviewVersionId(null);
-      return;
-    }
-    setPreviewVersionId(previewPlate.id);
-  }, [previewPlate]);
-
   const previewVersion = previewPlate;
   // Removed unused activeBadgeProgressLabel
   const activeBadgeSupportingDiscoveries = activeBadgeDetail
@@ -743,7 +734,9 @@ function App() {
       case "those-who-serve":
         return discoveryEntries.filter(
           ({ plate }) =>
-            plate.category === "Military & Veterans" || plate.category === "Public Safety"
+            plate.category === "Military Service" ||
+            plate.category === "Military Honors & History" ||
+            plate.category === "Public Service"
         );
       case "i-get-around":
       case "road-trip": {
@@ -1549,7 +1542,7 @@ function App() {
                                   <div className="timeline-entry__plate">
                                     <img
                                       className="timeline-entry__image"
-                                      src={`${import.meta.env.BASE_URL}${plate.defaultVersion.imagePath}`}
+                                      src={`${import.meta.env.BASE_URL}${plate.image.path}`}
                                       alt={plate.name}
                                     />
                                     <div className="timeline-entry__copy">
@@ -1927,28 +1920,45 @@ function App() {
             aria-label={`${activeBadgeDetail.name} badge details`}
             onClick={(event) => event.stopPropagation()}
           >
-            {/* Badge image removed as requested */}
-            <section className="badge-modal-main-card">
-              <div className="badge-modal-main-card__category">
-                <span className={`badge-chip badge-chip--${activeBadgeDetail.group}`}> 
-                  <span className={`badge-chip__icon badge-group__icon badge-group__icon--${badgeGroupSymbols[activeBadgeDetail.group]} badge-group__icon--${activeBadgeDetail.group}`} aria-hidden="true" />
-                  <span>{badgeGroupLabels[activeBadgeDetail.group]}</span>
-                </span>
-              </div>
-              <div className="badge-modal-main-card__name">{activeBadgeDetail.name}</div>
-              <div className="badge-modal-main-card__desc">{activeBadgeDetail.description}</div>
-              <div className="badge-modal-main-card__actions">
-                <button
-                  type="button"
-                  className="app-footer__share badge-modal-main-card__share"
-                  onClick={() => handleShareBadge(activeBadgeDetail.name)}
-                >
-                  Share
-                </button>
-              </div>
-            </section>
-            {/* Show counties for regional badges */}
-            {activeBadgeDetail.group === "florida" &&
+            <div className="badge-detail-modal__hero">
+              <BadgeIcon
+                badge={activeBadgeDetail}
+                size={176}
+                className="badge-detail-modal__image"
+              />
+            </div>
+
+            <div className="badge-detail-modal__content">
+              <section className="utility-card badge-detail-modal__section badge-detail-modal__section--summary">
+                <div className="badge-detail-modal__summary-top">
+                  <span className={`badge-chip badge-chip--${activeBadgeDetail.group}`}>
+                    <span
+                      className={`badge-chip__icon badge-group__icon badge-group__icon--${badgeGroupSymbols[activeBadgeDetail.group]} badge-group__icon--${activeBadgeDetail.group}`}
+                      aria-hidden="true"
+                    />
+                    <span>{badgeGroupLabels[activeBadgeDetail.group]}</span>
+                  </span>
+                  <span
+                    className={`badge-progress-pill badge-progress-pill--modal ${activeBadgeDetail.earned ? "badge-progress-pill--earned" : ""}`}
+                  >
+                    {activeBadgeDetail.earned ? "Earned" : "Not yet"}
+                  </span>
+                  <button
+                    type="button"
+                    className="app-footer__share badge-detail-modal__share badge-detail-modal__share--inline"
+                    onClick={() => handleShareBadge(activeBadgeDetail.name)}
+                  >
+                    Share
+                  </button>
+                </div>
+
+                <div className="badge-detail-modal__summary-copy">
+                  <div className="badge-detail-modal__title">{activeBadgeDetail.name}</div>
+                  <div className="badge-detail-modal__lede">{activeBadgeDetail.description}</div>
+                </div>
+              </section>
+
+              {activeBadgeDetail.group === "florida" &&
               typeof activeBadgeDetail.id === "string" &&
               activeBadgeDetail.id.endsWith("-explorer") &&
               window.floridaBadgeCounties &&
@@ -1962,32 +1972,33 @@ function App() {
                   </ul>
                 </section>
               ) : null}
-            {/* Supported Sightings section (unchanged) */}
-            {activeBadgeDetail.earned && activeBadgeSupportingDiscoveries.length > 0 ? (
-              <section className="utility-card badge-detail-modal__section">
-                <h3>
-                  {activeBadgeSupportingDiscoveries.length === 1
-                    ? "Supporting sighting"
-                    : "Supporting sightings"}
-                </h3>
-                <div className="badge-detail-modal__sightings">
-                  {activeBadgeSupportingDiscoveries.map(({ plate, discovery }) => (
-                    <article
-                      className="badge-detail-modal__sighting"
-                      key={`${activeBadgeDetail.id}-${plate.id}-${discovery.foundAtIso}`}
-                    >
-                      <h4>{plate.name}</h4>
-                      <p className="utility-card__meta">
-                        {formatDiscoveryTime(discovery.foundAtIso)}
-                      </p>
-                      <p className="utility-card__meta">
-                        {discovery.locality ?? "Location unavailable"}
-                      </p>
-                    </article>
-                  ))}
-                </div>
-              </section>
-            ) : null}
+
+              {activeBadgeDetail.earned && activeBadgeSupportingDiscoveries.length > 0 ? (
+                <section className="utility-card badge-detail-modal__section">
+                  <h3>
+                    {activeBadgeSupportingDiscoveries.length === 1
+                      ? "Supporting sighting"
+                      : "Supporting sightings"}
+                  </h3>
+                  <div className="badge-detail-modal__sightings">
+                    {activeBadgeSupportingDiscoveries.map(({ plate, discovery }) => (
+                      <article
+                        className="badge-detail-modal__sighting"
+                        key={`${activeBadgeDetail.id}-${plate.id}-${discovery.foundAtIso}`}
+                      >
+                        <h4>{plate.name}</h4>
+                        <p className="utility-card__meta">
+                          {formatDiscoveryTime(discovery.foundAtIso)}
+                        </p>
+                        <p className="utility-card__meta">
+                          {discovery.locality ?? "Location unavailable"}
+                        </p>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+              ) : null}
+            </div>
           </section>
         </div>
       ) : null}

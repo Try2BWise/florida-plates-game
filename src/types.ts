@@ -1,13 +1,21 @@
 export const plateCategories = [
+  "Accessibility",
   "Civic & Causes",
+  "Commercial & Fleet",
   "Education & Culture",
+  "Government & Official",
   "Health & Family",
-  "Military & Veterans",
+  "Historical & Antique",
+  "Military Honors & History",
+  "Military Service",
+  "Motorcycle Plates",
   "Nature & Wildlife",
   "Professional Sports",
-  "Public Safety",
-  "Recreation & Tourism",
+  "Public Service",
+  "Special Use",
+  "Sports & Recreation",
   "Standard Plates",
+  "Travel & Tourism",
   "Universities"
 ] as const;
 
@@ -48,7 +56,6 @@ export interface Plate {
   isCurrent: boolean;
   isActive: boolean;
   category: PlateCategory;
-  tags: string[];
   image: PlateImage;
   sponsor: string | null;
   notes: string | null;
