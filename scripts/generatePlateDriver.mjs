@@ -35,12 +35,28 @@ function normalizeSearchTerms(...termLists) {
   return Array.from(normalized);
 }
 
+function ensureMotorcycleSuffix(value, category) {
+  if (typeof value !== "string") {
+    return value;
+  }
+
+  const trimmed = value.trim();
+  if (!trimmed || category !== "Motorcycle Plates" || /\(motorcycle\)$/i.test(trimmed)) {
+    return trimmed;
+  }
+
+  return `${trimmed} (Motorcycle)`;
+}
+
 function buildRuntimePlate(plate) {
+  const name = ensureMotorcycleSuffix(plate.name, plate.category);
+  const displayName = ensureMotorcycleSuffix(plate.displayName, plate.category);
+
   return {
     id: plate.id,
     slug: plate.slug,
-    name: plate.name,
-    displayName: plate.displayName,
+    name,
+    displayName,
     baseName: plate.baseName,
     variantLabel: plate.variantLabel ?? null,
     plateType: plate.plateType,

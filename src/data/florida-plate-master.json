@@ -5790,7 +5790,7 @@
       "isActive": true,
       "category": "Motorcycle Plates",
       "image": {
-        "path": "plates/22_254_disabled-person-wheelchair.png",
+        "path": "plates/22_255_disabled-veteran.png",
         "remoteUrl": null
       },
       "sponsor": null,
@@ -6045,7 +6045,7 @@
       "isActive": true,
       "category": "Motorcycle Plates",
       "image": {
-        "path": "plates/22_255_disabled-veteran.png",
+        "path": "plates/22_254_disabled-person-wheelchair.png",
         "remoteUrl": null
       },
       "sponsor": null,
@@ -19093,7 +19093,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Standard Plates",
       "image": {
         "path": "plates/21_239_miccosukee-indian.png",
         "remoteUrl": null
@@ -25732,7 +25732,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Standard Plates",
       "image": {
         "path": "plates/21_240_seminole-indian.png",
         "remoteUrl": null

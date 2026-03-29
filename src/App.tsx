@@ -1582,31 +1582,25 @@ function App() {
                     </p>
                   </section>
                   <section className="utility-card">
-                    {earnedBadges.length > 0 ? (
-                      <div className="utility-stack">
-                        {allBadgeGroups.map(([group, badges]) => (
-                          <section className="badge-group" key={`earned-${group}`}>
-                            <div className="badge-group__header">
-                              <h4>
-                                <span
-                                  className={`badge-group__icon badge-group__icon--${badgeGroupSymbols[group]} badge-group__icon--${group}`}
-                                  aria-hidden="true"
-                                />
-                                {badgeGroupLabels[group]}
-                              </h4>
-                              <span>{badges.length}</span>
-                            </div>
-                            <div className="badge-icon-grid">
-                              {badges.map((badge) => renderBadgeCard(badge))}
-                            </div>
-                          </section>
-                        ))}
-                      </div>
-                    ) : (
-                      <p className="utility-card__meta">
-                        Earn your first plate to unlock your first merit badge.
-                      </p>
-                    )}
+                    <div className="utility-stack">
+                      {allBadgeGroups.map(([group, badges]) => (
+                        <section className="badge-group" key={`earned-${group}`}>
+                          <div className="badge-group__header">
+                            <h4>
+                              <span
+                                className={`badge-group__icon badge-group__icon--${badgeGroupSymbols[group]} badge-group__icon--${group}`}
+                                aria-hidden="true"
+                              />
+                              {badgeGroupLabels[group]}
+                            </h4>
+                            <span>{badges.length}</span>
+                          </div>
+                          <div className="badge-icon-grid">
+                            {badges.map((badge) => renderBadgeCard(badge))}
+                          </div>
+                        </section>
+                      ))}
+                    </div>
                   </section>
                   {/* Remove Not yet earned section, all badges shown in one grid by group */}
                 </div>

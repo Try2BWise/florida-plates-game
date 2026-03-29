@@ -670,7 +670,7 @@
     {
       "id": "antique-motorcycle",
       "slug": "antique-motorcycle",
-      "name": "Antique",
+      "name": "Antique (Motorcycle)",
       "displayName": "Antique (Motorcycle)",
       "baseName": "Antique",
       "variantLabel": "Motorcycle",
@@ -2531,7 +2531,7 @@
       "isActive": true,
       "category": "Motorcycle Plates",
       "image": {
-        "path": "plates/22_254_disabled-person-wheelchair.png",
+        "path": "plates/22_255_disabled-veteran.png",
         "remoteUrl": null
       },
       "sponsor": null,
@@ -2627,7 +2627,7 @@
     {
       "id": "disabled-veteran-motorcycle",
       "slug": "disabled-veteran-motorcycle",
-      "name": "Disabled Veteran",
+      "name": "Disabled Veteran (Motorcycle)",
       "displayName": "Disabled Veteran (Motorcycle)",
       "baseName": "Disabled Veteran",
       "variantLabel": "Motorcycle",
@@ -2636,7 +2636,7 @@
       "isActive": true,
       "category": "Motorcycle Plates",
       "image": {
-        "path": "plates/22_255_disabled-veteran.png",
+        "path": "plates/22_254_disabled-person-wheelchair.png",
         "remoteUrl": null
       },
       "sponsor": null,
@@ -5322,7 +5322,7 @@
     {
       "id": "florida-highway-patrol-motorcycle",
       "slug": "florida-highway-patrol-motorcycle",
-      "name": "Florida Highway Patrol",
+      "name": "Florida Highway Patrol (Motorcycle)",
       "displayName": "Florida Highway Patrol (Motorcycle)",
       "baseName": "Florida Highway Patrol",
       "variantLabel": "Motorcycle",
@@ -6319,7 +6319,7 @@
     {
       "id": "former-military-vehicle-motorcycle",
       "slug": "former-military-vehicle-motorcycle",
-      "name": "Former Military Vehicle",
+      "name": "Former Military Vehicle (Motorcycle)",
       "displayName": "Former Military Vehicle (Motorcycle)",
       "baseName": "Former Military Vehicle",
       "variantLabel": "Motorcycle",
@@ -7980,7 +7980,7 @@
     {
       "id": "manufacturer-motorcycle",
       "slug": "manufacturer-motorcycle",
-      "name": "Manufacturer",
+      "name": "Manufacturer (Motorcycle)",
       "displayName": "Manufacturer (Motorcycle)",
       "baseName": "Manufacturer",
       "variantLabel": "Motorcycle",
@@ -8571,7 +8571,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Standard Plates",
       "image": {
         "path": "plates/21_239_miccosukee-indian.png",
         "remoteUrl": null
@@ -8696,8 +8696,8 @@
     {
       "id": "motorcycle-standard",
       "slug": "motorcycle-standard",
-      "name": "Motorcycle",
-      "displayName": "Motorcycle",
+      "name": "Motorcycle (Motorcycle)",
+      "displayName": "Motorcycle (Motorcycle)",
       "baseName": "Motorcycle",
       "variantLabel": "Current",
       "plateType": "license_plate",
@@ -9631,7 +9631,7 @@
     {
       "id": "paralyzed-veterans-of-america-motorcycle",
       "slug": "paralyzed-veterans-of-america-motorcycle",
-      "name": "Paralyzed Veterans of America",
+      "name": "Paralyzed Veterans of America (Motorcycle)",
       "displayName": "Paralyzed Veterans of America (Motorcycle)",
       "baseName": "Paralyzed Veterans of America",
       "variantLabel": "Motorcycle",
@@ -9994,7 +9994,7 @@
     {
       "id": "pre-printed-temporary-license-plate-motorcycle",
       "slug": "pre-printed-temporary-license-plate-motorcycle",
-      "name": "Pre-printed Temporary License Plate",
+      "name": "Pre-printed Temporary License Plate (Motorcycle)",
       "displayName": "Pre-printed Temporary License Plate (Motorcycle)",
       "baseName": "Pre-printed Temporary License Plate",
       "variantLabel": "Motorcycle",
@@ -11456,7 +11456,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Standard Plates",
       "image": {
         "path": "plates/21_240_seminole-indian.png",
         "remoteUrl": null
@@ -11782,7 +11782,7 @@
     {
       "id": "specialty-motorcycle",
       "slug": "specialty-motorcycle",
-      "name": "Specialty",
+      "name": "Specialty (Motorcycle)",
       "displayName": "Specialty (Motorcycle)",
       "baseName": "Specialty",
       "variantLabel": "Motorcycle",
@@ -11889,7 +11889,7 @@
     {
       "id": "standard-motorcycle",
       "slug": "standard-motorcycle",
-      "name": "Standard",
+      "name": "Standard (Motorcycle)",
       "displayName": "Standard (Motorcycle)",
       "baseName": "Standard",
       "variantLabel": "Motorcycle",
@@ -11982,7 +11982,7 @@
     {
       "id": "state-motorcycle",
       "slug": "state-motorcycle",
-      "name": "State",
+      "name": "State (Motorcycle)",
       "displayName": "State (Motorcycle)",
       "baseName": "State",
       "variantLabel": "Motorcycle",
