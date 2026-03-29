@@ -873,6 +873,57 @@ function App() {
       });
   }
 
+  function waitForServiceWorkerUpdate(registration: ServiceWorkerRegistration, timeoutMs = 4000) {
+    return new Promise<"waiting" | "no-update">((resolve) => {
+      if (registration.waiting) {
+        resolve("waiting");
+        return;
+      }
+
+      let resolved = false;
+      let timeoutId: number | null = null;
+
+      const finish = (result: "waiting" | "no-update") => {
+        if (resolved) {
+          return;
+        }
+        resolved = true;
+        if (timeoutId !== null) {
+          window.clearTimeout(timeoutId);
+        }
+        registration.removeEventListener("updatefound", handleUpdateFound);
+        resolve(result);
+      };
+
+      const handleInstalled = (worker: ServiceWorker) => {
+        if (worker.state === "installed" && registration.waiting) {
+          finish("waiting");
+        }
+      };
+
+      const handleUpdateFound = () => {
+        const installingWorker = registration.installing;
+        if (!installingWorker) {
+          return;
+        }
+
+        const handleStateChange = () => {
+          if (installingWorker.state === "installed") {
+            installingWorker.removeEventListener("statechange", handleStateChange);
+            handleInstalled(installingWorker);
+          }
+        };
+
+        installingWorker.addEventListener("statechange", handleStateChange);
+      };
+
+      registration.addEventListener("updatefound", handleUpdateFound);
+      timeoutId = window.setTimeout(() => {
+        finish(registration.waiting ? "waiting" : "no-update");
+      }, timeoutMs);
+    });
+  }
+
   // Export discoveries as JSON file
   function handleExportProgress() {
     const data = JSON.stringify(discoveries, null, 2);
@@ -912,21 +963,40 @@ function App() {
     event.target.value = '';
   }
 
-  // Force reload the PWA and check for updates
-  function handleForceReload() {
-    if (navigator.serviceWorker?.controller) {
-      navigator.serviceWorker.getRegistration(import.meta.env.BASE_URL).then((registration) => {
-        if (registration?.waiting) {
-          registration.waiting.postMessage({ type: "SKIP_WAITING" });
-        } else {
-          registration?.update();
-        }
-        // Always reload the page to ensure the latest version
-        window.location.reload();
-      });
-    } else {
+  // Check for updates and reload only after a new service worker takes control
+  async function handleForceReload() {
+    if (!("serviceWorker" in navigator)) {
       window.location.reload();
+      return;
     }
+
+    setTransientStatus("Checking for updates...", 5000);
+
+    const registration = await navigator.serviceWorker.getRegistration(import.meta.env.BASE_URL);
+    if (!registration) {
+      setTransientStatus("Reloading app...", 2000);
+      window.location.reload();
+      return;
+    }
+
+    const initialWaitingWorker: ServiceWorker | null = registration.waiting;
+    if (initialWaitingWorker) {
+      setTransientStatus("Installing update...", 5000);
+      initialWaitingWorker.postMessage({ type: "SKIP_WAITING" });
+      return;
+    }
+
+    await registration.update();
+    const updateResult = await waitForServiceWorkerUpdate(registration);
+
+    const readyWaitingWorker: ServiceWorker | null = registration.waiting;
+    if (updateResult === "waiting" && readyWaitingWorker) {
+      setTransientStatus("Installing update...", 5000);
+      readyWaitingWorker.postMessage({ type: "SKIP_WAITING" });
+      return;
+    }
+
+    setTransientStatus("Already up to date");
   }
 
   function toggleUiPreference(key: keyof UiPreferences) {
