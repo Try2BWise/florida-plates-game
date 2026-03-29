@@ -283,6 +283,333 @@ These are intentionally not committed to the next release yet.
 - optional social identity, leaderboard, and buddy-sharing features
 - a standalone external driver editor
 
+## Future Modularization
+
+This section captures the likely path from `FL Plates` to a generic multi-state `plates-game` PWA shell.
+
+### Target Model
+
+The future architecture should split into three layers:
+
+1. shell app
+2. state pack
+3. state index
+
+#### Shell App
+
+The reusable PWA engine should own:
+
+- startup
+- pack selection
+- pack download and caching
+- plate browsing
+- search
+- found / not found state
+- badges
+- timeline
+- map
+- settings
+- offline behavior
+
+The shell should avoid hardcoding Florida-specific logic.
+
+#### State Pack
+
+Each state pack should own:
+
+- branding
+- categories
+- runtime plate driver
+- badge definitions
+- geography definitions
+- asset manifests
+
+Each pack should be installable and cacheable independently.
+
+#### State Index
+
+A small server-hosted index should answer:
+
+- which states are available
+- which version each pack is on
+- where each pack manifest lives
+
+This can stay static-hosted.
+
+### Proposed Repo Structure
+
+```text
+src/
+  app/
+    components/
+    hooks/
+    lib/
+    shell/
+  packs/
+    florida/
+      manifest.json
+      badges.json
+      geography.json
+    arkansas/
+      manifest.json
+      badges.json
+      geography.json
+  data/
+    generated/
+      florida-plate-driver.generated.json
+      arkansas-plate-driver.generated.json
+  config/
+    shellConfig.ts
+  types.ts
+
+public/
+  state-packs/
+    florida/
+      manifest.json
+      assets/
+        plates/
+        badges/
+        branding/
+    arkansas/
+      manifest.json
+      assets/
+        plates/
+        badges/
+        branding/
+  state-index.json
+```
+
+### Proposed JSON Schemas
+
+#### `state-index.json`
+
+Purpose:
+- list available packs
+- tell the shell where to find each pack manifest
+
+Suggested shape:
+
+```json
+{
+  "version": 1,
+  "states": [
+    {
+      "id": "florida",
+      "name": "Florida",
+      "version": "1.5.0",
+      "manifestUrl": "/state-packs/florida/manifest.json"
+    },
+    {
+      "id": "arkansas",
+      "name": "Arkansas",
+      "version": "0.1.0",
+      "manifestUrl": "/state-packs/arkansas/manifest.json"
+    }
+  ]
+}
+```
+
+#### `manifest.json`
+
+Purpose:
+- define one installable state pack
+- declare pack metadata, files, branding, and capabilities
+
+Suggested shape:
+
+```json
+{
+  "id": "florida",
+  "name": "Florida",
+  "version": "1.5.0",
+  "packBaseUrl": "/state-packs/florida/",
+  "branding": {
+    "appName": "FL Plates",
+    "shortName": "FL Plates",
+    "logoPath": "assets/branding/logo.png",
+    "heroPath": "assets/branding/hero.png",
+    "shareUrl": "https://gorillagrin.com/florida-plates-game/"
+  },
+  "files": {
+    "plateDriver": "plate-driver.generated.json",
+    "badges": "badges.json",
+    "geography": "geography.json",
+    "assetManifest": "assets.json"
+  },
+  "capabilities": {
+    "badges": true,
+    "map": true,
+    "regions": true,
+    "timeline": true
+  }
+}
+```
+
+#### `badges.json`
+
+Purpose:
+- define state-specific badges in a mostly data-driven way
+
+Suggested shape:
+
+```json
+{
+  "groups": [
+    {
+      "id": "progress",
+      "label": "Progress",
+      "icon": "progress"
+    }
+  ],
+  "badges": [
+    {
+      "id": "first-spot",
+      "name": "First Spot",
+      "description": "Spot your first plate.",
+      "group": "progress",
+      "icon": "start.png",
+      "rule": {
+        "type": "count",
+        "target": 1
+      }
+    },
+    {
+      "id": "thrill-ride",
+      "name": "Thrill Ride",
+      "description": "Find the Walt Disney World plate.",
+      "group": "collections",
+      "icon": "roller-coaster.png",
+      "rule": {
+        "type": "plate",
+        "plateIds": [
+          "walt-disney-world",
+          "walt-disney-world-legacy"
+        ]
+      }
+    }
+  ]
+}
+```
+
+#### `geography.json`
+
+Purpose:
+- define counties, regions, and optional geography-driven badge groupings
+
+Suggested shape:
+
+```json
+{
+  "stateCode": "FL",
+  "stateName": "Florida",
+  "counties": [
+    "Alachua",
+    "Baker",
+    "Bay"
+  ],
+  "regions": [
+    {
+      "id": "panhandle",
+      "name": "Panhandle",
+      "counties": [
+        "Escambia",
+        "Bay",
+        "Calhoun",
+        "Franklin",
+        "Gulf",
+        "Holmes",
+        "Jackson",
+        "Liberty",
+        "Okaloosa",
+        "Santa Rosa",
+        "Walton",
+        "Washington"
+      ]
+    }
+  ]
+}
+```
+
+### Phased Refactor Checklist
+
+#### Phase A: Florida As An Internal State Pack
+
+Goal:
+- make the current Florida experience loadable as a pack without changing product behavior
+
+Tasks:
+- move Florida branding into a pack manifest shape
+- move Florida badge definitions into a pack-local structure
+- move Florida geography definitions into a pack-local structure
+- point the shell at a Florida pack loader rather than direct Florida imports
+
+Definition of done:
+- the app still behaves like `FL Plates`, but Florida is now effectively a pack
+
+#### Phase B: Generic Pack Loader
+
+Goal:
+- make the app shell capable of loading one active pack dynamically
+
+Tasks:
+- introduce an active-pack abstraction
+- load pack manifest, plate driver, badges, and geography through one loader
+- scope local progress storage by pack ID
+- ensure service worker caching works with pack-scoped assets
+
+Definition of done:
+- the app shell no longer assumes Florida is the only game
+
+#### Phase C: Static State Index
+
+Goal:
+- let the shell discover available packs from a server-hosted index
+
+Tasks:
+- add `state-index.json`
+- add a lightweight state chooser UI
+- support installing one pack at a time
+- support switching the active pack
+
+Definition of done:
+- the generic shell can discover and switch between available state packs
+
+#### Phase D: First Non-Florida Validation Pack
+
+Goal:
+- prove the architecture with a second state, likely Arkansas
+
+Tasks:
+- prepare an Arkansas master dataset
+- generate an Arkansas runtime driver
+- create Arkansas branding assets
+- decide whether Arkansas launches with:
+  - generic badges only
+  - or a full Arkansas badge set
+- verify that search, timeline, map, and caching work correctly with the new pack
+
+Definition of done:
+- at least two states can run from the same shell app
+
+#### Phase E: Standalone Editor Support
+
+Goal:
+- prepare for a future external content editor without coupling it to the game repo
+
+Tasks:
+- stabilize the master-data schema
+- stabilize the runtime-driver schema
+- document the transform from master to runtime
+- define the minimum editor feature set:
+  - naming
+  - category assignment
+  - image binding
+  - search-term curation
+  - variant relationships
+
+Definition of done:
+- a future external editor has a clear schema target and workflow
+
 ## Recommended Order
 
 1. `v1.6` search enrichment and taxonomy polish
