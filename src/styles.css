@@ -1795,6 +1795,10 @@ select {
   color: #047857;
 }
 
+.badge-group__icon--sports {
+  color: #b45309;
+}
+
 .badge-group__icon--star::before {
   content: "★";
   position: absolute;
@@ -1810,6 +1814,8 @@ select {
 .badge-group__icon--grid::after,
 .badge-group__icon--rings::before,
 .badge-group__icon--rings::after,
+.badge-group__icon--trophy::before,
+.badge-group__icon--trophy::after,
 .badge-group__icon--cap::before,
 .badge-group__icon--cap::after,
 .badge-group__icon--shield::before,
@@ -1852,6 +1858,25 @@ select {
   inset: 0.1rem 0.02rem 0.1rem 0.26rem;
   border: 0.12rem solid currentColor;
   border-radius: 50%;
+}
+
+.badge-group__icon--trophy::before {
+  left: 0.2rem;
+  right: 0.2rem;
+  top: 0.1rem;
+  height: 0.34rem;
+  border: 0.12rem solid currentColor;
+  border-bottom: none;
+  border-radius: 0 0 0.28rem 0.28rem;
+}
+
+.badge-group__icon--trophy::after {
+  left: 0.28rem;
+  right: 0.28rem;
+  bottom: 0.12rem;
+  height: 0.22rem;
+  background: currentColor;
+  clip-path: polygon(18% 100%, 18% 54%, 34% 54%, 34% 0, 66% 0, 66% 54%, 82% 54%, 82% 100%);
 }
 
 .badge-group__icon--cap::before {

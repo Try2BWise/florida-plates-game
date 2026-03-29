@@ -4,6 +4,7 @@ export type BadgeGroup =
   | "progress"
   | "category"
   | "collection"
+  | "sports"
   | "college"
   | "locality"
   | "service"
@@ -76,6 +77,20 @@ const publicSafetyPlateNames = [
   ...lawEnforcementPlateNames,
   "Salutes Firefighters"
 ];
+const coastalCruiserPlateNames = [
+  "Discover Florida's Oceans",
+  "Florida Bay Forever",
+  "Indian River Lagoon",
+  "Protect Marine Wildlife",
+  "Protect Our Reefs",
+  "Save Our Seas",
+  "Tampa Bay Estuary"
+];
+const farmFreshPlateNames = [
+  "Agriculture",
+  "Agricultural Education",
+  "Agriculture & Consumer Services"
+];
 const distinguishedPlateNames = [
   "Distinguished Flying Cross",
   "Distinguished Service Cross",
@@ -118,6 +133,10 @@ const hockeyPlateNames = [
 const basketballPlateNames = [
   "Miami Heat (Basketball)",
   "Orlando Magic (Basketball)"
+];
+const soccerPlateNames = [
+  "Inter Miami FC (Soccer)",
+  "Orlando City (Soccer)"
 ];
 
 export const badgeDefinitions: BadgeDefinition[] = [
@@ -190,6 +209,34 @@ export const badgeDefinitions: BadgeDefinition[] = [
     name: "Sports Fan",
     description: "Find 5 professional sports plates.",
     group: "category",
+    availableIn: "v1.4"
+  },
+  {
+    id: "healing-hands",
+    name: "Healing Hands",
+    description: "Find 5 health and family plates.",
+    group: "category",
+    availableIn: "v1.4"
+  },
+  {
+    id: "game-on",
+    name: "Game On",
+    description: "Find 5 sports and recreation plates.",
+    group: "category",
+    availableIn: "v1.4"
+  },
+  {
+    id: "coastal-cruiser",
+    name: "Coastal Cruiser",
+    description: "Find 5 coastal or ocean-themed plates.",
+    group: "collection",
+    availableIn: "v1.4"
+  },
+  {
+    id: "farm-fresh",
+    name: "Farm Fresh",
+    description: "Find 3 agriculture-themed plates.",
+    group: "collection",
     availableIn: "v1.4"
   },
   {
@@ -365,28 +412,42 @@ export const badgeDefinitions: BadgeDefinition[] = [
     id: "grand-slam",
     name: "Grand Slam",
     description: "Find all baseball team plates.",
-    group: "collection",
+    group: "sports",
     availableIn: "v1.4"
   },
   {
     id: "touchdown",
     name: "Touchdown",
     description: "Find all football team plates.",
-    group: "collection",
+    group: "sports",
     availableIn: "v1.4"
   },
   {
     id: "hat-trick",
     name: "Hat Trick",
     description: "Find all hockey team plates.",
-    group: "collection",
+    group: "sports",
     availableIn: "v1.4"
   },
   {
     id: "slam-dunk",
     name: "Slam Dunk",
     description: "Find all basketball team plates.",
-    group: "collection",
+    group: "sports",
+    availableIn: "v1.4"
+  },
+  {
+    id: "goal",
+    name: "GOAL!",
+    description: "Find all soccer plates.",
+    group: "sports",
+    availableIn: "v1.4"
+  },
+  {
+    id: "checkered-flag",
+    name: "Checkered Flag",
+    description: "Find the NASCAR plate.",
+    group: "sports",
     availableIn: "v1.4"
   },
   {
@@ -693,6 +754,8 @@ export function evaluateBadges(
   const totalPlates = plates.length;
   const natureFound = countFoundInCategory(plates, discoveries, natureCategory);
   const sportsFound = countFoundInCategory(plates, discoveries, sportsCategory);
+  const recreationFound = countFoundInCategory(plates, discoveries, "Sports & Recreation");
+  const healthFound = countFoundInCategory(plates, discoveries, "Health & Family");
   const universitiesFound = countFoundInCategory(plates, discoveries, universitiesCategory);
   const thoseWhoServeFound = countFoundInServiceCategory(plates, discoveries);
   const thoseWhoServeCompletionFound = countFoundInThoseWhoServeCompletion(plates, discoveries);
@@ -791,6 +854,24 @@ export function evaluateBadges(
     ["mixed-bag", createThresholdBadge(getBadgeDefinition(definitionsById, "mixed-bag"), mixedBagFound, 5)],
     ["green-light", createThresholdBadge(getBadgeDefinition(definitionsById, "green-light"), natureFound, 5)],
     ["sports-fan", createThresholdBadge(getBadgeDefinition(definitionsById, "sports-fan"), sportsFound, 5)],
+    ["healing-hands", createThresholdBadge(getBadgeDefinition(definitionsById, "healing-hands"), healthFound, 5)],
+    ["game-on", createThresholdBadge(getBadgeDefinition(definitionsById, "game-on"), recreationFound, 5)],
+    [
+      "coastal-cruiser",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "coastal-cruiser"),
+        countFoundInCollection(plates, discoveries, coastalCruiserPlateNames),
+        5
+      )
+    ],
+    [
+      "farm-fresh",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "farm-fresh"),
+        countFoundInCollection(plates, discoveries, farmFreshPlateNames),
+        3
+      )
+    ],
     ["reporting-for-duty", createThresholdBadge(getBadgeDefinition(definitionsById, "reporting-for-duty"), thoseWhoServeFound, 1)],
     ["on-call", createThresholdBadge(getBadgeDefinition(definitionsById, "on-call"), thoseWhoServeFound, 5)],
     ["in-service", createThresholdBadge(getBadgeDefinition(definitionsById, "in-service"), thoseWhoServeFound, 10)],
@@ -953,6 +1034,22 @@ export function evaluateBadges(
         getBadgeDefinition(definitionsById, "slam-dunk"),
         countFoundInCollection(plates, discoveries, basketballPlateNames),
         basketballPlateNames.length
+      )
+    ],
+    [
+      "goal",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "goal"),
+        countFoundInCollection(plates, discoveries, soccerPlateNames),
+        soccerPlateNames.length
+      )
+    ],
+    [
+      "checkered-flag",
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, "checkered-flag"),
+        countFoundInCollection(plates, discoveries, ["NASCAR"]),
+        1
       )
     ],
     [

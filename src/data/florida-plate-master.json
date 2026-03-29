@@ -16232,9 +16232,9 @@
     {
       "id": "inter-miami-cf",
       "slug": "inter-miami-cf",
-      "name": "Inter Miami CF",
-      "displayName": "Inter Miami CF",
-      "baseName": "Inter Miami CF",
+      "name": "Inter Miami FC (Soccer)",
+      "displayName": "Inter Miami FC (Soccer)",
+      "baseName": "Inter Miami FC (Soccer)",
       "variantLabel": null,
       "plateType": "license_plate",
       "isCurrent": true,

@@ -30,6 +30,20 @@ type UtilityTab = "settings" | "help" | "safe" | "about";
 type TimelineSort = "desc" | "asc";
 
 const badgePlateSets: Record<string, string[]> = {
+  "coastal-cruiser": [
+    "Discover Florida's Oceans",
+    "Florida Bay Forever",
+    "Indian River Lagoon",
+    "Protect Marine Wildlife",
+    "Protect Our Reefs",
+    "Save Our Seas",
+    "Tampa Bay Estuary"
+  ],
+  "farm-fresh": [
+    "Agriculture",
+    "Agricultural Education",
+    "Agriculture & Consumer Services"
+  ],
   "grand-slam": ["Miami Marlins (Baseball)", "Tampa Bay Rays (Baseball)"],
   touchdown: [
     "Jacksonville Jaguars (Football)",
@@ -38,6 +52,8 @@ const badgePlateSets: Record<string, string[]> = {
   ],
   "hat-trick": ["Florida Panthers (Hockey)", "Tampa Bay Lightning (Hockey)"],
   "slam-dunk": ["Miami Heat (Basketball)", "Orlando Magic (Basketball)"],
+  goal: ["Inter Miami FC (Soccer)", "Orlando City (Soccer)"],
+  "checkered-flag": ["NASCAR"],
   "thrill-ride": ["Walt Disney World"],
   "all-branches": [
     "U.S. Army",
@@ -567,14 +583,19 @@ function App() {
   const badgeGroupLabels: Record<BadgeGroup, string> = floridaBadgeGroupLabels;
   const badgeGroupSymbols: Record<BadgeGroup, string> = floridaBadgeGroupSymbols;
   const allBadgeGroups = useMemo(
-    () =>
-      Object.entries(
+    (): Array<[BadgeGroup, typeof evaluatedBadges]> =>
+      (Object.entries(
         evaluatedBadges.reduce<Record<string, typeof evaluatedBadges>>((groups, badge) => {
           const key = badge.group;
           groups[key] = [...(groups[key] ?? []), badge];
           return groups;
         }, {})
-      ) as Array<[BadgeGroup, typeof evaluatedBadges]>,
+      ) as Array<[BadgeGroup, typeof evaluatedBadges]>).map(
+        ([group, badges]): [BadgeGroup, typeof evaluatedBadges] => [
+          group,
+          [...badges].sort((left, right) => left.name.localeCompare(right.name))
+        ]
+      ),
     [evaluatedBadges]
   );
 
@@ -756,9 +777,13 @@ function App() {
       case "green-light":
       case "eco-scout":
         return findDiscoveriesForCategories(["Nature & Wildlife"]);
+      case "healing-hands":
+        return findDiscoveriesForCategories(["Health & Family"]);
       case "sports-fan":
       case "all-teams":
         return findDiscoveriesForCategories(["Professional Sports"]);
+      case "game-on":
+        return findDiscoveriesForCategories(["Sports & Recreation"]);
       case "mixed-bag":
       case "full-spectrum":
         return discoveryEntries.filter(({ plate }) => floridaMixedBagCategories.has(plate.category));
@@ -1926,6 +1951,23 @@ function App() {
                           ) }}
                         />
                       </div>
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 140, justifySelf: 'center' }}>
+                        <p className="utility-card__meta" style={{ marginBottom: 0, fontWeight: 700 }}>
+                          Icon credits
+                        </p>
+                      </div>
+                      <div>
+                        <p className="utility-card__meta" style={{ marginBottom: 0 }}>
+                          <a
+                            className="app-footer__link"
+                            href="https://www.flaticon.com/authors/freepik"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Icons created by Freepik - Flaticon
+                          </a>
+                        </p>
+                      </div>
                     </div>
                   </section>
                 </div>
@@ -1971,13 +2013,15 @@ function App() {
                   >
                     {activeBadgeDetail.earned ? "Earned" : "Not yet"}
                   </span>
-                  <button
-                    type="button"
-                    className="app-footer__share badge-detail-modal__share badge-detail-modal__share--inline"
-                    onClick={() => handleShareBadge(activeBadgeDetail.name)}
-                  >
-                    Share
-                  </button>
+                  {activeBadgeDetail.earned ? (
+                    <button
+                      type="button"
+                      className="app-footer__share badge-detail-modal__share badge-detail-modal__share--inline"
+                      onClick={() => handleShareBadge(activeBadgeDetail.name)}
+                    >
+                      Share
+                    </button>
+                  ) : null}
                 </div>
 
                 <div className="badge-detail-modal__summary-copy">

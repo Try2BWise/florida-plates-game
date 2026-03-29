@@ -10,10 +10,23 @@ interface BadgeIconProps {
 const customBadgeArtById: Record<string, string> = {
   "first-spot": "start.png",
   "complete-set": "trophy.png",
+  "healing-hands": "hospital.png",
+  "game-on": "goal.png",
+  "coastal-cruiser": "waves.png",
+  "farm-fresh": "farm.png",
+  "first-day-of-school": "chalkboard.png",
+  "campus-tour": "backpack.png",
+  "graduation-day": "cap.png",
+  "grand-slam": "baseball-trophy.png",
+  touchdown: "football-trophy.png",
+  "hat-trick": "hockey-trophy.png",
+  "slam-dunk": "basketball-trophy.png",
+  goal: "soccer-trophy.png",
+  "checkered-flag": "crossed-checkered-flags.png",
   "thrill-ride": "roller-coaster.png",
   escapee: "3d-map.png",
   "i-get-around": "3d-map.png",
-  "road-trip": "3d-map.png",
+  "road-trip": "road-sign.png",
   "panhandle-scout": "3d-map.png",
   "northwest-florida-explorer": "compass.png",
   "north-central-florida-explorer": "compass.png",
@@ -23,9 +36,13 @@ const customBadgeArtById: Record<string, string> = {
   "central-east-florida-explorer": "compass.png",
   "southwest-florida-explorer": "compass.png",
   "southeast-florida-explorer": "compass.png",
-  "florida-keys-explorer": "compass.png",
+  "florida-keys-explorer": "lighthouse.png",
   "all-around-florida": "compass.png",
-  "those-who-serve": "badge.png"
+  "green-light": "leaf.png",
+  "eco-scout": "pawprint.png",
+  "those-who-serve": "shield.png",
+  "back-the-blue": "police-badge.png",
+  "fire-watch": "hydrant.png"
 };
 
 export function BadgeIcon({ badge, size = 96, className = "" }: BadgeIconProps) {

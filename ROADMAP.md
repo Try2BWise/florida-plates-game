@@ -283,6 +283,97 @@ These are intentionally not committed to the next release yet.
 - optional social identity, leaderboard, and buddy-sharing features
 - a standalone external driver editor
 
+## Engagement Ideas
+
+These are good candidates for future fun-factor improvements, but they are intentionally below search, taxonomy, and modularization in priority.
+
+### Strong candidates
+
+- streaks
+- weekly or rotating challenges
+- hidden surprise badges
+- category bingo or mini-goal cards
+- version hunter badges
+- “almost complete” nudges for categories or badge groups
+- plate of the day
+- richer personal stats like:
+  - most-seen plate
+  - rarest found plate
+  - closest category to completion
+
+### Guardrails
+
+- avoid turning the game into chore-like task management
+- avoid too many simultaneous goals
+- avoid noisy notification-style mechanics
+- prefer delight and momentum over complicated scoring systems
+
+## iPhone-First UX Checklist
+
+This app is still a web app, but iPhone is the primary target experience. These checkpoints help guide future work so the PWA feels more like a polished installed app.
+
+### Already strong
+
+- installable Home Screen experience exists
+- modals and utility panels are already touch-oriented
+- search now focuses automatically when opened
+- offline behavior has improved through stronger caching and background enrichment
+- found-state capture is now immediate instead of waiting on reverse geocoding
+
+### Still worth improving
+
+#### Install and onboarding
+
+- detect Safari vs non-Safari and show the right install guidance
+- make install instructions feel more like first-run onboarding and less like documentation
+- consider a one-time install prompt or coachmark for iPhone users
+
+#### Startup and loading
+
+- reduce perceived startup delay even further on weak signal
+- make offline readiness more obvious to the user
+- consider a friendlier offline/loading state if startup work is still in progress
+
+#### Touch ergonomics
+
+- keep primary controls in thumb-friendly areas
+- avoid small controls near screen edges
+- continue reviewing tap targets against real iPhone usage
+
+#### Keyboard and search flow
+
+- verify the search field remains visible when the keyboard opens on smaller iPhones
+- check collapsed/expanded search behavior in installed-mode Safari vs Home Screen mode
+
+#### Modal and panel behavior
+
+- keep moving overlays toward iOS sheet-like behavior where it feels natural
+- review whether large overlays should support better swipe or dismiss affordances later
+- make sure important actions never sit too close to the home-indicator area
+
+#### Offline confidence
+
+- consider a subtle offline indicator when the network is unavailable
+- consider clearer messaging when location enrichment is deferred and will fill in later
+- ensure low-signal behavior never feels like a failed tap or frozen app
+
+#### Visual polish
+
+- continue reviewing spacing and safe-area usage on real iPhones
+- make installed-mode presentation feel intentional and app-like
+- keep reducing “web page” feel in high-use panels
+
+### Good decision rule
+
+When evaluating a new feature, ask:
+
+- does it help or hurt one-handed use on iPhone?
+- does it still behave well with poor or no signal?
+- does it feel reasonable in Home Screen installed mode?
+- does it require browser capabilities that are fragile on iPhone?
+
+If the answer is risky, prefer the simpler interaction.
+
 ## Future Modularization
 
 This section captures the likely path from `FL Plates` to a generic multi-state `plates-game` PWA shell.
@@ -294,6 +385,16 @@ The future architecture should split into three layers:
 1. shell app
 2. state pack
 3. state index
+
+### Product Direction
+
+The long-term distribution target should be:
+
+- a single store app
+- pack-based state modes
+- one active state at a time
+
+The project should not plan around publishing and maintaining one separate app-store app per state.
 
 #### Shell App
 
@@ -559,6 +660,78 @@ Tasks:
 
 Definition of done:
 - the app shell no longer assumes Florida is the only game
+
+#### Badge modularization guidance
+
+As the badge system grows, badge definitions should be separated into three layers:
+
+- generic badges
+- state-specific badges
+- geography badges
+
+##### Generic badges
+
+These are reusable across states and usually count-based or category-based.
+
+Examples:
+
+- `First Spot`
+- `Five Alive`
+- overall percentage milestones
+- generic category-count badges
+
+These should ideally live in a shared badge definition source.
+
+##### State-specific badges
+
+These depend on state-specific named plates, themes, or collections.
+
+Florida examples:
+
+- `Thrill Ride`
+- `GOAL!`
+- `Checkered Flag`
+- `Farm Fresh`
+- `Coastal Cruiser`
+
+These should live in each state pack.
+
+##### Geography badges
+
+These depend on state geography definitions such as counties or named regions.
+
+Florida examples:
+
+- `Panhandle Scout`
+- `Northwest Florida Explorer`
+- `All Around Florida`
+
+These should live separately from general state badges so geography data can evolve independently.
+
+##### Runtime merge model
+
+For display and evaluation, the shell should merge all three layers into one active badge catalog:
+
+- shared generic badges
+- active state pack badges
+- active state pack geography badges
+
+The UI should still group badges by player-facing badge groups, not by technical source layer.
+
+##### Recommended metadata
+
+Each badge definition should eventually include a source scope such as:
+
+- `generic`
+- `state`
+- `geography`
+
+This will help with:
+
+- validation
+- future editor tooling
+- debugging
+- pack portability
 
 #### Phase C: Static State Index
 
