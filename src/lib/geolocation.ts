@@ -14,15 +14,30 @@ function getCurrentPosition(): Promise<GeolocationPosition> {
 export async function createDiscovery(): Promise<PlateDiscovery> {
   const foundAtIso = new Date().toISOString();
 
+  return {
+    foundAtIso,
+    latitude: null,
+    longitude: null,
+    locality: null,
+    county: null,
+    state: null
+  };
+}
+
+export async function enrichDiscoveryLocation(
+  foundAtIso: string
+): Promise<PlateDiscovery> {
+  const emptyDiscovery = {
+    foundAtIso,
+    latitude: null,
+    longitude: null,
+    locality: null,
+    county: null,
+    state: null
+  };
+
   if (!("geolocation" in navigator)) {
-    return {
-      foundAtIso,
-      latitude: null,
-      longitude: null,
-      locality: null,
-      county: null,
-      state: null
-    };
+    return emptyDiscovery;
   }
 
   try {
@@ -40,13 +55,6 @@ export async function createDiscovery(): Promise<PlateDiscovery> {
       state: place.state
     };
   } catch {
-    return {
-      foundAtIso,
-      latitude: null,
-      longitude: null,
-      locality: null,
-      county: null,
-      state: null
-    };
+    return emptyDiscovery;
   }
 }

@@ -52,14 +52,7 @@ self.addEventListener("activate", (event) => {
           .filter((key) => ![APP_CACHE, RUNTIME_CACHE].includes(key))
           .map((key) => caches.delete(key))
       )
-    ).then(async () => {
-      self.clients.claim();
-      // Aggressively reload all clients after activation
-      const clients = await self.clients.matchAll({ type: 'window' });
-      for (const client of clients) {
-        client.navigate(client.url);
-      }
-    })
+    ).then(() => self.clients.claim())
   );
 });
 
@@ -68,7 +61,6 @@ self.addEventListener("message", (event) => {
     self.skipWaiting();
   }
 });
-
 self.addEventListener("fetch", (event) => {
   const { request } = event;
   if (request.method !== "GET") {
@@ -78,10 +70,44 @@ self.addEventListener("fetch", (event) => {
   const requestUrl = new URL(request.url);
   const isSameOrigin = requestUrl.origin === self.location.origin;
 
+  const staleWhileRevalidate = async (cacheName, cacheKey = request, fallback = null) => {
+    const cache = await caches.open(cacheName);
+    const cached = await caches.match(cacheKey);
+
+    const networkPromise = fetch(request)
+      .then((response) => {
+        if (response.ok) {
+          void cache.put(cacheKey, response.clone());
+        }
+        return response;
+      })
+      .catch(() => null);
+
+    if (cached) {
+      void networkPromise;
+      return cached;
+    }
+
+    const networkResponse = await networkPromise;
+    return networkResponse ?? (fallback ? caches.match(fallback) : null);
+  };
+
+  const cacheFirst = async (cacheName, cacheKey = request) => {
+    const cache = await caches.open(cacheName);
+    const cached = await cache.match(cacheKey);
+    if (cached) {
+      return cached;
+    }
+
+    const response = await fetch(request);
+    if (response.ok) {
+      void cache.put(cacheKey, response.clone());
+    }
+    return response;
+  };
+
   if (request.mode === "navigate") {
-    event.respondWith(
-      fetch(request).catch(() => caches.match(`${BASE_PATH}/`))
-    );
+    event.respondWith(staleWhileRevalidate(APP_CACHE, `${BASE_PATH}/`, `${BASE_PATH}/`));
     return;
   }
 
@@ -96,40 +122,12 @@ self.addEventListener("fetch", (event) => {
     );
 
   if (isAppShellAsset) {
-    event.respondWith(
-      fetch(request)
-        .then((response) => {
-          if (!response.ok) {
-            return response;
-          }
-
-          const responseClone = response.clone();
-          void caches.open(RUNTIME_CACHE).then((cache) => cache.put(request, responseClone));
-          return response;
-        })
-        .catch(() => caches.match(request))
-    );
+    event.respondWith(staleWhileRevalidate(RUNTIME_CACHE));
     return;
   }
 
   if (isSameOrigin && request.destination === "image") {
-    event.respondWith(
-      caches.match(request).then((cached) => {
-        if (cached) {
-          return cached;
-        }
-
-        return fetch(request).then((response) => {
-          if (!response.ok) {
-            return response;
-          }
-
-          const responseClone = response.clone();
-          void caches.open(RUNTIME_CACHE).then((cache) => cache.put(request, responseClone));
-          return response;
-        });
-      })
-    );
+    event.respondWith(cacheFirst(RUNTIME_CACHE));
     return;
   }
 

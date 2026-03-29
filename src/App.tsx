@@ -13,7 +13,7 @@ import { groupedPlates, plates } from "./data/plates";
 import { buildInfo } from "./generated/buildInfo";
 import { evaluateBadges, type BadgeGroup, type EvaluatedBadge } from "./lib/badges";
 import { formatDiscoveryTime } from "./lib/format";
-import { createDiscovery } from "./lib/geolocation";
+import { createDiscovery, enrichDiscoveryLocation } from "./lib/geolocation";
 import { reverseGeocodePlace } from "./lib/reverseGeocode";
 import { loadDiscoveries, saveDiscoveries } from "./lib/storage";
 import type { Plate, PlateCategory, PlateDiscoveryMap } from "./types";
@@ -609,7 +609,41 @@ function App() {
       ...current,
       [plate.id]: discovery
     }));
-    setActivePlateId(null);
+
+    void enrichDiscoveryLocation(discovery.foundAtIso)
+      .then((enrichedDiscovery) => {
+        if (
+          enrichedDiscovery.latitude === null &&
+          enrichedDiscovery.longitude === null &&
+          enrichedDiscovery.locality === null &&
+          enrichedDiscovery.county === null &&
+          enrichedDiscovery.state === null
+        ) {
+          return;
+        }
+
+        setDiscoveries((current) => {
+          const currentDiscovery = current[plate.id];
+          if (!currentDiscovery || currentDiscovery.foundAtIso !== discovery.foundAtIso) {
+            return current;
+          }
+
+          return {
+            ...current,
+            [plate.id]: {
+              ...currentDiscovery,
+              latitude: currentDiscovery.latitude ?? enrichedDiscovery.latitude,
+              longitude: currentDiscovery.longitude ?? enrichedDiscovery.longitude,
+              locality: currentDiscovery.locality ?? enrichedDiscovery.locality,
+              county: currentDiscovery.county ?? enrichedDiscovery.county,
+              state: currentDiscovery.state ?? enrichedDiscovery.state
+            }
+          };
+        });
+      })
+      .finally(() => {
+        setActivePlateId((current) => (current === plate.id ? null : current));
+      });
   }
 
   function handleClearDiscoveries() {
