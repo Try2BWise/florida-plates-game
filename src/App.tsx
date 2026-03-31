@@ -1,13 +1,14 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { BadgeIcon } from "./components/BadgeIcon";
 import {
-  floridaBadgeCounties,
-  floridaBadgeGroupLabels,
-  floridaBadgeGroupSymbols,
-  floridaGame,
-  floridaMixedBagCategories,
-  floridaPanhandleScoutCounties
-} from "./config/floridaGame";
+  activeBadgeCounties,
+  activeBadgeGroupLabels,
+  activeBadgeGroupSymbols,
+  activeGame,
+  activeMixedBagCategories,
+  activePanhandleScoutCounties,
+  activeStorage
+} from "./games/activeGame";
 import { PlateCard } from "./components/PlateCard";
 import { groupedPlates, plates } from "./data/plates";
 import { buildInfo } from "./generated/buildInfo";
@@ -18,9 +19,9 @@ import { reverseGeocodePlace } from "./lib/reverseGeocode";
 import { loadDiscoveries, saveDiscoveries } from "./lib/storage";
 import type { Plate, PlateCategory, PlateDiscoveryMap } from "./types";
 
-const THEME_STORAGE_KEY = "florida-plates-theme";
-const UI_PREFERENCES_STORAGE_KEY = "florida-plates-ui-preferences";
-const ONBOARDING_HINT_DISMISSED_STORAGE_KEY = "florida-plates-onboarding-dismissed";
+const THEME_STORAGE_KEY = activeStorage.themeKey;
+const UI_PREFERENCES_STORAGE_KEY = activeStorage.uiPreferencesKey;
+const ONBOARDING_HINT_DISMISSED_STORAGE_KEY = activeStorage.onboardingHintKey;
 
 type ThemeMode = "light" | "dark";
 type PlateVisibilityFilter = "all" | "found" | "missing";
@@ -155,8 +156,8 @@ function loadOnboardingHintDismissed(): boolean {
 }
 
 function App() {
-  const appShareUrl = floridaGame.branding.shareUrl;
-  const shareMessage = floridaGame.share.appMessage;
+  const appShareUrl = activeGame.branding.shareUrl;
+  const shareMessage = activeGame.share.appMessage;
   const [discoveries, setDiscoveries] = useState<PlateDiscoveryMap>(() =>
     loadDiscoveries()
   );
@@ -580,8 +581,8 @@ function App() {
     [evaluatedBadges]
   );
   // Group all badges (earned and unearned) by group for display
-  const badgeGroupLabels: Record<BadgeGroup, string> = floridaBadgeGroupLabels;
-  const badgeGroupSymbols: Record<BadgeGroup, string> = floridaBadgeGroupSymbols;
+  const badgeGroupLabels: Record<BadgeGroup, string> = activeBadgeGroupLabels;
+  const badgeGroupSymbols: Record<BadgeGroup, string> = activeBadgeGroupSymbols;
   const allBadgeGroups = useMemo(
     (): Array<[BadgeGroup, typeof evaluatedBadges]> =>
       (Object.entries(
@@ -709,13 +710,13 @@ function App() {
   }
 
   async function handleShareApp() {
-    await handleShareText(floridaGame.branding.appShareName, shareMessage);
+    await handleShareText(activeGame.branding.appShareName, shareMessage);
   }
 
   async function handleShareBadge(badgeName: string) {
-    const badgeShareMessage = floridaGame.share.badgeMessage(badgeName);
+    const badgeShareMessage = activeGame.share.badgeMessage(badgeName);
 
-    await handleShareText(`${floridaGame.branding.appShareName} - ${badgeName}`, badgeShareMessage);
+    await handleShareText(`${activeGame.branding.appShareName} - ${badgeName}`, badgeShareMessage);
   }
 
   function toggleTimelineDate(dateLabel: string) {
@@ -786,7 +787,7 @@ function App() {
         return findDiscoveriesForCategories(["Sports & Recreation"]);
       case "mixed-bag":
       case "full-spectrum":
-        return discoveryEntries.filter(({ plate }) => floridaMixedBagCategories.has(plate.category));
+        return discoveryEntries.filter(({ plate }) => activeMixedBagCategories.has(plate.category));
       case "reporting-for-duty":
       case "on-call":
       case "in-service":
@@ -829,15 +830,15 @@ function App() {
       case "panhandle-scout":
         return discoveryEntries.filter(({ discovery }) => {
           const county = discovery.county?.replace(/\s+County$/i, "").trim() ?? null;
-          return county ? floridaPanhandleScoutCounties.has(county) : false;
+          return county ? activePanhandleScoutCounties.has(county) : false;
         });
       default:
         if (badgePlateSets[badge.id]) {
           return findDiscoveriesForPlateNames(badgePlateSets[badge.id]);
         }
 
-        if (floridaBadgeCounties[badge.id]) {
-          return findDiscoveriesForCounties(floridaBadgeCounties[badge.id]);
+        if (activeBadgeCounties[badge.id]) {
+          return findDiscoveriesForCounties(activeBadgeCounties[badge.id]);
         }
 
         return [];
@@ -931,7 +932,7 @@ function App() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'florida-plates-progress.json';
+    a.download = activeStorage.progressExportFilename;
     document.body.appendChild(a);
     a.click();
     setTimeout(() => {
@@ -1016,7 +1017,7 @@ function App() {
               <span className="welcome-sign__state">FLORIDA</span>
               <span className="welcome-sign__tagline">the sunshine state</span>
             </div>
-            <p className="app-header__eyebrow">{floridaGame.branding.appTagline}</p>
+            <p className="app-header__eyebrow">{activeGame.branding.appTagline}</p>
           </div>
           <div className="app-header__actions">
             <div className="app-header__meter app-header__meter--compact" aria-live="polite">
@@ -1403,13 +1404,13 @@ function App() {
             className="utility-panel"
             role="dialog"
             aria-modal="true"
-            aria-label={`${floridaGame.branding.appName} explore panel`}
+            aria-label={`${activeGame.branding.appName} explore panel`}
             onClick={(event) => event.stopPropagation()}
           >
             <div className="utility-panel__header">
               <div>
                 <p className="utility-panel__eyebrow">Explore</p>
-                <h2 className="utility-panel__title">{floridaGame.branding.appName} explore panel</h2>
+                <h2 className="utility-panel__title">{activeGame.branding.appName} explore panel</h2>
               </div>
               <button
                 type="button"
@@ -1749,13 +1750,13 @@ function App() {
             className="utility-panel"
             role="dialog"
             aria-modal="true"
-            aria-label={`${floridaGame.branding.appName} utility panel`}
+            aria-label={`${activeGame.branding.appName} utility panel`}
             onClick={(event) => event.stopPropagation()}
           >
             <div className="utility-panel__header">
               <div>
                 <p className="utility-panel__eyebrow">Utility</p>
-                <h2 className="utility-panel__title">{floridaGame.branding.appName} utility panel</h2>
+                <h2 className="utility-panel__title">{activeGame.branding.appName} utility panel</h2>
               </div>
               <button
                 type="button"
@@ -1900,7 +1901,7 @@ function App() {
                 <div className="utility-stack">
                   <section className="utility-card">
                     <h3>Install the app</h3>
-                    {floridaGame.help.install.map((item) => (
+                    {activeGame.help.install.map((item) => (
                       <p className="utility-card__meta" key={item}>
                         {item}
                       </p>
@@ -1909,7 +1910,7 @@ function App() {
                   <section className="utility-card">
                     <h3>How to play</h3>
                     <div className="utility-list utility-list--compact">
-                      {floridaGame.help.howToPlay.map((item) => (
+                      {activeGame.help.howToPlay.map((item) => (
                         <p className="utility-card__meta" key={item}>
                           {item}
                         </p>
@@ -1919,7 +1920,7 @@ function App() {
                   <section className="utility-card">
                     <h3>Useful tools</h3>
                     <div className="utility-list utility-list--compact">
-                      {floridaGame.help.usefulTools.map((item) => (
+                      {activeGame.help.usefulTools.map((item) => (
                         <p className="utility-card__meta" key={item}>
                           {item}
                         </p>
@@ -1938,7 +1939,7 @@ function App() {
                       <span>Safe use</span>
                     </h3>
                     <div className="utility-list utility-list--compact">
-                      {floridaGame.help.safeUse.map((item) => (
+                      {activeGame.help.safeUse.map((item) => (
                         <p className="utility-card__meta" key={item}>
                           {item}
                         </p>
@@ -1956,15 +1957,15 @@ function App() {
                       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, width: 140, justifySelf: 'center' }}>
                         <a
                           className="about-card__logo-link"
-                          href={floridaGame.branding.developerUrl}
+                          href={activeGame.branding.developerUrl}
                           target="_blank"
                           rel="noreferrer"
-                          aria-label={`Visit ${floridaGame.branding.developerName}`}
+                          aria-label={`Visit ${activeGame.branding.developerName}`}
                         >
                           <img
                             className="about-card__logo"
-                            src={`${import.meta.env.BASE_URL}${floridaGame.branding.developerLogoPath}`}
-                            alt={floridaGame.branding.developerName}
+                            src={`${import.meta.env.BASE_URL}${activeGame.branding.developerLogoPath}`}
+                            alt={activeGame.branding.developerName}
                             style={{ maxWidth: 120, height: 'auto', marginBottom: 8, display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
                           />
                         </a>
@@ -1974,11 +1975,11 @@ function App() {
                           Developed by{' '}
                           <a
                             className="app-footer__link"
-                            href={floridaGame.branding.developerUrl}
+                            href={activeGame.branding.developerUrl}
                             target="_blank"
                             rel="noreferrer"
                           >
-                            {floridaGame.branding.developerName}
+                            {activeGame.branding.developerName}
                           </a>
                           .
                         </p>
@@ -2015,7 +2016,7 @@ function App() {
                         <p
                           className="utility-card__meta"
                           style={{ marginBottom: 0 }}
-                          dangerouslySetInnerHTML={{ __html: floridaGame.about.fairUseNotice.replace(
+                          dangerouslySetInnerHTML={{ __html: activeGame.about.fairUseNotice.replace(
                             'Florida Department of Highway Safety and Motor Vehicles',
                             '<a href="https://www.flhsmv.gov/" target="_blank" rel="noopener noreferrer">Florida Department of Highway Safety and Motor Vehicles</a>'
                           ) }}
@@ -2103,12 +2104,11 @@ function App() {
               {activeBadgeDetail.group === "florida" &&
               typeof activeBadgeDetail.id === "string" &&
               activeBadgeDetail.id.endsWith("-explorer") &&
-              window.floridaBadgeCounties &&
-              window.floridaBadgeCounties[activeBadgeDetail.id] ? (
+              activeBadgeCounties[activeBadgeDetail.id] ? (
                 <section className="utility-card badge-detail-modal__section">
                   <h3>Counties in this region</h3>
                   <ul className="badge-detail-modal__county-list">
-                    {window.floridaBadgeCounties[activeBadgeDetail.id].map((county: string) => (
+                    {activeBadgeCounties[activeBadgeDetail.id].map((county: string) => (
                       <li key={county}>{county} County</li>
                     ))}
                   </ul>
@@ -2172,3 +2172,5 @@ function App() {
 }
 
 export default App;
+
+
