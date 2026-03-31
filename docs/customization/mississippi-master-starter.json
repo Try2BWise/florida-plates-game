@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "state": "Mississippi",
+  "generatedDate": "2026-03-31",
+  "description": "Mississippi plate master dataset starter for future state-pack integration.",
+  "sourceFiles": [],
+  "plates": [
+    {
+      "id": "example-mississippi-standard-current",
+      "slug": "example-mississippi-standard-current",
+      "name": "Mississippi Standard",
+      "displayName": "Mississippi Standard",
+      "baseName": "Mississippi Standard",
+      "variantLabel": null,
+      "plateType": "license_plate",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard Plates",
+      "image": {
+        "path": "plates/example_mississippi_standard.png",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Replace this example entry with real Mississippi plate data.",
+      "searchTerms": [
+        "mississippi",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [],
+        "aliases": [],
+        "rawNames": [],
+        "filenames": [],
+        "urls": []
+      },
+      "sourceRefs": []
+    }
+  ]
+}

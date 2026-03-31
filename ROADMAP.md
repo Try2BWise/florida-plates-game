@@ -168,6 +168,8 @@ Search enrichment and taxonomy polish.
   - symbols
 - decide whether sponsor and note text should also participate in search
 - continue category cleanup for obvious misfits
+- allow players to hide or disable specific categories from browsing views
+- decide whether hidden categories also affect Explore stats, badges, and search results or only the main browse list
 - review sorted-list naming for clarity and consistency
 - test search against real examples like:
   - `orange`
@@ -822,3 +824,4 @@ For the next cycle, the best target is:
 - curate search terms across the full catalog
 - keep tightening category placement as outliers are found
 - avoid major UI or platform work until search and taxonomy feel settled
+
