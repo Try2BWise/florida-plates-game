@@ -1,0 +1,55 @@
+100% Disabled Veteran Air Force
+100% Disabled Veteran Army
+100% Disabled Veteran Coast Guard
+100% Disabled Veteran Marine
+100% Disabled Veteran Navy
+Active Reserve
+Afghanistan Veteran
+Air Medal
+Bronze Star
+Bronze Star Disabled
+Combat Veteran Air Force
+Combat Veteran Army
+Combat Veteran Coast Guard
+Combat Veteran Marine
+Combat Veteran Navy
+Disabled American Veteran - Air Force
+Disabled American Veteran - Army
+Disabled American Veteran - Coast Guard
+Disabled American Veteran - Marine
+Disabled American Veteran - Navy
+Disabled American Veteran Less than 100%
+Distinguished Flying Cross
+Electric Power Association
+Ex Prisoner of War
+Female Veteran - Air Force
+Female Veteran - Army
+Female Veteran - Coast Guard
+Female Veteran - Marine
+Gold Star Air Force
+Gold Star Army
+Gold Star Coast Guard
+Gold Star Marine
+Gold Star Navy
+Gulf War Veteran
+Honoring Veterans
+Iraq Veteran
+Killed in Action
+Marine Corps
+Medal of Honor - Army
+Medal of Honor - Marine
+Merchant Marine
+National Guard - Special
+Navy and Marine Corps
+Pearl Harbor
+Purple Heart - Disabled
+Purple Heart - Original
+Silver Star
+Sons of Confederate Veterans
+Veteran Air Force
+Veteran Army
+Veteran Coast Guard
+Veteran Marine
+Veteran Navy
+Veterans of Foreign Wars
+Vietnam Veteran
