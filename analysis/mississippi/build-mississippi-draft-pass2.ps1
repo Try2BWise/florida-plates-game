@@ -8,7 +8,7 @@ function Slugify([string]$value) {
   return $s
 }
 $categoryOverrides = @{
-  '2022 National Championship Ole Miss Baseball' = 'Sports & Recreation'
+  '2022 National Championship Ole Miss Baseball' = 'Universities'
   'American Legion' = 'Military Service'
   'Band of Choctaw Indians' = 'Standard Plates'
   'Catch A Dream Foundation' = 'Health & Family'
@@ -27,11 +27,15 @@ $categoryOverrides = @{
   'Mississippi Family Physicians' = 'Health & Family'
   'Mississippi Nurses Foundation' = 'Health & Family'
   'Mississippi Public Broadcasting' = 'Education & Culture'
+  'Oak Grove School' = 'Public Schools'
+  'Passenger' = 'Standard Plates'
+  'School Bus' = 'Special Use'
   'Mixed Martial Arts' = 'Sports & Recreation'
   'MS Sweet Potato' = 'Civic & Causes'
   'National Rifle Association' = 'Sports & Recreation'
-  'National Rifle Association - Trailer' = 'Special Use'
-  'Neshoba Central Rockets' = 'Education & Culture'
+  'National Rifle Association - Trailer' = 'Civic & Causes'
+  'Madison Jaguars' = 'Public Schools'
+  'Neshoba Central Rockets' = 'Public Schools'
   'Ole Miss Welcome Home' = 'Universities'
   'Pearl River Valley Water' = 'Civic & Causes'
   'Profession of Pharmacy' = 'Health & Family'
@@ -42,7 +46,8 @@ $categoryOverrides = @{
   'Support Teachers' = 'Education & Culture'
   'Tupelo Elvis Presley Fan Club' = 'Travel & Tourism'
   'Volunteer Service' = 'Civic & Causes'
-  'West Lauderdale Knights' = 'Education & Culture'
+  'Starkville – Oktibbeha Football' = 'Public Schools'
+  'West Lauderdale Knights' = 'Public Schools'
   'Bronze Star' = 'Military Honors & History'
   'Bronze Star Disabled' = 'Military Honors & History'
   'Distinguished Flying Cross' = 'Military Honors & History'
@@ -55,7 +60,8 @@ $categoryOverrides = @{
   'Ex Prisoner of War' = 'Military Honors & History'
   'Honoring Veterans' = 'Military Service'
   'Honoring Fallen Officers' = 'Public Service'
-  'Civil Air Patrol' = 'Public Service'
+  'Civil Air Patrol' = 'Military Service'
+  'Wildlife Enforcement' = 'Public Service'
   'Fire Fighters' = 'Public Service'
   'Professional Fire Fighter' = 'Public Service'
   'State Flag' = 'Standard Plates'
@@ -74,7 +80,9 @@ function Get-Category([string]$name) {
   if($n -match 'veteran|afghanistan|iraq|combat|active reserve|national guard|marine corps|merchant marine|vietnam|honoring veterans|veterans of foreign wars|american legion'){ return 'Military Service' }
   if($n -match 'wildlife|bass|deer|turkey|trout|rabbit|butterfly|hummingbird|sea turtle|dolphin|shark|animal|zoo|aquarium|waterfowl|ducks unlimited|soil conservation'){ return 'Nature & Wildlife' }
   if($n -match 'university|college$|community college|state university|ole miss'){ return 'Universities' }
-  if($n -match 'school|school district|attendance center|support teachers|museum|public broadcasting'){ return 'Education & Culture' }
+  if($n -match 'school district|public school|attendance center|high school'){ return 'Public Schools' }
+  if($n -match 'school bus'){ return 'Special Use' }
+  if($n -match 'school|support teachers|museum|public broadcasting'){ return 'Education & Culture' }
   if($n -match 'saints football'){ return 'Professional Sports' }
   if($n -match 'football|baseball championship|soccer association|athletic foundation|tennis|golf|home run club|jaguars|mixed martial arts'){ return 'Sports & Recreation' }
   if($n -match 'law enforcement|sheriff|fire fighter|fallen officers|police athletic league|wildlife enforcement|troopers|emergency services|civil air patrol'){ return 'Public Service' }
@@ -140,3 +148,8 @@ foreach($plate in $plates){
 }
 $draft | ConvertTo-Json -Depth 8 | Set-Content analysis\mississippi\mississippi-master-draft-pass2-2026-03-31.json
 $draft.plates | Group-Object category | Sort-Object Count -Descending | Select-Object Count,Name | ConvertTo-Json | Set-Content analysis\mississippi\mississippi-master-draft-pass2-category-summary-2026-03-31.json
+
+
+
+
+

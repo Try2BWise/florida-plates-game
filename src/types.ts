@@ -11,6 +11,7 @@ export const plateCategories = [
   "Motorcycle Plates",
   "Nature & Wildlife",
   "Professional Sports",
+  "Public Schools",
   "Public Service",
   "Special Use",
   "Sports & Recreation",
@@ -90,6 +91,12 @@ export interface GameInstallInstructions {
   android: string;
 }
 
+export interface WelcomeSignText {
+  topLine: string;
+  stateLine: string;
+  tagline: string;
+}
+
 export interface GameBranding {
   appName: string;
   appShareName: string;
@@ -98,6 +105,10 @@ export interface GameBranding {
   developerName: string;
   developerUrl: string;
   developerLogoPath: string;
+  welcomeSignText?: WelcomeSignText;
+  welcomeSignImagePath?: string;
+  welcomeSignAlt?: string;
+  appIconPath?: string;
 }
 
 export interface GameDefinition {

@@ -4,21 +4,28 @@ This note highlights the highest-value human review items from the current secon
 
 - [mississippi-master-draft-pass2-2026-03-31.json](/C:/Users/bwise/OneDrive/Gorilla%20Grin/florida-plates-game/analysis/mississippi/mississippi-master-draft-pass2-2026-03-31.json)
 
-## Priority 1: School vs Sports Crossover
+## Priority 1: Public Schools vs Other School-Adjacent Plates
 
-These are likely the biggest judgment-call group remaining.
+The dedicated `Public Schools` category is now carrying the obvious district, public-school, high-school, school-name, and school-mascot style plates.
 
-Likely keep in `Education & Culture`:
+Current `Public Schools` set now looks broadly right:
 - Biloxi Public School District
 - Booneville School District
 - Columbia School District
 - Columbus Municipal School District
 - East Central Attendance Center
 - Enterprise School District
+- Gentry High School
 - George County School District
 - Germantown High School
 - Gulfport School District
 - Hattiesburg School District
+- Lafayette County School District
+- Lanier High School
+- Laurel School District
+- Madison Jaguars
+- Meridian Public School
+- Neshoba Central Rockets
 - Oak Grove School
 - Olive Branch High School
 - Oxford School District
@@ -29,31 +36,29 @@ Likely keep in `Education & Culture`:
 - Ridgeland High School
 - South Panola School District
 - St Martin High School
-- St Patrick High School
+- Starkville - Oktibbeha Football
 - Stone County School District
 - Tupelo Public School
 - West Jones High School
-
-Needs judgment call between `Education & Culture` and `Sports & Recreation`:
-- Madison Jaguars
-- Neshoba Central Rockets
 - West Lauderdale Knights
-- Starkville - Oktibbeha Football
-- Ocean Springs Athletic Foundation
-- Vancleave Home Run Club
-- Youth Soccer Association
-- 2022 National Championship Ole Miss Baseball
-- MSU Baseball Championship
 
-Likely `Education & Culture`, not generic civic:
+These remain in `Education & Culture` by design:
+- Magnolia Heights School
+- St Patrick High School
 - Mississippi After School Alliance
 - Mississippi Children's Museum
 - Mississippi Public Broadcasting
 - Support Teachers
 
-## Priority 2: Military Split Validation
+These now stay in `Civic & Causes`, not `Public Schools`:
+- God Bless America - Sunflower Consolidated School Preservation
+- I Love Mississippi - Sunflower Consolidated School Preservation
 
-The honors/history split is much better now, but these should still be reviewed for intent.
+Still worth checking between `Public Schools` and `Sports & Recreation`:
+- Vancleave Home Run Club
+- Ocean Springs Athletic Foundation
+
+## Priority 2: Military Split Validation
 
 Likely correct in `Military Honors & History`:
 - Air Medal
@@ -68,16 +73,18 @@ Likely correct in `Military Honors & History`:
 - Gold Star Navy
 - Medal of Honor - Army
 - Medal of Honor - Marine
+- Pearl Harbor
 - Purple Heart - Disabled
 - Purple Heart - Original
 - Silver Star
-- Pearl Harbor
 - Killed in Action
 - Ex Prisoner of War
 
 Likely correct in `Military Service`:
 - Active Reserve
 - Afghanistan Veteran
+- American Legion
+- Civil Air Patrol
 - Combat Veteran Air Force
 - Combat Veteran Army
 - Combat Veteran Coast Guard
@@ -86,6 +93,9 @@ Likely correct in `Military Service`:
 - Gulf War Veteran
 - Honoring Veterans
 - Iraq Veteran
+- Merchant Marine
+- National Guard - Special
+- Navy and Marine Corps
 - Veteran Air Force
 - Veteran Army
 - Veteran Coast Guard
@@ -95,17 +105,13 @@ Likely correct in `Military Service`:
 - Vietnam Veteran
 - Disabled American Veteran Less than 100%
 
-Needs judgment call:
-- American Legion
-- Civil Air Patrol
-- Merchant Marine
-- National Guard - Special
-- Navy and Marine Corps
+Still worth checking for long-term category philosophy:
 - Sons of Confederate Veterans
 
 ## Priority 3: Public Service Boundaries
 
 Likely correct in `Public Service`:
+- Fire Fighters
 - Gulfport Police Athletic League
 - Honoring Fallen Officers
 - Law Enforcement - Police
@@ -118,22 +124,21 @@ Likely correct in `Public Service`:
 - Retired as Career Law Enforcement Officer
 - Retired Troopers
 - Sheriff's Office
-- Fire Fighters
-
-Needs judgment call:
-- Civil Air Patrol
 - Wildlife Enforcement
 
 ## Priority 4: Standard vs Special Use vs Government
 
 Likely `Standard Plates`:
 - Band of Choctaw Indians
-- State Flag
+- Passenger
 - B10 Blackout
 - B16-B80
 - F10 Blackout
 - F16-F80
 - Blackout Pickup
+
+Now treated as `Civic & Causes` instead of `Standard Plates`:
+- State Flag
 
 Likely `Government & Official`:
 - Board of Contractor
@@ -167,16 +172,12 @@ Likely `Special Use`:
 - Heavy Truck Trailer
 - Historical
 - Private Trailer
+- School Bus
 - Street Rod
 - Taxi
 - Temporary Truck
 - Vanity Passenger
 - Vanity Trailer
-
-Needs judgment call:
-- Passenger
-- School Bus
-- National Rifle Association - Trailer
 
 ## Priority 5: Health vs Civic
 
@@ -185,29 +186,29 @@ Likely correct in `Health & Family`:
 - Autism Awareness
 - Breast Cancer Awareness
 - Catch A Dream Foundation
-- Children’s Advocacy Center
+- Children's Advocacy Center
 - Colon Cancer Prevention
 - Dental Hygienist
 - Diabetic
 - Dyslexia Awareness
 - Fannie Lou Hamer Cancer Foundation
-- Friends of Children’s Hospital
+- Friends of Children's Hospital
 - Juvenile Diabetes
 - Juvenile Diabetes Research Foundation
-- Le Bonheur Children’s Hospital
+- Le Bonheur Children's Hospital
 - Mississippi Blood Services, Inc
 - Mississippi Family Physicians
 - Mississippi Nurses Foundation
 - Mississippi Organ Donor
 - Profession of Pharmacy
-- St Jude Children’s Hospital
+- St Jude Children's Hospital
 
-Needs judgment call:
+Now treated as `Civic & Causes`:
 - Mississippi Toughest Kids Foundation
 - Down Syndrome Awareness
-- Dioceses / faith-based charity-affiliated plates that may be more civic than health
+- Diocese of Biloxi
 
-## Priority 6: Travel & Tourism / Cultural Identity
+## Priority 6: Travel / Culture / Identity
 
 Likely correct in `Travel & Tourism`:
 - Gulf Coast Regional Tourism Partnership
@@ -216,18 +217,21 @@ Likely correct in `Travel & Tourism`:
 - Mississippi State Parks
 - Tupelo Elvis Presley Fan Club
 
-Possibly `Education & Culture` or `Civic & Causes` instead of travel:
-- I Love Mississippi - Sunflower Consolidated School Preservation
+Likely correct in `Civic & Causes` or civic identity:
 - God Bless America - Sunflower Consolidated School Preservation
+- I Love Mississippi - Sunflower Consolidated School Preservation
+- State Flag
+- National Rifle Association - Trailer
+- Sons of Confederate Veterans
 
-## Priority 7: Professional Sports
+## Priority 7: Professional Sports and Universities
 
-Current draft has only one clear `Professional Sports` plate:
+Current draft has one clear `Professional Sports` plate:
 - New Orleans Saints Football
 
-Questions:
-- Is that the only Mississippi-available pro sports plate?
-- Should any college championship or school sports plates stay strictly non-pro in `Sports & Recreation`?
+College championship plates now stay in `Universities`:
+- 2022 National Championship Ole Miss Baseball
+- MSU Baseball Championship
 
 ## Priority 8: Motorcycle Variant Sanity Check
 
@@ -246,8 +250,7 @@ The motorcycle pairing logic appears to be working, but spot-check these groups:
 
 ## Recommended Next Pass
 
-1. Lock category intent for school/sports crossover plates.
-2. Lock the Mississippi philosophy for military heritage/confederate/history-adjacent plates.
+1. Keep the obvious district, school-name, and mascot plates in `Public Schools` unless they are clearly private or booster-club driven.
+2. Decide whether any remaining edge-case civic/history plates should be excluded entirely from the eventual runtime game.
 3. Validate official/state/admin plates against how playable you want the game to be.
-4. Review whether some entries should be excluded entirely from the eventual runtime game.
-5. Only after that, promote the Mississippi draft from `analysis/` into a real pack/master data path.
+4. Only after that, promote the Mississippi draft from `analysis/` into a real pack/master data path.

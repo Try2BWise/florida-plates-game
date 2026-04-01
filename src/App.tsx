@@ -155,9 +155,22 @@ function loadOnboardingHintDismissed(): boolean {
   }
 }
 
+function getDiscoveryLocationStatus(discovery: PlateDiscoveryMap[string]): string {
+  if (discovery.locality) {
+    return discovery.locality;
+  }
+
+  if (discovery.latitude !== null && discovery.longitude !== null) {
+    return "Coordinates saved";
+  }
+
+  return "Location permission unavailable";
+}
 function App() {
   const appShareUrl = activeGame.branding.shareUrl;
   const shareMessage = activeGame.share.appMessage;
+  const welcomeSignText = activeGame.branding.welcomeSignText;
+  const welcomeSignImagePath = activeGame.branding.welcomeSignImagePath;
   const [discoveries, setDiscoveries] = useState<PlateDiscoveryMap>(() =>
     loadDiscoveries()
   );
@@ -1012,11 +1025,19 @@ function App() {
       <header className="app-header">
         <div className="app-header__top">
           <div className="app-header__title-block app-header__title-block--sign">
-            <div className="welcome-sign" aria-label="Florida plate tracker">
-              <span className="welcome-sign__welcome">Welcome to</span>
-              <span className="welcome-sign__state">FLORIDA</span>
-              <span className="welcome-sign__tagline">the sunshine state</span>
-            </div>
+            {welcomeSignImagePath ? (
+              <img
+                className="welcome-sign--image"
+                src={`${import.meta.env.BASE_URL}${welcomeSignImagePath}`}
+                alt={activeGame.branding.welcomeSignAlt ?? `${activeGame.branding.appName} welcome sign`}
+              />
+            ) : welcomeSignText ? (
+              <div className="welcome-sign" aria-label={`${activeGame.branding.appName} welcome sign`}>
+                <span className="welcome-sign__welcome">{welcomeSignText.topLine}</span>
+                <span className="welcome-sign__state">{welcomeSignText.stateLine}</span>
+                <span className="welcome-sign__tagline">{welcomeSignText.tagline}</span>
+              </div>
+            ) : null}
             <p className="app-header__eyebrow">{activeGame.branding.appTagline}</p>
           </div>
           <div className="app-header__actions">
@@ -1681,7 +1702,7 @@ function App() {
                                         {formatDiscoveryTime(discovery.foundAtIso)}
                                       </p>
                                       <p className="utility-card__meta">
-                                        {discovery.locality ?? "Location unavailable"}
+                                        {getDiscoveryLocationStatus(discovery)}
                                       </p>
                                     </div>
                                   </div>
@@ -2133,7 +2154,7 @@ function App() {
                           {formatDiscoveryTime(discovery.foundAtIso)}
                         </p>
                         <p className="utility-card__meta">
-                          {discovery.locality ?? "Location unavailable"}
+                          {getDiscoveryLocationStatus(discovery)}
                         </p>
                       </article>
                     ))}
@@ -2172,5 +2193,7 @@ function App() {
 }
 
 export default App;
+
+
 
 

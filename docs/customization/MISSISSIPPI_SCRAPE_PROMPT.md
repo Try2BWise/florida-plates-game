@@ -109,3 +109,4 @@ After the scrape:
 3. review search terms
 4. normalize image filenames
 5. decide what Mississippi-specific badges and geography should exist
+

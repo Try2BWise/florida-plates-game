@@ -2665,3 +2665,11 @@ select {
   }
 
 }
+
+.welcome-sign--image {
+  display: block;
+  width: min(100%, 16rem);
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 14px 30px rgba(18, 36, 84, 0.18);
+}

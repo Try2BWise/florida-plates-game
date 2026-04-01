@@ -11,6 +11,7 @@
     "generate:pwa-assets": "node scripts/generatePwaAssets.mjs",
     "prebuild": "node scripts/generatePlateDriver.mjs && node scripts/generatePwaAssets.mjs && node scripts/generateBuildInfo.mjs",
     "build": "tsc --noEmit && vite build",
+    "build:mississippi-preview": "tsc --noEmit && vite build --mode mississippi",
     "preview": "vite preview",
     "preview:host": "vite preview --host 0.0.0.0"
   },

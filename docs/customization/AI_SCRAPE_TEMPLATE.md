@@ -82,3 +82,4 @@ Desired quality:
 - The scrape output is expected to need a curation pass.
 - `metadataBlob` and `sourceRefs` are useful for provenance and cleanup.
 - The runtime generator will later normalize search terms and trim authoring-only fields.
+

@@ -22,6 +22,7 @@ function Get-Category([string]$name) {
   if($n -match 'government|governor|house of representative|senator'){ return 'Government & Official' }
   if($n -match 'taxi|truck|trailer|dealer|fleet|hearse|church bus|school bus|temporary|harvest permittees|street rod|historical|antique|passenger|vanity'){ return 'Special Use' }
   if($n -match 'tourism|natchez|blues|state parks|elvis'){ return 'Travel & Tourism' }
+  if( -match 'national rifle association - trailer|sons of confederate veterans|mississippi toughest kids foundation|down syndrome awareness|diocese of biloxi|sunflower consolidated school preservation|state flag'){ return 'Civic & Causes' }
   return 'Civic & Causes'
 }
 $draft = [ordered]@{
@@ -76,3 +77,5 @@ foreach($plate in $plates){
   }
 }
 $draft | ConvertTo-Json -Depth 8 | Set-Content analysis\mississippi\mississippi-master-draft-2026-03-31.json
+
+

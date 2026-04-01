@@ -25,44 +25,33 @@ export const floridaPanhandleScoutCounties = new Set([
 ]);
 
 export const floridaBadgeCounties: Record<string, string[]> = {
-  // Northwest Florida — The Panhandle
   "northwest-florida-explorer": [
     "Escambia", "Santa Rosa", "Okaloosa", "Walton", "Holmes", "Washington", "Bay", "Jackson", "Calhoun", "Gulf", "Franklin", "Liberty", "Gadsden", "Leon", "Wakulla"
   ],
-  // North Central Florida — The Big Bend
   "north-central-florida-explorer": [
     "Jefferson", "Madison", "Taylor", "Lafayette", "Suwannee", "Dixie", "Levy", "Gilchrist"
   ],
-  // Northeast Florida — The First Coast
   "northeast-florida-explorer": [
     "Nassau", "Duval", "Clay", "St. Johns", "Putnam", "Flagler"
   ],
-  // Central West Florida — The Suncoast
   "central-west-florida-explorer": [
     "Pinellas", "Hillsborough", "Pasco", "Hernando", "Citrus", "Manatee", "Sarasota"
   ],
-  // Central Florida — The Heart of Florida
   "central-florida-explorer": [
     "Orange", "Seminole", "Osceola", "Lake", "Polk", "Sumter", "Hardee", "Highlands", "Marion"
   ],
-  // Central East Florida — The Space Coast
   "central-east-florida-explorer": [
     "Volusia", "Brevard", "Indian River", "St. Lucie"
   ],
-  // Southwest Florida — The Paradise Coast
   "southwest-florida-explorer": [
     "Charlotte", "Lee", "Collier", "Hendry", "Glades"
   ],
-  // Southeast Florida — The Gold Coast
   "southeast-florida-explorer": [
     "Martin", "Palm Beach", "Broward", "Miami-Dade"
   ],
-  // The Florida Keys — The Conch Republic
-  "florida-keys-explorer": ["Monroe"],
+  "florida-keys-explorer": ["Monroe"]
 };
 
-// Expose county groupings for badge detail UI
-// Tickle: 2026-03-25 - force redeploy for badge update
 declare global {
   interface Window {
     floridaBadgeCounties?: Record<string, string[]>;
@@ -119,11 +108,16 @@ export const floridaGame: GameDefinition & {
     appTagline: "Florida plate tracker",
     developerName: "Gorilla Grin",
     developerUrl: "https://gorillagrin.com",
-    developerLogoPath: "gorilla-grin-horizontal.png"
+    developerLogoPath: "gorilla-grin-horizontal.png",
+    welcomeSignText: {
+      topLine: "Welcome to",
+      stateLine: "FLORIDA",
+      tagline: "the sunshine state"
+    }
   },
   share: {
     appMessage: [
-      "I’ve been playing FL Plates, a Florida license plate spotting game.",
+      "I've been playing FL Plates, a Florida license plate spotting game.",
       "",
       "Play it here: https://gorillagrin.com/florida-plates-game/",
       "",

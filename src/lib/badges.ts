@@ -91,7 +91,7 @@ const honorAndMedalPlateNames = [
   "Distinguished Service Cross"
 ];
 
-import { activeBadgeCounties, activeMixedBagCategories, activePanhandleScoutCounties } from "../games/activeGame";
+import { activeBadgeCounties, activeGame, activeMixedBagCategories, activePanhandleScoutCounties } from "../games/activeGame";
 
 const allBranchesPlateNames = [
   "U.S. Army",
@@ -115,7 +115,7 @@ const soccerPlateNames = [
   "Orlando City (Soccer)"
 ];
 
-export const badgeDefinitions: BadgeDefinition[] = [
+const floridaBadgeDefinitions: BadgeDefinition[] = [
   {
     id: "first-spot",
     name: "First Spot",
@@ -534,6 +534,40 @@ export const badgeDefinitions: BadgeDefinition[] = [
   }
 ];
 
+const genericBadgeIds = new Set([
+  "first-spot",
+  "five-alive",
+  "ten-down",
+  "quarter-mark",
+  "halfway-home",
+  "closing-in",
+  "complete-set",
+  "mixed-bag",
+  "green-light",
+  "sports-fan",
+  "healing-hands",
+  "game-on",
+  "reporting-for-duty",
+  "on-call",
+  "in-service",
+  "eco-scout",
+  "all-teams",
+  "full-spectrum",
+  "first-day-of-school",
+  "campus-tour",
+  "freshman",
+  "sophomore",
+  "junior",
+  "senior",
+  "graduation-day",
+  "i-get-around",
+  "road-trip"
+]);
+
+export const badgeDefinitions: BadgeDefinition[] = activeGame.id === "mississippi"
+  ? floridaBadgeDefinitions.filter((definition) => genericBadgeIds.has(definition.id))
+  : floridaBadgeDefinitions;
+
 export const deferredBadgeIdeas: BadgeDefinition[] = [
   {
     id: "afternoon-delight",
@@ -709,6 +743,83 @@ function createThresholdBadge(
   };
 }
 
+function evaluateMississippiPreviewBadges(
+  totalFound: number,
+  totalPlates: number,
+  mixedBagFound: number,
+  mixedBagTotal: number,
+  natureFound: number,
+  natureTotal: number,
+  sportsFound: number,
+  sportsTotal: number,
+  healthFound: number,
+  recreationFound: number,
+  universitiesFound: number,
+  universitiesTotal: number,
+  thoseWhoServeFound: number,
+  uniqueLocalities: number
+): EvaluatedBadge[] {
+  return badgeDefinitions.map((definition) => {
+    switch (definition.id) {
+      case "first-spot":
+        return createThresholdBadge(definition, totalFound, 1);
+      case "five-alive":
+        return createThresholdBadge(definition, totalFound, 5);
+      case "ten-down":
+        return createThresholdBadge(definition, totalFound, 10);
+      case "quarter-mark":
+        return createThresholdBadge(definition, totalFound, Math.ceil(totalPlates * 0.25));
+      case "halfway-home":
+        return createThresholdBadge(definition, totalFound, Math.ceil(totalPlates * 0.5));
+      case "closing-in":
+        return createThresholdBadge(definition, totalFound, Math.ceil(totalPlates * 0.75));
+      case "complete-set":
+        return createThresholdBadge(definition, totalFound, totalPlates);
+      case "mixed-bag":
+        return createThresholdBadge(definition, mixedBagFound, 5);
+      case "green-light":
+        return createThresholdBadge(definition, natureFound, 5);
+      case "sports-fan":
+        return createThresholdBadge(definition, sportsFound, 5);
+      case "healing-hands":
+        return createThresholdBadge(definition, healthFound, 5);
+      case "game-on":
+        return createThresholdBadge(definition, recreationFound, 5);
+      case "reporting-for-duty":
+        return createThresholdBadge(definition, thoseWhoServeFound, 1);
+      case "on-call":
+        return createThresholdBadge(definition, thoseWhoServeFound, 5);
+      case "in-service":
+        return createThresholdBadge(definition, thoseWhoServeFound, 10);
+      case "eco-scout":
+        return createThresholdBadge(definition, natureFound, natureTotal);
+      case "all-teams":
+        return createThresholdBadge(definition, sportsFound, sportsTotal);
+      case "full-spectrum":
+        return createThresholdBadge(definition, mixedBagFound, mixedBagTotal);
+      case "first-day-of-school":
+        return createThresholdBadge(definition, universitiesFound, 1);
+      case "campus-tour":
+        return createThresholdBadge(definition, universitiesFound, 5);
+      case "freshman":
+        return createThresholdBadge(definition, universitiesFound, Math.ceil(universitiesTotal * 0.2));
+      case "sophomore":
+        return createThresholdBadge(definition, universitiesFound, Math.ceil(universitiesTotal * 0.4));
+      case "junior":
+        return createThresholdBadge(definition, universitiesFound, Math.ceil(universitiesTotal * 0.6));
+      case "senior":
+        return createThresholdBadge(definition, universitiesFound, Math.ceil(universitiesTotal * 0.8));
+      case "graduation-day":
+        return createThresholdBadge(definition, universitiesFound, universitiesTotal);
+      case "i-get-around":
+        return createThresholdBadge(definition, uniqueLocalities, 5);
+      case "road-trip":
+        return createThresholdBadge(definition, uniqueLocalities, 10);
+      default:
+        return { ...definition, earned: false };
+    }
+  });
+}
 function normalizeCountyName(county: string | null | undefined): string | null {
   if (!county) {
     return null;
@@ -751,6 +862,25 @@ export function evaluateBadges(
       .filter((locality): locality is string => Boolean(locality))
   ).size;
 
+  if (activeGame.id === "mississippi") {
+    return evaluateMississippiPreviewBadges(
+      totalFound,
+      totalPlates,
+      mixedBagFound,
+      mixedBagTotal,
+      natureFound,
+      natureTotal,
+      sportsFound,
+      sportsTotal,
+      healthFound,
+      recreationFound,
+      universitiesFound,
+      universitiesTotal,
+      thoseWhoServeFound,
+      uniqueLocalities
+    );
+  }
+
   const outsideFloridaCount = Object.values(discoveries).filter((discovery) => {
     if (discovery.state) {
       return discovery.state !== "Florida";
@@ -791,24 +921,27 @@ export function evaluateBadges(
     }
   });
 
-  // Compose region badge entries for lookup (earned if ANY county in region is found)
-  const regionBadgeEntries: [string, EvaluatedBadge][] = Object.keys(activeBadgeCounties).map((regionId) => [
-    regionId,
-    createThresholdBadge(
-      getBadgeDefinition(definitionsById, regionId),
-      foundCountiesByRegion[regionId].size,
-      1 // Only one county needed to earn the badge
-    )
-  ]);
+  // Compose region badge entries only when the active badge set actually includes them.
+  const availableBadgeIds = new Set(badgeDefinitions.map((definition) => definition.id));
+  const regionBadgeEntries: [string, EvaluatedBadge][] = Object.keys(activeBadgeCounties)
+    .filter((regionId) => availableBadgeIds.has(regionId))
+    .map((regionId) => [
+      regionId,
+      createThresholdBadge(
+        getBadgeDefinition(definitionsById, regionId),
+        foundCountiesByRegion[regionId].size,
+        1 // Only one county needed to earn the badge
+      )
+    ]);
 
-  // All Around Florida badge: earned if all region badges are earned
-  const allRegionBadgesEarned = regionBadgeEntries.every(([, badge]) => badge.earned);
-  const allAroundFloridaBadge = {
-    ...getBadgeDefinition(definitionsById, "all-around-florida"),
-    earned: allRegionBadgesEarned,
-    progressCurrent: regionBadgeEntries.filter(([, badge]) => badge.earned).length,
-    progressTarget: regionBadgeEntries.length
-  };
+  const allAroundFloridaBadge = availableBadgeIds.has("all-around-florida")
+    ? {
+        ...getBadgeDefinition(definitionsById, "all-around-florida"),
+        earned: regionBadgeEntries.every(([, badge]) => badge.earned),
+        progressCurrent: regionBadgeEntries.filter(([, badge]) => badge.earned).length,
+        progressTarget: regionBadgeEntries.length
+      }
+    : null;
 
   const lookup = new Map<string, EvaluatedBadge>([
     ["first-spot", createThresholdBadge(getBadgeDefinition(definitionsById, "first-spot"), totalFound, 1)],
@@ -1041,7 +1174,7 @@ export function evaluateBadges(
     ["road-trip", createThresholdBadge(getBadgeDefinition(definitionsById, "road-trip"), uniqueLocalities, 10)],
     ["panhandle-scout", createThresholdBadge(getBadgeDefinition(definitionsById, "panhandle-scout"), panhandleCount, 1)],
     ...regionBadgeEntries,
-    ["all-around-florida", allAroundFloridaBadge],
+    ...(allAroundFloridaBadge ? [["all-around-florida", allAroundFloridaBadge] as const] : []),
   ]);
 
   return badgeDefinitions.map((definition) => lookup.get(definition.id) ?? { ...definition, earned: false });
