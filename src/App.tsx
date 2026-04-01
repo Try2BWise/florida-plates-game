@@ -154,6 +154,17 @@ function loadOnboardingHintDismissed(): boolean {
   }
 }
 
+function getDiscoveryLocationStatus(discovery: PlateDiscoveryMap[string]): string {
+  if (discovery.locality) {
+    return discovery.locality;
+  }
+
+  if (discovery.latitude !== null && discovery.longitude !== null) {
+    return "Coordinates saved";
+  }
+
+  return "Location permission unavailable";
+}
 function App() {
   const appShareUrl = floridaGame.branding.shareUrl;
   const shareMessage = floridaGame.share.appMessage;
@@ -1680,7 +1691,7 @@ function App() {
                                         {formatDiscoveryTime(discovery.foundAtIso)}
                                       </p>
                                       <p className="utility-card__meta">
-                                        {discovery.locality ?? "Location unavailable"}
+                                        {getDiscoveryLocationStatus(discovery)}
                                       </p>
                                     </div>
                                   </div>
@@ -2133,7 +2144,7 @@ function App() {
                           {formatDiscoveryTime(discovery.foundAtIso)}
                         </p>
                         <p className="utility-card__meta">
-                          {discovery.locality ?? "Location unavailable"}
+                          {getDiscoveryLocationStatus(discovery)}
                         </p>
                       </article>
                     ))}
@@ -2172,3 +2183,4 @@ function App() {
 }
 
 export default App;
+
