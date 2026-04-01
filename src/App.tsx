@@ -1255,6 +1255,7 @@ function App() {
           aria-label="Home"
         >
           <span className="bottom-dock__icon bottom-dock__icon--home" aria-hidden="true" />
+          <span className="bottom-dock__label">Home</span>
         </button>
         <button
           type="button"
@@ -1269,6 +1270,7 @@ function App() {
           aria-label="Explore"
         >
           <span className="bottom-dock__icon bottom-dock__icon--globe" aria-hidden="true" />
+          <span className="bottom-dock__label">Explore</span>
         </button>
         <button
           type="button"
@@ -1287,6 +1289,7 @@ function App() {
           <span className="bottom-dock__icon bottom-dock__icon--help" aria-hidden="true">
             ?
           </span>
+          <span className="bottom-dock__label">Help</span>
         </button>
         <button
           type="button"
@@ -1303,6 +1306,7 @@ function App() {
           aria-label="Settings"
         >
           <span className="bottom-dock__icon bottom-dock__icon--gear" aria-hidden="true" />
+          <span className="bottom-dock__label">Settings</span>
         </button>
       </nav>
 
@@ -2183,4 +2187,7 @@ function App() {
 }
 
 export default App;
+
+
+
 
