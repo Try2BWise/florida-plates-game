@@ -822,3 +822,43 @@ For the next cycle, the best target is:
 - curate search terms across the full catalog
 - keep tightening category placement as outliers are found
 - avoid major UI or platform work until search and taxonomy feel settled
+
+## iPhone UI Implementation Order
+
+To move toward a cleaner, more iPhone-native presentation without forcing a full redesign, use this implementation order:
+
+### Easy wins
+
+- add a grabber to the plate detail modal
+- tighten header spacing on small screens
+- combine the top stats into one cleaner summary card
+- simplify the search and filter area into one card surface
+- soften shadows and standardize card radius
+- slightly reduce badge thumbnail size on narrow phones
+- make Help and Settings rows cleaner and more uniform
+
+### Medium changes
+
+- convert plate detail from popup feel to true bottom sheet
+- convert Explore and Help/Settings panels to sheet-style presentations
+- restyle plate rows and cards into a more consistent collection layout
+- reduce top-of-screen clutter so the list starts sooner
+- unify card styling across Home, Explore, Badges, and Settings
+- make badge sections feel more like curated groups than utility grids
+
+### Later redesign items
+
+- fuller Home layout rethink around one primary progress card
+- more premium collection-browser presentation for plate list and detail
+- badge gallery redesign with stronger themed sections
+- state-aware branding system for Florida, Mississippi, and future packs
+- broader color-system refresh for calmer UI chrome
+- complete iPhone-first interaction polish across modals, sheets, and onboarding
+
+### Suggested order of execution
+
+1. header tightening
+2. card consistency pass
+3. plate detail sheet polish
+4. Explore and Help sheet conversion
+5. broader Home and badge presentation redesign
