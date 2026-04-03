@@ -1,4 +1,5 @@
 export type IconName =
+  | "chevron-left"
   | "home"
   | "globe"
   | "help"
@@ -24,6 +25,11 @@ interface IconProps {
 }
 
 const paths: Record<IconName, JSX.Element> = {
+  "chevron-left": (
+    <>
+      <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </>
+  ),
   home: (
     <>
       <path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />

@@ -28,7 +28,7 @@ type ThemeMode = "light" | "dark";
 type PlateVisibilityFilter = "all" | "found" | "missing";
 type PlateArrangement = "category" | "az" | "za";
 type ExploreTab = "badges" | "stats" | "map" | "timeline";
-type UtilityTab = "settings" | "help" | "safe" | "about";
+type ActiveView = "home" | "explore" | "help" | "settings";
 type TimelineSort = "desc" | "asc";
 
 const badgePlateSets: Record<string, string[]> = {
@@ -228,8 +228,7 @@ function App() {
   );
   const [isUpdateReady, setIsUpdateReady] = useState(false);
   const [isClearConfirmOpen, setIsClearConfirmOpen] = useState(false);
-  const [isExplorePanelOpen, setIsExplorePanelOpen] = useState(false);
-  const [isUtilityPanelOpen, setIsUtilityPanelOpen] = useState(false);
+  const [activeView, setActiveView] = useState<ActiveView>("home");
   const [isCategorySheetOpen, setIsCategorySheetOpen] = useState(false);
   const [isFilterSheetOpen, setIsFilterSheetOpen] = useState(false);
   const [isSortSheetOpen, setIsSortSheetOpen] = useState(false);
@@ -240,15 +239,15 @@ function App() {
   const [collapsedTimelineDates, setCollapsedTimelineDates] = useState<Set<string>>(
     () => new Set()
   );
-  const [activeUtilityTab, setActiveUtilityTab] = useState<UtilityTab>("settings");
+  const [activeHelpTab, setActiveHelpTab] = useState<"help" | "safe">("help");
+  const [activeSettingsTab, setActiveSettingsTab] = useState<"settings" | "about">("settings");
   const [selectedCategoryFilter, setSelectedCategoryFilter] = useState<PlateCategory | null>(null);
   const searchInputRef = useRef<HTMLInputElement | null>(null);
   const headerSentinelRef = useRef<HTMLDivElement | null>(null);
   const categorySwipe = useSwipeDismiss(() => setIsCategorySheetOpen(false));
   const filterSwipe = useSwipeDismiss(() => setIsFilterSheetOpen(false));
   const sortSwipe = useSwipeDismiss(() => setIsSortSheetOpen(false));
-  const exploreSwipe = useSwipeDismiss(() => setIsExplorePanelOpen(false));
-  const utilitySwipe = useSwipeDismiss(() => setIsUtilityPanelOpen(false));
+  /* exploreSwipe/utilitySwipe removed — panels are now full pages */
   const previewSwipe = useSwipeDismiss(() => setPreviewPlate(null));
   const [isHeaderCompact, setIsHeaderCompact] = useState(false);
   const resolvingLocalitiesRef = useRef<Set<string>>(new Set());
@@ -325,8 +324,6 @@ function App() {
 
   useEffect(() => {
     if (
-      !isUtilityPanelOpen &&
-      !isExplorePanelOpen &&
       !previewPlate &&
       !isClearConfirmOpen &&
       !activeBadgeDetail
@@ -347,7 +344,7 @@ function App() {
       document.documentElement.style.overflow = previousDocumentOverflow;
       document.body.style.touchAction = previousBodyTouchAction;
     };
-  }, [isExplorePanelOpen, isUtilityPanelOpen, previewPlate, isClearConfirmOpen, activeBadgeDetail]);
+  }, [previewPlate, isClearConfirmOpen, activeBadgeDetail]);
 
   useEffect(() => {
     function handleUpdateReady() {
@@ -1085,6 +1082,8 @@ function App() {
 
   return (
     <div className="app-shell">
+      {activeView === "home" ? (
+      <>
       <div ref={headerSentinelRef} className="header-sentinel" aria-hidden="true" />
       <header className={`app-header ${isHeaderCompact ? "app-header--compact" : ""}`}>
         <div className="app-header__top">
@@ -1107,8 +1106,7 @@ function App() {
               className="app-header__kpi app-header__kpi--secondary"
               onClick={() => {
                 setActiveExploreTab("badges");
-                setIsUtilityPanelOpen(false);
-                setIsExplorePanelOpen(true);
+                setActiveView("explore");
               }}
               aria-label="Open merit badges"
             >
@@ -1238,13 +1236,7 @@ function App() {
       <nav className="bottom-dock" aria-label="Primary app navigation">
         <button
           type="button"
-          className={`bottom-dock__item ${
-            !isUtilityPanelOpen && !isExplorePanelOpen ? "bottom-dock__item--active" : ""
-          }`}
-          onClick={() => {
-            setIsUtilityPanelOpen(false);
-            setIsExplorePanelOpen(false);
-          }}
+          className="bottom-dock__item bottom-dock__item--active"
           aria-label="Home"
         >
           <Icon name="home" size={22} className="bottom-dock__icon" />
@@ -1252,14 +1244,8 @@ function App() {
         </button>
         <button
           type="button"
-          className={`bottom-dock__item ${
-            isExplorePanelOpen ? "bottom-dock__item--active" : ""
-          }`}
-          onClick={() => {
-            setIsUtilityPanelOpen(false);
-            setActiveExploreTab("badges");
-            setIsExplorePanelOpen(true);
-          }}
+          className="bottom-dock__item"
+          onClick={() => { setActiveExploreTab("badges"); setActiveView("explore"); }}
           aria-label="Explore"
         >
           <Icon name="globe" size={22} className="bottom-dock__icon" />
@@ -1267,16 +1253,8 @@ function App() {
         </button>
         <button
           type="button"
-          className={`bottom-dock__item ${
-            isUtilityPanelOpen && activeUtilityTab === "help"
-              ? "bottom-dock__item--active"
-              : ""
-          }`}
-          onClick={() => {
-            setIsExplorePanelOpen(false);
-            setActiveUtilityTab("help");
-            setIsUtilityPanelOpen(true);
-          }}
+          className="bottom-dock__item"
+          onClick={() => { setActiveHelpTab("help"); setActiveView("help"); }}
           aria-label="Help"
         >
           <Icon name="help" size={22} className="bottom-dock__icon" />
@@ -1284,22 +1262,16 @@ function App() {
         </button>
         <button
           type="button"
-          className={`bottom-dock__item ${
-            isUtilityPanelOpen && activeUtilityTab === "settings"
-              ? "bottom-dock__item--active"
-              : ""
-          }`}
-          onClick={() => {
-            setIsExplorePanelOpen(false);
-            setActiveUtilityTab("settings");
-            setIsUtilityPanelOpen(true);
-          }}
+          className="bottom-dock__item"
+          onClick={() => { setActiveSettingsTab("settings"); setActiveView("settings"); }}
           aria-label="Settings"
         >
           <Icon name="gear" size={22} className="bottom-dock__icon" />
           <span className="bottom-dock__label">Settings</span>
         </button>
       </nav>
+      </>
+      ) : null}
 
       {previewPlate && previewVersion ? (
         <div
@@ -1489,28 +1461,15 @@ function App() {
         </div>
       ) : null}
 
-      {isExplorePanelOpen ? (
-        <div
-          className="utility-panel-backdrop"
-          role="presentation"
-          onClick={() => setIsExplorePanelOpen(false)}
-        >
-          <section
-            className="utility-panel"
-            ref={exploreSwipe.sheetRef}
-            role="dialog"
-            aria-modal="true"
-            aria-label={`${floridaGame.branding.appName} explore panel`}
-            onClick={(event) => event.stopPropagation()}
-          >
-            <div className="utility-panel__grabber" aria-hidden="true" {...exploreSwipe.grabberProps} style={{ touchAction: "none" }} />
-            <div className="utility-panel__header">
-              <div>
-                <p className="utility-panel__eyebrow">Explore</p>
-                <h2 className="utility-panel__title">{floridaGame.branding.appName} explore panel</h2>
-              </div>
-            </div>
-            <div className="utility-panel__tabs" role="tablist" aria-label="Explore views">
+      {activeView === "explore" ? (
+        <div className="page-view">
+          <div className="page-view__header">
+            <button type="button" className="page-view__back" onClick={() => setActiveView("home")}>
+              <Icon name="chevron-left" size={20} /> Back
+            </button>
+            <h1 className="page-view__title">Explore</h1>
+          </div>
+          <div className="page-view__tabs" role="tablist" aria-label="Explore views">
               {(["badges", "stats", "timeline", "map"] as ExploreTab[]).map((tab) => (
                 <button
                   key={tab}
@@ -1532,7 +1491,7 @@ function App() {
                 </button>
               ))}
             </div>
-            <div className="utility-panel__content">
+          <div className="page-view__content">
               {activeExploreTab === "stats" ? (
                 <div className="utility-stack stats-dashboard">
                   <section className="stats-kpi-grid">
@@ -1825,163 +1784,34 @@ function App() {
                   {/* Remove Not yet earned section, all badges shown in one grid by group */}
                 </div>
               ) : null}
-            </div>
-          </section>
+          </div>
         </div>
       ) : null}
 
-      {isUtilityPanelOpen ? (
-        <div
-          className="utility-panel-backdrop"
-          role="presentation"
-          onClick={() => setIsUtilityPanelOpen(false)}
-        >
-          <section
-            className="utility-panel"
-            ref={utilitySwipe.sheetRef}
-            role="dialog"
-            aria-modal="true"
-            aria-label={`${floridaGame.branding.appName} utility panel`}
-            onClick={(event) => event.stopPropagation()}
-          >
-            <div className="utility-panel__grabber" aria-hidden="true" {...utilitySwipe.grabberProps} style={{ touchAction: "none" }} />
-            <div className="utility-panel__header">
-              <div>
-                <p className="utility-panel__eyebrow">Utility</p>
-                <h2 className="utility-panel__title">{floridaGame.branding.appName} utility panel</h2>
-              </div>
-            </div>
-            <div className="utility-panel__tabs" role="tablist" aria-label="Utility views">
-              {(["settings", "help", "safe", "about"] as UtilityTab[]).map((tab) => (
-                <button
-                  key={tab}
-                  type="button"
-                  className={`view-toggle__chip ${
-                    activeUtilityTab === tab ? "view-toggle__chip--active" : ""
-                  }`}
-                  role="tab"
-                  aria-selected={activeUtilityTab === tab}
-                  onClick={() => setActiveUtilityTab(tab)}
-                >
-                  {tab === "settings"
-                    ? "Settings"
-                    : tab === "help"
-                      ? "Help"
-                      : tab === "safe"
-                        ? "Safe Use"
-                        : "About"}
-                </button>
-              ))}
-            </div>
-            <div className="utility-panel__content">
-              {activeUtilityTab === "settings" ? (
-                <div className="utility-stack">
-                  <section className="utility-card">
-                    <h3>Main screen controls</h3>
-                    <p className="utility-card__meta" style={{ marginBottom: 8 }}>
-                      These toggles only change which controls appear on the main game screen. Your progress and filter state stay intact.
-                    </p>
-                    <div className="settings-list">
-                      <button
-                        type="button"
-                        className="settings-row settings-row--compact"
-                        onClick={() =>
-                          setTheme((current) => (current === "light" ? "dark" : "light"))
-                        }
-                      >
-                        <span>Dark mode</span>
-                        <span className={`toggle-switch ${theme === "dark" ? "toggle-switch--on" : ""}`} />
-                      </button>
-                      <button
-                        type="button"
-                        className="settings-row settings-row--compact"
-                        onClick={() => toggleUiPreference("showSearch")}
-                      >
-                        <span>Show search</span>
-                        <span className={`toggle-switch ${uiPreferences.showSearch ? "toggle-switch--on" : ""}`} />
-                      </button>
-                      <button
-                        type="button"
-                        className="settings-row settings-row--compact"
-                        onClick={() => toggleUiPreference("showCategories")}
-                      >
-                        <span>Show categories</span>
-                        <span className={`toggle-switch ${uiPreferences.showCategories ? "toggle-switch--on" : ""}`} />
-                      </button>
-                      <button
-                        type="button"
-                        className="settings-row settings-row--compact"
-                        onClick={() => toggleUiPreference("showArrangement")}
-                      >
-                        <span>Show sort</span>
-                        <span className={`toggle-switch ${uiPreferences.showArrangement ? "toggle-switch--on" : ""}`} />
-                      </button>
-                    </div>
-                  </section>
-                  <section className="utility-card utility-card--about">
-                    <h3>App Management</h3>
-                    <button
-                      type="button"
-                      className="view-toggle__chip"
-                      style={{ marginTop: 12, width: undefined, minWidth: 0, whiteSpace: 'nowrap', maxWidth: 'max-content', alignSelf: 'start' }}
-                      onClick={handleForceReload}
-                    >
-                      Force Reload / Sync
-                    </button>
-                  </section>
-                  <section className="utility-card">
-                    <h3>Progress Management</h3>
-                    <div className="utility-card__meta" style={{ marginBottom: 12 }}>
-                      <ol style={{ paddingLeft: 18, margin: 0 }}>
-                        <li>To export your progress, click <strong>Export Progress</strong>. This will download a backup file of your found plates and stats.</li>
-                        <li>To import progress, click <strong>Import Progress</strong> and select a previously exported file. This will restore your found plates and stats from that backup.</li>
-                        <li>Your progress is stored only on this device unless you export and import it elsewhere.</li>
-                      </ol>
-                    </div>
-                    <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 16 }}>
-                      <button
-                        type="button"
-                        className="view-toggle__chip"
-                        onClick={handleExportProgress}
-                        disabled={foundCount === 0}
-                      >
-                        Export Progress
-                      </button>
-                      <label style={{ display: 'inline-block' }}>
-                        <span style={{ display: 'none' }}>Import Progress</span>
-                        <input
-                          type="file"
-                          accept="application/json"
-                          style={{ display: 'none' }}
-                          onChange={handleImportProgress}
-                        />
-                        <button
-                          type="button"
-                          className="view-toggle__chip"
-                          onClick={e => {
-                            const input = (e.currentTarget.previousSibling as HTMLInputElement);
-                            input?.click();
-                          }}
-                        >
-                          Import Progress
-                        </button>
-                      </label>
-                    </div>
-                    <div className="utility-card__meta" style={{ marginBottom: 8 }}>
-                      Clear all found plates, timestamps, and saved locations from this device.
-                    </div>
-                    <button
-                      type="button"
-                      className="clear-discoveries utility-card__action"
-                      onClick={handleClearDiscoveries}
-                      disabled={foundCount === 0}
-                    >
-                      Clear found
-                    </button>
-                  </section>
-                </div>
-              ) : null}
-              {activeUtilityTab === "help" ? (
+      {activeView === "help" ? (
+        <div className="page-view">
+          <div className="page-view__header">
+            <button type="button" className="page-view__back" onClick={() => setActiveView("home")}>
+              <Icon name="chevron-left" size={20} /> Back
+            </button>
+            <h1 className="page-view__title">Help</h1>
+          </div>
+          <div className="page-view__tabs" role="tablist" aria-label="Help views">
+            {(["help", "safe"] as const).map((tab) => (
+              <button
+                key={tab}
+                type="button"
+                className={`view-toggle__chip ${activeHelpTab === tab ? "view-toggle__chip--active" : ""}`}
+                role="tab"
+                aria-selected={activeHelpTab === tab}
+                onClick={() => setActiveHelpTab(tab)}
+              >
+                {tab === "help" ? "Help" : "Safe Use"}
+              </button>
+            ))}
+          </div>
+          <div className="page-view__content">
+              {activeHelpTab === "help" ? (
                 <div className="utility-stack">
                   <section className="utility-card">
                     <h3>Install the app</h3>
@@ -2013,7 +1843,7 @@ function App() {
                   </section>
                 </div>
               ) : null}
-              {activeUtilityTab === "safe" ? (
+              {activeHelpTab === "safe" ? (
                 <div className="utility-stack">
                   <section className="utility-card utility-card--warning">
                     <h3>
@@ -2032,103 +1862,91 @@ function App() {
                   </section>
                 </div>
               ) : null}
-              {activeUtilityTab === "about" ? (
-                <div className="utility-stack">
-                  <section className="utility-card">
-                    <h3>About</h3>
-                    <div className="about-table" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 16, alignItems: 'start', width: '100%' }}>
-                      {/* Row 1 */}
-                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, width: 140, justifySelf: 'center' }}>
-                        <a
-                          className="about-card__logo-link"
-                          href={developer.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          aria-label={`Visit ${developer.name}`}
-                        >
-                          <img
-                            className="about-card__logo"
-                            src={`${import.meta.env.BASE_URL}${developer.logoPath}`}
-                            alt={developer.name}
-                            style={{ maxWidth: 120, height: 'auto', marginBottom: 8, display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
-                          />
-                        </a>
-                      </div>
-                      <div>
-                        <p className="utility-card__meta" style={{ marginBottom: 4 }}>
-                          Developed by{' '}
-                          <a
-                            className="app-footer__link"
-                            href={developer.url}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            {developer.name}
-                          </a>
-                          .
-                        </p>
-                        <p className="utility-card__meta" style={{ marginBottom: 4 }}>
-                          Version {buildInfo.version} • Built {buildDateLabel}
-                        </p>
-                        {buildInfo.branch || buildInfo.commit ? (
-                          <p className="utility-card__meta" style={{ marginBottom: 4 }}>
-                            {buildInfo.branch ? `Branch ${buildInfo.branch}` : null}
-                            {buildInfo.branch && buildInfo.commit ? ' • ' : null}
-                            {buildInfo.commit ? `Commit ${buildInfo.commit}` : null}
-                          </p>
-                        ) : null}
-                        <button
-                          type="button"
-                          className="app-footer__share utility-card__action about-card__share"
-                          onClick={handleShareApp}
-                          style={{ width: 'auto', marginTop: 8 }}
-                        >
-                          Share {floridaGame.branding.appShareName}
-                        </button>
-                      </div>
-                      {/* Row 2 */}
-                      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, width: 140, justifySelf: 'center' }}>
-                        <div style={{ background: '#fff', borderRadius: 8, padding: 8, boxSizing: 'border-box', width: 120, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                          <img
-                            src={`${import.meta.env.BASE_URL}${floridaGame.branding.attribution.logoPath}`}
-                            alt={floridaGame.branding.attribution.logoAlt}
-                            style={{ maxWidth: 104, height: 'auto', display: 'block' }}
-                          />
-                        </div>
-                      </div>
-                      <div>
-                        <p
-                          className="utility-card__meta"
-                          style={{ marginBottom: 0 }}
-                          dangerouslySetInnerHTML={{ __html: floridaGame.branding.attribution.text.replace(
-                            '{agency}',
-                            `<a href="${floridaGame.branding.attribution.agencyUrl}" target="_blank" rel="noopener noreferrer">${floridaGame.branding.attribution.agencyName}</a>`
-                          ) }}
-                        />
-                      </div>
-                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 140, justifySelf: 'center' }}>
-                        <p className="utility-card__meta" style={{ marginBottom: 0, fontWeight: 700 }}>
-                          Icon credits
-                        </p>
-                      </div>
-                      <div>
-                        <p className="utility-card__meta" style={{ marginBottom: 0 }}>
-                          <a
-                            className="app-footer__link"
-                            href="https://www.flaticon.com/authors/freepik"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            Icons created by Freepik - Flaticon
-                          </a>
-                        </p>
+          </div>
+        </div>
+      ) : null}
+
+      {activeView === "settings" ? (
+        <div className="page-view">
+          <div className="page-view__header">
+            <button type="button" className="page-view__back" onClick={() => setActiveView("home")}>
+              <Icon name="chevron-left" size={20} /> Back
+            </button>
+            <h1 className="page-view__title">Settings</h1>
+          </div>
+          <div className="page-view__tabs" role="tablist">
+            {(["settings", "about"] as const).map((tab) => (
+              <button key={tab} type="button" className={`view-toggle__chip ${activeSettingsTab === tab ? "view-toggle__chip--active" : ""}`} role="tab" aria-selected={activeSettingsTab === tab} onClick={() => setActiveSettingsTab(tab)}>
+                {tab === "settings" ? "Settings" : "About"}
+              </button>
+            ))}
+          </div>
+          <div className="page-view__content">
+            {activeSettingsTab === "settings" ? (
+              <div className="utility-stack">
+                <section className="utility-card">
+                  <h3>Main screen controls</h3>
+                  <p className="utility-card__meta" style={{ marginBottom: 8 }}>These toggles only change which controls appear on the main game screen.</p>
+                  <div className="settings-list">
+                    <button type="button" className="settings-row settings-row--compact" onClick={() => setTheme((c) => c === "light" ? "dark" : "light")}><span>Dark mode</span><span className={`toggle-switch ${theme === "dark" ? "toggle-switch--on" : ""}`} /></button>
+                    <button type="button" className="settings-row settings-row--compact" onClick={() => toggleUiPreference("showSearch")}><span>Show search</span><span className={`toggle-switch ${uiPreferences.showSearch ? "toggle-switch--on" : ""}`} /></button>
+                    <button type="button" className="settings-row settings-row--compact" onClick={() => toggleUiPreference("showCategories")}><span>Show categories</span><span className={`toggle-switch ${uiPreferences.showCategories ? "toggle-switch--on" : ""}`} /></button>
+                    <button type="button" className="settings-row settings-row--compact" onClick={() => toggleUiPreference("showArrangement")}><span>Show sort</span><span className={`toggle-switch ${uiPreferences.showArrangement ? "toggle-switch--on" : ""}`} /></button>
+                  </div>
+                </section>
+                <section className="utility-card utility-card--about">
+                  <h3>App Management</h3>
+                  <button type="button" className="view-toggle__chip" style={{ marginTop: 12, whiteSpace: 'nowrap', maxWidth: 'max-content', alignSelf: 'start' }} onClick={handleForceReload}>Force Reload / Sync</button>
+                </section>
+                <section className="utility-card">
+                  <h3>Progress Management</h3>
+                  <div className="utility-card__meta" style={{ marginBottom: 12 }}>
+                    <ol style={{ paddingLeft: 18, margin: 0 }}>
+                      <li>To export your progress, click <strong>Export Progress</strong>.</li>
+                      <li>To import progress, click <strong>Import Progress</strong> and select a backup file.</li>
+                    </ol>
+                  </div>
+                  <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 16 }}>
+                    <button type="button" className="view-toggle__chip" onClick={handleExportProgress} disabled={foundCount === 0}>Export Progress</button>
+                    <label style={{ display: 'inline-block' }}>
+                      <span style={{ display: 'none' }}>Import Progress</span>
+                      <input type="file" accept="application/json" style={{ display: 'none' }} onChange={handleImportProgress} />
+                      <button type="button" className="view-toggle__chip" onClick={e => { (e.currentTarget.previousSibling as HTMLInputElement)?.click(); }}>Import Progress</button>
+                    </label>
+                  </div>
+                  <div className="utility-card__meta" style={{ marginBottom: 8 }}>Clear all found plates from this device.</div>
+                  <button type="button" className="clear-discoveries utility-card__action" onClick={handleClearDiscoveries} disabled={foundCount === 0}>Clear found</button>
+                </section>
+              </div>
+            ) : null}
+            {activeSettingsTab === "about" ? (
+              <div className="utility-stack">
+                <section className="utility-card">
+                  <h3>About</h3>
+                  <div className="about-table" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 16, alignItems: 'start', width: '100%' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, width: 140, justifySelf: 'center' }}>
+                      <a className="about-card__logo-link" href={developer.url} target="_blank" rel="noreferrer" aria-label={`Visit ${developer.name}`}>
+                        <img className="about-card__logo" src={`${import.meta.env.BASE_URL}${developer.logoPath}`} alt={developer.name} style={{ maxWidth: 120, height: 'auto', marginBottom: 8, display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
+                      </a>
+                    </div>
+                    <div>
+                      <p className="utility-card__meta" style={{ marginBottom: 4 }}>Developed by <a className="app-footer__link" href={developer.url} target="_blank" rel="noreferrer">{developer.name}</a>.</p>
+                      <p className="utility-card__meta" style={{ marginBottom: 4 }}>Version {buildInfo.version} • Built {buildDateLabel}</p>
+                      <button type="button" className="app-footer__share utility-card__action about-card__share" onClick={handleShareApp} style={{ width: 'auto', marginTop: 8 }}>Share {floridaGame.branding.appShareName}</button>
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, width: 140, justifySelf: 'center' }}>
+                      <div style={{ background: '#fff', borderRadius: 8, padding: 8, width: 120, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <img src={`${import.meta.env.BASE_URL}${floridaGame.branding.attribution.logoPath}`} alt={floridaGame.branding.attribution.logoAlt} style={{ maxWidth: 104, height: 'auto', display: 'block' }} />
                       </div>
                     </div>
-                  </section>
-                </div>
-              ) : null}
-            </div>
-          </section>
+                    <div>
+                      <p className="utility-card__meta" style={{ marginBottom: 0 }} dangerouslySetInnerHTML={{ __html: floridaGame.branding.attribution.text.replace('{agency}', `<a href="${floridaGame.branding.attribution.agencyUrl}" target="_blank" rel="noopener noreferrer">${floridaGame.branding.attribution.agencyName}</a>`) }} />
+                    </div>
+                  </div>
+                </section>
+              </div>
+            ) : null}
+          </div>
         </div>
       ) : null}
 

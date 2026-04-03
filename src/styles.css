@@ -2036,6 +2036,66 @@ select {
   transform: translateX(20px);
 }
 
+/* ── Full-page views (Explore, Help, Settings) ── */
+
+.page-view {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--page-bg);
+}
+
+.page-view__header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: calc(0.75rem + env(safe-area-inset-top, 0px)) 1rem 0.75rem;
+  background: var(--page-bg);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.page-view__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.25rem 0.25rem 0.25rem 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.page-view__title {
+  flex: 1;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  padding-right: 3rem;
+}
+
+.page-view__tabs {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem 0;
+}
+
+.page-view__content {
+  flex: 1;
+  padding: 0.8rem 1.15rem calc(1.5rem + env(safe-area-inset-bottom, 0px));
+  display: grid;
+  align-content: start;
+  gap: 0.8rem;
+}
+
 .bottom-dock {
   position: fixed;
   left: 0;
