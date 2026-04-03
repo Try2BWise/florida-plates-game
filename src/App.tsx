@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BadgeIcon } from "./components/BadgeIcon";
 import {
   floridaBadgeCounties,
@@ -165,6 +165,44 @@ function getDiscoveryLocationStatus(discovery: PlateDiscoveryMap[string]): strin
 
   return "Location permission unavailable";
 }
+/* ── Swipe-to-dismiss hook ── */
+function useSwipeDismiss(onDismiss: () => void) {
+  const sheetRef = useRef<HTMLDivElement | null>(null);
+  const dragState = useRef({ startY: 0, currentY: 0, isDragging: false });
+
+  const onPointerDown = useCallback((e: React.PointerEvent) => {
+    dragState.current = { startY: e.clientY, currentY: e.clientY, isDragging: true };
+    (e.target as HTMLElement).setPointerCapture(e.pointerId);
+  }, []);
+
+  const onPointerMove = useCallback((e: React.PointerEvent) => {
+    if (!dragState.current.isDragging || !sheetRef.current) return;
+    const deltaY = Math.max(0, e.clientY - dragState.current.startY);
+    dragState.current.currentY = e.clientY;
+    sheetRef.current.style.transform = `translateY(${deltaY}px)`;
+    sheetRef.current.style.transition = "none";
+  }, []);
+
+  const onPointerUp = useCallback(() => {
+    if (!dragState.current.isDragging || !sheetRef.current) return;
+    const deltaY = dragState.current.currentY - dragState.current.startY;
+    dragState.current.isDragging = false;
+    if (deltaY > 80) {
+      sheetRef.current.style.transition = "transform 0.2s ease-out";
+      sheetRef.current.style.transform = "translateY(100%)";
+      setTimeout(onDismiss, 200);
+    } else {
+      sheetRef.current.style.transition = "transform 0.2s ease-out";
+      sheetRef.current.style.transform = "translateY(0)";
+    }
+  }, [onDismiss]);
+
+  return {
+    sheetRef,
+    grabberProps: { onPointerDown, onPointerMove, onPointerUp },
+  };
+}
+
 function App() {
   const appShareUrl = floridaGame.branding.shareUrl;
   const shareMessage = floridaGame.share.appMessage;
@@ -201,8 +239,13 @@ function App() {
   const [activeUtilityTab, setActiveUtilityTab] = useState<UtilityTab>("settings");
   const [selectedCategoryFilter, setSelectedCategoryFilter] = useState<PlateCategory | null>(null);
   const searchInputRef = useRef<HTMLInputElement | null>(null);
-  /* sortMenuRef removed — sheets use backdrop click to dismiss */
   const headerSentinelRef = useRef<HTMLDivElement | null>(null);
+  const categorySwipe = useSwipeDismiss(() => setIsCategorySheetOpen(false));
+  const filterSwipe = useSwipeDismiss(() => setIsFilterSheetOpen(false));
+  const sortSwipe = useSwipeDismiss(() => setIsSortSheetOpen(false));
+  const exploreSwipe = useSwipeDismiss(() => setIsExplorePanelOpen(false));
+  const utilitySwipe = useSwipeDismiss(() => setIsUtilityPanelOpen(false));
+  const previewSwipe = useSwipeDismiss(() => setPreviewPlate(null));
   const [isHeaderCompact, setIsHeaderCompact] = useState(false);
   const resolvingLocalitiesRef = useRef<Set<string>>(new Set());
   const plateById = useMemo(
@@ -1259,65 +1302,62 @@ function App() {
 
       {previewPlate && previewVersion ? (
         <div
-          className="plate-preview-backdrop"
+          className="sheet-backdrop"
+          style={{ zIndex: 33 }}
           role="presentation"
           onClick={() => setPreviewPlate(null)}
         >
           <div
-            className="plate-preview"
+            className="sheet preview-sheet"
+            ref={previewSwipe.sheetRef}
             role="dialog"
             aria-modal="true"
             aria-label={`${previewPlate.name} plate preview`}
-            onClick={() => setPreviewPlate(null)}
+            onClick={(e) => e.stopPropagation()}
           >
-            <button
-              type="button"
-              className="plate-preview__close"
-              aria-label="Close plate preview"
-              onClick={(event) => {
-                event.stopPropagation();
-                setPreviewPlate(null);
-              }}
-            >
-              &#x2715;
-            </button>
-            <div className="plate-preview__image-stage">
-              <img
-                className="plate-preview__image"
-                src={`${import.meta.env.BASE_URL}${previewPlate.image.path}`}
-                alt={previewPlate.name}
-              />
-            </div>
-            <p className="plate-preview__caption">{previewPlate.name}</p>
-            {!normalizedDiscoveries[previewPlate.id] ? (
+            <div className="sheet__header" {...previewSwipe.grabberProps} style={{ touchAction: "none" }}>
+              <h3 className="sheet__title">{previewPlate.name}</h3>
               <button
                 type="button"
-                className="plate-preview__action"
-                onClick={(event) => {
-                  event.stopPropagation();
-                  handleTogglePlate(previewPlate, false);
-                  setPreviewPlate(null);
-                }}
+                className="sheet__close"
+                aria-label="Close plate preview"
+                onClick={() => setPreviewPlate(null)}
               >
-                Found
+                &#x2715;
               </button>
-            ) : null}
-            <div
-              className="plate-preview__details"
-              onClick={(event) => event.stopPropagation()}
-            >
+            </div>
+            <div className="sheet__body">
+              <div className="preview-sheet__image-wrap">
+                <img
+                  className="preview-sheet__image"
+                  src={`${import.meta.env.BASE_URL}${previewPlate.image.path}`}
+                  alt={previewPlate.name}
+                />
+              </div>
               {previewPlate.sponsor ? (
-                <div className="plate-preview__detail-row">
-                  <span className="plate-preview__detail-label">Beneficiary</span>
+                <div className="preview-sheet__row">
+                  <span className="preview-sheet__label">Beneficiary</span>
                   <strong>{previewPlate.sponsor}</strong>
                 </div>
               ) : null}
-              <div className="plate-preview__detail-row">
-                <span className="plate-preview__detail-label">Category</span>
+              <div className="preview-sheet__row">
+                <span className="preview-sheet__label">Category</span>
                 <strong>{previewPlate.category}</strong>
               </div>
               {previewPlate.notes ? (
-                <p className="plate-preview__notes">{previewPlate.notes}</p>
+                <p className="preview-sheet__notes">{previewPlate.notes}</p>
+              ) : null}
+              {!normalizedDiscoveries[previewPlate.id] ? (
+                <button
+                  type="button"
+                  className="preview-sheet__found-btn"
+                  onClick={() => {
+                    handleTogglePlate(previewPlate, false);
+                    setPreviewPlate(null);
+                  }}
+                >
+                  Mark Found
+                </button>
               ) : null}
             </div>
           </div>
@@ -1370,8 +1410,8 @@ function App() {
 
       {isCategorySheetOpen ? (
         <div className="sheet-backdrop" role="presentation" onClick={() => setIsCategorySheetOpen(false)}>
-          <div className="sheet" onClick={(e) => e.stopPropagation()}>
-            <div className="sheet__header">
+          <div className="sheet" ref={categorySwipe.sheetRef} onClick={(e) => e.stopPropagation()}>
+            <div className="sheet__header" {...categorySwipe.grabberProps} style={{ touchAction: "none" }}>
               <h3 className="sheet__title">Category</h3>
               <button type="button" className="sheet__close" onClick={() => setIsCategorySheetOpen(false)} aria-label="Close">&#x2715;</button>
             </div>
@@ -1402,8 +1442,8 @@ function App() {
 
       {isFilterSheetOpen ? (
         <div className="sheet-backdrop" role="presentation" onClick={() => setIsFilterSheetOpen(false)}>
-          <div className="sheet" onClick={(e) => e.stopPropagation()}>
-            <div className="sheet__header">
+          <div className="sheet" ref={filterSwipe.sheetRef} onClick={(e) => e.stopPropagation()}>
+            <div className="sheet__header" {...filterSwipe.grabberProps} style={{ touchAction: "none" }}>
               <h3 className="sheet__title">Filter</h3>
               <button type="button" className="sheet__close" onClick={() => setIsFilterSheetOpen(false)} aria-label="Close">&#x2715;</button>
             </div>
@@ -1426,8 +1466,8 @@ function App() {
 
       {isSortSheetOpen ? (
         <div className="sheet-backdrop" role="presentation" onClick={() => setIsSortSheetOpen(false)}>
-          <div className="sheet" onClick={(e) => e.stopPropagation()}>
-            <div className="sheet__header">
+          <div className="sheet" ref={sortSwipe.sheetRef} onClick={(e) => e.stopPropagation()}>
+            <div className="sheet__header" {...sortSwipe.grabberProps} style={{ touchAction: "none" }}>
               <h3 className="sheet__title">Sort</h3>
               <button type="button" className="sheet__close" onClick={() => setIsSortSheetOpen(false)} aria-label="Close">&#x2715;</button>
             </div>
@@ -1456,12 +1496,13 @@ function App() {
         >
           <section
             className="utility-panel"
+            ref={exploreSwipe.sheetRef}
             role="dialog"
             aria-modal="true"
             aria-label={`${floridaGame.branding.appName} explore panel`}
             onClick={(event) => event.stopPropagation()}
           >
-            <div className="utility-panel__grabber" aria-hidden="true" />
+            <div className="utility-panel__grabber" aria-hidden="true" {...exploreSwipe.grabberProps} style={{ touchAction: "none" }} />
             <div className="utility-panel__header">
               <div>
                 <p className="utility-panel__eyebrow">Explore</p>
@@ -1795,12 +1836,13 @@ function App() {
         >
           <section
             className="utility-panel"
+            ref={utilitySwipe.sheetRef}
             role="dialog"
             aria-modal="true"
             aria-label={`${floridaGame.branding.appName} utility panel`}
             onClick={(event) => event.stopPropagation()}
           >
-            <div className="utility-panel__grabber" aria-hidden="true" />
+            <div className="utility-panel__grabber" aria-hidden="true" {...utilitySwipe.grabberProps} style={{ touchAction: "none" }} />
             <div className="utility-panel__header">
               <div>
                 <p className="utility-panel__eyebrow">Utility</p>
@@ -1845,32 +1887,32 @@ function App() {
                           setTheme((current) => (current === "light" ? "dark" : "light"))
                         }
                       >
-                        <span>Color mode</span>
-                        <strong>{theme === "light" ? "Light" : "Dark"}</strong>
+                        <span>Dark mode</span>
+                        <span className={`toggle-switch ${theme === "dark" ? "toggle-switch--on" : ""}`} />
                       </button>
                       <button
                         type="button"
                         className="settings-row settings-row--compact"
                         onClick={() => toggleUiPreference("showSearch")}
                       >
-                        <span>Show search control</span>
-                        <strong>{uiPreferences.showSearch ? "On" : "Off"}</strong>
+                        <span>Show search</span>
+                        <span className={`toggle-switch ${uiPreferences.showSearch ? "toggle-switch--on" : ""}`} />
                       </button>
                       <button
                         type="button"
                         className="settings-row settings-row--compact"
                         onClick={() => toggleUiPreference("showCategories")}
                       >
-                        <span>Show category buttons</span>
-                        <strong>{uiPreferences.showCategories ? "On" : "Off"}</strong>
+                        <span>Show categories</span>
+                        <span className={`toggle-switch ${uiPreferences.showCategories ? "toggle-switch--on" : ""}`} />
                       </button>
                       <button
                         type="button"
                         className="settings-row settings-row--compact"
                         onClick={() => toggleUiPreference("showArrangement")}
                       >
-                        <span>Show sort buttons</span>
-                        <strong>{uiPreferences.showArrangement ? "On" : "Off"}</strong>
+                        <span>Show sort</span>
+                        <span className={`toggle-switch ${uiPreferences.showArrangement ? "toggle-switch--on" : ""}`} />
                       </button>
                     </div>
                   </section>
