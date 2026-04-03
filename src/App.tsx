@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BadgeIcon } from "./components/BadgeIcon";
+import { Icon } from "./components/Icon";
 import {
   floridaBadgeCounties,
   floridaBadgeGroupLabels,
@@ -1119,7 +1120,7 @@ function App() {
           <div className="control-bar__search-row">
             {uiPreferences.showSearch ? (
               <label className="search-inline" htmlFor="plate-search">
-                <span className="search-inline__icon" aria-hidden="true" />
+                <Icon name="search" size={16} className="search-inline__icon" />
                 <input
                   ref={searchInputRef}
                   id="plate-search"
@@ -1157,7 +1158,7 @@ function App() {
               className={`control-bar__btn ${visibilityFilter !== "all" ? "control-bar__btn--active" : ""}`}
               onClick={() => setIsFilterSheetOpen(true)}
             >
-              <span className="control-bar__filter-icon" aria-hidden="true" />
+              <Icon name="filter" size={14} />
               Filter
             </button>
             {uiPreferences.showArrangement ? (
@@ -1188,7 +1189,7 @@ function App() {
               onClick={() => setIsOnboardingHintDismissed(true)}
               aria-label="Dismiss tip"
             >
-              &#x2715;
+              <Icon name="close" size={12} />
             </button>
           </div>
         ) : null}
@@ -1245,7 +1246,7 @@ function App() {
           }}
           aria-label="Home"
         >
-          <span className="bottom-dock__icon bottom-dock__icon--home" aria-hidden="true" />
+          <Icon name="home" size={22} className="bottom-dock__icon" />
           <span className="bottom-dock__label">Home</span>
         </button>
         <button
@@ -1260,7 +1261,7 @@ function App() {
           }}
           aria-label="Explore"
         >
-          <span className="bottom-dock__icon bottom-dock__icon--globe" aria-hidden="true" />
+          <Icon name="globe" size={22} className="bottom-dock__icon" />
           <span className="bottom-dock__label">Explore</span>
         </button>
         <button
@@ -1277,9 +1278,7 @@ function App() {
           }}
           aria-label="Help"
         >
-          <span className="bottom-dock__icon bottom-dock__icon--help" aria-hidden="true">
-            ?
-          </span>
+          <Icon name="help" size={22} className="bottom-dock__icon" />
           <span className="bottom-dock__label">Help</span>
         </button>
         <button
@@ -1296,7 +1295,7 @@ function App() {
           }}
           aria-label="Settings"
         >
-          <span className="bottom-dock__icon bottom-dock__icon--gear" aria-hidden="true" />
+          <Icon name="gear" size={22} className="bottom-dock__icon" />
           <span className="bottom-dock__label">Settings</span>
         </button>
       </nav>
@@ -1324,7 +1323,7 @@ function App() {
                 aria-label="Close plate preview"
                 onClick={() => setPreviewPlate(null)}
               >
-                &#x2715;
+                <Icon name="close" size={14} />
               </button>
             </div>
             <div className="sheet__body">
@@ -1414,7 +1413,7 @@ function App() {
           <div className="sheet" ref={categorySwipe.sheetRef} onClick={(e) => e.stopPropagation()}>
             <div className="sheet__header" {...categorySwipe.grabberProps} style={{ touchAction: "none" }}>
               <h3 className="sheet__title">Category</h3>
-              <button type="button" className="sheet__close" onClick={() => setIsCategorySheetOpen(false)} aria-label="Close">&#x2715;</button>
+              <button type="button" className="sheet__close" onClick={() => setIsCategorySheetOpen(false)} aria-label="Close"><Icon name="close" size={14} /></button>
             </div>
             <div className="sheet__body">
               <button
@@ -1446,7 +1445,7 @@ function App() {
           <div className="sheet" ref={filterSwipe.sheetRef} onClick={(e) => e.stopPropagation()}>
             <div className="sheet__header" {...filterSwipe.grabberProps} style={{ touchAction: "none" }}>
               <h3 className="sheet__title">Filter</h3>
-              <button type="button" className="sheet__close" onClick={() => setIsFilterSheetOpen(false)} aria-label="Close">&#x2715;</button>
+              <button type="button" className="sheet__close" onClick={() => setIsFilterSheetOpen(false)} aria-label="Close"><Icon name="close" size={14} /></button>
             </div>
             <div className="sheet__body">
               {(["all", "found", "missing"] as PlateVisibilityFilter[]).map((option) => (
@@ -1470,7 +1469,7 @@ function App() {
           <div className="sheet" ref={sortSwipe.sheetRef} onClick={(e) => e.stopPropagation()}>
             <div className="sheet__header" {...sortSwipe.grabberProps} style={{ touchAction: "none" }}>
               <h3 className="sheet__title">Sort</h3>
-              <button type="button" className="sheet__close" onClick={() => setIsSortSheetOpen(false)} aria-label="Close">&#x2715;</button>
+              <button type="button" className="sheet__close" onClick={() => setIsSortSheetOpen(false)} aria-label="Close"><Icon name="close" size={14} /></button>
             </div>
             <div className="sheet__body">
               {([["category", "Categories"], ["az", "A to Z"], ["za", "Z to A"]] as [PlateArrangement, string][]).map(([value, label]) => (
@@ -1806,9 +1805,10 @@ function App() {
                         <section className="badge-group" key={`earned-${group}`}>
                           <div className="badge-group__header">
                             <h4>
-                              <span
-                                className={`badge-group__icon badge-group__icon--${badgeGroupSymbols[group]} badge-group__icon--${group}`}
-                                aria-hidden="true"
+                              <Icon
+                                name={badgeGroupSymbols[group] as import("./components/Icon").IconName}
+                                size={16}
+                                className={`badge-group__icon badge-group__icon--${group}`}
                               />
                               {badgeGroupLabels[group]}
                             </h4>
@@ -2156,9 +2156,10 @@ function App() {
               <section className="utility-card badge-detail-modal__section badge-detail-modal__section--summary">
                 <div className="badge-detail-modal__summary-top">
                   <span className={`badge-chip badge-chip--${activeBadgeDetail.group}`}>
-                    <span
-                      className={`badge-chip__icon badge-group__icon badge-group__icon--${badgeGroupSymbols[activeBadgeDetail.group]} badge-group__icon--${activeBadgeDetail.group}`}
-                      aria-hidden="true"
+                    <Icon
+                      name={badgeGroupSymbols[activeBadgeDetail.group] as import("./components/Icon").IconName}
+                      size={14}
+                      className={`badge-chip__icon badge-group__icon--${activeBadgeDetail.group}`}
                     />
                     <span>{badgeGroupLabels[activeBadgeDetail.group]}</span>
                   </span>

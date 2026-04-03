@@ -1,6 +1,7 @@
 
 import { formatCoordinates, formatDiscoveryTime } from "../lib/format";
 import type { Plate, PlateDiscovery } from "../types";
+import { Icon } from "./Icon";
 
 interface PlateCardProps {
   plate: Plate;
@@ -73,10 +74,11 @@ export function PlateCard({
           isFound ? `Mark ${plate.name} as not found` : `Mark ${plate.name} as found`
         }
       >
-        <span
-          className={isFound ? "plate-card__check" : "plate-card__plus"}
-          aria-hidden="true"
-        />
+        {isFound ? (
+          <Icon name="check-circle" size={28} className="plate-card__check-icon" />
+        ) : (
+          <Icon name="plus-circle" size={24} className="plate-card__plus-icon" />
+        )}
       </button>
     </article>
   );

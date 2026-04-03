@@ -109,7 +109,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: var(--shell-bg);
+  background: var(--page-bg);
   color: var(--text);
 }
 
@@ -1068,53 +1068,12 @@ select {
   -webkit-tap-highlight-color: transparent;
 }
 
-.plate-card__plus {
-  position: relative;
-  display: block;
-  width: 1.6rem;
-  height: 1.6rem;
-  border: 2px solid var(--muted);
-  border-radius: 50%;
+.plate-card__plus-icon {
+  color: var(--muted);
 }
 
-.plate-card__plus::before,
-.plate-card__plus::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: var(--muted);
-  border-radius: 1px;
-  transform: translate(-50%, -50%);
-}
-
-.plate-card__plus::before {
-  width: 0.6rem;
-  height: 2px;
-}
-
-.plate-card__plus::after {
-  width: 2px;
-  height: 0.6rem;
-}
-
-.plate-card__check {
-  display: grid;
-  place-items: center;
-  width: 1.6rem;
-  height: 1.6rem;
-  border-radius: 50%;
-  background: #22c55e;
-}
-
-.plate-card__check::after {
-  content: "";
-  display: block;
-  width: 0.5rem;
-  height: 0.28rem;
-  border-left: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  transform: rotate(-45deg) translateY(-1px);
+.plate-card__check-icon {
+  color: #22c55e;
 }
 
 .plate-preview-backdrop {
@@ -2748,12 +2707,6 @@ select {
   .plate-card__toggle {
     width: 1.8rem;
     height: 1.8rem;
-  }
-
-  .plate-card__plus,
-  .plate-card__check {
-    width: 1.4rem;
-    height: 1.4rem;
   }
 
   .plate-preview__image {
