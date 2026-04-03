@@ -1309,6 +1309,14 @@ select {
   margin: 0;
 }
 
+.utility-card > h3 {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 .utility-card__header {
   display: flex;
   align-items: start;
@@ -1329,8 +1337,8 @@ select {
 
 .utility-card__meta {
   color: var(--muted);
-  font-size: 0.8rem;
-  line-height: 1.4;
+  font-size: 0.84rem;
+  line-height: 1.45;
 }
 
 .utility-card__metric {
@@ -2060,12 +2068,12 @@ select {
 .page-view__back {
   display: inline-flex;
   align-items: center;
-  gap: 0.2rem;
+  gap: 0.15rem;
   background: none;
   border: none;
   color: var(--accent);
-  font-size: 0.88rem;
-  font-weight: 600;
+  font-size: 1.06rem;
+  font-weight: 400;
   cursor: pointer;
   padding: 0.25rem 0.25rem 0.25rem 0;
   -webkit-tap-highlight-color: transparent;
@@ -2074,17 +2082,17 @@ select {
 .page-view__title {
   flex: 1;
   text-align: center;
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 1.06rem;
+  font-weight: 600;
   margin: 0;
-  padding-right: 3rem;
+  padding-right: 3.5rem;
 }
 
 .page-view__tabs {
   display: flex;
   gap: 0.35rem;
   flex-wrap: wrap;
-  padding: 0.75rem 1rem 0;
+  padding: 0.75rem 1.15rem 0;
 }
 
 .page-view__content {
