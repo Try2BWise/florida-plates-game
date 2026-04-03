@@ -126,7 +126,13 @@ export const floridaGame: GameDefinition & {
       line2: "FLORIDA",
       line3: "the sunshine state"
     },
-    attribution: "Specialty plate images are not the intellectual property of Gorilla Grin. They belong to the Florida Department of Highway Safety and Motor Vehicles and are displayed here for identification, educational, and entertainment purposes under a fair use claim."
+    attribution: {
+      text: "Specialty plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim.",
+      agencyName: "Florida Department of Highway Safety and Motor Vehicles",
+      agencyUrl: "https://www.flhsmv.gov/",
+      logoPath: "state-packs/florida/dmv-logo.png",
+      logoAlt: "Florida DHSMV logo"
+    }
   },
   share: {
     appMessage: [

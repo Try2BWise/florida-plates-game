@@ -2089,8 +2089,8 @@ function App() {
                       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, width: 140, justifySelf: 'center' }}>
                         <div style={{ background: '#fff', borderRadius: 8, padding: 8, boxSizing: 'border-box', width: 120, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                           <img
-                            src="https://www.flhsmv.gov/wp-content/themes/flhsmv/images/logo.png"
-                            alt="FLHSMV logo"
+                            src={`${import.meta.env.BASE_URL}${floridaGame.branding.attribution.logoPath}`}
+                            alt={floridaGame.branding.attribution.logoAlt}
                             style={{ maxWidth: 104, height: 'auto', display: 'block' }}
                           />
                         </div>
@@ -2099,9 +2099,9 @@ function App() {
                         <p
                           className="utility-card__meta"
                           style={{ marginBottom: 0 }}
-                          dangerouslySetInnerHTML={{ __html: floridaGame.branding.attribution.replace(
-                            'Florida Department of Highway Safety and Motor Vehicles',
-                            '<a href="https://www.flhsmv.gov/" target="_blank" rel="noopener noreferrer">Florida Department of Highway Safety and Motor Vehicles</a>'
+                          dangerouslySetInnerHTML={{ __html: floridaGame.branding.attribution.text.replace(
+                            '{agency}',
+                            `<a href="${floridaGame.branding.attribution.agencyUrl}" target="_blank" rel="noopener noreferrer">${floridaGame.branding.attribution.agencyName}</a>`
                           ) }}
                         />
                       </div>

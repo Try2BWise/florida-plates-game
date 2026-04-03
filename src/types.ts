@@ -104,7 +104,13 @@ export interface GameBranding {
     line2: string;
     line3: string;
   };
-  attribution: string;
+  attribution: {
+    text: string;
+    agencyName: string;
+    agencyUrl: string;
+    logoPath: string;
+    logoAlt: string;
+  };
 }
 
 export interface GameDefinition {
