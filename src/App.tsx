@@ -188,7 +188,9 @@ function App() {
   const [isClearConfirmOpen, setIsClearConfirmOpen] = useState(false);
   const [isExplorePanelOpen, setIsExplorePanelOpen] = useState(false);
   const [isUtilityPanelOpen, setIsUtilityPanelOpen] = useState(false);
-  const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
+  const [isCategorySheetOpen, setIsCategorySheetOpen] = useState(false);
+  const [isFilterSheetOpen, setIsFilterSheetOpen] = useState(false);
+  const [isSortSheetOpen, setIsSortSheetOpen] = useState(false);
   const [previewPlate, setPreviewPlate] = useState<Plate | null>(null);
   const [activeBadgeDetail, setActiveBadgeDetail] = useState<EvaluatedBadge | null>(null);
   const [activeExploreTab, setActiveExploreTab] = useState<ExploreTab>("badges");
@@ -199,7 +201,7 @@ function App() {
   const [activeUtilityTab, setActiveUtilityTab] = useState<UtilityTab>("settings");
   const [selectedCategoryFilter, setSelectedCategoryFilter] = useState<PlateCategory | null>(null);
   const searchInputRef = useRef<HTMLInputElement | null>(null);
-  const sortMenuRef = useRef<HTMLDivElement | null>(null);
+  /* sortMenuRef removed — sheets use backdrop click to dismiss */
   const headerSentinelRef = useRef<HTMLDivElement | null>(null);
   const [isHeaderCompact, setIsHeaderCompact] = useState(false);
   const resolvingLocalitiesRef = useRef<Set<string>>(new Set());
@@ -223,22 +225,7 @@ function App() {
     saveDiscoveries(discoveries);
   }, [discoveries]);
 
-  useEffect(() => {
-    if (!isSortMenuOpen) return;
-    const handleClickOutside = (event: MouseEvent) => {
-      if (sortMenuRef.current && !sortMenuRef.current.contains(event.target as Node)) {
-        setIsSortMenuOpen(false);
-      }
-    };
-    // Defer listener to avoid catching the same click that opened the menu
-    const id = requestAnimationFrame(() => {
-      document.addEventListener("pointerdown", handleClickOutside);
-    });
-    return () => {
-      cancelAnimationFrame(id);
-      document.removeEventListener("pointerdown", handleClickOutside);
-    };
-  }, [isSortMenuOpen]);
+  /* Sort menu click-outside effect removed — sheets use backdrop dismiss */
 
   useEffect(() => {
     const sentinel = headerSentinelRef.current;
@@ -1084,141 +1071,57 @@ function App() {
           </div>
         </div>
         <div className="control-panel">
-          <div className="control-panel__topline">
-            {uiPreferences.showSearch ? (
-              <label className="search-inline" htmlFor="plate-search">
-                <input
-                  ref={searchInputRef}
-                  id="plate-search"
-                  className="search-inline__input"
-                  type="search"
-                  placeholder="Search names, aliases, and causes"
-                  value={searchTerm}
-                  onChange={(event) => setSearchTerm(event.target.value)}
-                />
-                {searchTerm ? (
-                  <button
-                    type="button"
-                    className="search-inline__clear"
-                    onClick={() => setSearchTerm("")}
-                    aria-label="Clear search"
-                  >
-                    Clear
-                  </button>
-                ) : null}
-              </label>
-            ) : null}
-            {uiPreferences.showCategories ? (
-              <label className="category-select-inline" htmlFor="category-filter">
-                <span className="visually-hidden">Filter by category</span>
-                <select
-                  id="category-filter"
-                  className="category-select-inline__select"
-                  value={selectedCategoryFilter ?? ""}
-                  onChange={(event) => {
-                    const value = event.target.value as PlateCategory | "";
-                    setSelectedCategoryFilter(value || null);
-                  }}
-                >
-                  <option value="">All Categories</option>
-                  {categoryFilterOptions.map(({ category }) => (
-                    <option key={category} value={category}>
-                      {category}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            ) : null}
-          </div>
-          <div className="filter-bar">
-            <div
-              className="segmented-control"
-              role="group"
-              aria-label="Filter by found status"
-            >
-              <span
-                className="segmented-control__indicator"
-                style={{
-                  transform: `translateX(${
-                    visibilityFilter === "all" ? 0 : visibilityFilter === "found" ? 100 : 200
-                  }%)`,
-                }}
+          {uiPreferences.showSearch ? (
+            <label className="search-inline" htmlFor="plate-search">
+              <span className="search-inline__icon" aria-hidden="true" />
+              <input
+                ref={searchInputRef}
+                id="plate-search"
+                className="search-inline__input"
+                type="search"
+                placeholder="Search names, aliases, and causes"
+                value={searchTerm}
+                onChange={(event) => setSearchTerm(event.target.value)}
               />
-              <button
-                type="button"
-                className={`segmented-control__option ${
-                  visibilityFilter === "all" ? "segmented-control__option--active" : ""
-                }`}
-                onClick={() => setVisibilityFilter("all")}
-                aria-pressed={visibilityFilter === "all"}
-              >
-                All
-              </button>
-              <button
-                type="button"
-                className={`segmented-control__option ${
-                  visibilityFilter === "found" ? "segmented-control__option--active" : ""
-                }`}
-                onClick={() => setVisibilityFilter("found")}
-                aria-pressed={visibilityFilter === "found"}
-              >
-                Found
-              </button>
-              <button
-                type="button"
-                className={`segmented-control__option ${
-                  visibilityFilter === "missing" ? "segmented-control__option--active" : ""
-                }`}
-                onClick={() => setVisibilityFilter("missing")}
-                aria-pressed={visibilityFilter === "missing"}
-              >
-                Not found
-              </button>
-            </div>
-            {uiPreferences.showArrangement ? (
-              <div className="sort-wrap" ref={sortMenuRef}>
+              {searchTerm ? (
                 <button
                   type="button"
-                  className={`sort-trigger ${isSortMenuOpen ? "sort-trigger--open" : ""}`}
-                  aria-label={`Sort: ${arrangement === "category" ? "Categories" : arrangement === "az" ? "A to Z" : "Z to A"}`}
-                  aria-expanded={isSortMenuOpen}
-                  aria-haspopup="menu"
-                  onClick={() => setIsSortMenuOpen((prev) => !prev)}
+                  className="search-inline__clear"
+                  onClick={() => setSearchTerm("")}
+                  aria-label="Clear search"
                 >
-                  <span className="sort-trigger__icon" aria-hidden="true" />
+                  Clear
                 </button>
-                {isSortMenuOpen ? (
-                  <div className="sort-menu" role="menu">
-                    <button
-                      type="button"
-                      className={`sort-menu__option ${arrangement === "category" ? "sort-menu__option--active" : ""}`}
-                      role="menuitemradio"
-                      aria-checked={arrangement === "category"}
-                      onClick={() => { setArrangement("category"); setIsSortMenuOpen(false); }}
-                    >
-                      Categories
-                    </button>
-                    <button
-                      type="button"
-                      className={`sort-menu__option ${arrangement === "az" ? "sort-menu__option--active" : ""}`}
-                      role="menuitemradio"
-                      aria-checked={arrangement === "az"}
-                      onClick={() => { setArrangement("az"); setIsSortMenuOpen(false); }}
-                    >
-                      A–Z
-                    </button>
-                    <button
-                      type="button"
-                      className={`sort-menu__option ${arrangement === "za" ? "sort-menu__option--active" : ""}`}
-                      role="menuitemradio"
-                      aria-checked={arrangement === "za"}
-                      onClick={() => { setArrangement("za"); setIsSortMenuOpen(false); }}
-                    >
-                      Z–A
-                    </button>
-                  </div>
-                ) : null}
-              </div>
+              ) : null}
+            </label>
+          ) : null}
+          <div className="control-bar">
+            {uiPreferences.showCategories ? (
+              <button
+                type="button"
+                className="control-bar__btn"
+                onClick={() => setIsCategorySheetOpen(true)}
+              >
+                {selectedCategoryFilter ?? "All Categories"}
+                <span className="control-bar__chevron" aria-hidden="true" />
+              </button>
+            ) : null}
+            <button
+              type="button"
+              className={`control-bar__btn ${visibilityFilter !== "all" ? "control-bar__btn--active" : ""}`}
+              onClick={() => setIsFilterSheetOpen(true)}
+            >
+              <span className="control-bar__filter-icon" aria-hidden="true" />
+              Filter
+            </button>
+            {uiPreferences.showArrangement ? (
+              <button
+                type="button"
+                className="control-bar__btn control-bar__btn--sort"
+                onClick={() => setIsSortSheetOpen(true)}
+              >
+                Sort by: {arrangement === "category" ? "Categories" : arrangement === "az" ? "A–Z" : "Z–A"}
+              </button>
             ) : null}
           </div>
           <p className="control-panel__summary" aria-live="polite">
@@ -1458,6 +1361,88 @@ function App() {
               </button>
             </div>
           </section>
+        </div>
+      ) : null}
+
+      {/* ── Bottom sheets for Category, Filter, Sort ── */}
+
+      {isCategorySheetOpen ? (
+        <div className="sheet-backdrop" role="presentation" onClick={() => setIsCategorySheetOpen(false)}>
+          <div className="sheet" onClick={(e) => e.stopPropagation()}>
+            <div className="sheet__header">
+              <h3 className="sheet__title">Category</h3>
+              <button type="button" className="sheet__close" onClick={() => setIsCategorySheetOpen(false)} aria-label="Close">&#x2715;</button>
+            </div>
+            <div className="sheet__body">
+              <button
+                type="button"
+                className={`sheet__option ${selectedCategoryFilter === null ? "sheet__option--active" : ""}`}
+                onClick={() => { setSelectedCategoryFilter(null); setIsCategorySheetOpen(false); }}
+              >
+                <span className="sheet__radio" aria-hidden="true" />
+                All Categories
+              </button>
+              {categoryFilterOptions.map(({ category }) => (
+                <button
+                  key={category}
+                  type="button"
+                  className={`sheet__option ${selectedCategoryFilter === category ? "sheet__option--active" : ""}`}
+                  onClick={() => { setSelectedCategoryFilter(category); setIsCategorySheetOpen(false); }}
+                >
+                  <span className="sheet__radio" aria-hidden="true" />
+                  {category}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      ) : null}
+
+      {isFilterSheetOpen ? (
+        <div className="sheet-backdrop" role="presentation" onClick={() => setIsFilterSheetOpen(false)}>
+          <div className="sheet" onClick={(e) => e.stopPropagation()}>
+            <div className="sheet__header">
+              <h3 className="sheet__title">Filter</h3>
+              <button type="button" className="sheet__close" onClick={() => setIsFilterSheetOpen(false)} aria-label="Close">&#x2715;</button>
+            </div>
+            <div className="sheet__body">
+              {(["all", "found", "missing"] as PlateVisibilityFilter[]).map((option) => (
+                <button
+                  key={option}
+                  type="button"
+                  className={`sheet__option ${visibilityFilter === option ? "sheet__option--active" : ""}`}
+                  onClick={() => { setVisibilityFilter(option); setIsFilterSheetOpen(false); }}
+                >
+                  <span className="sheet__radio" aria-hidden="true" />
+                  {option === "all" ? "All" : option === "found" ? "Found" : "Not found"}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      ) : null}
+
+      {isSortSheetOpen ? (
+        <div className="sheet-backdrop" role="presentation" onClick={() => setIsSortSheetOpen(false)}>
+          <div className="sheet" onClick={(e) => e.stopPropagation()}>
+            <div className="sheet__header">
+              <h3 className="sheet__title">Sort</h3>
+              <button type="button" className="sheet__close" onClick={() => setIsSortSheetOpen(false)} aria-label="Close">&#x2715;</button>
+            </div>
+            <div className="sheet__body">
+              {([["category", "Categories"], ["az", "A to Z"], ["za", "Z to A"]] as [PlateArrangement, string][]).map(([value, label]) => (
+                <button
+                  key={value}
+                  type="button"
+                  className={`sheet__option ${arrangement === value ? "sheet__option--active" : ""}`}
+                  onClick={() => { setArrangement(value); setIsSortSheetOpen(false); }}
+                >
+                  <span className="sheet__radio" aria-hidden="true" />
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
       ) : null}
 
