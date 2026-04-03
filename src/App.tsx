@@ -170,20 +170,22 @@ function useSwipeDismiss(onDismiss: () => void) {
   const sheetRef = useRef<HTMLDivElement | null>(null);
   const dragState = useRef({ startY: 0, currentY: 0, isDragging: false });
 
-  const onPointerDown = useCallback((e: React.PointerEvent) => {
-    dragState.current = { startY: e.clientY, currentY: e.clientY, isDragging: true };
-    (e.target as HTMLElement).setPointerCapture(e.pointerId);
+  const onTouchStart = useCallback((e: React.TouchEvent) => {
+    const touch = e.touches[0];
+    dragState.current = { startY: touch.clientY, currentY: touch.clientY, isDragging: true };
   }, []);
 
-  const onPointerMove = useCallback((e: React.PointerEvent) => {
+  const onTouchMove = useCallback((e: React.TouchEvent) => {
     if (!dragState.current.isDragging || !sheetRef.current) return;
-    const deltaY = Math.max(0, e.clientY - dragState.current.startY);
-    dragState.current.currentY = e.clientY;
+    const touch = e.touches[0];
+    const deltaY = Math.max(0, touch.clientY - dragState.current.startY);
+    dragState.current.currentY = touch.clientY;
     sheetRef.current.style.transform = `translateY(${deltaY}px)`;
     sheetRef.current.style.transition = "none";
+    if (deltaY > 0) e.preventDefault();
   }, []);
 
-  const onPointerUp = useCallback(() => {
+  const onTouchEnd = useCallback(() => {
     if (!dragState.current.isDragging || !sheetRef.current) return;
     const deltaY = dragState.current.currentY - dragState.current.startY;
     dragState.current.isDragging = false;
@@ -199,7 +201,7 @@ function useSwipeDismiss(onDismiss: () => void) {
 
   return {
     sheetRef,
-    grabberProps: { onPointerDown, onPointerMove, onPointerUp },
+    grabberProps: { onTouchStart, onTouchMove, onTouchEnd },
   };
 }
 
@@ -1146,7 +1148,6 @@ function App() {
                 onClick={() => setIsCategorySheetOpen(true)}
               >
                 {selectedCategoryFilter ?? "All Categories"}
-                <span className="control-bar__chevron" aria-hidden="true" />
               </button>
             ) : null}
           </div>

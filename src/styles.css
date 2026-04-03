@@ -73,7 +73,7 @@
     linear-gradient(180deg, #fefae0 0%, #f6f0d6 35%, #f4efe8 100%);
   --page-bg: #f7f0da;
   --card-border: rgba(18, 52, 59, 0.1);
-  --card-shadow: 0 16px 30px rgba(18, 52, 59, 0.08);
+  --card-shadow: 0 2px 8px rgba(18, 52, 59, 0.06);
   --control-active-bg: #0f4c5c;
   --control-active-text: #f8fcfd;
 }
@@ -84,14 +84,14 @@
   --accent-soft: rgba(123, 223, 242, 0.14);
   --muted: #a1b4bd;
   --text: #eef6f8;
-  --surface: rgba(12, 26, 34, 0.84);
-  --surface-strong: rgba(12, 26, 34, 0.74);
+  --surface: rgba(16, 32, 42, 0.6);
+  --surface-strong: rgba(16, 32, 42, 0.4);
   --shell-bg:
-    radial-gradient(circle at top, rgba(123, 223, 242, 0.18), transparent 24rem),
+    radial-gradient(circle at top, rgba(123, 223, 242, 0.12), transparent 24rem),
     linear-gradient(180deg, #08141b 0%, #0d1d26 45%, #112530 100%);
-  --page-bg: #08141b;
-  --card-border: rgba(180, 211, 221, 0.14);
-  --card-shadow: 0 20px 34px rgba(0, 0, 0, 0.28);
+  --page-bg: #0a1820;
+  --card-border: rgba(180, 211, 221, 0.1);
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   --control-active-bg: #b8f2ff;
   --control-active-text: #062530;
 }
@@ -139,7 +139,7 @@ select {
 .app-shell {
   width: min(100%, var(--shell-width));
   margin: 0 auto;
-  padding: calc(1.2rem + env(safe-area-inset-top, 0px)) 1rem
+  padding: calc(1.2rem + env(safe-area-inset-top, 0px)) 1.15rem
     calc(8.2rem + env(safe-area-inset-bottom, 0px));
 }
 
@@ -158,8 +158,7 @@ select {
   gap: 0.65rem;
   padding: 0.75rem 0 0.8rem;
   margin-bottom: 0.75rem;
-  backdrop-filter: blur(18px);
-  background: linear-gradient(180deg, var(--page-bg), transparent);
+  background: var(--page-bg);
 }
 
 /* ── Compact header — hide filter/sort row ── */
@@ -388,11 +387,11 @@ select {
 .control-panel {
   display: grid;
   gap: 0.45rem;
-  padding: 0.62rem 0.7rem 0.68rem;
+  padding: 0.45rem 0 0.45rem;
   border: none;
-  border-radius: 1rem;
-  background: var(--surface-strong);
-  box-shadow: var(--card-shadow);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 /* .control-panel__topline removed — replaced by control-bar */
@@ -538,7 +537,7 @@ select {
   min-height: 2rem;
   padding: 0.34rem 0.68rem;
   border: 1px solid var(--card-border);
-  border-radius: 999px;
+  border-radius: 0.62rem;
   background: transparent;
   color: var(--text);
   font-size: 0.74rem;
@@ -644,6 +643,7 @@ select {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 0 0.25rem;
+  cursor: grab;
 }
 
 .sheet__title {
@@ -942,7 +942,7 @@ select {
 
 .plate-group {
   display: grid;
-  gap: 0.55rem;
+  gap: 0;
   scroll-margin-top: calc(8.5rem + env(safe-area-inset-top, 0px));
 }
 
@@ -951,6 +951,7 @@ select {
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
+  padding-bottom: 0.35rem;
 }
 
 .plate-group__heading h2 {
@@ -968,7 +969,7 @@ select {
 
 .plate-list {
   display: grid;
-  gap: 0.5rem;
+  gap: 0;
 }
 
 .plate-card {
@@ -977,13 +978,18 @@ select {
   gap: 0.5rem;
   align-items: center;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.72rem 0.2rem;
   border: none;
-  border-radius: 1rem;
-  background: var(--surface);
-  box-shadow: var(--card-shadow);
+  border-bottom: 1px solid var(--card-border);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   color: inherit;
   text-align: left;
+}
+
+.plate-card:last-child {
+  border-bottom: none;
 }
 
 .plate-card__image-button,
@@ -1421,6 +1427,16 @@ select {
 
 .utility-panel__grabber {
   justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 28px;
+  cursor: grab;
+}
+
+.utility-panel__grabber::after {
+  content: "";
   width: 36px;
   height: 5px;
   border-radius: 3px;
@@ -2710,8 +2726,7 @@ select {
   .plate-card {
     grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr) 2rem;
     gap: 0.38rem;
-    padding: 0.38rem;
-    border-radius: 0.85rem;
+    padding: 0.55rem 0.1rem;
   }
 
   .plate-card__image-wrap {
