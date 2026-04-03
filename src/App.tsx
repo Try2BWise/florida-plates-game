@@ -1071,31 +1071,31 @@ function App() {
           </div>
         </div>
         <div className="control-panel">
-          {uiPreferences.showSearch ? (
-            <label className="search-inline" htmlFor="plate-search">
-              <span className="search-inline__icon" aria-hidden="true" />
-              <input
-                ref={searchInputRef}
-                id="plate-search"
-                className="search-inline__input"
-                type="search"
-                placeholder="Search names, aliases, and causes"
-                value={searchTerm}
-                onChange={(event) => setSearchTerm(event.target.value)}
-              />
-              {searchTerm ? (
-                <button
-                  type="button"
-                  className="search-inline__clear"
-                  onClick={() => setSearchTerm("")}
-                  aria-label="Clear search"
-                >
-                  Clear
-                </button>
-              ) : null}
-            </label>
-          ) : null}
-          <div className="control-bar">
+          <div className="control-bar__search-row">
+            {uiPreferences.showSearch ? (
+              <label className="search-inline" htmlFor="plate-search">
+                <span className="search-inline__icon" aria-hidden="true" />
+                <input
+                  ref={searchInputRef}
+                  id="plate-search"
+                  className="search-inline__input"
+                  type="search"
+                  placeholder="Search names, aliases, and causes"
+                  value={searchTerm}
+                  onChange={(event) => setSearchTerm(event.target.value)}
+                />
+                {searchTerm ? (
+                  <button
+                    type="button"
+                    className="search-inline__clear"
+                    onClick={() => setSearchTerm("")}
+                    aria-label="Clear search"
+                  >
+                    Clear
+                  </button>
+                ) : null}
+              </label>
+            ) : null}
             {uiPreferences.showCategories ? (
               <button
                 type="button"
@@ -1106,6 +1106,8 @@ function App() {
                 <span className="control-bar__chevron" aria-hidden="true" />
               </button>
             ) : null}
+          </div>
+          <div className="control-bar__filter-sort">
             <button
               type="button"
               className={`control-bar__btn ${visibilityFilter !== "all" ? "control-bar__btn--active" : ""}`}
@@ -1127,25 +1129,25 @@ function App() {
           <p className="control-panel__summary" aria-live="polite">
             Showing {visiblePlateCount} of {plates.length} plates
           </p>
-          {!isOnboardingHintDismissed ? (
-            <div className="onboarding-tip" role="status">
-              <p className="onboarding-tip__text">
-                Tap image to preview &middot; Tap &#x2295; to mark found
-              </p>
-              <button
-                type="button"
-                className="onboarding-tip__dismiss"
-                onClick={() => setIsOnboardingHintDismissed(true)}
-                aria-label="Dismiss tip"
-              >
-                &#x2715;
-              </button>
-            </div>
-          ) : null}
         </div>
       </header>
 
       <main className="plate-groups">
+        {!isOnboardingHintDismissed ? (
+          <div className="onboarding-tip" role="status">
+            <p className="onboarding-tip__text">
+              Tap image to preview &middot; Tap &#x2295; to mark found
+            </p>
+            <button
+              type="button"
+              className="onboarding-tip__dismiss"
+              onClick={() => setIsOnboardingHintDismissed(true)}
+              aria-label="Dismiss tip"
+            >
+              &#x2715;
+            </button>
+          </div>
+        ) : null}
         {filteredGroups.length > 0 ? (
           filteredGroups.map(({ category, plates: categoryPlates }, index) => (
             <section

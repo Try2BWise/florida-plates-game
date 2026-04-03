@@ -162,16 +162,7 @@ select {
   background: linear-gradient(180deg, var(--page-bg), transparent);
 }
 
-/* ── Compact header transitions ── */
-
-.app-header--compact .app-header__top {
-  gap: 0.5rem;
-}
-
-.app-header--compact .welcome-sign {
-  transform: scale(0.62);
-  transform-origin: left center;
-}
+/* ── Compact header — hide filter/sort row ── */
 
 .app-header--compact .app-header__eyebrow {
   opacity: 0;
@@ -179,14 +170,18 @@ select {
   overflow: hidden;
 }
 
-/* Old meter compact overrides removed — replaced by KPI system */
+.app-header--compact .control-bar__filter-sort {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin-top: -0.45rem;
+}
 
 .app-header__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
-  transition: gap 0.25s ease;
 }
 
 .app-header__title-block {
@@ -231,8 +226,6 @@ select {
     inset 0 0 0 1px rgba(6, 33, 84, 0.32),
     0 14px 24px rgba(10, 42, 100, 0.18);
   overflow: hidden;
-  transform-origin: left center;
-  transition: transform 0.25s ease;
 }
 
 .welcome-sign::before,
@@ -342,18 +335,7 @@ select {
   flex-shrink: 0;
 }
 
-.app-header--compact .app-header__kpi-value {
-  font-size: 1.1rem;
-}
-
-.app-header--compact .app-header__kpi-context {
-  opacity: 0;
-  max-height: 0;
-}
-
-.app-header--compact .app-header__kpi-divider {
-  height: 1.2rem;
-}
+/* KPI stays full size on scroll — no compact overrides */
 
 .category-jump {
   display: flex;
@@ -530,11 +512,23 @@ select {
 
 /* ── Control bar (Category / Filter / Sort triggers) ── */
 
-.control-bar {
+.control-bar__search-row {
   display: flex;
   align-items: center;
   gap: 0.45rem;
-  flex-wrap: wrap;
+}
+
+.control-bar__search-row .search-inline {
+  flex: 1;
+}
+
+.control-bar__filter-sort {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  max-height: 3rem;
+  opacity: 1;
+  transition: max-height 0.25s ease, opacity 0.2s ease, margin-top 0.25s ease;
 }
 
 .control-bar__btn {
