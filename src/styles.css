@@ -54,7 +54,8 @@
 }
 :root {
   color-scheme: light;
-  font-family: "Avenir Next", "Trebuchet MS", "Gill Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", system-ui, sans-serif;
+  font-size: 17px;
   line-height: 1.4;
   font-weight: 400;
   font-synthesis: none;
@@ -501,7 +502,7 @@ select {
   border-radius: 0.62rem;
   background: transparent;
   color: var(--text);
-  font-size: 0.74rem;
+  font-size: 0.82rem;
   font-weight: 600;
   white-space: nowrap;
   cursor: pointer;
@@ -731,7 +732,7 @@ select {
 .control-panel__summary {
   margin: 0;
   color: var(--muted);
-  font-size: 0.75rem;
+  font-size: 0.82rem;
 }
 
 .onboarding-tip {
@@ -957,16 +958,16 @@ select {
 
 .plate-card__name {
   color: color-mix(in srgb, var(--text) 96%, #000 4%);
-  font-size: 1.02rem;
-  font-weight: 700;
-  line-height: 1.12;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.18;
   text-wrap: balance;
 }
 
 .plate-card__meta {
   color: var(--muted);
-  font-size: 0.62rem;
-  line-height: 1.25;
+  font-size: 0.76rem;
+  line-height: 1.3;
 }
 
 .plate-card__meta--muted {
@@ -2151,8 +2152,8 @@ select {
 }
 
 .bottom-dock__label {
-  font-size: 0.68rem;
-  font-weight: 700;
+  font-size: 0.65rem;
+  font-weight: 600;
   line-height: 1;
 }
 /* Old CSS dock icons removed — replaced by SVG Icon component */
