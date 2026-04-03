@@ -95,9 +95,6 @@ export interface GameBranding {
   appShareName: string;
   shareUrl: string;
   appTagline: string;
-  developerName: string;
-  developerUrl: string;
-  developerLogoPath: string;
   headerImage: {
     type: "welcome-sign";
     line1: string;

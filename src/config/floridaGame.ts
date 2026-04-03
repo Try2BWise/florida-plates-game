@@ -117,9 +117,6 @@ export const floridaGame: GameDefinition & {
     appShareName: "FL Plates",
     shareUrl: "https://gorillagrin.com/florida-plates-game/",
     appTagline: "Florida plate tracker",
-    developerName: "Gorilla Grin",
-    developerUrl: "https://gorillagrin.com",
-    developerLogoPath: "gorilla-grin-horizontal.png",
     headerImage: {
       type: "welcome-sign",
       line1: "Welcome to",

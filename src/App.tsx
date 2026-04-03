@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BadgeIcon } from "./components/BadgeIcon";
+import { developer } from "./config/developer";
 import { Icon } from "./components/Icon";
 import {
   floridaBadgeCounties,
@@ -2040,15 +2041,15 @@ function App() {
                       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, width: 140, justifySelf: 'center' }}>
                         <a
                           className="about-card__logo-link"
-                          href={floridaGame.branding.developerUrl}
+                          href={developer.url}
                           target="_blank"
                           rel="noreferrer"
-                          aria-label={`Visit ${floridaGame.branding.developerName}`}
+                          aria-label={`Visit ${developer.name}`}
                         >
                           <img
                             className="about-card__logo"
-                            src={`${import.meta.env.BASE_URL}${floridaGame.branding.developerLogoPath}`}
-                            alt={floridaGame.branding.developerName}
+                            src={`${import.meta.env.BASE_URL}${developer.logoPath}`}
+                            alt={developer.name}
                             style={{ maxWidth: 120, height: 'auto', marginBottom: 8, display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
                           />
                         </a>
@@ -2058,11 +2059,11 @@ function App() {
                           Developed by{' '}
                           <a
                             className="app-footer__link"
-                            href={floridaGame.branding.developerUrl}
+                            href={developer.url}
                             target="_blank"
                             rel="noreferrer"
                           >
-                            {floridaGame.branding.developerName}
+                            {developer.name}
                           </a>
                           .
                         </p>
