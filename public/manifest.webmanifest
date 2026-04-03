@@ -1,8 +1,8 @@
 {
   "id": ".",
-  "name": "FL Plates",
-  "short_name": "FL Plates",
-  "description": "Track Florida license plates you spot on the road, even when you're offline.",
+  "name": "State Plates",
+  "short_name": "State Plates",
+  "description": "Track license plates you spot on the road, even when you're offline.",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

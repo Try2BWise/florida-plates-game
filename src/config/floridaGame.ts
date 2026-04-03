@@ -119,7 +119,14 @@ export const floridaGame: GameDefinition & {
     appTagline: "Florida plate tracker",
     developerName: "Gorilla Grin",
     developerUrl: "https://gorillagrin.com",
-    developerLogoPath: "gorilla-grin-horizontal.png"
+    developerLogoPath: "gorilla-grin-horizontal.png",
+    headerImage: {
+      type: "welcome-sign",
+      line1: "Welcome to",
+      line2: "FLORIDA",
+      line3: "the sunshine state"
+    },
+    attribution: "Specialty plate images are not the intellectual property of Gorilla Grin. They belong to the Florida Department of Highway Safety and Motor Vehicles and are displayed here for identification, educational, and entertainment purposes under a fair use claim."
   },
   share: {
     appMessage: [

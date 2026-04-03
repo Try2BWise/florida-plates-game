@@ -1088,10 +1088,10 @@ function App() {
       <header className={`app-header ${isHeaderCompact ? "app-header--compact" : ""}`}>
         <div className="app-header__top">
           <div className="app-header__title-block app-header__title-block--sign">
-            <div className="welcome-sign" aria-label="Florida plate tracker">
-              <span className="welcome-sign__welcome">Welcome to</span>
-              <span className="welcome-sign__state">FLORIDA</span>
-              <span className="welcome-sign__tagline">the sunshine state</span>
+            <div className="welcome-sign" aria-label={floridaGame.branding.appTagline}>
+              <span className="welcome-sign__welcome">{floridaGame.branding.headerImage.line1}</span>
+              <span className="welcome-sign__state">{floridaGame.branding.headerImage.line2}</span>
+              <span className="welcome-sign__tagline">{floridaGame.branding.headerImage.line3}</span>
             </div>
             <p className="app-header__eyebrow">{floridaGame.branding.appTagline}</p>
           </div>
@@ -2082,7 +2082,7 @@ function App() {
                           onClick={handleShareApp}
                           style={{ width: 'auto', marginTop: 8 }}
                         >
-                          Share FL Plates
+                          Share {floridaGame.branding.appShareName}
                         </button>
                       </div>
                       {/* Row 2 */}
@@ -2099,7 +2099,7 @@ function App() {
                         <p
                           className="utility-card__meta"
                           style={{ marginBottom: 0 }}
-                          dangerouslySetInnerHTML={{ __html: floridaGame.about.fairUseNotice.replace(
+                          dangerouslySetInnerHTML={{ __html: floridaGame.branding.attribution.replace(
                             'Florida Department of Highway Safety and Motor Vehicles',
                             '<a href="https://www.flhsmv.gov/" target="_blank" rel="noopener noreferrer">Florida Department of Highway Safety and Motor Vehicles</a>'
                           ) }}

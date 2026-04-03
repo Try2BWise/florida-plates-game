@@ -98,6 +98,13 @@ export interface GameBranding {
   developerName: string;
   developerUrl: string;
   developerLogoPath: string;
+  headerImage: {
+    type: "welcome-sign";
+    line1: string;
+    line2: string;
+    line3: string;
+  };
+  attribution: string;
 }
 
 export interface GameDefinition {
