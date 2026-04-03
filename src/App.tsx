@@ -188,6 +188,7 @@ function App() {
   const [isClearConfirmOpen, setIsClearConfirmOpen] = useState(false);
   const [isExplorePanelOpen, setIsExplorePanelOpen] = useState(false);
   const [isUtilityPanelOpen, setIsUtilityPanelOpen] = useState(false);
+  const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
   const [previewPlate, setPreviewPlate] = useState<Plate | null>(null);
   const [activeBadgeDetail, setActiveBadgeDetail] = useState<EvaluatedBadge | null>(null);
   const [activeExploreTab, setActiveExploreTab] = useState<ExploreTab>("badges");
@@ -198,6 +199,9 @@ function App() {
   const [activeUtilityTab, setActiveUtilityTab] = useState<UtilityTab>("settings");
   const [selectedCategoryFilter, setSelectedCategoryFilter] = useState<PlateCategory | null>(null);
   const searchInputRef = useRef<HTMLInputElement | null>(null);
+  const sortMenuRef = useRef<HTMLDivElement | null>(null);
+  const headerSentinelRef = useRef<HTMLDivElement | null>(null);
+  const [isHeaderCompact, setIsHeaderCompact] = useState(false);
   const resolvingLocalitiesRef = useRef<Set<string>>(new Set());
   const plateById = useMemo(
     () => new Map(plates.map((plate) => [plate.id, plate])),
@@ -218,6 +222,34 @@ function App() {
   useEffect(() => {
     saveDiscoveries(discoveries);
   }, [discoveries]);
+
+  useEffect(() => {
+    if (!isSortMenuOpen) return;
+    const handleClickOutside = (event: MouseEvent) => {
+      if (sortMenuRef.current && !sortMenuRef.current.contains(event.target as Node)) {
+        setIsSortMenuOpen(false);
+      }
+    };
+    // Defer listener to avoid catching the same click that opened the menu
+    const id = requestAnimationFrame(() => {
+      document.addEventListener("pointerdown", handleClickOutside);
+    });
+    return () => {
+      cancelAnimationFrame(id);
+      document.removeEventListener("pointerdown", handleClickOutside);
+    };
+  }, [isSortMenuOpen]);
+
+  useEffect(() => {
+    const sentinel = headerSentinelRef.current;
+    if (!sentinel) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsHeaderCompact(!entry.isIntersecting),
+      { threshold: 0 }
+    );
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -1019,7 +1051,8 @@ function App() {
 
   return (
     <div className="app-shell">
-      <header className="app-header">
+      <div ref={headerSentinelRef} className="header-sentinel" aria-hidden="true" />
+      <header className={`app-header ${isHeaderCompact ? "app-header--compact" : ""}`}>
         <div className="app-header__top">
           <div className="app-header__title-block app-header__title-block--sign">
             <div className="welcome-sign" aria-label="Florida plate tracker">
@@ -1103,16 +1136,24 @@ function App() {
               </label>
             ) : null}
           </div>
-          <div className="control-panel__scroller">
+          <div className="filter-bar">
             <div
-              className="view-toggle"
+              className="segmented-control"
               role="group"
-              aria-label="Filter by found status and arrangement"
+              aria-label="Filter by found status"
             >
+              <span
+                className="segmented-control__indicator"
+                style={{
+                  transform: `translateX(${
+                    visibilityFilter === "all" ? 0 : visibilityFilter === "found" ? 100 : 200
+                  }%)`,
+                }}
+              />
               <button
                 type="button"
-                className={`view-toggle__chip ${
-                  visibilityFilter === "all" ? "view-toggle__chip--active" : ""
+                className={`segmented-control__option ${
+                  visibilityFilter === "all" ? "segmented-control__option--active" : ""
                 }`}
                 onClick={() => setVisibilityFilter("all")}
                 aria-pressed={visibilityFilter === "all"}
@@ -1121,8 +1162,8 @@ function App() {
               </button>
               <button
                 type="button"
-                className={`view-toggle__chip ${
-                  visibilityFilter === "found" ? "view-toggle__chip--active" : ""
+                className={`segmented-control__option ${
+                  visibilityFilter === "found" ? "segmented-control__option--active" : ""
                 }`}
                 onClick={() => setVisibilityFilter("found")}
                 aria-pressed={visibilityFilter === "found"}
@@ -1131,71 +1172,78 @@ function App() {
               </button>
               <button
                 type="button"
-                className={`view-toggle__chip ${
-                  visibilityFilter === "missing" ? "view-toggle__chip--active" : ""
+                className={`segmented-control__option ${
+                  visibilityFilter === "missing" ? "segmented-control__option--active" : ""
                 }`}
                 onClick={() => setVisibilityFilter("missing")}
                 aria-pressed={visibilityFilter === "missing"}
               >
                 Not found
               </button>
-              {uiPreferences.showArrangement ? (
-                <>
-              <button
-                type="button"
-                className={`view-toggle__chip ${
-                  arrangement === "category" ? "view-toggle__chip--active" : ""
-                }`}
-                onClick={() => setArrangement("category")}
-                aria-pressed={arrangement === "category"}
-              >
-                Categories
-              </button>
-              <button
-                type="button"
-                className={`view-toggle__chip ${
-                  arrangement === "az" ? "view-toggle__chip--active" : ""
-                }`}
-                onClick={() => setArrangement("az")}
-                aria-pressed={arrangement === "az"}
-              >
-                A-Z
-              </button>
-              <button
-                type="button"
-                className={`view-toggle__chip ${
-                  arrangement === "za" ? "view-toggle__chip--active" : ""
-                }`}
-                onClick={() => setArrangement("za")}
-                aria-pressed={arrangement === "za"}
-              >
-                Z-A
-              </button>
-                </>
-              ) : null}
             </div>
+            {uiPreferences.showArrangement ? (
+              <div className="sort-wrap" ref={sortMenuRef}>
+                <button
+                  type="button"
+                  className={`sort-trigger ${isSortMenuOpen ? "sort-trigger--open" : ""}`}
+                  aria-label={`Sort: ${arrangement === "category" ? "Categories" : arrangement === "az" ? "A to Z" : "Z to A"}`}
+                  aria-expanded={isSortMenuOpen}
+                  aria-haspopup="menu"
+                  onClick={() => setIsSortMenuOpen((prev) => !prev)}
+                >
+                  <span className="sort-trigger__icon" aria-hidden="true" />
+                </button>
+                {isSortMenuOpen ? (
+                  <div className="sort-menu" role="menu">
+                    <button
+                      type="button"
+                      className={`sort-menu__option ${arrangement === "category" ? "sort-menu__option--active" : ""}`}
+                      role="menuitemradio"
+                      aria-checked={arrangement === "category"}
+                      onClick={() => { setArrangement("category"); setIsSortMenuOpen(false); }}
+                    >
+                      Categories
+                    </button>
+                    <button
+                      type="button"
+                      className={`sort-menu__option ${arrangement === "az" ? "sort-menu__option--active" : ""}`}
+                      role="menuitemradio"
+                      aria-checked={arrangement === "az"}
+                      onClick={() => { setArrangement("az"); setIsSortMenuOpen(false); }}
+                    >
+                      A–Z
+                    </button>
+                    <button
+                      type="button"
+                      className={`sort-menu__option ${arrangement === "za" ? "sort-menu__option--active" : ""}`}
+                      role="menuitemradio"
+                      aria-checked={arrangement === "za"}
+                      onClick={() => { setArrangement("za"); setIsSortMenuOpen(false); }}
+                    >
+                      Z–A
+                    </button>
+                  </div>
+                ) : null}
+              </div>
+            ) : null}
           </div>
           <p className="control-panel__summary" aria-live="polite">
             Showing {visiblePlateCount} of {plates.length} plates
           </p>
           {!isOnboardingHintDismissed ? (
-            <section className="onboarding-tip" aria-label="How to interact with plate tiles">
-              <div className="onboarding-tip__content">
-                <p className="onboarding-tip__title">Quick tip</p>
-                <p className="onboarding-tip__text">Tap a plate image to enlarge it.</p>
-                <p className="onboarding-tip__text">
-                  Tap the title area to mark it found.
-                </p>
-              </div>
+            <div className="onboarding-tip" role="status">
+              <p className="onboarding-tip__text">
+                Tap image to preview &middot; Tap name to mark found
+              </p>
               <button
                 type="button"
                 className="onboarding-tip__dismiss"
                 onClick={() => setIsOnboardingHintDismissed(true)}
-                aria-label="Dismiss quick tip"
+                aria-label="Dismiss tip"
               >
-                Dismiss
+                &#x2715;
               </button>
-            </section>
+            </div>
           ) : null}
         </div>
       </header>
@@ -1323,6 +1371,17 @@ function App() {
             aria-label={`${previewPlate.name} plate preview`}
             onClick={() => setPreviewPlate(null)}
           >
+            <button
+              type="button"
+              className="plate-preview__close"
+              aria-label="Close plate preview"
+              onClick={(event) => {
+                event.stopPropagation();
+                setPreviewPlate(null);
+              }}
+            >
+              &#x2715;
+            </button>
             <div className="plate-preview__image-stage">
               <img
                 className="plate-preview__image"
@@ -1421,19 +1480,12 @@ function App() {
             aria-label={`${floridaGame.branding.appName} explore panel`}
             onClick={(event) => event.stopPropagation()}
           >
+            <div className="utility-panel__grabber" aria-hidden="true" />
             <div className="utility-panel__header">
               <div>
                 <p className="utility-panel__eyebrow">Explore</p>
                 <h2 className="utility-panel__title">{floridaGame.branding.appName} explore panel</h2>
               </div>
-              <button
-                type="button"
-                className="utility-panel__close"
-                onClick={() => setIsExplorePanelOpen(false)}
-                aria-label="Close explore panel"
-              >
-                Close
-              </button>
             </div>
             <div className="utility-panel__tabs" role="tablist" aria-label="Explore views">
               {(["badges", "stats", "timeline", "map"] as ExploreTab[]).map((tab) => (
@@ -1767,19 +1819,12 @@ function App() {
             aria-label={`${floridaGame.branding.appName} utility panel`}
             onClick={(event) => event.stopPropagation()}
           >
+            <div className="utility-panel__grabber" aria-hidden="true" />
             <div className="utility-panel__header">
               <div>
                 <p className="utility-panel__eyebrow">Utility</p>
                 <h2 className="utility-panel__title">{floridaGame.branding.appName} utility panel</h2>
               </div>
-              <button
-                type="button"
-                className="utility-panel__close"
-                onClick={() => setIsUtilityPanelOpen(false)}
-                aria-label="Close utility panel"
-              >
-                Close
-              </button>
             </div>
             <div className="utility-panel__tabs" role="tablist" aria-label="Utility views">
               {(["settings", "help", "safe", "about"] as UtilityTab[]).map((tab) => (
@@ -2187,7 +2232,4 @@ function App() {
 }
 
 export default App;
-
-
-
 
