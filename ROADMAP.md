@@ -146,7 +146,32 @@ Still to do:
 - move more Florida-specific grouping and progression logic out of the main app flow
 - make more of the browse/search behavior consume declarative game data rather than Florida assumptions
 
-## v1.6
+## Shipped In v1.6.0
+
+`v1.6.0` was a comprehensive iOS-native UI overhaul, aligning the app with iOS 26 design patterns and the American Express app's interaction model.
+
+### Highlights
+
+- plate cards redesigned with explicit +/✓ toggle icons replacing opacity dimming
+- iOS segmented control replaced with bottom-sheet Filter, Sort, and Category selectors
+- KPI-style header stats with large hero numbers and context labels
+- full-width anchored bottom navigation bar (replaces floating pill dock)
+- sheet slide-up animations and swipe-to-dismiss gestures on all panels
+- plate preview converted from centered overlay to bottom sheet
+- iOS toggle switches in Settings (replaces On/Off text)
+- compact header: filter/sort collapse on scroll, search + category stay sticky
+- search bar restyled as dark recessed field with magnifying glass icon
+- borders softened across cards, control panel, and meters
+- lighter secondary typography weights
+- manifest updated with categories for App Store readiness
+
+### Planned follow-up
+
+- **v1.6.1**: convert Explore, Help, and Settings from bottom sheets to full-page views with ‹ Back navigation
+
+---
+
+## v1.7
 
 Search enrichment and taxonomy polish.
 
@@ -182,7 +207,7 @@ Search enrichment and taxonomy polish.
 - search finds plates by what players notice, not just by exact title text
 - category placement feels stable enough that future cleanup becomes occasional maintenance instead of a rework
 
-## v1.6.x
+## v1.7.x
 
 Mapping and geography polish.
 
@@ -208,7 +233,7 @@ Mapping and geography polish.
 - the map is useful for reviewing discoveries instead of feeling experimental
 - pins, locality data, and regional progress behave predictably enough to support future social and pack-based expansion
 
-## v1.7
+## v1.8
 
 Framework extraction Phase 2 and editor-readiness.
 
@@ -238,7 +263,7 @@ Framework extraction Phase 2 and editor-readiness.
 - the app shell is more clearly separable from Florida-specific game rules
 - the future standalone editor has a more stable schema target
 
-## v1.8+
+## v1.9+
 
 Optional social layer and cloud identity.
 
