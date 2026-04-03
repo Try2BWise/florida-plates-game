@@ -34,30 +34,6 @@ const militaryServiceCategory: PlateCategory = "Military Service";
 const militaryHonorsCategory: PlateCategory = "Military Honors & History";
 const publicServiceCategory: PlateCategory = "Public Service";
 
-const mixedBagCategories = new Set<PlateCategory>([
-  "Civic & Causes",
-  "Health & Family",
-  "Education & Culture",
-  "Public Service",
-  "Travel & Tourism"
-]);
-
-const floridaPanhandleCounties = new Set([
-  "Escambia",
-  "Bay",
-  "Calhoun",
-  "Franklin",
-  "Gulf",
-  "Holmes",
-  "Jackson",
-  "Liberty",
-  "Okaloosa",
-  "Santa Rosa",
-  "Walton",
-  "Washington"
-]);
-
-
 
 const baseballPlateNames = ["Miami Marlins (Baseball)", "Tampa Bay Rays (Baseball)"];
 const footballPlateNames = [
@@ -115,7 +91,7 @@ const honorAndMedalPlateNames = [
   "Distinguished Service Cross"
 ];
 
-import { floridaBadgeCounties } from "../config/floridaGame";
+import { activeBadgeCounties, activeMixedBagCategories, activePanhandleScoutCounties } from "../games/activeGame";
 
 const allBranchesPlateNames = [
   "U.S. Army",
@@ -639,12 +615,12 @@ function countFoundInMixedBag(
   discoveries: PlateDiscoveryMap
 ): number {
   return plates.filter(
-    (plate) => mixedBagCategories.has(plate.category) && discoveries[plate.id]
+    (plate) => activeMixedBagCategories.has(plate.category) && discoveries[plate.id]
   ).length;
 }
 
 function countTotalInMixedBag(plates: Plate[]): number {
-  return plates.filter((plate) => mixedBagCategories.has(plate.category)).length;
+  return plates.filter((plate) => activeMixedBagCategories.has(plate.category)).length;
 }
 
 function countFoundInCollection(
@@ -789,7 +765,7 @@ export function evaluateBadges(
 
   const panhandleCount = Object.values(discoveries).filter((discovery) => {
     const county = normalizeCountyName(discovery.county);
-    return county ? floridaPanhandleCounties.has(county) : false;
+    return county ? activePanhandleScoutCounties.has(county) : false;
   }).length;
   // Removed visitedCounties and countVisitedCounties (no longer used)
 
@@ -802,13 +778,13 @@ export function evaluateBadges(
 
   // For each region, count unique counties found
   const foundCountiesByRegion: Record<string, Set<string>> = {};
-  Object.keys(floridaBadgeCounties).forEach((regionId) => {
+  Object.keys(activeBadgeCounties).forEach((regionId) => {
     foundCountiesByRegion[regionId] = new Set<string>();
   });
   Object.values(discoveries).forEach((discovery) => {
     const county = normalizeCounty(discovery.county);
     if (!county) return;
-    for (const [regionId, counties] of Object.entries(floridaBadgeCounties)) {
+    for (const [regionId, counties] of Object.entries(activeBadgeCounties)) {
       if (counties.includes(county)) {
         foundCountiesByRegion[regionId].add(county);
       }
@@ -816,7 +792,7 @@ export function evaluateBadges(
   });
 
   // Compose region badge entries for lookup (earned if ANY county in region is found)
-  const regionBadgeEntries: [string, EvaluatedBadge][] = Object.keys(floridaBadgeCounties).map((regionId) => [
+  const regionBadgeEntries: [string, EvaluatedBadge][] = Object.keys(activeBadgeCounties).map((regionId) => [
     regionId,
     createThresholdBadge(
       getBadgeDefinition(definitionsById, regionId),

@@ -1,11 +1,9 @@
-import legacyIdMap from "../data/generated/legacy-id-map.generated.json";
+import { activeLegacyIdMap, activeStorage } from "../games/activeGame";
 import type { PlateDiscoveryMap } from "../types";
-
-const STORAGE_KEY = "florida-plates-discoveries";
 
 export function loadDiscoveries(): PlateDiscoveryMap {
   try {
-    const rawValue = window.localStorage.getItem(STORAGE_KEY);
+    const rawValue = window.localStorage.getItem(activeStorage.discoveriesKey);
     if (!rawValue) {
       return {};
     }
@@ -15,7 +13,7 @@ export function loadDiscoveries(): PlateDiscoveryMap {
       return {};
     }
 
-    const typedLegacyMap = legacyIdMap as Record<string, string>;
+    const typedLegacyMap = activeLegacyIdMap;
 
     return Object.fromEntries(
       Object.entries(parsed).map(([plateId, discovery]) => [
@@ -34,5 +32,5 @@ export function loadDiscoveries(): PlateDiscoveryMap {
 }
 
 export function saveDiscoveries(discoveries: PlateDiscoveryMap): void {
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(discoveries));
+  window.localStorage.setItem(activeStorage.discoveriesKey, JSON.stringify(discoveries));
 }
