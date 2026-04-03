@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BadgeIcon } from "./components/BadgeIcon";
-import { developer } from "./config/developer";
+import { HelpPage } from "./components/HelpPage";
+import { SettingsPage } from "./components/SettingsPage";
 import { Icon } from "./components/Icon";
 import {
   floridaBadgeCounties,
@@ -239,8 +240,7 @@ function App() {
   const [collapsedTimelineDates, setCollapsedTimelineDates] = useState<Set<string>>(
     () => new Set()
   );
-  const [activeHelpTab, setActiveHelpTab] = useState<"help" | "safe">("help");
-  const [activeSettingsTab, setActiveSettingsTab] = useState<"settings" | "about">("settings");
+  /* Help/Settings tab state moved to their respective page components */
   const [selectedCategoryFilter, setSelectedCategoryFilter] = useState<PlateCategory | null>(null);
   const searchInputRef = useRef<HTMLInputElement | null>(null);
   const headerSentinelRef = useRef<HTMLDivElement | null>(null);
@@ -1254,7 +1254,7 @@ function App() {
         <button
           type="button"
           className="bottom-dock__item"
-          onClick={() => { setActiveHelpTab("help"); setActiveView("help"); }}
+          onClick={() => setActiveView("help")}
           aria-label="Help"
         >
           <Icon name="help" size={22} className="bottom-dock__icon" />
@@ -1263,7 +1263,7 @@ function App() {
         <button
           type="button"
           className="bottom-dock__item"
-          onClick={() => { setActiveSettingsTab("settings"); setActiveView("settings"); }}
+          onClick={() => setActiveView("settings")}
           aria-label="Settings"
         >
           <Icon name="gear" size={22} className="bottom-dock__icon" />
@@ -1789,165 +1789,27 @@ function App() {
       ) : null}
 
       {activeView === "help" ? (
-        <div className="page-view">
-          <div className="page-view__header">
-            <button type="button" className="page-view__back" onClick={() => setActiveView("home")}>
-              <Icon name="chevron-left" size={20} /> Back
-            </button>
-            <h1 className="page-view__title">Help</h1>
-          </div>
-          <div className="page-view__tabs" role="tablist" aria-label="Help views">
-            {(["help", "safe"] as const).map((tab) => (
-              <button
-                key={tab}
-                type="button"
-                className={`view-toggle__chip ${activeHelpTab === tab ? "view-toggle__chip--active" : ""}`}
-                role="tab"
-                aria-selected={activeHelpTab === tab}
-                onClick={() => setActiveHelpTab(tab)}
-              >
-                {tab === "help" ? "Help" : "Safe Use"}
-              </button>
-            ))}
-          </div>
-          <div className="page-view__content">
-              {activeHelpTab === "help" ? (
-                <div className="utility-stack">
-                  <section className="utility-card">
-                    <h3>Install the app</h3>
-                    {floridaGame.help.install.map((item) => (
-                      <p className="utility-card__meta" key={item}>
-                        {item}
-                      </p>
-                    ))}
-                  </section>
-                  <section className="utility-card">
-                    <h3>How to play</h3>
-                    <div className="utility-list utility-list--compact">
-                      {floridaGame.help.howToPlay.map((item) => (
-                        <p className="utility-card__meta" key={item}>
-                          {item}
-                        </p>
-                      ))}
-                    </div>
-                  </section>
-                  <section className="utility-card">
-                    <h3>Useful tools</h3>
-                    <div className="utility-list utility-list--compact">
-                      {floridaGame.help.usefulTools.map((item) => (
-                        <p className="utility-card__meta" key={item}>
-                          {item}
-                        </p>
-                      ))}
-                    </div>
-                  </section>
-                </div>
-              ) : null}
-              {activeHelpTab === "safe" ? (
-                <div className="utility-stack">
-                  <section className="utility-card utility-card--warning">
-                    <h3>
-                      <span className="warning-heading__icon" aria-hidden="true">
-                        !
-                      </span>
-                      <span>Safe use</span>
-                    </h3>
-                    <div className="utility-list utility-list--compact">
-                      {floridaGame.help.safeUse.map((item) => (
-                        <p className="utility-card__meta" key={item}>
-                          {item}
-                        </p>
-                      ))}
-                    </div>
-                  </section>
-                </div>
-              ) : null}
-          </div>
-        </div>
+        <HelpPage onBack={() => setActiveView("home")} helpContent={floridaGame.help} />
       ) : null}
 
       {activeView === "settings" ? (
-        <div className="page-view">
-          <div className="page-view__header">
-            <button type="button" className="page-view__back" onClick={() => setActiveView("home")}>
-              <Icon name="chevron-left" size={20} /> Back
-            </button>
-            <h1 className="page-view__title">Settings</h1>
-          </div>
-          <div className="page-view__tabs" role="tablist">
-            {(["settings", "about"] as const).map((tab) => (
-              <button key={tab} type="button" className={`view-toggle__chip ${activeSettingsTab === tab ? "view-toggle__chip--active" : ""}`} role="tab" aria-selected={activeSettingsTab === tab} onClick={() => setActiveSettingsTab(tab)}>
-                {tab === "settings" ? "Settings" : "About"}
-              </button>
-            ))}
-          </div>
-          <div className="page-view__content">
-            {activeSettingsTab === "settings" ? (
-              <div className="utility-stack">
-                <section className="utility-card">
-                  <h3>Main screen controls</h3>
-                  <p className="utility-card__meta" style={{ marginBottom: 8 }}>These toggles only change which controls appear on the main game screen.</p>
-                  <div className="settings-list">
-                    <button type="button" className="settings-row settings-row--compact" onClick={() => setTheme((c) => c === "light" ? "dark" : "light")}><span>Dark mode</span><span className={`toggle-switch ${theme === "dark" ? "toggle-switch--on" : ""}`} /></button>
-                    <button type="button" className="settings-row settings-row--compact" onClick={() => toggleUiPreference("showSearch")}><span>Show search</span><span className={`toggle-switch ${uiPreferences.showSearch ? "toggle-switch--on" : ""}`} /></button>
-                    <button type="button" className="settings-row settings-row--compact" onClick={() => toggleUiPreference("showCategories")}><span>Show categories</span><span className={`toggle-switch ${uiPreferences.showCategories ? "toggle-switch--on" : ""}`} /></button>
-                    <button type="button" className="settings-row settings-row--compact" onClick={() => toggleUiPreference("showArrangement")}><span>Show sort</span><span className={`toggle-switch ${uiPreferences.showArrangement ? "toggle-switch--on" : ""}`} /></button>
-                  </div>
-                </section>
-                <section className="utility-card utility-card--about">
-                  <h3>App Management</h3>
-                  <button type="button" className="view-toggle__chip" style={{ marginTop: 12, whiteSpace: 'nowrap', maxWidth: 'max-content', alignSelf: 'start' }} onClick={handleForceReload}>Force Reload / Sync</button>
-                </section>
-                <section className="utility-card">
-                  <h3>Progress Management</h3>
-                  <div className="utility-card__meta" style={{ marginBottom: 12 }}>
-                    <ol style={{ paddingLeft: 18, margin: 0 }}>
-                      <li>To export your progress, click <strong>Export Progress</strong>.</li>
-                      <li>To import progress, click <strong>Import Progress</strong> and select a backup file.</li>
-                    </ol>
-                  </div>
-                  <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 16 }}>
-                    <button type="button" className="view-toggle__chip" onClick={handleExportProgress} disabled={foundCount === 0}>Export Progress</button>
-                    <label style={{ display: 'inline-block' }}>
-                      <span style={{ display: 'none' }}>Import Progress</span>
-                      <input type="file" accept="application/json" style={{ display: 'none' }} onChange={handleImportProgress} />
-                      <button type="button" className="view-toggle__chip" onClick={e => { (e.currentTarget.previousSibling as HTMLInputElement)?.click(); }}>Import Progress</button>
-                    </label>
-                  </div>
-                  <div className="utility-card__meta" style={{ marginBottom: 8 }}>Clear all found plates from this device.</div>
-                  <button type="button" className="clear-discoveries utility-card__action" onClick={handleClearDiscoveries} disabled={foundCount === 0}>Clear found</button>
-                </section>
-              </div>
-            ) : null}
-            {activeSettingsTab === "about" ? (
-              <div className="utility-stack">
-                <section className="utility-card">
-                  <h3>About</h3>
-                  <div className="about-table" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 16, alignItems: 'start', width: '100%' }}>
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, width: 140, justifySelf: 'center' }}>
-                      <a className="about-card__logo-link" href={developer.url} target="_blank" rel="noreferrer" aria-label={`Visit ${developer.name}`}>
-                        <img className="about-card__logo" src={`${import.meta.env.BASE_URL}${developer.logoPath}`} alt={developer.name} style={{ maxWidth: 120, height: 'auto', marginBottom: 8, display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
-                      </a>
-                    </div>
-                    <div>
-                      <p className="utility-card__meta" style={{ marginBottom: 4 }}>Developed by <a className="app-footer__link" href={developer.url} target="_blank" rel="noreferrer">{developer.name}</a>.</p>
-                      <p className="utility-card__meta" style={{ marginBottom: 4 }}>Version {buildInfo.version} • Built {buildDateLabel}</p>
-                      <button type="button" className="app-footer__share utility-card__action about-card__share" onClick={handleShareApp} style={{ width: 'auto', marginTop: 8 }}>Share {floridaGame.branding.appShareName}</button>
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, width: 140, justifySelf: 'center' }}>
-                      <div style={{ background: '#fff', borderRadius: 8, padding: 8, width: 120, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <img src={`${import.meta.env.BASE_URL}${floridaGame.branding.attribution.logoPath}`} alt={floridaGame.branding.attribution.logoAlt} style={{ maxWidth: 104, height: 'auto', display: 'block' }} />
-                      </div>
-                    </div>
-                    <div>
-                      <p className="utility-card__meta" style={{ marginBottom: 0 }} dangerouslySetInnerHTML={{ __html: floridaGame.branding.attribution.text.replace('{agency}', `<a href="${floridaGame.branding.attribution.agencyUrl}" target="_blank" rel="noopener noreferrer">${floridaGame.branding.attribution.agencyName}</a>`) }} />
-                    </div>
-                  </div>
-                </section>
-              </div>
-            ) : null}
-          </div>
-        </div>
+        <SettingsPage
+          onBack={() => setActiveView("home")}
+          theme={theme}
+          onThemeToggle={() => setTheme((c) => c === "light" ? "dark" : "light")}
+          uiPreferences={uiPreferences}
+          onToggleUiPreference={toggleUiPreference}
+          onForceReload={handleForceReload}
+          foundCount={foundCount}
+          onExportProgress={handleExportProgress}
+          onImportProgress={handleImportProgress}
+          onClearDiscoveries={handleClearDiscoveries}
+          onShareApp={handleShareApp}
+          appShareName={floridaGame.branding.appShareName}
+          buildVersion={buildInfo.version}
+          buildDateLabel={buildDateLabel}
+          attribution={floridaGame.branding.attribution}
+        />
       ) : null}
 
       {activeBadgeDetail ? (
