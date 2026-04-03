@@ -1062,17 +1062,15 @@ function App() {
             </div>
             <p className="app-header__eyebrow">{floridaGame.branding.appTagline}</p>
           </div>
-          <div className="app-header__actions">
-            <div className="app-header__meter app-header__meter--compact" aria-live="polite">
-              <span className="app-header__meter-value">
-                {foundCount}/{plates.length}
-              </span>
-              <span className="app-header__meter-label">plates</span>
+          <div className="app-header__stats" aria-live="polite">
+            <div className="app-header__kpi">
+              <span className="app-header__kpi-value">{foundCount}</span>
+              <span className="app-header__kpi-context">of {plates.length} plates</span>
             </div>
+            <div className="app-header__kpi-divider" aria-hidden="true" />
             <button
               type="button"
-              className="app-header__meter app-header__meter--compact app-header__badge-meter"
-              aria-live="polite"
+              className="app-header__kpi app-header__kpi--secondary"
               onClick={() => {
                 setActiveExploreTab("badges");
                 setIsUtilityPanelOpen(false);
@@ -1080,12 +1078,8 @@ function App() {
               }}
               aria-label="Open merit badges"
             >
-              <span className="app-header__meter-value app-header__badge-meter-value">
-                {earnedBadges.length}/{evaluatedBadges.length}
-              </span>
-              <span className="app-header__meter-label app-header__badge-meter-label">
-                badges
-              </span>
+              <span className="app-header__kpi-value">{earnedBadges.length}</span>
+              <span className="app-header__kpi-context">of {evaluatedBadges.length} badges</span>
             </button>
           </div>
         </div>
@@ -1233,7 +1227,7 @@ function App() {
           {!isOnboardingHintDismissed ? (
             <div className="onboarding-tip" role="status">
               <p className="onboarding-tip__text">
-                Tap image to preview &middot; Tap name to mark found
+                Tap image to preview &middot; Tap &#x2295; to mark found
               </p>
               <button
                 type="button"

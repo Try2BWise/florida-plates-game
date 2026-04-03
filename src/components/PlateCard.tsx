@@ -24,7 +24,7 @@ export function PlateCard({
   const imageSource = `${import.meta.env.BASE_URL}${plate.image.path}`;
 
   return (
-    <article className={`plate-card ${isFound ? "plate-card--found" : ""}`}>
+    <article className="plate-card">
       <button
         type="button"
         className="plate-card__image-button"
@@ -42,30 +42,41 @@ export function PlateCard({
       </button>
       <button
         type="button"
-        className="plate-card__content"
+        className="plate-card__info"
+        onClick={() => onPreview(plate)}
+        aria-label={`View ${plate.name} details`}
+      >
+        <span className="plate-card__name">{plate.name}</span>
+        {discovery ? (
+          <>
+            <span className="plate-card__meta">
+              {formatDiscoveryTime(discovery.foundAtIso)}
+            </span>
+            {localityLabel ? (
+              <span className="plate-card__meta">{localityLabel}</span>
+            ) : coordinateLabel ? (
+              <span className="plate-card__meta">{coordinateLabel}</span>
+            ) : (
+              <span className="plate-card__meta plate-card__meta--muted">
+                Location unavailable
+              </span>
+            )}
+          </>
+        ) : null}
+      </button>
+      <button
+        type="button"
+        className="plate-card__toggle"
         onClick={() => onToggle(plate, isFound)}
         aria-pressed={isFound}
         aria-label={
           isFound ? `Mark ${plate.name} as not found` : `Mark ${plate.name} as found`
         }
       >
-        <span className="plate-card__name">{plate.name}</span>
-        {discovery ? (
-          <>
-            <span className="plate-card__timestamp">
-              {formatDiscoveryTime(discovery.foundAtIso)}
-            </span>
-            {localityLabel ? (
-              <span className="plate-card__coordinates">{localityLabel}</span>
-            ) : coordinateLabel ? (
-              <span className="plate-card__coordinates">{coordinateLabel}</span>
-            ) : (
-              <span className="plate-card__coordinates plate-card__coordinates--muted">
-                Location unavailable
-              </span>
-            )}
-          </>
-        ) : null}
+        <span
+          className={isFound ? "plate-card__check" : "plate-card__plus"}
+          aria-hidden="true"
+        />
       </button>
     </article>
   );
