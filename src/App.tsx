@@ -1814,100 +1814,87 @@ function App() {
 
       {activeBadgeDetail ? (
         <div
-          className="utility-panel-backdrop"
+          className="sheet-backdrop"
+          style={{ zIndex: 34 }}
           role="presentation"
           onClick={() => setActiveBadgeDetail(null)}
         >
-          <section
-            className="badge-detail-modal"
+          <div
+            className="sheet preview-sheet"
+            onClick={(e) => e.stopPropagation()}
             role="dialog"
             aria-modal="true"
             aria-label={`${activeBadgeDetail.name} badge details`}
-            onClick={(event) => event.stopPropagation()}
           >
-            <div className="badge-detail-modal__hero">
-              <BadgeIcon
-                badge={activeBadgeDetail}
-                size={176}
-                className="badge-detail-modal__image"
-              />
+            <div className="sheet__header">
+              <h3 className="sheet__title">{activeBadgeDetail.name}</h3>
+              <button type="button" className="sheet__close" onClick={() => setActiveBadgeDetail(null)} aria-label="Close">
+                <Icon name="close" size={14} />
+              </button>
             </div>
-
-            <div className="badge-detail-modal__content">
-              <section className="utility-card badge-detail-modal__section badge-detail-modal__section--summary">
-                <div className="badge-detail-modal__summary-top">
-                  <span className={`badge-chip badge-chip--${activeBadgeDetail.group}`}>
-                    <Icon
-                      name={badgeGroupSymbols[activeBadgeDetail.group] as import("./components/Icon").IconName}
-                      size={14}
-                      className={`badge-chip__icon badge-group__icon--${activeBadgeDetail.group}`}
-                    />
-                    <span>{badgeGroupLabels[activeBadgeDetail.group]}</span>
-                  </span>
-                  <span
-                    className={`badge-progress-pill badge-progress-pill--modal ${activeBadgeDetail.earned ? "badge-progress-pill--earned" : ""}`}
-                  >
-                    {activeBadgeDetail.earned ? "Earned" : "Not yet"}
-                  </span>
-                  {activeBadgeDetail.earned ? (
-                    <button
-                      type="button"
-                      className="app-footer__share badge-detail-modal__share badge-detail-modal__share--inline"
-                      onClick={() => handleShareBadge(activeBadgeDetail.name)}
-                    >
-                      Share
-                    </button>
-                  ) : null}
+            <div className="sheet__body">
+              <div style={{ display: 'flex', justifyContent: 'center', padding: '0.5rem 0' }}>
+                <BadgeIcon badge={activeBadgeDetail} size={120} />
+              </div>
+              <div className="preview-sheet__row">
+                <span className="preview-sheet__label">Group</span>
+                <span className={`badge-chip badge-chip--${activeBadgeDetail.group}`}>
+                  <Icon
+                    name={badgeGroupSymbols[activeBadgeDetail.group] as import("./components/Icon").IconName}
+                    size={12}
+                    className={`badge-group__icon--${activeBadgeDetail.group}`}
+                  />
+                  <span>{badgeGroupLabels[activeBadgeDetail.group]}</span>
+                </span>
+              </div>
+              <div className="preview-sheet__row">
+                <span className="preview-sheet__label">Status</span>
+                <strong>{activeBadgeDetail.earned ? "Earned" : "Not yet"}</strong>
+              </div>
+              {activeBadgeDetail.progressTarget ? (
+                <div className="preview-sheet__row">
+                  <span className="preview-sheet__label">Progress</span>
+                  <strong>{activeBadgeDetail.progressCurrent ?? 0} / {activeBadgeDetail.progressTarget}</strong>
                 </div>
+              ) : null}
+              <p className="preview-sheet__notes">{activeBadgeDetail.description}</p>
 
-                <div className="badge-detail-modal__summary-copy">
-                  <div className="badge-detail-modal__title">{activeBadgeDetail.name}</div>
-                  <div className="badge-detail-modal__lede">{activeBadgeDetail.description}</div>
-                </div>
-              </section>
+              {activeBadgeDetail.earned ? (
+                <button
+                  type="button"
+                  className="preview-sheet__found-btn"
+                  onClick={() => handleShareBadge(activeBadgeDetail.name)}
+                >
+                  Share Badge
+                </button>
+              ) : null}
 
               {activeBadgeDetail.group === "florida" &&
-              typeof activeBadgeDetail.id === "string" &&
               activeBadgeDetail.id.endsWith("-explorer") &&
-              window.floridaBadgeCounties &&
-              window.floridaBadgeCounties[activeBadgeDetail.id] ? (
-                <section className="utility-card badge-detail-modal__section">
-                  <h3>Counties in this region</h3>
-                  <ul className="badge-detail-modal__county-list">
-                    {window.floridaBadgeCounties[activeBadgeDetail.id].map((county: string) => (
-                      <li key={county}>{county} County</li>
-                    ))}
-                  </ul>
-                </section>
+              window.floridaBadgeCounties?.[activeBadgeDetail.id] ? (
+                <div style={{ marginTop: '0.5rem' }}>
+                  <p style={{ margin: '0 0 0.3rem', fontSize: '0.76rem', color: 'var(--muted)', fontWeight: 600 }}>Counties in this region</p>
+                  {window.floridaBadgeCounties[activeBadgeDetail.id].map((county: string) => (
+                    <p key={county} style={{ margin: '0.15rem 0', fontSize: '0.84rem' }}>{county} County</p>
+                  ))}
+                </div>
               ) : null}
 
               {activeBadgeDetail.earned && activeBadgeSupportingDiscoveries.length > 0 ? (
-                <section className="utility-card badge-detail-modal__section">
-                  <h3>
-                    {activeBadgeSupportingDiscoveries.length === 1
-                      ? "Supporting sighting"
-                      : "Supporting sightings"}
-                  </h3>
-                  <div className="badge-detail-modal__sightings">
-                    {activeBadgeSupportingDiscoveries.map(({ plate, discovery }) => (
-                      <article
-                        className="badge-detail-modal__sighting"
-                        key={`${activeBadgeDetail.id}-${plate.id}-${discovery.foundAtIso}`}
-                      >
-                        <h4>{plate.name}</h4>
-                        <p className="utility-card__meta">
-                          {formatDiscoveryTime(discovery.foundAtIso)}
-                        </p>
-                        <p className="utility-card__meta">
-                          {getDiscoveryLocationStatus(discovery)}
-                        </p>
-                      </article>
-                    ))}
-                  </div>
-                </section>
+                <div style={{ marginTop: '0.5rem' }}>
+                  <p style={{ margin: '0 0 0.3rem', fontSize: '0.76rem', color: 'var(--muted)', fontWeight: 600 }}>
+                    {activeBadgeSupportingDiscoveries.length === 1 ? "Supporting sighting" : "Supporting sightings"}
+                  </p>
+                  {activeBadgeSupportingDiscoveries.map(({ plate, discovery }) => (
+                    <div key={`${activeBadgeDetail.id}-${plate.id}-${discovery.foundAtIso}`} className="preview-sheet__row" style={{ flexDirection: 'column', alignItems: 'flex-start', gap: '0.1rem' }}>
+                      <strong style={{ fontSize: '0.88rem' }}>{plate.name}</strong>
+                      <span style={{ fontSize: '0.76rem', color: 'var(--muted)' }}>{formatDiscoveryTime(discovery.foundAtIso)} · {getDiscoveryLocationStatus(discovery)}</span>
+                    </div>
+                  ))}
+                </div>
               ) : null}
             </div>
-          </section>
+          </div>
         </div>
       ) : null}
 
