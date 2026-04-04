@@ -2,6 +2,7 @@ import { Icon } from "./Icon";
 import type { IconName } from "./Icon";
 import { BadgeIcon } from "./BadgeIcon";
 import { PageView } from "./PageView";
+import { ProgressRing } from "./ProgressRing";
 import { formatDiscoveryTime } from "../lib/format";
 import type { EvaluatedBadge, BadgeGroup } from "../lib/badges";
 import type { Plate, PlateDiscovery } from "../types";
@@ -106,74 +107,95 @@ export function ExplorePage({
     >
       {activeTab === "stats" ? (
         <div className="utility-stack stats-dashboard">
-          <section className="stats-kpi-grid">
-            <article className="utility-card utility-card--stat">
-              <h3>Plates found</h3>
-              <p className="utility-card__metric">{foundCount}</p>
-              <p className="utility-card__meta">of {totalPlates} total</p>
-            </article>
-            <article className="utility-card utility-card--stat">
-              <h3>Completion</h3>
-              <p className="utility-card__metric">{Math.round((foundCount / totalPlates) * 100)}%</p>
-              <p className="utility-card__meta">overall progress</p>
-            </article>
-            <article className="utility-card utility-card--stat">
-              <h3>Badges earned</h3>
-              <p className="utility-card__metric">{earnedBadges.length}</p>
-              <p className="utility-card__meta">of {evaluatedBadges.length}</p>
-            </article>
-            <article className="utility-card utility-card--stat">
-              <h3>Localities</h3>
-              <p className="utility-card__metric">{localityCount}</p>
-              <p className="utility-card__meta">distinct named places</p>
-            </article>
+          {/* ── Completion rings ── */}
+          <section className="stats-rings">
+            <ProgressRing
+              percent={totalPlates > 0 ? Math.round((foundCount / totalPlates) * 100) : 0}
+              size={160}
+              strokeWidth={14}
+              color="var(--accent)"
+              label={`${foundCount}`}
+              sublabel={`of ${totalPlates} plates`}
+            />
+            <ProgressRing
+              percent={evaluatedBadges.length > 0 ? Math.round((earnedBadges.length / evaluatedBadges.length) * 100) : 0}
+              size={100}
+              strokeWidth={10}
+              color="#22c55e"
+              label={`${earnedBadges.length}`}
+              sublabel={`of ${evaluatedBadges.length} badges`}
+            />
           </section>
-          <section className="utility-card stats-card stats-card--span-2">
-            <h3>Category progress</h3>
-            <div className="utility-list">
+
+          {/* ── Inline stats ── */}
+          <div className="stats-inline-row">
+            <div className="stats-inline-stat">
+              <span className="stats-inline-stat__value">{localityCount}</span>
+              <span className="stats-inline-stat__label">Localities</span>
+            </div>
+            <div className="stats-inline-stat">
+              <span className="stats-inline-stat__value">{Math.round((foundCount / totalPlates) * 100)}%</span>
+              <span className="stats-inline-stat__label">Complete</span>
+            </div>
+          </div>
+
+          {/* ── Category progress ── */}
+          <section className="stats-section">
+            <h3 className="stats-section__title">Category Progress</h3>
+            <div className="stats-category-list">
               {categoryStats.map((stat) => (
-                <article className="utility-card utility-card--stat-row" key={stat.category}>
-                  <div className="utility-card__header">
-                    <h3>{stat.category}</h3>
-                    <span>{stat.percent}%</span>
+                <div className="stats-category-row" key={stat.category}>
+                  <div className="stats-category-row__header">
+                    <span className="stats-category-row__name">{stat.category}</span>
+                    <span className="stats-category-row__count">{stat.found}/{stat.total}</span>
                   </div>
                   <div className="stats-bar">
                     <span className="stats-bar__fill" style={{ width: `${stat.percent}%` }} />
                   </div>
-                  <p className="utility-card__meta">{stat.found} of {stat.total} found</p>
-                </article>
+                </div>
               ))}
             </div>
           </section>
-          <section className="utility-grid stats-grid">
-            <article className="utility-card">
-              <h3>First sighting</h3>
-              <p className="utility-card__meta">
-                {oldestSighting ? `${oldestSighting.plate.name} on ${formatDiscoveryTime(oldestSighting.discovery.foundAtIso)}` : "No sightings yet"}
-              </p>
-            </article>
-            <article className="utility-card">
-              <h3>Most recent</h3>
-              <p className="utility-card__meta">
-                {newestSighting ? `${newestSighting.plate.name} on ${formatDiscoveryTime(newestSighting.discovery.foundAtIso)}` : "No sightings yet"}
-              </p>
-            </article>
+
+          {/* ── Recent activity ── */}
+          <section className="stats-section">
+            <h3 className="stats-section__title">Activity</h3>
+            <div className="stats-activity-list">
+              <div className="stats-activity-item">
+                <span className="stats-activity-item__label">First sighting</span>
+                <span className="stats-activity-item__value">
+                  {oldestSighting ? `${oldestSighting.plate.name}` : "None yet"}
+                </span>
+                {oldestSighting ? (
+                  <span className="stats-activity-item__meta">{formatDiscoveryTime(oldestSighting.discovery.foundAtIso)}</span>
+                ) : null}
+              </div>
+              <div className="stats-activity-item">
+                <span className="stats-activity-item__label">Most recent</span>
+                <span className="stats-activity-item__value">
+                  {newestSighting ? `${newestSighting.plate.name}` : "None yet"}
+                </span>
+                {newestSighting ? (
+                  <span className="stats-activity-item__meta">{formatDiscoveryTime(newestSighting.discovery.foundAtIso)}</span>
+                ) : null}
+              </div>
+            </div>
           </section>
-          <section className="utility-card stats-card stats-card--span-2">
-            <h3>Top localities</h3>
-            {topLocalities.length > 0 ? (
-              <div className="utility-list utility-list--compact">
+
+          {/* ── Top localities ── */}
+          {topLocalities.length > 0 ? (
+            <section className="stats-section">
+              <h3 className="stats-section__title">Top Localities</h3>
+              <div className="stats-locality-list">
                 {topLocalities.map(([locality, count]) => (
-                  <div className="utility-row" key={locality}>
+                  <div className="stats-locality-row" key={locality}>
                     <span>{locality}</span>
                     <strong>{count}</strong>
                   </div>
                 ))}
               </div>
-            ) : (
-              <p className="utility-card__meta">Locality counts will appear as sightings pick up place names.</p>
-            )}
-          </section>
+            </section>
+          ) : null}
         </div>
       ) : null}
 
