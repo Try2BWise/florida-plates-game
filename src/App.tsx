@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BadgeIcon } from "./components/BadgeIcon";
+import { ExplorePage } from "./components/ExplorePage";
 import { HelpPage } from "./components/HelpPage";
 import { SettingsPage } from "./components/SettingsPage";
 import { Icon } from "./components/Icon";
@@ -436,6 +437,13 @@ function App() {
     [discoveryEntries]
   );
   const foundCount = discoveryEntries.length;
+  const localityCount = useMemo(() => new Set(
+    Object.values(discoveries).map((d) => d.locality).filter((l): l is string => Boolean(l))
+  ).size, [discoveries]);
+  const geotaggedEntries = useMemo(() =>
+    discoveryEntries.filter(({ discovery }) => discovery.latitude !== null && discovery.longitude !== null),
+    [discoveryEntries]
+  );
   const normalizedSearchTerm = searchTerm.trim().toLowerCase();
   const visibilityAndSearchFilteredPlates = useMemo(
     () =>
@@ -918,25 +926,7 @@ function App() {
     }
   }
 
-  function renderBadgeCard(badge: EvaluatedBadge) {
-    // All badges are now medals: icon + text, no container, no pill
-    return (
-      <div
-        className="badge-icon-grid-item"
-        key={badge.id}
-        tabIndex={0}
-        role="button"
-        aria-label={badge.name}
-        onClick={() => setActiveBadgeDetail(badge)}
-        onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') setActiveBadgeDetail(badge); }}
-        style={{ outline: 'none', cursor: 'pointer' }}
-      >
-        <BadgeIcon badge={badge} />
-        <span className="badge-medal-label">{badge.name}</span>
-      </div>
-    );
-  }
-
+  /* renderBadgeCard moved to ExplorePage component */
 
   function handleApplyUpdate() {
     setIsUpdateReady(false);
@@ -1462,330 +1452,32 @@ function App() {
       ) : null}
 
       {activeView === "explore" ? (
-        <div className="page-view">
-          <div className="page-view__header">
-            <button type="button" className="page-view__back" onClick={() => setActiveView("home")}>
-              <Icon name="chevron-left" size={28} />
-            </button>
-            <h1 className="page-view__title">Explore</h1>
-          </div>
-          <div className="page-view__tabs" role="tablist" aria-label="Explore views">
-              {(["badges", "stats", "timeline", "map"] as ExploreTab[]).map((tab) => (
-                <button
-                  key={tab}
-                  type="button"
-                  className={`view-toggle__chip ${
-                    activeExploreTab === tab ? "view-toggle__chip--active" : ""
-                  }`}
-                  role="tab"
-                  aria-selected={activeExploreTab === tab}
-                  onClick={() => setActiveExploreTab(tab)}
-                >
-                  {tab === "badges"
-                    ? "Badges"
-                    : tab === "stats"
-                      ? "Stats"
-                      : tab === "timeline"
-                        ? "Timeline"
-                        : "Map"}
-                </button>
-              ))}
-            </div>
-          <div className="page-view__content">
-              {activeExploreTab === "stats" ? (
-                <div className="utility-stack stats-dashboard">
-                  <section className="stats-kpi-grid">
-                    <article className="utility-card utility-card--stat">
-                      <h3>Plates found</h3>
-                      <p className="utility-card__metric">{foundCount}</p>
-                      <p className="utility-card__meta">of {plates.length} total</p>
-                    </article>
-                    <article className="utility-card utility-card--stat">
-                      <h3>Completion</h3>
-                      <p className="utility-card__metric">
-                        {Math.round((foundCount / plates.length) * 100)}%
-                      </p>
-                      <p className="utility-card__meta">overall progress</p>
-                    </article>
-                    <article className="utility-card utility-card--stat">
-                      <h3>Badges earned</h3>
-                      <p className="utility-card__metric">{earnedBadges.length}</p>
-                      <p className="utility-card__meta">of {evaluatedBadges.length}</p>
-                    </article>
-                    <article className="utility-card utility-card--stat">
-                      <h3>Localities</h3>
-                      <p className="utility-card__metric">
-                        {new Set(
-                          Object.values(discoveries)
-                            .map((discovery) => discovery.locality)
-                            .filter((locality): locality is string => Boolean(locality))
-                        ).size}
-                      </p>
-                      <p className="utility-card__meta">distinct named places</p>
-                    </article>
-                  </section>
-                  <section className="utility-card stats-card stats-card--span-2">
-                    <h3>Category progress</h3>
-                    <div className="utility-list">
-                      {categoryStats.map((stat) => (
-                        <article className="utility-card utility-card--stat-row" key={stat.category}>
-                          <div className="utility-card__header">
-                            <h3>{stat.category}</h3>
-                            <span>{stat.percent}%</span>
-                          </div>
-                          <div className="stats-bar">
-                            <span
-                              className="stats-bar__fill"
-                              style={{ width: `${stat.percent}%` }}
-                            />
-                          </div>
-                          <p className="utility-card__meta">
-                            {stat.found} of {stat.total} found
-                          </p>
-                        </article>
-                      ))}
-                    </div>
-                  </section>
-                  <section className="utility-grid stats-grid">
-                    <article className="utility-card">
-                      <h3>First sighting</h3>
-                      <p className="utility-card__meta">
-                        {oldestSighting
-                          ? `${oldestSighting.plate.name} on ${formatDiscoveryTime(
-                              oldestSighting.discovery.foundAtIso
-                            )}`
-                          : "No sightings yet"}
-                      </p>
-                    </article>
-                    <article className="utility-card">
-                      <h3>Most recent</h3>
-                      <p className="utility-card__meta">
-                        {newestSighting
-                          ? `${newestSighting.plate.name} on ${formatDiscoveryTime(
-                              newestSighting.discovery.foundAtIso
-                            )}`
-                          : "No sightings yet"}
-                      </p>
-                    </article>
-                  </section>
-                  <section className="utility-card stats-card stats-card--span-2">
-                    <h3>Top localities</h3>
-                    {topLocalities.length > 0 ? (
-                      <div className="utility-list utility-list--compact">
-                        {topLocalities.map(([locality, count]) => (
-                          <div className="utility-row" key={locality}>
-                            <span>{locality}</span>
-                            <strong>{count}</strong>
-                          </div>
-                        ))}
-                      </div>
-                    ) : (
-                      <p className="utility-card__meta">
-                        Locality counts will appear as sightings pick up place names.
-                      </p>
-                    )}
-                  </section>
-                </div>
-              ) : null}
-              {activeExploreTab === "map" ? (
-                mapPins.length > 0 ? (
-                  <div className="utility-stack">
-                    <section className="map-card">
-                      <div className="map-card__surface">
-                        <div className="map-card__grid" />
-                        {mapBounds ? (
-                          <>
-                            <div className="map-card__label map-card__label--north">
-                              N {mapBounds.north}
-                            </div>
-                            <div className="map-card__label map-card__label--south">
-                              S {mapBounds.south}
-                            </div>
-                            <div className="map-card__label map-card__label--west">
-                              W {mapBounds.west}
-                            </div>
-                            <div className="map-card__label map-card__label--east">
-                              E {mapBounds.east}
-                            </div>
-                          </>
-                        ) : null}
-                        {mapPins.map((pin) => (
-                          <button
-                            key={pin.id}
-                            type="button"
-                            className="map-card__pin"
-                            style={{ left: `${pin.left}%`, top: `${pin.top}%` }}
-                            title={`${pin.plateName}${pin.locality ? ` - ${pin.locality}` : ""}`}
-                            aria-label={`${pin.plateName}${pin.locality ? ` in ${pin.locality}` : ""}`}
-                          />
-                        ))}
-                      </div>
-                      <p className="map-card__note">
-                        Dynamic pushpin plot based on the current spread of saved GPS sightings.
-                      </p>
-                    </section>
-                    <div className="utility-list utility-list--compact">
-                      {discoveryEntries
-                        .filter(
-                          ({ discovery }) =>
-                            discovery.latitude !== null && discovery.longitude !== null
-                        )
-                        .slice(0, 10)
-                        .map(({ plate, discovery }) => (
-                          <article className="utility-card" key={`${plate.id}-map`}>
-                            <div className="utility-card__header">
-                              <h3>{plate.name}</h3>
-                              <span>{discovery.locality ?? "Pinned"}</span>
-                            </div>
-                            <p className="utility-card__meta">
-                              {discovery.latitude?.toFixed(4)}, {discovery.longitude?.toFixed(4)}
-                            </p>
-                          </article>
-                        ))}
-                    </div>
-                  </div>
-                ) : (
-                  <section className="empty-state">
-                    <h2>No map pins yet</h2>
-                    <p>Find a few plates with location enabled and they will appear here.</p>
-                  </section>
-                )
-              ) : null}
-              {activeExploreTab === "timeline" ? (
-                <div className="utility-stack">
-                  <section className="utility-card utility-card--about">
-                    <div className="utility-card__header">
-                      <div>
-                        <h3>Timeline</h3>
-                        <p className="utility-card__meta">
-                          Plate sightings grouped by date.
-                        </p>
-                      </div>
-                      <div className="view-toggle" role="group" aria-label="Timeline sort">
-                        <button
-                          type="button"
-                          className={`view-toggle__chip ${
-                            timelineSort === "desc" ? "view-toggle__chip--active" : ""
-                          }`}
-                          onClick={() => setTimelineSort("desc")}
-                          aria-pressed={timelineSort === "desc"}
-                        >
-                          Newest first
-                        </button>
-                        <button
-                          type="button"
-                          className={`view-toggle__chip ${
-                            timelineSort === "asc" ? "view-toggle__chip--active" : ""
-                          }`}
-                          onClick={() => setTimelineSort("asc")}
-                          aria-pressed={timelineSort === "asc"}
-                        >
-                          Oldest first
-                        </button>
-                      </div>
-                    </div>
-                  </section>
-                  {timelineGroups.length > 0 ? (
-                    <div className="timeline-groups">
-                      {timelineGroups.map(([dateLabel, entries]) => (
-                        <section className="utility-card timeline-group" key={dateLabel}>
-                          <button
-                            type="button"
-                            className="timeline-group__header"
-                            onClick={() => toggleTimelineDate(dateLabel)}
-                            aria-expanded={!collapsedTimelineDates.has(dateLabel)}
-                          >
-                            <h3>{dateLabel}</h3>
-                            <span>
-                              {entries.length}
-                              <strong
-                                className={`timeline-group__chevron ${
-                                  collapsedTimelineDates.has(dateLabel)
-                                    ? "timeline-group__chevron--collapsed"
-                                    : ""
-                                }`}
-                                aria-hidden="true"
-                              >
-                                ▾
-                              </strong>
-                            </span>
-                          </button>
-                          {!collapsedTimelineDates.has(dateLabel) ? (
-                            <div className="timeline-list">
-                              {entries.map(({ plate, discovery }) => (
-                                <article
-                                  className="utility-card timeline-entry"
-                                  key={`${plate.id}-${discovery.foundAtIso}`}
-                                >
-                                  <div className="timeline-entry__plate">
-                                    <img
-                                      className="timeline-entry__image"
-                                      src={`${import.meta.env.BASE_URL}${plate.image.path}`}
-                                      alt={plate.name}
-                                    />
-                                    <div className="timeline-entry__copy">
-                                      <h4>{plate.name}</h4>
-                                      <p className="utility-card__meta">
-                                        {formatDiscoveryTime(discovery.foundAtIso)}
-                                      </p>
-                                      <p className="utility-card__meta">
-                                        {getDiscoveryLocationStatus(discovery)}
-                                      </p>
-                                    </div>
-                                  </div>
-                                </article>
-                              ))}
-                            </div>
-                          ) : null}
-                        </section>
-                      ))}
-                    </div>
-                  ) : (
-                    <section className="empty-state">
-                      <h2>No timeline yet</h2>
-                      <p>Find a few plates and your sightings will appear here.</p>
-                    </section>
-                  )}
-                </div>
-              ) : null}
-              {activeExploreTab === "badges" ? (
-                <div className="utility-stack">
-                  <section className="utility-card utility-card--about">
-                    <h3>Merit badges</h3>
-                    <p className="utility-card__metric">
-                      {earnedBadges.length} of {evaluatedBadges.length} earned
-                    </p>
-                    <p className="utility-card__meta">
-                      Badges currently reflect your saved state.
-                    </p>
-                  </section>
-                  <section className="utility-card">
-                    <div className="utility-stack">
-                      {allBadgeGroups.map(([group, badges]) => (
-                        <section className="badge-group" key={`earned-${group}`}>
-                          <div className="badge-group__header">
-                            <h4>
-                              <Icon
-                                name={badgeGroupSymbols[group] as import("./components/Icon").IconName}
-                                size={16}
-                                className={`badge-group__icon badge-group__icon--${group}`}
-                              />
-                              {badgeGroupLabels[group]}
-                            </h4>
-                            <span>{badges.length}</span>
-                          </div>
-                          <div className="badge-icon-grid">
-                            {badges.map((badge) => renderBadgeCard(badge))}
-                          </div>
-                        </section>
-                      ))}
-                    </div>
-                  </section>
-                  {/* Remove Not yet earned section, all badges shown in one grid by group */}
-                </div>
-              ) : null}
-          </div>
-        </div>
+        <ExplorePage
+          onBack={() => setActiveView("home")}
+          activeTab={activeExploreTab}
+          onTabChange={setActiveExploreTab}
+          foundCount={foundCount}
+          totalPlates={plates.length}
+          localityCount={localityCount}
+          categoryStats={categoryStats}
+          topLocalities={topLocalities}
+          newestSighting={newestSighting}
+          oldestSighting={oldestSighting}
+          evaluatedBadges={evaluatedBadges}
+          earnedBadges={earnedBadges}
+          allBadgeGroups={allBadgeGroups}
+          badgeGroupLabels={badgeGroupLabels}
+          badgeGroupSymbols={badgeGroupSymbols}
+          onBadgeDetail={setActiveBadgeDetail}
+          timelineSort={timelineSort}
+          onTimelineSortChange={setTimelineSort}
+          timelineGroups={timelineGroups}
+          collapsedTimelineDates={collapsedTimelineDates}
+          onToggleTimelineDate={toggleTimelineDate}
+          mapPins={mapPins}
+          mapBounds={mapBounds}
+          geotaggedEntries={geotaggedEntries}
+        />
       ) : null}
 
       {activeView === "help" ? (
