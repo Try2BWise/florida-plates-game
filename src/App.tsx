@@ -1083,7 +1083,7 @@ function App() {
       <div ref={headerSentinelRef} className="header-sentinel" aria-hidden="true" />
       <header className={`app-header ${isHeaderCompact ? "app-header--compact" : ""}`}>
         <div className="app-header__top">
-          <div className="app-header__title-block">
+          <div className="app-header__brand">
             {floridaGame.branding.headerImage.type === "logo" ? (
               <img
                 className="app-header__logo"
@@ -1097,7 +1097,7 @@ function App() {
                 <span className="welcome-sign__tagline">{floridaGame.branding.headerImage.line3}</span>
               </div>
             )}
-            <p className="app-header__eyebrow">{floridaGame.branding.appTagline}</p>
+            <h1 className="app-header__edition">{floridaGame.branding.appTagline}</h1>
           </div>
           <div className="app-header__stats" aria-live="polite">
             <div className="app-header__kpi">

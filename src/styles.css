@@ -158,10 +158,8 @@ select {
 
 /* ── Compact header — hide filter/sort row ── */
 
-.app-header--compact .app-header__eyebrow {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
+.app-header--compact .app-header__edition {
+  display: none;
 }
 
 .app-header--compact .control-bar__filter-sort {
@@ -178,21 +176,27 @@ select {
   gap: 0.75rem;
 }
 
-.app-header__title-block {
-  display: grid;
-  gap: 0.25rem;
+.app-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   min-width: 0;
 }
 
 .app-header__logo {
   display: block;
-  height: 3.5rem;
+  height: 3.2rem;
   width: auto;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
-.app-header__title-block--sign {
-  gap: 0.32rem;
+.app-header__edition {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--text);
 }
 
 .plate-group__heading h2,
@@ -201,17 +205,7 @@ select {
   margin: 0;
 }
 
-.app-header__eyebrow {
-  margin: 0;
-  color: var(--accent);
-  font-size: 0.66rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: none;
-  max-height: 1.5rem;
-  overflow: hidden;
-  transition: opacity 0.25s ease, max-height 0.25s ease;
-}
+/* .app-header__eyebrow removed — replaced by .app-header__edition */
 
 .welcome-sign {
   position: relative;
@@ -1998,10 +1992,6 @@ select {
 
   .welcome-sign__tagline {
     font-size: 0.52rem;
-  }
-
-  .app-header__eyebrow {
-    font-size: 0.56rem;
   }
 
   .app-header__kpi-value {
