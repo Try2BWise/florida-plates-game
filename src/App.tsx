@@ -1465,7 +1465,7 @@ function App() {
         <div className="page-view">
           <div className="page-view__header">
             <button type="button" className="page-view__back" onClick={() => setActiveView("home")}>
-              <Icon name="chevron-left" size={20} /> Back
+              <Icon name="chevron-left" size={28} />
             </button>
             <h1 className="page-view__title">Explore</h1>
           </div>
