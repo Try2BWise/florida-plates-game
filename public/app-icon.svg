@@ -1,47 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#112530" />
-      <stop offset="100%" stop-color="#0a1820" />
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f" />
+      <stop offset="100%" stop-color="#0f2440" />
+    </linearGradient>
+    <linearGradient id="plate1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <linearGradient id="plate2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bfdbfe" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+    <linearGradient id="plate3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e2e8f0" />
     </linearGradient>
   </defs>
   <!-- Background -->
   <rect width="256" height="256" rx="56" fill="url(#bg)" />
 
-  <!-- Back plate (tilted left) -->
-  <g transform="translate(128,108) rotate(-8) translate(-128,-108)">
-    <rect x="28" y="62" width="200" height="92" rx="10" fill="#94a3b8" opacity="0.35" />
+  <!-- Back plate (gold/yellow — tilted left) -->
+  <g transform="translate(128,100) rotate(-12) translate(-128,-100)">
+    <rect x="18" y="58" width="220" height="100" rx="12" fill="url(#plate1)" stroke="#d97706" stroke-width="2" />
+    <circle cx="38" cy="78" r="4" fill="#b45309" opacity="0.4" />
+    <circle cx="218" cy="78" r="4" fill="#b45309" opacity="0.4" />
+    <rect x="62" y="92" width="132" height="12" rx="6" fill="#92400e" opacity="0.25" />
+    <rect x="80" y="114" width="96" height="8" rx="4" fill="#92400e" opacity="0.15" />
   </g>
 
-  <!-- Middle plate (tilted right slightly) -->
-  <g transform="translate(128,118) rotate(4) translate(-128,-118)">
-    <rect x="28" y="72" width="200" height="92" rx="10" fill="#cbd5e1" opacity="0.55" />
-    <!-- Bolt holes -->
-    <circle cx="46" cy="90" r="3.5" fill="#94a3b8" opacity="0.5" />
-    <circle cx="210" cy="90" r="3.5" fill="#94a3b8" opacity="0.5" />
-    <!-- Abstract text -->
-    <rect x="68" y="100" width="120" height="10" rx="5" fill="#64748b" opacity="0.4" />
-    <rect x="88" y="120" width="80" height="6" rx="3" fill="#64748b" opacity="0.3" />
+  <!-- Middle plate (blue — tilted right) -->
+  <g transform="translate(128,115) rotate(6) translate(-128,-115)">
+    <rect x="18" y="72" width="220" height="100" rx="12" fill="url(#plate2)" stroke="#3b82f6" stroke-width="2" />
+    <circle cx="38" cy="92" r="4" fill="#1d4ed8" opacity="0.4" />
+    <circle cx="218" cy="92" r="4" fill="#1d4ed8" opacity="0.4" />
+    <rect x="62" y="106" width="132" height="12" rx="6" fill="#1e3a8a" opacity="0.25" />
+    <rect x="80" y="128" width="96" height="8" rx="4" fill="#1e3a8a" opacity="0.15" />
   </g>
 
-  <!-- Front plate (straight, prominent) -->
+  <!-- Front plate (white — straight, prominent) -->
   <g>
-    <rect x="28" y="82" width="200" height="92" rx="10" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="2" />
+    <rect x="18" y="82" width="220" height="100" rx="12" fill="url(#plate3)" stroke="#94a3b8" stroke-width="2" />
     <!-- Bolt holes -->
-    <circle cx="46" cy="100" r="3.5" fill="#94a3b8" opacity="0.6" />
-    <circle cx="210" cy="100" r="3.5" fill="#94a3b8" opacity="0.6" />
-    <circle cx="46" cy="156" r="3.5" fill="#94a3b8" opacity="0.6" />
-    <circle cx="210" cy="156" r="3.5" fill="#94a3b8" opacity="0.6" />
-    <!-- State name area -->
-    <rect x="72" y="92" width="112" height="8" rx="4" fill="#3b82f6" opacity="0.25" />
+    <circle cx="38" cy="100" r="4" fill="#94a3b8" opacity="0.5" />
+    <circle cx="218" cy="100" r="4" fill="#94a3b8" opacity="0.5" />
+    <circle cx="38" cy="164" r="4" fill="#94a3b8" opacity="0.5" />
+    <circle cx="218" cy="164" r="4" fill="#94a3b8" opacity="0.5" />
+    <!-- State banner -->
+    <rect x="48" y="90" width="160" height="14" rx="4" fill="#3b82f6" opacity="0.15" />
+    <text x="128" y="101" text-anchor="middle" fill="#3b82f6" font-size="11" font-weight="700" font-family="-apple-system, system-ui, sans-serif" letter-spacing="3" opacity="0.6">STATE PLATES</text>
     <!-- Big plate number -->
-    <text x="128" y="140" text-anchor="middle" fill="#0f172a" font-size="36" font-weight="800" font-family="-apple-system, system-ui, sans-serif" letter-spacing="6">SP</text>
-    <!-- Bottom text -->
-    <rect x="82" y="152" width="92" height="6" rx="3" fill="#64748b" opacity="0.2" />
+    <text x="128" y="150" text-anchor="middle" fill="#0f172a" font-size="42" font-weight="900" font-family="-apple-system, system-ui, sans-serif" letter-spacing="8">SP</text>
+    <!-- Bottom detail -->
+    <rect x="72" y="160" width="112" height="6" rx="3" fill="#64748b" opacity="0.15" />
   </g>
 
   <!-- Green checkmark circle -->
-  <circle cx="200" cy="200" r="34" fill="#22c55e" />
-  <circle cx="200" cy="200" r="34" fill="none" stroke="#0a1820" stroke-width="4" />
-  <path d="M182 200l11 11 22-22" fill="none" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="208" cy="208" r="32" fill="#22c55e" />
+  <circle cx="208" cy="208" r="32" fill="none" stroke="#1e3a5f" stroke-width="4" />
+  <path d="M192 208l10 10 20-20" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
