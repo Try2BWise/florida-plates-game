@@ -13,7 +13,7 @@ export function PageView({ title, onBack, tabs, children }: PageViewProps) {
     <div className="page-view">
       <div className="page-view__header">
         <button type="button" className="page-view__back" onClick={onBack}>
-          <Icon name="chevron-left" size={20} /> Back
+          <Icon name="chevron-left" size={28} />
         </button>
         <h1 className="page-view__title">{title}</h1>
       </div>

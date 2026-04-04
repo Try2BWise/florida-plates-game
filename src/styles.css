@@ -2069,14 +2069,13 @@ select {
 .page-view__back {
   display: inline-flex;
   align-items: center;
-  gap: 0.15rem;
+  justify-content: center;
   background: none;
   border: none;
   color: var(--accent);
-  font-size: 1.06rem;
-  font-weight: 400;
   cursor: pointer;
-  padding: 0.25rem 0.25rem 0.25rem 0;
+  padding: 0.25rem;
+  margin-left: -0.25rem;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -2086,7 +2085,7 @@ select {
   font-size: 1.06rem;
   font-weight: 600;
   margin: 0;
-  padding-right: 3.5rem;
+  padding-right: 2rem;
 }
 
 .page-view__tabs {
