@@ -116,12 +116,11 @@ export const floridaGame: GameDefinition & {
     appName: "Every PL8",
     appShareName: "Every PL8",
     shareUrl: "https://gorillagrin.com/florida-plates-game/",
-    appTagline: "Florida Plate Tracker",
+    appTagline: "Florida Edition",
     headerImage: {
-      type: "welcome-sign",
-      line1: "Welcome to",
-      line2: "FLORIDA",
-      line3: "The Sunshine State"
+      type: "logo",
+      path: "state-pl8-logo.png",
+      alt: "State PL8 logo"
     },
     attribution: {
       text: "Specialty plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim.",

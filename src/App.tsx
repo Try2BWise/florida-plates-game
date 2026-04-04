@@ -1083,12 +1083,20 @@ function App() {
       <div ref={headerSentinelRef} className="header-sentinel" aria-hidden="true" />
       <header className={`app-header ${isHeaderCompact ? "app-header--compact" : ""}`}>
         <div className="app-header__top">
-          <div className="app-header__title-block app-header__title-block--sign">
-            <div className="welcome-sign" aria-label={floridaGame.branding.appTagline}>
-              <span className="welcome-sign__welcome">{floridaGame.branding.headerImage.line1}</span>
-              <span className="welcome-sign__state">{floridaGame.branding.headerImage.line2}</span>
-              <span className="welcome-sign__tagline">{floridaGame.branding.headerImage.line3}</span>
-            </div>
+          <div className="app-header__title-block">
+            {floridaGame.branding.headerImage.type === "logo" ? (
+              <img
+                className="app-header__logo"
+                src={`${import.meta.env.BASE_URL}${floridaGame.branding.headerImage.path}`}
+                alt={floridaGame.branding.headerImage.alt}
+              />
+            ) : (
+              <div className="welcome-sign" aria-label={floridaGame.branding.appTagline}>
+                <span className="welcome-sign__welcome">{floridaGame.branding.headerImage.line1}</span>
+                <span className="welcome-sign__state">{floridaGame.branding.headerImage.line2}</span>
+                <span className="welcome-sign__tagline">{floridaGame.branding.headerImage.line3}</span>
+              </div>
+            )}
             <p className="app-header__eyebrow">{floridaGame.branding.appTagline}</p>
           </div>
           <div className="app-header__stats" aria-live="polite">

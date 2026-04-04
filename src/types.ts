@@ -95,12 +95,9 @@ export interface GameBranding {
   appShareName: string;
   shareUrl: string;
   appTagline: string;
-  headerImage: {
-    type: "welcome-sign";
-    line1: string;
-    line2: string;
-    line3: string;
-  };
+  headerImage:
+    | { type: "welcome-sign"; line1: string; line2: string; line3: string }
+    | { type: "logo"; path: string; alt: string };
   attribution: {
     text: string;
     agencyName: string;

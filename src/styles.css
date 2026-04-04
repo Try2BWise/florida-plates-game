@@ -63,38 +63,34 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --shell-width: 42rem;
-  --accent: #0f4c5c;
-  --accent-soft: rgba(15, 76, 92, 0.12);
-  --muted: #5d7378;
-  --text: #12343b;
-  --surface: rgba(255, 255, 255, 0.86);
-  --surface-strong: rgba(255, 255, 255, 0.72);
-  --shell-bg:
-    radial-gradient(circle at top, rgba(244, 162, 97, 0.28), transparent 28rem),
-    linear-gradient(180deg, #fefae0 0%, #f6f0d6 35%, #f4efe8 100%);
-  --page-bg: #f7f0da;
-  --card-border: rgba(18, 52, 59, 0.1);
-  --card-shadow: 0 2px 8px rgba(18, 52, 59, 0.06);
-  --control-active-bg: #0f4c5c;
-  --control-active-text: #f8fcfd;
+  --accent: #3FA7E0;
+  --accent-soft: rgba(63, 167, 224, 0.12);
+  --muted: #6B7280;
+  --text: #123157;
+  --surface: rgba(245, 242, 236, 0.9);
+  --surface-strong: rgba(245, 242, 236, 0.7);
+  --shell-bg: #F5F2EC;
+  --page-bg: #F5F2EC;
+  --card-border: rgba(18, 49, 87, 0.1);
+  --card-shadow: 0 2px 8px rgba(18, 49, 87, 0.06);
+  --control-active-bg: #123157;
+  --control-active-text: #F5F2EC;
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --accent: #7bdff2;
-  --accent-soft: rgba(123, 223, 242, 0.14);
-  --muted: #a1b4bd;
-  --text: #eef6f8;
-  --surface: rgba(16, 32, 42, 0.6);
-  --surface-strong: rgba(16, 32, 42, 0.4);
-  --shell-bg:
-    radial-gradient(circle at top, rgba(123, 223, 242, 0.12), transparent 24rem),
-    linear-gradient(180deg, #08141b 0%, #0d1d26 45%, #112530 100%);
-  --page-bg: #0a1820;
-  --card-border: rgba(180, 211, 221, 0.1);
-  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  --control-active-bg: #b8f2ff;
-  --control-active-text: #062530;
+  --accent: #3FA7E0;
+  --accent-soft: rgba(63, 167, 224, 0.14);
+  --muted: #9CA3AF;
+  --text: #F5F2EC;
+  --surface: rgba(18, 49, 87, 0.5);
+  --surface-strong: rgba(18, 49, 87, 0.35);
+  --shell-bg: #0e1f35;
+  --page-bg: #0e1f35;
+  --card-border: rgba(245, 242, 236, 0.1);
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --control-active-bg: #3FA7E0;
+  --control-active-text: #0e1f35;
 }
 
 * {
@@ -184,8 +180,15 @@ select {
 
 .app-header__title-block {
   display: grid;
-  gap: 0.2rem;
+  gap: 0.25rem;
   min-width: 0;
+}
+
+.app-header__logo {
+  display: block;
+  height: 3.5rem;
+  width: auto;
+  object-fit: contain;
 }
 
 .app-header__title-block--sign {

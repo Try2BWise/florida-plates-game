@@ -1,5 +1,5 @@
-const APP_CACHE = "every-pl8-app-v7";
-const RUNTIME_CACHE = "every-pl8-runtime-v7";
+const APP_CACHE = "every-pl8-app-v8";
+const RUNTIME_CACHE = "every-pl8-runtime-v8";
 const BASE_PATH = self.location.pathname.replace(/\/sw\.js$/, "");
 const APP_SHELL = [
   `${BASE_PATH}/`,
