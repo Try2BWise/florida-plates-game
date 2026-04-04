@@ -116,12 +116,12 @@ export const floridaGame: GameDefinition & {
     appName: "FL Plates",
     appShareName: "FL Plates",
     shareUrl: "https://gorillagrin.com/florida-plates-game/",
-    appTagline: "Florida plate tracker",
+    appTagline: "Florida Plate Tracker",
     headerImage: {
       type: "welcome-sign",
       line1: "Welcome to",
       line2: "FLORIDA",
-      line3: "the sunshine state"
+      line3: "The Sunshine State"
     },
     attribution: {
       text: "Specialty plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim.",

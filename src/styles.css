@@ -206,7 +206,7 @@ select {
   font-size: 0.66rem;
   font-weight: 600;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
+  text-transform: none;
   max-height: 1.5rem;
   overflow: hidden;
   transition: opacity 0.25s ease, max-height 0.25s ease;
@@ -279,7 +279,7 @@ select {
   justify-self: center;
   font-size: 0.68rem;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 /* ── KPI stats ── */
@@ -689,7 +689,7 @@ select {
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 0.04em;
 }
 
@@ -1034,7 +1034,7 @@ select {
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .confirm-modal__title {
@@ -1185,7 +1185,7 @@ select {
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .utility-panel__title {
@@ -1314,7 +1314,7 @@ select {
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
 }
 
@@ -1544,7 +1544,7 @@ select {
   font-size: 0.68rem;
   font-weight: 900;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
+  text-transform: none;
   white-space: nowrap;
 }
 
@@ -1779,7 +1779,7 @@ select {
   font-size: 0.82rem;
   font-weight: 900;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
+  text-transform: none;
   display: inline-flex;
   align-items: center;
   gap: 0.42rem;
@@ -1945,7 +1945,7 @@ select {
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .map-card__label--north {
