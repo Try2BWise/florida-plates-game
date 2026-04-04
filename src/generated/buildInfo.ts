@@ -1,6 +1,6 @@
 export const buildInfo = {
-  version: "1.6.3",
-  builtAtIso: "2026-04-04T02:01:49.666Z",
+  version: "1.6.4",
+  builtAtIso: "2026-04-04T04:20:57.270Z",
   branch: "master",
-  commit: "18a9d5e"
+  commit: "12b016e"
 } as const;
