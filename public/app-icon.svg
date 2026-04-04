@@ -1,28 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0d2030" />
+      <stop offset="0%" stop-color="#112530" />
       <stop offset="100%" stop-color="#0a1820" />
-    </linearGradient>
-    <linearGradient id="plate" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#f8fbfc" />
-      <stop offset="100%" stop-color="#e2e8f0" />
     </linearGradient>
   </defs>
   <!-- Background -->
   <rect width="256" height="256" rx="56" fill="url(#bg)" />
-  <!-- License plate shape -->
-  <rect x="38" y="58" width="180" height="100" rx="12" fill="url(#plate)" stroke="#94a3b8" stroke-width="2" />
-  <!-- Plate holes -->
-  <circle cx="58" cy="78" r="4" fill="#94a3b8" opacity="0.5" />
-  <circle cx="198" cy="78" r="4" fill="#94a3b8" opacity="0.5" />
-  <circle cx="58" cy="138" r="4" fill="#94a3b8" opacity="0.5" />
-  <circle cx="198" cy="138" r="4" fill="#94a3b8" opacity="0.5" />
-  <!-- Plate text lines (abstract) -->
-  <rect x="72" y="86" width="112" height="8" rx="4" fill="#64748b" opacity="0.3" />
-  <rect x="58" y="104" width="140" height="14" rx="4" fill="#0f4c5c" opacity="0.8" />
-  <rect x="82" y="128" width="92" height="6" rx="3" fill="#64748b" opacity="0.25" />
+
+  <!-- Back plate (tilted left) -->
+  <g transform="translate(128,108) rotate(-8) translate(-128,-108)">
+    <rect x="28" y="62" width="200" height="92" rx="10" fill="#94a3b8" opacity="0.35" />
+  </g>
+
+  <!-- Middle plate (tilted right slightly) -->
+  <g transform="translate(128,118) rotate(4) translate(-128,-118)">
+    <rect x="28" y="72" width="200" height="92" rx="10" fill="#cbd5e1" opacity="0.55" />
+    <!-- Bolt holes -->
+    <circle cx="46" cy="90" r="3.5" fill="#94a3b8" opacity="0.5" />
+    <circle cx="210" cy="90" r="3.5" fill="#94a3b8" opacity="0.5" />
+    <!-- Abstract text -->
+    <rect x="68" y="100" width="120" height="10" rx="5" fill="#64748b" opacity="0.4" />
+    <rect x="88" y="120" width="80" height="6" rx="3" fill="#64748b" opacity="0.3" />
+  </g>
+
+  <!-- Front plate (straight, prominent) -->
+  <g>
+    <rect x="28" y="82" width="200" height="92" rx="10" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="2" />
+    <!-- Bolt holes -->
+    <circle cx="46" cy="100" r="3.5" fill="#94a3b8" opacity="0.6" />
+    <circle cx="210" cy="100" r="3.5" fill="#94a3b8" opacity="0.6" />
+    <circle cx="46" cy="156" r="3.5" fill="#94a3b8" opacity="0.6" />
+    <circle cx="210" cy="156" r="3.5" fill="#94a3b8" opacity="0.6" />
+    <!-- State name area -->
+    <rect x="72" y="92" width="112" height="8" rx="4" fill="#3b82f6" opacity="0.25" />
+    <!-- Big plate number -->
+    <text x="128" y="140" text-anchor="middle" fill="#0f172a" font-size="36" font-weight="800" font-family="-apple-system, system-ui, sans-serif" letter-spacing="6">SP</text>
+    <!-- Bottom text -->
+    <rect x="82" y="152" width="92" height="6" rx="3" fill="#64748b" opacity="0.2" />
+  </g>
+
   <!-- Green checkmark circle -->
-  <circle cx="192" cy="182" r="36" fill="#22c55e" />
-  <path d="M172 182l12 12 24-24" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="200" cy="200" r="34" fill="#22c55e" />
+  <circle cx="200" cy="200" r="34" fill="none" stroke="#0a1820" stroke-width="4" />
+  <path d="M182 200l11 11 22-22" fill="none" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
