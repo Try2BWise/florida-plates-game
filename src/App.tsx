@@ -1070,6 +1070,12 @@ function App() {
     }));
   }
 
+  function navigateHome() {
+    setActiveView("home");
+    setIsHeaderCompact(false);
+    window.scrollTo(0, 0);
+  }
+
   return (
     <div className="app-shell">
       {activeView === "home" ? (
@@ -1453,7 +1459,7 @@ function App() {
 
       {activeView === "explore" ? (
         <ExplorePage
-          onBack={() => setActiveView("home")}
+          onBack={navigateHome}
           activeTab={activeExploreTab}
           onTabChange={setActiveExploreTab}
           foundCount={foundCount}
@@ -1481,12 +1487,12 @@ function App() {
       ) : null}
 
       {activeView === "help" ? (
-        <HelpPage onBack={() => setActiveView("home")} helpContent={floridaGame.help} />
+        <HelpPage onBack={navigateHome} helpContent={floridaGame.help} />
       ) : null}
 
       {activeView === "settings" ? (
         <SettingsPage
-          onBack={() => setActiveView("home")}
+          onBack={navigateHome}
           theme={theme}
           onThemeToggle={() => setTheme((c) => c === "light" ? "dark" : "light")}
           uiPreferences={uiPreferences}
