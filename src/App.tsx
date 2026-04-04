@@ -1316,7 +1316,9 @@ function App() {
               {previewPlate.notes ? (
                 <p className="preview-sheet__notes">{previewPlate.notes}</p>
               ) : null}
-              {!normalizedDiscoveries[previewPlate.id] ? (
+            </div>
+            {!normalizedDiscoveries[previewPlate.id] ? (
+              <div className="sheet__footer">
                 <button
                   type="button"
                   className="preview-sheet__found-btn"
@@ -1327,8 +1329,8 @@ function App() {
                 >
                   Mark Found
                 </button>
-              ) : null}
-            </div>
+              </div>
+            ) : null}
           </div>
         </div>
       ) : null}

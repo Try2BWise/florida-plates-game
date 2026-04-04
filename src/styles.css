@@ -497,7 +497,7 @@ select {
   width: min(100vw, 42rem);
   max-height: 70vh;
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
   gap: 0.5rem;
   padding: 0.5rem 1rem calc(1.2rem + env(safe-area-inset-bottom, 0px));
   border-radius: 1.2rem 1.2rem 0 0;
@@ -541,6 +541,15 @@ select {
   overflow-y: auto;
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.sheet__body::-webkit-scrollbar {
+  display: none;
+}
+
+.sheet__footer {
+  padding: 0.5rem 0 0;
 }
 
 .sheet__option {
