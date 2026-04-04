@@ -121,7 +121,7 @@ export function ExplorePage({
               percent={evaluatedBadges.length > 0 ? Math.round((earnedBadges.length / evaluatedBadges.length) * 100) : 0}
               size={100}
               strokeWidth={10}
-              color="#22c55e"
+              color="#D33C2E"
               label={`${earnedBadges.length}`}
               sublabel={`of ${evaluatedBadges.length} badges`}
             />
