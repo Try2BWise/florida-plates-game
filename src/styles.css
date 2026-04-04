@@ -402,13 +402,13 @@ select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.45rem;
-  padding: 0.62rem 0.82rem;
+  min-height: 2rem;
+  padding: 0.42rem 0.72rem;
   border: 1px solid var(--card-border);
-  border-radius: 0.62rem;
+  border-radius: 0.52rem;
   background: var(--surface);
   color: var(--text);
-  box-shadow: var(--card-shadow);
+  box-shadow: none;
 }
 
 .view-toggle__chip--active {
