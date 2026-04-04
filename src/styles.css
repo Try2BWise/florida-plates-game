@@ -26,23 +26,23 @@
 .badge-medal-img {
   image-rendering: auto;
   transition: opacity 0.2s;
-  width: 96px;
-  height: 96px;
-  margin-bottom: 0.32rem;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 0.25rem;
 }
 .badge-medal-img--dimmed {
-  opacity: 0.28;
-  filter: grayscale(100%) brightness(0.6) contrast(1.1);
+  opacity: 0.38;
+  filter: grayscale(80%) brightness(0.7);
 }
 .badge-medal-label {
   display: block;
-  font-size: 1.02rem;
-  font-weight: 600;
+  font-size: 0.76rem;
+  font-weight: 500;
   text-align: center;
-  color: var(--text);
+  color: var(--muted);
   word-break: break-word;
-  margin-top: 0.18rem;
-  line-height: 1.18;
+  margin-top: 0.15rem;
+  line-height: 1.2;
 }
 .toggle-label {
   cursor: pointer;
@@ -411,6 +411,12 @@ select {
   background: var(--surface);
   color: var(--text);
   box-shadow: var(--card-shadow);
+}
+
+.view-toggle__chip--active {
+  border-color: transparent;
+  background: var(--control-active-bg);
+  color: var(--control-active-text);
 }
 
 .search-toggle {
@@ -1577,9 +1583,9 @@ select {
 
 .badge-group__header h4 {
   color: var(--text);
-  font-size: 0.82rem;
-  font-weight: 900;
-  letter-spacing: 0.04em;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   text-transform: none;
   display: inline-flex;
   align-items: center;
@@ -1588,8 +1594,8 @@ select {
 
 .badge-group__header span {
   color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 800;
+  font-size: 0.76rem;
+  font-weight: 600;
 }
 
 .badge-group__icon {
@@ -1641,8 +1647,8 @@ select {
   justify-self: start;
   padding: 0.28rem 0.52rem;
   border-radius: 999px;
-  font-size: 0.68rem;
-  font-weight: 800;
+  font-size: 0.72rem;
+  font-weight: 700;
   letter-spacing: 0.03em;
 }
 
