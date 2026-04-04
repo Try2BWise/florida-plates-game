@@ -1,8 +1,8 @@
 {
   "id": ".",
-  "name": "State Plates",
-  "short_name": "State Plates",
-  "description": "Track license plates you spot on the road, even when you're offline.",
+  "name": "Every PL8",
+  "short_name": "Every PL8",
+  "description": "Collect every license plate you spot on the road.",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",

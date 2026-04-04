@@ -113,8 +113,8 @@ export const floridaGame: GameDefinition & {
 } = {
   id: "florida",
   branding: {
-    appName: "FL Plates",
-    appShareName: "FL Plates",
+    appName: "Every PL8",
+    appShareName: "Every PL8",
     shareUrl: "https://gorillagrin.com/florida-plates-game/",
     appTagline: "Florida Plate Tracker",
     headerImage: {
@@ -133,7 +133,7 @@ export const floridaGame: GameDefinition & {
   },
   share: {
     appMessage: [
-      "I’ve been playing FL Plates, a Florida license plate spotting game.",
+      "I’ve been playing Every PL8 — a license plate collecting game!",
       "",
       "Play it here: https://gorillagrin.com/florida-plates-game/",
       "",
@@ -143,7 +143,7 @@ export const floridaGame: GameDefinition & {
     ].join("\n"),
     badgeMessage: (badgeName: string) =>
       [
-        `I just earned ${badgeName} on FL Plates!`,
+        `I just earned ${badgeName} on Every PL8!`,
         "",
         "Play it here: https://gorillagrin.com/florida-plates-game/",
         "",
@@ -164,7 +164,7 @@ export const floridaGame: GameDefinition & {
     usefulTools: [
       "Explore opens badges, a stats dashboard, and your map view.",
       "Settings lets you hide optional controls and switch color mode.",
-      "Share FL Plates opens a share sheet with the app link and install instructions."
+      "Share Every PL8 opens a share sheet with the app link and install instructions."
     ],
     install: [
       "iPhone: open the game in Safari, tap Share, then choose Add to Home Screen.",
