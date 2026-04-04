@@ -1,10 +1,10 @@
-const APP_CACHE = "florida-plates-app-v6";
-const RUNTIME_CACHE = "florida-plates-runtime-v6";
+const APP_CACHE = "every-pl8-app-v7";
+const RUNTIME_CACHE = "every-pl8-runtime-v7";
 const BASE_PATH = self.location.pathname.replace(/\/sw\.js$/, "");
 const APP_SHELL = [
   `${BASE_PATH}/`,
   `${BASE_PATH}/manifest.webmanifest`,
-  `${BASE_PATH}/app-icon.svg`,
+  `${BASE_PATH}/pwa-192.png`,
   `${BASE_PATH}/apple-touch-icon.png`,
   `${BASE_PATH}/pwa-192.png`,
   `${BASE_PATH}/pwa-512.png`,
