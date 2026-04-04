@@ -1,5 +1,6 @@
 export type IconName =
   | "chevron-left"
+  | "share"
   | "home"
   | "globe"
   | "help"
@@ -28,6 +29,13 @@ const paths: Record<IconName, JSX.Element> = {
   "chevron-left": (
     <>
       <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </>
+  ),
+  share: (
+    <>
+      <path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <polyline points="16 6 12 2 8 6" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <line x1="12" y1="2" x2="12" y2="15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
     </>
   ),
   home: (

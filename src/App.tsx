@@ -1805,7 +1805,6 @@ function App() {
           onImportProgress={handleImportProgress}
           onClearDiscoveries={handleClearDiscoveries}
           onShareApp={handleShareApp}
-          appShareName={floridaGame.branding.appShareName}
           buildVersion={buildInfo.version}
           buildDateLabel={buildDateLabel}
           attribution={floridaGame.branding.attribution}
@@ -1864,8 +1863,9 @@ function App() {
                   type="button"
                   className="preview-sheet__found-btn"
                   onClick={() => handleShareBadge(activeBadgeDetail.name)}
+                  style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '0.4rem' }}
                 >
-                  Share Badge
+                  <Icon name="share" size={18} /> Share
                 </button>
               ) : null}
 

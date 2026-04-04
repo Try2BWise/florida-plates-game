@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Icon } from "./Icon";
 import { PageView } from "./PageView";
 import { developer } from "../config/developer";
 
@@ -14,7 +15,6 @@ interface SettingsPageProps {
   onImportProgress: (event: React.ChangeEvent<HTMLInputElement>) => void;
   onClearDiscoveries: () => void;
   onShareApp: () => void;
-  appShareName: string;
   buildVersion: string;
   buildDateLabel: string;
   attribution: {
@@ -29,7 +29,7 @@ interface SettingsPageProps {
 export function SettingsPage({
   onBack, theme, onThemeToggle, uiPreferences, onToggleUiPreference,
   onForceReload, foundCount, onExportProgress, onImportProgress, onClearDiscoveries,
-  onShareApp, appShareName, buildVersion, buildDateLabel, attribution
+  onShareApp, buildVersion, buildDateLabel, attribution
 }: SettingsPageProps) {
   const [activeTab, setActiveTab] = useState<"settings" | "about">("settings");
 
@@ -116,7 +116,9 @@ export function SettingsPage({
               <div>
                 <p className="utility-card__meta" style={{ marginBottom: 4 }}>Developed by <a className="app-footer__link" href={developer.url} target="_blank" rel="noreferrer">{developer.name}</a>.</p>
                 <p className="utility-card__meta" style={{ marginBottom: 4 }}>Version {buildVersion} • Built {buildDateLabel}</p>
-                <button type="button" className="app-footer__share utility-card__action about-card__share" onClick={onShareApp} style={{ width: 'auto', marginTop: 8 }}>Share {appShareName}</button>
+                <button type="button" className="app-footer__share utility-card__action about-card__share" onClick={onShareApp} style={{ width: 'auto', marginTop: 8, display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+                  <Icon name="share" size={16} /> Share
+                </button>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, width: 140, justifySelf: 'center' }}>
                 <div style={{ background: '#fff', borderRadius: 8, padding: 8, width: 120, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
