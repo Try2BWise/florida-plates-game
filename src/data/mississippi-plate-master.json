@@ -40,14 +40,14 @@
     {
       "id": "ms-100-disabled-veteran-air-force-motorcycle",
       "slug": "100-disabled-veteran-air-force-motorcycle",
-      "name": "100% Disabled Veteran Air Force Motorcycle",
-      "displayName": "100% Disabled Veteran Air Force Motorcycle",
+      "name": "100% Disabled Veteran Air Force (Motorcycle)",
+      "displayName": "100% Disabled Veteran Air Force (Motorcycle)",
       "baseName": "100% Disabled Veteran Air Force",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/100-disabled-veteran-air-force-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/100%25%20Disabled%20Air%20Force%20Motorcycle.png.webp?itok=Wo1aUHZi"
@@ -100,14 +100,14 @@
     {
       "id": "ms-100-disabled-veteran-army-motorcycle",
       "slug": "100-disabled-veteran-army-motorcycle",
-      "name": "100% Disabled Veteran Army Motorcycle",
-      "displayName": "100% Disabled Veteran Army Motorcycle",
+      "name": "100% Disabled Veteran Army (Motorcycle)",
+      "displayName": "100% Disabled Veteran Army (Motorcycle)",
       "baseName": "100% Disabled Veteran Army",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/100-disabled-veteran-army-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/100%25%20Disabled%20Army%20Motorcycle%20.png.webp?itok=u2sF8JFE"
@@ -160,14 +160,14 @@
     {
       "id": "ms-100-disabled-veteran-coast-guard-motorcycle",
       "slug": "100-disabled-veteran-coast-guard-motorcycle",
-      "name": "100% Disabled Veteran Coast Guard Motorcycle",
-      "displayName": "100% Disabled Veteran Coast Guard Motorcycle",
+      "name": "100% Disabled Veteran Coast Guard (Motorcycle)",
+      "displayName": "100% Disabled Veteran Coast Guard (Motorcycle)",
       "baseName": "100% Disabled Veteran Coast Guard",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/100-disabled-veteran-coast-guard-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/100%25%20Disabled%20Coast%20Guard%20Motorcycle%20.png.webp?itok=oH11J3aQ"
@@ -220,14 +220,14 @@
     {
       "id": "ms-100-disabled-veteran-marine-motorcycle",
       "slug": "100-disabled-veteran-marine-motorcycle",
-      "name": "100% Disabled Veteran Marine Motorcycle",
-      "displayName": "100% Disabled Veteran Marine Motorcycle",
+      "name": "100% Disabled Veteran Marine (Motorcycle)",
+      "displayName": "100% Disabled Veteran Marine (Motorcycle)",
       "baseName": "100% Disabled Veteran Marine",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/100-disabled-veteran-marine-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/100%25%20Disabled%20Marine%20Motorcycle%20.png.webp?itok=UJc37ZtX"
@@ -280,14 +280,14 @@
     {
       "id": "ms-100-disabled-veteran-navy-motorcycle",
       "slug": "100-disabled-veteran-navy-motorcycle",
-      "name": "100% Disabled Veteran Navy Motorcycle",
-      "displayName": "100% Disabled Veteran Navy Motorcycle",
+      "name": "100% Disabled Veteran Navy (Motorcycle)",
+      "displayName": "100% Disabled Veteran Navy (Motorcycle)",
       "baseName": "100% Disabled Veteran Navy",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/100-disabled-veteran-navy-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/100%25%20Disabled%20Navy%20Motorcycle%20v1%20.png.webp?itok=NIXa3qIC"
@@ -700,14 +700,14 @@
     {
       "id": "ms-antique-motorcycle",
       "slug": "antique-motorcycle",
-      "name": "Antique Motorcycle",
-      "displayName": "Antique Motorcycle",
+      "name": "Antique (Motorcycle)",
+      "displayName": "Antique (Motorcycle)",
       "baseName": "Antique",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/antique-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Antique%252520Motorcycle_jpg.jpg.webp?itok=4AbVlaxu"
@@ -730,14 +730,14 @@
     {
       "id": "ms-antique-motorcycle-vanity",
       "slug": "antique-motorcycle-vanity",
-      "name": "Antique Motorcycle Vanity",
-      "displayName": "Antique Motorcycle Vanity",
+      "name": "Antique Vanity (Motorcycle)",
+      "displayName": "Antique Vanity (Motorcycle)",
       "baseName": "Antique Vanity",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/antique-motorcycle-vanity.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Antique%252520Motorcycle%252520-%252520Vanity_jpg.jpg.webp?itok=GINFuP6T"
@@ -1150,8 +1150,8 @@
     {
       "id": "ms-blackout-motorcycle",
       "slug": "blackout-motorcycle",
-      "name": "Blackout Motorcycle",
-      "displayName": "Blackout Motorcycle",
+      "name": "Blackout (Motorcycle)",
+      "displayName": "Blackout (Motorcycle)",
       "baseName": "Blackout",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
@@ -1960,8 +1960,8 @@
     {
       "id": "ms-dealer-motorcycle",
       "slug": "dealer-motorcycle",
-      "name": "Dealer Motorcycle",
-      "displayName": "Dealer Motorcycle",
+      "name": "Dealer (Motorcycle)",
+      "displayName": "Dealer (Motorcycle)",
       "baseName": "Dealer",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
@@ -2380,8 +2380,8 @@
     {
       "id": "ms-disabled-motorcycle",
       "slug": "disabled-motorcycle",
-      "name": "Disabled - Motorcycle",
-      "displayName": "Disabled - Motorcycle",
+      "name": "Disabled (Motorcycle)",
+      "displayName": "Disabled (Motorcycle)",
       "baseName": "Disabled",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
@@ -2590,14 +2590,14 @@
     {
       "id": "ms-disabled-american-veteran-motorcycle-air-force",
       "slug": "disabled-american-veteran-motorcycle-air-force",
-      "name": "Disabled American Veteran Motorcycle - Air Force",
-      "displayName": "Disabled American Veteran Motorcycle - Air Force",
+      "name": "Disabled American Veteran - Air Force (Motorcycle)",
+      "displayName": "Disabled American Veteran - Air Force (Motorcycle)",
       "baseName": "Disabled American Veteran - Air Force",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-motorcycle-air-force.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTDVMAF2.JPG.JPG.webp?itok=szdq3iGO"
@@ -2620,14 +2620,14 @@
     {
       "id": "ms-disabled-american-veteran-motorcycle-army",
       "slug": "disabled-american-veteran-motorcycle-army",
-      "name": "Disabled American Veteran Motorcycle - Army",
-      "displayName": "Disabled American Veteran Motorcycle - Army",
+      "name": "Disabled American Veteran - Army (Motorcycle)",
+      "displayName": "Disabled American Veteran - Army (Motorcycle)",
       "baseName": "Disabled American Veteran - Army",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-motorcycle-army.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTDVMAY2.JPG.JPG.webp?itok=U3xlUKj5"
@@ -2650,14 +2650,14 @@
     {
       "id": "ms-disabled-american-veteran-motorcycle-coast-guard",
       "slug": "disabled-american-veteran-motorcycle-coast-guard",
-      "name": "Disabled American Veteran Motorcycle - Coast Guard",
-      "displayName": "Disabled American Veteran Motorcycle - Coast Guard",
+      "name": "Disabled American Veteran - Coast Guard (Motorcycle)",
+      "displayName": "Disabled American Veteran - Coast Guard (Motorcycle)",
       "baseName": "Disabled American Veteran - Coast Guard",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-motorcycle-coast-guard.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTDVMCG2.JPG.JPG.webp?itok=DuUIxnFk"
@@ -2680,14 +2680,14 @@
     {
       "id": "ms-disabled-american-veteran-motorcycle-marine",
       "slug": "disabled-american-veteran-motorcycle-marine",
-      "name": "Disabled American Veteran Motorcycle - Marine",
-      "displayName": "Disabled American Veteran Motorcycle - Marine",
+      "name": "Disabled American Veteran - Marine (Motorcycle)",
+      "displayName": "Disabled American Veteran - Marine (Motorcycle)",
       "baseName": "Disabled American Veteran - Marine",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-motorcycle-marine.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTDVMMR2.JPG.JPG.webp?itok=6doP-QNG"
@@ -2710,14 +2710,14 @@
     {
       "id": "ms-disabled-american-veteran-motorcycle-navy",
       "slug": "disabled-american-veteran-motorcycle-navy",
-      "name": "Disabled American Veteran Motorcycle - Navy",
-      "displayName": "Disabled American Veteran Motorcycle - Navy",
+      "name": "Disabled American Veteran - Navy (Motorcycle)",
+      "displayName": "Disabled American Veteran - Navy (Motorcycle)",
       "baseName": "Disabled American Veteran - Navy",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-motorcycle-navy.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTDVMNY2.JPG.JPG.webp?itok=QSN9co4J"
@@ -2740,14 +2740,14 @@
     {
       "id": "ms-disabled-veteran-motorcycle-navy",
       "slug": "disabled-veteran-motorcycle-navy",
-      "name": "Disabled Veteran Motorcycle - Navy",
-      "displayName": "Disabled Veteran Motorcycle - Navy",
+      "name": "Disabled Veteran - Navy (Motorcycle)",
+      "displayName": "Disabled Veteran - Navy (Motorcycle)",
       "baseName": "Disabled Veteran - Navy",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-veteran-motorcycle-navy.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/DAVNYG_0.PNG.webp?itok=39S0c0cL"
@@ -3850,14 +3850,14 @@
     {
       "id": "ms-government-motorcycle",
       "slug": "government-motorcycle",
-      "name": "Government Motorcycle",
-      "displayName": "Government Motorcycle",
+      "name": "Government (Motorcycle)",
+      "displayName": "Government (Motorcycle)",
       "baseName": "Government",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/government-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Mcgov_jpg.jpg.webp?itok=B3knoq0E"
@@ -3940,14 +3940,14 @@
     {
       "id": "ms-grand-lodge-motorcycle",
       "slug": "grand-lodge-motorcycle",
-      "name": "Grand Lodge - Motorcycle",
-      "displayName": "Grand Lodge - Motorcycle",
+      "name": "Grand Lodge (Motorcycle)",
+      "displayName": "Grand Lodge (Motorcycle)",
       "baseName": "Grand Lodge",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/grand-lodge-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Grand%252520Lodge%252520-%252520Motorcycle_jpg.jpg.webp?itok=qX3FB-L6"
@@ -4180,14 +4180,14 @@
     {
       "id": "ms-hearing-impaired-motorcycle",
       "slug": "hearing-impaired-motorcycle",
-      "name": "Hearing Impaired - Motorcycle",
-      "displayName": "Hearing Impaired - Motorcycle",
+      "name": "Hearing Impaired (Motorcycle)",
+      "displayName": "Hearing Impaired (Motorcycle)",
       "baseName": "Hearing Impaired",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/hearing-impaired-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Hearing%252520Impair%252520-%252520Motorcycle_jpg.jpg.webp?itok=gMmcahdV"
@@ -5830,8 +5830,8 @@
     {
       "id": "ms-mississippi-motosteps-motorcycle",
       "slug": "mississippi-motosteps-motorcycle",
-      "name": "Mississippi Motosteps - Motorcycle",
-      "displayName": "Mississippi Motosteps - Motorcycle",
+      "name": "Mississippi Motosteps (Motorcycle)",
+      "displayName": "Mississippi Motosteps (Motorcycle)",
       "baseName": "Mississippi Motosteps",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
@@ -6220,9 +6220,9 @@
     {
       "id": "ms-motorcycle",
       "slug": "motorcycle",
-      "name": "Motorcycle",
-      "displayName": "Motorcycle",
-      "baseName": "",
+      "name": "Standard (Motorcycle)",
+      "displayName": "Standard (Motorcycle)",
+      "baseName": "Standard",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
@@ -6250,14 +6250,14 @@
     {
       "id": "ms-motorcycle-national-guard",
       "slug": "motorcycle-national-guard",
-      "name": "Motorcycle National Guard",
-      "displayName": "Motorcycle National Guard",
+      "name": "National Guard (Motorcycle)",
+      "displayName": "National Guard (Motorcycle)",
       "baseName": "National Guard",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/motorcycle-national-guard.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%20National%20Guard.jpg.webp?itok=Sl3Y6who"
@@ -6280,8 +6280,8 @@
     {
       "id": "ms-motorcycle-trailer",
       "slug": "motorcycle-trailer",
-      "name": "Motorcycle Trailer",
-      "displayName": "Motorcycle Trailer",
+      "name": "Trailer (Motorcycle)",
+      "displayName": "Trailer (Motorcycle)",
       "baseName": "Trailer",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
@@ -6310,8 +6310,8 @@
     {
       "id": "ms-motorcycle-vanity",
       "slug": "motorcycle-vanity",
-      "name": "Motorcycle Vanity",
-      "displayName": "Motorcycle Vanity",
+      "name": "Vanity (Motorcycle)",
+      "displayName": "Vanity (Motorcycle)",
       "baseName": "Vanity",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
@@ -6340,8 +6340,8 @@
     {
       "id": "ms-motorcycle-vanity-trailer",
       "slug": "motorcycle-vanity-trailer",
-      "name": "Motorcycle Vanity Trailer",
-      "displayName": "Motorcycle Vanity Trailer",
+      "name": "Vanity Trailer (Motorcycle)",
+      "displayName": "Vanity Trailer (Motorcycle)",
       "baseName": "Vanity Trailer",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
@@ -6850,14 +6850,14 @@
     {
       "id": "ms-omega-psi-phi-motorcycle",
       "slug": "omega-psi-phi-motorcycle",
-      "name": "Omega Psi Phi - Motorcycle",
-      "displayName": "Omega Psi Phi - Motorcycle",
+      "name": "Omega Psi Phi (Motorcycle)",
+      "displayName": "Omega Psi Phi (Motorcycle)",
       "baseName": "Omega Psi Phi",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/omega-psi-phi-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Omega%252520Psi%252520Phi%252520Motorcycle_jpg.jpg.webp?itok=xNG-unmz"
@@ -6970,14 +6970,14 @@
     {
       "id": "ms-pearl-harbor-motorcycle",
       "slug": "pearl-harbor-motorcycle",
-      "name": "Pearl Harbor - Motorcycle",
-      "displayName": "Pearl Harbor - Motorcycle",
+      "name": "Pearl Harbor (Motorcycle)",
+      "displayName": "Pearl Harbor (Motorcycle)",
       "baseName": "Pearl Harbor",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/pearl-harbor-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Pearl%252520Harbor%252520Motorcycle_jpg.jpg.webp?itok=ll7DqKel"
@@ -7300,14 +7300,14 @@
     {
       "id": "ms-purple-heart-motorcycle",
       "slug": "purple-heart-motorcycle",
-      "name": "Purple Heart - Motorcycle",
-      "displayName": "Purple Heart - Motorcycle",
+      "name": "Purple Heart (Motorcycle)",
+      "displayName": "Purple Heart (Motorcycle)",
       "baseName": "Purple Heart",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/purple-heart-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Purple%252520Heart%252520Motorcycle_jpg.jpg.webp?itok=kCp-8lyn"
@@ -7780,14 +7780,14 @@
     {
       "id": "ms-sons-of-confederate-veterans-motorcycle",
       "slug": "sons-of-confederate-veterans-motorcycle",
-      "name": "Sons of Confederate Veterans - Motorcycle",
-      "displayName": "Sons of Confederate Veterans - Motorcycle",
+      "name": "Sons of Confederate Veterans (Motorcycle)",
+      "displayName": "Sons of Confederate Veterans (Motorcycle)",
       "baseName": "Sons of Confederate Veterans",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/sons-of-confederate-veterans-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Sons%252520of%252520Confederate%252520Veteran%252520Motorcycle_jpg.jpg.webp?itok=DHNxgmtW"
@@ -8620,14 +8620,14 @@
     {
       "id": "ms-veteran-air-force-motorcycle",
       "slug": "veteran-air-force-motorcycle",
-      "name": "Veteran Air Force - Motorcycle",
-      "displayName": "Veteran Air Force - Motorcycle",
+      "name": "Veteran Air Force (Motorcycle)",
+      "displayName": "Veteran Air Force (Motorcycle)",
       "baseName": "Veteran Air Force",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/veteran-air-force-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%252520Veteran%252520Air%252520Force_jpg.jpg.webp?itok=W-fkb3JP"
@@ -8680,14 +8680,14 @@
     {
       "id": "ms-veteran-army-motorcycle",
       "slug": "veteran-army-motorcycle",
-      "name": "Veteran Army - Motorcycle",
-      "displayName": "Veteran Army - Motorcycle",
+      "name": "Veteran Army (Motorcycle)",
+      "displayName": "Veteran Army (Motorcycle)",
       "baseName": "Veteran Army",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/veteran-army-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%252520Veteran%252520Army_jpg.jpg.webp?itok=2-gjnvNY"
@@ -8740,14 +8740,14 @@
     {
       "id": "ms-veteran-coast-guard-motorcycle",
       "slug": "veteran-coast-guard-motorcycle",
-      "name": "Veteran Coast Guard - Motorcycle",
-      "displayName": "Veteran Coast Guard - Motorcycle",
+      "name": "Veteran Coast Guard (Motorcycle)",
+      "displayName": "Veteran Coast Guard (Motorcycle)",
       "baseName": "Veteran Coast Guard",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/veteran-coast-guard-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%252520Veteran%252520Coast%252520Guard_jpg.jpg.webp?itok=XiakGMMr"
@@ -8800,14 +8800,14 @@
     {
       "id": "ms-veteran-marine-motorcycle",
       "slug": "veteran-marine-motorcycle",
-      "name": "Veteran Marine - Motorcycle",
-      "displayName": "Veteran Marine - Motorcycle",
+      "name": "Veteran Marine (Motorcycle)",
+      "displayName": "Veteran Marine (Motorcycle)",
       "baseName": "Veteran Marine",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/veteran-marine-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%252520Veteran%252520Marine_jpg.jpg.webp?itok=Uuppfo9H"
@@ -8860,14 +8860,14 @@
     {
       "id": "ms-veteran-navy-motorcycle",
       "slug": "veteran-navy-motorcycle",
-      "name": "Veteran Navy - Motorcycle",
-      "displayName": "Veteran Navy - Motorcycle",
+      "name": "Veteran Navy (Motorcycle)",
+      "displayName": "Veteran Navy (Motorcycle)",
       "baseName": "Veteran Navy",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Motorcycle Plates",
       "image": {
         "path": "state-packs/mississippi/plates/veteran-navy-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%252520Veteran%252520Navy_jpg.jpg.webp?itok=k_PgF6Iq"
