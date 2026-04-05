@@ -18,6 +18,11 @@ export function StatePicker({ onSelect }: StatePickerProps) {
   return (
     <div className="state-picker">
       <div className="state-picker__header">
+        <img
+          className="state-picker__logo"
+          src={`${import.meta.env.BASE_URL}state-pl8-logo.png`}
+          alt="State PL8"
+        />
         <h1 className="state-picker__title">Every PL8</h1>
         <p className="state-picker__subtitle">Choose your state to start collecting</p>
       </div>
@@ -31,9 +36,12 @@ export function StatePicker({ onSelect }: StatePickerProps) {
             onClick={() => handleSelect(state.id)}
           >
             <span className="state-picker__abbr">{state.abbreviation}</span>
-            <span className="state-picker__name">{state.name}</span>
+            <div className="state-picker__card-text">
+              <span className="state-picker__name">{state.name}</span>
+              <span className="state-picker__tagline">{state.tagline}</span>
+            </div>
             {!state.available ? (
-              <span className="state-picker__badge">Coming Soon</span>
+              <span className="state-picker__coming-soon">Coming Soon</span>
             ) : null}
           </button>
         ))}

@@ -7,13 +7,13 @@ import { StatePicker } from "./components/StatePicker";
 import { getSelectedStateId } from "./games/activeGame";
 import { Icon } from "./components/Icon";
 import {
-  floridaBadgeCounties,
-  floridaBadgeGroupLabels,
-  floridaBadgeGroupSymbols,
-  floridaGame,
-  floridaMixedBagCategories,
-  floridaPanhandleScoutCounties
-} from "./config/floridaGame";
+  activeGame,
+  activeBadgeCounties,
+  activeBadgeGroupLabels,
+  activeBadgeGroupSymbols,
+  activeMixedBagCategories,
+  activePanhandleScoutCounties
+} from "./games/activeGame";
 import { PlateCard } from "./components/PlateCard";
 import { groupedPlates, plates } from "./data/plates";
 import { buildInfo } from "./generated/buildInfo";
@@ -212,8 +212,8 @@ function useSwipeDismiss(onDismiss: () => void) {
 }
 
 function App() {
-  const appShareUrl = floridaGame.branding.shareUrl;
-  const shareMessage = floridaGame.share.appMessage;
+  const appShareUrl = activeGame.branding.shareUrl;
+  const shareMessage = activeGame.share.appMessage;
   const [discoveries, setDiscoveries] = useState<PlateDiscoveryMap>(() =>
     loadDiscoveries()
   );
@@ -666,8 +666,8 @@ function App() {
     [evaluatedBadges]
   );
   // Group all badges (earned and unearned) by group for display
-  const badgeGroupLabels: Record<BadgeGroup, string> = floridaBadgeGroupLabels;
-  const badgeGroupSymbols: Record<BadgeGroup, string> = floridaBadgeGroupSymbols;
+  const badgeGroupLabels: Record<BadgeGroup, string> = activeBadgeGroupLabels;
+  const badgeGroupSymbols: Record<BadgeGroup, string> = activeBadgeGroupSymbols;
   const allBadgeGroups = useMemo(
     (): Array<[BadgeGroup, typeof evaluatedBadges]> =>
       (Object.entries(
@@ -795,13 +795,13 @@ function App() {
   }
 
   async function handleShareApp() {
-    await handleShareText(floridaGame.branding.appShareName, shareMessage);
+    await handleShareText(activeGame.branding.appShareName, shareMessage);
   }
 
   async function handleShareBadge(badgeName: string) {
-    const badgeShareMessage = floridaGame.share.badgeMessage(badgeName);
+    const badgeShareMessage = activeGame.share.badgeMessage(badgeName);
 
-    await handleShareText(`${floridaGame.branding.appShareName} - ${badgeName}`, badgeShareMessage);
+    await handleShareText(`${activeGame.branding.appShareName} - ${badgeName}`, badgeShareMessage);
   }
 
   function toggleTimelineDate(dateLabel: string) {
@@ -872,7 +872,7 @@ function App() {
         return findDiscoveriesForCategories(["Sports & Recreation"]);
       case "mixed-bag":
       case "full-spectrum":
-        return discoveryEntries.filter(({ plate }) => floridaMixedBagCategories.has(plate.category));
+        return discoveryEntries.filter(({ plate }) => activeMixedBagCategories.has(plate.category));
       case "reporting-for-duty":
       case "on-call":
       case "in-service":
@@ -915,15 +915,15 @@ function App() {
       case "panhandle-scout":
         return discoveryEntries.filter(({ discovery }) => {
           const county = discovery.county?.replace(/\s+County$/i, "").trim() ?? null;
-          return county ? floridaPanhandleScoutCounties.has(county) : false;
+          return county ? activePanhandleScoutCounties.has(county) : false;
         });
       default:
         if (badgePlateSets[badge.id]) {
           return findDiscoveriesForPlateNames(badgePlateSets[badge.id]);
         }
 
-        if (floridaBadgeCounties[badge.id]) {
-          return findDiscoveriesForCounties(floridaBadgeCounties[badge.id]);
+        if (activeBadgeCounties[badge.id]) {
+          return findDiscoveriesForCounties(activeBadgeCounties[badge.id]);
         }
 
         return [];
@@ -1088,20 +1088,20 @@ function App() {
       <header className={`app-header ${isHeaderCompact ? "app-header--compact" : ""}`}>
         <div className="app-header__top">
           <div className="app-header__brand">
-            {floridaGame.branding.headerImage.type === "logo" ? (
+            {activeGame.branding.headerImage.type === "logo" ? (
               <img
                 className="app-header__logo"
-                src={`${import.meta.env.BASE_URL}${floridaGame.branding.headerImage.path}`}
-                alt={floridaGame.branding.headerImage.alt}
+                src={`${import.meta.env.BASE_URL}${activeGame.branding.headerImage.path}`}
+                alt={activeGame.branding.headerImage.alt}
               />
             ) : (
-              <div className="welcome-sign" aria-label={floridaGame.branding.appTagline}>
-                <span className="welcome-sign__welcome">{floridaGame.branding.headerImage.line1}</span>
-                <span className="welcome-sign__state">{floridaGame.branding.headerImage.line2}</span>
-                <span className="welcome-sign__tagline">{floridaGame.branding.headerImage.line3}</span>
+              <div className="welcome-sign" aria-label={activeGame.branding.appTagline}>
+                <span className="welcome-sign__welcome">{activeGame.branding.headerImage.line1}</span>
+                <span className="welcome-sign__state">{activeGame.branding.headerImage.line2}</span>
+                <span className="welcome-sign__tagline">{activeGame.branding.headerImage.line3}</span>
               </div>
             )}
-            <h1 className="app-header__edition">{floridaGame.branding.appTagline}</h1>
+            <button type="button" className="app-header__edition" onClick={() => setActiveView("state-picker")}>{activeGame.branding.appTagline}</button>
           </div>
           <div className="app-header__stats" aria-live="polite">
             <div className="app-header__kpi">
@@ -1505,7 +1505,7 @@ function App() {
       ) : null}
 
       {activeView === "help" ? (
-        <HelpPage onBack={navigateHome} helpContent={floridaGame.help} />
+        <HelpPage onBack={navigateHome} helpContent={activeGame.help} />
       ) : null}
 
       {activeView === "settings" ? (
@@ -1524,7 +1524,7 @@ function App() {
           onChangeState={() => setActiveView("state-picker")}
           buildVersion={buildInfo.version}
           buildDateLabel={buildDateLabel}
-          attribution={floridaGame.branding.attribution}
+          attribution={activeGame.branding.attribution}
         />
       ) : null}
 
@@ -1588,10 +1588,10 @@ function App() {
 
               {activeBadgeDetail.group === "florida" &&
               activeBadgeDetail.id.endsWith("-explorer") &&
-              window.floridaBadgeCounties?.[activeBadgeDetail.id] ? (
+              activeBadgeCounties?.[activeBadgeDetail.id] ? (
                 <div style={{ marginTop: '0.5rem' }}>
                   <p style={{ margin: '0 0 0.3rem', fontSize: '0.76rem', color: 'var(--muted)', fontWeight: 600 }}>Counties in this region</p>
-                  {window.floridaBadgeCounties[activeBadgeDetail.id].map((county: string) => (
+                  {activeBadgeCounties[activeBadgeDetail.id].map((county: string) => (
                     <p key={county} style={{ margin: '0.15rem 0', fontSize: '0.84rem' }}>{county} County</p>
                   ))}
                 </div>
