@@ -11,8 +11,42 @@ export const kentuckyMixedBagCategories = new Set<PlateCategory>([
 
 export const kentuckyRegionScoutCounties = new Set<string>();
 
-// Kentucky regional badge counties — placeholder for future badges
-export const kentuckyBadgeCounties: Record<string, string[]> = {};
+// Kentucky geographic regions (University of Kentucky)
+export const kentuckyBadgeCounties: Record<string, string[]> = {
+  "ky-bluegrass-explorer": [
+    "Anderson", "Bath", "Boone", "Bourbon", "Boyle", "Bracken", "Campbell",
+    "Carroll", "Clark", "Fayette", "Fleming", "Franklin", "Gallatin", "Grant",
+    "Harrison", "Henry", "Jefferson", "Jessamine", "Kenton", "Lewis", "Mason",
+    "Mercer", "Nicholas", "Oldham", "Owen", "Pendleton", "Robertson", "Scott",
+    "Shelby", "Spencer", "Trimble", "Washington", "Woodford"
+  ],
+  "ky-eastern-mountain-explorer": [
+    "Bell", "Breathitt", "Boyd", "Carter", "Clay", "Elliott", "Floyd",
+    "Greenup", "Harlan", "Jackson", "Johnson", "Knott", "Knox", "Laurel",
+    "Lawrence", "Lee", "Leslie", "Letcher", "Magoffin", "Martin", "McCreary",
+    "Menifee", "Montgomery", "Morgan", "Owsley", "Perry", "Pike", "Powell",
+    "Rowan", "Whitley", "Wolfe"
+  ],
+  "ky-knobs-explorer": [
+    "Bullitt", "Estill", "Garrard", "Lincoln", "Madison", "Marion", "Nelson",
+    "Rockcastle"
+  ],
+  "ky-pennyrile-explorer": [
+    "Adair", "Allen", "Barren", "Breckinridge", "Caldwell", "Casey",
+    "Christian", "Clinton", "Crittenden", "Cumberland", "Green", "Hardin",
+    "Hart", "Hopkins", "Larue", "Livingston", "Logan", "Lyon", "Meade",
+    "Metcalfe", "Monroe", "Pulaski", "Russell", "Simpson", "Taylor", "Todd",
+    "Trigg", "Warren", "Wayne"
+  ],
+  "ky-jackson-purchase-explorer": [
+    "Ballard", "Calloway", "Carlisle", "Fulton", "Graves", "Hickman",
+    "Marshall", "McCracken"
+  ],
+  "ky-western-coalfields-explorer": [
+    "Butler", "Daviess", "Edmonson", "Grayson", "Hancock", "Henderson",
+    "McLean", "Muhlenberg", "Ohio", "Union", "Webster"
+  ],
+};
 
 export const kentuckyBadgeGroupLabels: Record<BadgeGroup, string> = {
   progress: "Progress",

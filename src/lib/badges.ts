@@ -554,6 +554,85 @@ export const badgeDefinitions: BadgeDefinition[] = [
     group: "florida",
     availableIn: "v1.4"
   },
+  // Tennessee Explorer region badges (Grand Divisions)
+  {
+    id: "tn-east-explorer",
+    name: "East Tennessee Explorer",
+    description: "Find a plate in every East Tennessee county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "tn-middle-explorer",
+    name: "Middle Tennessee Explorer",
+    description: "Find a plate in every Middle Tennessee county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "tn-west-explorer",
+    name: "West Tennessee Explorer",
+    description: "Find a plate in every West Tennessee county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-tennessee",
+    name: "All Around Tennessee",
+    description: "Earn every regional explorer badge.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  // Kentucky Explorer region badges
+  {
+    id: "ky-bluegrass-explorer",
+    name: "Bluegrass Explorer",
+    description: "Find a plate in every Bluegrass region county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ky-eastern-mountain-explorer",
+    name: "Eastern Mountain Explorer",
+    description: "Find a plate in every Eastern Mountain Coal Fields county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ky-knobs-explorer",
+    name: "Knobs Arc Explorer",
+    description: "Find a plate in every Knobs Arc county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ky-pennyrile-explorer",
+    name: "Pennyrile Explorer",
+    description: "Find a plate in every Pennyrile region county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ky-jackson-purchase-explorer",
+    name: "Jackson Purchase Explorer",
+    description: "Find a plate in every Jackson Purchase county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ky-western-coalfields-explorer",
+    name: "Western Coal Fields Explorer",
+    description: "Find a plate in every Western Coal Fields county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-kentucky",
+    name: "All Around Kentucky",
+    description: "Earn every regional explorer badge.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
   // Missouri Explorer region badges
   {
     id: "mo-northwest-explorer",
@@ -956,6 +1035,8 @@ export function evaluateBadges(
     mississippi: "all-around-mississippi",
     arkansas: "all-around-arkansas",
     missouri: "all-around-missouri",
+    tennessee: "all-around-tennessee",
+    kentucky: "all-around-kentucky",
   };
   const allAroundId = allAroundIdMap[stateId] || "all-around-florida";
   const allRegionBadgesEarned = regionBadgeEntries.every(([, badge]) => badge.earned);
@@ -1241,8 +1322,15 @@ export function evaluateBadges(
     mississippi: mississippiBadgeIds,
     arkansas: arkansasBadgeIds,
     missouri: missouriBadgeIds,
-    tennessee: emptyBadgeIds,
-    kentucky: emptyBadgeIds,
+    tennessee: new Set([
+      "tn-east-explorer", "tn-middle-explorer", "tn-west-explorer",
+      "all-around-tennessee",
+    ]),
+    kentucky: new Set([
+      "ky-bluegrass-explorer", "ky-eastern-mountain-explorer", "ky-knobs-explorer",
+      "ky-pennyrile-explorer", "ky-jackson-purchase-explorer", "ky-western-coalfields-explorer",
+      "all-around-kentucky",
+    ]),
   };
   const activeBadgeIds = stateBadgeMap[stateId] || emptyBadgeIds;
   return allEvaluated.filter((badge) => genericBadgeIds.has(badge.id) || activeBadgeIds.has(badge.id));

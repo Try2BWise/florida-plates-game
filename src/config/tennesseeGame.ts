@@ -11,8 +11,32 @@ export const tennesseeMixedBagCategories = new Set<PlateCategory>([
 
 export const tennesseeRegionScoutCounties = new Set<string>();
 
-// Tennessee regional badge counties — placeholder for future badges
-export const tennesseeBadgeCounties: Record<string, string[]> = {};
+// Tennessee Grand Divisions (Tennessee Code Annotated Title 4, Chapter 1)
+export const tennesseeBadgeCounties: Record<string, string[]> = {
+  "tn-east-explorer": [
+    "Anderson", "Bledsoe", "Blount", "Bradley", "Campbell", "Carter",
+    "Claiborne", "Cocke", "Cumberland", "Grainger", "Greene", "Hamblen",
+    "Hamilton", "Hancock", "Hawkins", "Jefferson", "Johnson", "Knox",
+    "Loudon", "Marion", "McMinn", "Meigs", "Monroe", "Morgan", "Polk",
+    "Rhea", "Roane", "Scott", "Sevier", "Sullivan", "Unicoi", "Union",
+    "Washington"
+  ],
+  "tn-middle-explorer": [
+    "Bedford", "Cannon", "Cheatham", "Clay", "Coffee", "Davidson",
+    "DeKalb", "Dickson", "Fentress", "Franklin", "Giles", "Grundy",
+    "Hickman", "Houston", "Humphreys", "Jackson", "Lawrence", "Lewis",
+    "Lincoln", "Macon", "Marshall", "Maury", "Montgomery", "Moore",
+    "Overton", "Perry", "Pickett", "Putnam", "Robertson", "Rutherford",
+    "Sequatchie", "Smith", "Sumner", "Stewart", "Trousdale", "Van Buren",
+    "Warren", "Wayne", "White", "Williamson", "Wilson"
+  ],
+  "tn-west-explorer": [
+    "Benton", "Carroll", "Chester", "Crockett", "Decatur", "Dyer",
+    "Fayette", "Gibson", "Hardeman", "Hardin", "Haywood", "Henderson",
+    "Henry", "Lake", "Lauderdale", "McNairy", "Madison", "Obion",
+    "Shelby", "Tipton", "Weakley"
+  ],
+};
 
 export const tennesseeBadgeGroupLabels: Record<BadgeGroup, string> = {
   progress: "Progress",
