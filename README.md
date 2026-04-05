@@ -1,101 +1,89 @@
-# FL Plates
+# Every PL8
 
-Installable offline-friendly tracker for Florida license plates.
+Installable offline-friendly license plate collecting game. Spot specialty plates on the road, mark them found, and earn merit badges as you explore.
 
-## What It Does
+**Live site:** [gorillagrin.com/florida-plates-game](https://gorillagrin.com/florida-plates-game/)
 
-- Track found plates with timestamp, GPS coordinates, and best-effort locality name.
-- Browse an expanded `v1.3` catalog with current and legacy plate designs.
-- Open a plate image to view a larger preview and switch between available versions.
-- Read beneficiary and plate details directly in the enlarged plate modal.
-- Filter by `All`, `Found`, or `Not found`.
-- Arrange plates by `Categories`, `A-Z`, or `Z-A`.
-- Use a more granular category model instead of the old large miscellaneous bucket.
-- Open `Explore` for recent sightings, stats, and a dynamic pushpin map.
-- Open `Settings` to switch color mode and hide or show optional main-screen controls.
-- Open `Help` for a quick how-to-play sheet.
-- Share the app with a prefilled message and install instructions.
-- Install to iPhone or Android home screen and continue using it offline after first load.
+## Supported States
+
+| State | Plates | Region Badges | Source Agency |
+|-------|--------|---------------|--------------|
+| Florida | 338 | 9 regions + master | FL DHSMV |
+| Mississippi | 306 | 5 regions + master | MS DOR |
+
+Mississippi regions follow the Mississippi Development Authority tourism regions: Hills, Delta, Capital/River, Pines, and Coastal.
+
+## Features
+
+- **Plate collection** -- Mark plates found with timestamp, GPS coordinates, and reverse-geocoded locality name.
+- **Plate preview** -- Tap any plate image to view an enlarged preview with beneficiary, category, and notes.
+- **Search, filter, sort** -- Search by name or alias, filter by found/not found, sort by category or alphabetically.
+- **Merit badges** -- Earn badges across progress milestones, category completions, regional exploration, college plates, service plates, and more.
+- **Explore** -- Tabs for badges, stats dashboard, sighting map, and timeline.
+- **Multi-state** -- Switch between state packs from the state picker. Each state has its own plate catalog, badge set, and discovery data.
+- **Settings** -- Light/dark mode, toggle optional controls.
+- **PWA** -- Install to iPhone or Android home screen. Works offline after first load.
+
+## Tech Stack
+
+- React 18, TypeScript, Vite
+- No external dependencies beyond React
+- PWA with service worker for offline support
+- Deployed to GitHub Pages via GitHub Actions
 
 ## Local Development
 
-```powershell
+```
 npm install
 npm run dev:host
 ```
 
 For LAN testing on the same Wi-Fi, open the host IP and Vite port shown in the terminal.
 
-## Production Build
+## Build
 
-```powershell
+```
 npm run build
 ```
 
-The build step also regenerates the runtime plate driver, the PWA icons, and the plate asset manifest used by the service worker.
+The `prebuild` step automatically regenerates the plate driver, PWA icons, and build metadata.
 
-To regenerate the runtime plate driver without doing a full build:
+To regenerate just the plate driver:
 
-```powershell
+```
 npm run generate:plate-driver
 ```
 
-## GitHub Pages Deployment
+## Deployment
 
-This repo is prepared to deploy to GitHub Pages with GitHub Actions.
+Each push to `master` triggers a GitHub Actions build and deploys to GitHub Pages.
 
-### 1. Create the GitHub repo
+To set up from scratch:
 
-Create a new repository in your GitHub account. A matching name like `florida-plates-game` is the easiest option.
+1. Create a repo on GitHub.
+2. Push to `origin/master`.
+3. In the repo, go to **Settings > Pages** and set the source to **GitHub Actions**.
 
-### 2. Connect this local repo to GitHub
+## Installation
 
-Replace `<repo-name>` if you choose a different repository name:
+### iPhone
 
-```powershell
-git remote add origin https://github.com/Try2BWise/<repo-name>.git
-git push -u origin master
-```
+1. Open the site in Safari.
+2. Tap **Share**, then **Add to Home Screen**.
 
-### 3. Turn on GitHub Pages
+### Android
 
-In GitHub:
-
-1. Open the repository.
-2. Go to `Settings > Pages`.
-3. Under `Build and deployment`, choose `GitHub Actions`.
-
-After that, each push to `master` will build and deploy the app automatically.
-
-### 4. Open the live site
-
-For the current custom domain, the site URL is:
-
-[https://gorillagrin.com/florida-plates-game/](https://gorillagrin.com/florida-plates-game/)
-
-### 5. Install on iPhone
-
-1. Open the Pages URL in Safari.
-2. Let the app load fully once while online.
-3. Tap `Share`.
-4. Tap `Add to Home Screen`.
-5. Launch it from the home screen.
-
-### 6. Install on Android
-
-1. Open the Pages URL in Chrome or another modern Android browser.
-2. Let the app load fully once while online.
-3. Use the browser's `Add to Home screen` or `Install app` option.
-4. Launch it from the home screen.
+1. Open the site in Chrome.
+2. Use **Add to Home screen** or **Install app**.
 
 ## Notes
 
-- The app is a PWA, not a native App Store or Play Store app.
-- Offline use works after the app shell and plate assets have been loaded successfully once.
-- If a home-screen install ever appears stuck on an older version, open the site in the browser first so the latest service worker can update.
-- Specialty plate images are not the intellectual property of Gorilla Grin. They belong to the Florida Department of Highway Safety and Motor Vehicles and are displayed here for identification purposes under a fair use claim.
+- This is a PWA, not an App Store or Play Store app.
+- Offline use works after the app shell and plate assets have loaded once.
+- If a home-screen install appears stuck on an older version, open the site in the browser so the service worker can update.
+- Specialty plate images belong to their respective state agencies and are displayed for identification and entertainment purposes under a fair use claim.
 
 ## Project Docs
 
-- Release process: [C:\Users\bwise\Documents\florida-plates-game\RELEASING.md](C:\Users\bwise\Documents\florida-plates-game\RELEASING.md)
-- Version roadmap: [C:\Users\bwise\Documents\florida-plates-game\ROADMAP.md](C:\Users\bwise\Documents\florida-plates-game\ROADMAP.md)
+- [RELEASING.md](RELEASING.md) -- Release process
+- [ROADMAP.md](ROADMAP.md) -- Version roadmap
