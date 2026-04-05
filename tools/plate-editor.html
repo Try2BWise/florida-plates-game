@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plate Editor</title>
+<style>
+:root {
+  --bg: #1a1a2e;
+  --surface: #16213e;
+  --surface2: #0f3460;
+  --accent: #e94560;
+  --accent2: #3fa7e0;
+  --text: #eee;
+  --muted: #8892a4;
+  --border: rgba(255,255,255,0.08);
+  --green: #4ade80;
+  --yellow: #facc15;
+  --radius: 8px;
+}
+* { box-sizing: border-box; margin: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+
+/* Top bar */
+.topbar { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 12px; padding: 12px 20px; background: var(--surface); border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.topbar h1 { font-size: 1.1rem; font-weight: 700; white-space: nowrap; }
+.topbar .spacer { flex: 1; }
+.btn { padding: 7px 16px; border: none; border-radius: var(--radius); font-size: 0.82rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.btn-primary { background: var(--accent2); color: #fff; }
+.btn-primary:hover { filter: brightness(1.15); }
+.btn-save { background: var(--green); color: #111; }
+.btn-save:hover { filter: brightness(1.1); }
+.btn-outline { background: transparent; border: 1px solid var(--border); color: var(--text); }
+.btn-outline:hover { background: rgba(255,255,255,0.06); }
+.btn:disabled { opacity: 0.4; cursor: default; }
+
+/* File input */
+.file-label { display: inline-flex; align-items: center; gap: 6px; padding: 7px 16px; border-radius: var(--radius); background: var(--surface2); color: var(--accent2); font-size: 0.82rem; font-weight: 600; cursor: pointer; border: 1px dashed rgba(63,167,224,0.4); }
+.file-label:hover { border-color: var(--accent2); }
+.file-label input { display: none; }
+
+/* Stats bar */
+.stats-bar { display: flex; gap: 16px; padding: 10px 20px; background: var(--surface); border-bottom: 1px solid var(--border); flex-wrap: wrap; align-items: center; font-size: 0.78rem; }
+.stat { color: var(--muted); }
+.stat b { color: var(--text); }
+.cat-pills { display: flex; gap: 4px; flex-wrap: wrap; }
+.cat-pill { padding: 3px 10px; border-radius: 20px; background: rgba(255,255,255,0.06); color: var(--muted); font-size: 0.72rem; cursor: pointer; border: 1px solid transparent; user-select: none; }
+.cat-pill:hover { background: rgba(255,255,255,0.1); }
+.cat-pill.active { background: var(--accent2); color: #fff; border-color: transparent; }
+.cat-pill .count { opacity: 0.7; margin-left: 3px; }
+
+/* Search */
+.search-box { padding: 6px 12px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 0.82rem; width: 220px; }
+.search-box::placeholder { color: var(--muted); }
+.search-box:focus { outline: none; border-color: var(--accent2); }
+
+/* Filter bar */
+.filter-bar { display: flex; gap: 8px; align-items: center; padding: 8px 20px; flex-wrap: wrap; }
+.filter-bar label { font-size: 0.78rem; color: var(--muted); }
+.badge-filter { display: inline-flex; gap: 4px; }
+.badge-filter .btn { font-size: 0.72rem; padding: 4px 10px; }
+.badge-filter .btn.active { background: var(--accent); color: #fff; }
+
+/* Table */
+.table-wrap { overflow-x: auto; padding: 0 20px 80px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+thead th { position: sticky; top: 0; background: var(--surface); padding: 10px 8px; text-align: left; font-weight: 600; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); border-bottom: 2px solid var(--border); cursor: pointer; user-select: none; white-space: nowrap; }
+thead th:hover { color: var(--text); }
+thead th.sorted { color: var(--accent2); }
+thead th .arrow { margin-left: 4px; font-size: 0.65rem; }
+tbody tr { border-bottom: 1px solid var(--border); }
+tbody tr:hover { background: rgba(255,255,255,0.02); }
+tbody tr.dirty { background: rgba(74, 222, 128, 0.06); }
+td { padding: 6px 8px; vertical-align: middle; }
+td.img-cell { width: 100px; }
+td.img-cell img { display: block; width: 96px; height: auto; border-radius: 4px; background: #fff; }
+td.name-cell { min-width: 200px; }
+td.cat-cell { min-width: 160px; }
+td.search-cell { min-width: 220px; }
+td.sponsor-cell { min-width: 180px; }
+
+/* Editable fields */
+.editable { padding: 4px 8px; border-radius: 4px; border: 1px solid transparent; background: transparent; color: var(--text); font: inherit; width: 100%; transition: border-color 0.15s; }
+.editable:hover { border-color: var(--border); }
+.editable:focus { outline: none; border-color: var(--accent2); background: rgba(0,0,0,0.2); }
+select.editable { cursor: pointer; -webkit-appearance: none; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238892a4'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 8px center; padding-right: 24px; }
+
+/* Tags */
+.tags { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.tag { display: inline-flex; align-items: center; gap: 3px; padding: 2px 8px; border-radius: 12px; background: var(--surface2); color: var(--accent2); font-size: 0.72rem; }
+.tag .remove { cursor: pointer; opacity: 0.6; font-size: 0.8rem; }
+.tag .remove:hover { opacity: 1; color: var(--accent); }
+.tag-input { border: none; background: transparent; color: var(--text); font-size: 0.76rem; width: 80px; padding: 2px 4px; outline: none; }
+.tag-input::placeholder { color: var(--muted); }
+
+/* Diff modal */
+.modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 100; display: flex; align-items: center; justify-content: center; }
+.modal { background: var(--surface); border-radius: 12px; padding: 24px; max-width: 700px; width: 90%; max-height: 80vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
+.modal h2 { margin-bottom: 16px; font-size: 1.1rem; }
+.modal .diff-item { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.8rem; }
+.modal .diff-plate { font-weight: 600; color: var(--accent2); }
+.modal .diff-field { color: var(--muted); }
+.modal .diff-old { color: var(--accent); text-decoration: line-through; }
+.modal .diff-new { color: var(--green); }
+.modal .actions { display: flex; gap: 8px; margin-top: 20px; justify-content: flex-end; }
+
+/* Empty state */
+.empty { text-align: center; padding: 80px 20px; color: var(--muted); }
+.empty h2 { font-size: 1.4rem; color: var(--text); margin-bottom: 8px; }
+.empty p { font-size: 0.9rem; }
+
+/* Bulk actions */
+.bulk-bar { display: flex; align-items: center; gap: 12px; padding: 8px 20px; background: var(--surface2); border-bottom: 1px solid var(--border); font-size: 0.8rem; }
+.bulk-bar select { padding: 4px 8px; border-radius: 4px; border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 0.8rem; }
+input[type="checkbox"] { accent-color: var(--accent2); }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <h1>Plate Editor</h1>
+  <label class="file-label">
+    Open Master JSON
+    <input type="file" id="fileInput" accept=".json">
+  </label>
+  <input type="text" class="search-box" id="searchBox" placeholder="Search plates..." disabled>
+  <span class="spacer"></span>
+  <span id="changeCount" style="font-size:0.8rem; color:var(--muted)"></span>
+  <button class="btn btn-outline" id="undoBtn" disabled onclick="undo()">Undo</button>
+  <button class="btn btn-save" id="saveBtn" disabled onclick="showDiff()">Review & Save</button>
+</div>
+
+<div class="stats-bar" id="statsBar" style="display:none">
+  <span class="stat"><b id="totalCount">0</b> plates</span>
+  <span class="stat"><b id="dirtyCount">0</b> changed</span>
+  <span style="flex:1"></span>
+  <div class="cat-pills" id="catPills"></div>
+</div>
+
+<div class="bulk-bar" id="bulkBar" style="display:none">
+  <input type="checkbox" id="selectAll" onchange="toggleSelectAll(this.checked)">
+  <span id="selectedCount">0 selected</span>
+  <span>Move to:</span>
+  <select id="bulkCategory" onchange="bulkReassign(this.value)">
+    <option value="">Choose category...</option>
+  </select>
+</div>
+
+<div id="content">
+  <div class="empty">
+    <h2>Plate Editor</h2>
+    <p>Open a state's <code>*-plate-master.json</code> file to begin editing.</p>
+  </div>
+</div>
+
+<div id="modalContainer"></div>
+
+<script>
+const CATEGORIES = [
+  "Accessibility","Civic & Causes","Commercial & Fleet","Education & Culture",
+  "Government & Official","Health & Family","Historical & Antique",
+  "Military Honors & History","Military Service","Motorcycle Plates",
+  "Nature & Wildlife","Professional Sports","Public Service","Schools",
+  "Special Use","Sports & Recreation","Standard Plates","Travel & Tourism","Universities"
+];
+
+let masterData = null;
+let originalPlates = null; // deep copy for diffing
+let undoStack = [];
+let activeCatFilter = null;
+let searchQuery = '';
+let sortCol = 'category';
+let sortAsc = true;
+let selected = new Set();
+let imageBase = '';
+
+// File input
+document.getElementById('fileInput').addEventListener('change', (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+
+  // Try to detect image base path from filename
+  const match = file.name.match(/^(\w+)-plate-master\.json$/);
+  if (match) {
+    imageBase = '';  // Will prompt user
+  }
+
+  const reader = new FileReader();
+  reader.onload = (ev) => {
+    try {
+      masterData = JSON.parse(ev.target.result);
+      originalPlates = JSON.parse(JSON.stringify(masterData.plates));
+      undoStack = [];
+      selected.clear();
+      document.getElementById('searchBox').disabled = false;
+      document.getElementById('saveBtn').disabled = false;
+
+      // Ask for image directory
+      promptImageDir();
+      renderAll();
+    } catch (err) {
+      alert('Invalid JSON: ' + err.message);
+    }
+  };
+  reader.readAsText(file);
+});
+
+function promptImageDir() {
+  // Check if plates have image paths we can use
+  if (masterData.plates.length > 0) {
+    const samplePath = masterData.plates[0].image?.path;
+    if (samplePath) {
+      // Show a prompt for the base path
+      const base = prompt(
+        'Enter the path to the public/ folder so plate images can be shown.\n\n' +
+        'Example: If this editor is in tools/ and public/ is at ../public/\n' +
+        'enter: ../public/\n\n' +
+        'Sample plate image path: ' + samplePath,
+        '../public/'
+      );
+      if (base) imageBase = base.endsWith('/') ? base : base + '/';
+    }
+  }
+}
+
+// Rendering
+function renderAll() {
+  renderStats();
+  renderTable();
+  updateChangeCount();
+}
+
+function renderStats() {
+  const bar = document.getElementById('statsBar');
+  bar.style.display = 'flex';
+
+  document.getElementById('totalCount').textContent = masterData.plates.length;
+
+  // Category pills
+  const cats = {};
+  masterData.plates.forEach(p => { cats[p.category] = (cats[p.category] || 0) + 1; });
+
+  const pillsEl = document.getElementById('catPills');
+  pillsEl.innerHTML = '<span class="cat-pill ' + (!activeCatFilter ? 'active' : '') + '" onclick="filterCat(null)">All<span class="count">' + masterData.plates.length + '</span></span>';
+
+  Object.entries(cats).sort((a,b) => a[0].localeCompare(b[0])).forEach(([cat, count]) => {
+    const active = activeCatFilter === cat ? 'active' : '';
+    pillsEl.innerHTML += '<span class="cat-pill ' + active + '" onclick="filterCat(\'' + cat.replace(/'/g, "\\'") + '\')">' + cat + '<span class="count">' + count + '</span></span>';
+  });
+
+  // Bulk category dropdown
+  const bulkCat = document.getElementById('bulkCategory');
+  bulkCat.innerHTML = '<option value="">Choose category...</option>';
+  CATEGORIES.forEach(c => {
+    bulkCat.innerHTML += '<option value="' + c + '">' + c + '</option>';
+  });
+
+  document.getElementById('bulkBar').style.display = 'flex';
+}
+
+function getFilteredPlates() {
+  let plates = masterData.plates;
+
+  if (activeCatFilter) {
+    plates = plates.filter(p => p.category === activeCatFilter);
+  }
+
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    plates = plates.filter(p =>
+      p.name.toLowerCase().includes(q) ||
+      p.displayName?.toLowerCase().includes(q) ||
+      p.sponsor?.toLowerCase().includes(q) ||
+      (p.searchTerms || []).some(t => t.toLowerCase().includes(q))
+    );
+  }
+
+  // Sort
+  plates = [...plates].sort((a, b) => {
+    let va = a[sortCol] || '';
+    let vb = b[sortCol] || '';
+    if (typeof va === 'string') va = va.toLowerCase();
+    if (typeof vb === 'string') vb = vb.toLowerCase();
+    const cmp = va < vb ? -1 : va > vb ? 1 : 0;
+    return sortAsc ? cmp : -cmp;
+  });
+
+  return plates;
+}
+
+function renderTable() {
+  const plates = getFilteredPlates();
+  const content = document.getElementById('content');
+
+  if (plates.length === 0 && masterData) {
+    content.innerHTML = '<div class="empty"><p>No plates match your filter.</p></div>';
+    return;
+  }
+
+  const arrow = (col) => {
+    if (sortCol !== col) return '';
+    return '<span class="arrow">' + (sortAsc ? '\u25B2' : '\u25BC') + '</span>';
+  };
+  const sorted = (col) => sortCol === col ? 'sorted' : '';
+
+  let html = '<div class="table-wrap"><table><thead><tr>';
+  html += '<th width="30"><input type="checkbox" id="selectAllHead" onchange="toggleSelectAll(this.checked)"></th>';
+  html += '<th class="' + sorted('') + '">Image</th>';
+  html += '<th class="' + sorted('name') + '" onclick="setSort(\'name\')">Name' + arrow('name') + '</th>';
+  html += '<th class="' + sorted('category') + '" onclick="setSort(\'category\')">Category' + arrow('category') + '</th>';
+  html += '<th>Search Terms</th>';
+  html += '<th class="' + sorted('sponsor') + '" onclick="setSort(\'sponsor\')">Sponsor' + arrow('sponsor') + '</th>';
+  html += '</tr></thead><tbody>';
+
+  plates.forEach((plate, i) => {
+    const isDirty = isPlateChanged(plate);
+    const isSelected = selected.has(plate.id);
+    const imgSrc = imageBase ? imageBase + plate.image.path : '';
+
+    html += '<tr class="' + (isDirty ? 'dirty' : '') + '" data-id="' + plate.id + '">';
+    html += '<td><input type="checkbox" ' + (isSelected ? 'checked' : '') + ' onchange="toggleSelect(\'' + plate.id + '\', this.checked)"></td>';
+    html += '<td class="img-cell">' + (imgSrc ? '<img src="' + imgSrc + '" loading="lazy" onerror="this.style.display=\'none\'">' : '') + '</td>';
+    html += '<td class="name-cell"><input class="editable" value="' + escHtml(plate.name) + '" onchange="editField(\'' + plate.id + '\', \'name\', this.value)"></td>';
+    html += '<td class="cat-cell"><select class="editable" onchange="editField(\'' + plate.id + '\', \'category\', this.value)">';
+    CATEGORIES.forEach(c => {
+      html += '<option value="' + c + '" ' + (c === plate.category ? 'selected' : '') + '>' + c + '</option>';
+    });
+    html += '</select></td>';
+    html += '<td class="search-cell"><div class="tags" id="tags-' + plate.id + '">';
+    (plate.searchTerms || []).forEach(t => {
+      html += '<span class="tag">' + escHtml(t) + '<span class="remove" onclick="removeTag(\'' + plate.id + '\', \'' + escHtml(t).replace(/'/g, "\\'") + '\')">&times;</span></span>';
+    });
+    html += '<input class="tag-input" placeholder="+ add" onkeydown="addTagKey(event, \'' + plate.id + '\')">';
+    html += '</div></td>';
+    html += '<td class="sponsor-cell"><input class="editable" value="' + escHtml(plate.sponsor || '') + '" onchange="editField(\'' + plate.id + '\', \'sponsor\', this.value || null)"></td>';
+    html += '</tr>';
+  });
+
+  html += '</tbody></table></div>';
+  content.innerHTML = html;
+  updateSelectedCount();
+}
+
+function escHtml(s) {
+  if (!s) return '';
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+// Editing
+function pushUndo() {
+  undoStack.push(JSON.parse(JSON.stringify(masterData.plates)));
+  if (undoStack.length > 50) undoStack.shift();
+  document.getElementById('undoBtn').disabled = false;
+}
+
+function editField(id, field, value) {
+  pushUndo();
+  const plate = masterData.plates.find(p => p.id === id);
+  if (!plate) return;
+
+  plate[field] = value;
+  if (field === 'name') {
+    plate.displayName = value;
+  }
+
+  renderAll();
+}
+
+function removeTag(id, tag) {
+  pushUndo();
+  const plate = masterData.plates.find(p => p.id === id);
+  if (!plate) return;
+  plate.searchTerms = (plate.searchTerms || []).filter(t => t !== tag);
+  renderAll();
+}
+
+function addTagKey(event, id) {
+  if (event.key !== 'Enter' && event.key !== ',') return;
+  event.preventDefault();
+  const input = event.target;
+  const value = input.value.trim().toLowerCase().replace(/,/g, '');
+  if (!value) return;
+
+  pushUndo();
+  const plate = masterData.plates.find(p => p.id === id);
+  if (!plate) return;
+  if (!plate.searchTerms) plate.searchTerms = [];
+  if (!plate.searchTerms.includes(value)) {
+    plate.searchTerms.push(value);
+  }
+  input.value = '';
+  renderAll();
+}
+
+function undo() {
+  if (undoStack.length === 0) return;
+  masterData.plates = undoStack.pop();
+  if (undoStack.length === 0) document.getElementById('undoBtn').disabled = true;
+  renderAll();
+}
+
+// Filtering & sorting
+function filterCat(cat) {
+  activeCatFilter = cat;
+  renderAll();
+}
+
+function setSort(col) {
+  if (sortCol === col) { sortAsc = !sortAsc; }
+  else { sortCol = col; sortAsc = true; }
+  renderTable();
+}
+
+document.getElementById('searchBox').addEventListener('input', (e) => {
+  searchQuery = e.target.value;
+  renderTable();
+});
+
+// Selection & bulk
+function toggleSelect(id, checked) {
+  if (checked) selected.add(id); else selected.delete(id);
+  updateSelectedCount();
+}
+
+function toggleSelectAll(checked) {
+  const plates = getFilteredPlates();
+  plates.forEach(p => { if (checked) selected.add(p.id); else selected.delete(p.id); });
+  renderTable();
+}
+
+function updateSelectedCount() {
+  document.getElementById('selectedCount').textContent = selected.size + ' selected';
+}
+
+function bulkReassign(cat) {
+  if (!cat || selected.size === 0) return;
+  pushUndo();
+  masterData.plates.forEach(p => {
+    if (selected.has(p.id)) p.category = cat;
+  });
+  document.getElementById('bulkCategory').value = '';
+  renderAll();
+}
+
+// Change tracking
+function isPlateChanged(plate) {
+  const orig = originalPlates.find(p => p.id === plate.id);
+  if (!orig) return true;
+  return plate.name !== orig.name ||
+    plate.category !== orig.category ||
+    plate.sponsor !== orig.sponsor ||
+    JSON.stringify(plate.searchTerms) !== JSON.stringify(orig.searchTerms);
+}
+
+function updateChangeCount() {
+  const changed = masterData ? masterData.plates.filter(p => isPlateChanged(p)).length : 0;
+  document.getElementById('dirtyCount').textContent = changed;
+  document.getElementById('changeCount').textContent = changed > 0 ? changed + ' unsaved changes' : '';
+  document.getElementById('saveBtn').disabled = !masterData || changed === 0;
+}
+
+// Diff & save
+function showDiff() {
+  const changes = [];
+  masterData.plates.forEach(plate => {
+    const orig = originalPlates.find(p => p.id === plate.id);
+    if (!orig) return;
+    const diffs = [];
+    if (plate.name !== orig.name) diffs.push({ field: 'name', old: orig.name, new: plate.name });
+    if (plate.category !== orig.category) diffs.push({ field: 'category', old: orig.category, new: plate.category });
+    if (plate.sponsor !== orig.sponsor) diffs.push({ field: 'sponsor', old: orig.sponsor || '(none)', new: plate.sponsor || '(none)' });
+    if (JSON.stringify(plate.searchTerms) !== JSON.stringify(orig.searchTerms)) {
+      diffs.push({ field: 'searchTerms', old: (orig.searchTerms || []).join(', ') || '(none)', new: (plate.searchTerms || []).join(', ') || '(none)' });
+    }
+    if (diffs.length > 0) changes.push({ plate: plate.name, diffs });
+  });
+
+  if (changes.length === 0) { alert('No changes to save.'); return; }
+
+  let html = '<div class="modal-backdrop" onclick="closeModal()">';
+  html += '<div class="modal" onclick="event.stopPropagation()">';
+  html += '<h2>' + changes.length + ' Plates Changed</h2>';
+
+  changes.forEach(c => {
+    html += '<div class="diff-item"><div class="diff-plate">' + escHtml(c.plate) + '</div>';
+    c.diffs.forEach(d => {
+      html += '<div><span class="diff-field">' + d.field + ':</span> <span class="diff-old">' + escHtml(d.old) + '</span> &rarr; <span class="diff-new">' + escHtml(d.new) + '</span></div>';
+    });
+    html += '</div>';
+  });
+
+  html += '<div class="actions">';
+  html += '<button class="btn btn-outline" onclick="closeModal()">Cancel</button>';
+  html += '<button class="btn btn-save" onclick="saveFile()">Download JSON</button>';
+  html += '</div></div></div>';
+
+  document.getElementById('modalContainer').innerHTML = html;
+}
+
+function closeModal() {
+  document.getElementById('modalContainer').innerHTML = '';
+}
+
+function saveFile() {
+  // Sort plates before saving
+  masterData.plates.sort((a, b) => a.category.localeCompare(b.category) || a.name.localeCompare(b.name));
+  masterData.generatedDate = new Date().toISOString().split('T')[0];
+
+  const json = JSON.stringify(masterData, null, 2);
+  const blob = new Blob([json], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = (masterData.state || 'plates').toLowerCase().replace(/\s+/g, '-') + '-plate-master.json';
+  a.click();
+  URL.revokeObjectURL(url);
+
+  // Update originals to reflect saved state
+  originalPlates = JSON.parse(JSON.stringify(masterData.plates));
+  undoStack = [];
+  closeModal();
+  renderAll();
+}
+</script>
+</body>
+</html>
