@@ -1,10 +1,10 @@
-# FL Plates Roadmap
+# Every PL8 Roadmap
 
-This roadmap reflects the current released state of `FL Plates` after `v1.5.0` and outlines the most useful next release tracks.
+This roadmap reflects the current released state of `Every PL8` after `v1.8.0` and outlines the most useful next release tracks.
 
 ## Current Release
 
-Current public release: `v1.5.0`
+Current public release: `v1.8.0`
 
 ## Shipped In v1.3.0
 
@@ -108,6 +108,98 @@ Current public release: `v1.5.0`
 - badge assets and plate assets have clearer separation
 - future framework extraction and editor tooling are much easier to envision
 
+## Shipped In v1.6.0
+
+`v1.6.0` was a comprehensive iOS-native UI overhaul, aligning the app with iOS 26 design patterns and the American Express app's interaction model.
+
+### Highlights
+
+- plate cards redesigned with explicit +/✓ toggle icons replacing opacity dimming
+- iOS segmented control replaced with bottom-sheet Filter, Sort, and Category selectors
+- KPI-style header stats with large hero numbers and context labels
+- full-width anchored bottom navigation bar (replaces floating pill dock)
+- sheet slide-up animations and swipe-to-dismiss gestures on all panels
+- plate preview converted from centered overlay to bottom sheet
+- iOS toggle switches in Settings (replaces On/Off text)
+- compact header: filter/sort collapse on scroll, search + category stay sticky
+- search bar restyled as dark recessed field with magnifying glass icon
+- borders softened across cards, control panel, and meters
+- lighter secondary typography weights
+- manifest updated with categories for App Store readiness
+
+## Shipped In v1.7.0
+
+`v1.7.0` focused on search enrichment, taxonomy polish, multi-state expansion, and mapping/geography improvements.
+
+### Delivered
+
+- curated `searchTerms` across the full catalog
+- added school abbreviations and nicknames
+- added professional sports aliases and common fan terms
+- added strong visual descriptors (animals, colors, scenery, symbols)
+- continued category cleanup for obvious misfits
+- reviewed sorted-list naming for clarity and consistency
+- added Mississippi, Arkansas, Missouri, Tennessee, and Kentucky state packs
+- added regional explorer badges for all new states
+- fixed various state-specific issues (TN plate names, KY motorcycle plates)
+
+## Shipped In v1.8.0
+
+`v1.8.0` is the Game Center-style Achievements redesign — a comprehensive 6-phase overhaul of the badge and progress experience.
+
+### Delivered
+
+- **Restructured navigation**: renamed Explore to Achievements, consolidated 4 tabs (Badges, Stats, Timeline, Map) into 3 cohesive pages (Achievements, Journey, Map)
+- **Game Center-inspired badge layout**: badges sorted into Earned, In Progress, and Locked sections with a hero summary card
+- **iOS HIG visual polish**: circular badge frames with state-dependent treatments (colored ring for earned, SVG progress ring for in-progress, padlock overlay for locked), 8pt grid spacing, iOS typography scale
+- **Player rank system**: 5 tiers (Rookie → Spotter → Collector → Road Scholar → Plate Master) based on badge count, with percentage-based thresholds that scale across states
+- **3D icon replacement**: replaced all badge artwork with Microsoft Fluent Emoji 3D icons (MIT licensed), added college grade-level icons (open-book, books, notebook, scroll)
+- **Earned badge animation**: staggered glow/scale reveal effect with group-colored glow pulse
+
+### Result
+
+- the Achievements hub now tells a cohesive player journey story
+- badges feel like collectible trophies rather than a flat checklist
+- the rank system adds meta-progression that motivates continued play
+- unified 3D icon set gives a premium, consistent visual identity
+- the design aligns with iOS HIG patterns (typography, spacing, materials)
+
+## v1.8.x
+
+Achievements visual polish round 2.
+
+### Goals
+
+- continue refining the Achievements hub toward full Game Center parity
+- add delight and interaction polish that makes badges feel even more collectible
+
+### Candidates
+
+**Layout & Structure:**
+- horizontal scrolling card carousel for earned badges (Game Center style)
+- badge detail card redesign (larger artwork, completion date, related sightings)
+- completion date stamp on earned badges
+
+**Visual Effects:**
+- tap feedback (iOS press-down scale 0.96 on badge tap)
+- section reveal animations (fade+slide stagger on tab load)
+- tab crossfade transition (smooth opacity between Achievements/Journey/Map)
+- frosted glass hero card (backdrop-filter blur, iOS materials)
+
+**Content & Progression:**
+- rank badge/icon emblem in the hero card (visual shield per rank tier)
+- "recently earned" highlight (pulsing glow, "New!" label, fades after first view)
+- achievement sharing (share individual earned badges as images)
+- streak tracking ("5-day streak" as a Journey stat)
+
+**Typography & Spacing:**
+- Dynamic Type support (scale text for accessibility preferences)
+- continuous rounded corners (squircle) on cards
+
+### Definition Of Done
+
+- the Achievements experience feels comparable to a native iOS game's achievement system
+
 ## Architecture Groundwork
 
 This project now has an explicit tracked direction toward a reusable plate-game framework, but without forcing a premature rewrite.
@@ -146,94 +238,7 @@ Still to do:
 - move more Florida-specific grouping and progression logic out of the main app flow
 - make more of the browse/search behavior consume declarative game data rather than Florida assumptions
 
-## Shipped In v1.6.0
-
-`v1.6.0` was a comprehensive iOS-native UI overhaul, aligning the app with iOS 26 design patterns and the American Express app's interaction model.
-
-### Highlights
-
-- plate cards redesigned with explicit +/✓ toggle icons replacing opacity dimming
-- iOS segmented control replaced with bottom-sheet Filter, Sort, and Category selectors
-- KPI-style header stats with large hero numbers and context labels
-- full-width anchored bottom navigation bar (replaces floating pill dock)
-- sheet slide-up animations and swipe-to-dismiss gestures on all panels
-- plate preview converted from centered overlay to bottom sheet
-- iOS toggle switches in Settings (replaces On/Off text)
-- compact header: filter/sort collapse on scroll, search + category stay sticky
-- search bar restyled as dark recessed field with magnifying glass icon
-- borders softened across cards, control panel, and meters
-- lighter secondary typography weights
-- manifest updated with categories for App Store readiness
-
-### Planned follow-up
-
-- **v1.6.1**: convert Explore, Help, and Settings from bottom sheets to full-page views with ‹ Back navigation
-
----
-
-## v1.7
-
-Search enrichment and taxonomy polish.
-
-### Goals
-
-- make search genuinely useful for what players notice at a glance
-- finish the catalog curation work that `v1.5.0` only started
-- tighten category placement now that the expanded dataset is in place
-
-### Checklist
-
-- curate `searchTerms` across the full catalog, not just a few test plates
-- add school abbreviations and nicknames where still missing
-- add professional sports aliases and common fan terms
-- add strong visual descriptors where helpful:
-  - animals
-  - colors
-  - scenery
-  - symbols
-- decide whether sponsor and note text should also participate in search
-- continue category cleanup for obvious misfits
-- review sorted-list naming for clarity and consistency
-- test search against real examples like:
-  - `orange`
-  - `butterfly`
-  - `gators`
-  - `police`
-  - `beach`
-  - `horse`
-
-### Definition Of Done
-
-- search finds plates by what players notice, not just by exact title text
-- category placement feels stable enough that future cleanup becomes occasional maintenance instead of a rework
-
-## v1.7.x
-
-Mapping and geography polish.
-
-### Goals
-
-- make the map feel like a real part of the game instead of a rough secondary view
-- improve confidence in saved sightings, pins, and regional progress
-- strengthen low-signal and offline behavior for mapping-related features
-
-### Checklist
-
-- review how quickly newly found plates appear on the map after background location enrichment
-- improve handling for finds with no resolved locality or delayed geocode data
-- refine the current pin display so dense areas are easier to read
-- evaluate whether clustering, regional summaries, or lighter grouping would improve usability
-- tighten map copy and empty states so players understand what the map is showing
-- review county and regional mapping data for consistency with badge logic
-- test the map and location workflow in weak-signal travel conditions
-- decide when the current custom pin map should give way to a richer slippy-map experience
-
-### Definition Of Done
-
-- the map is useful for reviewing discoveries instead of feeling experimental
-- pins, locality data, and regional progress behave predictably enough to support future social and pack-based expansion
-
-## v1.8
+## v1.9
 
 Framework extraction Phase 2 and editor-readiness.
 
@@ -263,7 +268,7 @@ Framework extraction Phase 2 and editor-readiness.
 - the app shell is more clearly separable from Florida-specific game rules
 - the future standalone editor has a more stable schema target
 
-## v1.9+
+## v1.10+
 
 Optional social layer and cloud identity.
 
@@ -324,7 +329,7 @@ Optional social layer and cloud identity.
 
 These are intentionally not committed to the next release yet.
 
-- persistent “once earned, always earned” badges
+- persistent "once earned, always earned" badges
 - shipped time-of-day badges
 - rarity-based scoring
 - history/year-based gameplay
@@ -345,7 +350,7 @@ These are good candidates for future fun-factor improvements, but they are inten
 - hidden surprise badges
 - category bingo or mini-goal cards
 - version hunter badges
-- “almost complete” nudges for categories or badge groups
+- "almost complete" nudges for categories or badge groups
 - plate of the day
 - richer personal stats like:
   - most-seen plate
@@ -370,6 +375,7 @@ This app is still a web app, but iPhone is the primary target experience. These 
 - search now focuses automatically when opened
 - offline behavior has improved through stronger caching and background enrichment
 - found-state capture is now immediate instead of waiting on reverse geocoding
+- Achievements hub aligns with iOS HIG (typography, spacing, 8pt grid, circular frames)
 
 ### Still worth improving
 
@@ -412,7 +418,7 @@ This app is still a web app, but iPhone is the primary target experience. These 
 
 - continue reviewing spacing and safe-area usage on real iPhones
 - make installed-mode presentation feel intentional and app-like
-- keep reducing “web page” feel in high-use panels
+- keep reducing "web page" feel in high-use panels
 
 ### Good decision rule
 
@@ -427,7 +433,7 @@ If the answer is risky, prefer the simpler interaction.
 
 ## Future Modularization
 
-This section captures the likely path from `FL Plates` to a generic multi-state `plates-game` PWA shell.
+This section captures the likely path from `Every PL8` to a generic multi-state plates-game PWA shell.
 
 ### Target Model
 
@@ -458,7 +464,8 @@ The reusable PWA engine should own:
 - search
 - found / not found state
 - badges
-- timeline
+- achievements hub
+- journey / timeline
 - map
 - settings
 - offline behavior
@@ -836,54 +843,53 @@ Definition of done:
 
 ## Recommended Order
 
-1. `v1.6` search enrichment and taxonomy polish
-2. `v1.7` framework extraction Phase 2 and editor-readiness
-3. `v1.8+` optional social layer and cloud identity
+1. `v1.8.x` achievements visual polish round 2
+2. `v1.9` framework extraction Phase 2 and editor-readiness
+3. `v1.10+` optional social layer and cloud identity
 
 ## Immediate Next Step
 
-For the next cycle, the best target is:
+For the next cycle, the best targets are:
 
-- curate search terms across the full catalog
-- keep tightening category placement as outliers are found
-- avoid major UI or platform work until search and taxonomy feel settled
+- achievements polish round 2 (horizontal carousel, tap feedback, tab transitions)
+- continue tightening category placement as outliers are found
+- evaluate framework extraction readiness
 
-## iPhone UI Implementation Order
+## Parking Lot
 
-To move toward a cleaner, more iPhone-native presentation without forcing a full redesign, use this implementation order:
+These are intentionally not committed to the next release yet.
 
-### Easy wins
+- persistent "once earned, always earned" badges
+- shipped time-of-day badges
+- rarity-based scoring
+- history/year-based gameplay
+- in-app miscategorization reporting
+- richer map provider or real slippy-map implementation
+- custom badge artwork beyond the current icon system
+- optional social identity, leaderboard, and buddy-sharing features
+- a standalone external driver editor
 
-- add a grabber to the plate detail modal
-- tighten header spacing on small screens
-- combine the top stats into one cleaner summary card
-- simplify the search and filter area into one card surface
-- soften shadows and standardize card radius
-- slightly reduce badge thumbnail size on narrow phones
-- make Help and Settings rows cleaner and more uniform
+## Engagement Ideas
 
-### Medium changes
+These are good candidates for future fun-factor improvements, but they are intentionally below search, taxonomy, and modularization in priority.
 
-- convert plate detail from popup feel to true bottom sheet
-- convert Explore and Help/Settings panels to sheet-style presentations
-- restyle plate rows and cards into a more consistent collection layout
-- reduce top-of-screen clutter so the list starts sooner
-- unify card styling across Home, Explore, Badges, and Settings
-- make badge sections feel more like curated groups than utility grids
+### Strong candidates
 
-### Later redesign items
+- streaks
+- weekly or rotating challenges
+- hidden surprise badges
+- category bingo or mini-goal cards
+- version hunter badges
+- "almost complete" nudges for categories or badge groups
+- plate of the day
+- richer personal stats like:
+  - most-seen plate
+  - rarest found plate
+  - closest category to completion
 
-- fuller Home layout rethink around one primary progress card
-- more premium collection-browser presentation for plate list and detail
-- badge gallery redesign with stronger themed sections
-- state-aware branding system for Florida, Mississippi, and future packs
-- broader color-system refresh for calmer UI chrome
-- complete iPhone-first interaction polish across modals, sheets, and onboarding
+### Guardrails
 
-### Suggested order of execution
-
-1. header tightening
-2. card consistency pass
-3. plate detail sheet polish
-4. Explore and Help sheet conversion
-5. broader Home and badge presentation redesign
+- avoid turning the game into chore-like task management
+- avoid too many simultaneous goals
+- avoid noisy notification-style mechanics
+- prefer delight and momentum over complicated scoring systems
