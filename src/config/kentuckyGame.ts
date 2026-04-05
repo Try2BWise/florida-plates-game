@@ -85,7 +85,7 @@ export const kentuckyGame: GameDefinition & {
     appTagline: "Kentucky Edition",
     headerImage: { type: "logo", path: "state-pl8-logo.png", alt: "State PL8 logo" },
     attribution: {
-      text: "Specialty plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim.",
+      text: "Plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim.",
       agencyName: "Kentucky Transportation Cabinet",
       agencyUrl: "https://drive.ky.gov/",
       logoPath: "state-packs/kentucky/kytc-logo.png",
@@ -102,5 +102,5 @@ export const kentuckyGame: GameDefinition & {
     install: ["iPhone: open the game in Safari, tap Share, then choose Add to Home Screen.", "Android: open the game in Chrome, then use Add to Home screen or Install app.", "Once it loads online at least once, it can keep working offline."],
     safeUse: ["For your safety and the safety of others, never use this app while driving.", "Always comply with all applicable traffic laws, including hands-free and distracted-driving regulations in your area.", "Use this app only when your vehicle is parked in a safe location or when operated by a passenger.", "By using this app, you agree that you are solely responsible for how and when it is used."]
   },
-  about: { fairUseNotice: "Specialty plate images are not the intellectual property of Gorilla Grin. They belong to the Kentucky Transportation Cabinet and are displayed here for identification, educational, and entertainment purposes under a fair use claim." }
+  about: { fairUseNotice: "Plate images are not the intellectual property of Gorilla Grin. They belong to the Kentucky Transportation Cabinet and are displayed here for identification, educational, and entertainment purposes under a fair use claim." }
 };

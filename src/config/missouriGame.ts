@@ -105,7 +105,7 @@ export const missouriGame: GameDefinition & {
       alt: "State PL8 logo"
     },
     attribution: {
-      text: "Specialty plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim.",
+      text: "Plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim.",
       agencyName: "Missouri Department of Revenue",
       agencyUrl: "https://dor.mo.gov/",
       logoPath: "state-packs/missouri/dor-logo.png",
@@ -161,6 +161,6 @@ export const missouriGame: GameDefinition & {
   },
   about: {
     fairUseNotice:
-      "Specialty plate images are not the intellectual property of Gorilla Grin. They belong to the Missouri Department of Revenue and are displayed here for identification, educational, and entertainment purposes under a fair use claim."
+      "Plate images are not the intellectual property of Gorilla Grin. They belong to the Missouri Department of Revenue and are displayed here for identification, educational, and entertainment purposes under a fair use claim."
   }
 };
