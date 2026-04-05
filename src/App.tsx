@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BadgeIcon } from "./components/BadgeIcon";
-import { ExplorePage } from "./components/ExplorePage";
+import { AchievementsPage } from "./components/AchievementsPage";
 import { HelpPage } from "./components/HelpPage";
 import { SettingsPage } from "./components/SettingsPage";
 import { StatePicker } from "./components/StatePicker";
@@ -31,8 +31,8 @@ const ONBOARDING_HINT_DISMISSED_STORAGE_KEY = "florida-plates-onboarding-dismiss
 type ThemeMode = "light" | "dark";
 type PlateVisibilityFilter = "all" | "found" | "missing";
 type PlateArrangement = "category" | "az" | "za";
-type ExploreTab = "badges" | "stats" | "map" | "timeline";
-type ActiveView = "home" | "explore" | "help" | "settings" | "state-picker";
+type AchievementsTab = "achievements" | "journey" | "map";
+type ActiveView = "home" | "achievements" | "help" | "settings" | "state-picker";
 type TimelineSort = "desc" | "asc";
 
 const badgePlateSets: Record<string, string[]> = {
@@ -240,7 +240,7 @@ function App() {
   const [isSortSheetOpen, setIsSortSheetOpen] = useState(false);
   const [previewPlate, setPreviewPlate] = useState<Plate | null>(null);
   const [activeBadgeDetail, setActiveBadgeDetail] = useState<EvaluatedBadge | null>(null);
-  const [activeExploreTab, setActiveExploreTab] = useState<ExploreTab>("badges");
+  const [activeAchievementsTab, setActiveAchievementsTab] = useState<AchievementsTab>("achievements");
   const [timelineSort, setTimelineSort] = useState<TimelineSort>("desc");
   const [collapsedTimelineDates, setCollapsedTimelineDates] = useState<Set<string>>(
     () => new Set()
@@ -924,7 +924,7 @@ function App() {
     }
   }
 
-  /* renderBadgeCard moved to ExplorePage component */
+  /* renderBadgeCard moved to AchievementsPage component */
 
   function handleApplyUpdate() {
     setIsUpdateReady(false);
@@ -1107,8 +1107,8 @@ function App() {
               type="button"
               className="app-header__kpi app-header__kpi--secondary"
               onClick={() => {
-                setActiveExploreTab("badges");
-                setActiveView("explore");
+                setActiveAchievementsTab("achievements");
+                setActiveView("achievements");
               }}
               aria-label="Open merit badges"
             >
@@ -1247,11 +1247,11 @@ function App() {
         <button
           type="button"
           className="bottom-dock__item"
-          onClick={() => { setActiveExploreTab("badges"); setActiveView("explore"); }}
-          aria-label="Explore"
+          onClick={() => { setActiveAchievementsTab("achievements"); setActiveView("achievements"); }}
+          aria-label="Achievements"
         >
-          <Icon name="globe" size={22} className="bottom-dock__icon" />
-          <span className="bottom-dock__label">Explore</span>
+          <Icon name="trophy" size={22} className="bottom-dock__icon" />
+          <span className="bottom-dock__label">Achievements</span>
         </button>
         <button
           type="button"
@@ -1469,11 +1469,11 @@ function App() {
         <StatePicker />
       ) : null}
 
-      {activeView === "explore" ? (
-        <ExplorePage
+      {activeView === "achievements" ? (
+        <AchievementsPage
           onBack={navigateHome}
-          activeTab={activeExploreTab}
-          onTabChange={setActiveExploreTab}
+          activeTab={activeAchievementsTab}
+          onTabChange={setActiveAchievementsTab}
           foundCount={foundCount}
           totalPlates={plates.length}
           localityCount={localityCount}
