@@ -103,7 +103,7 @@ export const arkansasGame: GameDefinition & {
       text: "Specialty plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim.",
       agencyName: "Arkansas Department of Finance and Administration",
       agencyUrl: "https://www.dfa.arkansas.gov/",
-      logoPath: "state-packs/arkansas/dfa-logo.png",
+      logoPath: "state-packs/arkansas/dfa-logo.svg",
       logoAlt: "Arkansas DFA logo"
     }
   },
