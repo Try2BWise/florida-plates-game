@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Icon } from "./Icon";
 import type { IconName } from "./Icon";
 import { BadgeIcon } from "./BadgeIcon";
@@ -84,6 +85,20 @@ export function AchievementsPage({
   timelineSort, onTimelineSortChange, timelineGroups, collapsedTimelineDates, onToggleTimelineDate,
   mapPins, mapBounds, geotaggedEntries
 }: AchievementsPageProps) {
+  const [showLocked, setShowLocked] = useState(false);
+
+  const earnedByGroup = allBadgeGroups
+    .map(([group, badges]) => [group, badges.filter(b => b.earned)] as [BadgeGroup, EvaluatedBadge[]])
+    .filter(([, badges]) => badges.length > 0);
+
+  const inProgressBadges = evaluatedBadges.filter(
+    b => !b.earned && typeof b.progressCurrent === "number" && b.progressCurrent > 0
+  );
+
+  const lockedBadges = evaluatedBadges.filter(
+    b => !b.earned && (b.progressCurrent === undefined || b.progressCurrent === 0)
+  );
+
   return (
     <PageView
       title="Achievements"
@@ -107,34 +122,97 @@ export function AchievementsPage({
     >
       {activeTab === "achievements" ? (
         <div className="utility-stack">
-          <section className="utility-card utility-card--about">
-            <h3>Merit badges</h3>
-            <p className="utility-card__metric">{earnedBadges.length} of {evaluatedBadges.length} earned</p>
-            <p className="utility-card__meta">Badges currently reflect your saved state.</p>
-          </section>
-          <section className="utility-card">
-            <div className="utility-stack">
-              {allBadgeGroups.map(([group, badges]) => (
-                <section className="badge-group" key={`earned-${group}`}>
-                  <div className="badge-group__header">
-                    <h4>
-                      <Icon name={badgeGroupSymbols[group] as IconName} size={16} className={`badge-group__icon badge-group__icon--${group}`} />
-                      {badgeGroupLabels[group]}
-                    </h4>
-                    <span>{badges.length}</span>
-                  </div>
-                  <div className="badge-icon-grid">
-                    {badges.map((badge) => (
-                      <div className="badge-icon-grid-item" key={badge.id} tabIndex={0} role="button" aria-label={badge.name} onClick={() => onBadgeDetail(badge)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") onBadgeDetail(badge); }} style={{ outline: "none", cursor: "pointer" }}>
-                        <BadgeIcon badge={badge} />
-                        <span className="badge-medal-label">{badge.name}</span>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              ))}
+          {/* ── Hero summary ── */}
+          <div className="achievements-hero">
+            <ProgressRing
+              percent={evaluatedBadges.length > 0 ? Math.round((earnedBadges.length / evaluatedBadges.length) * 100) : 0}
+              size={72}
+              strokeWidth={7}
+              color="#D33C2E"
+              label={`${earnedBadges.length}`}
+              sublabel=""
+            />
+            <div className="achievements-hero__copy">
+              <span className="achievements-hero__count">
+                {earnedBadges.length} <span className="achievements-hero__total">of {evaluatedBadges.length}</span>
+              </span>
+              <span className="achievements-hero__label">Badges earned</span>
             </div>
-          </section>
+          </div>
+
+          {/* ── Earned ── */}
+          {earnedByGroup.length > 0 ? (
+            <section className="utility-card">
+              <h3 className="achievements-section__title">Earned</h3>
+              <div className="utility-stack">
+                {earnedByGroup.map(([group, badges]) => (
+                  <section className="badge-group" key={`earned-${group}`}>
+                    <div className="badge-group__header">
+                      <h4>
+                        <Icon name={badgeGroupSymbols[group] as IconName} size={16} className={`badge-group__icon badge-group__icon--${group}`} />
+                        {badgeGroupLabels[group]}
+                      </h4>
+                      <span>{badges.length}</span>
+                    </div>
+                    <div className="badge-icon-grid">
+                      {badges.map((badge) => (
+                        <div className="badge-icon-grid-item" key={badge.id} tabIndex={0} role="button" aria-label={badge.name} onClick={() => onBadgeDetail(badge)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") onBadgeDetail(badge); }} style={{ outline: "none", cursor: "pointer" }}>
+                          <BadgeIcon badge={badge} size={88} />
+                          <span className="badge-medal-label">{badge.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                ))}
+              </div>
+            </section>
+          ) : null}
+
+          {/* ── In Progress ── */}
+          {inProgressBadges.length > 0 ? (
+            <section className="utility-card">
+              <h3 className="achievements-section__title">In Progress</h3>
+              <div className="badge-icon-grid">
+                {inProgressBadges.map((badge) => (
+                  <div className="badge-icon-grid-item badge-icon-grid-item--in-progress" key={badge.id} tabIndex={0} role="button" aria-label={badge.name} onClick={() => onBadgeDetail(badge)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") onBadgeDetail(badge); }} style={{ outline: "none", cursor: "pointer" }}>
+                    <BadgeIcon badge={badge} />
+                    <span className="badge-medal-label">{badge.name}</span>
+                    <span className="badge-progress-indicator">
+                      {badge.progressTarget ? `${badge.progressCurrent}/${badge.progressTarget}` : `${badge.progressCurrent}`}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </section>
+          ) : null}
+
+          {/* ── Locked ── */}
+          {lockedBadges.length > 0 ? (
+            <section className="utility-card">
+              <button
+                type="button"
+                className="achievements-locked-toggle"
+                onClick={() => setShowLocked(!showLocked)}
+                aria-expanded={showLocked}
+              >
+                <h3 className="achievements-section__title">
+                  Locked
+                  <span className="achievements-locked-toggle__count">({lockedBadges.length})</span>
+                </h3>
+                <strong className={`timeline-group__chevron ${!showLocked ? "timeline-group__chevron--collapsed" : ""}`} aria-hidden="true">▾</strong>
+              </button>
+              {showLocked ? (
+                <div className="badge-icon-grid">
+                  {lockedBadges.map((badge) => (
+                    <div className="badge-icon-grid-item" key={badge.id} tabIndex={0} role="button" aria-label={badge.name} onClick={() => onBadgeDetail(badge)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") onBadgeDetail(badge); }} style={{ outline: "none", cursor: "pointer" }}>
+                      <BadgeIcon badge={badge} />
+                      <span className="badge-medal-label">{badge.name}</span>
+                    </div>
+                  ))}
+                </div>
+              ) : null}
+            </section>
+          ) : null}
         </div>
       ) : null}
 

@@ -1642,6 +1642,88 @@ select {
   color: #b45309;
 }
 
+/* ── Achievements tab: Game Center-style layout ── */
+
+.achievements-hero {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 0.95rem;
+  border-radius: 1rem;
+  background: var(--surface);
+  box-shadow: var(--card-shadow);
+}
+
+.achievements-hero__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.achievements-hero__count {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.15;
+}
+
+.achievements-hero__total {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.achievements-hero__label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.achievements-section__title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.badge-icon-grid-item--in-progress .badge-medal-img {
+  opacity: 0.72;
+  filter: grayscale(30%) brightness(0.92);
+}
+
+.badge-progress-indicator {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-align: center;
+  margin-top: 0.1rem;
+  line-height: 1;
+}
+
+.achievements-locked-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.achievements-locked-toggle__count {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-left: 0.3rem;
+}
+
 /* Old badge-group CSS icon pseudo-elements removed — replaced by SVG Icon component */
 
 .badge-chip {
@@ -2289,6 +2371,15 @@ select {
     min-height: 1.8rem;
     padding: 0.3rem 0.62rem;
     font-size: 0.72rem;
+  }
+
+  .achievements-hero {
+    gap: 0.75rem;
+    padding: 0.8rem 0.82rem;
+  }
+
+  .achievements-hero__count {
+    font-size: 1.3rem;
   }
 
 }
