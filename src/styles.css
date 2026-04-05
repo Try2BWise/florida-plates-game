@@ -1837,6 +1837,100 @@ select {
   transform: translateX(20px);
 }
 
+/* ── State picker ── */
+
+.state-picker {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: calc(2rem + env(safe-area-inset-top, 0px)) 1.5rem calc(2rem + env(safe-area-inset-bottom, 0px));
+  background: var(--page-bg);
+}
+
+.state-picker__header {
+  text-align: center;
+}
+
+.state-picker__title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.state-picker__subtitle {
+  margin: 0.4rem 0 0;
+  font-size: 0.94rem;
+  color: var(--muted);
+}
+
+.state-picker__list {
+  display: grid;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.state-picker__card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--card-border);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.state-picker__card:active:not(:disabled) {
+  opacity: 0.8;
+}
+
+.state-picker__card--disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.state-picker__abbr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 0.52rem;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.state-picker__card--disabled .state-picker__abbr {
+  background: var(--muted);
+}
+
+.state-picker__name {
+  flex: 1;
+  font-size: 1.06rem;
+  font-weight: 600;
+}
+
+.state-picker__badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
 /* ── Full-page views (Explore, Help, Settings) ── */
 
 .page-view {

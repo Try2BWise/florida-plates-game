@@ -15,6 +15,7 @@ interface SettingsPageProps {
   onImportProgress: (event: React.ChangeEvent<HTMLInputElement>) => void;
   onClearDiscoveries: () => void;
   onShareApp: () => void;
+  onChangeState: () => void;
   buildVersion: string;
   buildDateLabel: string;
   attribution: {
@@ -29,7 +30,7 @@ interface SettingsPageProps {
 export function SettingsPage({
   onBack, theme, onThemeToggle, uiPreferences, onToggleUiPreference,
   onForceReload, foundCount, onExportProgress, onImportProgress, onClearDiscoveries,
-  onShareApp, buildVersion, buildDateLabel, attribution
+  onShareApp, onChangeState, buildVersion, buildDateLabel, attribution
 }: SettingsPageProps) {
   const [activeTab, setActiveTab] = useState<"settings" | "about">("settings");
 
@@ -81,6 +82,7 @@ export function SettingsPage({
           <section className="utility-card utility-card--about">
             <h3>App Management</h3>
             <button type="button" className="view-toggle__chip" style={{ marginTop: 12, whiteSpace: 'nowrap', maxWidth: 'max-content', alignSelf: 'start' }} onClick={onForceReload}>Force Reload / Sync</button>
+            <button type="button" className="view-toggle__chip" style={{ marginTop: 8, whiteSpace: 'nowrap', maxWidth: 'max-content', alignSelf: 'start' }} onClick={onChangeState}>Change State</button>
           </section>
           <section className="utility-card">
             <h3>Progress Management</h3>

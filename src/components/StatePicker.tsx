@@ -1,0 +1,43 @@
+import { stateRegistry } from "../games/stateRegistry";
+import { setSelectedStateId } from "../games/activeGame";
+
+interface StatePickerProps {
+  onSelect?: () => void;
+}
+
+export function StatePicker({ onSelect }: StatePickerProps) {
+  function handleSelect(stateId: string) {
+    setSelectedStateId(stateId);
+    if (onSelect) {
+      onSelect();
+    } else {
+      window.location.reload();
+    }
+  }
+
+  return (
+    <div className="state-picker">
+      <div className="state-picker__header">
+        <h1 className="state-picker__title">Every PL8</h1>
+        <p className="state-picker__subtitle">Choose your state to start collecting</p>
+      </div>
+      <div className="state-picker__list">
+        {stateRegistry.map((state) => (
+          <button
+            key={state.id}
+            type="button"
+            className={`state-picker__card ${!state.available ? "state-picker__card--disabled" : ""}`}
+            disabled={!state.available}
+            onClick={() => handleSelect(state.id)}
+          >
+            <span className="state-picker__abbr">{state.abbreviation}</span>
+            <span className="state-picker__name">{state.name}</span>
+            {!state.available ? (
+              <span className="state-picker__badge">Coming Soon</span>
+            ) : null}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}

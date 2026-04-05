@@ -3,6 +3,8 @@ import { BadgeIcon } from "./components/BadgeIcon";
 import { ExplorePage } from "./components/ExplorePage";
 import { HelpPage } from "./components/HelpPage";
 import { SettingsPage } from "./components/SettingsPage";
+import { StatePicker } from "./components/StatePicker";
+import { getSelectedStateId } from "./games/activeGame";
 import { Icon } from "./components/Icon";
 import {
   floridaBadgeCounties,
@@ -30,7 +32,7 @@ type ThemeMode = "light" | "dark";
 type PlateVisibilityFilter = "all" | "found" | "missing";
 type PlateArrangement = "category" | "az" | "za";
 type ExploreTab = "badges" | "stats" | "map" | "timeline";
-type ActiveView = "home" | "explore" | "help" | "settings";
+type ActiveView = "home" | "explore" | "help" | "settings" | "state-picker";
 type TimelineSort = "desc" | "asc";
 
 const badgePlateSets: Record<string, string[]> = {
@@ -230,7 +232,9 @@ function App() {
   );
   const [isUpdateReady, setIsUpdateReady] = useState(false);
   const [isClearConfirmOpen, setIsClearConfirmOpen] = useState(false);
-  const [activeView, setActiveView] = useState<ActiveView>("home");
+  const [activeView, setActiveView] = useState<ActiveView>(() =>
+    getSelectedStateId() ? "home" : "state-picker"
+  );
   const [isCategorySheetOpen, setIsCategorySheetOpen] = useState(false);
   const [isFilterSheetOpen, setIsFilterSheetOpen] = useState(false);
   const [isSortSheetOpen, setIsSortSheetOpen] = useState(false);
@@ -1467,6 +1471,10 @@ function App() {
         </div>
       ) : null}
 
+      {activeView === "state-picker" ? (
+        <StatePicker />
+      ) : null}
+
       {activeView === "explore" ? (
         <ExplorePage
           onBack={navigateHome}
@@ -1513,6 +1521,7 @@ function App() {
           onImportProgress={handleImportProgress}
           onClearDiscoveries={handleClearDiscoveries}
           onShareApp={handleShareApp}
+          onChangeState={() => setActiveView("state-picker")}
           buildVersion={buildInfo.version}
           buildDateLabel={buildDateLabel}
           attribution={floridaGame.branding.attribution}
