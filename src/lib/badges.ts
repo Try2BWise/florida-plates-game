@@ -554,6 +554,49 @@ export const badgeDefinitions: BadgeDefinition[] = [
     group: "florida",
     availableIn: "v1.4"
   },
+  // Missouri Explorer region badges
+  {
+    id: "mo-northwest-explorer",
+    name: "Northwest Missouri Explorer",
+    description: "Find a plate in every Northwest Missouri county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "mo-northeast-explorer",
+    name: "Northeast Missouri Explorer",
+    description: "Find a plate in every Northeast Missouri county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "mo-central-explorer",
+    name: "Central Missouri Explorer",
+    description: "Find a plate in every Central Missouri county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "mo-southwest-explorer",
+    name: "Southwest Missouri Explorer",
+    description: "Find a plate in every Southwest Missouri county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "mo-southeast-explorer",
+    name: "Southeast Missouri Explorer",
+    description: "Find a plate in every Southeast Missouri county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-missouri",
+    name: "All Around Missouri",
+    description: "Earn every regional explorer badge.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
   // Florida Explorer region badges
   {
     id: "northwest-florida-explorer",
@@ -912,6 +955,7 @@ export function evaluateBadges(
   const allAroundIdMap: Record<string, string> = {
     mississippi: "all-around-mississippi",
     arkansas: "all-around-arkansas",
+    missouri: "all-around-missouri",
   };
   const allAroundId = allAroundIdMap[stateId] || "all-around-florida";
   const allRegionBadgesEarned = regionBadgeEntries.every(([, badge]) => badge.earned);
@@ -1183,11 +1227,17 @@ export function evaluateBadges(
     "all-around-arkansas",
   ]);
 
+  const missouriBadgeIds = new Set([
+    "mo-northwest-explorer", "mo-northeast-explorer", "mo-central-explorer",
+    "mo-southwest-explorer", "mo-southeast-explorer", "all-around-missouri",
+  ]);
+
   // Filter to generic badges + badges for the active state
   const stateBadgeMap: Record<string, Set<string>> = {
     florida: floridaBadgeIds,
     mississippi: mississippiBadgeIds,
     arkansas: arkansasBadgeIds,
+    missouri: missouriBadgeIds,
   };
   const activeBadgeIds = stateBadgeMap[stateId] || floridaBadgeIds;
   return allEvaluated.filter((badge) => genericBadgeIds.has(badge.id) || activeBadgeIds.has(badge.id));

@@ -28,6 +28,16 @@ import {
   arkansasMixedBagCategories,
   arkansasRegionScoutCounties
 } from "../config/arkansasGame";
+import missouriDriverData from "../data/generated/missouri-plate-driver.generated.json";
+import missouriLegacyIdMap from "../data/generated/missouri-legacy-id-map.generated.json";
+import {
+  missouriBadgeCounties,
+  missouriBadgeGroupLabels,
+  missouriBadgeGroupSymbols,
+  missouriGame,
+  missouriMixedBagCategories,
+  missouriRegionScoutCounties
+} from "../config/missouriGame";
 import { plateCategories, type Plate, type PlateCategory } from "../types";
 
 /* ── State selection persistence ── */
@@ -119,10 +129,26 @@ function loadArkansasPack() {
   };
 }
 
+function loadMissouriPack() {
+  const plates = buildPlates(missouriDriverData);
+  return {
+    game: missouriGame,
+    badgeCounties: missouriBadgeCounties,
+    badgeGroupLabels: missouriBadgeGroupLabels,
+    badgeGroupSymbols: missouriBadgeGroupSymbols,
+    mixedBagCategories: missouriMixedBagCategories,
+    panhandleScoutCounties: missouriRegionScoutCounties,
+    legacyIdMap: missouriLegacyIdMap as Record<string, string>,
+    plates,
+    groupedPlates: buildGroupedPlates(plates),
+  };
+}
+
 function loadStatePack(stateId: string) {
   switch (stateId) {
     case "mississippi": return loadMississippiPack();
     case "arkansas": return loadArkansasPack();
+    case "missouri": return loadMissouriPack();
     case "florida":
     default:
       return loadFloridaPack();

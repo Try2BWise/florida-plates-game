@@ -1,0 +1,1298 @@
+[
+  {
+    "name": "Amateur Radio",
+    "file": "amateurradio",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 0,
+    "sourceCategory": "standard"
+  },
+  {
+    "name": "Custom Vehicle",
+    "file": "custom",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 0,
+    "sourceCategory": "standard"
+  },
+  {
+    "name": "Historic Vehicle",
+    "file": "historic",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 0,
+    "sourceCategory": "standard"
+  },
+  {
+    "name": "Shuttle Bus",
+    "file": "shuttle",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 0,
+    "sourceCategory": "standard"
+  },
+  {
+    "name": "Standard",
+    "file": "standard",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 0,
+    "sourceCategory": "standard"
+  },
+  {
+    "name": "Street Rod",
+    "file": "street",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 0,
+    "sourceCategory": "standard"
+  },
+  {
+    "name": "Vanpool",
+    "file": "vanpool",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 0,
+    "sourceCategory": "standard"
+  },
+  {
+    "name": "Baptist Bible College",
+    "file": "mo-53",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Central Methodist University",
+    "file": "mo-17",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Columbia College",
+    "file": "mo-47",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Culver-Stockton College",
+    "file": "mo-29",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Drury University",
+    "file": "mo-28",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Fontbonne University",
+    "file": "fontbon",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Lincoln University",
+    "file": "mo-31",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Lindenwood University",
+    "file": "mo-32",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Maryville University of St. Louis",
+    "file": "mryvlstl",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Missouri Southern State University",
+    "file": "mo-27",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Missouri State University",
+    "file": "mo-23",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Missouri University of Science and Technology",
+    "file": "mo-21",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Missouri Valley College",
+    "file": "mo-51",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Missouri Western State University",
+    "file": "mo-33",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Northwest Missouri State University",
+    "file": "mo-26",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Park University",
+    "file": "parkuniv",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Ranken Technical College ",
+    "file": "ranken",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Rockhurst University",
+    "file": "mo-25",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Saint Louis University",
+    "file": "mo-22",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Southeast Missouri State",
+    "file": "mo-24",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "University of Health Sciences and Pharmacy in St. Louis",
+    "file": "stlcolrx",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Stephens College",
+    "file": "stephenscollege",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Truman State University",
+    "file": "mo-16",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "University of Central Missouri",
+    "file": "mo-30",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "University Of Missouri - Columbia (Mizzou)",
+    "file": "mo-37",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "University Of Missouri - Kansas City",
+    "file": "mo-20",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "University Of Missouri - St. Louis",
+    "file": "mo-34",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Washington University",
+    "file": "mo-35",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Webster University",
+    "file": "mo-50",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Westminster College",
+    "file": "mo-19",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "William Jewell College",
+    "file": "mo-36",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "William Woods University",
+    "file": "wwu",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "collegiate"
+  },
+  {
+    "name": "Air Force",
+    "file": "mo-41",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Air Medal",
+    "file": "airmedal",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Armed Forces Expeditionary Medal",
+    "file": "armedforces",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Army",
+    "file": "mo-43",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Army of Occupation Medal",
+    "file": "occupation",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Bronze Star",
+    "file": "brnzstar",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 1,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Bronze Star Valor",
+    "file": "brnzstarv",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 1,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Civil Air Patrol",
+    "file": "civilair",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Coast Guard",
+    "file": "coast",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Combat Action",
+    "file": "action",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Combat Action Ribbon",
+    "file": "combact",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Combat Infantryman",
+    "file": "combtinf",
+    "color": "babyblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Combat Medic",
+    "file": "combmed",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Congressional Medal Of Honor",
+    "file": "mo-18",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Disabled Veteran",
+    "file": "mo-8",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Disabled Veteran (Alternate)",
+    "file": "mo-7",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Distinguished Flying Cross",
+    "file": "dflycrs",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 1,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Former P.O.W.",
+    "file": "mo-10",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Gulf War Veteran",
+    "file": "gulfwar",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Korean War Veteran",
+    "file": "korean",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Legion of Merit",
+    "file": "legion-of-merit",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Marine",
+    "file": "mo-44",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Marine Corps League",
+    "file": "mo-4",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Merchant Marine",
+    "file": "merchant",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Meritorious Service Medal",
+    "file": "meritorious",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "National Guard",
+    "file": "mo-3",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Navy",
+    "file": "mo-42",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Navy Cross",
+    "file": "navycross",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Operation Enduring Freedom",
+    "file": "openduring",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Operation Iraqi Freedom Veteran",
+    "file": "iraqifreedom",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Operation Noble Eagle",
+    "file": "nobleeagle",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Pearl Harbor Survivor",
+    "file": "mo-39",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Purple Heart",
+    "file": "mo-15",
+    "color": "purple",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Retired Air Force",
+    "file": "MO-41RM",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Retired Army",
+    "file": "MO-43RM",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Retired Marine",
+    "file": "MO-44RM",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Retired Marine Corps League",
+    "file": "MO-4RM",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Retired Military Coast Guard",
+    "file": "rmcg",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Retired National Guard",
+    "file": "MO-3RM",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Retired Navy",
+    "file": "MO-42RM",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Silver Star",
+    "file": "mo-13",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Some Gave All (Gold Star)",
+    "file": "somegaveall",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "United States Veteran",
+    "file": "usvet",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Veterans Of Foreign Wars (VFW)",
+    "file": "vfw",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Vietnam Veteran",
+    "file": "mo-11",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Wartime Disabled - DAV",
+    "file": "dav",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "We Shall Not Forget",
+    "file": "notforget",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Woman Veteran",
+    "file": "womanvet",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "World War II Veteran",
+    "file": "wwiivet",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "military"
+  },
+  {
+    "name": "Alpha Kappa Alpha",
+    "file": "aka",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Alpha Phi Alpha",
+    "file": "aphia",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "American Heart Association (Winning Women)",
+    "file": "winningwomen",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "American Legion",
+    "file": "amlegn",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Arkansas Alumni - Go Hogs!",
+    "file": "arkalumni",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Back the Blue",
+    "file": "back-the-blue",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Be An Organ Donor",
+    "file": "organdonor",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Bee Friendly (Missouri State Beekeepers Association)",
+    "file": "bee-friendly",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Breast Cancer Awareness",
+    "file": "bcancer",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Cars and Coffee Foundation",
+    "file": "cars-and-coffee",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 4,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Cave State",
+    "file": "cavestate",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 4,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Childrens Trust Fund",
+    "file": "mo-12",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 4,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Choose Life",
+    "file": "chooselife",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Conservation (Bass)",
+    "file": "chf-bass",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Conservation (Bluebird)",
+    "file": "chf-bird",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Conservation (Deer)",
+    "file": "chf-deer",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Coroners Office (MCMEA)",
+    "file": "coroner",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Delta Sigma Theta",
+    "file": "deltasigtheta",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Ducks Unlimited",
+    "file": "dckunlmt",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Eagle Scout",
+    "file": "eaglesct",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "EMT",
+    "file": "emt",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Fight Terrorism",
+    "file": "terrorism",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Firefighter",
+    "file": "mo-40",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 2,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Former Missouri Legislator",
+    "file": "legislator",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Fraternal Order Of Eagles",
+    "file": "mo-38",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Fraternal Order Of Police",
+    "file": "police",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Friends Of Arrow Rock",
+    "file": "friendsofarrowrock",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Gateway Arch",
+    "file": "gateway-arch",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "God Bless America",
+    "file": "gba",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Grand Lodge Freemason",
+    "file": "mo-5",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Great Rivers State",
+    "file": "streamteam",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Hearing Impaired Kids Endowment",
+    "file": "hearing",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Helping Schools",
+    "file": "mo-48",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Kansas City Chiefs",
+    "file": "kcchiefs",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Kansas City Royals",
+    "file": "kcroyals",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Kansas City Zoo",
+    "file": "kczoo",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Kappa Alpha Psi",
+    "file": "KAPsi",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Knights Of Columbus",
+    "file": "mo-14",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Kingdom Of Calontir",
+    "file": "calontir",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Lions Club",
+    "file": "lions",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "MASTERS",
+    "file": "masters",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Missouri 4-H",
+    "file": "clover",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Missouri Association of Realtors",
+    "file": "realtors",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Missouri Bicycle and Pedestrian Federation",
+    "file": "mobike",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Missouri Botanical Garden",
+    "file": "botgar",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Missouri Elks Association",
+    "file": "elks",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Missouri Federation Of Square & Round Dance Clubs",
+    "file": "squaredancers",
+    "color": "blue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Missouri Jaycees",
+    "file": "jaycplt",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Missouri Junior Golf Foundation",
+    "file": "juniorgolf",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Missouri Nurses Foundation",
+    "file": "monurses",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Missouri Remembers POW*MIA",
+    "file": "POWMIA",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Missouri Task Force 1",
+    "file": "motask",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Missouri Travel Council",
+    "file": "travel",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "MKN Teamsters",
+    "file": "teamsters",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "MO-AG Agribusiness",
+    "file": "moag",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Omega Psi Phi",
+    "file": "omegapsiphi",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Order Of The Arrow",
+    "file": "orderota",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Order Of The Eastern Star - Harmony Grand Chapter",
+    "file": "mo-6",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Paramedic",
+    "file": "paramed",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Pittsburg State University",
+    "file": "pittsburgstate",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Prince Hall Grand Lodge Masons",
+    "file": "mo-46",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Respiratory Therapist",
+    "file": "respiratory",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Rotary International",
+    "file": "rotary",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Route 66",
+    "file": "route-66",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Safari Club International",
+    "file": "safari",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Search and Rescue (SARCOM)",
+    "file": "sarcom",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Shriners",
+    "file": "shrn",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Sigma Gamma Rho",
+    "file": "SigGamRho",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Special Olympics Missouri",
+    "file": "specolympics",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "St. Louis Blues",
+    "file": "stblues",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "St. Louis Cardinals",
+    "file": "stlcards",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "St. Louis Zoo",
+    "file": "stlzoo",
+    "color": "black",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Tribe Mic-O-Say - Kansas City District",
+    "file": "tribemickc",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  },
+  {
+    "name": "Tribe Mic-O-Say - St. Joseph District",
+    "file": "tribemic",
+    "color": "darkblue",
+    "maxChars": 6,
+    "blanks": 3,
+    "sourceCategory": "organizational"
+  }
+]
