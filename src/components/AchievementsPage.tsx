@@ -160,34 +160,40 @@ export function AchievementsPage({
           </div>
 
           {/* ── Earned ── */}
-          {earnedByGroup.length > 0 ? (
-            <section className="utility-card">
-              <h3 className="achievements-section__title">Earned</h3>
-              <div className="utility-stack">
-                {earnedByGroup.map(([group, badges]) => (
-                  <section className="badge-group" key={`earned-${group}`}>
-                    <div className="badge-group__header">
-                      <h4>
-                        <Icon name={badgeGroupSymbols[group] as IconName} size={16} className={`badge-group__icon badge-group__icon--${group}`} />
-                        {badgeGroupLabels[group]}
-                      </h4>
-                      <span>{badges.length}</span>
-                    </div>
-                    <div className="badge-icon-grid">
-                      {badges.map((badge) => (
-                        <div className="badge-icon-grid-item" key={badge.id} tabIndex={0} role="button" aria-label={badge.name} onClick={() => onBadgeDetail(badge)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") onBadgeDetail(badge); }} style={{ outline: "none", cursor: "pointer" }}>
-                          <div className="badge-frame badge-frame--earned" style={{ width: 88, height: 88, "--badge-group-color": badgeGroupColors[group] ?? "var(--accent)" } as React.CSSProperties}>
-                            <BadgeIcon badge={badge} size={88} />
-                          </div>
-                          <span className="badge-medal-label">{badge.name}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </section>
-                ))}
-              </div>
-            </section>
-          ) : null}
+          {earnedByGroup.length > 0 ? (() => {
+            let badgeIndex = 0;
+            return (
+              <section className="utility-card">
+                <h3 className="achievements-section__title">Earned</h3>
+                <div className="utility-stack">
+                  {earnedByGroup.map(([group, badges]) => (
+                    <section className="badge-group" key={`earned-${group}`}>
+                      <div className="badge-group__header">
+                        <h4>
+                          <Icon name={badgeGroupSymbols[group] as IconName} size={16} className={`badge-group__icon badge-group__icon--${group}`} />
+                          {badgeGroupLabels[group]}
+                        </h4>
+                        <span>{badges.length}</span>
+                      </div>
+                      <div className="badge-icon-grid">
+                        {badges.map((badge) => {
+                          const idx = badgeIndex++;
+                          return (
+                            <div className="badge-icon-grid-item" key={badge.id} tabIndex={0} role="button" aria-label={badge.name} onClick={() => onBadgeDetail(badge)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") onBadgeDetail(badge); }} style={{ outline: "none", cursor: "pointer" }}>
+                              <div className="badge-frame badge-frame--earned" style={{ width: 88, height: 88, "--badge-group-color": badgeGroupColors[group] ?? "var(--accent)", "--badge-index": idx } as React.CSSProperties}>
+                                <BadgeIcon badge={badge} size={88} />
+                              </div>
+                              <span className="badge-medal-label">{badge.name}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </section>
+                  ))}
+                </div>
+              </section>
+            );
+          })() : null}
 
           {/* ── In Progress ── */}
           {inProgressBadges.length > 0 ? (
