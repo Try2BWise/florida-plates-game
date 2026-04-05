@@ -12,6 +12,7 @@ export const plateCategories = [
   "Nature & Wildlife",
   "Professional Sports",
   "Public Service",
+  "Schools",
   "Special Use",
   "Sports & Recreation",
   "Standard Plates",
