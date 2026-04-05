@@ -1,5 +1,5 @@
 Generated 637 plate asset paths
-Generated 35 badge asset paths
+Generated 32 badge asset paths
 public\apple-touch-icon.png
 public\pwa-192.png
 public\pwa-512.png
