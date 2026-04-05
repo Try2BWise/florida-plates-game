@@ -1095,24 +1095,22 @@ function App() {
       <div ref={headerSentinelRef} className="header-sentinel" aria-hidden="true" />
       <header className={`app-header ${isHeaderCompact ? "app-header--compact" : ""}`}>
         <div className="app-header__top">
-          <div className="app-header__brand">
-            {activeGame.branding.headerImage.type === "logo" ? (
-              <button type="button" className="app-header__logo-btn" onClick={() => setActiveView("state-picker")} aria-label="Switch state">
-                <img
-                  className="app-header__logo"
-                  src={`${import.meta.env.BASE_URL}${activeGame.branding.headerImage.path}`}
-                  alt={activeGame.branding.headerImage.alt}
-                />
-              </button>
-            ) : (
-              <div className="welcome-sign" aria-label={activeGame.branding.appTagline} role="button" tabIndex={0} onClick={() => setActiveView("state-picker")} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") setActiveView("state-picker"); }}>
-                <span className="welcome-sign__welcome">{activeGame.branding.headerImage.line1}</span>
-                <span className="welcome-sign__state">{activeGame.branding.headerImage.line2}</span>
-                <span className="welcome-sign__tagline">{activeGame.branding.headerImage.line3}</span>
-              </div>
-            )}
-            <button type="button" className="app-header__edition" onClick={() => setActiveView("state-picker")}>{activeGame.branding.appTagline}</button>
-          </div>
+          {activeGame.branding.headerImage.type === "logo" ? (
+            <button type="button" className="app-header__logo-btn" onClick={() => setActiveView("state-picker")} aria-label="Switch state">
+              <img
+                className="app-header__logo"
+                src={`${import.meta.env.BASE_URL}${activeGame.branding.headerImage.path}`}
+                alt={activeGame.branding.headerImage.alt}
+              />
+            </button>
+          ) : (
+            <div className="welcome-sign" aria-label={activeGame.branding.appTagline} role="button" tabIndex={0} onClick={() => setActiveView("state-picker")} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") setActiveView("state-picker"); }}>
+              <span className="welcome-sign__welcome">{activeGame.branding.headerImage.line1}</span>
+              <span className="welcome-sign__state">{activeGame.branding.headerImage.line2}</span>
+              <span className="welcome-sign__tagline">{activeGame.branding.headerImage.line3}</span>
+            </div>
+          )}
+          <button type="button" className="app-header__edition" onClick={() => setActiveView("state-picker")}>{activeGame.branding.appTagline}</button>
           <div className="app-header__stats" aria-live="polite">
             <div className="app-header__kpi">
               <span className="app-header__kpi-value">{foundCount}</span>

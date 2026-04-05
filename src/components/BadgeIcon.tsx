@@ -41,7 +41,7 @@ const customBadgeArtById: Record<string, string> = {
   "ms-hills-explorer": "compass.png",
   "ms-delta-explorer": "compass.png",
   "ms-capital-river-explorer": "compass.png",
-  "ms-pines-explorer": "palm-tree.png",
+  "ms-pines-explorer": "leaf.png",
   "ms-coastal-explorer": "waves.png",
   "all-around-mississippi": "compass.png",
   "green-light": "leaf.png",

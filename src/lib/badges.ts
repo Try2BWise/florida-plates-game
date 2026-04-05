@@ -746,7 +746,7 @@ function createThresholdBadge(
 ): EvaluatedBadge {
   return {
     ...definition,
-    earned: current >= target,
+    earned: target > 0 && current >= target,
     progressCurrent: current,
     progressTarget: target
   };

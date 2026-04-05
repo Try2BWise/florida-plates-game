@@ -170,20 +170,16 @@ select {
 }
 
 .app-header__top {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  gap: 0 0.75rem;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
-  overflow: hidden;
 }
 
-.app-header__brand {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  flex: 1;
-  min-width: 0;
-  overflow: hidden;
+.app-header__logo-btn,
+.app-header__top > .welcome-sign {
+  grid-row: 1 / -1;
 }
 
 .app-header__logo-btn {
@@ -194,7 +190,6 @@ select {
   padding: 0;
   margin: 0;
   cursor: pointer;
-  flex-shrink: 0;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -217,10 +212,7 @@ select {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  min-width: 0;
+  align-self: end;
 }
 
 .plate-group__heading h2,
@@ -307,7 +299,7 @@ select {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  flex-shrink: 0;
+  align-self: start;
 }
 
 .app-header__kpi {
@@ -2095,12 +2087,7 @@ select {
   }
 
   .app-header__top {
-    align-items: start;
-    gap: 0.45rem;
-  }
-
-  .app-header__actions {
-    align-self: start;
+    gap: 0 0.45rem;
   }
 
   .app-header__edition {
