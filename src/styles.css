@@ -158,10 +158,6 @@ select {
 
 /* ── Compact header — hide filter/sort row ── */
 
-.app-header--compact .app-header__edition {
-  display: none;
-}
-
 .app-header--compact .control-bar__filter-sort {
   max-height: 0;
   opacity: 0;
