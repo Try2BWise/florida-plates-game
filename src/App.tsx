@@ -17,7 +17,7 @@ import {
 import { PlateCard } from "./components/PlateCard";
 import { groupedPlates, plates } from "./data/plates";
 import { buildInfo } from "./generated/buildInfo";
-import { evaluateBadges, type BadgeGroup, type EvaluatedBadge } from "./lib/badges";
+import { evaluateBadges, computePlayerRank, type BadgeGroup, type EvaluatedBadge } from "./lib/badges";
 import { formatDiscoveryTime } from "./lib/format";
 import { createDiscovery, enrichDiscoveryLocation } from "./lib/geolocation";
 import { reverseGeocodePlace } from "./lib/reverseGeocode";
@@ -658,6 +658,10 @@ function App() {
   const earnedBadges = useMemo(
     () => evaluatedBadges.filter((badge) => badge.earned),
     [evaluatedBadges]
+  );
+  const playerRank = useMemo(
+    () => computePlayerRank(earnedBadges.length, evaluatedBadges.length),
+    [earnedBadges.length, evaluatedBadges.length]
   );
   // Group all badges (earned and unearned) by group for display
   const badgeGroupLabels: Record<BadgeGroup, string> = activeBadgeGroupLabels;
@@ -1487,6 +1491,7 @@ function App() {
           badgeGroupLabels={badgeGroupLabels}
           badgeGroupSymbols={badgeGroupSymbols}
           onBadgeDetail={setActiveBadgeDetail}
+          playerRank={playerRank}
           timelineSort={timelineSort}
           onTimelineSortChange={setTimelineSort}
           timelineGroups={timelineGroups}

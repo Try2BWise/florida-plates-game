@@ -5,7 +5,7 @@ import { BadgeIcon } from "./BadgeIcon";
 import { PageView } from "./PageView";
 import { ProgressRing } from "./ProgressRing";
 import { formatDiscoveryTime } from "../lib/format";
-import type { EvaluatedBadge, BadgeGroup } from "../lib/badges";
+import type { EvaluatedBadge, BadgeGroup, PlayerRankInfo } from "../lib/badges";
 import type { Plate, PlateDiscovery } from "../types";
 
 type AchievementsTab = "achievements" | "journey" | "map";
@@ -59,6 +59,8 @@ interface AchievementsPageProps {
   badgeGroupLabels: Record<BadgeGroup, string>;
   badgeGroupSymbols: Record<BadgeGroup, string>;
   onBadgeDetail: (badge: EvaluatedBadge) => void;
+  // Rank
+  playerRank: PlayerRankInfo;
   // Timeline
   timelineSort: TimelineSort;
   onTimelineSortChange: (sort: TimelineSort) => void;
@@ -82,6 +84,7 @@ export function AchievementsPage({
   foundCount, totalPlates, localityCount,
   categoryStats, topLocalities, newestSighting, oldestSighting,
   evaluatedBadges, earnedBadges, allBadgeGroups, badgeGroupLabels, badgeGroupSymbols, onBadgeDetail,
+  playerRank,
   timelineSort, onTimelineSortChange, timelineGroups, collapsedTimelineDates, onToggleTimelineDate,
   mapPins, mapBounds, geotaggedEntries
 }: AchievementsPageProps) {
@@ -136,7 +139,7 @@ export function AchievementsPage({
           {/* ── Hero summary ── */}
           <div className="achievements-hero">
             <ProgressRing
-              percent={evaluatedBadges.length > 0 ? Math.round((earnedBadges.length / evaluatedBadges.length) * 100) : 0}
+              percent={playerRank.progress}
               size={72}
               strokeWidth={7}
               color="#D33C2E"
@@ -144,10 +147,15 @@ export function AchievementsPage({
               sublabel=""
             />
             <div className="achievements-hero__copy">
+              <span className="achievements-hero__rank">{playerRank.label}</span>
               <span className="achievements-hero__count">
-                {earnedBadges.length} <span className="achievements-hero__total">of {evaluatedBadges.length}</span>
+                {earnedBadges.length} <span className="achievements-hero__total">of {evaluatedBadges.length} badges</span>
               </span>
-              <span className="achievements-hero__label">Badges earned</span>
+              <span className="achievements-hero__next">
+                {playerRank.nextRank
+                  ? `${playerRank.badgesForNext} more to ${playerRank.nextRank.label}`
+                  : "Max rank achieved!"}
+              </span>
             </div>
           </div>
 

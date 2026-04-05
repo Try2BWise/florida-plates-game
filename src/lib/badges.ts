@@ -1335,3 +1335,63 @@ export function evaluateBadges(
   const activeBadgeIds = stateBadgeMap[stateId] || emptyBadgeIds;
   return allEvaluated.filter((badge) => genericBadgeIds.has(badge.id) || activeBadgeIds.has(badge.id));
 }
+
+/* ── Player Rank System ── */
+
+export type PlayerRank = "rookie" | "spotter" | "collector" | "road-scholar" | "plate-master";
+
+export interface PlayerRankInfo {
+  rank: PlayerRank;
+  label: string;
+  nextRank: { rank: PlayerRank; label: string } | null;
+  badgesForNext: number;
+  progress: number;
+}
+
+const rankTiers: { rank: PlayerRank; label: string; minPercent: number }[] = [
+  { rank: "rookie", label: "Rookie", minPercent: 0 },
+  { rank: "spotter", label: "Spotter", minPercent: 0 },
+  { rank: "collector", label: "Collector", minPercent: 25 },
+  { rank: "road-scholar", label: "Road Scholar", minPercent: 50 },
+  { rank: "plate-master", label: "Plate Master", minPercent: 90 },
+];
+
+export function computePlayerRank(earnedCount: number, totalCount: number): PlayerRankInfo {
+  if (totalCount === 0) {
+    return { rank: "rookie", label: "Rookie", nextRank: null, badgesForNext: 0, progress: 0 };
+  }
+
+  // Spotter threshold is 1 badge (not percentage-based)
+  const thresholds = rankTiers.map((tier) =>
+    tier.rank === "spotter" ? 1 : Math.ceil((tier.minPercent / 100) * totalCount)
+  );
+
+  let currentIndex = 0;
+  for (let i = thresholds.length - 1; i >= 0; i--) {
+    if (earnedCount >= thresholds[i]) {
+      currentIndex = i;
+      break;
+    }
+  }
+
+  const current = rankTiers[currentIndex];
+  const isMax = currentIndex === rankTiers.length - 1;
+  const next = isMax ? null : rankTiers[currentIndex + 1];
+  const nextThreshold = isMax ? thresholds[currentIndex] : thresholds[currentIndex + 1];
+  const currentThreshold = thresholds[currentIndex];
+
+  const rangeSize = nextThreshold - currentThreshold;
+  const progress = isMax
+    ? 100
+    : rangeSize > 0
+      ? Math.min(100, Math.round(((earnedCount - currentThreshold) / rangeSize) * 100))
+      : 100;
+
+  return {
+    rank: current.rank,
+    label: current.label,
+    nextRank: next ? { rank: next.rank, label: next.label } : null,
+    badgesForNext: isMax ? 0 : Math.max(0, nextThreshold - earnedCount),
+    progress,
+  };
+}
