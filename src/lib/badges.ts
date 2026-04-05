@@ -1232,13 +1232,18 @@ export function evaluateBadges(
     "mo-southwest-explorer", "mo-southeast-explorer", "all-around-missouri",
   ]);
 
+  // States with no region badges yet get an empty set (generic badges only)
+  const emptyBadgeIds = new Set<string>();
+
   // Filter to generic badges + badges for the active state
   const stateBadgeMap: Record<string, Set<string>> = {
     florida: floridaBadgeIds,
     mississippi: mississippiBadgeIds,
     arkansas: arkansasBadgeIds,
     missouri: missouriBadgeIds,
+    tennessee: emptyBadgeIds,
+    kentucky: emptyBadgeIds,
   };
-  const activeBadgeIds = stateBadgeMap[stateId] || floridaBadgeIds;
+  const activeBadgeIds = stateBadgeMap[stateId] || emptyBadgeIds;
   return allEvaluated.filter((badge) => genericBadgeIds.has(badge.id) || activeBadgeIds.has(badge.id));
 }
