@@ -87,6 +87,17 @@ export function AchievementsPage({
 }: AchievementsPageProps) {
   const [showLocked, setShowLocked] = useState(false);
 
+  const badgeGroupColors: Record<string, string> = {
+    progress: "#3b82f6",
+    category: "#2f9e44",
+    collection: "#f08c00",
+    college: "#9b2226",
+    locality: "#0f766e",
+    service: "#4f46e5",
+    florida: "#047857",
+    sports: "#b45309",
+  };
+
   const earnedByGroup = allBadgeGroups
     .map(([group, badges]) => [group, badges.filter(b => b.earned)] as [BadgeGroup, EvaluatedBadge[]])
     .filter(([, badges]) => badges.length > 0);
@@ -157,7 +168,9 @@ export function AchievementsPage({
                     <div className="badge-icon-grid">
                       {badges.map((badge) => (
                         <div className="badge-icon-grid-item" key={badge.id} tabIndex={0} role="button" aria-label={badge.name} onClick={() => onBadgeDetail(badge)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") onBadgeDetail(badge); }} style={{ outline: "none", cursor: "pointer" }}>
-                          <BadgeIcon badge={badge} size={88} />
+                          <div className="badge-frame badge-frame--earned" style={{ width: 88, height: 88, "--badge-group-color": badgeGroupColors[group] ?? "var(--accent)" } as React.CSSProperties}>
+                            <BadgeIcon badge={badge} size={88} />
+                          </div>
                           <span className="badge-medal-label">{badge.name}</span>
                         </div>
                       ))}
@@ -173,15 +186,29 @@ export function AchievementsPage({
             <section className="utility-card">
               <h3 className="achievements-section__title">In Progress</h3>
               <div className="badge-icon-grid">
-                {inProgressBadges.map((badge) => (
-                  <div className="badge-icon-grid-item badge-icon-grid-item--in-progress" key={badge.id} tabIndex={0} role="button" aria-label={badge.name} onClick={() => onBadgeDetail(badge)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") onBadgeDetail(badge); }} style={{ outline: "none", cursor: "pointer" }}>
-                    <BadgeIcon badge={badge} />
-                    <span className="badge-medal-label">{badge.name}</span>
-                    <span className="badge-progress-indicator">
-                      {badge.progressTarget ? `${badge.progressCurrent}/${badge.progressTarget}` : `${badge.progressCurrent}`}
-                    </span>
-                  </div>
-                ))}
+                {inProgressBadges.map((badge) => {
+                  const percent = badge.progressTarget
+                    ? Math.round((badge.progressCurrent! / badge.progressTarget) * 100)
+                    : 0;
+                  const r = 35;
+                  const circ = 2 * Math.PI * r;
+                  const offset = circ - (percent / 100) * circ;
+                  return (
+                    <div className="badge-icon-grid-item" key={badge.id} tabIndex={0} role="button" aria-label={badge.name} onClick={() => onBadgeDetail(badge)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") onBadgeDetail(badge); }} style={{ outline: "none", cursor: "pointer" }}>
+                      <div className="badge-frame badge-frame--in-progress" style={{ width: 72, height: 72 }}>
+                        <BadgeIcon badge={badge} size={72} />
+                        <svg className="badge-frame__progress-ring" viewBox="0 0 76 76">
+                          <circle className="badge-frame__progress-track" cx="38" cy="38" r={r} />
+                          <circle className="badge-frame__progress-fill" cx="38" cy="38" r={r} strokeDasharray={circ} strokeDashoffset={offset} />
+                        </svg>
+                      </div>
+                      <span className="badge-medal-label">{badge.name}</span>
+                      <span className="badge-progress-indicator">
+                        {badge.progressTarget ? `${badge.progressCurrent}/${badge.progressTarget}` : `${badge.progressCurrent}`}
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
             </section>
           ) : null}
@@ -205,7 +232,12 @@ export function AchievementsPage({
                 <div className="badge-icon-grid">
                   {lockedBadges.map((badge) => (
                     <div className="badge-icon-grid-item" key={badge.id} tabIndex={0} role="button" aria-label={badge.name} onClick={() => onBadgeDetail(badge)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") onBadgeDetail(badge); }} style={{ outline: "none", cursor: "pointer" }}>
-                      <BadgeIcon badge={badge} />
+                      <div className="badge-frame" style={{ width: 72, height: 72 }}>
+                        <BadgeIcon badge={badge} size={72} />
+                        <div className="badge-frame__lock">
+                          <Icon name="lock" size={20} className="badge-frame__lock-icon" />
+                        </div>
+                      </div>
                       <span className="badge-medal-label">{badge.name}</span>
                     </div>
                   ))}

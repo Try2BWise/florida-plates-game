@@ -17,7 +17,8 @@ export type IconName =
   | "cap"
   | "shield"
   | "compass"
-  | "pin";
+  | "pin"
+  | "lock";
 
 interface IconProps {
   name: IconName;
@@ -144,6 +145,13 @@ const paths: Record<IconName, JSX.Element> = {
     <>
       <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="none" stroke="currentColor" strokeWidth="1.5" />
       <circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+    </>
+  ),
+  lock: (
+    <>
+      <rect x="5" y="11" width="14" height="10" rx="2" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M8 11V7a4 4 0 0 1 8 0v4" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <circle cx="12" cy="16" r="1.5" fill="currentColor" />
     </>
   ),
 };

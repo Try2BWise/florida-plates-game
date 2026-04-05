@@ -5,10 +5,10 @@
 .badge-icon-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem 0.6rem;
+  gap: 16px 12px;
   justify-items: center;
   align-items: start;
-  margin-bottom: 1.2rem;
+  margin-bottom: 16px;
 }
 .badge-icon-grid-item {
   display: flex;
@@ -36,13 +36,13 @@
 }
 .badge-medal-label {
   display: block;
-  font-size: 0.76rem;
+  font-size: 12px;
   font-weight: 500;
   text-align: center;
   color: var(--muted);
   word-break: break-word;
-  margin-top: 0.15rem;
-  line-height: 1.2;
+  margin-top: 4px;
+  line-height: 1.25;
 }
 .toggle-label {
   cursor: pointer;
@@ -1647,9 +1647,9 @@ select {
 .achievements-hero {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 0.9rem 0.95rem;
-  border-radius: 1rem;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 16px;
   background: var(--surface);
   box-shadow: var(--card-shadow);
 }
@@ -1657,48 +1657,101 @@ select {
 .achievements-hero__copy {
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
+  gap: 2px;
 }
 
 .achievements-hero__count {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 800;
   color: var(--text);
   line-height: 1.15;
 }
 
 .achievements-hero__total {
-  font-size: 0.92rem;
+  font-size: 15px;
   font-weight: 600;
   color: var(--muted);
 }
 
 .achievements-hero__label {
-  font-size: 0.82rem;
+  font-size: 13px;
   font-weight: 500;
   color: var(--muted);
 }
 
 .achievements-section__title {
-  font-size: 0.92rem;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
   color: var(--text);
   margin: 0;
   letter-spacing: 0.01em;
 }
 
-.badge-icon-grid-item--in-progress .badge-medal-img {
+/* ── Circular badge frame (Game Center-style) ── */
+
+.badge-frame {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--surface-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.badge-frame--earned {
+  box-shadow: 0 0 0 2.5px var(--badge-group-color, var(--accent));
+}
+
+.badge-frame__lock {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.badge-frame__progress-ring {
+  position: absolute;
+  inset: -2px;
+  pointer-events: none;
+}
+
+.badge-frame__progress-ring circle {
+  fill: none;
+  stroke-linecap: round;
+}
+
+.badge-frame__progress-track {
+  stroke: var(--card-border);
+  stroke-width: 3;
+}
+
+.badge-frame__progress-fill {
+  stroke: var(--accent);
+  stroke-width: 3;
+  transition: stroke-dashoffset 0.6s ease-out;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+/* In-progress frame: slightly muted image */
+.badge-frame--in-progress .badge-medal-img {
   opacity: 0.72;
   filter: grayscale(30%) brightness(0.92);
 }
 
 .badge-progress-indicator {
   display: block;
-  font-size: 0.68rem;
+  font-size: 11px;
   font-weight: 700;
   color: var(--accent);
   text-align: center;
-  margin-top: 0.1rem;
+  margin-top: 2px;
   line-height: 1;
 }
 
@@ -1718,10 +1771,15 @@ select {
 }
 
 .achievements-locked-toggle__count {
-  font-size: 0.82rem;
+  font-size: 13px;
   font-weight: 600;
   color: var(--muted);
-  margin-left: 0.3rem;
+  margin-left: 4px;
+}
+
+/* Dark mode: subtle border on achievements hero for elevation feel */
+:root[data-theme="dark"] .achievements-hero {
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* Old badge-group CSS icon pseudo-elements removed — replaced by SVG Icon component */
@@ -2374,12 +2432,12 @@ select {
   }
 
   .achievements-hero {
-    gap: 0.75rem;
-    padding: 0.8rem 0.82rem;
+    gap: 12px;
+    padding: 12px;
   }
 
   .achievements-hero__count {
-    font-size: 1.3rem;
+    font-size: 20px;
   }
 
 }
