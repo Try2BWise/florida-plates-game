@@ -336,18 +336,26 @@ function App() {
       return;
     }
 
-    const previousBodyOverflow = document.body.style.overflow;
-    const previousDocumentOverflow = document.documentElement.style.overflow;
-    const previousBodyTouchAction = document.body.style.touchAction;
+    const scrollY = window.scrollY;
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.left = "0";
+    document.body.style.right = "0";
     document.body.style.overflow = "hidden";
-    document.documentElement.style.overflow = "hidden";
-    document.body.style.touchAction = "none";
+    if (scrollbarWidth > 0) {
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    }
 
     return () => {
-      document.body.style.overflow = previousBodyOverflow;
-      document.documentElement.style.overflow = previousDocumentOverflow;
-      document.body.style.touchAction = previousBodyTouchAction;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
+      window.scrollTo(0, scrollY);
     };
   }, [previewPlate, isClearConfirmOpen, activeBadgeDetail]);
 
@@ -1089,13 +1097,15 @@ function App() {
         <div className="app-header__top">
           <div className="app-header__brand">
             {activeGame.branding.headerImage.type === "logo" ? (
-              <img
-                className="app-header__logo"
-                src={`${import.meta.env.BASE_URL}${activeGame.branding.headerImage.path}`}
-                alt={activeGame.branding.headerImage.alt}
-              />
+              <button type="button" className="app-header__logo-btn" onClick={() => setActiveView("state-picker")} aria-label="Switch state">
+                <img
+                  className="app-header__logo"
+                  src={`${import.meta.env.BASE_URL}${activeGame.branding.headerImage.path}`}
+                  alt={activeGame.branding.headerImage.alt}
+                />
+              </button>
             ) : (
-              <div className="welcome-sign" aria-label={activeGame.branding.appTagline}>
+              <div className="welcome-sign" aria-label={activeGame.branding.appTagline} role="button" tabIndex={0} onClick={() => setActiveView("state-picker")} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") setActiveView("state-picker"); }}>
                 <span className="welcome-sign__welcome">{activeGame.branding.headerImage.line1}</span>
                 <span className="welcome-sign__state">{activeGame.branding.headerImage.line2}</span>
                 <span className="welcome-sign__tagline">{activeGame.branding.headerImage.line3}</span>
