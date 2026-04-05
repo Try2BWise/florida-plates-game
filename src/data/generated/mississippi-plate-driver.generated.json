@@ -89,6 +89,31 @@
       "relatedPlates": []
     },
     {
+      "id": "ms-profession-of-pharmacy",
+      "slug": "profession-of-pharmacy",
+      "name": "Ask Your Pharmacist",
+      "displayName": "Ask Your Pharmacist",
+      "baseName": "Profession of Pharmacy",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic & Causes",
+      "image": {
+        "path": "state-packs/mississippi/plates/profession-of-pharmacy.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Profession%252520of%252520Pharmacy_jpg.jpg.webp?itok=0O0ldfWe"
+      },
+      "sponsor": "Mississippi Board of Pharmacy",
+      "notes": null,
+      "searchTerms": [
+        "pharmacy",
+        "pharmacist",
+        "rx"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
       "id": "ms-band-of-choctaw-indians",
       "slug": "band-of-choctaw-indians",
       "name": "Band of Choctaw Indians",
@@ -106,6 +131,33 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ms-pearl-river-valley-water",
+      "slug": "pearl-river-valley-water",
+      "name": "Barnett Reservoir (The Rez)",
+      "displayName": "Barnett Reservoir (The Rez)",
+      "baseName": "Pearl River Valley Water",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic & Causes",
+      "image": {
+        "path": "state-packs/mississippi/plates/pearl-river-valley-water.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Pearl%252520River%252520Valley%252520Water_jpg.jpg.webp?itok=Jh0wJ3Kr"
+      },
+      "sponsor": "Pearl River Valley Water Supply District",
+      "notes": null,
+      "searchTerms": [
+        "rez",
+        "barnett",
+        "reservoir",
+        "pearl river",
+        "ross barnett"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -210,7 +262,12 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "dental",
+        "dentist",
+        "hygienist",
+        "teeth"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -228,27 +285,6 @@
       "image": {
         "path": "state-packs/mississippi/plates/diocese-of-biloxi.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Screenshot%25202023-08-31%2520154222.jpg.webp?itok=fTFtk03T"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ms-electric-power-association",
-      "slug": "electric-power-association",
-      "name": "Electric Power Association",
-      "displayName": "Electric Power Association",
-      "baseName": "Electric Power Association",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/mississippi/plates/electric-power-association.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Electric%252520Power%252520Association_jpg.jpg.webp?itok=Qq6pwpv4"
       },
       "sponsor": null,
       "notes": null,
@@ -404,6 +440,57 @@
       "relatedPlates": []
     },
     {
+      "id": "ms-electric-power-association",
+      "slug": "electric-power-association",
+      "name": "Lighting Mississippi",
+      "displayName": "Lighting Mississippi",
+      "baseName": "Electric Power Association",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic & Causes",
+      "image": {
+        "path": "state-packs/mississippi/plates/electric-power-association.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Electric%252520Power%252520Association_jpg.jpg.webp?itok=Qq6pwpv4"
+      },
+      "sponsor": "Electric Power Association of Mississippi",
+      "notes": null,
+      "searchTerms": [
+        "electric",
+        "power",
+        "lighting",
+        "epa"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ms-mississippi-motosteps",
+      "slug": "mississippi-motosteps",
+      "name": "Look Twice for Motorcycles",
+      "displayName": "Look Twice for Motorcycles",
+      "baseName": "Mississippi Motosteps",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic & Causes",
+      "image": {
+        "path": "state-packs/mississippi/plates/mississippi-motosteps.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Mississippi%252520Motosteps_jpg.jpg.webp?itok=VEYqOrfE"
+      },
+      "sponsor": "Mississippi Motosteps",
+      "notes": null,
+      "searchTerms": [
+        "motosteps",
+        "look twice",
+        "motorcycle awareness"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
       "id": "ms-maurice-f-lucas-sr-grand-chapter-of-the-eastern-star",
       "slug": "maurice-f-lucas-sr-grand-chapter-of-the-eastern-star",
       "name": "Maurice F Lucas, Sr., Grand Chapter of the Eastern Star",
@@ -488,52 +575,10 @@
       "relatedPlates": []
     },
     {
-      "id": "ms-mississippi-loggers-association",
-      "slug": "mississippi-loggers-association",
-      "name": "Mississippi Loggers Association",
-      "displayName": "Mississippi Loggers Association",
-      "baseName": "Mississippi Loggers Association",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/mississippi/plates/mississippi-loggers-association.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Loggers%252520Association_jpg.jpg.webp?itok=JZ1oAPzj"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ms-mississippi-motosteps",
-      "slug": "mississippi-motosteps",
-      "name": "Mississippi Motosteps",
-      "displayName": "Mississippi Motosteps",
-      "baseName": "Mississippi Motosteps",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/mississippi/plates/mississippi-motosteps.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Mississippi%252520Motosteps_jpg.jpg.webp?itok=VEYqOrfE"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
       "id": "ms-mississippi-nurses-foundation",
       "slug": "mississippi-nurses-foundation",
-      "name": "Mississippi Nurses Foundation",
-      "displayName": "Mississippi Nurses Foundation",
+      "name": "Mississippi Nurses",
+      "displayName": "Mississippi Nurses",
       "baseName": "Mississippi Nurses Foundation",
       "variantLabel": null,
       "plateType": "passenger",
@@ -544,17 +589,44 @@
         "path": "state-packs/mississippi/plates/mississippi-nurses-foundation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Nurses%252520Foundation_jpg.jpg.webp?itok=GYX5S1T_"
       },
-      "sponsor": null,
+      "sponsor": "Mississippi Nurses Foundation",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "nurses",
+        "nursing"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ms-realtors-mississippi-association",
+      "slug": "realtors-mississippi-association",
+      "name": "Mississippi Realtors",
+      "displayName": "Mississippi Realtors",
+      "baseName": "Realtors (Mississippi Association)",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic & Causes",
+      "image": {
+        "path": "state-packs/mississippi/plates/realtors-mississippi-association.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Realtors%252520%2528MS%252520Association%2529_jpg.jpg.webp?itok=JczD72gH"
+      },
+      "sponsor": "Mississippi Association of Realtors",
+      "notes": null,
+      "searchTerms": [
+        "realtors",
+        "real estate"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ms-ms-sweet-potato",
       "slug": "ms-sweet-potato",
-      "name": "MS Sweet Potato",
-      "displayName": "MS Sweet Potato",
+      "name": "Mississippi Sweet Potato",
+      "displayName": "Mississippi Sweet Potato",
       "baseName": "MS Sweet Potato",
       "variantLabel": null,
       "plateType": "passenger",
@@ -565,9 +637,12 @@
         "path": "state-packs/mississippi/plates/ms-sweet-potato.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Sweet%20Potato.jpg.webp?itok=bmipAcXP"
       },
-      "sponsor": null,
+      "sponsor": "Mississippi Sweet Potato Council",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "sweet potato",
+        "mssweetpotato"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -656,27 +731,6 @@
       "relatedPlates": []
     },
     {
-      "id": "ms-pearl-river-valley-water",
-      "slug": "pearl-river-valley-water",
-      "name": "Pearl River Valley Water",
-      "displayName": "Pearl River Valley Water",
-      "baseName": "Pearl River Valley Water",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/mississippi/plates/pearl-river-valley-water.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Pearl%252520River%252520Valley%252520Water_jpg.jpg.webp?itok=Jh0wJ3Kr"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
       "id": "ms-phi-beta-sigma",
       "slug": "phi-beta-sigma",
       "name": "Phi Beta Sigma",
@@ -690,27 +744,6 @@
       "image": {
         "path": "state-packs/mississippi/plates/phi-beta-sigma.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Phi%252520Beta%252520Sigma_jpg.jpg.webp?itok=-886Xg6x"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ms-profession-of-pharmacy",
-      "slug": "profession-of-pharmacy",
-      "name": "Profession of Pharmacy",
-      "displayName": "Profession of Pharmacy",
-      "baseName": "Profession of Pharmacy",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/mississippi/plates/profession-of-pharmacy.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Profession%252520of%252520Pharmacy_jpg.jpg.webp?itok=0O0ldfWe"
       },
       "sponsor": null,
       "notes": null,
@@ -735,28 +768,12 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ms-realtors-mississippi-association",
-      "slug": "realtors-mississippi-association",
-      "name": "Realtors (Mississippi Association)",
-      "displayName": "Realtors (Mississippi Association)",
-      "baseName": "Realtors (Mississippi Association)",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/mississippi/plates/realtors-mississippi-association.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Realtors%252520%2528MS%252520Association%2529_jpg.jpg.webp?itok=JczD72gH"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "hair",
+        "stylist",
+        "barber",
+        "beauty"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -826,8 +843,8 @@
     {
       "id": "ms-sunflower-county-ministerial-alliance-counseling-services",
       "slug": "sunflower-county-ministerial-alliance-counseling-services",
-      "name": "Sunflower County Ministerial Alliance Counseling Services",
-      "displayName": "Sunflower County Ministerial Alliance Counseling Services",
+      "name": "Sunflower County Ministerial Alliance",
+      "displayName": "Sunflower County Ministerial Alliance",
       "baseName": "Sunflower County Ministerial Alliance Counseling Services",
       "variantLabel": null,
       "plateType": "passenger",
@@ -840,7 +857,11 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "sunflower county",
+        "ministerial",
+        "counseling"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -866,10 +887,36 @@
       "relatedPlates": []
     },
     {
+      "id": "ms-mississippi-loggers-association",
+      "slug": "mississippi-loggers-association",
+      "name": "Sustaining Mississippi's Forests",
+      "displayName": "Sustaining Mississippi's Forests",
+      "baseName": "Mississippi Loggers Association",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic & Causes",
+      "image": {
+        "path": "state-packs/mississippi/plates/mississippi-loggers-association.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Loggers%252520Association_jpg.jpg.webp?itok=JZ1oAPzj"
+      },
+      "sponsor": "Mississippi Loggers Association",
+      "notes": null,
+      "searchTerms": [
+        "loggers",
+        "sustaining",
+        "forests",
+        "logging"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
       "id": "ms-volunteer-service",
       "slug": "volunteer-service",
-      "name": "Volunteer Service",
-      "displayName": "Volunteer Service",
+      "name": "Volunteer Y'all",
+      "displayName": "Volunteer Y'all",
       "baseName": "Volunteer Service",
       "variantLabel": null,
       "plateType": "passenger",
@@ -880,9 +927,13 @@
         "path": "state-packs/mississippi/plates/volunteer-service.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Volunteer%252520Service_jpg.jpg.webp?itok=JuDYZWoM"
       },
-      "sponsor": null,
+      "sponsor": "Mississippi Commission for Volunteer Service",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "volunteer",
+        "yall",
+        "msvs"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -1561,8 +1612,8 @@
     {
       "id": "ms-catch-a-dream-foundation",
       "slug": "catch-a-dream-foundation",
-      "name": "Catch A Dream Foundation",
-      "displayName": "Catch A Dream Foundation",
+      "name": "Catch A Dream",
+      "displayName": "Catch A Dream",
       "baseName": "Catch A Dream Foundation",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1573,9 +1624,11 @@
         "path": "state-packs/mississippi/plates/catch-a-dream-foundation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Catch%252520A%252520Dream_jpg.jpg.webp?itok=8-pedsmR"
       },
-      "sponsor": null,
+      "sponsor": "Catch A Dream Foundation",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "catch a dream"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -1701,7 +1754,12 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "fannie lou",
+        "hamer",
+        "cancer",
+        "cure cancer now"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -1792,8 +1850,8 @@
     {
       "id": "ms-mississippi-blood-services-inc",
       "slug": "mississippi-blood-services-inc",
-      "name": "Mississippi Blood Services, Inc",
-      "displayName": "Mississippi Blood Services, Inc",
+      "name": "Mississippi Blood Services",
+      "displayName": "Mississippi Blood Services",
       "baseName": "Mississippi Blood Services, Inc",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1804,9 +1862,13 @@
         "path": "state-packs/mississippi/plates/mississippi-blood-services-inc.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Mississippi%252520Blood%252520Services%252520Inc_jpg.jpg.webp?itok=09C4CcYL"
       },
-      "sponsor": null,
+      "sponsor": "Mississippi Blood Services Inc.",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "blood",
+        "blood services",
+        "donate blood"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -1834,8 +1896,8 @@
     {
       "id": "ms-mississippi-toughest-kids-foundation",
       "slug": "mississippi-toughest-kids-foundation",
-      "name": "Mississippi Toughest Kids Foundation",
-      "displayName": "Mississippi Toughest Kids Foundation",
+      "name": "Special Needs Camp",
+      "displayName": "Special Needs Camp",
       "baseName": "Mississippi Toughest Kids Foundation",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1846,9 +1908,13 @@
         "path": "state-packs/mississippi/plates/mississippi-toughest-kids-foundation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Toughest%252520Kids%252520Foundation_jpg.jpg.webp?itok=sh54vguD"
       },
-      "sponsor": null,
+      "sponsor": "Mississippi Toughest Kids Foundation",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "toughest kids",
+        "special needs",
+        "camp"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -3953,27 +4019,6 @@
       "relatedPlates": []
     },
     {
-      "id": "ms-cattleman-s-foundation",
-      "slug": "cattleman-s-foundation",
-      "name": "Cattleman’s Foundation",
-      "displayName": "Cattleman’s Foundation",
-      "baseName": "Cattleman’s Foundation",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Nature & Wildlife",
-      "image": {
-        "path": "state-packs/mississippi/plates/cattleman-s-foundation.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Cattleman%252527s%252520Foundation_jpg.jpg.webp?itok=dMPqsmiq"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
       "id": "ms-coastal-conservation",
       "slug": "coastal-conservation",
       "name": "Coastal Conservation",
@@ -4039,8 +4084,8 @@
     {
       "id": "ms-ducks-unlimited-inc",
       "slug": "ducks-unlimited-inc",
-      "name": "Ducks Unlimited Inc",
-      "displayName": "Ducks Unlimited Inc",
+      "name": "Ducks Unlimited",
+      "displayName": "Ducks Unlimited",
       "baseName": "Ducks Unlimited Inc",
       "variantLabel": null,
       "plateType": "passenger",
@@ -4051,17 +4096,22 @@
         "path": "state-packs/mississippi/plates/ducks-unlimited-inc.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Ducks_jpg.jpg.webp?itok=8jgGbEqR"
       },
-      "sponsor": null,
+      "sponsor": "Ducks Unlimited Inc.",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "ducks unlimited",
+        "wetlands",
+        "waterfowl",
+        "conservation"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ms-forestry-association",
       "slug": "forestry-association",
-      "name": "Forestry Association",
-      "displayName": "Forestry Association",
+      "name": "First in Forestry",
+      "displayName": "First in Forestry",
       "baseName": "Forestry Association",
       "variantLabel": null,
       "plateType": "passenger",
@@ -4072,9 +4122,14 @@
         "path": "state-packs/mississippi/plates/forestry-association.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Forestry%252520Association_jpg.jpg.webp?itok=sSu1PIxY"
       },
-      "sponsor": null,
+      "sponsor": "Mississippi Forestry Association",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "forestry",
+        "first in forestry",
+        "pine",
+        "trees"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -4268,6 +4323,32 @@
       "relatedPlates": []
     },
     {
+      "id": "ms-cattleman-s-foundation",
+      "slug": "cattleman-s-foundation",
+      "name": "Our Heritage (Cattlemen)",
+      "displayName": "Our Heritage (Cattlemen)",
+      "baseName": "Cattleman’s Foundation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Nature & Wildlife",
+      "image": {
+        "path": "state-packs/mississippi/plates/cattleman-s-foundation.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Cattleman%252527s%252520Foundation_jpg.jpg.webp?itok=dMPqsmiq"
+      },
+      "sponsor": "Mississippi Cattlemen's Foundation",
+      "notes": null,
+      "searchTerms": [
+        "cattlemen",
+        "our heritage",
+        "cattle",
+        "ranching"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
       "id": "ms-rabbit-department-of-wildlife-fisheries-and-parks",
       "slug": "rabbit-department-of-wildlife-fisheries-and-parks",
       "name": "Rabbit - Department of Wildlife Fisheries and Parks",
@@ -4389,7 +4470,36 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "wildlife",
+        "conservation"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ms-mississippi-association-of-emergency-services",
+      "slug": "mississippi-association-of-emergency-services",
+      "name": "EMS Saves Lives",
+      "displayName": "EMS Saves Lives",
+      "baseName": "Mississippi Association of Emergency Services",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Public Service",
+      "image": {
+        "path": "state-packs/mississippi/plates/mississippi-association-of-emergency-services.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Association%252520of%252520Emergency%252520Services_jpg.jpg.webp?itok=ADlXjEyw"
+      },
+      "sponsor": "Mississippi Association of Emergency Services",
+      "notes": null,
+      "searchTerms": [
+        "ems",
+        "emergency",
+        "saves lives",
+        "paramedic"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -4499,31 +4609,10 @@
       "relatedPlates": []
     },
     {
-      "id": "ms-mississippi-association-of-emergency-services",
-      "slug": "mississippi-association-of-emergency-services",
-      "name": "Mississippi Association of Emergency Services",
-      "displayName": "Mississippi Association of Emergency Services",
-      "baseName": "Mississippi Association of Emergency Services",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Public Service",
-      "image": {
-        "path": "state-packs/mississippi/plates/mississippi-association-of-emergency-services.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Association%252520of%252520Emergency%252520Services_jpg.jpg.webp?itok=ADlXjEyw"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
       "id": "ms-mississippi-law-enforcement-officers-association-supporter",
       "slug": "mississippi-law-enforcement-officers-association-supporter",
-      "name": "Mississippi Law Enforcement Officers Association Supporter",
-      "displayName": "Mississippi Law Enforcement Officers Association Supporter",
+      "name": "Law Enforcement Supporter",
+      "displayName": "Law Enforcement Supporter",
       "baseName": "Mississippi Law Enforcement Officers Association Supporter",
       "variantLabel": null,
       "plateType": "passenger",
@@ -4534,17 +4623,21 @@
         "path": "state-packs/mississippi/plates/mississippi-law-enforcement-officers-association-supporter.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Law%252520Enforcement%252520Officers%252520Association_jpg.jpg.webp?itok=UjNVmr3_"
       },
-      "sponsor": null,
+      "sponsor": "Mississippi Law Enforcement Officers Association",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "law enforcement",
+        "mleoa",
+        "police supporter"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ms-ms-law-enforcement-officer-association-supporter",
       "slug": "ms-law-enforcement-officer-association-supporter",
-      "name": "MS Law Enforcement Officer Association Supporter",
-      "displayName": "MS Law Enforcement Officer Association Supporter",
+      "name": "Law Enforcement Supporter (Alternate)",
+      "displayName": "Law Enforcement Supporter (Alternate)",
       "baseName": "MS Law Enforcement Officer Association Supporter",
       "variantLabel": null,
       "plateType": "passenger",
@@ -4555,17 +4648,21 @@
         "path": "state-packs/mississippi/plates/ms-law-enforcement-officer-association-supporter.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/PMS.PNG.webp?itok=JxURNB1_"
       },
-      "sponsor": null,
+      "sponsor": "Mississippi Law Enforcement Officers Association",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "law enforcement",
+        "mleoa",
+        "police supporter"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ms-professional-fire-fighter",
       "slug": "professional-fire-fighter",
-      "name": "Professional Fire Fighter",
-      "displayName": "Professional Fire Fighter",
+      "name": "Professional Firefighter",
+      "displayName": "Professional Firefighter",
       "baseName": "Professional Fire Fighter",
       "variantLabel": null,
       "plateType": "passenger",
@@ -4578,7 +4675,11 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "firefighter",
+        "fire fighter",
+        "iaff"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -4837,8 +4938,8 @@
     {
       "id": "ms-god-bless-america-sunflower-consolidated-school-preservation",
       "slug": "god-bless-america-sunflower-consolidated-school-preservation",
-      "name": "God Bless America - Sunflower Consolidated School Preservation",
-      "displayName": "God Bless America - Sunflower Consolidated School Preservation",
+      "name": "God Bless America (Sunflower School)",
+      "displayName": "God Bless America (Sunflower School)",
       "baseName": "God Bless America - Sunflower Consolidated School Preservation",
       "variantLabel": null,
       "plateType": "passenger",
@@ -4849,9 +4950,13 @@
         "path": "state-packs/mississippi/plates/god-bless-america-sunflower-consolidated-school-preservation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/God%252520Bless%252520America_jpg.jpg.webp?itok=b2tHqsFP"
       },
-      "sponsor": null,
+      "sponsor": "Sunflower Consolidated School Preservation Society",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "god bless america",
+        "sunflower",
+        "school"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -4900,8 +5005,8 @@
     {
       "id": "ms-i-love-mississippi-sunflower-consolidated-school-preservation",
       "slug": "i-love-mississippi-sunflower-consolidated-school-preservation",
-      "name": "I Love Mississippi - Sunflower Consolidated School Preservation",
-      "displayName": "I Love Mississippi - Sunflower Consolidated School Preservation",
+      "name": "I Love Mississippi (Sunflower School)",
+      "displayName": "I Love Mississippi (Sunflower School)",
       "baseName": "I Love Mississippi - Sunflower Consolidated School Preservation",
       "variantLabel": null,
       "plateType": "passenger",
@@ -4912,9 +5017,13 @@
         "path": "state-packs/mississippi/plates/i-love-mississippi-sunflower-consolidated-school-preservation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/I%252520Love%252520Mississippi_jpg.jpg.webp?itok=nflx5RkC"
       },
-      "sponsor": null,
+      "sponsor": "Sunflower Consolidated School Preservation Society",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "i love mississippi",
+        "sunflower",
+        "school"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -5444,27 +5553,6 @@
       "relatedPlates": []
     },
     {
-      "id": "ms-mississippi-state-equine-association",
-      "slug": "mississippi-state-equine-association",
-      "name": "Mississippi State Equine Association",
-      "displayName": "Mississippi State Equine Association",
-      "baseName": "Mississippi State Equine Association",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Sports & Recreation",
-      "image": {
-        "path": "state-packs/mississippi/plates/mississippi-state-equine-association.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520State%252520Equine%252520Association_jpg.jpg.webp?itok=Ny1CK9KA"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
       "id": "ms-mississippi-tennis-association",
       "slug": "mississippi-tennis-association",
       "name": "Mississippi Tennis Association",
@@ -5570,6 +5658,32 @@
       "relatedPlates": []
     },
     {
+      "id": "ms-mississippi-state-equine-association",
+      "slug": "mississippi-state-equine-association",
+      "name": "Saddle Up",
+      "displayName": "Saddle Up",
+      "baseName": "Mississippi State Equine Association",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports & Recreation",
+      "image": {
+        "path": "state-packs/mississippi/plates/mississippi-state-equine-association.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520State%252520Equine%252520Association_jpg.jpg.webp?itok=Ny1CK9KA"
+      },
+      "sponsor": "Mississippi State Equine Association",
+      "notes": null,
+      "searchTerms": [
+        "saddle up",
+        "equine",
+        "horse",
+        "horseback"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
       "id": "ms-vancleave-home-run-club",
       "slug": "vancleave-home-run-club",
       "name": "Vancleave Home Run Club",
@@ -5646,27 +5760,6 @@
       "image": {
         "path": "state-packs/mississippi/plates/b10-blackout.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/B10%20Blackout.png.webp?itok=8yYc2Uqp"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ms-b16-b80",
-      "slug": "b16-b80",
-      "name": "B16-B80",
-      "displayName": "B16-B80",
-      "baseName": "B16-B80",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Standard Plates",
-      "image": {
-        "path": "state-packs/mississippi/plates/b16-b80.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/B16-B80.png.webp?itok=eDHXTTZ4"
       },
       "sponsor": null,
       "notes": null,
@@ -5759,27 +5852,6 @@
       "relatedPlates": []
     },
     {
-      "id": "ms-f16-f80",
-      "slug": "f16-f80",
-      "name": "F16-F80",
-      "displayName": "F16-F80",
-      "baseName": "F16-F80",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Standard Plates",
-      "image": {
-        "path": "state-packs/mississippi/plates/f16-f80.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/F16-F80.png.webp?itok=C9HzdVCt"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
       "id": "ms-passenger",
       "slug": "passenger",
       "name": "Passenger",
@@ -5797,6 +5869,58 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ms-b16-b80",
+      "slug": "b16-b80",
+      "name": "Standard (Business)",
+      "displayName": "Standard (Business)",
+      "baseName": "B16-B80",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard Plates",
+      "image": {
+        "path": "state-packs/mississippi/plates/b16-b80.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/B16-B80.png.webp?itok=eDHXTTZ4"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "b16",
+        "b80",
+        "business",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ms-f16-f80",
+      "slug": "f16-f80",
+      "name": "Standard (Farm)",
+      "displayName": "Standard (Farm)",
+      "baseName": "F16-F80",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard Plates",
+      "image": {
+        "path": "state-packs/mississippi/plates/f16-f80.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/F16-F80.png.webp?itok=C9HzdVCt"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "f16",
+        "f80",
+        "farm",
+        "standard"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
