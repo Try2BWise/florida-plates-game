@@ -2498,18 +2498,18 @@
       ]
     },
     {
-      "id": "tn-niswonger-childrenand-39s-hospital",
-      "slug": "niswonger-childrenand-39s-hospital",
-      "name": "Niswonger Children&#39s Hospital",
-      "displayName": "Niswonger Children&#39s Hospital",
-      "baseName": "Niswonger Children&#39s Hospital",
+      "id": "tn-niswonger-childrens-hospital",
+      "slug": "niswonger-childrens-hospital",
+      "name": "Niswonger Children's Hospital",
+      "displayName": "Niswonger Children's Hospital",
+      "baseName": "Niswonger Children's Hospital",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Health & Family",
       "image": {
-        "path": "state-packs/tennessee/plates/niswonger-childrenand-39s-hospital.jpg",
+        "path": "state-packs/tennessee/plates/niswonger-childrens-hospital.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Niswonger%20Children%26%2339s%20Hospital.jpg"
       },
       "sponsor": null,
@@ -2528,18 +2528,18 @@
       ]
     },
     {
-      "id": "tn-st-jude-childrenand-39s-research-hospital",
-      "slug": "st-jude-childrenand-39s-research-hospital",
-      "name": "St Jude Children&#39s Research Hospital",
-      "displayName": "St Jude Children&#39s Research Hospital",
-      "baseName": "St Jude Children&#39s Research Hospital",
+      "id": "tn-st-jude-childrens-research-hospital",
+      "slug": "st-jude-childrens-research-hospital",
+      "name": "St Jude Children's Research Hospital",
+      "displayName": "St Jude Children's Research Hospital",
+      "baseName": "St Jude Children's Research Hospital",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Health & Family",
       "image": {
-        "path": "state-packs/tennessee/plates/st-jude-childrenand-39s-research-hospital.jpg",
+        "path": "state-packs/tennessee/plates/st-jude-childrens-research-hospital.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/St%20Jude%20Children%26%2339s%20Research%20Hospital.jpg"
       },
       "sponsor": null,
@@ -4928,18 +4928,18 @@
       ]
     },
     {
-      "id": "tn-tennessee-sheriffsand-39-association",
-      "slug": "tennessee-sheriffsand-39-association",
-      "name": "Tennessee Sheriffs&#39 Association",
-      "displayName": "Tennessee Sheriffs&#39 Association",
-      "baseName": "Tennessee Sheriffs&#39 Association",
+      "id": "tn-tennessee-sheriffs-association",
+      "slug": "tennessee-sheriffs-association",
+      "name": "Tennessee Sheriffs' Association",
+      "displayName": "Tennessee Sheriffs' Association",
+      "baseName": "Tennessee Sheriffs' Association",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Public Service",
       "image": {
-        "path": "state-packs/tennessee/plates/tennessee-sheriffsand-39-association.jpg",
+        "path": "state-packs/tennessee/plates/tennessee-sheriffs-association.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Sheriffs%26%2339%20Association.jpg"
       },
       "sponsor": null,
@@ -5108,18 +5108,18 @@
       ]
     },
     {
-      "id": "tn-east-tennessee-childrenand-39s-hospital",
-      "slug": "east-tennessee-childrenand-39s-hospital",
-      "name": "East Tennessee Children&#39s Hospital",
-      "displayName": "East Tennessee Children&#39s Hospital",
-      "baseName": "East Tennessee Children&#39s Hospital",
+      "id": "tn-east-tennessee-childrens-hospital",
+      "slug": "east-tennessee-childrens-hospital",
+      "name": "East Tennessee Children's Hospital",
+      "displayName": "East Tennessee Children's Hospital",
+      "baseName": "East Tennessee Children's Hospital",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Universities",
       "image": {
-        "path": "state-packs/tennessee/plates/east-tennessee-childrenand-39s-hospital.jpg",
+        "path": "state-packs/tennessee/plates/east-tennessee-childrens-hospital.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/East%20Tennessee%20Children%26%2339s%20Hospital.jpg"
       },
       "sponsor": null,
@@ -6218,18 +6218,18 @@
       ]
     },
     {
-      "id": "tn-vanderbilt-childrenand-39s-hospital",
-      "slug": "vanderbilt-childrenand-39s-hospital",
-      "name": "Vanderbilt Children&#39s Hospital",
-      "displayName": "Vanderbilt Children&#39s Hospital",
-      "baseName": "Vanderbilt Children&#39s Hospital",
+      "id": "tn-vanderbilt-childrens-hospital",
+      "slug": "vanderbilt-childrens-hospital",
+      "name": "Vanderbilt Children's Hospital",
+      "displayName": "Vanderbilt Children's Hospital",
+      "baseName": "Vanderbilt Children's Hospital",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Universities",
       "image": {
-        "path": "state-packs/tennessee/plates/vanderbilt-childrenand-39s-hospital.jpg",
+        "path": "state-packs/tennessee/plates/vanderbilt-childrens-hospital.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Vanderbilt%20Children%26%2339s%20Hospital.jpg"
       },
       "sponsor": null,
