@@ -657,7 +657,7 @@ function App() {
       ? discoveryEntries[discoveryEntries.length - 1]
       : null;
   const evaluatedBadges = useMemo(
-    () => evaluateBadges(plates, normalizedDiscoveries),
+    () => evaluateBadges(plates, normalizedDiscoveries, activeGame.id),
     [normalizedDiscoveries]
   );
   // Filter for earned badges

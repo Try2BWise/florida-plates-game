@@ -722,9 +722,23 @@ function isLikelyInFlorida(latitude: number, longitude: number): boolean {
   return latitude >= 24.3 && latitude <= 31.1 && longitude >= -87.8 && longitude <= -79.7;
 }
 
+const genericBadgeIds = new Set([
+  // Progress
+  "first-spot", "five-alive", "ten-down", "quarter-mark", "halfway-home", "closing-in", "complete-set",
+  // Category (reference category names, not specific plates)
+  "mixed-bag", "green-light", "sports-fan", "healing-hands", "game-on", "eco-scout", "all-teams", "full-spectrum",
+  // College (any state with universities)
+  "first-day-of-school", "campus-tour", "freshman", "sophomore", "junior", "senior", "graduation-day",
+  // Service (count-based)
+  "reporting-for-duty", "on-call", "in-service",
+  // Locality (generic)
+  "i-get-around", "road-trip",
+]);
+
 export function evaluateBadges(
   plates: Plate[],
-  discoveries: PlateDiscoveryMap
+  discoveries: PlateDiscoveryMap,
+  stateId: string = "florida"
 ): EvaluatedBadge[] {
   const totalFound = Object.keys(discoveries).length;
   const totalPlates = plates.length;
@@ -1044,5 +1058,12 @@ export function evaluateBadges(
     ["all-around-florida", allAroundFloridaBadge],
   ]);
 
-  return badgeDefinitions.map((definition) => lookup.get(definition.id) ?? { ...definition, earned: false });
+  const allEvaluated = badgeDefinitions.map((definition) => lookup.get(definition.id) ?? { ...definition, earned: false });
+
+  // For non-Florida states, only return generic badges
+  if (stateId !== "florida") {
+    return allEvaluated.filter((badge) => genericBadgeIds.has(badge.id));
+  }
+
+  return allEvaluated;
 }
