@@ -1,5 +1,7 @@
-import driverData from "../data/generated/florida-plate-driver.generated.json";
-import legacyIdMap from "../data/generated/legacy-id-map.generated.json";
+import floridaDriverData from "../data/generated/florida-plate-driver.generated.json";
+import floridaLegacyIdMap from "../data/generated/florida-legacy-id-map.generated.json";
+import mississippiDriverData from "../data/generated/mississippi-plate-driver.generated.json";
+import mississippiLegacyIdMap from "../data/generated/mississippi-legacy-id-map.generated.json";
 import {
   floridaBadgeCounties,
   floridaBadgeGroupLabels,
@@ -8,6 +10,14 @@ import {
   floridaMixedBagCategories,
   floridaPanhandleScoutCounties
 } from "../config/floridaGame";
+import {
+  mississippiBadgeCounties,
+  mississippiBadgeGroupLabels,
+  mississippiBadgeGroupSymbols,
+  mississippiGame,
+  mississippiMixedBagCategories,
+  mississippiRegionScoutCounties
+} from "../config/mississippiGame";
 import { plateCategories, type Plate, type PlateCategory } from "../types";
 
 /* ── State selection persistence ── */
@@ -37,18 +47,24 @@ function toPlateCategory(value: string): PlateCategory {
   return "Civic & Causes";
 }
 
-function loadFloridaPack() {
-  const plates: Plate[] = driverData.plates.map((plate) => ({
+function buildPlates(driverData: { plates: Array<{ category: string } & Record<string, unknown>> }): Plate[] {
+  return driverData.plates.map((plate) => ({
     ...plate,
     category: toPlateCategory(plate.category)
-  }));
+  })) as Plate[];
+}
 
-  const groupedPlates = plateCategories
+function buildGroupedPlates(plates: Plate[]) {
+  return plateCategories
     .map((category) => ({
       category,
       plates: plates.filter((plate) => plate.category === category)
     }))
     .filter(({ plates: categoryPlates }) => categoryPlates.length > 0);
+}
+
+function loadFloridaPack() {
+  const plates = buildPlates(floridaDriverData);
 
   return {
     game: floridaGame,
@@ -57,16 +73,30 @@ function loadFloridaPack() {
     badgeGroupSymbols: floridaBadgeGroupSymbols,
     mixedBagCategories: floridaMixedBagCategories,
     panhandleScoutCounties: floridaPanhandleScoutCounties,
-    legacyIdMap: legacyIdMap as Record<string, string>,
+    legacyIdMap: floridaLegacyIdMap as Record<string, string>,
     plates,
-    groupedPlates,
+    groupedPlates: buildGroupedPlates(plates),
   };
 }
 
-// Future state packs will add cases here
+function loadMississippiPack() {
+  const plates = buildPlates(mississippiDriverData);
+  return {
+    game: mississippiGame,
+    badgeCounties: mississippiBadgeCounties,
+    badgeGroupLabels: mississippiBadgeGroupLabels,
+    badgeGroupSymbols: mississippiBadgeGroupSymbols,
+    mixedBagCategories: mississippiMixedBagCategories,
+    panhandleScoutCounties: mississippiRegionScoutCounties,
+    legacyIdMap: mississippiLegacyIdMap as Record<string, string>,
+    plates,
+    groupedPlates: buildGroupedPlates(plates),
+  };
+}
+
 function loadStatePack(stateId: string) {
   switch (stateId) {
-    // case "mississippi": return loadMississippiPack();
+    case "mississippi": return loadMississippiPack();
     case "florida":
     default:
       return loadFloridaPack();

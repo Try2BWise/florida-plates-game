@@ -3,12 +3,12 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const masterPath = join(repoRoot, "src", "data", "florida-plate-master.json");
+const states = process.argv.slice(2);
+const statesToBuild = states.length > 0 ? states : ["florida"];
 const generatedDir = join(repoRoot, "src", "data", "generated");
-const runtimePath = join(generatedDir, "florida-plate-driver.generated.json");
-const legacyMapPath = join(generatedDir, "legacy-id-map.generated.json");
 
-function loadMasterDataset() {
+function loadMasterDataset(state) {
+  const masterPath = join(repoRoot, "src", "data", `${state}-plate-master.json`);
   return JSON.parse(readFileSync(masterPath, "utf8"));
 }
 
@@ -79,7 +79,7 @@ function buildRuntimeDataset(master) {
   return {
     schemaVersion: master.schemaVersion ?? 1,
     generatedDate: new Date().toISOString().slice(0, 10),
-    generatedFrom: "src/data/florida-plate-master.json",
+    generatedFrom: `src/data/${master.state?.toLowerCase() ?? "unknown"}-plate-master.json`,
     plateCount: Array.isArray(master.plates) ? master.plates.length : 0,
     plates: Array.isArray(master.plates) ? master.plates.map(buildRuntimePlate) : []
   };
@@ -113,12 +113,17 @@ function buildLegacyIdMap(master) {
 
 mkdirSync(generatedDir, { recursive: true });
 
-const masterDataset = loadMasterDataset();
-const runtimeDataset = buildRuntimeDataset(masterDataset);
-const legacyIdMap = buildLegacyIdMap(masterDataset);
+for (const state of statesToBuild) {
+  const masterDataset = loadMasterDataset(state);
+  const runtimeDataset = buildRuntimeDataset(masterDataset);
+  const legacyIdMap = buildLegacyIdMap(masterDataset);
 
-writeFileSync(runtimePath, `${JSON.stringify(runtimeDataset, null, 2)}\n`, "utf8");
-writeFileSync(legacyMapPath, `${JSON.stringify(legacyIdMap, null, 2)}\n`, "utf8");
+  const runtimePath = join(generatedDir, `${state}-plate-driver.generated.json`);
+  const legacyMapPath = join(generatedDir, `${state}-legacy-id-map.generated.json`);
 
-console.log(`Wrote ${runtimePath}`);
-console.log(`Wrote ${legacyMapPath}`);
+  writeFileSync(runtimePath, `${JSON.stringify(runtimeDataset, null, 2)}\n`, "utf8");
+  writeFileSync(legacyMapPath, `${JSON.stringify(legacyIdMap, null, 2)}\n`, "utf8");
+
+  console.log(`Wrote ${runtimePath} (${runtimeDataset.plateCount} plates)`);
+  console.log(`Wrote ${legacyMapPath}`);
+}
