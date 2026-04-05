@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "generatedDate": "2026-04-04",
-  "generatedFrom": "src/data/florida-plate-master.json",
+  "generatedDate": "2026-04-05",
+  "generatedFrom": "src/data/unknown-plate-master.json",
   "plateCount": 338,
   "plates": [
     {
