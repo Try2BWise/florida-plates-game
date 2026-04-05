@@ -38,66 +38,6 @@
       ]
     },
     {
-      "id": "ky-disabled-former-prisoner-of-war-mc",
-      "slug": "disabled-former-prisoner-of-war-mc",
-      "name": "Disabled Former Prisoner of War (MC) ",
-      "displayName": "Disabled Former Prisoner of War (MC) ",
-      "baseName": "Disabled Former Prisoner of War (MC) ",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Accessibility",
-      "image": {
-        "path": "state-packs/kentucky/plates/disabled-former-prisoner-of-war-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=e6f3e675-4e7b-4867-b6bd-c79355724dd6&licensePlateId=2be99e82-c238-4bcf-abbe-897345517ffd"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "2be99e82-c238-4bcf-abbe-897345517ffd",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-disabled-motorcycle",
-      "slug": "disabled-motorcycle",
-      "name": "Disabled Motorcycle",
-      "displayName": "Disabled Motorcycle",
-      "baseName": "Disabled Motorcycle",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Accessibility",
-      "image": {
-        "path": "state-packs/kentucky/plates/disabled-motorcycle.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=4b37427f-b678-4ccb-9f4d-643fbf601bd3&licensePlateId=c35ce0a0-99f6-4d12-ad4a-34d45ef5244d"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "c35ce0a0-99f6-4d12-ad4a-34d45ef5244d",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-disabled-parking",
       "slug": "disabled-parking",
       "name": "Disabled Parking",
@@ -302,36 +242,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "ed2f1fe0-ea00-4c7f-888f-4f5f022941ef",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-alternate-speed-motorcycle",
-      "slug": "alternate-speed-motorcycle",
-      "name": "Alternate Speed Motorcycle ",
-      "displayName": "Alternate Speed Motorcycle ",
-      "baseName": "Alternate Speed Motorcycle ",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/kentucky/plates/alternate-speed-motorcycle.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=67d2910f-1daa-4296-8db8-5e1ec77a81ff&licensePlateId=62fa76ab-67d6-445e-99d0-1183d88bc4f1"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "62fa76ab-67d6-445e-99d0-1183d88bc4f1",
           "versionId": null,
           "value": null
         }
@@ -632,36 +542,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "41fb00f8-7c2a-4964-8c1c-4ff440cb75c6",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-dealer-motorcycle",
-      "slug": "dealer-motorcycle",
-      "name": "Dealer Motorcycle",
-      "displayName": "Dealer Motorcycle",
-      "baseName": "Dealer Motorcycle",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/kentucky/plates/dealer-motorcycle.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=2e585fde-c575-414e-be4a-f46809574235&licensePlateId=f1953c15-9d9a-47e7-af7b-dd1a9848a67d"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "f1953c15-9d9a-47e7-af7b-dd1a9848a67d",
           "versionId": null,
           "value": null
         }
@@ -2948,36 +2828,6 @@
       ]
     },
     {
-      "id": "ky-historic-motorcycle",
-      "slug": "historic-motorcycle",
-      "name": "Historic Motorcycle",
-      "displayName": "Historic Motorcycle",
-      "baseName": "Historic Motorcycle",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Historical & Antique",
-      "image": {
-        "path": "state-packs/kentucky/plates/historic-motorcycle.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=814234e8-a3d8-4cb1-aec1-a7e700327ce3&licensePlateId=7c880b1f-d9bd-40bb-90f8-3678b6556158"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "7c880b1f-d9bd-40bb-90f8-3678b6556158",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-historic-vehicle",
       "slug": "historic-vehicle",
       "name": "Historic Vehicle",
@@ -3098,36 +2948,6 @@
       ]
     },
     {
-      "id": "ky-160th-special-operations-aviation-regiment-mc",
-      "slug": "160th-special-operations-aviation-regiment-mc",
-      "name": "160th Special Operations Aviation Regiment (MC)",
-      "displayName": "160th Special Operations Aviation Regiment (MC)",
-      "baseName": "160th Special Operations Aviation Regiment (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/160th-special-operations-aviation-regiment-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=98622682-07d9-411e-95ae-e89de19b5ed4&licensePlateId=437215e5-5afa-430a-ab50-5b84c6010614"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "437215e5-5afa-430a-ab50-5b84c6010614",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-5th-special-forces-group-airborne",
       "slug": "5th-special-forces-group-airborne",
       "name": "5th Special Forces Group (Airborne)",
@@ -3218,66 +3038,6 @@
       ]
     },
     {
-      "id": "ky-aerial-achievement-medal-mc",
-      "slug": "aerial-achievement-medal-mc",
-      "name": "Aerial Achievement Medal (MC)",
-      "displayName": "Aerial Achievement Medal (MC)",
-      "baseName": "Aerial Achievement Medal (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/aerial-achievement-medal-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=39578070-e452-4ddb-8d5f-4a0d00c167b8&licensePlateId=b7e7f5eb-cb6a-4056-9733-4137e831d356"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "b7e7f5eb-cb6a-4056-9733-4137e831d356",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-air-force-mc",
-      "slug": "air-force-mc",
-      "name": "Air Force (MC)",
-      "displayName": "Air Force (MC)",
-      "baseName": "Air Force (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/air-force-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=80376303-9068-4ae2-9192-7778ff1cf49e&licensePlateId=7d5c3df0-052d-4bea-b441-e1a2ba6485c6"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "7d5c3df0-052d-4bea-b441-e1a2ba6485c6",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-air-force-cross",
       "slug": "air-force-cross",
       "name": "Air Force Cross",
@@ -3302,36 +3062,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "8cb0ebfd-4aeb-40a3-8345-0b67c67dd6a2",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-air-force-cross-mc",
-      "slug": "air-force-cross-mc",
-      "name": "Air Force Cross (MC)",
-      "displayName": "Air Force Cross (MC)",
-      "baseName": "Air Force Cross (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/air-force-cross-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=13c531df-6a6d-4638-bab6-1813e4498ed2&licensePlateId=579955c8-c32b-4b42-b610-f22f7cb936c1"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "579955c8-c32b-4b42-b610-f22f7cb936c1",
           "versionId": null,
           "value": null
         }
@@ -3398,36 +3128,6 @@
       ]
     },
     {
-      "id": "ky-air-medal-mc",
-      "slug": "air-medal-mc",
-      "name": "Air Medal (MC)",
-      "displayName": "Air Medal (MC)",
-      "baseName": "Air Medal (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/air-medal-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=7c427211-6af4-4017-a33a-b0fe87fa6335&licensePlateId=b0354e60-8c9c-4789-bcc2-ca92c406ce8c"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "b0354e60-8c9c-4789-bcc2-ca92c406ce8c",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-army-combat-action-badge",
       "slug": "army-combat-action-badge",
       "name": "Army Combat Action Badge",
@@ -3452,36 +3152,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "55beebe2-4cc5-4caa-9aba-7305a6d56853",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-army-combat-action-badge-mc",
-      "slug": "army-combat-action-badge-mc",
-      "name": "Army Combat Action Badge (MC)",
-      "displayName": "Army Combat Action Badge (MC)",
-      "baseName": "Army Combat Action Badge (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/army-combat-action-badge-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=21f3b47f-19ae-4bd9-a65b-b4f545088c13&licensePlateId=c83e9c7c-c3de-48eb-824a-f3cc2fab8112"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "c83e9c7c-c3de-48eb-824a-f3cc2fab8112",
           "versionId": null,
           "value": null
         }
@@ -3518,36 +3188,6 @@
       ]
     },
     {
-      "id": "ky-army-combat-infantryman-badge-mc",
-      "slug": "army-combat-infantryman-badge-mc",
-      "name": "Army Combat Infantryman Badge (MC)",
-      "displayName": "Army Combat Infantryman Badge (MC)",
-      "baseName": "Army Combat Infantryman Badge (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/army-combat-infantryman-badge-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=2edca7aa-ed06-4838-9a76-c712e1fb1f77&licensePlateId=8f48b209-e72e-4e6c-9fce-fc511dc687d2"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "8f48b209-e72e-4e6c-9fce-fc511dc687d2",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-army-cross-distinguished-service-cross",
       "slug": "army-cross-distinguished-service-cross",
       "name": "Army Cross - Distinguished Service Cross",
@@ -3572,36 +3212,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "e9e9f25d-190c-4246-a7bf-28743b490fdc",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-army-cross-distinguished-service-cross-mc",
-      "slug": "army-cross-distinguished-service-cross-mc",
-      "name": "Army Cross - Distinguished Service Cross (MC)",
-      "displayName": "Army Cross - Distinguished Service Cross (MC)",
-      "baseName": "Army Cross - Distinguished Service Cross (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/army-cross-distinguished-service-cross-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=5ea91795-152a-47fa-bf68-6d7bcf0b3bb1&licensePlateId=3ea9c360-3938-4349-9f63-8748b0ba0b36"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "3ea9c360-3938-4349-9f63-8748b0ba0b36",
           "versionId": null,
           "value": null
         }
@@ -3638,36 +3248,6 @@
       ]
     },
     {
-      "id": "ky-army-veteran-mc",
-      "slug": "army-veteran-mc",
-      "name": "Army Veteran (MC)",
-      "displayName": "Army Veteran (MC)",
-      "baseName": "Army Veteran (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/army-veteran-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=745fb927-1085-4109-b72a-c9c6ed32246a&licensePlateId=20d1beba-eb38-4aa4-bfc7-14a11ad7a736"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "20d1beba-eb38-4aa4-bfc7-14a11ad7a736",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-bronze-star-medal",
       "slug": "bronze-star-medal",
       "name": "Bronze Star Medal",
@@ -3698,36 +3278,6 @@
       ]
     },
     {
-      "id": "ky-bronze-star-medal-mc",
-      "slug": "bronze-star-medal-mc",
-      "name": "Bronze Star Medal (MC)",
-      "displayName": "Bronze Star Medal (MC)",
-      "baseName": "Bronze Star Medal (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/bronze-star-medal-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=5637fa4c-8a0e-4d47-8f52-2f90f77a1ba2&licensePlateId=fae00504-cdc8-4a1c-a7b9-11bedfc7d194"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "fae00504-cdc8-4a1c-a7b9-11bedfc7d194",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-civil-air-patrol",
       "slug": "civil-air-patrol",
       "name": "Civil Air Patrol",
@@ -3752,36 +3302,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "9f8c394a-1ca7-4e5c-9b43-1b6043accc9b",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-civil-air-patrol-mc",
-      "slug": "civil-air-patrol-mc",
-      "name": "Civil Air Patrol (MC)",
-      "displayName": "Civil Air Patrol (MC)",
-      "baseName": "Civil Air Patrol (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/civil-air-patrol-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=3612e9a8-604e-4134-9995-5795096c6c54&licensePlateId=b099e13e-8976-449f-b292-90b5606bb4b6"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "b099e13e-8976-449f-b292-90b5606bb4b6",
           "versionId": null,
           "value": null
         }
@@ -3848,36 +3368,6 @@
       ]
     },
     {
-      "id": "ky-congressional-medal-of-honor-mc",
-      "slug": "congressional-medal-of-honor-mc",
-      "name": "Congressional Medal of Honor (MC)",
-      "displayName": "Congressional Medal of Honor (MC)",
-      "baseName": "Congressional Medal of Honor (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/congressional-medal-of-honor-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=f38a8590-753a-41c6-ad33-aef2709c30ff&licensePlateId=cfa0a4a7-cd8d-4036-8752-cd6f592d9520"
-      },
-      "sponsor": null,
-      "notes": " ",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "cfa0a4a7-cd8d-4036-8752-cd6f592d9520",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-distinguished-flying-cross",
       "slug": "distinguished-flying-cross",
       "name": "Distinguished Flying Cross",
@@ -3902,36 +3392,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "d774aea4-1c60-4b0e-bf79-c071dbfd66fa",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-distinguished-flying-cross-mc",
-      "slug": "distinguished-flying-cross-mc",
-      "name": "Distinguished Flying Cross (MC)",
-      "displayName": "Distinguished Flying Cross (MC)",
-      "baseName": "Distinguished Flying Cross (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/distinguished-flying-cross-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=95350c58-9efd-4768-8e66-a4818c2cff64&licensePlateId=c1f8b6b0-46ec-415f-af23-a339eb08dfc2"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "c1f8b6b0-46ec-415f-af23-a339eb08dfc2",
           "versionId": null,
           "value": null
         }
@@ -3968,36 +3428,6 @@
       ]
     },
     {
-      "id": "ky-former-prisoner-of-war-mc",
-      "slug": "former-prisoner-of-war-mc",
-      "name": "Former Prisoner of War (MC)",
-      "displayName": "Former Prisoner of War (MC)",
-      "baseName": "Former Prisoner of War (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/former-prisoner-of-war-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=4aa6ad34-c4af-4f80-8f9b-1463d611e70b&licensePlateId=ddf1b40c-effd-4cf7-9c54-4f652a6c6f00"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "ddf1b40c-effd-4cf7-9c54-4f652a6c6f00",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-gold-star-daughters",
       "slug": "gold-star-daughters",
       "name": "Gold Star Daughters",
@@ -4022,36 +3452,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "4e3bf20f-80fc-4ccb-bc49-e6531a486d74",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-gold-star-daughters-mc",
-      "slug": "gold-star-daughters-mc",
-      "name": "Gold Star Daughters (MC)",
-      "displayName": "Gold Star Daughters (MC)",
-      "baseName": "Gold Star Daughters (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/gold-star-daughters-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=2bcc57c3-ac2f-4955-8d9c-771c0b36ee45&licensePlateId=48d1e69f-ea55-49a0-a46b-61699b8631d8"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "48d1e69f-ea55-49a0-a46b-61699b8631d8",
           "versionId": null,
           "value": null
         }
@@ -4088,36 +3488,6 @@
       ]
     },
     {
-      "id": "ky-gold-star-fathers-mc",
-      "slug": "gold-star-fathers-mc",
-      "name": "Gold Star Fathers (MC)",
-      "displayName": "Gold Star Fathers (MC)",
-      "baseName": "Gold Star Fathers (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/gold-star-fathers-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=dd586952-7a7b-4c90-b3c3-59f1b1b40935&licensePlateId=660d9bed-ad4c-44e7-b6d2-9176fab73c66"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "660d9bed-ad4c-44e7-b6d2-9176fab73c66",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-gold-star-mothers",
       "slug": "gold-star-mothers",
       "name": "Gold Star Mothers",
@@ -4142,36 +3512,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "76a32e34-10dc-44d0-8717-ba34e8521a9f",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-gold-star-mothers-mc",
-      "slug": "gold-star-mothers-mc",
-      "name": "Gold Star Mothers (MC)",
-      "displayName": "Gold Star Mothers (MC)",
-      "baseName": "Gold Star Mothers (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/gold-star-mothers-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=69af5e17-cce8-4c38-8bba-af526ef59f3d&licensePlateId=d388b272-dd60-490f-b84a-33ee284836fc"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "d388b272-dd60-490f-b84a-33ee284836fc",
           "versionId": null,
           "value": null
         }
@@ -4208,36 +3548,6 @@
       ]
     },
     {
-      "id": "ky-gold-star-siblings-mc",
-      "slug": "gold-star-siblings-mc",
-      "name": "Gold Star Siblings (MC)",
-      "displayName": "Gold Star Siblings (MC)",
-      "baseName": "Gold Star Siblings (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/gold-star-siblings-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=4412b317-0bf5-4202-abe7-4d7649311b20&licensePlateId=16a0b78f-8245-4795-9015-0e722b6d8ace"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "16a0b78f-8245-4795-9015-0e722b6d8ace",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-gold-star-sons",
       "slug": "gold-star-sons",
       "name": "Gold Star Sons",
@@ -4262,36 +3572,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "5a70578f-23a4-49c9-83ef-ea9f05734910",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-gold-star-sons-mc",
-      "slug": "gold-star-sons-mc",
-      "name": "Gold Star Sons (MC)",
-      "displayName": "Gold Star Sons (MC)",
-      "baseName": "Gold Star Sons (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/gold-star-sons-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=29f649c1-9782-45c6-90c5-52b7ca6690b0&licensePlateId=098c33b9-991b-45e1-a29b-b705a05ce59a"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "098c33b9-991b-45e1-a29b-b705a05ce59a",
           "versionId": null,
           "value": null
         }
@@ -4328,36 +3608,6 @@
       ]
     },
     {
-      "id": "ky-gold-star-spouses-mc",
-      "slug": "gold-star-spouses-mc",
-      "name": "Gold Star Spouses (MC)",
-      "displayName": "Gold Star Spouses (MC)",
-      "baseName": "Gold Star Spouses (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/gold-star-spouses-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=bbc4e96b-1125-46e6-a032-234559b5aeeb&licensePlateId=9b3db1b2-d03c-4c3b-ae84-7c07d4e1785c"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "9b3db1b2-d03c-4c3b-ae84-7c07d4e1785c",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-legion-of-merit-medal",
       "slug": "legion-of-merit-medal",
       "name": "Legion of Merit Medal",
@@ -4382,36 +3632,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "cfde96a0-d896-4ba0-8d5f-216beb1efe39",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-legion-of-merit-medal-mc",
-      "slug": "legion-of-merit-medal-mc",
-      "name": "Legion of Merit Medal (MC)",
-      "displayName": "Legion of Merit Medal (MC)",
-      "baseName": "Legion of Merit Medal (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/legion-of-merit-medal-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=9ee41abd-6516-4d20-a158-980680b32acd&licensePlateId=63659de7-649b-43fc-b22b-3a949b8f89f3"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "63659de7-649b-43fc-b22b-3a949b8f89f3",
           "versionId": null,
           "value": null
         }
@@ -4448,36 +3668,6 @@
       ]
     },
     {
-      "id": "ky-marine-veteran-mc",
-      "slug": "marine-veteran-mc",
-      "name": "Marine Veteran (MC)",
-      "displayName": "Marine Veteran (MC)",
-      "baseName": "Marine Veteran (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/marine-veteran-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=b985b7cc-fb97-47cf-b9e2-614d07673692&licensePlateId=5d364cac-80a8-48b0-9ab9-9f513b15ad6f"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "5d364cac-80a8-48b0-9ab9-9f513b15ad6f",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-national-guard",
       "slug": "national-guard",
       "name": "National Guard",
@@ -4502,36 +3692,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "d09680ea-a616-4239-8663-6ce5fc2e135f",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-national-guard-mc",
-      "slug": "national-guard-mc",
-      "name": "National Guard (MC)",
-      "displayName": "National Guard (MC)",
-      "baseName": "National Guard (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/national-guard-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=dec2ba27-bfe1-41e3-96c8-04ed870bf8a3&licensePlateId=8f7c5059-55a4-433b-b851-640e8e2fd67e"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "8f7c5059-55a4-433b-b851-640e8e2fd67e",
           "versionId": null,
           "value": null
         }
@@ -4568,36 +3728,6 @@
       ]
     },
     {
-      "id": "ky-navy-cross-mc",
-      "slug": "navy-cross-mc",
-      "name": "Navy Cross (MC)",
-      "displayName": "Navy Cross (MC)",
-      "baseName": "Navy Cross (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/navy-cross-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=74a712b7-9ed7-407a-a554-5da1d7653023&licensePlateId=9218c2a6-893a-4c37-a762-14586dadfbf5"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "9218c2a6-893a-4c37-a762-14586dadfbf5",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-navy-veteran",
       "slug": "navy-veteran",
       "name": "Navy Veteran",
@@ -4622,36 +3752,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "e428243b-de9f-4e3e-8dc2-4fe868f4bebb",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-navy-veteran-mc",
-      "slug": "navy-veteran-mc",
-      "name": "Navy Veteran (MC)",
-      "displayName": "Navy Veteran (MC)",
-      "baseName": "Navy Veteran (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/navy-veteran-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=88ddbb12-6741-43d6-925f-6ac12328fb37&licensePlateId=20b75b18-a0e4-4e5a-8a19-8d996cde1e6a"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "20b75b18-a0e4-4e5a-8a19-8d996cde1e6a",
           "versionId": null,
           "value": null
         }
@@ -4688,36 +3788,6 @@
       ]
     },
     {
-      "id": "ky-pearl-harbor-survivor-mc",
-      "slug": "pearl-harbor-survivor-mc",
-      "name": "Pearl Harbor Survivor (MC)",
-      "displayName": "Pearl Harbor Survivor (MC)",
-      "baseName": "Pearl Harbor Survivor (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/pearl-harbor-survivor-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=b291c498-8c67-4ed0-adf0-ee5f9390451a&licensePlateId=9c7534ee-d76f-41d5-a07a-d6ce69e0b69e"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "9c7534ee-d76f-41d5-a07a-d6ce69e0b69e",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-purple-heart",
       "slug": "purple-heart",
       "name": "Purple Heart",
@@ -4742,36 +3812,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "7a129301-eff2-419f-b1f3-0e37c48487d5",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-purple-heart-mc",
-      "slug": "purple-heart-mc",
-      "name": "Purple Heart (MC)",
-      "displayName": "Purple Heart (MC)",
-      "baseName": "Purple Heart (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/purple-heart-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=a9e7db59-268c-4fad-8c4d-5c6e25465018&licensePlateId=7063a549-995d-442f-928f-5826957463f8"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "7063a549-995d-442f-928f-5826957463f8",
           "versionId": null,
           "value": null
         }
@@ -4808,36 +3848,6 @@
       ]
     },
     {
-      "id": "ky-silver-star-medal-mc",
-      "slug": "silver-star-medal-mc",
-      "name": "Silver Star Medal (MC)",
-      "displayName": "Silver Star Medal (MC)",
-      "baseName": "Silver Star Medal (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/silver-star-medal-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=3f310989-0b79-4dc8-95e3-ce377dea8817&licensePlateId=9000402e-32b4-44e2-80b0-a99cbcd85758"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "9000402e-32b4-44e2-80b0-a99cbcd85758",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-space-force",
       "slug": "space-force",
       "name": "Space Force",
@@ -4862,36 +3872,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "af5214f5-21fc-46b2-8c82-8d12425ba340",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-space-force-mc",
-      "slug": "space-force-mc",
-      "name": "Space Force (MC)",
-      "displayName": "Space Force (MC)",
-      "baseName": "Space Force (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/space-force-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=2bef3b84-3132-4d90-8af9-9ed793eb40cd&licensePlateId=81d57463-b759-4ec1-af5a-43afb9873dc8"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "81d57463-b759-4ec1-af5a-43afb9873dc8",
           "versionId": null,
           "value": null
         }
@@ -4928,36 +3908,6 @@
       ]
     },
     {
-      "id": "ky-us-air-force-academy-mc",
-      "slug": "us-air-force-academy-mc",
-      "name": "U.S. Air Force Academy (MC)",
-      "displayName": "U.S. Air Force Academy (MC)",
-      "baseName": "U.S. Air Force Academy (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/us-air-force-academy-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=2e0d8bc6-9e40-42c9-97c6-bf3553dffea3&licensePlateId=6bcffbfe-1b0d-46c8-a826-357bdd27419f"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "6bcffbfe-1b0d-46c8-a826-357bdd27419f",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-us-army-cadet-command",
       "slug": "us-army-cadet-command",
       "name": "U.S. Army Cadet Command",
@@ -4982,36 +3932,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "0636bb41-eb61-4d42-8f6a-2778cc076d91",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-us-army-cadet-command-mc",
-      "slug": "us-army-cadet-command-mc",
-      "name": "U.S. Army Cadet Command (MC)",
-      "displayName": "U.S. Army Cadet Command (MC)",
-      "baseName": "U.S. Army Cadet Command (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/us-army-cadet-command-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=8886249b-b011-45ef-91f5-312a29ec36a2&licensePlateId=2a9545b9-3001-408a-860e-e48ee2fbdf08"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "2a9545b9-3001-408a-860e-e48ee2fbdf08",
           "versionId": null,
           "value": null
         }
@@ -5048,36 +3968,6 @@
       ]
     },
     {
-      "id": "ky-us-army-human-resources-command-mc",
-      "slug": "us-army-human-resources-command-mc",
-      "name": "U.S. Army Human Resources Command (MC)",
-      "displayName": "U.S. Army Human Resources Command (MC)",
-      "baseName": "U.S. Army Human Resources Command (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/us-army-human-resources-command-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=b0c2715f-44ff-4a5b-8be8-fad2bc181bbc&licensePlateId=e1eff4a7-f3dd-4b0a-9cfe-f39b9a9868b3"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "e1eff4a7-f3dd-4b0a-9cfe-f39b9a9868b3",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-us-army-recruiting-command",
       "slug": "us-army-recruiting-command",
       "name": "U.S. Army Recruiting  Command",
@@ -5102,36 +3992,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "7de8f4f0-69b2-4181-9843-86be0b2fc11c",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-us-army-recruiting-command-mc",
-      "slug": "us-army-recruiting-command-mc",
-      "name": "U.S. Army Recruiting  Command (MC)",
-      "displayName": "U.S. Army Recruiting  Command (MC)",
-      "baseName": "U.S. Army Recruiting  Command (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/us-army-recruiting-command-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=c506be29-2502-4dc8-9084-906ca8ebf7f6&licensePlateId=249d2c79-312b-4df8-a92c-d420577e0bb3"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "249d2c79-312b-4df8-a92c-d420577e0bb3",
           "versionId": null,
           "value": null
         }
@@ -5168,36 +4028,6 @@
       ]
     },
     {
-      "id": "ky-us-army-v-corps-mc",
-      "slug": "us-army-v-corps-mc",
-      "name": "U.S. Army V Corps (MC)",
-      "displayName": "U.S. Army V Corps (MC)",
-      "baseName": "U.S. Army V Corps (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/us-army-v-corps-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=b441c266-4217-4896-9e6c-fe17d6617567&licensePlateId=7521eb24-c4f3-4949-8096-ce8f21904599"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "7521eb24-c4f3-4949-8096-ce8f21904599",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-us-coast-guard-academy",
       "slug": "us-coast-guard-academy",
       "name": "U.S. Coast Guard Academy",
@@ -5228,66 +4058,6 @@
       ]
     },
     {
-      "id": "ky-us-coast-guard-academy-mc",
-      "slug": "us-coast-guard-academy-mc",
-      "name": "U.S. Coast Guard Academy (MC)",
-      "displayName": "U.S. Coast Guard Academy (MC)",
-      "baseName": "U.S. Coast Guard Academy (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/us-coast-guard-academy-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=6c8b67bc-0961-4e52-bb22-585372bcbfe0&licensePlateId=1d1959c1-d4a9-4b6a-8139-32364baa1a8a"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "1d1959c1-d4a9-4b6a-8139-32364baa1a8a",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-us-coast-guard-veteran-mc",
-      "slug": "us-coast-guard-veteran-mc",
-      "name": "U.S. Coast Guard Veteran (MC)",
-      "displayName": "U.S. Coast Guard Veteran (MC)",
-      "baseName": "U.S. Coast Guard Veteran (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/us-coast-guard-veteran-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=7bad17a2-7fcb-4a71-907c-b64ca4fbd616&licensePlateId=623d5a37-5cd1-44e5-84e6-e60c7a52f00c"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "623d5a37-5cd1-44e5-84e6-e60c7a52f00c",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ky-us-merchant-marine-academy",
       "slug": "us-merchant-marine-academy",
       "name": "U.S. Merchant Marine Academy",
@@ -5312,36 +4082,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "65953653-f785-45f7-aceb-927f6426fb11",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-us-merchant-marine-academy-mc",
-      "slug": "us-merchant-marine-academy-mc",
-      "name": "U.S. Merchant Marine Academy (MC)",
-      "displayName": "U.S. Merchant Marine Academy (MC)",
-      "baseName": "U.S. Merchant Marine Academy (MC)",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/kentucky/plates/us-merchant-marine-academy-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=7a602c4b-d57a-4317-94e5-d8766a14b10f&licensePlateId=47727911-73cf-42e4-98c5-a54b93579097"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "47727911-73cf-42e4-98c5-a54b93579097",
           "versionId": null,
           "value": null
         }
@@ -5438,19 +4178,19 @@
       ]
     },
     {
-      "id": "ky-us-naval-academy-mc",
-      "slug": "us-naval-academy-mc",
-      "name": "U.S. Naval Academy (MC)",
-      "displayName": "U.S. Naval Academy (MC)",
-      "baseName": "U.S. Naval Academy (MC)",
+      "id": "ky-160th-special-operations-aviation-regiment-motorcycle",
+      "slug": "160th-special-operations-aviation-regiment-motorcycle",
+      "name": "160th Special Operations Aviation Regiment",
+      "displayName": "160th Special Operations Aviation Regiment",
+      "baseName": "160th Special Operations Aviation Regiment",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Motorcycle Plates",
       "image": {
-        "path": "state-packs/kentucky/plates/us-naval-academy-mc.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=eddbd18d-37ff-4adc-98ab-e42bf8b0af5e&licensePlateId=e6f053a6-1c02-426c-b623-6217414a02eb"
+        "path": "state-packs/kentucky/plates/160th-special-operations-aviation-regiment-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=98622682-07d9-411e-95ae-e89de19b5ed4&licensePlateId=437215e5-5afa-430a-ab50-5b84c6010614"
       },
       "sponsor": null,
       "notes": null,
@@ -5461,18 +4201,498 @@
       "sourceRefs": [
         {
           "source": "Kentucky KYTC",
-          "sourceId": "e6f053a6-1c02-426c-b623-6217414a02eb",
+          "sourceId": "437215e5-5afa-430a-ab50-5b84c6010614",
           "versionId": null,
           "value": null
         }
       ]
     },
     {
-      "id": "ky-firefighters-mc",
-      "slug": "firefighters-mc",
-      "name": "Firefighters (MC) ",
-      "displayName": "Firefighters (MC) ",
-      "baseName": "Firefighters (MC) ",
+      "id": "ky-aerial-achievement-medal-motorcycle",
+      "slug": "aerial-achievement-medal-motorcycle",
+      "name": "Aerial Achievement Medal",
+      "displayName": "Aerial Achievement Medal",
+      "baseName": "Aerial Achievement Medal",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/aerial-achievement-medal-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=39578070-e452-4ddb-8d5f-4a0d00c167b8&licensePlateId=b7e7f5eb-cb6a-4056-9733-4137e831d356"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "b7e7f5eb-cb6a-4056-9733-4137e831d356",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-air-force-motorcycle",
+      "slug": "air-force-motorcycle",
+      "name": "Air Force",
+      "displayName": "Air Force",
+      "baseName": "Air Force",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/air-force-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=80376303-9068-4ae2-9192-7778ff1cf49e&licensePlateId=7d5c3df0-052d-4bea-b441-e1a2ba6485c6"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "7d5c3df0-052d-4bea-b441-e1a2ba6485c6",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-air-force-cross-motorcycle",
+      "slug": "air-force-cross-motorcycle",
+      "name": "Air Force Cross",
+      "displayName": "Air Force Cross",
+      "baseName": "Air Force Cross",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/air-force-cross-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=13c531df-6a6d-4638-bab6-1813e4498ed2&licensePlateId=579955c8-c32b-4b42-b610-f22f7cb936c1"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "579955c8-c32b-4b42-b610-f22f7cb936c1",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-air-medal-motorcycle",
+      "slug": "air-medal-motorcycle",
+      "name": "Air Medal",
+      "displayName": "Air Medal",
+      "baseName": "Air Medal",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/air-medal-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=7c427211-6af4-4017-a33a-b0fe87fa6335&licensePlateId=b0354e60-8c9c-4789-bcc2-ca92c406ce8c"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "b0354e60-8c9c-4789-bcc2-ca92c406ce8c",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-alternate-speed-motorcycle",
+      "slug": "alternate-speed-motorcycle",
+      "name": "Alternate Speed Motorcycle",
+      "displayName": "Alternate Speed Motorcycle",
+      "baseName": "Alternate Speed Motorcycle",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/alternate-speed-motorcycle.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=67d2910f-1daa-4296-8db8-5e1ec77a81ff&licensePlateId=62fa76ab-67d6-445e-99d0-1183d88bc4f1"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "62fa76ab-67d6-445e-99d0-1183d88bc4f1",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-army-combat-action-badge-motorcycle",
+      "slug": "army-combat-action-badge-motorcycle",
+      "name": "Army Combat Action Badge",
+      "displayName": "Army Combat Action Badge",
+      "baseName": "Army Combat Action Badge",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/army-combat-action-badge-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=21f3b47f-19ae-4bd9-a65b-b4f545088c13&licensePlateId=c83e9c7c-c3de-48eb-824a-f3cc2fab8112"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "c83e9c7c-c3de-48eb-824a-f3cc2fab8112",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-army-combat-infantryman-badge-motorcycle",
+      "slug": "army-combat-infantryman-badge-motorcycle",
+      "name": "Army Combat Infantryman Badge",
+      "displayName": "Army Combat Infantryman Badge",
+      "baseName": "Army Combat Infantryman Badge",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/army-combat-infantryman-badge-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=2edca7aa-ed06-4838-9a76-c712e1fb1f77&licensePlateId=8f48b209-e72e-4e6c-9fce-fc511dc687d2"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "8f48b209-e72e-4e6c-9fce-fc511dc687d2",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-army-cross-distinguished-service-cross-motorcycle",
+      "slug": "army-cross-distinguished-service-cross-motorcycle",
+      "name": "Army Cross - Distinguished Service Cross",
+      "displayName": "Army Cross - Distinguished Service Cross",
+      "baseName": "Army Cross - Distinguished Service Cross",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/army-cross-distinguished-service-cross-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=5ea91795-152a-47fa-bf68-6d7bcf0b3bb1&licensePlateId=3ea9c360-3938-4349-9f63-8748b0ba0b36"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "3ea9c360-3938-4349-9f63-8748b0ba0b36",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-army-veteran-motorcycle",
+      "slug": "army-veteran-motorcycle",
+      "name": "Army Veteran",
+      "displayName": "Army Veteran",
+      "baseName": "Army Veteran",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/army-veteran-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=745fb927-1085-4109-b72a-c9c6ed32246a&licensePlateId=20d1beba-eb38-4aa4-bfc7-14a11ad7a736"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "20d1beba-eb38-4aa4-bfc7-14a11ad7a736",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-bronze-star-medal-motorcycle",
+      "slug": "bronze-star-medal-motorcycle",
+      "name": "Bronze Star Medal",
+      "displayName": "Bronze Star Medal",
+      "baseName": "Bronze Star Medal",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/bronze-star-medal-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=5637fa4c-8a0e-4d47-8f52-2f90f77a1ba2&licensePlateId=fae00504-cdc8-4a1c-a7b9-11bedfc7d194"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "fae00504-cdc8-4a1c-a7b9-11bedfc7d194",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-civil-air-patrol-motorcycle",
+      "slug": "civil-air-patrol-motorcycle",
+      "name": "Civil Air Patrol",
+      "displayName": "Civil Air Patrol",
+      "baseName": "Civil Air Patrol",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/civil-air-patrol-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=3612e9a8-604e-4134-9995-5795096c6c54&licensePlateId=b099e13e-8976-449f-b292-90b5606bb4b6"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "b099e13e-8976-449f-b292-90b5606bb4b6",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-congressional-medal-of-honor-motorcycle",
+      "slug": "congressional-medal-of-honor-motorcycle",
+      "name": "Congressional Medal of Honor",
+      "displayName": "Congressional Medal of Honor",
+      "baseName": "Congressional Medal of Honor",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/congressional-medal-of-honor-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=f38a8590-753a-41c6-ad33-aef2709c30ff&licensePlateId=cfa0a4a7-cd8d-4036-8752-cd6f592d9520"
+      },
+      "sponsor": null,
+      "notes": " ",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "cfa0a4a7-cd8d-4036-8752-cd6f592d9520",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-dealer-motorcycle",
+      "slug": "dealer-motorcycle",
+      "name": "Dealer Motorcycle",
+      "displayName": "Dealer Motorcycle",
+      "baseName": "Dealer Motorcycle",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/dealer-motorcycle.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=2e585fde-c575-414e-be4a-f46809574235&licensePlateId=f1953c15-9d9a-47e7-af7b-dd1a9848a67d"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "f1953c15-9d9a-47e7-af7b-dd1a9848a67d",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-disabled-former-prisoner-of-war-motorcycle",
+      "slug": "disabled-former-prisoner-of-war-motorcycle",
+      "name": "Disabled Former Prisoner of War",
+      "displayName": "Disabled Former Prisoner of War",
+      "baseName": "Disabled Former Prisoner of War",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/disabled-former-prisoner-of-war-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=e6f3e675-4e7b-4867-b6bd-c79355724dd6&licensePlateId=2be99e82-c238-4bcf-abbe-897345517ffd"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "2be99e82-c238-4bcf-abbe-897345517ffd",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-disabled-motorcycle",
+      "slug": "disabled-motorcycle",
+      "name": "Disabled Motorcycle",
+      "displayName": "Disabled Motorcycle",
+      "baseName": "Disabled Motorcycle",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/disabled-motorcycle.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=4b37427f-b678-4ccb-9f4d-643fbf601bd3&licensePlateId=c35ce0a0-99f6-4d12-ad4a-34d45ef5244d"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "c35ce0a0-99f6-4d12-ad4a-34d45ef5244d",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-distinguished-flying-cross-motorcycle",
+      "slug": "distinguished-flying-cross-motorcycle",
+      "name": "Distinguished Flying Cross",
+      "displayName": "Distinguished Flying Cross",
+      "baseName": "Distinguished Flying Cross",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/distinguished-flying-cross-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=95350c58-9efd-4768-8e66-a4818c2cff64&licensePlateId=c1f8b6b0-46ec-415f-af23-a339eb08dfc2"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "c1f8b6b0-46ec-415f-af23-a339eb08dfc2",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-firefighters-motorcycle",
+      "slug": "firefighters-motorcycle",
+      "name": "Firefighters",
+      "displayName": "Firefighters",
+      "baseName": "Firefighters",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
@@ -5498,11 +4718,41 @@
       ]
     },
     {
-      "id": "ky-friends-of-coal-mc",
-      "slug": "friends-of-coal-mc",
-      "name": "Friends of Coal (MC)",
-      "displayName": "Friends of Coal (MC)",
-      "baseName": "Friends of Coal (MC)",
+      "id": "ky-former-prisoner-of-war-motorcycle",
+      "slug": "former-prisoner-of-war-motorcycle",
+      "name": "Former Prisoner of War",
+      "displayName": "Former Prisoner of War",
+      "baseName": "Former Prisoner of War",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/former-prisoner-of-war-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=4aa6ad34-c4af-4f80-8f9b-1463d611e70b&licensePlateId=ddf1b40c-effd-4cf7-9c54-4f652a6c6f00"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "ddf1b40c-effd-4cf7-9c54-4f652a6c6f00",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-friends-of-coal-motorcycle",
+      "slug": "friends-of-coal-motorcycle",
+      "name": "Friends of Coal",
+      "displayName": "Friends of Coal",
+      "baseName": "Friends of Coal",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
@@ -5528,11 +4778,221 @@
       ]
     },
     {
-      "id": "ky-i-support-veterans-mc",
-      "slug": "i-support-veterans-mc",
-      "name": "I Support Veterans (MC)",
-      "displayName": "I Support Veterans (MC)",
-      "baseName": "I Support Veterans (MC)",
+      "id": "ky-gold-star-daughters-motorcycle",
+      "slug": "gold-star-daughters-motorcycle",
+      "name": "Gold Star Daughters",
+      "displayName": "Gold Star Daughters",
+      "baseName": "Gold Star Daughters",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/gold-star-daughters-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=2bcc57c3-ac2f-4955-8d9c-771c0b36ee45&licensePlateId=48d1e69f-ea55-49a0-a46b-61699b8631d8"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "48d1e69f-ea55-49a0-a46b-61699b8631d8",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-gold-star-fathers-motorcycle",
+      "slug": "gold-star-fathers-motorcycle",
+      "name": "Gold Star Fathers",
+      "displayName": "Gold Star Fathers",
+      "baseName": "Gold Star Fathers",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/gold-star-fathers-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=dd586952-7a7b-4c90-b3c3-59f1b1b40935&licensePlateId=660d9bed-ad4c-44e7-b6d2-9176fab73c66"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "660d9bed-ad4c-44e7-b6d2-9176fab73c66",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-gold-star-mothers-motorcycle",
+      "slug": "gold-star-mothers-motorcycle",
+      "name": "Gold Star Mothers",
+      "displayName": "Gold Star Mothers",
+      "baseName": "Gold Star Mothers",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/gold-star-mothers-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=69af5e17-cce8-4c38-8bba-af526ef59f3d&licensePlateId=d388b272-dd60-490f-b84a-33ee284836fc"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "d388b272-dd60-490f-b84a-33ee284836fc",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-gold-star-siblings-motorcycle",
+      "slug": "gold-star-siblings-motorcycle",
+      "name": "Gold Star Siblings",
+      "displayName": "Gold Star Siblings",
+      "baseName": "Gold Star Siblings",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/gold-star-siblings-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=4412b317-0bf5-4202-abe7-4d7649311b20&licensePlateId=16a0b78f-8245-4795-9015-0e722b6d8ace"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "16a0b78f-8245-4795-9015-0e722b6d8ace",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-gold-star-sons-motorcycle",
+      "slug": "gold-star-sons-motorcycle",
+      "name": "Gold Star Sons",
+      "displayName": "Gold Star Sons",
+      "baseName": "Gold Star Sons",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/gold-star-sons-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=29f649c1-9782-45c6-90c5-52b7ca6690b0&licensePlateId=098c33b9-991b-45e1-a29b-b705a05ce59a"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "098c33b9-991b-45e1-a29b-b705a05ce59a",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-gold-star-spouses-motorcycle",
+      "slug": "gold-star-spouses-motorcycle",
+      "name": "Gold Star Spouses",
+      "displayName": "Gold Star Spouses",
+      "baseName": "Gold Star Spouses",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/gold-star-spouses-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=bbc4e96b-1125-46e6-a032-234559b5aeeb&licensePlateId=9b3db1b2-d03c-4c3b-ae84-7c07d4e1785c"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "9b3db1b2-d03c-4c3b-ae84-7c07d4e1785c",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-historic-motorcycle",
+      "slug": "historic-motorcycle",
+      "name": "Historic Motorcycle",
+      "displayName": "Historic Motorcycle",
+      "baseName": "Historic Motorcycle",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/historic-motorcycle.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=814234e8-a3d8-4cb1-aec1-a7e700327ce3&licensePlateId=7c880b1f-d9bd-40bb-90f8-3678b6556158"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "7c880b1f-d9bd-40bb-90f8-3678b6556158",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-i-support-veterans-motorcycle",
+      "slug": "i-support-veterans-motorcycle",
+      "name": "I Support Veterans",
+      "displayName": "I Support Veterans",
+      "baseName": "I Support Veterans",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
@@ -5558,11 +5018,11 @@
       ]
     },
     {
-      "id": "ky-kentucky-cops-mc",
-      "slug": "kentucky-cops-mc",
-      "name": "Kentucky C.O.P.S. (MC)",
-      "displayName": "Kentucky C.O.P.S. (MC)",
-      "baseName": "Kentucky C.O.P.S. (MC)",
+      "id": "ky-kentucky-cops-motorcycle",
+      "slug": "kentucky-cops-motorcycle",
+      "name": "Kentucky C.O.P.S.",
+      "displayName": "Kentucky C.O.P.S.",
+      "baseName": "Kentucky C.O.P.S.",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
@@ -5588,11 +5048,11 @@
       ]
     },
     {
-      "id": "ky-law-enforcement-memorial-mc",
-      "slug": "law-enforcement-memorial-mc",
-      "name": "Law Enforcement Memorial (MC)",
-      "displayName": "Law Enforcement Memorial (MC)",
-      "baseName": "Law Enforcement Memorial (MC)",
+      "id": "ky-law-enforcement-memorial-motorcycle",
+      "slug": "law-enforcement-memorial-motorcycle",
+      "name": "Law Enforcement Memorial",
+      "displayName": "Law Enforcement Memorial",
+      "baseName": "Law Enforcement Memorial",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
@@ -5618,11 +5078,71 @@
       ]
     },
     {
-      "id": "ky-masons-mc",
-      "slug": "masons-mc",
-      "name": "Masons (MC)",
-      "displayName": "Masons (MC)",
-      "baseName": "Masons (MC)",
+      "id": "ky-legion-of-merit-medal-motorcycle",
+      "slug": "legion-of-merit-medal-motorcycle",
+      "name": "Legion of Merit Medal",
+      "displayName": "Legion of Merit Medal",
+      "baseName": "Legion of Merit Medal",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/legion-of-merit-medal-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=9ee41abd-6516-4d20-a158-980680b32acd&licensePlateId=63659de7-649b-43fc-b22b-3a949b8f89f3"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "63659de7-649b-43fc-b22b-3a949b8f89f3",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-marine-veteran-motorcycle",
+      "slug": "marine-veteran-motorcycle",
+      "name": "Marine Veteran",
+      "displayName": "Marine Veteran",
+      "baseName": "Marine Veteran",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/marine-veteran-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=b985b7cc-fb97-47cf-b9e2-614d07673692&licensePlateId=5d364cac-80a8-48b0-9ab9-9f513b15ad6f"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "5d364cac-80a8-48b0-9ab9-9f513b15ad6f",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-masons-motorcycle",
+      "slug": "masons-motorcycle",
+      "name": "Masons",
+      "displayName": "Masons",
+      "baseName": "Masons",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
@@ -5648,11 +5168,131 @@
       ]
     },
     {
-      "id": "ky-pow-mia-mc",
-      "slug": "pow-mia-mc",
-      "name": "POW-MIA (MC)",
-      "displayName": "POW-MIA (MC)",
-      "baseName": "POW-MIA (MC)",
+      "id": "ky-national-guard-motorcycle",
+      "slug": "national-guard-motorcycle",
+      "name": "National Guard",
+      "displayName": "National Guard",
+      "baseName": "National Guard",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/national-guard-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=dec2ba27-bfe1-41e3-96c8-04ed870bf8a3&licensePlateId=8f7c5059-55a4-433b-b851-640e8e2fd67e"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "8f7c5059-55a4-433b-b851-640e8e2fd67e",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-navy-cross-motorcycle",
+      "slug": "navy-cross-motorcycle",
+      "name": "Navy Cross",
+      "displayName": "Navy Cross",
+      "baseName": "Navy Cross",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/navy-cross-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=74a712b7-9ed7-407a-a554-5da1d7653023&licensePlateId=9218c2a6-893a-4c37-a762-14586dadfbf5"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "9218c2a6-893a-4c37-a762-14586dadfbf5",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-navy-veteran-motorcycle",
+      "slug": "navy-veteran-motorcycle",
+      "name": "Navy Veteran",
+      "displayName": "Navy Veteran",
+      "baseName": "Navy Veteran",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/navy-veteran-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=88ddbb12-6741-43d6-925f-6ac12328fb37&licensePlateId=20b75b18-a0e4-4e5a-8a19-8d996cde1e6a"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "20b75b18-a0e4-4e5a-8a19-8d996cde1e6a",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-pearl-harbor-survivor-motorcycle",
+      "slug": "pearl-harbor-survivor-motorcycle",
+      "name": "Pearl Harbor Survivor",
+      "displayName": "Pearl Harbor Survivor",
+      "baseName": "Pearl Harbor Survivor",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/pearl-harbor-survivor-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=b291c498-8c67-4ed0-adf0-ee5f9390451a&licensePlateId=9c7534ee-d76f-41d5-a07a-d6ce69e0b69e"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "9c7534ee-d76f-41d5-a07a-d6ce69e0b69e",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-pow-mia-motorcycle",
+      "slug": "pow-mia-motorcycle",
+      "name": "POW-MIA",
+      "displayName": "POW-MIA",
+      "baseName": "POW-MIA",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
@@ -5672,6 +5312,396 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "02231483-aacf-4a2e-9b7f-78fce7e7832f",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-purple-heart-motorcycle",
+      "slug": "purple-heart-motorcycle",
+      "name": "Purple Heart",
+      "displayName": "Purple Heart",
+      "baseName": "Purple Heart",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/purple-heart-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=a9e7db59-268c-4fad-8c4d-5c6e25465018&licensePlateId=7063a549-995d-442f-928f-5826957463f8"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "7063a549-995d-442f-928f-5826957463f8",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-silver-star-medal-motorcycle",
+      "slug": "silver-star-medal-motorcycle",
+      "name": "Silver Star Medal",
+      "displayName": "Silver Star Medal",
+      "baseName": "Silver Star Medal",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/silver-star-medal-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=3f310989-0b79-4dc8-95e3-ce377dea8817&licensePlateId=9000402e-32b4-44e2-80b0-a99cbcd85758"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "9000402e-32b4-44e2-80b0-a99cbcd85758",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-space-force-motorcycle",
+      "slug": "space-force-motorcycle",
+      "name": "Space Force",
+      "displayName": "Space Force",
+      "baseName": "Space Force",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/space-force-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=2bef3b84-3132-4d90-8af9-9ed793eb40cd&licensePlateId=81d57463-b759-4ec1-af5a-43afb9873dc8"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "81d57463-b759-4ec1-af5a-43afb9873dc8",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-standard-motorcycle",
+      "slug": "standard-motorcycle",
+      "name": "Standard Motorcycle",
+      "displayName": "Standard Motorcycle",
+      "baseName": "Standard Motorcycle",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/standard-motorcycle.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=f6c1c2c3-d20c-4da4-a301-f441b9e7a175&licensePlateId=c735f8f7-0cf9-4dbb-9172-b61d122bed92"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "c735f8f7-0cf9-4dbb-9172-b61d122bed92",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-us-air-force-academy-motorcycle",
+      "slug": "us-air-force-academy-motorcycle",
+      "name": "U.S. Air Force Academy",
+      "displayName": "U.S. Air Force Academy",
+      "baseName": "U.S. Air Force Academy",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/us-air-force-academy-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=2e0d8bc6-9e40-42c9-97c6-bf3553dffea3&licensePlateId=6bcffbfe-1b0d-46c8-a826-357bdd27419f"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "6bcffbfe-1b0d-46c8-a826-357bdd27419f",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-us-army-cadet-command-motorcycle",
+      "slug": "us-army-cadet-command-motorcycle",
+      "name": "U.S. Army Cadet Command",
+      "displayName": "U.S. Army Cadet Command",
+      "baseName": "U.S. Army Cadet Command",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/us-army-cadet-command-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=8886249b-b011-45ef-91f5-312a29ec36a2&licensePlateId=2a9545b9-3001-408a-860e-e48ee2fbdf08"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "2a9545b9-3001-408a-860e-e48ee2fbdf08",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-us-army-human-resources-command-motorcycle",
+      "slug": "us-army-human-resources-command-motorcycle",
+      "name": "U.S. Army Human Resources Command",
+      "displayName": "U.S. Army Human Resources Command",
+      "baseName": "U.S. Army Human Resources Command",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/us-army-human-resources-command-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=b0c2715f-44ff-4a5b-8be8-fad2bc181bbc&licensePlateId=e1eff4a7-f3dd-4b0a-9cfe-f39b9a9868b3"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "e1eff4a7-f3dd-4b0a-9cfe-f39b9a9868b3",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-us-army-recruiting-command-motorcycle",
+      "slug": "us-army-recruiting-command-motorcycle",
+      "name": "U.S. Army Recruiting  Command",
+      "displayName": "U.S. Army Recruiting  Command",
+      "baseName": "U.S. Army Recruiting  Command",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/us-army-recruiting-command-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=c506be29-2502-4dc8-9084-906ca8ebf7f6&licensePlateId=249d2c79-312b-4df8-a92c-d420577e0bb3"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "249d2c79-312b-4df8-a92c-d420577e0bb3",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-us-army-v-corps-motorcycle",
+      "slug": "us-army-v-corps-motorcycle",
+      "name": "U.S. Army V Corps",
+      "displayName": "U.S. Army V Corps",
+      "baseName": "U.S. Army V Corps",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/us-army-v-corps-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=b441c266-4217-4896-9e6c-fe17d6617567&licensePlateId=7521eb24-c4f3-4949-8096-ce8f21904599"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "7521eb24-c4f3-4949-8096-ce8f21904599",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-us-coast-guard-academy-motorcycle",
+      "slug": "us-coast-guard-academy-motorcycle",
+      "name": "U.S. Coast Guard Academy",
+      "displayName": "U.S. Coast Guard Academy",
+      "baseName": "U.S. Coast Guard Academy",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/us-coast-guard-academy-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=6c8b67bc-0961-4e52-bb22-585372bcbfe0&licensePlateId=1d1959c1-d4a9-4b6a-8139-32364baa1a8a"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "1d1959c1-d4a9-4b6a-8139-32364baa1a8a",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-us-coast-guard-veteran-motorcycle",
+      "slug": "us-coast-guard-veteran-motorcycle",
+      "name": "U.S. Coast Guard Veteran",
+      "displayName": "U.S. Coast Guard Veteran",
+      "baseName": "U.S. Coast Guard Veteran",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/us-coast-guard-veteran-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=7bad17a2-7fcb-4a71-907c-b64ca4fbd616&licensePlateId=623d5a37-5cd1-44e5-84e6-e60c7a52f00c"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "623d5a37-5cd1-44e5-84e6-e60c7a52f00c",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-us-merchant-marine-academy-motorcycle",
+      "slug": "us-merchant-marine-academy-motorcycle",
+      "name": "U.S. Merchant Marine Academy",
+      "displayName": "U.S. Merchant Marine Academy",
+      "baseName": "U.S. Merchant Marine Academy",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/us-merchant-marine-academy-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=7a602c4b-d57a-4317-94e5-d8766a14b10f&licensePlateId=47727911-73cf-42e4-98c5-a54b93579097"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "47727911-73cf-42e4-98c5-a54b93579097",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ky-us-naval-academy-motorcycle",
+      "slug": "us-naval-academy-motorcycle",
+      "name": "U.S. Naval Academy",
+      "displayName": "U.S. Naval Academy",
+      "baseName": "U.S. Naval Academy",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/kentucky/plates/us-naval-academy-mc.png",
+        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=eddbd18d-37ff-4adc-98ab-e42bf8b0af5e&licensePlateId=e6f053a6-1c02-426c-b623-6217414a02eb"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Kentucky KYTC",
+          "sourceId": "e6f053a6-1c02-426c-b623-6217414a02eb",
           "versionId": null,
           "value": null
         }
@@ -6002,36 +6032,6 @@
         {
           "source": "Kentucky KYTC",
           "sourceId": "e0a21613-0b53-494e-bb21-e5ac583ef5cd",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ky-standard-motorcycle",
-      "slug": "standard-motorcycle",
-      "name": "Standard Motorcycle",
-      "displayName": "Standard Motorcycle",
-      "baseName": "Standard Motorcycle",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Standard Plates",
-      "image": {
-        "path": "state-packs/kentucky/plates/standard-motorcycle.png",
-        "remoteUrl": "https://secure2.kentucky.gov/kytc/plates/web/LicensePlate/GenerateImage?imageId=f6c1c2c3-d20c-4da4-a301-f441b9e7a175&licensePlateId=c735f8f7-0cf9-4dbb-9172-b61d122bed92"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Kentucky KYTC",
-          "sourceId": "c735f8f7-0cf9-4dbb-9172-b61d122bed92",
           "versionId": null,
           "value": null
         }
