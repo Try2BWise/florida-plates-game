@@ -461,6 +461,49 @@ export const badgeDefinitions: BadgeDefinition[] = [
     group: "locality",
     availableIn: "v1.4"
   },
+  // Mississippi Explorer region badges
+  {
+    id: "ms-hills-explorer",
+    name: "Hills Explorer",
+    description: "Find a plate in every Hills region county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ms-delta-explorer",
+    name: "Delta Explorer",
+    description: "Find a plate in every Delta region county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ms-capital-river-explorer",
+    name: "Capital/River Explorer",
+    description: "Find a plate in every Capital/River region county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ms-pines-explorer",
+    name: "Pines Explorer",
+    description: "Find a plate in every Pines region county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ms-coastal-explorer",
+    name: "Coastal Explorer",
+    description: "Find a plate in every Coastal region county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-mississippi",
+    name: "All Around Mississippi",
+    description: "Earn every regional explorer badge.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
   // Florida Explorer region badges
   {
     id: "northwest-florida-explorer",
@@ -815,10 +858,11 @@ export function evaluateBadges(
     )
   ]);
 
-  // All Around Florida badge: earned if all region badges are earned
+  // "All Around" badge: earned if all region badges are earned
+  const allAroundId = stateId === "mississippi" ? "all-around-mississippi" : "all-around-florida";
   const allRegionBadgesEarned = regionBadgeEntries.every(([, badge]) => badge.earned);
-  const allAroundFloridaBadge = {
-    ...getBadgeDefinition(definitionsById, "all-around-florida"),
+  const allAroundBadge = {
+    ...getBadgeDefinition(definitionsById, allAroundId),
     earned: allRegionBadgesEarned,
     progressCurrent: regionBadgeEntries.filter(([, badge]) => badge.earned).length,
     progressTarget: regionBadgeEntries.length
@@ -1055,15 +1099,31 @@ export function evaluateBadges(
     ["road-trip", createThresholdBadge(getBadgeDefinition(definitionsById, "road-trip"), uniqueLocalities, 10)],
     ["panhandle-scout", createThresholdBadge(getBadgeDefinition(definitionsById, "panhandle-scout"), panhandleCount, 1)],
     ...regionBadgeEntries,
-    ["all-around-florida", allAroundFloridaBadge],
+    [allAroundId, allAroundBadge],
   ]);
 
   const allEvaluated = badgeDefinitions.map((definition) => lookup.get(definition.id) ?? { ...definition, earned: false });
 
-  // For non-Florida states, only return generic badges
-  if (stateId !== "florida") {
-    return allEvaluated.filter((badge) => genericBadgeIds.has(badge.id));
-  }
+  // State-specific badge IDs
+  const floridaBadgeIds = new Set([
+    "northwest-florida-explorer", "north-central-florida-explorer", "northeast-florida-explorer",
+    "central-west-florida-explorer", "central-florida-explorer", "central-east-florida-explorer",
+    "southwest-florida-explorer", "southeast-florida-explorer", "florida-keys-explorer",
+    "all-around-florida",
+    // Florida-only locality badges
+    "panhandle-scout", "escapee", "coastal-cruiser", "farm-fresh", "thrill-ride",
+    // Florida-only sports
+    "grand-slam", "touchdown", "hat-trick", "slam-dunk", "goal", "checkered-flag",
+    // Florida-only service
+    "those-who-serve", "back-the-blue", "fire-watch",
+  ]);
 
-  return allEvaluated;
+  const mississippiBadgeIds = new Set([
+    "ms-hills-explorer", "ms-delta-explorer", "ms-capital-river-explorer",
+    "ms-pines-explorer", "ms-coastal-explorer", "all-around-mississippi",
+  ]);
+
+  // Filter to generic badges + badges for the active state
+  const activeBadgeIds = stateId === "mississippi" ? mississippiBadgeIds : floridaBadgeIds;
+  return allEvaluated.filter((badge) => genericBadgeIds.has(badge.id) || activeBadgeIds.has(badge.id));
 }

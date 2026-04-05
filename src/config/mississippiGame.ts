@@ -12,8 +12,41 @@ export const mississippiMixedBagCategories = new Set<PlateCategory>([
 // Mississippi has no panhandle equivalent — empty set for now
 export const mississippiRegionScoutCounties = new Set<string>();
 
-// Mississippi regional badge counties — placeholder for future badges
-export const mississippiBadgeCounties: Record<string, string[]> = {};
+// Mississippi regional badge counties
+// Regions defined by the Mississippi Development Authority (visitmississippi.org)
+export const mississippiBadgeCounties: Record<string, string[]> = {
+  // The Hills — Northeast Mississippi
+  "ms-hills-explorer": [
+    "Alcorn", "Benton", "Calhoun", "Chickasaw", "Clay", "Grenada",
+    "Itawamba", "Lafayette", "Lee", "Marshall", "Monroe", "Montgomery",
+    "Pontotoc", "Prentiss", "Tippah", "Tishomingo", "Union", "Webster",
+    "Yalobusha"
+  ],
+  // The Delta — Northwest Mississippi (alluvial floodplain)
+  "ms-delta-explorer": [
+    "Bolivar", "Carroll", "Coahoma", "DeSoto", "Holmes", "Humphreys",
+    "Issaquena", "Leflore", "Panola", "Quitman", "Sharkey", "Sunflower",
+    "Tallahatchie", "Tate", "Tunica", "Warren", "Washington", "Yazoo"
+  ],
+  // Capital/River — Central Mississippi & river corridor
+  "ms-capital-river-explorer": [
+    "Adams", "Amite", "Attala", "Claiborne", "Copiah", "Franklin",
+    "Hinds", "Jefferson", "Lawrence", "Leake", "Lincoln", "Madison",
+    "Pike", "Rankin", "Scott", "Simpson", "Walthall", "Wilkinson"
+  ],
+  // The Pines — East-central Mississippi
+  "ms-pines-explorer": [
+    "Choctaw", "Clarke", "Jasper", "Kemper", "Lauderdale", "Lowndes",
+    "Neshoba", "Newton", "Noxubee", "Oktibbeha", "Smith", "Wayne",
+    "Winston"
+  ],
+  // Coastal — Southern Mississippi & Gulf Coast
+  "ms-coastal-explorer": [
+    "Covington", "Forrest", "George", "Greene", "Hancock", "Harrison",
+    "Jackson", "Jefferson Davis", "Jones", "Lamar", "Marion",
+    "Pearl River", "Perry", "Stone"
+  ],
+};
 
 export const mississippiBadgeGroupLabels: Record<BadgeGroup, string> = {
   progress: "Progress",
