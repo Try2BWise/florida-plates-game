@@ -7,8 +7,10 @@ export interface StatePackMeta {
 }
 
 export const stateRegistry: StatePackMeta[] = [
-  { id: "arkansas", name: "Arkansas", abbreviation: "AR", tagline: "Arkansas Edition", available: true },
-  { id: "florida", name: "Florida", abbreviation: "FL", tagline: "Florida Edition", available: true },
-  { id: "mississippi", name: "Mississippi", abbreviation: "MS", tagline: "Mississippi Edition", available: true },
-  { id: "missouri", name: "Missouri", abbreviation: "MO", tagline: "Missouri Edition", available: true },
+  { id: "arkansas", name: "Arkansas", abbreviation: "AR", tagline: "The Natural State", available: true },
+  { id: "florida", name: "Florida", abbreviation: "FL", tagline: "The Sunshine State", available: true },
+  { id: "kentucky", name: "Kentucky", abbreviation: "KY", tagline: "The Bluegrass State", available: true },
+  { id: "mississippi", name: "Mississippi", abbreviation: "MS", tagline: "The Magnolia State", available: true },
+  { id: "missouri", name: "Missouri", abbreviation: "MO", tagline: "The Show-Me State", available: true },
+  { id: "tennessee", name: "Tennessee", abbreviation: "TN", tagline: "The Volunteer State", available: true },
 ];

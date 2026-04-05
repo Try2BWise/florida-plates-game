@@ -38,6 +38,26 @@ import {
   missouriMixedBagCategories,
   missouriRegionScoutCounties
 } from "../config/missouriGame";
+import tennesseeDriverData from "../data/generated/tennessee-plate-driver.generated.json";
+import tennesseeLegacyIdMap from "../data/generated/tennessee-legacy-id-map.generated.json";
+import {
+  tennesseeBadgeCounties,
+  tennesseeBadgeGroupLabels,
+  tennesseeBadgeGroupSymbols,
+  tennesseeGame,
+  tennesseeMixedBagCategories,
+  tennesseeRegionScoutCounties
+} from "../config/tennesseeGame";
+import kentuckyDriverData from "../data/generated/kentucky-plate-driver.generated.json";
+import kentuckyLegacyIdMap from "../data/generated/kentucky-legacy-id-map.generated.json";
+import {
+  kentuckyBadgeCounties,
+  kentuckyBadgeGroupLabels,
+  kentuckyBadgeGroupSymbols,
+  kentuckyGame,
+  kentuckyMixedBagCategories,
+  kentuckyRegionScoutCounties
+} from "../config/kentuckyGame";
 import { plateCategories, type Plate, type PlateCategory } from "../types";
 
 /* ── State selection persistence ── */
@@ -144,11 +164,43 @@ function loadMissouriPack() {
   };
 }
 
+function loadTennesseePack() {
+  const plates = buildPlates(tennesseeDriverData);
+  return {
+    game: tennesseeGame,
+    badgeCounties: tennesseeBadgeCounties,
+    badgeGroupLabels: tennesseeBadgeGroupLabels,
+    badgeGroupSymbols: tennesseeBadgeGroupSymbols,
+    mixedBagCategories: tennesseeMixedBagCategories,
+    panhandleScoutCounties: tennesseeRegionScoutCounties,
+    legacyIdMap: tennesseeLegacyIdMap as Record<string, string>,
+    plates,
+    groupedPlates: buildGroupedPlates(plates),
+  };
+}
+
+function loadKentuckyPack() {
+  const plates = buildPlates(kentuckyDriverData);
+  return {
+    game: kentuckyGame,
+    badgeCounties: kentuckyBadgeCounties,
+    badgeGroupLabels: kentuckyBadgeGroupLabels,
+    badgeGroupSymbols: kentuckyBadgeGroupSymbols,
+    mixedBagCategories: kentuckyMixedBagCategories,
+    panhandleScoutCounties: kentuckyRegionScoutCounties,
+    legacyIdMap: kentuckyLegacyIdMap as Record<string, string>,
+    plates,
+    groupedPlates: buildGroupedPlates(plates),
+  };
+}
+
 function loadStatePack(stateId: string) {
   switch (stateId) {
     case "mississippi": return loadMississippiPack();
     case "arkansas": return loadArkansasPack();
     case "missouri": return loadMissouriPack();
+    case "tennessee": return loadTennesseePack();
+    case "kentucky": return loadKentuckyPack();
     case "florida":
     default:
       return loadFloridaPack();
