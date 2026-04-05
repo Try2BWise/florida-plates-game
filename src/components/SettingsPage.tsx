@@ -135,11 +135,11 @@ export function SettingsPage({
           <section className="utility-card">
             <h3>Icon credits</h3>
             <p className="utility-card__meta">
-              Badge icons created by{" "}
-              <a className="app-footer__link" href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noreferrer">
-                Freepik — Flaticon
+              Badge icons from{" "}
+              <a className="app-footer__link" href="https://github.com/microsoft/fluentui-emoji" target="_blank" rel="noreferrer">
+                Microsoft Fluent Emoji
               </a>
-              .
+              {" "}(MIT License).
             </p>
           </section>
         </div>
