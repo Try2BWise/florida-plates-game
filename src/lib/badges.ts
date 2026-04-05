@@ -504,6 +504,56 @@ export const badgeDefinitions: BadgeDefinition[] = [
     group: "florida",
     availableIn: "v1.4"
   },
+  // Arkansas Explorer region badges
+  {
+    id: "ar-ozarks-explorer",
+    name: "Ozarks Explorer",
+    description: "Find a plate in every Ozarks region county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ar-delta-explorer",
+    name: "Delta Explorer",
+    description: "Find a plate in every Delta region county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ar-capital-explorer",
+    name: "Capital Explorer",
+    description: "Find a plate in every Capital region county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ar-river-valley-explorer",
+    name: "River Valley Explorer",
+    description: "Find a plate in every River Valley region county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ar-ouachitas-explorer",
+    name: "Ouachitas Explorer",
+    description: "Find a plate in every Ouachitas region county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ar-timberlands-explorer",
+    name: "Timberlands Explorer",
+    description: "Find a plate in every Timberlands region county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-arkansas",
+    name: "All Around Arkansas",
+    description: "Earn every regional explorer badge.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
   // Florida Explorer region badges
   {
     id: "northwest-florida-explorer",
@@ -859,7 +909,11 @@ export function evaluateBadges(
   ]);
 
   // "All Around" badge: earned if all region badges are earned
-  const allAroundId = stateId === "mississippi" ? "all-around-mississippi" : "all-around-florida";
+  const allAroundIdMap: Record<string, string> = {
+    mississippi: "all-around-mississippi",
+    arkansas: "all-around-arkansas",
+  };
+  const allAroundId = allAroundIdMap[stateId] || "all-around-florida";
   const allRegionBadgesEarned = regionBadgeEntries.every(([, badge]) => badge.earned);
   const allAroundBadge = {
     ...getBadgeDefinition(definitionsById, allAroundId),
@@ -1123,7 +1177,18 @@ export function evaluateBadges(
     "ms-pines-explorer", "ms-coastal-explorer", "all-around-mississippi",
   ]);
 
+  const arkansasBadgeIds = new Set([
+    "ar-ozarks-explorer", "ar-delta-explorer", "ar-capital-explorer",
+    "ar-river-valley-explorer", "ar-ouachitas-explorer", "ar-timberlands-explorer",
+    "all-around-arkansas",
+  ]);
+
   // Filter to generic badges + badges for the active state
-  const activeBadgeIds = stateId === "mississippi" ? mississippiBadgeIds : floridaBadgeIds;
+  const stateBadgeMap: Record<string, Set<string>> = {
+    florida: floridaBadgeIds,
+    mississippi: mississippiBadgeIds,
+    arkansas: arkansasBadgeIds,
+  };
+  const activeBadgeIds = stateBadgeMap[stateId] || floridaBadgeIds;
   return allEvaluated.filter((badge) => genericBadgeIds.has(badge.id) || activeBadgeIds.has(badge.id));
 }
