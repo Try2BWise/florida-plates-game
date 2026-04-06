@@ -1,42 +1,12 @@
 {
   "schemaVersion": 1,
   "state": "Mississippi",
-  "generatedDate": "2026-04-05",
+  "generatedDate": "2026-04-06",
   "description": "Mississippi specialty license plates from DOR website",
   "sourceFiles": [
     "https://www.dor.ms.gov/motor-vehicle/available-license-plates/specialty-license-plates"
   ],
   "plates": [
-    {
-      "id": "ms-disabled",
-      "slug": "disabled",
-      "name": "Disabled",
-      "displayName": "Disabled",
-      "baseName": "Disabled",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Accessibility",
-      "image": {
-        "path": "state-packs/mississippi/plates/disabled.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Disabled.png.webp?itok=dh4z1ysu"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Mississippi DOR",
-          "sourceId": "disabled",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
     {
       "id": "ms-4-h-club",
       "slug": "4-h-club",
@@ -178,7 +148,9 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "native american"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -228,36 +200,6 @@
       ]
     },
     {
-      "id": "ms-bicycle-share-the-road",
-      "slug": "bicycle-share-the-road",
-      "name": "Bicycle Share the Road",
-      "displayName": "Bicycle Share the Road",
-      "baseName": "Bicycle Share the Road",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/mississippi/plates/bicycle-share-the-road.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Bicycle%252520share%252520the%252520road_jpg.jpg.webp?itok=zH6QJg5a"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Mississippi DOR",
-          "sourceId": "bicycle-share-the-road",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ms-boy-scouts-of-america",
       "slug": "boy-scouts-of-america",
       "name": "Boy Scouts of America",
@@ -288,36 +230,6 @@
       ]
     },
     {
-      "id": "ms-children-s-advocacy-center",
-      "slug": "children-s-advocacy-center",
-      "name": "Children’s Advocacy Center",
-      "displayName": "Children’s Advocacy Center",
-      "baseName": "Children’s Advocacy Center",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/mississippi/plates/children-s-advocacy-center.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Children%252527s%252520Advocacy_jpg.jpg.webp?itok=o4jrw-UT"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Mississippi DOR",
-          "sourceId": "children-s-advocacy-center",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ms-delta-sigma-theta",
       "slug": "delta-sigma-theta",
       "name": "Delta Sigma Theta",
@@ -342,71 +254,6 @@
         {
           "source": "Mississippi DOR",
           "sourceId": "delta-sigma-theta",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ms-dental-hygienist",
-      "slug": "dental-hygienist",
-      "name": "Dental Hygienist",
-      "displayName": "Dental Hygienist",
-      "baseName": "Dental Hygienist",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/mississippi/plates/dental-hygienist.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Dental%252520Hygienist_jpg.jpg.webp?itok=JWlNy1tk"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "dental",
-        "dentist",
-        "hygienist",
-        "teeth"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Mississippi DOR",
-          "sourceId": "dental-hygienist",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ms-diocese-of-biloxi",
-      "slug": "diocese-of-biloxi",
-      "name": "Diocese of Biloxi",
-      "displayName": "Diocese of Biloxi",
-      "baseName": "Diocese of Biloxi",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/mississippi/plates/diocese-of-biloxi.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Screenshot%25202023-08-31%2520154222.jpg.webp?itok=fTFtk03T"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Mississippi DOR",
-          "sourceId": "diocese-of-biloxi",
           "versionId": null,
           "value": null
         }
@@ -557,6 +404,38 @@
         {
           "source": "Mississippi DOR",
           "sourceId": "heroines-of-jericho",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ms-children-s-advocacy-center",
+      "slug": "children-s-advocacy-center",
+      "name": "I Protect Children",
+      "displayName": "I Protect Children",
+      "baseName": "Children’s Advocacy Center",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic & Causes",
+      "image": {
+        "path": "state-packs/mississippi/plates/children-s-advocacy-center.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Children%252527s%252520Advocacy_jpg.jpg.webp?itok=o4jrw-UT"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "advocacy"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Mississippi DOR",
+          "sourceId": "children-s-advocacy-center",
           "versionId": null,
           "value": null
         }
@@ -1096,6 +975,81 @@
       ]
     },
     {
+      "id": "ms-dental-hygienist",
+      "slug": "dental-hygienist",
+      "name": "Promote Dental Health",
+      "displayName": "Promote Dental Health",
+      "baseName": "Dental Hygienist",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic & Causes",
+      "image": {
+        "path": "state-packs/mississippi/plates/dental-hygienist.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Dental%252520Hygienist_jpg.jpg.webp?itok=JWlNy1tk"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "dental",
+        "dentist",
+        "hygienist",
+        "teeth",
+        "tooth",
+        "oral"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Mississippi DOR",
+          "sourceId": "dental-hygienist",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ms-diocese-of-biloxi",
+      "slug": "diocese-of-biloxi",
+      "name": "Protect Life",
+      "displayName": "Protect Life",
+      "baseName": "Diocese of Biloxi",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic & Causes",
+      "image": {
+        "path": "state-packs/mississippi/plates/diocese-of-biloxi.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Screenshot%25202023-08-31%2520154222.jpg.webp?itok=fTFtk03T"
+      },
+      "sponsor": "Diocese of Biloxi",
+      "notes": null,
+      "searchTerms": [
+        "protect life",
+        "madonna",
+        "mary",
+        "jesus",
+        "mother",
+        "child",
+        "catholic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Mississippi DOR",
+          "sourceId": "diocese-of-biloxi",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
       "id": "ms-rotary-international",
       "slug": "rotary-international",
       "name": "Rotary International",
@@ -1120,6 +1074,42 @@
         {
           "source": "Mississippi DOR",
           "sourceId": "rotary-international",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ms-bicycle-share-the-road",
+      "slug": "bicycle-share-the-road",
+      "name": "Share the Road",
+      "displayName": "Share the Road",
+      "baseName": "Bicycle Share the Road",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic & Causes",
+      "image": {
+        "path": "state-packs/mississippi/plates/bicycle-share-the-road.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Bicycle%252520share%252520the%252520road_jpg.jpg.webp?itok=zH6QJg5a"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "bicycle",
+        "cycle",
+        "bike",
+        "cycling",
+        "bicycling"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Mississippi DOR",
+          "sourceId": "bicycle-share-the-road",
           "versionId": null,
           "value": null
         }
@@ -8246,6 +8236,36 @@
         {
           "source": "Mississippi DOR",
           "sourceId": "blackout-pickup",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ms-disabled",
+      "slug": "disabled",
+      "name": "Disabled",
+      "displayName": "Disabled",
+      "baseName": "Disabled",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard Plates",
+      "image": {
+        "path": "state-packs/mississippi/plates/disabled.webp",
+        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Disabled.png.webp?itok=dh4z1ysu"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Mississippi DOR",
+          "sourceId": "disabled",
           "versionId": null,
           "value": null
         }
