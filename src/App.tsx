@@ -246,7 +246,7 @@ function App() {
     () => new Set()
   );
   /* Help/Settings tab state moved to their respective page components */
-  const [selectedCategoryFilter, setSelectedCategoryFilter] = useState<PlateCategory | null>(null);
+  const [selectedCategoryFilters, setSelectedCategoryFilters] = useState<Set<PlateCategory>>(new Set());
   const searchInputRef = useRef<HTMLInputElement | null>(null);
   const headerSentinelRef = useRef<HTMLDivElement | null>(null);
   const categorySwipe = useSwipeDismiss(() => setIsCategorySheetOpen(false));
@@ -483,12 +483,12 @@ function App() {
   );
   const filteredPlates = useMemo(
     () =>
-      selectedCategoryFilter === null
+      selectedCategoryFilters.size === 0
         ? visibilityAndSearchFilteredPlates
         : visibilityAndSearchFilteredPlates.filter(
-            (plate) => plate.category === selectedCategoryFilter
+            (plate) => selectedCategoryFilters.has(plate.category)
           ),
-    [selectedCategoryFilter, visibilityAndSearchFilteredPlates]
+    [selectedCategoryFilters, visibilityAndSearchFilteredPlates]
   );
   const filteredGroups = useMemo(() => {
     if (arrangement === "category") {
@@ -684,13 +684,13 @@ function App() {
   );
 
   useEffect(() => {
-    if (
-      selectedCategoryFilter !== null &&
-      !categoryFilterOptions.some(({ category }) => category === selectedCategoryFilter)
-    ) {
-      setSelectedCategoryFilter(null);
+    if (selectedCategoryFilters.size === 0) return;
+    const validCategories = new Set(categoryFilterOptions.map(({ category }) => category));
+    const filtered = new Set([...selectedCategoryFilters].filter(c => validCategories.has(c)));
+    if (filtered.size !== selectedCategoryFilters.size) {
+      setSelectedCategoryFilters(filtered);
     }
-  }, [categoryFilterOptions, selectedCategoryFilter]);
+  }, [categoryFilterOptions, selectedCategoryFilters]);
 
   const previewVersion = previewPlate;
   // Removed unused activeBadgeProgressLabel
@@ -1153,7 +1153,11 @@ function App() {
                 className="control-bar__btn"
                 onClick={() => setIsCategorySheetOpen(true)}
               >
-                {selectedCategoryFilter ?? "All Categories"}
+                {selectedCategoryFilters.size === 0
+                  ? "All Categories"
+                  : selectedCategoryFilters.size === 1
+                    ? [...selectedCategoryFilters][0]
+                    : `${selectedCategoryFilters.size} Categories`}
               </button>
             ) : null}
           </div>
@@ -1208,8 +1212,8 @@ function App() {
                 <h2>
                   {arrangement === "category"
                     ? category
-                    : selectedCategoryFilter
-                      ? `${selectedCategoryFilter} ${arrangement === "az" ? "A-Z" : "Z-A"}`
+                    : selectedCategoryFilters.size > 0
+                      ? `${selectedCategoryFilters.size === 1 ? [...selectedCategoryFilters][0] : "Selected"} ${arrangement === "az" ? "A-Z" : "Z-A"}`
                       : arrangement === "az"
                         ? "All Plates A-Z"
                         : "All Plates Z-A"}
@@ -1393,29 +1397,36 @@ function App() {
         <div className="sheet-backdrop" role="presentation" onClick={() => setIsCategorySheetOpen(false)}>
           <div className="sheet" ref={categorySwipe.sheetRef} onClick={(e) => e.stopPropagation()}>
             <div className="sheet__header" {...categorySwipe.grabberProps} style={{ touchAction: "none" }}>
-              <h3 className="sheet__title">Category</h3>
+              <h3 className="sheet__title">Categories</h3>
               <button type="button" className="sheet__close" onClick={() => setIsCategorySheetOpen(false)} aria-label="Close"><Icon name="close" size={14} /></button>
             </div>
             <div className="sheet__body">
               <button
                 type="button"
-                className={`sheet__option ${selectedCategoryFilter === null ? "sheet__option--active" : ""}`}
-                onClick={() => { setSelectedCategoryFilter(null); setIsCategorySheetOpen(false); }}
+                className={`sheet__option ${selectedCategoryFilters.size === 0 ? "sheet__option--active" : ""}`}
+                onClick={() => setSelectedCategoryFilters(new Set())}
               >
-                <span className="sheet__radio" aria-hidden="true" />
+                <input type="checkbox" checked={selectedCategoryFilters.size === 0} readOnly style={{ pointerEvents: "none" }} />
                 All Categories
               </button>
-              {categoryFilterOptions.map(({ category }) => (
-                <button
-                  key={category}
-                  type="button"
-                  className={`sheet__option ${selectedCategoryFilter === category ? "sheet__option--active" : ""}`}
-                  onClick={() => { setSelectedCategoryFilter(category); setIsCategorySheetOpen(false); }}
-                >
-                  <span className="sheet__radio" aria-hidden="true" />
-                  {category}
-                </button>
-              ))}
+              {categoryFilterOptions.map(({ category }) => {
+                const isChecked = selectedCategoryFilters.has(category);
+                return (
+                  <button
+                    key={category}
+                    type="button"
+                    className={`sheet__option ${isChecked ? "sheet__option--active" : ""}`}
+                    onClick={() => {
+                      const next = new Set(selectedCategoryFilters);
+                      if (isChecked) { next.delete(category); } else { next.add(category); }
+                      setSelectedCategoryFilters(next);
+                    }}
+                  >
+                    <input type="checkbox" checked={isChecked} readOnly style={{ pointerEvents: "none" }} />
+                    {category}
+                  </button>
+                );
+              })}
             </div>
           </div>
         </div>

@@ -586,6 +586,13 @@ select {
   -webkit-tap-highlight-color: transparent;
 }
 
+.sheet__option input[type="checkbox"] {
+  flex-shrink: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: #3b82f6;
+}
+
 .sheet__option:last-child {
   border-bottom: none;
 }
