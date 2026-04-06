@@ -66,7 +66,12 @@ tbody tr:hover { background: #f9fafb; }
 tbody tr.dirty { background: var(--green-soft); }
 td { padding: 6px 8px; vertical-align: middle; }
 td.img-cell { width: 100px; }
-td.img-cell img { display: block; width: 96px; height: auto; border-radius: 3px; border: 1px solid #e5e7eb; }
+td.img-cell img { display: block; width: 96px; height: auto; border-radius: 3px; border: 1px solid #e5e7eb; cursor: pointer; transition: transform 0.15s; }
+td.img-cell img:hover { transform: scale(1.05); }
+
+/* Lightbox */
+.lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 200; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.lightbox img { max-width: 90vw; max-height: 85vh; border-radius: 6px; box-shadow: 0 8px 40px rgba(0,0,0,0.4); background: #fff; }
 td.name-cell { min-width: 200px; }
 td.cat-cell { min-width: 160px; }
 td.search-cell { min-width: 220px; }
@@ -293,7 +298,7 @@ function renderTable() {
 
     html += '<tr class="' + (isDirty ? 'dirty' : '') + '" data-id="' + plate.id + '">';
     html += '<td><input type="checkbox" ' + (isSelected ? 'checked' : '') + ' onchange="toggleSelect(\'' + plate.id + '\', this.checked)"></td>';
-    html += '<td class="img-cell">' + (imgSrc ? '<img src="' + imgSrc + '" loading="lazy" onerror="this.style.display=\'none\'">' : '') + '</td>';
+    html += '<td class="img-cell">' + (imgSrc ? '<img src="' + imgSrc + '" loading="lazy" onerror="this.style.display=\'none\'" onclick="openLightbox(this.src)">' : '') + '</td>';
     html += '<td class="name-cell"><input class="editable" value="' + escHtml(plate.name) + '" onchange="editField(\'' + plate.id + '\', \'name\', this.value)"></td>';
     html += '<td class="cat-cell"><select class="editable" onchange="editField(\'' + plate.id + '\', \'category\', this.value)">';
     CATEGORIES.forEach(c => { html += '<option value="' + c + '" ' + (c === plate.category ? 'selected' : '') + '>' + c + '</option>'; });
@@ -443,6 +448,17 @@ function showDiff() {
 }
 
 function closeModal() { document.getElementById('modalContainer').innerHTML = ''; }
+
+function openLightbox(src) {
+  const el = document.createElement('div');
+  el.className = 'lightbox';
+  el.onclick = () => el.remove();
+  el.innerHTML = '<img src="' + src + '">';
+  document.body.appendChild(el);
+}
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') { document.querySelector('.lightbox')?.remove(); closeModal(); }
+});
 
 function saveFile() {
   masterData.plates.sort((a, b) => a.category.localeCompare(b.category) || a.name.localeCompare(b.name));
