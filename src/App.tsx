@@ -695,7 +695,12 @@ function App() {
   const previewVersion = previewPlate;
   // Removed unused activeBadgeProgressLabel
   const activeBadgeSupportingDiscoveries = activeBadgeDetail
-    ? getBadgeSupportingDiscoveries(activeBadgeDetail)
+    ? (() => {
+        const all = getBadgeSupportingDiscoveries(activeBadgeDetail);
+        // For threshold-1 badges, show only one supporting sighting
+        if (activeBadgeDetail.progressTarget === 1 && all.length > 1) return all.slice(0, 1);
+        return all;
+      })()
     : [];
 
   async function handleTogglePlate(plate: Plate, isFound: boolean) {
@@ -1577,10 +1582,10 @@ function App() {
                 <span className="preview-sheet__label">Status</span>
                 <strong>{activeBadgeDetail.earned ? "Earned" : "Not yet"}</strong>
               </div>
-              {activeBadgeDetail.progressTarget ? (
+              {activeBadgeDetail.progressTarget && activeBadgeDetail.progressTarget > 1 ? (
                 <div className="preview-sheet__row">
                   <span className="preview-sheet__label">Progress</span>
-                  <strong>{activeBadgeDetail.progressCurrent ?? 0} / {activeBadgeDetail.progressTarget}</strong>
+                  <strong>{Math.min(activeBadgeDetail.progressCurrent ?? 0, activeBadgeDetail.progressTarget)} / {activeBadgeDetail.progressTarget}</strong>
                 </div>
               ) : null}
               <p className="preview-sheet__notes">{activeBadgeDetail.description}</p>

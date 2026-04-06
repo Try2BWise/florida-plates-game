@@ -218,7 +218,7 @@ export function AchievementsPage({
                       </div>
                       <span className="badge-medal-label">{badge.name}</span>
                       <span className="badge-progress-indicator">
-                        {badge.progressTarget ? `${badge.progressCurrent}/${badge.progressTarget}` : `${badge.progressCurrent}`}
+                        {badge.progressTarget ? `${Math.min(badge.progressCurrent ?? 0, badge.progressTarget)}/${badge.progressTarget}` : `${badge.progressCurrent}`}
                       </span>
                     </div>
                   );
