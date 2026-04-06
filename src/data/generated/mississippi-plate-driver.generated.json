@@ -7,8 +7,8 @@
     {
       "id": "ms-4-h-club",
       "slug": "4-h-club",
-      "name": "4 - H Club",
-      "displayName": "4 - H Club",
+      "name": "4-H Club",
+      "displayName": "4-H Club",
       "baseName": "4 - H Club",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1499,7 +1499,9 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "magnolia"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -1604,7 +1606,12 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "promise",
+        "hope",
+        "cure",
+        "pink ribbon"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -1669,15 +1676,17 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "get screened"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ms-diabetic",
       "slug": "diabetic",
-      "name": "Diabetic",
-      "displayName": "Diabetic",
+      "name": "Defeat Diabetes",
+      "displayName": "Defeat Diabetes",
       "baseName": "Diabetic",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1800,7 +1809,9 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "breakthrough t1d"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -1821,15 +1832,17 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "type 1"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ms-le-bonheur-children-s-hospital",
       "slug": "le-bonheur-children-s-hospital",
-      "name": "Le Bonheur Children’s Hospital",
-      "displayName": "Le Bonheur Children’s Hospital",
+      "name": "Le Bonheur Children's Hospital",
+      "displayName": "Le Bonheur Children's Hospital",
       "baseName": "Le Bonheur Children’s Hospital",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1888,7 +1901,10 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "donate",
+        "life"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -1920,8 +1936,8 @@
     {
       "id": "ms-st-jude-children-s-hospital",
       "slug": "st-jude-children-s-hospital",
-      "name": "St Jude Children’s Hospital",
-      "displayName": "St Jude Children’s Hospital",
+      "name": "St Jude Children's Hospital",
+      "displayName": "St Jude Children's Hospital",
       "baseName": "St Jude Children’s Hospital",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1934,7 +1950,11 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "memphis",
+        "danny thomas",
+        "cancer"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -2025,8 +2045,8 @@
     {
       "id": "ms-historic-natchez-city-of-natchez",
       "slug": "historic-natchez-city-of-natchez",
-      "name": "Historic Natchez/City of Natchez",
-      "displayName": "Historic Natchez/City of Natchez",
+      "name": "Historic Natchez",
+      "displayName": "Historic Natchez",
       "baseName": "Historic Natchez/City of Natchez",
       "variantLabel": null,
       "plateType": "passenger",
@@ -2039,7 +2059,9 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "city"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "state": "Tennessee",
-  "generatedDate": "2026-04-05",
+  "generatedDate": "2026-04-06",
   "description": "Tennessee specialty license plates from the Department of Revenue",
   "sourceFiles": [
     "https://www.tn.gov/revenue/title-and-registration/license-plates/available-license-plates.html"
@@ -338,6 +338,36 @@
       ]
     },
     {
+      "id": "tn-tennessee-association-of-realtors",
+      "slug": "tennessee-association-of-realtors",
+      "name": "Celebrating Homeownership",
+      "displayName": "Celebrating Homeownership",
+      "baseName": "Tennessee Association of Realtors",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic & Causes",
+      "image": {
+        "path": "state-packs/tennessee/plates/tennessee-association-of-realtors.jpg",
+        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Association%20of%20Realtors.jpg"
+      },
+      "sponsor": "Tennessee Association of Realtors",
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Tennessee DOR",
+          "sourceId": "tennessee-association-of-realtors",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
       "id": "tn-christian-brothers",
       "slug": "christian-brothers",
       "name": "Christian Brothers",
@@ -482,6 +512,36 @@
         {
           "source": "Tennessee DOR",
           "sourceId": "coast-guard-medal",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "tn-tennesseans-for-the-arts",
+      "slug": "tennesseans-for-the-arts",
+      "name": "Creating the Future",
+      "displayName": "Creating the Future",
+      "baseName": "Tennesseans for the Arts",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic & Causes",
+      "image": {
+        "path": "state-packs/tennessee/plates/tennesseans-for-the-arts.jpg",
+        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennesseans%20for%20the%20Arts.jpg"
+      },
+      "sponsor": "Tennesseans for the Arts",
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Tennessee DOR",
+          "sourceId": "tennesseans-for-the-arts",
           "versionId": null,
           "value": null
         }
@@ -652,7 +712,7 @@
         "path": "state-packs/tennessee/plates/elvis-presley-memorial-trauma-center.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Elvis%20Presley%20Memorial%20Trauma%20Center.jpg"
       },
-      "sponsor": null,
+      "sponsor": "Regional Medical Center at Memphis",
       "notes": null,
       "searchTerms": [],
       "variantOf": null,
@@ -730,8 +790,8 @@
     {
       "id": "tn-explore-tn",
       "slug": "explore-tn",
-      "name": "Explore TN",
-      "displayName": "Explore TN",
+      "name": "Explore Tennessee",
+      "displayName": "Explore Tennessee",
       "baseName": "Explore TN",
       "variantLabel": null,
       "plateType": "passenger",
@@ -744,7 +804,13 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "jeep",
+        "offroad",
+        "off-road",
+        "offroading",
+        "off-roading"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -752,66 +818,6 @@
         {
           "source": "Tennessee DOR",
           "sourceId": "explore-tn",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "tn-florida",
-      "slug": "florida",
-      "name": "Florida",
-      "displayName": "Florida",
-      "baseName": "Florida",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/tennessee/plates/florida.jpg",
-        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Florida.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Tennessee DOR",
-          "sourceId": "florida",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "tn-florida-state",
-      "slug": "florida-state",
-      "name": "Florida State",
-      "displayName": "Florida State",
-      "baseName": "Florida State",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/tennessee/plates/florida-state.jpg",
-        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Florida%20State.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Tennessee DOR",
-          "sourceId": "florida-state",
           "versionId": null,
           "value": null
         }
@@ -842,66 +848,6 @@
         {
           "source": "Tennessee DOR",
           "sourceId": "friends-of-shelby-bottoms",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "tn-georgia",
-      "slug": "georgia",
-      "name": "Georgia",
-      "displayName": "Georgia",
-      "baseName": "Georgia",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/tennessee/plates/georgia.jpg",
-        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Georgia.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Tennessee DOR",
-          "sourceId": "georgia",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "tn-georgia-tech",
-      "slug": "georgia-tech",
-      "name": "Georgia Tech",
-      "displayName": "Georgia Tech",
-      "baseName": "Georgia Tech",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/tennessee/plates/georgia-tech.jpg",
-        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Georgia%20Tech.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Tennessee DOR",
-          "sourceId": "georgia-tech",
           "versionId": null,
           "value": null
         }
@@ -1088,36 +1034,6 @@
       ]
     },
     {
-      "id": "tn-kentucky",
-      "slug": "kentucky",
-      "name": "Kentucky",
-      "displayName": "Kentucky",
-      "baseName": "Kentucky",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/tennessee/plates/kentucky.jpg",
-        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Kentucky.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Tennessee DOR",
-          "sourceId": "kentucky",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "tn-lineman-power-tennessee",
       "slug": "lineman-power-tennessee",
       "name": "Lineman Power Tennessee",
@@ -1208,36 +1124,6 @@
       ]
     },
     {
-      "id": "tn-mississippi",
-      "slug": "mississippi",
-      "name": "Mississippi",
-      "displayName": "Mississippi",
-      "baseName": "Mississippi",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/tennessee/plates/mississippi.jpg",
-        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Mississippi.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Tennessee DOR",
-          "sourceId": "mississippi",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "tn-national-rifle-association",
       "slug": "national-rifle-association",
       "name": "National Rifle Association",
@@ -1254,7 +1140,9 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "nra"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1464,7 +1352,14 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "ut",
+        "basketball",
+        "women",
+        "woman",
+        "coach",
+        "volunteers"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1674,7 +1569,9 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "airborne"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1690,8 +1587,8 @@
     {
       "id": "tn-save-the-bees",
       "slug": "save-the-bees",
-      "name": "Save the Bees",
-      "displayName": "Save the Bees",
+      "name": "Save the Honey Bee",
+      "displayName": "Save the Honey Bee",
       "baseName": "Save the Bees",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1734,7 +1631,12 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "smoky",
+        "veterans",
+        "mountains",
+        "wounded"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1764,7 +1666,13 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "cycle",
+        "bicycle",
+        "cycling",
+        "bicycling",
+        "3 feet"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1802,66 +1710,6 @@
         {
           "source": "Tennessee DOR",
           "sourceId": "support-our-troops",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "tn-tennesseans-for-the-arts",
-      "slug": "tennesseans-for-the-arts",
-      "name": "Tennesseans for the Arts",
-      "displayName": "Tennesseans for the Arts",
-      "baseName": "Tennesseans for the Arts",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/tennessee/plates/tennesseans-for-the-arts.jpg",
-        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennesseans%20for%20the%20Arts.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Tennessee DOR",
-          "sourceId": "tennesseans-for-the-arts",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "tn-tennessee-association-of-realtors",
-      "slug": "tennessee-association-of-realtors",
-      "name": "Tennessee Association of Realtors",
-      "displayName": "Tennessee Association of Realtors",
-      "baseName": "Tennessee Association of Realtors",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/tennessee/plates/tennessee-association-of-realtors.jpg",
-        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Association%20of%20Realtors.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Tennessee DOR",
-          "sourceId": "tennessee-association-of-realtors",
           "versionId": null,
           "value": null
         }
@@ -1922,36 +1770,6 @@
         {
           "source": "Tennessee DOR",
           "sourceId": "tennessee-tiger-haven",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "tn-tennessee-walking-horse",
-      "slug": "tennessee-walking-horse",
-      "name": "Tennessee Walking Horse",
-      "displayName": "Tennessee Walking Horse",
-      "baseName": "Tennessee Walking Horse",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/tennessee/plates/tennessee-walking-horse.jpg",
-        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Walking%20Horse.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Tennessee DOR",
-          "sourceId": "tennessee-walking-horse",
           "versionId": null,
           "value": null
         }
@@ -2132,6 +1950,36 @@
         {
           "source": "Tennessee DOR",
           "sourceId": "usta-tennessee",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "tn-tennessee-walking-horse",
+      "slug": "tennessee-walking-horse",
+      "name": "Walking Horse",
+      "displayName": "Walking Horse",
+      "baseName": "Tennessee Walking Horse",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic & Causes",
+      "image": {
+        "path": "state-packs/tennessee/plates/tennessee-walking-horse.jpg",
+        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Walking%20Horse.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Tennessee DOR",
+          "sourceId": "tennessee-walking-horse",
           "versionId": null,
           "value": null
         }
@@ -5198,6 +5046,39 @@
       ]
     },
     {
+      "id": "tn-florida-state",
+      "slug": "florida-state",
+      "name": "Florida State University",
+      "displayName": "Florida State University",
+      "baseName": "Florida State",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/tennessee/plates/florida-state.jpg",
+        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Florida%20State.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "seminoles",
+        "tallahassee"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Tennessee DOR",
+          "sourceId": "florida-state",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
       "id": "tn-freed-hardeman",
       "slug": "freed-hardeman",
       "name": "Freed-Hardeman",
@@ -5222,6 +5103,39 @@
         {
           "source": "Tennessee DOR",
           "sourceId": "freed-hardeman",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "tn-georgia-tech",
+      "slug": "georgia-tech",
+      "name": "Georgia Tech",
+      "displayName": "Georgia Tech",
+      "baseName": "Georgia Tech",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/tennessee/plates/georgia-tech.jpg",
+        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Georgia%20Tech.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ramblin",
+        "wreck"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Tennessee DOR",
+          "sourceId": "georgia-tech",
           "versionId": null,
           "value": null
         }
@@ -5648,6 +5562,40 @@
       ]
     },
     {
+      "id": "tn-mississippi",
+      "slug": "mississippi",
+      "name": "Ole Miss",
+      "displayName": "Ole Miss",
+      "baseName": "Mississippi",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/tennessee/plates/mississippi.jpg",
+        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Mississippi.jpg"
+      },
+      "sponsor": "University of Mississippi",
+      "notes": null,
+      "searchTerms": [
+        "oxford",
+        "hotty toddy",
+        "rebels"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Tennessee DOR",
+          "sourceId": "mississippi",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
       "id": "tn-penn-state-university",
       "slug": "penn-state-university",
       "name": "Penn State University",
@@ -6002,6 +5950,104 @@
         {
           "source": "Tennessee DOR",
           "sourceId": "union-university",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "tn-florida",
+      "slug": "florida",
+      "name": "University of Florida",
+      "displayName": "University of Florida",
+      "baseName": "Florida",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/tennessee/plates/florida.jpg",
+        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Florida.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "gators",
+        "gainesville"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Tennessee DOR",
+          "sourceId": "florida",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "tn-georgia",
+      "slug": "georgia",
+      "name": "University of Georgia",
+      "displayName": "University of Georgia",
+      "baseName": "Georgia",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/tennessee/plates/georgia.jpg",
+        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Georgia.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "bulldogs"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Tennessee DOR",
+          "sourceId": "georgia",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "tn-kentucky",
+      "slug": "kentucky",
+      "name": "University of Kentucky",
+      "displayName": "University of Kentucky",
+      "baseName": "Kentucky",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/tennessee/plates/kentucky.jpg",
+        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Kentucky.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "wildcats",
+        "ky"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Tennessee DOR",
+          "sourceId": "kentucky",
           "versionId": null,
           "value": null
         }
