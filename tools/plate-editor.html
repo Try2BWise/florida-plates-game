@@ -55,9 +55,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI"
 .search-box:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
 
 /* Table */
-.table-wrap { overflow-x: auto; padding: 0 20px 80px; }
+.table-wrap { overflow-x: auto; padding: 0 20px 80px; overflow-y: visible; }
 table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
-thead th { position: sticky; top: 0; background: var(--surface); padding: 10px 8px; text-align: left; font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); border-bottom: 2px solid var(--border); cursor: pointer; user-select: none; white-space: nowrap; z-index: 2; }
+thead th { position: sticky; top: var(--header-offset, 0px); background: var(--surface); padding: 10px 8px; text-align: left; font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); border-bottom: 2px solid var(--border); cursor: pointer; user-select: none; white-space: nowrap; z-index: 2; box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
 thead th:hover { color: var(--text); }
 thead th.sorted { color: var(--accent); }
 thead th .arrow { margin-left: 4px; font-size: 0.65rem; }
@@ -228,6 +228,17 @@ function renderAll() {
   renderStats();
   renderTable();
   updateChangeCount();
+  updateHeaderOffset();
+}
+
+function updateHeaderOffset() {
+  requestAnimationFrame(() => {
+    let offset = 0;
+    document.querySelectorAll('.topbar, #statsBar, #bulkBar, #nextSteps').forEach(el => {
+      if (el.style.display !== 'none' && el.offsetHeight > 0) offset += el.offsetHeight;
+    });
+    document.documentElement.style.setProperty('--header-offset', offset + 'px');
+  });
 }
 
 function renderStats() {
