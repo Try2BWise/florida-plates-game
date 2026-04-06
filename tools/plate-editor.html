@@ -22,9 +22,14 @@
 * { box-sizing: border-box; margin: 0; }
 body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; font-size: 14px; }
 
+/* Layout: fixed header + scrollable body */
+.app-header { position: fixed; top: 0; left: 0; right: 0; z-index: 20; background: var(--surface); box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.app-body { padding-top: var(--header-height, 120px); }
+
 /* Top bar */
-.topbar { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 12px; padding: 10px 20px; background: var(--surface); border-bottom: 1px solid var(--border); flex-wrap: wrap; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.topbar { display: flex; align-items: center; gap: 12px; padding: 10px 20px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
 .topbar h1 { font-size: 1rem; font-weight: 700; white-space: nowrap; }
+.topbar img { display: block; }
 .topbar .spacer { flex: 1; }
 .btn { padding: 6px 14px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 0.8rem; font-weight: 500; cursor: pointer; white-space: nowrap; background: var(--surface); color: var(--text); }
 .btn:hover { background: var(--surface2); }
@@ -55,9 +60,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI"
 .search-box:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
 
 /* Table */
-.table-wrap { overflow-x: auto; padding: 0 20px 80px; overflow-y: visible; }
+.table-wrap { overflow-x: auto; padding: 0 20px 80px; }
 table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
-thead th { position: sticky; top: var(--header-offset, 0px); background: var(--surface); padding: 10px 8px; text-align: left; font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); border-bottom: 2px solid var(--border); cursor: pointer; user-select: none; white-space: nowrap; z-index: 2; box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+thead th { background: var(--surface2); padding: 10px 8px; text-align: left; font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); border-bottom: 2px solid var(--border); cursor: pointer; user-select: none; white-space: nowrap; }
 thead th:hover { color: var(--text); }
 thead th.sorted { color: var(--accent); }
 thead th .arrow { margin-left: 4px; font-size: 0.65rem; }
@@ -123,7 +128,9 @@ input[type="checkbox"] { accent-color: var(--accent); }
 </head>
 <body>
 
+<div class="app-header" id="appHeader">
 <div class="topbar">
+  <img src="../public/state-pl8-logo.png" alt="Every PL8" style="height:32px; width:auto; margin-right:4px;">
   <h1>Plate Editor</h1>
   <label class="file-label">
     Open Master JSON
@@ -151,7 +158,9 @@ input[type="checkbox"] { accent-color: var(--accent); }
     <option value="">Choose category...</option>
   </select>
 </div>
+</div><!-- end app-header -->
 
+<div class="app-body" id="appBody">
 <div id="nextSteps"></div>
 
 <div id="content">
@@ -233,11 +242,10 @@ function renderAll() {
 
 function updateHeaderOffset() {
   requestAnimationFrame(() => {
-    let offset = 0;
-    document.querySelectorAll('.topbar, #statsBar, #bulkBar, #nextSteps').forEach(el => {
-      if (el.style.display !== 'none' && el.offsetHeight > 0) offset += el.offsetHeight;
-    });
-    document.documentElement.style.setProperty('--header-offset', offset + 'px');
+    const header = document.getElementById('appHeader');
+    if (header) {
+      document.documentElement.style.setProperty('--header-height', header.offsetHeight + 'px');
+    }
   });
 }
 
