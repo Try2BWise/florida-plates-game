@@ -30,6 +30,13 @@
   height: 72px;
   margin-bottom: 0.25rem;
 }
+
+/* Scale badge icons to fit inside the circular frame with padding */
+.badge-frame .badge-medal-img {
+  width: 62% !important;
+  height: 62% !important;
+  margin-bottom: 0;
+}
 .badge-medal-img--dimmed {
   opacity: 0.38;
   filter: grayscale(80%) brightness(0.7);
