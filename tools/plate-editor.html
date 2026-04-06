@@ -70,8 +70,10 @@ td.img-cell img { display: block; width: 96px; height: auto; border-radius: 3px;
 td.img-cell img:hover { transform: scale(1.05); }
 
 /* Lightbox */
-.lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 200; display: flex; align-items: center; justify-content: center; cursor: pointer; }
-.lightbox img { max-width: 90vw; max-height: 85vh; border-radius: 6px; box-shadow: 0 8px 40px rgba(0,0,0,0.4); background: #fff; }
+.lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 200; display: flex; align-items: center; justify-content: center; cursor: pointer; overflow: auto; }
+.lightbox img { background: #fff; border-radius: 6px; box-shadow: 0 8px 40px rgba(0,0,0,0.4); image-rendering: auto; cursor: zoom-in; transition: width 0.2s ease; }
+.lightbox img.zoomed { cursor: zoom-out; }
+.lightbox .zoom-hint { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.7); color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 0.78rem; pointer-events: none; }
 td.name-cell { min-width: 200px; }
 td.cat-cell { min-width: 160px; }
 td.search-cell { min-width: 220px; }
@@ -452,8 +454,29 @@ function closeModal() { document.getElementById('modalContainer').innerHTML = ''
 function openLightbox(src) {
   const el = document.createElement('div');
   el.className = 'lightbox';
+  const img = document.createElement('img');
+  img.src = src;
+  img.style.width = 'min(600px, 80vw)';
+  let zoomed = false;
+  img.onclick = (e) => {
+    e.stopPropagation();
+    zoomed = !zoomed;
+    if (zoomed) {
+      img.style.width = 'min(1200px, 95vw)';
+      img.classList.add('zoomed');
+      hint.textContent = 'Click image to zoom out \u00b7 Click outside to close';
+    } else {
+      img.style.width = 'min(600px, 80vw)';
+      img.classList.remove('zoomed');
+      hint.textContent = 'Click image to zoom in \u00b7 Click outside to close';
+    }
+  };
   el.onclick = () => el.remove();
-  el.innerHTML = '<img src="' + src + '">';
+  const hint = document.createElement('div');
+  hint.className = 'zoom-hint';
+  hint.textContent = 'Click image to zoom in \u00b7 Click outside to close';
+  el.appendChild(img);
+  el.appendChild(hint);
   document.body.appendChild(el);
 }
 document.addEventListener('keydown', (e) => {
