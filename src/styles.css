@@ -141,10 +141,40 @@ select {
 }
 
 .app-shell {
+  position: relative;
   width: min(100%, var(--shell-width));
   margin: 0 auto;
   padding: 1.2rem 1.15rem
     calc(8.2rem + env(safe-area-inset-bottom, 0px));
+}
+
+/* ── State watermark ── */
+.state-watermark {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+  width: 65vw;
+  max-width: 24rem;
+  height: 65vw;
+  max-height: 24rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.state-watermark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.04;
+}
+
+:root[data-theme="dark"] .state-watermark img {
+  filter: invert(1);
+  opacity: 0.05;
 }
 
 .header-sentinel {
@@ -160,7 +190,9 @@ select {
   gap: 0.65rem;
   padding: calc(0.75rem + env(safe-area-inset-top, 0px)) 0 0.8rem;
   margin-bottom: 0.75rem;
-  background: var(--page-bg);
+  background: color-mix(in srgb, var(--page-bg) 78%, transparent);
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
 }
 
 /* ── Compact header — hide filter/sort row ── */
@@ -174,20 +206,10 @@ select {
 
 .app-header__top {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr;
   grid-template-rows: auto auto;
   gap: 0 0.75rem;
   align-items: center;
-}
-
-.app-header__state-outline {
-  grid-row: 1 / -1;
-  grid-column: 3;
-  width: 2.4rem;
-  height: 2.4rem;
-  object-fit: contain;
-  opacity: 0.18;
-  justify-self: end;
 }
 
 .app-header__logo-btn,
@@ -859,11 +881,14 @@ select {
   gap: 0.5rem;
   align-items: center;
   width: 100%;
-  padding: 0.72rem 0.2rem;
+  padding: 0.72rem 0.5rem;
+  margin: 0 -0.5rem;
   border: none;
   border-bottom: 1px solid var(--card-border);
-  border-radius: 0;
-  background: transparent;
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, var(--page-bg) 72%, transparent);
+  backdrop-filter: blur(16px) saturate(1.4);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
   box-shadow: none;
   color: inherit;
   text-align: left;
@@ -2054,6 +2079,9 @@ select {
   gap: 0.5rem;
   padding: calc(2rem + env(safe-area-inset-top, 0px)) 1.5rem 1.5rem;
   text-align: center;
+  background: color-mix(in srgb, var(--page-bg) 80%, transparent);
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
 }
 
 .state-picker__logo {
@@ -2096,7 +2124,9 @@ select {
   padding: 1rem 1.25rem;
   border: 1px solid var(--card-border);
   border-radius: 0.75rem;
-  background: var(--surface);
+  background: color-mix(in srgb, var(--surface) 65%, transparent);
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
   color: var(--text);
   text-align: left;
   cursor: pointer;

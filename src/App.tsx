@@ -1086,6 +1086,17 @@ function App() {
 
   return (
     <div className="app-shell">
+      {(() => {
+        const abbr = stateRegistry.find(s => s.id === activeGame.id)?.abbreviation;
+        return abbr ? (
+          <div className="state-watermark" aria-hidden="true">
+            <img
+              src={`${import.meta.env.BASE_URL}state-outlines/${abbr}.svg`}
+              alt=""
+            />
+          </div>
+        ) : null;
+      })()}
       {activeView === "home" ? (
       <>
       <div ref={headerSentinelRef} className="header-sentinel" aria-hidden="true" />
@@ -1126,17 +1137,6 @@ function App() {
               <span className="app-header__kpi-context">of {evaluatedBadges.length} badges</span>
             </button>
           </div>
-          {(() => {
-            const abbr = stateRegistry.find(s => s.id === activeGame.id)?.abbreviation;
-            return abbr ? (
-              <img
-                className="app-header__state-outline"
-                src={`${import.meta.env.BASE_URL}state-outlines/${abbr}.svg`}
-                alt=""
-                aria-hidden="true"
-              />
-            ) : null;
-          })()}
         </div>
         <div className="control-panel">
           <div className="control-bar__search-row">
