@@ -14,6 +14,7 @@ import {
   activeMixedBagCategories,
   activePanhandleScoutCounties
 } from "./games/activeGame";
+import { stateRegistry } from "./games/stateRegistry";
 import { PlateCard } from "./components/PlateCard";
 import { groupedPlates, plates } from "./data/plates";
 import { buildInfo } from "./generated/buildInfo";
@@ -1125,6 +1126,17 @@ function App() {
               <span className="app-header__kpi-context">of {evaluatedBadges.length} badges</span>
             </button>
           </div>
+          {(() => {
+            const abbr = stateRegistry.find(s => s.id === activeGame.id)?.abbreviation;
+            return abbr ? (
+              <img
+                className="app-header__state-outline"
+                src={`${import.meta.env.BASE_URL}state-outlines/${abbr}.svg`}
+                alt=""
+                aria-hidden="true"
+              />
+            ) : null;
+          })()}
         </div>
         <div className="control-panel">
           <div className="control-bar__search-row">
