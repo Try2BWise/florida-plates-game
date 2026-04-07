@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedDate": "2026-04-06",
+  "generatedDate": "2026-04-07",
   "generatedFrom": "src/data/arkansas-plate-master.json",
-  "plateCount": 131,
+  "plateCount": 130,
   "plates": [
     {
       "id": "ar-amateur-radio-license-plate",
@@ -2226,27 +2226,6 @@
       },
       "sponsor": null,
       "notes": "Special license plates for retired fire fighters.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-persons-with-disabilities-placard",
-      "slug": "persons-with-disabilities-placard",
-      "name": "Persons With Disabilities Placard",
-      "displayName": "Persons With Disabilities Placard",
-      "baseName": "Persons With Disabilities Placard",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Special Use",
-      "image": {
-        "path": "state-packs/arkansas/plates/persons-with-disabilities-placard.jpg",
-        "remoteUrl": null
-      },
-      "sponsor": null,
-      "notes": "Temporary and permanent placards for qualified drivers with disabilities.",
       "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []

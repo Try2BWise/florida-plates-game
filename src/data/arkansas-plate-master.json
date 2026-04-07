@@ -3188,36 +3188,6 @@
       ]
     },
     {
-      "id": "ar-persons-with-disabilities-placard",
-      "slug": "persons-with-disabilities-placard",
-      "name": "Persons With Disabilities Placard",
-      "displayName": "Persons With Disabilities Placard",
-      "baseName": "Persons With Disabilities Placard",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Special Use",
-      "image": {
-        "path": "state-packs/arkansas/plates/persons-with-disabilities-placard.jpg",
-        "remoteUrl": null
-      },
-      "sponsor": null,
-      "notes": "Temporary and permanent placards for qualified drivers with disabilities.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Arkansas DFA",
-          "sourceId": "persons-with-disabilities-placard",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ar-ar-tennis-license-plate",
       "slug": "ar-tennis-license-plate",
       "name": "AR Tennis",

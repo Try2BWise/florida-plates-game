@@ -850,36 +850,6 @@
       ]
     },
     {
-      "id": "ms-national-rifle-association-trailer",
-      "slug": "national-rifle-association-trailer",
-      "name": "National Rifle Association - Trailer",
-      "displayName": "National Rifle Association - Trailer",
-      "baseName": "National Rifle Association - Trailer",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/mississippi/plates/national-rifle-association-trailer.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/National%252520Rifle%252520Association%252520Trailer_jpg.jpg.webp?itok=GLPGxkap"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Mississippi DOR",
-          "sourceId": "national-rifle-association-trailer",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ms-omega-psi-phi",
       "slug": "omega-psi-phi",
       "name": "Omega Psi Phi",

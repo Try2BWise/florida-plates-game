@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedDate": "2026-04-06",
+  "generatedDate": "2026-04-07",
   "generatedFrom": "src/data/mississippi-plate-master.json",
-  "plateCount": 306,
+  "plateCount": 305,
   "plates": [
     {
       "id": "ms-4-h-club",
@@ -596,27 +596,6 @@
       "image": {
         "path": "state-packs/mississippi/plates/national-rifle-association.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/National%252520Rifle%252520Association_jpg.jpg.webp?itok=IzCXRNPm"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ms-national-rifle-association-trailer",
-      "slug": "national-rifle-association-trailer",
-      "name": "National Rifle Association - Trailer",
-      "displayName": "National Rifle Association - Trailer",
-      "baseName": "National Rifle Association - Trailer",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/mississippi/plates/national-rifle-association-trailer.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/National%252520Rifle%252520Association%252520Trailer_jpg.jpg.webp?itok=GLPGxkap"
       },
       "sponsor": null,
       "notes": null,
