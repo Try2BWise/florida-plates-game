@@ -35,7 +35,12 @@ export function StatePicker({ onSelect }: StatePickerProps) {
             disabled={!state.available}
             onClick={() => handleSelect(state.id)}
           >
-            <span className="state-picker__abbr">{state.abbreviation}</span>
+            <img
+              className="state-picker__outline"
+              src={`${import.meta.env.BASE_URL}state-outlines/${state.abbreviation}.svg`}
+              alt=""
+              aria-hidden="true"
+            />
             <div className="state-picker__card-text">
               <span className="state-picker__name">{state.name}</span>
               <span className="state-picker__tagline">{state.tagline}</span>
