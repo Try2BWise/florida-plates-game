@@ -3038,36 +3038,6 @@
       ]
     },
     {
-      "id": "ar-arkansas-state-lodge-fraternal-order-of-police",
-      "slug": "arkansas-state-lodge-fraternal-order-of-police",
-      "name": "Arkansas State Lodge Fraternal Order of Police",
-      "displayName": "Arkansas State Lodge Fraternal Order of Police",
-      "baseName": "Arkansas State Lodge Fraternal Order of Police",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Public Service",
-      "image": {
-        "path": "state-packs/arkansas/plates/arkansas-state-lodge-fraternal-order-of-police.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/FraternalOrder_ofPolice.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Arkansas DFA",
-          "sourceId": "arkansas-state-lodge-fraternal-order-of-police",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ar-arkansas-state-lodge-fraternal-order-of-police-license-plate",
       "slug": "arkansas-state-lodge-fraternal-order-of-police-license-plate",
       "name": "Arkansas State Lodge Fraternal Order of Police",
@@ -3662,6 +3632,45 @@
         {
           "source": "Arkansas DFA",
           "sourceId": "southern-arkansas-university-license-plate",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ar-university-of-arkansas-hog-tag",
+      "slug": "university-of-arkansas-hog-tag",
+      "name": "University of Arkansas (Hog Tag)",
+      "displayName": "University of Arkansas (Hog Tag)",
+      "baseName": "University of Arkansas",
+      "variantLabel": "Hog Tag",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/arkansas/plates/university-of-arkansas-hog-tag.png",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Plate image courtesy of the Arkansas Alumni Association (arkansasalumni.org).",
+      "searchTerms": [
+        "razorback",
+        "razorbacks",
+        "hog",
+        "hog tag",
+        "woo pig",
+        "ua",
+        "uark",
+        "fayetteville"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arkansas Alumni Association",
+          "sourceId": "hog-tag",
           "versionId": null,
           "value": null
         }
