@@ -81,7 +81,18 @@ To set up from scratch:
 - This is a PWA, not an App Store or Play Store app.
 - Offline use works after the app shell and plate assets have loaded once.
 - If a home-screen install appears stuck on an older version, open the site in the browser so the service worker can update.
-- Specialty plate images belong to their respective state agencies and are displayed for identification and entertainment purposes under a fair use claim.
+
+## Acknowledgments
+
+- Plate images belong to their respective state motor vehicle agencies and are displayed for identification and entertainment purposes under a fair use claim.
+- Badge icons from [Microsoft Fluent Emoji](https://github.com/microsoft/fluentui-emoji) (MIT License).
+- State outline shapes from [StateFace](https://proicons.com/icon-collections/stateface) by ProPublica (MIT License).
+
+## License
+
+&copy; 2026 Gorilla Grin. All rights reserved.
+
+This project is source-available but not open source. You may view the code but may not copy, modify, or distribute it without permission.
 
 ## Project Docs
 

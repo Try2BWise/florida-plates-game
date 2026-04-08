@@ -133,13 +133,23 @@ export function SettingsPage({
             </div>
           </section>
           <section className="utility-card">
-            <h3>Icon credits</h3>
-            <p className="utility-card__meta">
+            <h3>Acknowledgments</h3>
+            <p className="utility-card__meta" style={{ marginBottom: 8 }}>
               Badge icons from{" "}
               <a className="app-footer__link" href="https://github.com/microsoft/fluentui-emoji" target="_blank" rel="noreferrer">
                 Microsoft Fluent Emoji
               </a>
               {" "}(MIT License).
+            </p>
+            <p className="utility-card__meta" style={{ marginBottom: 8 }}>
+              State outline shapes from{" "}
+              <a className="app-footer__link" href="https://proicons.com/icon-collections/stateface" target="_blank" rel="noreferrer">
+                StateFace
+              </a>
+              {" "}by ProPublica (MIT License).
+            </p>
+            <p className="utility-card__meta" style={{ marginBottom: 0 }}>
+              &copy; 2026 Gorilla Grin. All rights reserved.
             </p>
           </section>
         </div>
