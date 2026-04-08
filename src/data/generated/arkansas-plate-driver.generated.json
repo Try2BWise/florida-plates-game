@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "generatedDate": "2026-04-08",
   "generatedFrom": "src/data/arkansas-plate-master.json",
-  "plateCount": 130,
+  "plateCount": 129,
   "plates": [
     {
       "id": "ar-amateur-radio-license-plate",
@@ -19,9 +19,12 @@
         "path": "state-packs/arkansas/plates/amateur-radio-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/amateur_radio_lg.jpg"
       },
-      "sponsor": null,
+      "sponsor": "Issued to licensed HAM radio operators. Copy of Federal Communication Commission (FCC) license required.",
       "notes": "Amatuer Radio (HAM) specialty license plate.",
-      "searchTerms": [],
+      "searchTerms": [
+        "ham",
+        "fcc"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -42,7 +45,10 @@
       },
       "sponsor": null,
       "notes": "Specialty plate to support Arkansas Court Appointed Special Advocates",
-      "searchTerms": [],
+      "searchTerms": [
+        "casa",
+        "heart"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -63,7 +69,9 @@
       },
       "sponsor": null,
       "notes": "Speciality plate to support Arkansas Rice Council",
-      "searchTerms": [],
+      "searchTerms": [
+        "green"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -84,7 +92,13 @@
       },
       "sponsor": null,
       "notes": "Specialty Plate for Boy Scouts of America.",
-      "searchTerms": [],
+      "searchTerms": [
+        "bsa",
+        "red",
+        "white",
+        "blue",
+        "tan"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -152,69 +166,6 @@
       "relatedPlates": []
     },
     {
-      "id": "ar-emergency-medical-services-license-plate",
-      "slug": "emergency-medical-services-license-plate",
-      "name": "Emergency Medical Services",
-      "displayName": "Emergency Medical Services",
-      "baseName": "Emergency Medical Services",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/arkansas/plates/emergency-medical-services-license-plate.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/ems_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate for emergency medical technician, emergency medical technician paramedic, emergency medical technician intermediate or a first responder.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-ex-prisoner-of-war-license-plate",
-      "slug": "ex-prisoner-of-war-license-plate",
-      "name": "Ex-Prisoner Of War",
-      "displayName": "Ex-Prisoner Of War",
-      "baseName": "Ex-Prisoner Of War",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/arkansas/plates/ex-prisoner-of-war-license-plate.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/redtop_expow_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty plate for any Arkansas P.O.W. or surviving spouse.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-farm-to-market-bus-license-plate",
-      "slug": "farm-to-market-bus-license-plate",
-      "name": "Farm To Market Bus",
-      "displayName": "Farm To Market Bus",
-      "baseName": "Farm To Market Bus",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/arkansas/plates/farm-to-market-bus-license-plate.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/redtop_fmbus_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate for buses classified as farm to market.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
       "id": "ar-freemason-license-plate",
       "slug": "freemason-license-plate",
       "name": "Freemason",
@@ -232,6 +183,50 @@
       "sponsor": null,
       "notes": "Specialty license plate for Freemason members.",
       "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-humane-society-of-the-ozarks-license-plate",
+      "slug": "humane-society-of-the-ozarks-license-plate",
+      "name": "Humane Society of the Ozarks",
+      "displayName": "Humane Society of the Ozarks",
+      "baseName": "Humane Society of the Ozarks",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic & Causes",
+      "image": {
+        "path": "state-packs/arkansas/plates/humane-society-of-the-ozarks-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/humaneSociety_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate for the Humane Society of the Ozarks.",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-in-god-we-trust-license-plate",
+      "slug": "in-god-we-trust-license-plate",
+      "name": "In God We Trust",
+      "displayName": "In God We Trust",
+      "baseName": "In God We Trust",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic & Causes",
+      "image": {
+        "path": "state-packs/arkansas/plates/in-god-we-trust-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/igwe_lg.jpg"
+      },
+      "sponsor": "Specialty license plate supporting senior citizens home-delivered meal program provided by Arkansas Senior Citizen's Centers.",
+      "notes": "Specialty license plate supporting senior citizens home-delivered meal program provided by Arkansas Senior Citizen's Centers.",
+      "searchTerms": [
+        "flags"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -278,27 +273,6 @@
       "relatedPlates": []
     },
     {
-      "id": "ar-persons-with-disabilities-license-plate",
-      "slug": "persons-with-disabilities-license-plate",
-      "name": "Persons With Disabilities",
-      "displayName": "Persons With Disabilities",
-      "baseName": "Persons With Disabilities",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/arkansas/plates/persons-with-disabilities-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/disabled_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty plate for qualified drivers with disabilities",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
       "id": "ar-phi-beta-sigma-fraternity-license-plate",
       "slug": "phi-beta-sigma-fraternity-license-plate",
       "name": "Phi Beta Sigma Fraternity",
@@ -336,27 +310,6 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for Realtors.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-search-and-rescue-license-plate",
-      "slug": "search-and-rescue-license-plate",
-      "name": "Search and Rescue",
-      "displayName": "Search and Rescue",
-      "baseName": "Search and Rescue",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/arkansas/plates/search-and-rescue-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/sar_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate for search and rescue team member vehicles.",
       "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
@@ -446,27 +399,6 @@
       "relatedPlates": []
     },
     {
-      "id": "ar-taxi-cab-license-plate",
-      "slug": "taxi-cab-license-plate",
-      "name": "Taxi Cab",
-      "displayName": "Taxi Cab",
-      "baseName": "Taxi Cab",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic & Causes",
-      "image": {
-        "path": "state-packs/arkansas/plates/taxi-cab-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/taxi_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty plate for taxi cabs.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
       "id": "ar-zeta-phi-beta-sorority-license-plate",
       "slug": "zeta-phi-beta-sorority-license-plate",
       "name": "Zeta Phi Beta Sorority",
@@ -509,10 +441,117 @@
       "relatedPlates": []
     },
     {
+      "id": "ar-farm-to-market-bus-license-plate",
+      "slug": "farm-to-market-bus-license-plate",
+      "name": "Farm To Market Bus",
+      "displayName": "Farm To Market Bus",
+      "baseName": "Farm To Market Bus",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial & Fleet",
+      "image": {
+        "path": "state-packs/arkansas/plates/farm-to-market-bus-license-plate.jpg",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/redtop_fmbus_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate for buses classified as farm to market.",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-not-for-hire-bus-license-plate",
+      "slug": "not-for-hire-bus-license-plate",
+      "name": "Not For Hire Bus",
+      "displayName": "Not For Hire Bus",
+      "baseName": "Not For Hire Bus",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial & Fleet",
+      "image": {
+        "path": "state-packs/arkansas/plates/not-for-hire-bus-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/nfh_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate for Not For Hire buses.",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-taxi-cab-license-plate",
+      "slug": "taxi-cab-license-plate",
+      "name": "Taxi Cab",
+      "displayName": "Taxi Cab",
+      "baseName": "Taxi Cab",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial & Fleet",
+      "image": {
+        "path": "state-packs/arkansas/plates/taxi-cab-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/taxi_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty plate for taxi cabs.",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-transporter-license-plate",
+      "slug": "transporter-license-plate",
+      "name": "Transporter",
+      "displayName": "Transporter",
+      "baseName": "Transporter",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial & Fleet",
+      "image": {
+        "path": "state-packs/arkansas/plates/transporter-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/transporter_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty plate for vehicle driving or towing vehicles from manufacturer to dealer or from dealer to dealer.",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-university-of-arkansas-agriculture-4-h-license-plate",
+      "slug": "university-of-arkansas-agriculture-4-h-license-plate",
+      "name": "4-H Develops Arkansas Youth",
+      "displayName": "4-H Develops Arkansas Youth",
+      "baseName": "University of Arkansas Agriculture 4-H",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Education & Culture",
+      "image": {
+        "path": "state-packs/arkansas/plates/university-of-arkansas-agriculture-4-h-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/4h_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate supporting U of A Agriculture scholarship and program fund.",
+      "searchTerms": [
+        "4h"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
       "id": "ar-arkansas-agricultural-education-plate-ffa",
       "slug": "arkansas-agricultural-education-plate-ffa",
-      "name": "Arkansas Agricultural Education Plate ( FFA )",
-      "displayName": "Arkansas Agricultural Education Plate ( FFA )",
+      "name": "Agricultural Education (FFA)",
+      "displayName": "Agricultural Education (FFA)",
       "baseName": "Arkansas Agricultural Education Plate ( FFA )",
       "variantLabel": null,
       "plateType": "passenger",
@@ -525,7 +564,13 @@
       },
       "sponsor": null,
       "notes": "Specialty plate to promote academic growth in Agriculture through the, Future Farmers of America program ( FFA ) .",
-      "searchTerms": [],
+      "searchTerms": [
+        "future",
+        "farmers",
+        "america",
+        "blue",
+        "ag"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -546,7 +591,10 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for the Arkansas School for the Deaf.",
-      "searchTerms": [],
+      "searchTerms": [
+        "hand",
+        "ad"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -567,15 +615,19 @@
       },
       "sponsor": null,
       "notes": "Specialty plate to support Buffalo River License Plate",
-      "searchTerms": [],
+      "searchTerms": [
+        "green",
+        "water",
+        "br"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-committed-to-education-license-plate-design-1",
       "slug": "committed-to-education-license-plate-design-1",
-      "name": "Committed To Education – Design 1",
-      "displayName": "Committed To Education – Design 1",
+      "name": "Committed To Education (Design 1)",
+      "displayName": "Committed To Education (Design 1)",
       "baseName": "Committed To Education– Design 1",
       "variantLabel": null,
       "plateType": "passenger",
@@ -588,15 +640,18 @@
       },
       "sponsor": null,
       "notes": "Specialty plate to promote academic and character achievement of Arkansas school children.",
-      "searchTerms": [],
+      "searchTerms": [
+        "books",
+        "red"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-committed-to-education-license-plate-design-2",
       "slug": "committed-to-education-license-plate-design-2",
-      "name": "Committed To Education – Design 2",
-      "displayName": "Committed To Education – Design 2",
+      "name": "Committed To Education (Design 2)",
+      "displayName": "Committed To Education (Design 2)",
       "baseName": "Committed To Education– Design 2",
       "variantLabel": null,
       "plateType": "passenger",
@@ -609,15 +664,18 @@
       },
       "sponsor": null,
       "notes": "Specialty plate to promote academic and character achievement of Arkansas school children.",
-      "searchTerms": [],
+      "searchTerms": [
+        "blue",
+        "red"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-mid-south-community-education-license-plate",
       "slug": "mid-south-community-education-license-plate",
-      "name": "Mid-South Community College Education",
-      "displayName": "Mid-South Community College Education",
+      "name": "Mid-South Community College",
+      "displayName": "Mid-South Community College",
       "baseName": "Mid-South Community College Education",
       "variantLabel": null,
       "plateType": "passenger",
@@ -630,15 +688,17 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for Mid-South Community Education",
-      "searchTerms": [],
+      "searchTerms": [
+        "mc"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-northwest-arkansas-community-education-plate",
       "slug": "northwest-arkansas-community-education-plate",
-      "name": "Northwest Arkansas Community Education Plate",
-      "displayName": "Northwest Arkansas Community Education Plate",
+      "name": "Northwest Arkansas Community College",
+      "displayName": "Northwest Arkansas Community College",
       "baseName": "Northwest Arkansas Community Education Plate",
       "variantLabel": null,
       "plateType": "passenger",
@@ -651,27 +711,29 @@
       },
       "sponsor": null,
       "notes": "Speciality license plate for Northwest Arkansas Community Education",
-      "searchTerms": [],
+      "searchTerms": [
+        "nw"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
-      "id": "ar-school-vehicle-license-plate",
-      "slug": "school-vehicle-license-plate",
-      "name": "School Vehicle",
-      "displayName": "School Vehicle",
-      "baseName": "School Vehicle",
+      "id": "ar-emergency-medical-services-license-plate",
+      "slug": "emergency-medical-services-license-plate",
+      "name": "Emergency Medical Services",
+      "displayName": "Emergency Medical Services",
+      "baseName": "Emergency Medical Services",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Government & Official",
       "image": {
-        "path": "state-packs/arkansas/plates/school-vehicle-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/schoolvehicle_lg.jpg"
+        "path": "state-packs/arkansas/plates/emergency-medical-services-license-plate.jpg",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/ems_lg.jpg"
       },
       "sponsor": null,
-      "notes": "Specialty license plate for owned and loaned public school vehicles.",
+      "notes": "Specialty license plate for emergency medical technician, emergency medical technician paramedic, emergency medical technician intermediate or a first responder.",
       "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
@@ -698,64 +760,43 @@
       "relatedPlates": []
     },
     {
-      "id": "ar-not-for-hire-bus-license-plate",
-      "slug": "not-for-hire-bus-license-plate",
-      "name": "Not For Hire Bus",
-      "displayName": "Not For Hire Bus",
-      "baseName": "Not For Hire Bus",
+      "id": "ar-school-vehicle-license-plate",
+      "slug": "school-vehicle-license-plate",
+      "name": "School Vehicle",
+      "displayName": "School Vehicle",
+      "baseName": "School Vehicle",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Government & Official",
       "image": {
-        "path": "state-packs/arkansas/plates/not-for-hire-bus-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/nfh_lg.jpg"
+        "path": "state-packs/arkansas/plates/school-vehicle-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/schoolvehicle_lg.jpg"
       },
       "sponsor": null,
-      "notes": "Specialty license plate for Not For Hire buses.",
+      "notes": "Specialty license plate for owned and loaned public school vehicles.",
       "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
     },
     {
-      "id": "ar-transporter-license-plate",
-      "slug": "transporter-license-plate",
-      "name": "Transporter",
-      "displayName": "Transporter",
-      "baseName": "Transporter",
+      "id": "ar-search-and-rescue-license-plate",
+      "slug": "search-and-rescue-license-plate",
+      "name": "Search and Rescue",
+      "displayName": "Search and Rescue",
+      "baseName": "Search and Rescue",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Government & Official",
       "image": {
-        "path": "state-packs/arkansas/plates/transporter-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/transporter_lg.jpg"
+        "path": "state-packs/arkansas/plates/search-and-rescue-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/sar_lg.jpg"
       },
       "sponsor": null,
-      "notes": "Specialty plate for vehicle driving or towing vehicles from manufacturer to dealer or from dealer to dealer.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-arkansas-down-syndrome-association-license-plate",
-      "slug": "arkansas-down-syndrome-association-license-plate",
-      "name": "Arkansas Down Syndrome Association",
-      "displayName": "Arkansas Down Syndrome Association",
-      "baseName": "Arkansas Down Syndrome Association",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Health & Family",
-      "image": {
-        "path": "state-packs/arkansas/plates/arkansas-down-syndrome-association-license-plate.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/DownSyndrome_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty plate to support Arkansas Down Syndrome Association",
+      "notes": "Specialty license plate for search and rescue team member vehicles.",
       "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
@@ -777,7 +818,38 @@
       },
       "sponsor": null,
       "notes": "Speciality plate to support Autism Awareness",
-      "searchTerms": [],
+      "searchTerms": [
+        "au",
+        "puzzle",
+        "red",
+        "blue",
+        "green"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-organ-donor-awareness-license-plate",
+      "slug": "organ-donor-awareness-license-plate",
+      "name": "Become and Organ Donor - Give Hope",
+      "displayName": "Become and Organ Donor - Give Hope",
+      "baseName": "Organ Donor Awareness",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health & Family",
+      "image": {
+        "path": "state-packs/arkansas/plates/organ-donor-awareness-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/organ_donor_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate supporting organ donation.",
+      "searchTerms": [
+        "green",
+        "ribbon",
+        "od"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -798,7 +870,14 @@
       },
       "sponsor": null,
       "notes": "Specialty plate to support Childhood Cancer Research",
-      "searchTerms": [],
+      "searchTerms": [
+        "red",
+        "yellow",
+        "heart",
+        "mj",
+        "fight",
+        "kid"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -819,7 +898,63 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate to promote adoption.",
-      "searchTerms": [],
+      "searchTerms": [
+        "yellow",
+        "kids",
+        "children",
+        "drawing",
+        "cl"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-susan-g-komen-breast-cancer-license-plate",
+      "slug": "susan-g-komen-breast-cancer-license-plate",
+      "name": "Cure Breast Cancer",
+      "displayName": "Cure Breast Cancer",
+      "baseName": "Susan G. Komen Breast Cancer",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health & Family",
+      "image": {
+        "path": "state-packs/arkansas/plates/susan-g-komen-breast-cancer-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/breast_cancer_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty plate to support breast cancer research.",
+      "searchTerms": [
+        "pink",
+        "ribbon",
+        "sk",
+        "susan",
+        "komen"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-arkansas-down-syndrome-association-license-plate",
+      "slug": "arkansas-down-syndrome-association-license-plate",
+      "name": "Down Syndrome Association",
+      "displayName": "Down Syndrome Association",
+      "baseName": "Arkansas Down Syndrome Association",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health & Family",
+      "image": {
+        "path": "state-packs/arkansas/plates/arkansas-down-syndrome-association-license-plate.jpg",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/DownSyndrome_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty plate to support Arkansas Down Syndrome Association",
+      "searchTerms": [
+        "diamond"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -840,15 +975,18 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for the Dyslexia Support.",
-      "searchTerms": [],
+      "searchTerms": [
+        "red",
+        "dg"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-hospice-and-palliative-care",
       "slug": "hospice-and-palliative-care",
-      "name": "Hospice and Palliative Care",
-      "displayName": "Hospice and Palliative Care",
+      "name": "Hospice & Palliative Care",
+      "displayName": "Hospice & Palliative Care",
       "baseName": "Hospice and Palliative Care",
       "variantLabel": null,
       "plateType": "passenger",
@@ -861,78 +999,18 @@
       },
       "sponsor": null,
       "notes": "Speciality plate to support Hospice and Palliative Care",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-organ-donor-awareness-license-plate",
-      "slug": "organ-donor-awareness-license-plate",
-      "name": "Organ Donor Awareness",
-      "displayName": "Organ Donor Awareness",
-      "baseName": "Organ Donor Awareness",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Health & Family",
-      "image": {
-        "path": "state-packs/arkansas/plates/organ-donor-awareness-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/organ_donor_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate supporting organ donation.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-susan-g-komen-breast-cancer-license-plate",
-      "slug": "susan-g-komen-breast-cancer-license-plate",
-      "name": "Susan G. Komen Breast Cancer",
-      "displayName": "Susan G. Komen Breast Cancer",
-      "baseName": "Susan G. Komen Breast Cancer",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Health & Family",
-      "image": {
-        "path": "state-packs/arkansas/plates/susan-g-komen-breast-cancer-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/breast_cancer_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty plate to support breast cancer research.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-antique-motorcycle-license-plate",
-      "slug": "antique-motorcycle-license-plate",
-      "name": "Antique Motorcycle",
-      "displayName": "Antique Motorcycle",
-      "baseName": "Antique Motorcycle",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Historical & Antique",
-      "image": {
-        "path": "state-packs/arkansas/plates/antique-motorcycle-license-plate.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/mc_antique_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate for antique (25 years or older) motorcycles.",
-      "searchTerms": [],
+      "searchTerms": [
+        "green",
+        "hp"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-antique-vehicle-license-plate-current",
       "slug": "antique-vehicle-license-plate-current",
-      "name": "Antique Vehicle – Current",
-      "displayName": "Antique Vehicle – Current",
+      "name": "Antique Car (Current)",
+      "displayName": "Antique Car (Current)",
       "baseName": "Antique Vehicle",
       "variantLabel": null,
       "plateType": "passenger",
@@ -952,8 +1030,8 @@
     {
       "id": "ar-antique-vehicle-license-plate-valid-no-longer-issued",
       "slug": "antique-vehicle-license-plate-valid-no-longer-issued",
-      "name": "Antique Vehicle – Valid – No Longer Issued",
-      "displayName": "Antique Vehicle – Valid – No Longer Issued",
+      "name": "Antique Car (No Longer Issued)",
+      "displayName": "Antique Car (No Longer Issued)",
       "baseName": "Antique Vehicle– No Longer Issued",
       "variantLabel": null,
       "plateType": "passenger",
@@ -966,48 +1044,6 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for antique (30 years or older) vehicle.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-armed-forces-reserve-license-plate",
-      "slug": "armed-forces-reserve-license-plate",
-      "name": "Armed Forces Reserve",
-      "displayName": "Armed Forces Reserve",
-      "baseName": "Armed Forces Reserve",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/arkansas/plates/armed-forces-reserve-license-plate.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/af_reserved_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Issued to any Arkansas resident who is an active member in the Reserve of the United States Army, Navy, Marine Corps, Air Force or Coast Guard.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-armed-forces-retired-license-plate",
-      "slug": "armed-forces-retired-license-plate",
-      "name": "Armed Forces Retired",
-      "displayName": "Armed Forces Retired",
-      "baseName": "Armed Forces Retired",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/arkansas/plates/armed-forces-retired-license-plate.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/af_retired_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Issued to any Arkansas resident who is a retired member of the United States Army, Navy, Marine Corps, Air Force, Coast Guard, or National Guard.",
       "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
@@ -1050,15 +1086,20 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for Congressional Medal of Honor recipients.",
-      "searchTerms": [],
+      "searchTerms": [
+        "mh",
+        "valor",
+        "call",
+        "duty"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-disabled-veteran-license-plate-free",
       "slug": "disabled-veteran-license-plate-free",
-      "name": "Disabled Veteran – Free",
-      "displayName": "Disabled Veteran – Free",
+      "name": "Disabled Veteran",
+      "displayName": "Disabled Veteran",
       "baseName": "Disabled Veteran– Free",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1071,15 +1112,18 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for disabled veterans. White background with red lettering.",
-      "searchTerms": [],
+      "searchTerms": [
+        "dav",
+        "dv"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-distinguished-flying-cross-plate",
       "slug": "distinguished-flying-cross-plate",
-      "name": "Distinguished Flying Cross Plate",
-      "displayName": "Distinguished Flying Cross Plate",
+      "name": "Distinguished Flying Cross",
+      "displayName": "Distinguished Flying Cross",
       "baseName": "Distinguished Flying Cross Plate",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1092,6 +1136,27 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for U.S. Armed Forces member, or surviving spouse, awarded the Distinguished Flying Cross Medal.",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-ex-prisoner-of-war-license-plate",
+      "slug": "ex-prisoner-of-war-license-plate",
+      "name": "Ex-Prisoner Of War",
+      "displayName": "Ex-Prisoner Of War",
+      "baseName": "Ex-Prisoner Of War",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military Honors & History",
+      "image": {
+        "path": "state-packs/arkansas/plates/ex-prisoner-of-war-license-plate.jpg",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/redtop_expow_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty plate for any Arkansas P.O.W. or surviving spouse.",
       "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
@@ -1113,15 +1178,17 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for disabled veterans. White background Special Gold Star Family License plate with red lettering.",
-      "searchTerms": [],
+      "searchTerms": [
+        "gs"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-korean-veteran-license-plate",
       "slug": "korean-veteran-license-plate",
-      "name": "Korean Veteran",
-      "displayName": "Korean Veteran",
+      "name": "Korean War Veteran",
+      "displayName": "Korean War Veteran",
       "baseName": "Korean Veteran",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1134,27 +1201,6 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for veterans of the Korean War.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-merchant-marine-retired-license-plate",
-      "slug": "merchant-marine-retired-license-plate",
-      "name": "Merchant Marine Retired",
-      "displayName": "Merchant Marine Retired",
-      "baseName": "Merchant Marine Retired",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military Honors & History",
-      "image": {
-        "path": "state-packs/arkansas/plates/merchant-marine-retired-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/redtop_retmm_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate for retired United States Merchant Marine veterans serving during WWII.",
       "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
@@ -1225,8 +1271,8 @@
     {
       "id": "ar-persian-gulf-war-veteran-license-plate",
       "slug": "persian-gulf-war-veteran-license-plate",
-      "name": "Persian Gulf War Veteran",
-      "displayName": "Persian Gulf War Veteran",
+      "name": "Persian Gulf Veteran",
+      "displayName": "Persian Gulf Veteran",
       "baseName": "Persian Gulf War Veteran",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1246,8 +1292,8 @@
     {
       "id": "ar-purple-heart-combat-wounded-license-plate",
       "slug": "purple-heart-combat-wounded-license-plate",
-      "name": "Purple Heart – Combat Wounded",
-      "displayName": "Purple Heart – Combat Wounded",
+      "name": "Purple Heart - Combat Wounded",
+      "displayName": "Purple Heart - Combat Wounded",
       "baseName": "Purple Heart – Combat Wounded",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1265,52 +1311,78 @@
       "relatedPlates": []
     },
     {
-      "id": "ar-purple-heart-motorcycle-license-plate",
-      "slug": "purple-heart-motorcycle-license-plate",
-      "name": "Purple Heart Motorcycle",
-      "displayName": "Purple Heart Motorcycle",
-      "baseName": "Purple Heart Motorcycle",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
+      "id": "ar-merchant-marine-retired-license-plate",
+      "slug": "merchant-marine-retired-license-plate",
+      "name": "Retired US Veteran USMM",
+      "displayName": "Retired US Veteran USMM",
+      "baseName": "Merchant Marine Retired",
+      "variantLabel": null,
+      "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Military Honors & History",
       "image": {
-        "path": "state-packs/arkansas/plates/purple-heart-motorcycle-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/mc_purpleheart_lg.jpg"
+        "path": "state-packs/arkansas/plates/merchant-marine-retired-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/redtop_retmm_lg.jpg"
       },
       "sponsor": null,
-      "notes": "Specialty motorcycle license plate for U.S. Armed Forces member, or surviving spouse, awarded the Purple Heart Medal.",
+      "notes": "Specialty license plate for retired United States Merchant Marine veterans serving during WWII.",
+      "searchTerms": [
+        "merchant",
+        "marine"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-armed-forces-reserve-license-plate",
+      "slug": "armed-forces-reserve-license-plate",
+      "name": "U.S. Armed Forces Reserve",
+      "displayName": "U.S. Armed Forces Reserve",
+      "baseName": "Armed Forces Reserve",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military Honors & History",
+      "image": {
+        "path": "state-packs/arkansas/plates/armed-forces-reserve-license-plate.jpg",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/af_reserved_lg.jpg"
+      },
+      "sponsor": "Issued to any Arkansas resident who is an active member in the Reserve of the United States Army, Navy, Marine Corps, Air Force or Coast Guard.",
+      "notes": "Issued to any Arkansas resident who is an active member in the Reserve of the United States Army, Navy, Marine Corps, Air Force or Coast Guard.",
       "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
     },
     {
-      "id": "ar-veteran-of-foreign-wars-motorcycle-license-plate",
-      "slug": "veteran-of-foreign-wars-motorcycle-license-plate",
-      "name": "Veteran of Foreign Wars Motorcycle",
-      "displayName": "Veteran of Foreign Wars Motorcycle",
-      "baseName": "Veteran of Foreign Wars Motorcycle",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
+      "id": "ar-armed-forces-retired-license-plate",
+      "slug": "armed-forces-retired-license-plate",
+      "name": "U.S. Armed Forces Retired",
+      "displayName": "U.S. Armed Forces Retired",
+      "baseName": "Armed Forces Retired",
+      "variantLabel": null,
+      "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Military Honors & History",
       "image": {
-        "path": "state-packs/arkansas/plates/veteran-of-foreign-wars-motorcycle-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/vfw_mc_lg.jpg"
+        "path": "state-packs/arkansas/plates/armed-forces-retired-license-plate.jpg",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/af_retired_lg.jpg"
       },
-      "sponsor": null,
-      "notes": "Specialty motorcycle license plate issued to Qualifying Veterans of Foreign Wars and Auxiliary Members",
-      "searchTerms": [],
+      "sponsor": "Issued to any Arkansas resident who is a retired member of the United States Army, Navy, Marine Corps, Air Force, Coast Guard, or National Guard.",
+      "notes": "Issued to any Arkansas resident who is a retired member of the United States Army, Navy, Marine Corps, Air Force, Coast Guard, or National Guard.",
+      "searchTerms": [
+        "veteran"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-vietnam-war-veteran-license-plate",
       "slug": "vietnam-war-veteran-license-plate",
-      "name": "Vietnam War Veteran",
-      "displayName": "Vietnam War Veteran",
+      "name": "Vietnam Veteran",
+      "displayName": "Vietnam Veteran",
       "baseName": "Vietnam War Veteran",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1323,15 +1395,17 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for veterans of the Vietnam War.",
-      "searchTerms": [],
+      "searchTerms": [
+        "white"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-women-veterans-license-plate",
       "slug": "women-veterans-license-plate",
-      "name": "Women Veterans",
-      "displayName": "Women Veterans",
+      "name": "Woman Veterans",
+      "displayName": "Woman Veterans",
       "baseName": "Women Veterans",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1344,7 +1418,13 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate issued for women veterans.",
-      "searchTerms": [],
+      "searchTerms": [
+        "flag",
+        "red",
+        "white",
+        "blue",
+        "women"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -1365,6 +1445,73 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for veterans of the World War II.",
+      "searchTerms": [
+        "white"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-antique-motorcycle-license-plate",
+      "slug": "antique-motorcycle-license-plate",
+      "name": "Antique (Motorcycle)",
+      "displayName": "Antique (Motorcycle)",
+      "baseName": "Antique Motorcycle",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/arkansas/plates/antique-motorcycle-license-plate.jpg",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/mc_antique_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate for antique (25 years or older) motorcycles.",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-persons-with-disabilities-motorcycle-license-plate",
+      "slug": "persons-with-disabilities-motorcycle-license-plate",
+      "name": "Disabled (Motorcycle)",
+      "displayName": "Disabled (Motorcycle)",
+      "baseName": "Persons with Disabilities Motorcycle",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/arkansas/plates/persons-with-disabilities-motorcycle-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/mc_disabled_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty plate for qualified motorcycle drivers with disabilities",
+      "searchTerms": [
+        "wheelchair"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-purple-heart-motorcycle-license-plate",
+      "slug": "purple-heart-motorcycle-license-plate",
+      "name": "Purple Heart (Motorcycle)",
+      "displayName": "Purple Heart (Motorcycle)",
+      "baseName": "Purple Heart Motorcycle",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle Plates",
+      "image": {
+        "path": "state-packs/arkansas/plates/purple-heart-motorcycle-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/mc_purpleheart_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty motorcycle license plate for U.S. Armed Forces member, or surviving spouse, awarded the Purple Heart Medal.",
       "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
@@ -1372,8 +1519,8 @@
     {
       "id": "ar-personalized-motorcycle-license-plate",
       "slug": "personalized-motorcycle-license-plate",
-      "name": "Personalized Motorcycle (Motorcycle)",
-      "displayName": "Personalized Motorcycle (Motorcycle)",
+      "name": "Standard (Motorcycle)",
+      "displayName": "Standard (Motorcycle)",
       "baseName": "Personalized Motorcycle",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
@@ -1391,52 +1538,38 @@
       "relatedPlates": []
     },
     {
-      "id": "ar-persons-with-disabilities-motorcycle-license-plate",
-      "slug": "persons-with-disabilities-motorcycle-license-plate",
-      "name": "Persons with Disabilities Motorcycle (Motorcycle)",
-      "displayName": "Persons with Disabilities Motorcycle (Motorcycle)",
-      "baseName": "Persons with Disabilities Motorcycle",
+      "id": "ar-veteran-of-foreign-wars-motorcycle-license-plate",
+      "slug": "veteran-of-foreign-wars-motorcycle-license-plate",
+      "name": "VFW (Motorcycle)",
+      "displayName": "VFW (Motorcycle)",
+      "baseName": "Veteran of Foreign Wars Motorcycle",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
       "category": "Motorcycle Plates",
       "image": {
-        "path": "state-packs/arkansas/plates/persons-with-disabilities-motorcycle-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/mc_disabled_lg.jpg"
+        "path": "state-packs/arkansas/plates/veteran-of-foreign-wars-motorcycle-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/vfw_mc_lg.jpg"
       },
       "sponsor": null,
-      "notes": "Specialty plate for qualified motorcycle drivers with disabilities",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-department-of-conservation-districts",
-      "slug": "department-of-conservation-districts",
-      "name": "Department of Conservation Districts",
-      "displayName": "Department of Conservation Districts",
-      "baseName": "Department of Conservation Districts",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Nature & Wildlife",
-      "image": {
-        "path": "state-packs/arkansas/plates/department-of-conservation-districts.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/Conservation_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Speciality Plate to Support Department of Conservation Districts",
-      "searchTerms": [],
+      "notes": "Specialty motorcycle license plate issued to Qualifying Veterans of Foreign Wars and Auxiliary Members",
+      "searchTerms": [
+        "red",
+        "white",
+        "vlue",
+        "veteran",
+        "foreign",
+        "wars"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-ducks-unlimited-license-plate-design-1-valid-no-longer-issued",
       "slug": "ducks-unlimited-license-plate-design-1-valid-no-longer-issued",
-      "name": "Ducks Unlimited – Design 1 – Valid No Longer Issued",
-      "displayName": "Ducks Unlimited – Design 1 – Valid No Longer Issued",
+      "name": "Ducks Unlimited (Design 1)",
+      "displayName": "Ducks Unlimited (Design 1)",
       "baseName": "Ducks Unlimited– Design 1No Longer Issued",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1449,15 +1582,18 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate supporting Ducks Unlimited organization. White background with Ducks Unlimited emblem.",
-      "searchTerms": [],
+      "searchTerms": [
+        "white",
+        "emblem"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-ducks-unlimited-license-plate-design-2",
       "slug": "ducks-unlimited-license-plate-design-2",
-      "name": "Ducks Unlimited – Design 2",
-      "displayName": "Ducks Unlimited – Design 2",
+      "name": "Ducks Unlimited (Design 2)",
+      "displayName": "Ducks Unlimited (Design 2)",
       "baseName": "Ducks Unlimited– Design 2",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1470,15 +1606,18 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate supporting Ducks Unlimited organization. Wildlife background.",
-      "searchTerms": [],
+      "searchTerms": [
+        "bird",
+        "flight"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-ducks-unlimited-license-plate-design-3",
       "slug": "ducks-unlimited-license-plate-design-3",
-      "name": "Ducks Unlimited – Design 3",
-      "displayName": "Ducks Unlimited – Design 3",
+      "name": "Ducks Unlimited (Design 3)",
+      "displayName": "Ducks Unlimited (Design 3)",
       "baseName": "Ducks Unlimited– Design 3",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1491,15 +1630,41 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate supporting Ducks Unlimited organization. Wildlife background.",
-      "searchTerms": [],
+      "searchTerms": [
+        "bird"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-department-of-conservation-districts",
+      "slug": "department-of-conservation-districts",
+      "name": "For Love of the Land",
+      "displayName": "For Love of the Land",
+      "baseName": "Department of Conservation Districts",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Nature & Wildlife",
+      "image": {
+        "path": "state-packs/arkansas/plates/department-of-conservation-districts.jpg",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/Conservation_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Speciality Plate to Support Department of Conservation Districts",
+      "searchTerms": [
+        "cd",
+        "conservation"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-game-fish-barred-owl-license-plate",
       "slug": "game-fish-barred-owl-license-plate",
-      "name": "Game & Fish Barred Owl",
-      "displayName": "Game & Fish Barred Owl",
+      "name": "Game and Fish (Barred Owl)",
+      "displayName": "Game and Fish (Barred Owl)",
       "baseName": "Game & Fish Barred Owl",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1512,15 +1677,17 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Barred Owl design.",
-      "searchTerms": [],
+      "searchTerms": [
+        "gf"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-game-fish-bird-dog-license-plate",
       "slug": "game-fish-bird-dog-license-plate",
-      "name": "Game & Fish Bird Dog",
-      "displayName": "Game & Fish Bird Dog",
+      "name": "Game and Fish (Bird Dog)",
+      "displayName": "Game and Fish (Bird Dog)",
       "baseName": "Game & Fish Bird Dog",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1533,162 +1700,17 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Bird Dog design.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-game-fish-crappie-fish-license-plate",
-      "slug": "game-fish-crappie-fish-license-plate",
-      "name": "Game & Fish Crappie Fish",
-      "displayName": "Game & Fish Crappie Fish",
-      "baseName": "Game & Fish Crappie Fish",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Nature & Wildlife",
-      "image": {
-        "path": "state-packs/arkansas/plates/game-fish-crappie-fish-license-plate.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfcCrappieFish_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Crappie Fish design.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-game-fish-deer-license-plate",
-      "slug": "game-fish-deer-license-plate",
-      "name": "Game & Fish Deer",
-      "displayName": "Game & Fish Deer",
-      "baseName": "Game & Fish Deer",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Nature & Wildlife",
-      "image": {
-        "path": "state-packs/arkansas/plates/game-fish-deer-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/GameFishDeer1stCAD-scaled.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Deer design.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-game-fish-ivory-billed-woodpecker-plate",
-      "slug": "game-fish-ivory-billed-woodpecker-plate",
-      "name": "Game & Fish Ivory Billed Woodpecker Plate",
-      "displayName": "Game & Fish Ivory Billed Woodpecker Plate",
-      "baseName": "Game & Fish Ivory Billed Woodpecker Plate",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Nature & Wildlife",
-      "image": {
-        "path": "state-packs/arkansas/plates/game-fish-ivory-billed-woodpecker-plate.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_woodpecker_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission Ivory Billed Woodpecker design.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-game-fish-longear-sunfish-license-plate",
-      "slug": "game-fish-longear-sunfish-license-plate",
-      "name": "Game & Fish Longear Sunfish",
-      "displayName": "Game & Fish Longear Sunfish",
-      "baseName": "Game & Fish Longear Sunfish",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Nature & Wildlife",
-      "image": {
-        "path": "state-packs/arkansas/plates/game-fish-longear-sunfish-license-plate.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/Longear_Sunfish_v1_RS.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Longear Sunfish design.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-game-fish-monarch-butterfly",
-      "slug": "game-fish-monarch-butterfly",
-      "name": "Game & Fish Monarch Butterfly",
-      "displayName": "Game & Fish Monarch Butterfly",
-      "baseName": "Game & Fish Monarch Butterfly",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Nature & Wildlife",
-      "image": {
-        "path": "state-packs/arkansas/plates/game-fish-monarch-butterfly.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/Monarch_Butterfly_GameFish.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission.Monarch Butterfly design.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-game-fish-painted-bunting-license-plate",
-      "slug": "game-fish-painted-bunting-license-plate",
-      "name": "Game & Fish Painted Bunting",
-      "displayName": "Game & Fish Painted Bunting",
-      "baseName": "Game & Fish Painted Bunting",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Nature & Wildlife",
-      "image": {
-        "path": "state-packs/arkansas/plates/game-fish-painted-bunting-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/AR-GF-Painted-Bunting.png"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Painted Bunting design.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-game-fish-red-cardinal-license-plate",
-      "slug": "game-fish-red-cardinal-license-plate",
-      "name": "Game & Fish Red Cardinal",
-      "displayName": "Game & Fish Red Cardinal",
-      "baseName": "Game & Fish Red Cardinal",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Nature & Wildlife",
-      "image": {
-        "path": "state-packs/arkansas/plates/game-fish-red-cardinal-license-plate.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/RedCardinal_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Red Cardinal design.",
-      "searchTerms": [],
+      "searchTerms": [
+        "gf"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-game-and-fish-black-bear-license-plate",
       "slug": "game-and-fish-black-bear-license-plate",
-      "name": "Game and Fish Black Bear",
-      "displayName": "Game and Fish Black Bear",
+      "name": "Game and Fish (Black Bear)",
+      "displayName": "Game and Fish (Black Bear)",
       "baseName": "Game and Fish Black Bear",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1701,15 +1723,17 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Black Bear design.",
-      "searchTerms": [],
+      "searchTerms": [
+        "gf"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-game-and-fish-black-lab-license-plate",
       "slug": "game-and-fish-black-lab-license-plate",
-      "name": "Game and Fish Black Lab",
-      "displayName": "Game and Fish Black Lab",
+      "name": "Game and Fish (Black Lab)",
+      "displayName": "Game and Fish (Black Lab)",
       "baseName": "Game and Fish Black Lab",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1722,15 +1746,17 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Black Lab design.",
-      "searchTerms": [],
+      "searchTerms": [
+        "gf"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-game-and-fish-butterfly-license-plate",
       "slug": "game-and-fish-butterfly-license-plate",
-      "name": "Game and Fish Butterfly",
-      "displayName": "Game and Fish Butterfly",
+      "name": "Game and Fish (Butterfly)",
+      "displayName": "Game and Fish (Butterfly)",
       "baseName": "Game and Fish Butterfly",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1743,36 +1769,40 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Butterfly design.",
-      "searchTerms": [],
+      "searchTerms": [
+        "gf"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
-      "id": "ar-game-and-fish-deer-license-plate",
-      "slug": "game-and-fish-deer-license-plate",
-      "name": "Game And Fish Deer",
-      "displayName": "Game And Fish Deer",
-      "baseName": "Game And Fish Deer",
+      "id": "ar-game-fish-crappie-fish-license-plate",
+      "slug": "game-fish-crappie-fish-license-plate",
+      "name": "Game and Fish (Crappie Fish)",
+      "displayName": "Game and Fish (Crappie Fish)",
+      "baseName": "Game & Fish Crappie Fish",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Nature & Wildlife",
       "image": {
-        "path": "state-packs/arkansas/plates/game-and-fish-deer-license-plate.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_deer_lg.jpg"
+        "path": "state-packs/arkansas/plates/game-fish-crappie-fish-license-plate.jpg",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfcCrappieFish_lg.jpg"
       },
       "sponsor": null,
-      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Deer design.",
-      "searchTerms": [],
+      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Crappie Fish design.",
+      "searchTerms": [
+        "gf"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-game-and-fish-deer-new-design-license-plate",
       "slug": "game-and-fish-deer-new-design-license-plate",
-      "name": "Game and Fish Deer (New Design)",
-      "displayName": "Game and Fish Deer (New Design)",
+      "name": "Game and Fish (Deer - New Design)",
+      "displayName": "Game and Fish (Deer - New Design)",
       "baseName": "Game and Fish Deer (New Design)",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1785,15 +1815,63 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Deer (New Design).",
-      "searchTerms": [],
+      "searchTerms": [
+        "gf"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-game-fish-deer-license-plate",
+      "slug": "game-fish-deer-license-plate",
+      "name": "Game and Fish (Deer)",
+      "displayName": "Game and Fish (Deer)",
+      "baseName": "Game & Fish Deer",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Nature & Wildlife",
+      "image": {
+        "path": "state-packs/arkansas/plates/game-fish-deer-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/GameFishDeer1stCAD-scaled.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Deer design.",
+      "searchTerms": [
+        "gf"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-game-and-fish-deer-license-plate",
+      "slug": "game-and-fish-deer-license-plate",
+      "name": "Game and Fish (Deer)",
+      "displayName": "Game and Fish (Deer)",
+      "baseName": "Game And Fish Deer",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Nature & Wildlife",
+      "image": {
+        "path": "state-packs/arkansas/plates/game-and-fish-deer-license-plate.jpg",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_deer_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Deer design.",
+      "searchTerms": [
+        "gf"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-game-and-fish-eagle-plate",
       "slug": "game-and-fish-eagle-plate",
-      "name": "Game and Fish Eagle Plate",
-      "displayName": "Game and Fish Eagle Plate",
+      "name": "Game and Fish (Eagle)",
+      "displayName": "Game and Fish (Eagle)",
       "baseName": "Game and Fish Eagle Plate",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1806,15 +1884,17 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Eagle design.",
-      "searchTerms": [],
+      "searchTerms": [
+        "gf"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-game-and-fish-elk-license-plate",
       "slug": "game-and-fish-elk-license-plate",
-      "name": "Game and Fish Elk",
-      "displayName": "Game and Fish Elk",
+      "name": "Game and Fish (Elk)",
+      "displayName": "Game and Fish (Elk)",
       "baseName": "Game and Fish Elk",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1827,15 +1907,17 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Elk design.",
-      "searchTerms": [],
+      "searchTerms": [
+        "gf"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-game-and-fish-hummingbird-license-plate",
       "slug": "game-and-fish-hummingbird-license-plate",
-      "name": "Game And Fish Hummingbird",
-      "displayName": "Game And Fish Hummingbird",
+      "name": "Game and Fish (Hummingbird)",
+      "displayName": "Game and Fish (Hummingbird)",
       "baseName": "Game And Fish Hummingbird",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1848,15 +1930,40 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Hummingbird design.",
-      "searchTerms": [],
+      "searchTerms": [
+        "bird"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-game-fish-ivory-billed-woodpecker-plate",
+      "slug": "game-fish-ivory-billed-woodpecker-plate",
+      "name": "Game and Fish (Ivory Billed Woodpecker)",
+      "displayName": "Game and Fish (Ivory Billed Woodpecker)",
+      "baseName": "Game & Fish Ivory Billed Woodpecker Plate",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Nature & Wildlife",
+      "image": {
+        "path": "state-packs/arkansas/plates/game-fish-ivory-billed-woodpecker-plate.jpg",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_woodpecker_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission Ivory Billed Woodpecker design.",
+      "searchTerms": [
+        "gf"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-game-and-fish-largemouth-bass-license-plate",
       "slug": "game-and-fish-largemouth-bass-license-plate",
-      "name": "Game and Fish Largemouth Bass",
-      "displayName": "Game and Fish Largemouth Bass",
+      "name": "Game and Fish (Largemouth Bass)",
+      "displayName": "Game and Fish (Largemouth Bass)",
       "baseName": "Game and Fish Largemouth Bass",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1869,15 +1976,41 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Largemouth Bass design.",
-      "searchTerms": [],
+      "searchTerms": [
+        "gf",
+        "fish"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-game-fish-longear-sunfish-license-plate",
+      "slug": "game-fish-longear-sunfish-license-plate",
+      "name": "Game and Fish (Longear Sunfish)",
+      "displayName": "Game and Fish (Longear Sunfish)",
+      "baseName": "Game & Fish Longear Sunfish",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Nature & Wildlife",
+      "image": {
+        "path": "state-packs/arkansas/plates/game-fish-longear-sunfish-license-plate.jpg",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/Longear_Sunfish_v1_RS.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Longear Sunfish design.",
+      "searchTerms": [
+        "gf"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-game-and-fish-mallard-duck-license-plate",
       "slug": "game-and-fish-mallard-duck-license-plate",
-      "name": "Game and Fish Mallard Duck",
-      "displayName": "Game and Fish Mallard Duck",
+      "name": "Game and Fish (Mallard Duck)",
+      "displayName": "Game and Fish (Mallard Duck)",
       "baseName": "Game and Fish Mallard Duck",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1890,120 +2023,64 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Mallard Duck design.",
-      "searchTerms": [],
+      "searchTerms": [
+        "bird",
+        "nz"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
-      "id": "ar-game-and-fish-rainbow-trout-license-plate",
-      "slug": "game-and-fish-rainbow-trout-license-plate",
-      "name": "Game And Fish Rainbow Trout",
-      "displayName": "Game And Fish Rainbow Trout",
-      "baseName": "Game And Fish Rainbow Trout",
+      "id": "ar-game-fish-monarch-butterfly",
+      "slug": "game-fish-monarch-butterfly",
+      "name": "Game and Fish (Monarch Butterfly)",
+      "displayName": "Game and Fish (Monarch Butterfly)",
+      "baseName": "Game & Fish Monarch Butterfly",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Nature & Wildlife",
       "image": {
-        "path": "state-packs/arkansas/plates/game-and-fish-rainbow-trout-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_trout_lg.jpg"
+        "path": "state-packs/arkansas/plates/game-fish-monarch-butterfly.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/Monarch_Butterfly_GameFish.jpg"
       },
       "sponsor": null,
-      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Rainbow Trout design.",
-      "searchTerms": [],
+      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission.Monarch Butterfly design.",
+      "searchTerms": [
+        "gf"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
-      "id": "ar-game-and-fish-red-fox-license-plate",
-      "slug": "game-and-fish-red-fox-license-plate",
-      "name": "Game and Fish Red Fox",
-      "displayName": "Game and Fish Red Fox",
-      "baseName": "Game and Fish Red Fox",
+      "id": "ar-game-fish-painted-bunting-license-plate",
+      "slug": "game-fish-painted-bunting-license-plate",
+      "name": "Game and Fish (Painted Bunting)",
+      "displayName": "Game and Fish (Painted Bunting)",
+      "baseName": "Game & Fish Painted Bunting",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Nature & Wildlife",
       "image": {
-        "path": "state-packs/arkansas/plates/game-and-fish-red-fox-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/GameFish_RedFox-scaled.jpg"
+        "path": "state-packs/arkansas/plates/game-fish-painted-bunting-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/AR-GF-Painted-Bunting.png"
       },
       "sponsor": null,
-      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Red Fox design.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-game-and-fish-smallmouth-bass-license-plate",
-      "slug": "game-and-fish-smallmouth-bass-license-plate",
-      "name": "Game and Fish Smallmouth Bass",
-      "displayName": "Game and Fish Smallmouth Bass",
-      "baseName": "Game and Fish Smallmouth Bass",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Nature & Wildlife",
-      "image": {
-        "path": "state-packs/arkansas/plates/game-and-fish-smallmouth-bass-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfcSmBass_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Smallmouth Bass design.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-game-and-fish-squirrel-license-plate",
-      "slug": "game-and-fish-squirrel-license-plate",
-      "name": "Game and Fish Squirrel",
-      "displayName": "Game and Fish Squirrel",
-      "baseName": "Game and Fish Squirrel",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Nature & Wildlife",
-      "image": {
-        "path": "state-packs/arkansas/plates/game-and-fish-squirrel-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfcSquirrel_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Squirrel design.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-game-and-fish-wild-turkey-license-plate",
-      "slug": "game-and-fish-wild-turkey-license-plate",
-      "name": "Game and Fish Wild Turkey",
-      "displayName": "Game and Fish Wild Turkey",
-      "baseName": "Game and Fish Wild Turkey",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Nature & Wildlife",
-      "image": {
-        "path": "state-packs/arkansas/plates/game-and-fish-wild-turkey-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_turkey_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Wild Turkey design.",
-      "searchTerms": [],
+      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Painted Bunting design.",
+      "searchTerms": [
+        "gf"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-game-fish-pintail-duck-license-plate",
       "slug": "game-fish-pintail-duck-license-plate",
-      "name": "Game Fish Pintail Duck",
-      "displayName": "Game Fish Pintail Duck",
+      "name": "Game and Fish (Pintail Duck)",
+      "displayName": "Game and Fish (Pintail Duck)",
       "baseName": "Game Fish Pintail Duck",
       "variantLabel": null,
       "plateType": "passenger",
@@ -2016,7 +2093,151 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Pintail Duck design.",
-      "searchTerms": [],
+      "searchTerms": [
+        "bird",
+        "gf"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-game-and-fish-rainbow-trout-license-plate",
+      "slug": "game-and-fish-rainbow-trout-license-plate",
+      "name": "Game and Fish (Rainbow Trout)",
+      "displayName": "Game and Fish (Rainbow Trout)",
+      "baseName": "Game And Fish Rainbow Trout",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Nature & Wildlife",
+      "image": {
+        "path": "state-packs/arkansas/plates/game-and-fish-rainbow-trout-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_trout_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Rainbow Trout design.",
+      "searchTerms": [
+        "tw",
+        "fish"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-game-fish-red-cardinal-license-plate",
+      "slug": "game-fish-red-cardinal-license-plate",
+      "name": "Game and Fish (Red Cardinal)",
+      "displayName": "Game and Fish (Red Cardinal)",
+      "baseName": "Game & Fish Red Cardinal",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Nature & Wildlife",
+      "image": {
+        "path": "state-packs/arkansas/plates/game-fish-red-cardinal-license-plate.jpg",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/RedCardinal_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Red Cardinal design.",
+      "searchTerms": [
+        "gf"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-game-and-fish-red-fox-license-plate",
+      "slug": "game-and-fish-red-fox-license-plate",
+      "name": "Game and Fish (Red Fox)",
+      "displayName": "Game and Fish (Red Fox)",
+      "baseName": "Game and Fish Red Fox",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Nature & Wildlife",
+      "image": {
+        "path": "state-packs/arkansas/plates/game-and-fish-red-fox-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/GameFish_RedFox-scaled.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Red Fox design.",
+      "searchTerms": [
+        "gf"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-game-and-fish-smallmouth-bass-license-plate",
+      "slug": "game-and-fish-smallmouth-bass-license-plate",
+      "name": "Game and Fish (Smallmouth Bass)",
+      "displayName": "Game and Fish (Smallmouth Bass)",
+      "baseName": "Game and Fish Smallmouth Bass",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Nature & Wildlife",
+      "image": {
+        "path": "state-packs/arkansas/plates/game-and-fish-smallmouth-bass-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfcSmBass_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Smallmouth Bass design.",
+      "searchTerms": [
+        "gf",
+        "fish"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-game-and-fish-squirrel-license-plate",
+      "slug": "game-and-fish-squirrel-license-plate",
+      "name": "Game and Fish (Squirrel)",
+      "displayName": "Game and Fish (Squirrel)",
+      "baseName": "Game and Fish Squirrel",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Nature & Wildlife",
+      "image": {
+        "path": "state-packs/arkansas/plates/game-and-fish-squirrel-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfcSquirrel_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Squirrel design.",
+      "searchTerms": [
+        "gf"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-game-and-fish-wild-turkey-license-plate",
+      "slug": "game-and-fish-wild-turkey-license-plate",
+      "name": "Game and Fish (Wild Turkey)",
+      "displayName": "Game and Fish (Wild Turkey)",
+      "baseName": "Game and Fish Wild Turkey",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Nature & Wildlife",
+      "image": {
+        "path": "state-packs/arkansas/plates/game-and-fish-wild-turkey-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_turkey_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty license plate supporting Arkansas Game and Fish Commission. Wild Turkey design.",
+      "searchTerms": [
+        "gf",
+        "bird"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -2037,7 +2258,13 @@
       },
       "sponsor": null,
       "notes": "Specialty plate to support National Wild Turkey Federation",
-      "searchTerms": [],
+      "searchTerms": [
+        "bl",
+        "nwtf",
+        "habitat",
+        "hunt",
+        "bird"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -2063,48 +2290,6 @@
       "relatedPlates": []
     },
     {
-      "id": "ar-arkansas-municipal-police-association-license-plate",
-      "slug": "arkansas-municipal-police-association-license-plate",
-      "name": "Arkansas Municipal Police Association",
-      "displayName": "Arkansas Municipal Police Association",
-      "baseName": "Arkansas Municipal Police Association",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Public Service",
-      "image": {
-        "path": "state-packs/arkansas/plates/arkansas-municipal-police-association-license-plate.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/AMPA_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty plate to support Arkansas Municipal Police Association",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-arkansas-sheriffs-association-2",
-      "slug": "arkansas-sheriffs-association-2",
-      "name": "Arkansas Sheriffs’ Association",
-      "displayName": "Arkansas Sheriffs’ Association",
-      "baseName": "Arkansas Sheriffs’ Association",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Public Service",
-      "image": {
-        "path": "state-packs/arkansas/plates/arkansas-sheriffs-association-2.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/ASA_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Speciality plate to support Arkansas Sheriffs&#039; Association",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
       "id": "ar-arkansas-sheriffs-association",
       "slug": "arkansas-sheriffs-association",
       "name": "Arkansas Sheriffs’ Association",
@@ -2121,36 +2306,17 @@
       },
       "sponsor": null,
       "notes": "Specialty plate to support Arkansas State Lodge Fraternal Order of Police License Plate.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-arkansas-state-lodge-fraternal-order-of-police-license-plate",
-      "slug": "arkansas-state-lodge-fraternal-order-of-police-license-plate",
-      "name": "Arkansas State Lodge Fraternal Order of Police",
-      "displayName": "Arkansas State Lodge Fraternal Order of Police",
-      "baseName": "Arkansas State Lodge Fraternal Order of Police",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Public Service",
-      "image": {
-        "path": "state-packs/arkansas/plates/arkansas-state-lodge-fraternal-order-of-police-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/FraternalOrder_ofPolice.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "as"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-fire-fighter-license-plate-active",
       "slug": "fire-fighter-license-plate-active",
-      "name": "Fire Fighter (Active)",
-      "displayName": "Fire Fighter (Active)",
+      "name": "Firefighter (Active)",
+      "displayName": "Firefighter (Active)",
       "baseName": "Fire Fighter(Active)",
       "variantLabel": null,
       "plateType": "passenger",
@@ -2170,8 +2336,8 @@
     {
       "id": "ar-fire-fighter-license-plate-memorial",
       "slug": "fire-fighter-license-plate-memorial",
-      "name": "Fire Fighter (Memorial)",
-      "displayName": "Fire Fighter (Memorial)",
+      "name": "Firefighters Memorial",
+      "displayName": "Firefighters Memorial",
       "baseName": "Fire Fighter(Memorial)",
       "variantLabel": null,
       "plateType": "passenger",
@@ -2189,10 +2355,59 @@
       "relatedPlates": []
     },
     {
+      "id": "ar-arkansas-state-lodge-fraternal-order-of-police-license-plate",
+      "slug": "arkansas-state-lodge-fraternal-order-of-police-license-plate",
+      "name": "Fraternal Order of Police",
+      "displayName": "Fraternal Order of Police",
+      "baseName": "Arkansas State Lodge Fraternal Order of Police",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Public Service",
+      "image": {
+        "path": "state-packs/arkansas/plates/arkansas-state-lodge-fraternal-order-of-police-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/FraternalOrder_ofPolice.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "fop"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-arkansas-municipal-police-association-license-plate",
+      "slug": "arkansas-municipal-police-association-license-plate",
+      "name": "Protect & Serve",
+      "displayName": "Protect & Serve",
+      "baseName": "Arkansas Municipal Police Association",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Public Service",
+      "image": {
+        "path": "state-packs/arkansas/plates/arkansas-municipal-police-association-license-plate.jpg",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/AMPA_lg.jpg"
+      },
+      "sponsor": null,
+      "notes": "Specialty plate to support Arkansas Municipal Police Association",
+      "searchTerms": [
+        "municipal",
+        "police",
+        "blue",
+        "line"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
       "id": "ar-fire-fighter-license-plate-retired",
       "slug": "fire-fighter-license-plate-retired",
-      "name": "Fire Fighter (Retired)",
-      "displayName": "Fire Fighter (Retired)",
+      "name": "Retired Firefighter",
+      "displayName": "Retired Firefighter",
       "baseName": "Fire Fighter(Retired)",
       "variantLabel": null,
       "plateType": "passenger",
@@ -2210,31 +2425,33 @@
       "relatedPlates": []
     },
     {
-      "id": "ar-ar-tennis-license-plate",
-      "slug": "ar-tennis-license-plate",
-      "name": "AR Tennis",
-      "displayName": "AR Tennis",
-      "baseName": "AR Tennis",
+      "id": "ar-arkansas-state-parks",
+      "slug": "arkansas-state-parks",
+      "name": "Arkansas State Parks",
+      "displayName": "Arkansas State Parks",
+      "baseName": "Arkansas State Parks",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Sports & Recreation",
       "image": {
-        "path": "state-packs/arkansas/plates/ar-tennis-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/ARTennisLicensePlate2ndCAD.png"
+        "path": "state-packs/arkansas/plates/arkansas-state-parks.jpg",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/StateParks_lg.jpg"
       },
       "sponsor": null,
-      "notes": "Specialty plate to support Tennis.",
-      "searchTerms": [],
+      "notes": "Speciality plate to support Department of Parks and Tourism",
+      "searchTerms": [
+        "pk"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-golf-association-license-plate",
       "slug": "golf-association-license-plate",
-      "name": "Golf Association",
-      "displayName": "Golf Association",
+      "name": "Golf the Natural State",
+      "displayName": "Golf the Natural State",
       "baseName": "Golf Association",
       "variantLabel": null,
       "plateType": "passenger",
@@ -2247,15 +2464,17 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for Arkansas Golf Association",
-      "searchTerms": [],
+      "searchTerms": [
+        "green"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-little-rock-rangers-soccer-club",
       "slug": "little-rock-rangers-soccer-club",
-      "name": "Little Rock Rangers Soccer Club",
-      "displayName": "Little Rock Rangers Soccer Club",
+      "name": "Little Rock Rangers",
+      "displayName": "Little Rock Rangers",
       "baseName": "Little Rock Rangers Soccer Club",
       "variantLabel": null,
       "plateType": "passenger",
@@ -2268,36 +2487,70 @@
       },
       "sponsor": null,
       "notes": "Speciality plate to support Little Rock Rangers Soccer Club",
-      "searchTerms": [],
+      "searchTerms": [
+        "black",
+        "lrrangers",
+        "soccer",
+        "club"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
-      "id": "ar-in-god-we-trust-license-plate",
-      "slug": "in-god-we-trust-license-plate",
-      "name": "In God We Trust",
-      "displayName": "In God We Trust",
-      "baseName": "In God We Trust",
+      "id": "ar-ar-tennis-license-plate",
+      "slug": "ar-tennis-license-plate",
+      "name": "Play Tennis",
+      "displayName": "Play Tennis",
+      "baseName": "AR Tennis",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports & Recreation",
+      "image": {
+        "path": "state-packs/arkansas/plates/ar-tennis-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/ARTennisLicensePlate2ndCAD.png"
+      },
+      "sponsor": null,
+      "notes": "Specialty plate to support Tennis.",
+      "searchTerms": [
+        "ball",
+        "yello",
+        "blue"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ar-persons-with-disabilities-license-plate",
+      "slug": "persons-with-disabilities-license-plate",
+      "name": "Disabled",
+      "displayName": "Disabled",
+      "baseName": "Persons With Disabilities",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Standard Plates",
       "image": {
-        "path": "state-packs/arkansas/plates/in-god-we-trust-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/igwe_lg.jpg"
+        "path": "state-packs/arkansas/plates/persons-with-disabilities-license-plate.webp",
+        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/disabled_lg.jpg"
       },
       "sponsor": null,
-      "notes": "Specialty license plate supporting senior citizens home-delivered meal program provided by Arkansas Senior Citizen's Centers.",
-      "searchTerms": [],
+      "notes": "Specialty plate for qualified drivers with disabilities",
+      "searchTerms": [
+        "handicapped",
+        "wheelchair",
+        "blue"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-personalized-license-plate",
       "slug": "personalized-license-plate",
-      "name": "Personalized",
-      "displayName": "Personalized",
+      "name": "Standard",
+      "displayName": "Standard",
       "baseName": "Personalized",
       "variantLabel": null,
       "plateType": "passenger",
@@ -2310,28 +2563,9 @@
       },
       "sponsor": null,
       "notes": "Issued to Arkansas residents that want to display a personal message on their license plate.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-arkansas-state-parks",
-      "slug": "arkansas-state-parks",
-      "name": "Arkansas State Parks",
-      "displayName": "Arkansas State Parks",
-      "baseName": "Arkansas State Parks",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Travel & Tourism",
-      "image": {
-        "path": "state-packs/arkansas/plates/arkansas-state-parks.jpg",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/StateParks_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Speciality plate to support Department of Parks and Tourism",
-      "searchTerms": [],
+      "searchTerms": [
+        "diamond"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -2352,7 +2586,13 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for Arkansas State University.",
-      "searchTerms": [],
+      "searchTerms": [
+        "asu",
+        "red",
+        "wolves",
+        "jonesboro",
+        "go"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -2373,7 +2613,12 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for Arkansas Tech University.",
-      "searchTerms": [],
+      "searchTerms": [
+        "russellville",
+        "atu",
+        "yellow",
+        "green"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -2394,7 +2639,11 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for Harding University.",
-      "searchTerms": [],
+      "searchTerms": [
+        "searcy",
+        "christian",
+        "black"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -2415,15 +2664,19 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for Henderson State University.",
-      "searchTerms": [],
+      "searchTerms": [
+        "arkadelphia",
+        "red",
+        "reddies"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-hendrix-education-license-plate",
       "slug": "hendrix-education-license-plate",
-      "name": "Hendrix College Education",
-      "displayName": "Hendrix College Education",
+      "name": "Hendrix College",
+      "displayName": "Hendrix College",
       "baseName": "Hendrix College Education",
       "variantLabel": null,
       "plateType": "passenger",
@@ -2436,28 +2689,12 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for Hendrix Education.",
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-humane-society-of-the-ozarks-license-plate",
-      "slug": "humane-society-of-the-ozarks-license-plate",
-      "name": "Humane Society of the Ozarks",
-      "displayName": "Humane Society of the Ozarks",
-      "baseName": "Humane Society of the Ozarks",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Universities",
-      "image": {
-        "path": "state-packs/arkansas/plates/humane-society-of-the-ozarks-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/humaneSociety_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate for the Humane Society of the Ozarks.",
-      "searchTerms": [],
+      "searchTerms": [
+        "conway",
+        "methodist",
+        "orange",
+        "warriors"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -2478,15 +2715,21 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for John Brown University&nbsp;.",
-      "searchTerms": [],
+      "searchTerms": [
+        "siloam",
+        "springs",
+        "jbu",
+        "christian",
+        "blue"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-lyon-education-license-plate",
       "slug": "lyon-education-license-plate",
-      "name": "Lyon College Education",
-      "displayName": "Lyon College Education",
+      "name": "Lyon College",
+      "displayName": "Lyon College",
       "baseName": "Lyon College Education",
       "variantLabel": null,
       "plateType": "passenger",
@@ -2499,7 +2742,12 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for Lyon Education.",
-      "searchTerms": [],
+      "searchTerms": [
+        "batesville",
+        "scots",
+        "red",
+        "plaid"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -2520,7 +2768,13 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for Ouachita Baptist University.",
-      "searchTerms": [],
+      "searchTerms": [
+        "arkadelphia",
+        "obu",
+        "christian",
+        "purple",
+        "tiger"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -2541,7 +2795,10 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for Southern Arkansas University.",
-      "searchTerms": [],
+      "searchTerms": [
+        "sau",
+        "blue"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -2570,29 +2827,9 @@
         "woo pig",
         "ua",
         "uark",
-        "fayetteville"
+        "fayetteville",
+        "red"
       ],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ar-university-of-arkansas-agriculture-4-h-license-plate",
-      "slug": "university-of-arkansas-agriculture-4-h-license-plate",
-      "name": "University of Arkansas Agriculture 4-H",
-      "displayName": "University of Arkansas Agriculture 4-H",
-      "baseName": "University of Arkansas Agriculture 4-H",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Universities",
-      "image": {
-        "path": "state-packs/arkansas/plates/university-of-arkansas-agriculture-4-h-license-plate.webp",
-        "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/4h_lg.jpg"
-      },
-      "sponsor": null,
-      "notes": "Specialty license plate supporting U of A Agriculture scholarship and program fund.",
-      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -2613,7 +2850,10 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for the University of Arkansas at Little Rock.",
-      "searchTerms": [],
+      "searchTerms": [
+        "ualr",
+        "trojan"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -2634,15 +2874,18 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for University of Arkansas at Monticello.",
-      "searchTerms": [],
+      "searchTerms": [
+        "uam",
+        "green"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-university-of-arkansas-at-pine-bluff-license-plate",
       "slug": "university-of-arkansas-at-pine-bluff-license-plate",
-      "name": "University Of Arkansas at Pine Bluff",
-      "displayName": "University Of Arkansas at Pine Bluff",
+      "name": "University of Arkansas at Pine Bluff",
+      "displayName": "University of Arkansas at Pine Bluff",
       "baseName": "University Of Arkansas at Pine Bluff",
       "variantLabel": null,
       "plateType": "passenger",
@@ -2655,15 +2898,18 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for the University of Arkansas at Pine Bluff.",
-      "searchTerms": [],
+      "searchTerms": [
+        "uapb",
+        "yellow"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-university-of-arkansas-fort-smith-license-plate",
       "slug": "university-of-arkansas-fort-smith-license-plate",
-      "name": "University Of Arkansas Fort Smith",
-      "displayName": "University Of Arkansas Fort Smith",
+      "name": "University of Arkansas Fort Smith",
+      "displayName": "University of Arkansas Fort Smith",
       "baseName": "University Of Arkansas Fort Smith",
       "variantLabel": null,
       "plateType": "passenger",
@@ -2676,7 +2922,10 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for the University Of Arkansas Fort Smith",
-      "searchTerms": [],
+      "searchTerms": [
+        "uafs",
+        "blue"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -2697,15 +2946,17 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for the University of Arkansas Medical Sciences.",
-      "searchTerms": [],
+      "searchTerms": [
+        "uams"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-university-of-central-arkansas-license-plate-1st-design",
       "slug": "university-of-central-arkansas-license-plate-1st-design",
-      "name": "University Of Central Arkansas 1st Design",
-      "displayName": "University Of Central Arkansas 1st Design",
+      "name": "University of Central Arkansas (Design 1)",
+      "displayName": "University of Central Arkansas (Design 1)",
       "baseName": "University Of Central Arkansas1st Design",
       "variantLabel": null,
       "plateType": "passenger",
@@ -2718,15 +2969,19 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for the University Of Central Arkansas.",
-      "searchTerms": [],
+      "searchTerms": [
+        "uca",
+        "bears",
+        "purple"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ar-university-of-central-arkansas-license-plate-2nd-design",
       "slug": "university-of-central-arkansas-license-plate-2nd-design",
-      "name": "University of Central Arkansas 2nd Design",
-      "displayName": "University of Central Arkansas 2nd Design",
+      "name": "University of Central Arkansas (Design 2)",
+      "displayName": "University of Central Arkansas (Design 2)",
       "baseName": "University of Central Arkansas2nd Design",
       "variantLabel": null,
       "plateType": "passenger",
@@ -2739,7 +2994,11 @@
       },
       "sponsor": null,
       "notes": "Specialty license plate for the University Of Central Arkansas",
-      "searchTerms": [],
+      "searchTerms": [
+        "uca",
+        "bears",
+        "purple"
+      ],
       "variantOf": null,
       "relatedPlates": []
     }
