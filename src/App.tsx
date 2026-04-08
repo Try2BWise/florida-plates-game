@@ -28,6 +28,7 @@ import type { Plate, PlateCategory, PlateDiscoveryMap } from "./types";
 const THEME_STORAGE_KEY = "florida-plates-theme";
 const UI_PREFERENCES_STORAGE_KEY = "florida-plates-ui-preferences";
 const ONBOARDING_HINT_DISMISSED_STORAGE_KEY = "florida-plates-onboarding-dismissed";
+const BROWSE_PREFS_STORAGE_KEY = "every-pl8-browse-prefs";
 
 type ThemeMode = "light" | "dark";
 type PlateVisibilityFilter = "all" | "found" | "missing";
@@ -142,6 +143,27 @@ function loadUiPreferences(): UiPreferences {
   }
 }
 
+interface BrowsePrefs {
+  visibilityFilter: PlateVisibilityFilter;
+  arrangement: PlateArrangement;
+  categoryFilters: PlateCategory[];
+}
+
+function loadBrowsePrefs(): BrowsePrefs {
+  try {
+    const raw = window.localStorage.getItem(BROWSE_PREFS_STORAGE_KEY);
+    if (!raw) return { visibilityFilter: "all", arrangement: "category", categoryFilters: [] };
+    const parsed = JSON.parse(raw);
+    return {
+      visibilityFilter: parsed.visibilityFilter ?? "all",
+      arrangement: parsed.arrangement ?? "category",
+      categoryFilters: Array.isArray(parsed.categoryFilters) ? parsed.categoryFilters : []
+    };
+  } catch {
+    return { visibilityFilter: "all", arrangement: "category", categoryFilters: [] };
+  }
+}
+
 function getInitialTheme(): ThemeMode {
   const storedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
   if (storedTheme === "light" || storedTheme === "dark") {
@@ -225,8 +247,8 @@ function App() {
   );
   const [searchTerm, setSearchTerm] = useState("");
   const [visibilityFilter, setVisibilityFilter] =
-    useState<PlateVisibilityFilter>("all");
-  const [arrangement, setArrangement] = useState<PlateArrangement>("category");
+    useState<PlateVisibilityFilter>(() => loadBrowsePrefs().visibilityFilter);
+  const [arrangement, setArrangement] = useState<PlateArrangement>(() => loadBrowsePrefs().arrangement);
   const [shareStatus, setShareStatus] = useState<string | null>(null);
   const [isOnboardingHintDismissed, setIsOnboardingHintDismissed] = useState<boolean>(() =>
     loadOnboardingHintDismissed()
@@ -247,7 +269,9 @@ function App() {
     () => new Set()
   );
   /* Help/Settings tab state moved to their respective page components */
-  const [selectedCategoryFilters, setSelectedCategoryFilters] = useState<Set<PlateCategory>>(new Set());
+  const [selectedCategoryFilters, setSelectedCategoryFilters] = useState<Set<PlateCategory>>(
+    () => new Set(loadBrowsePrefs().categoryFilters)
+  );
   const searchInputRef = useRef<HTMLInputElement | null>(null);
   const headerSentinelRef = useRef<HTMLDivElement | null>(null);
   const categorySwipe = useSwipeDismiss(() => setIsCategorySheetOpen(false));
@@ -308,6 +332,17 @@ function App() {
       String(isOnboardingHintDismissed)
     );
   }, [isOnboardingHintDismissed]);
+
+  useEffect(() => {
+    window.localStorage.setItem(
+      BROWSE_PREFS_STORAGE_KEY,
+      JSON.stringify({
+        visibilityFilter,
+        arrangement,
+        categoryFilters: [...selectedCategoryFilters]
+      })
+    );
+  }, [visibilityFilter, arrangement, selectedCategoryFilters]);
 
   useEffect(() => {
     if (!uiPreferences.showSearch) {
