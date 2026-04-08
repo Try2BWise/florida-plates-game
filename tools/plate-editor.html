@@ -83,6 +83,7 @@ td.name-cell { min-width: 200px; }
 td.cat-cell { min-width: 160px; }
 td.search-cell { min-width: 220px; }
 td.sponsor-cell { min-width: 180px; }
+td.notes-cell { min-width: 200px; }
 
 /* Editable fields */
 .editable { padding: 4px 8px; border-radius: 4px; border: 1px solid transparent; background: transparent; color: var(--text); font: inherit; width: 100%; transition: border-color 0.15s; }
@@ -310,6 +311,7 @@ function renderTable() {
   html += '<th class="' + sorted('category') + '" onclick="setSort(\'category\')">Category' + arrow('category') + '</th>';
   html += '<th>Search Terms</th>';
   html += '<th class="' + sorted('sponsor') + '" onclick="setSort(\'sponsor\')">Sponsor' + arrow('sponsor') + '</th>';
+  html += '<th>Notes</th>';
   html += '</tr></thead><tbody>';
 
   plates.forEach(plate => {
@@ -331,6 +333,7 @@ function renderTable() {
     html += '<input class="tag-input" placeholder="+ add" onkeydown="addTagKey(event, \'' + plate.id + '\')">';
     html += '</div></td>';
     html += '<td class="sponsor-cell"><input class="editable" value="' + escHtml(plate.sponsor || '') + '" onchange="editField(\'' + plate.id + '\', \'sponsor\', this.value || null)"></td>';
+    html += '<td class="notes-cell"><input class="editable" value="' + escHtml(plate.notes || '') + '" onchange="editField(\'' + plate.id + '\', \'notes\', this.value || null)"></td>';
     html += '</tr>';
   });
 
@@ -425,7 +428,8 @@ function isPlateChanged(plate) {
   const orig = originalPlates.find(p => p.id === plate.id);
   if (!orig) return true;
   return plate.name !== orig.name || plate.category !== orig.category ||
-    plate.sponsor !== orig.sponsor || JSON.stringify(plate.searchTerms) !== JSON.stringify(orig.searchTerms);
+    plate.sponsor !== orig.sponsor || plate.notes !== orig.notes ||
+    JSON.stringify(plate.searchTerms) !== JSON.stringify(orig.searchTerms);
 }
 
 function updateChangeCount() {
@@ -444,6 +448,7 @@ function showDiff() {
     if (plate.name !== orig.name) diffs.push({ field: 'name', old: orig.name, new: plate.name });
     if (plate.category !== orig.category) diffs.push({ field: 'category', old: orig.category, new: plate.category });
     if (plate.sponsor !== orig.sponsor) diffs.push({ field: 'sponsor', old: orig.sponsor || '(none)', new: plate.sponsor || '(none)' });
+    if (plate.notes !== orig.notes) diffs.push({ field: 'notes', old: orig.notes || '(none)', new: plate.notes || '(none)' });
     if (JSON.stringify(plate.searchTerms) !== JSON.stringify(orig.searchTerms))
       diffs.push({ field: 'searchTerms', old: (orig.searchTerms || []).join(', ') || '(none)', new: (plate.searchTerms || []).join(', ') || '(none)' });
     if (diffs.length > 0) changes.push({ plate: plate.name, diffs });
