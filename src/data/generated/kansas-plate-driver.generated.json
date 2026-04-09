@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "generatedDate": "2026-04-09",
   "generatedFrom": "src/data/kansas-plate-master.json",
-  "plateCount": 38,
+  "plateCount": 85,
   "plates": [
     {
       "id": "ks-1st-infantry-division",
@@ -408,7 +408,8 @@
       ],
       "variantOf": null,
       "relatedPlates": [
-        "ks-purple-heart"
+        "ks-purple-heart",
+        "ks-silver-star-medal"
       ]
     },
     {
@@ -1078,6 +1079,1286 @@
       "variantOf": null,
       "relatedPlates": [
         "ks-korean-war-veteran"
+      ]
+    },
+    {
+      "id": "ks-silver-star-medal",
+      "slug": "silver-star-medal",
+      "name": "Silver Star Medal",
+      "displayName": "Silver Star Medal",
+      "baseName": "Silver Star Medal",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-silver-star-medal.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/SilverStar.jpg"
+      },
+      "sponsor": "For veterans awarded the Silver Star for gallantry in action.",
+      "notes": null,
+      "searchTerms": [
+        "silver star",
+        "gallantry",
+        "medal",
+        "valor"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-congressional-medal-of-honor",
+        "ks-purple-heart"
+      ]
+    },
+    {
+      "id": "ks-bronze-star",
+      "slug": "bronze-star",
+      "name": "Bronze Star",
+      "displayName": "Bronze Star",
+      "baseName": "Bronze Star",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-bronze-star.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/BronzeStar.jpg"
+      },
+      "sponsor": "For veterans awarded the Bronze Star Medal for heroic or meritorious service.",
+      "notes": null,
+      "searchTerms": [
+        "bronze star",
+        "medal",
+        "valor",
+        "meritorious"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-silver-star-medal",
+        "ks-purple-heart"
+      ]
+    },
+    {
+      "id": "ks-personalized-2025",
+      "slug": "personalized-2025",
+      "name": "Personalized 2025",
+      "displayName": "Personalized 2025",
+      "baseName": "Personalized 2025",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-personalized-2025.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/Pers2025.jpg"
+      },
+      "sponsor": "Standard personalized plate for 2025.",
+      "notes": null,
+      "searchTerms": [
+        "personalized",
+        "vanity",
+        "custom"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-personalized-disabled-2025"
+      ]
+    },
+    {
+      "id": "ks-personalized-disabled-2025",
+      "slug": "personalized-disabled-2025",
+      "name": "Personalized Disabled 2025",
+      "displayName": "Personalized Disabled 2025",
+      "baseName": "Personalized Disabled 2025",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-personalized-disabled-2025.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/PersDis2025.jpg"
+      },
+      "sponsor": "Personalized plate with accessible parking designation.",
+      "notes": null,
+      "searchTerms": [
+        "personalized",
+        "disabled",
+        "handicap",
+        "accessible"
+      ],
+      "variantOf": "ks-personalized-2025",
+      "relatedPlates": [
+        "ks-personalized-2025"
+      ]
+    },
+    {
+      "id": "ks-to-the-stars-personalized",
+      "slug": "to-the-stars-personalized",
+      "name": "To the Stars Personalized",
+      "displayName": "To the Stars Personalized",
+      "baseName": "To the Stars",
+      "variantLabel": "Personalized",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-to-the-stars-personalized.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/ToTheStarsPers.jpg"
+      },
+      "sponsor": "Ad Astra per Aspera — To the Stars Through Difficulties. Kansas state motto plate.",
+      "notes": null,
+      "searchTerms": [
+        "to the stars",
+        "ad astra",
+        "motto",
+        "personalized"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-to-the-stars-disabled-personalized"
+      ]
+    },
+    {
+      "id": "ks-to-the-stars-disabled-personalized",
+      "slug": "to-the-stars-disabled-personalized",
+      "name": "To the Stars Disabled Personalized",
+      "displayName": "To the Stars Disabled Personalized",
+      "baseName": "To the Stars",
+      "variantLabel": "Disabled Personalized",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-to-the-stars-disabled-personalized.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/ToTheStarsDisPers.jpg"
+      },
+      "sponsor": "To the Stars plate with accessible parking designation.",
+      "notes": null,
+      "searchTerms": [
+        "to the stars",
+        "ad astra",
+        "disabled",
+        "accessible"
+      ],
+      "variantOf": "ks-to-the-stars-personalized",
+      "relatedPlates": [
+        "ks-to-the-stars-personalized"
+      ]
+    },
+    {
+      "id": "ks-personalized-antique",
+      "slug": "personalized-antique",
+      "name": "Personalized Antique",
+      "displayName": "Personalized Antique",
+      "baseName": "Personalized Antique",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-personalized-antique.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/PersAntique.jpg"
+      },
+      "sponsor": "Personalized plate for antique vehicles at least 35 years old.",
+      "notes": null,
+      "searchTerms": [
+        "personalized",
+        "antique",
+        "classic",
+        "vintage"
+      ],
+      "variantOf": "ks-antique",
+      "relatedPlates": [
+        "ks-antique"
+      ]
+    },
+    {
+      "id": "ks-benedictine-college",
+      "slug": "benedictine-college",
+      "name": "Benedictine College",
+      "displayName": "Benedictine College",
+      "baseName": "Benedictine College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-benedictine-college.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/BenedictineCollege.jpg"
+      },
+      "sponsor": "Benedictine College, Atchison, Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "benedictine",
+        "ravens",
+        "atchison",
+        "college"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-emporia-state",
+      "slug": "emporia-state",
+      "name": "Emporia State University",
+      "displayName": "Emporia State University",
+      "baseName": "Emporia State University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-emporia-state.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/EmporiaStateU.jpg"
+      },
+      "sponsor": "Emporia State University, Emporia, Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "emporia",
+        "hornets",
+        "esu",
+        "university"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-fort-hays-state",
+      "slug": "fort-hays-state",
+      "name": "Fort Hays State University",
+      "displayName": "Fort Hays State University",
+      "baseName": "Fort Hays State University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-fort-hays-state.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/FortHaysStateU.jpg"
+      },
+      "sponsor": "Fort Hays State University, Hays, Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "fort hays",
+        "tigers",
+        "fhsu",
+        "hays",
+        "university"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-friends-university",
+      "slug": "friends-university",
+      "name": "Friends University",
+      "displayName": "Friends University",
+      "baseName": "Friends University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-friends-university.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/FriendsU.jpg"
+      },
+      "sponsor": "Friends University, Wichita, Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "friends",
+        "falcons",
+        "wichita",
+        "university"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-garden-city-community-college",
+      "slug": "garden-city-community-college",
+      "name": "Garden City Community College",
+      "displayName": "Garden City Community College",
+      "baseName": "Garden City Community College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-garden-city-community-college.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/GCCC.jpg"
+      },
+      "sponsor": "Garden City Community College, Garden City, Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "gccc",
+        "garden city",
+        "broncbusters",
+        "community college"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-kansas-state",
+      "slug": "kansas-state",
+      "name": "Kansas State University",
+      "displayName": "Kansas State University",
+      "baseName": "Kansas State University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-kansas-state.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/KansasStateU.jpg"
+      },
+      "sponsor": "Kansas State University, Manhattan, Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "k-state",
+        "wildcats",
+        "manhattan",
+        "ksu",
+        "purple"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-university-of-kansas"
+      ]
+    },
+    {
+      "id": "ks-pittsburg-state",
+      "slug": "pittsburg-state",
+      "name": "Pittsburg State University",
+      "displayName": "Pittsburg State University",
+      "baseName": "Pittsburg State University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-pittsburg-state.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/PittsburgStateU.jpg"
+      },
+      "sponsor": "Pittsburg State University, Pittsburg, Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "pittsburg",
+        "gorillas",
+        "psu",
+        "pitt state"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-university-of-kansas",
+      "slug": "university-of-kansas",
+      "name": "University of Kansas",
+      "displayName": "University of Kansas",
+      "baseName": "University of Kansas",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-university-of-kansas.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/UniversityKansas.jpg"
+      },
+      "sponsor": "University of Kansas, Lawrence, Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "ku",
+        "jayhawks",
+        "lawrence",
+        "rock chalk"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-kansas-state"
+      ]
+    },
+    {
+      "id": "ks-washburn",
+      "slug": "washburn",
+      "name": "Washburn University",
+      "displayName": "Washburn University",
+      "baseName": "Washburn University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-washburn.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/WashburnU.jpg"
+      },
+      "sponsor": "Washburn University, Topeka, Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "washburn",
+        "ichabods",
+        "topeka",
+        "university"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-wichita-state",
+      "slug": "wichita-state",
+      "name": "Wichita State University",
+      "displayName": "Wichita State University",
+      "baseName": "Wichita State University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-wichita-state.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/WichitaStateU.jpg"
+      },
+      "sponsor": "Wichita State University, Wichita, Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "wichita state",
+        "shockers",
+        "wsu",
+        "wichita"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-agriculture-in-the-classroom",
+      "slug": "agriculture-in-the-classroom",
+      "name": "Agriculture in the Classroom",
+      "displayName": "Agriculture in the Classroom",
+      "baseName": "Agriculture in the Classroom",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-agriculture-in-the-classroom.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/AgClassroom.jpg"
+      },
+      "sponsor": "Supports agricultural education programs in Kansas schools.",
+      "notes": null,
+      "searchTerms": [
+        "agriculture",
+        "farming",
+        "classroom",
+        "education",
+        "ag"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-autism-awareness",
+      "slug": "autism-awareness",
+      "name": "Autism Awareness",
+      "displayName": "Autism Awareness",
+      "baseName": "Autism Awareness",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-autism-awareness.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/AutismAwereness.jpg"
+      },
+      "sponsor": "Supports autism awareness and research in Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "autism",
+        "awareness",
+        "puzzle",
+        "spectrum"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-back-the-blue",
+      "slug": "back-the-blue",
+      "name": "Back the Blue",
+      "displayName": "Back the Blue",
+      "baseName": "Back the Blue",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-back-the-blue.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/BackBlue.jpg"
+      },
+      "sponsor": "Supports law enforcement officers and their families.",
+      "notes": null,
+      "searchTerms": [
+        "back the blue",
+        "police",
+        "law enforcement",
+        "thin blue line"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-bradens-hope",
+      "slug": "bradens-hope",
+      "name": "Braden's Hope",
+      "displayName": "Braden's Hope",
+      "baseName": "Braden's Hope",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-bradens-hope.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/BradensHope.jpg"
+      },
+      "sponsor": "Braden's Hope for Childhood Cancer.",
+      "notes": null,
+      "searchTerms": [
+        "bradens hope",
+        "childhood cancer",
+        "pediatric",
+        "cancer"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-breast-cancer-research",
+      "slug": "breast-cancer-research",
+      "name": "Breast Cancer Research",
+      "displayName": "Breast Cancer Research",
+      "baseName": "Breast Cancer Research",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-breast-cancer-research.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/BreastCancerResearch.jpg"
+      },
+      "sponsor": "Supports breast cancer research and awareness.",
+      "notes": null,
+      "searchTerms": [
+        "breast cancer",
+        "pink ribbon",
+        "cancer research"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-kansas-city-chiefs",
+      "slug": "kansas-city-chiefs",
+      "name": "Kansas City Chiefs",
+      "displayName": "Kansas City Chiefs",
+      "baseName": "Kansas City Chiefs",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-kansas-city-chiefs.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/KansasCityChiefs.jpg"
+      },
+      "sponsor": "Kansas City Chiefs NFL franchise.",
+      "notes": null,
+      "searchTerms": [
+        "chiefs",
+        "kansas city",
+        "nfl",
+        "football",
+        "arrowhead",
+        "mahomes"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-sporting-kansas-city"
+      ]
+    },
+    {
+      "id": "ks-childrens-trust-fund",
+      "slug": "childrens-trust-fund",
+      "name": "Children's Trust Fund",
+      "displayName": "Children's Trust Fund",
+      "baseName": "Children's Trust Fund",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-childrens-trust-fund.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/ChildrensTrustFund.jpg"
+      },
+      "sponsor": "Kansas Children's Trust Fund for child abuse prevention.",
+      "notes": null,
+      "searchTerms": [
+        "children",
+        "trust fund",
+        "child abuse",
+        "prevention"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-city-of-hutchinson",
+      "slug": "city-of-hutchinson",
+      "name": "City of Hutchinson",
+      "displayName": "City of Hutchinson",
+      "baseName": "City of Hutchinson",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-city-of-hutchinson.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/CityHutchinson.jpg"
+      },
+      "sponsor": "City of Hutchinson, Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "hutchinson",
+        "hutch",
+        "salt city",
+        "city"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-city-of-topeka",
+        "ks-city-of-wichita"
+      ]
+    },
+    {
+      "id": "ks-city-of-topeka",
+      "slug": "city-of-topeka",
+      "name": "City of Topeka",
+      "displayName": "City of Topeka",
+      "baseName": "City of Topeka",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-city-of-topeka.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/CityTopeka.jpg"
+      },
+      "sponsor": "City of Topeka, Kansas — state capital.",
+      "notes": null,
+      "searchTerms": [
+        "topeka",
+        "capital",
+        "city"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-city-of-hutchinson",
+        "ks-city-of-wichita"
+      ]
+    },
+    {
+      "id": "ks-city-of-wichita",
+      "slug": "city-of-wichita",
+      "name": "City of Wichita",
+      "displayName": "City of Wichita",
+      "baseName": "City of Wichita",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-city-of-wichita.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/CityWichita.jpg"
+      },
+      "sponsor": "City of Wichita, Kansas — Air Capital of the World.",
+      "notes": null,
+      "searchTerms": [
+        "wichita",
+        "ict",
+        "air capital",
+        "city"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-city-of-topeka",
+        "ks-city-of-hutchinson"
+      ]
+    },
+    {
+      "id": "ks-donate-life",
+      "slug": "donate-life",
+      "name": "Donate Life",
+      "displayName": "Donate Life",
+      "baseName": "Donate Life",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-donate-life.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/DonateLife.jpg"
+      },
+      "sponsor": "Promotes organ and tissue donation awareness.",
+      "notes": null,
+      "searchTerms": [
+        "donate life",
+        "organ donor",
+        "transplant"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-down-syndrome",
+      "slug": "down-syndrome",
+      "name": "Down Syndrome",
+      "displayName": "Down Syndrome",
+      "baseName": "Down Syndrome",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-down-syndrome.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/DownSyndrome.jpg"
+      },
+      "sponsor": "Supports Down syndrome awareness and advocacy.",
+      "notes": null,
+      "searchTerms": [
+        "down syndrome",
+        "awareness",
+        "advocacy"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-ducks-unlimited",
+      "slug": "ducks-unlimited",
+      "name": "Ducks Unlimited",
+      "displayName": "Ducks Unlimited",
+      "baseName": "Ducks Unlimited",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-ducks-unlimited.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/DucksUnlimited.jpg"
+      },
+      "sponsor": "Ducks Unlimited — wetlands and waterfowl conservation.",
+      "notes": null,
+      "searchTerms": [
+        "ducks unlimited",
+        "waterfowl",
+        "conservation",
+        "wetlands",
+        "du"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-hunting",
+        "ks-fishing"
+      ]
+    },
+    {
+      "id": "ks-eisenhower-foundation",
+      "slug": "eisenhower-foundation",
+      "name": "Eisenhower Foundation",
+      "displayName": "Eisenhower Foundation",
+      "baseName": "Eisenhower Foundation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-eisenhower-foundation.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/EisenhowerFoundation.jpg"
+      },
+      "sponsor": "Eisenhower Presidential Library and Museum, Abilene, Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "eisenhower",
+        "ike",
+        "president",
+        "abilene",
+        "foundation"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-fishing",
+      "slug": "fishing",
+      "name": "Fishing",
+      "displayName": "Fishing",
+      "baseName": "Fishing",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-fishing.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/Fishing.jpg"
+      },
+      "sponsor": "Supports Kansas fishing and aquatic habitat programs.",
+      "notes": null,
+      "searchTerms": [
+        "fishing",
+        "fish",
+        "angler",
+        "bass",
+        "outdoor"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-hunting",
+        "ks-ducks-unlimited"
+      ]
+    },
+    {
+      "id": "ks-gadsden-flag",
+      "slug": "gadsden-flag",
+      "name": "Gadsden Flag",
+      "displayName": "Gadsden Flag",
+      "baseName": "Gadsden Flag",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-gadsden-flag.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/GadsdenFlag.jpg"
+      },
+      "sponsor": "Don't Tread on Me — historic American patriotic flag design.",
+      "notes": null,
+      "searchTerms": [
+        "gadsden",
+        "dont tread on me",
+        "snake",
+        "patriotic",
+        "flag"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-horse-council",
+      "slug": "horse-council",
+      "name": "Horse Council",
+      "displayName": "Horse Council",
+      "baseName": "Horse Council",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-horse-council.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/HorseCouncil.jpg"
+      },
+      "sponsor": "Kansas Horse Council — equine advocacy and education.",
+      "notes": null,
+      "searchTerms": [
+        "horse",
+        "equine",
+        "horse council",
+        "equestrian"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-hunting",
+      "slug": "hunting",
+      "name": "Hunting",
+      "displayName": "Hunting",
+      "baseName": "Hunting",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-hunting.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/Hunting.jpg"
+      },
+      "sponsor": "Supports Kansas wildlife and habitat conservation programs.",
+      "notes": null,
+      "searchTerms": [
+        "hunting",
+        "hunter",
+        "deer",
+        "pheasant",
+        "outdoor"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-fishing",
+        "ks-ducks-unlimited"
+      ]
+    },
+    {
+      "id": "ks-im-pet-friendly",
+      "slug": "im-pet-friendly",
+      "name": "I'm Pet Friendly",
+      "displayName": "I'm Pet Friendly",
+      "baseName": "I'm Pet Friendly",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-im-pet-friendly.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/ImPetFriendly.jpg"
+      },
+      "sponsor": "Supports Kansas animal welfare organizations.",
+      "notes": null,
+      "searchTerms": [
+        "pet",
+        "pet friendly",
+        "animal",
+        "dog",
+        "cat"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-4h-foundation",
+      "slug": "4h-foundation",
+      "name": "Kansas 4-H Foundation",
+      "displayName": "Kansas 4-H Foundation",
+      "baseName": "Kansas 4-H Foundation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-4h-foundation.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/Kansas4-H.jpg"
+      },
+      "sponsor": "Kansas 4-H Foundation — youth development programs.",
+      "notes": null,
+      "searchTerms": [
+        "4-h",
+        "4h",
+        "youth",
+        "agriculture",
+        "foundation"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-love-chloe",
+      "slug": "love-chloe",
+      "name": "Love Chloe",
+      "displayName": "Love Chloe",
+      "baseName": "Love Chloe",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-love-chloe.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/LoveChloe.jpg"
+      },
+      "sponsor": "Love Chloe Foundation — anti-bullying and kindness advocacy.",
+      "notes": null,
+      "searchTerms": [
+        "love chloe",
+        "anti-bullying",
+        "kindness"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-masonic-lodge",
+      "slug": "masonic-lodge",
+      "name": "Masonic Lodge",
+      "displayName": "Masonic Lodge",
+      "baseName": "Masonic Lodge",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-masonic-lodge.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/MasonicLodge.jpg"
+      },
+      "sponsor": "Kansas Grand Lodge of Freemasonry.",
+      "notes": null,
+      "searchTerms": [
+        "masonic",
+        "mason",
+        "freemason",
+        "lodge",
+        "fraternal"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-shriner"
+      ]
+    },
+    {
+      "id": "ks-non-game-wildlife",
+      "slug": "non-game-wildlife",
+      "name": "Non-Game Wildlife",
+      "displayName": "Non-Game Wildlife",
+      "baseName": "Non-Game Wildlife",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-non-game-wildlife.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/Non-GameWildlife.jpg"
+      },
+      "sponsor": "Supports non-game wildlife habitat and conservation in Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "wildlife",
+        "non-game",
+        "conservation",
+        "habitat"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-ducks-unlimited"
+      ]
+    },
+    {
+      "id": "ks-proud-educator",
+      "slug": "proud-educator",
+      "name": "Proud Educator",
+      "displayName": "Proud Educator",
+      "baseName": "Proud Educator",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-proud-educator.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/ProudEducator.jpg"
+      },
+      "sponsor": "Supports Kansas education programs.",
+      "notes": null,
+      "searchTerms": [
+        "educator",
+        "teacher",
+        "education",
+        "school",
+        "proud"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-sedgwick-county-zoo",
+      "slug": "sedgwick-county-zoo",
+      "name": "Sedgwick County Zoo",
+      "displayName": "Sedgwick County Zoo",
+      "baseName": "Sedgwick County Zoo",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-sedgwick-county-zoo.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/SedgwickCountyZoo.jpg?v1"
+      },
+      "sponsor": "Sedgwick County Zoo, Wichita, Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "sedgwick",
+        "zoo",
+        "wichita",
+        "animals"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-topeka-zoo"
+      ]
+    },
+    {
+      "id": "ks-special-olympics",
+      "slug": "special-olympics",
+      "name": "Special Olympics",
+      "displayName": "Special Olympics",
+      "baseName": "Special Olympics",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-special-olympics.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/SpecialOlympics.jpg"
+      },
+      "sponsor": "Special Olympics Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "special olympics",
+        "olympics",
+        "athletes"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-sporting-kansas-city",
+      "slug": "sporting-kansas-city",
+      "name": "Sporting Kansas City",
+      "displayName": "Sporting Kansas City",
+      "baseName": "Sporting Kansas City",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-sporting-kansas-city.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/SportingKansasCity.jpg"
+      },
+      "sponsor": "Sporting Kansas City MLS franchise.",
+      "notes": null,
+      "searchTerms": [
+        "sporting kc",
+        "sporting",
+        "soccer",
+        "mls",
+        "kansas city"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-kansas-city-chiefs"
+      ]
+    },
+    {
+      "id": "ks-state-parks",
+      "slug": "state-parks",
+      "name": "State Parks",
+      "displayName": "State Parks",
+      "baseName": "State Parks",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-state-parks.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/StateParks.jpg"
+      },
+      "sponsor": "Supports Kansas state parks and recreation areas.",
+      "notes": null,
+      "searchTerms": [
+        "state parks",
+        "parks",
+        "recreation",
+        "outdoors"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-support-the-arts",
+      "slug": "support-the-arts",
+      "name": "Support the Arts",
+      "displayName": "Support the Arts",
+      "baseName": "Support the Arts",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-support-the-arts.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/SupportArts.jpg"
+      },
+      "sponsor": "Supports arts programs and cultural organizations across Kansas.",
+      "notes": null,
+      "searchTerms": [
+        "arts",
+        "support the arts",
+        "culture",
+        "creative"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ks-topeka-zoo",
+      "slug": "topeka-zoo",
+      "name": "Topeka Zoo",
+      "displayName": "Topeka Zoo",
+      "baseName": "Topeka Zoo",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/kansas/plates/ks-topeka-zoo.jpg",
+        "remoteUrl": "https://ksrevenue.gov/img/persplates/TopekaZoo.jpg"
+      },
+      "sponsor": "Topeka Zoo and Conservation Center.",
+      "notes": null,
+      "searchTerms": [
+        "topeka",
+        "zoo",
+        "animals",
+        "conservation"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ks-sedgwick-county-zoo"
       ]
     }
   ]

@@ -3,8 +3,10 @@ import type { GameDefinition, PlateCategory } from "../types";
 
 export const kansasMixedBagCategories = new Set<PlateCategory>([
   "Civic",
+  "Health",
   "Heritage",
-  "Standard"
+  "Standard",
+  "Wildlife & Nature"
 ]);
 
 // Kansas has no panhandle equivalent — empty set
