@@ -48,6 +48,16 @@ import {
   tennesseeMixedBagCategories,
   tennesseeRegionScoutCounties
 } from "../config/tennesseeGame";
+import kansasDriverData from "../data/generated/kansas-plate-driver.generated.json";
+import kansasLegacyIdMap from "../data/generated/kansas-legacy-id-map.generated.json";
+import {
+  kansasBadgeCounties,
+  kansasBadgeGroupLabels,
+  kansasBadgeGroupSymbols,
+  kansasGame,
+  kansasMixedBagCategories,
+  kansasRegionScoutCounties
+} from "../config/kansasGame";
 import kentuckyDriverData from "../data/generated/kentucky-plate-driver.generated.json";
 import kentuckyLegacyIdMap from "../data/generated/kentucky-legacy-id-map.generated.json";
 import {
@@ -179,6 +189,21 @@ function loadTennesseePack() {
   };
 }
 
+function loadKansasPack() {
+  const plates = buildPlates(kansasDriverData);
+  return {
+    game: kansasGame,
+    badgeCounties: kansasBadgeCounties,
+    badgeGroupLabels: kansasBadgeGroupLabels,
+    badgeGroupSymbols: kansasBadgeGroupSymbols,
+    mixedBagCategories: kansasMixedBagCategories,
+    panhandleScoutCounties: kansasRegionScoutCounties,
+    legacyIdMap: kansasLegacyIdMap as Record<string, string>,
+    plates,
+    groupedPlates: buildGroupedPlates(plates),
+  };
+}
+
 function loadKentuckyPack() {
   const plates = buildPlates(kentuckyDriverData);
   return {
@@ -200,6 +225,7 @@ function loadStatePack(stateId: string) {
     case "arkansas": return loadArkansasPack();
     case "missouri": return loadMissouriPack();
     case "tennessee": return loadTennesseePack();
+    case "kansas": return loadKansasPack();
     case "kentucky": return loadKentuckyPack();
     case "florida":
     default:
