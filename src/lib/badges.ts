@@ -678,8 +678,8 @@ export const badgeDefinitions: BadgeDefinition[] = [
   // Kansas Explorer region badges
   {
     id: "ks-northwest-explorer",
-    name: "Northwest Plains Explorer",
-    description: "Find a plate in every Northwest Plains county.",
+    name: "Northwest Kansas Explorer",
+    description: "Find a plate in every Northwest Kansas county.",
     group: "florida",
     availableIn: "v1.4"
   },
@@ -691,23 +691,16 @@ export const badgeDefinitions: BadgeDefinition[] = [
     availableIn: "v1.4"
   },
   {
-    id: "ks-north-central-explorer",
-    name: "North Central Explorer",
-    description: "Find a plate in every North Central Kansas county.",
+    id: "ks-southwest-explorer",
+    name: "Southwest Kansas Explorer",
+    description: "Find a plate in every Southwest Kansas county.",
     group: "florida",
     availableIn: "v1.4"
   },
   {
     id: "ks-south-central-explorer",
-    name: "South Central Explorer",
+    name: "South Central Kansas Explorer",
     description: "Find a plate in every South Central Kansas county.",
-    group: "florida",
-    availableIn: "v1.4"
-  },
-  {
-    id: "ks-southwest-explorer",
-    name: "Southwest Kansas Explorer",
-    description: "Find a plate in every Southwest Kansas county.",
     group: "florida",
     availableIn: "v1.4"
   },
@@ -1375,8 +1368,8 @@ export function evaluateBadges(
       "all-around-tennessee",
     ]),
     kansas: new Set([
-      "ks-northwest-explorer", "ks-northeast-explorer", "ks-north-central-explorer",
-      "ks-south-central-explorer", "ks-southwest-explorer", "ks-southeast-explorer",
+      "ks-northwest-explorer", "ks-northeast-explorer", "ks-southwest-explorer",
+      "ks-south-central-explorer", "ks-southeast-explorer",
       "all-around-kansas",
     ]),
     kentucky: new Set([

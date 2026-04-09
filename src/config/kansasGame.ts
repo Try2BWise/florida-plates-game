@@ -12,39 +12,39 @@ export const kansasMixedBagCategories = new Set<PlateCategory>([
 // Kansas has no panhandle equivalent — empty set
 export const kansasRegionScoutCounties = new Set<string>();
 
-// Kansas regional badge counties — 6 regions across 105 counties
+// Kansas regional badge counties — KDWP official 5 regions, 105 counties
+// Source: Kansas Dept of Wildlife & Parks (ksoutdoors.gov)
 export const kansasBadgeCounties: Record<string, string[]> = {
-  // Northwest Plains
+  // Northwest (KDWP Region 1)
   "ks-northwest-explorer": [
-    "Cheyenne", "Decatur", "Ellis", "Gove", "Graham", "Logan",
-    "Norton", "Osborne", "Phillips", "Rawlins", "Rooks", "Russell",
-    "Sheridan", "Sherman", "Smith", "Thomas", "Trego", "Wallace"
+    "Cheyenne", "Cloud", "Decatur", "Ellis", "Ellsworth", "Gove",
+    "Graham", "Jewell", "Lincoln", "Logan", "Mitchell", "Norton",
+    "Osborne", "Ottawa", "Phillips", "Rawlins", "Republic", "Rooks",
+    "Russell", "Saline", "Sheridan", "Sherman", "Smith", "Thomas",
+    "Trego", "Wallace"
   ],
-  // Northeast — Kansas City metro, college towns, capital
+  // Northeast (KDWP Region 2) — KC metro, Topeka, Lawrence, Manhattan
   "ks-northeast-explorer": [
-    "Atchison", "Brown", "Doniphan", "Douglas", "Geary", "Jackson",
-    "Jefferson", "Johnson", "Leavenworth", "Marshall", "Miami",
-    "Nemaha", "Pottawatomie", "Riley", "Shawnee", "Wabaunsee",
-    "Wyandotte"
+    "Atchison", "Brown", "Clay", "Dickinson", "Doniphan", "Douglas",
+    "Geary", "Jackson", "Jefferson", "Johnson", "Leavenworth", "Marshall",
+    "Miami", "Nemaha", "Pottawatomie", "Riley", "Shawnee", "Wabaunsee",
+    "Washington", "Wyandotte"
   ],
-  // North Central
-  "ks-north-central-explorer": [
-    "Clay", "Cloud", "Dickinson", "Ellsworth", "Jewell", "Lincoln",
-    "Mitchell", "Morris", "Ottawa", "Republic", "Saline", "Washington"
+  // Southwest (KDWP Region 3)
+  "ks-southwest-explorer": [
+    "Barber", "Barton", "Clark", "Comanche", "Edwards", "Finney",
+    "Ford", "Grant", "Gray", "Greeley", "Hamilton", "Haskell",
+    "Hodgeman", "Kearny", "Kiowa", "Lane", "Meade", "Morton",
+    "Ness", "Pawnee", "Pratt", "Rush", "Scott", "Seward",
+    "Stafford", "Stanton", "Stevens", "Wichita"
   ],
-  // South Central — Wichita metro
+  // South Central (KDWP Region 4) — Wichita metro
   "ks-south-central-explorer": [
     "Butler", "Chase", "Cowley", "Harper", "Harvey", "Kingman",
-    "Marion", "McPherson", "Reno", "Rice", "Sedgwick", "Sumner"
+    "Marion", "McPherson", "Morris", "Reno", "Rice", "Sedgwick",
+    "Sumner"
   ],
-  // Southwest
-  "ks-southwest-explorer": [
-    "Clark", "Comanche", "Edwards", "Finney", "Ford", "Grant",
-    "Gray", "Greeley", "Hamilton", "Haskell", "Hodgeman", "Kearny",
-    "Kiowa", "Lane", "Meade", "Morton", "Ness", "Pawnee", "Rush",
-    "Scott", "Seward", "Stafford", "Stanton", "Stevens", "Wichita"
-  ],
-  // Southeast
+  // Southeast (KDWP Region 5)
   "ks-southeast-explorer": [
     "Allen", "Anderson", "Bourbon", "Chautauqua", "Cherokee", "Coffey",
     "Crawford", "Elk", "Franklin", "Greenwood", "Labette", "Linn",

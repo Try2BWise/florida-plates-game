@@ -10,7 +10,7 @@ Installable offline-friendly license plate collecting game. Spot specialty plate
 |-------|--------|---------------|--------------|
 | Arkansas | 129 | 6 regions + master | AR DFA |
 | Florida | 338 | 9 regions + master | FL DHSMV |
-| Kansas | 85 | 6 regions + master | KS DOR |
+| Kansas | 85 | 5 regions + master | KS DOR |
 | Kentucky | 231 | 6 regions + master | KY KYTC |
 | Mississippi | 305 | 5 regions + master | MS DOR |
 | Missouri | 162 | 5 regions + master | MO DOR |
