@@ -2115,6 +2115,35 @@ select {
   width: 100%;
 }
 
+.state-picker__index {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.state-picker__index-btn {
+  all: unset;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent);
+  padding: 0.25rem 0;
+  border: 1px solid var(--accent);
+  border-radius: 0.62rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  width: 3.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.state-picker__index-btn:active {
+  background: var(--accent);
+  color: #fff;
+}
+
 .state-picker__card {
   display: flex;
   align-items: center;
