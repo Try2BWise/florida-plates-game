@@ -27,12 +27,11 @@ export interface EvaluatedBadge extends BadgeDefinition {
   progressTarget?: number;
 }
 
-const natureCategory: PlateCategory = "Nature & Wildlife";
-const sportsCategory: PlateCategory = "Professional Sports";
+const natureCategory: PlateCategory = "Wildlife & Nature";
+const sportsCategory: PlateCategory = "Sports";
 const universitiesCategory: PlateCategory = "Universities";
-const militaryServiceCategory: PlateCategory = "Military Service";
-const militaryHonorsCategory: PlateCategory = "Military Honors & History";
-const publicServiceCategory: PlateCategory = "Public Service";
+const militaryCategory: PlateCategory = "Military";
+const firstRespondersCategory: PlateCategory = "First Responders";
 
 
 const baseballPlateNames = ["Miami Marlins (Baseball)", "Tampa Bay Rays (Baseball)"];
@@ -856,15 +855,14 @@ function isHonorOrMedalPlate(plate: Plate): boolean {
 
 function isServiceCategoryPlate(plate: Plate): boolean {
   return (
-    plate.category === militaryServiceCategory ||
-    plate.category === militaryHonorsCategory ||
-    plate.category === publicServiceCategory
+    plate.category === militaryCategory ||
+    plate.category === firstRespondersCategory
   );
 }
 
 function isThoseWhoServeCompletionPlate(plate: Plate): boolean {
   return (
-    (plate.category === militaryServiceCategory || plate.category === publicServiceCategory) &&
+    (plate.category === militaryCategory || plate.category === firstRespondersCategory) &&
     !isHonorOrMedalPlate(plate)
   );
 }
@@ -959,8 +957,7 @@ export function evaluateBadges(
   const totalPlates = plates.length;
   const natureFound = countFoundInCategory(plates, discoveries, natureCategory);
   const sportsFound = countFoundInCategory(plates, discoveries, sportsCategory);
-  const recreationFound = countFoundInCategory(plates, discoveries, "Sports & Recreation");
-  const healthFound = countFoundInCategory(plates, discoveries, "Health & Family");
+  const healthFound = countFoundInCategory(plates, discoveries, "Health");
   const universitiesFound = countFoundInCategory(plates, discoveries, universitiesCategory);
   const thoseWhoServeFound = countFoundInServiceCategory(plates, discoveries);
   const thoseWhoServeCompletionFound = countFoundInThoseWhoServeCompletion(plates, discoveries);
@@ -1068,7 +1065,7 @@ export function evaluateBadges(
     ["green-light", createThresholdBadge(getBadgeDefinition(definitionsById, "green-light"), natureFound, 5)],
     ["sports-fan", createThresholdBadge(getBadgeDefinition(definitionsById, "sports-fan"), sportsFound, 5)],
     ["healing-hands", createThresholdBadge(getBadgeDefinition(definitionsById, "healing-hands"), healthFound, 5)],
-    ["game-on", createThresholdBadge(getBadgeDefinition(definitionsById, "game-on"), recreationFound, 5)],
+    ["game-on", createThresholdBadge(getBadgeDefinition(definitionsById, "game-on"), sportsFound, 5)],
     [
       "coastal-cruiser",
       createThresholdBadge(

@@ -2,11 +2,11 @@ import type { BadgeGroup } from "../lib/badges";
 import type { GameDefinition, PlateCategory } from "../types";
 
 export const kentuckyMixedBagCategories = new Set<PlateCategory>([
-  "Civic & Causes",
-  "Health & Family",
-  "Education & Culture",
-  "Public Service",
-  "Travel & Tourism"
+  "Civic",
+  "Health",
+  "First Responders",
+  "Heritage",
+  "Wildlife & Nature"
 ]);
 
 export const kentuckyRegionScoutCounties = new Set<string>();

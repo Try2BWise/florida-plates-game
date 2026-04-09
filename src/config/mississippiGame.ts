@@ -2,11 +2,11 @@ import type { BadgeGroup } from "../lib/badges";
 import type { GameDefinition, PlateCategory } from "../types";
 
 export const mississippiMixedBagCategories = new Set<PlateCategory>([
-  "Civic & Causes",
-  "Health & Family",
-  "Education & Culture",
-  "Public Service",
-  "Travel & Tourism"
+  "Civic",
+  "Health",
+  "First Responders",
+  "Heritage",
+  "Wildlife & Nature"
 ]);
 
 // Mississippi has no panhandle equivalent — empty set for now

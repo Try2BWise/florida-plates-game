@@ -17,13 +17,13 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/amateur-radio-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/amateur_radio_lg.jpg"
       },
-      "sponsor": "Issued to licensed HAM radio operators. Copy of Federal Communication Commission (FCC) license required.",
-      "notes": "Amatuer Radio (HAM) specialty license plate.",
+      "sponsor": "",
+      "notes": "Issued to licensed HAM radio operators. Copy of Federal Communication Commission (FCC) license required.",
       "searchTerms": [
         "ham",
         "fcc"
@@ -50,7 +50,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/arkansas-court-appointed-special-advocates.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/CASA_lg.jpg"
@@ -83,7 +83,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/arkansas-rice-council.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/ricelg.jpg"
@@ -115,7 +115,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/boy-scouts-of-america-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/boyscout_lg.jpg"
@@ -151,7 +151,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/cattlemens-foundation-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/cattlemen_lg.jpg"
@@ -181,7 +181,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/dr-martin-luther-king-jr.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/mlk_lg.jpg"
@@ -211,7 +211,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/dr-martin-luther-king-jr-commission-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/mlk2_lg.jpg"
@@ -241,7 +241,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/freemason-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/freemason_lg.jpg"
@@ -271,7 +271,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/humane-society-of-the-ozarks-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/humaneSociety_lg.jpg"
@@ -301,7 +301,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/in-god-we-trust-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/igwe_lg.jpg"
@@ -333,7 +333,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/kappa-alpha-psi-fraternity-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/Kappa_Alpha_lg.jpg"
@@ -363,7 +363,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/omega-psi-phi-fraternity-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/omegapsiphi_lg.jpg"
@@ -393,7 +393,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/phi-beta-sigma-fraternity-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/phiBetaSigma_lg.jpg"
@@ -423,7 +423,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/realtor-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/realtor_lg.jpg"
@@ -453,7 +453,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/sheep-dog-impact-assistance-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/sdia_lg.jpg"
@@ -483,7 +483,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/support-animal-rescue-and-shelters-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/animalshelter_lg.jpg"
@@ -513,7 +513,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/support-our-troops-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/sot_lg.jpg"
@@ -543,7 +543,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/support-spay-or-neutering-specialty-license-plate-for-north-little-rock-friends-of-animals-inc.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/spayneuter_lg.jpg"
@@ -573,7 +573,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/zeta-phi-beta-sorority-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/zpbs_lg.jpg"
@@ -603,7 +603,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/arkansas/plates/border-city-taxi-cab-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/Border_City_1.jpg"
@@ -633,7 +633,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/arkansas/plates/farm-to-market-bus-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/redtop_fmbus_lg.jpg"
@@ -663,7 +663,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/arkansas/plates/not-for-hire-bus-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/nfh_lg.jpg"
@@ -693,7 +693,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/arkansas/plates/taxi-cab-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/taxi_lg.jpg"
@@ -723,7 +723,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/arkansas/plates/transporter-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/transporter_lg.jpg"
@@ -753,7 +753,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/university-of-arkansas-agriculture-4-h-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/4h_lg.jpg"
@@ -785,7 +785,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/arkansas-agricultural-education-plate-ffa.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/Agriculture_FFA_002_-_Copy.jpg"
@@ -821,7 +821,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Schools",
       "image": {
         "path": "state-packs/arkansas/plates/arkansas-school-for-the-deaf-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/school4deaf_lg.jpg"
@@ -854,7 +854,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Civic",
       "image": {
         "path": "state-packs/arkansas/plates/buffalo-river-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/Buffalo_River_v1_RS.jpg"
@@ -888,7 +888,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Schools",
       "image": {
         "path": "state-packs/arkansas/plates/committed-to-education-license-plate-design-1.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/education_book_lg.jpg"
@@ -921,7 +921,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Schools",
       "image": {
         "path": "state-packs/arkansas/plates/committed-to-education-license-plate-design-2.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/education_lg.jpg"
@@ -954,7 +954,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Schools",
       "image": {
         "path": "state-packs/arkansas/plates/mid-south-community-education-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/mscc_lg.jpg"
@@ -986,7 +986,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Schools",
       "image": {
         "path": "state-packs/arkansas/plates/northwest-arkansas-community-education-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/nwacc_lg.jpg"
@@ -1018,7 +1018,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "state-packs/arkansas/plates/emergency-medical-services-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/ems_lg.jpg"
@@ -1048,7 +1048,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "state-packs/arkansas/plates/justice-of-the-peace-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/redtop_jp_lg.jpg"
@@ -1078,7 +1078,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "state-packs/arkansas/plates/school-vehicle-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/schoolvehicle_lg.jpg"
@@ -1108,7 +1108,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "state-packs/arkansas/plates/search-and-rescue-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/sar_lg.jpg"
@@ -1138,7 +1138,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/arkansas/plates/autism-awareness.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/autism_lg.jpg"
@@ -1174,7 +1174,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/arkansas/plates/organ-donor-awareness-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/organ_donor_lg.jpg"
@@ -1208,7 +1208,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/arkansas/plates/childhood-cancer-research.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/CCR_lg.jpg"
@@ -1245,7 +1245,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/arkansas/plates/choose-life-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/ar_choose_life_lg.jpg"
@@ -1281,7 +1281,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/arkansas/plates/susan-g-komen-breast-cancer-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/breast_cancer_lg.jpg"
@@ -1317,7 +1317,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/arkansas/plates/arkansas-down-syndrome-association-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/DownSyndrome_lg.jpg"
@@ -1349,7 +1349,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/arkansas/plates/dyslexia-support-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/DyslexiaSupport.jpg"
@@ -1382,7 +1382,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/arkansas/plates/hospice-and-palliative-care.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/HospicePalliativeCare_lg.jpg"
@@ -1415,7 +1415,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/arkansas/plates/antique-vehicle-license-plate-current.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/antique_vehicle_current_lg.jpg"
@@ -1445,7 +1445,7 @@
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/arkansas/plates/antique-vehicle-license-plate-valid-no-longer-issued.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/antique_vehicle_noi_lg.jpg"
@@ -1475,7 +1475,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/cold-war-veteran-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/coldwar_vet_lg.jpg"
@@ -1505,7 +1505,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/congressional-medal-of-honor-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/ar_mh_lg.jpg"
@@ -1540,7 +1540,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/disabled-veteran-license-plate-free.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/davfree_lg.jpg"
@@ -1573,7 +1573,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/distinguished-flying-cross-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/dfcross_lg.jpg"
@@ -1603,7 +1603,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/ex-prisoner-of-war-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/redtop_expow_lg.jpg"
@@ -1633,7 +1633,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/gold-star-family-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/goldstar_family_lg.jpg"
@@ -1665,7 +1665,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/korean-veteran-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/korean_lg.jpg"
@@ -1695,7 +1695,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/national-guard-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/national_guard_lg.jpg"
@@ -1725,7 +1725,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/operation-iraqi-freedom-veteran-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/iraqi_freedom_lg.jpg"
@@ -1755,7 +1755,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/pearl-harbor-survivor-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/pearlharbor_lg.jpg"
@@ -1785,7 +1785,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/persian-gulf-war-veteran-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/persiangulf_lg.jpg"
@@ -1815,7 +1815,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/purple-heart-combat-wounded-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/purpleheart_lg.jpg"
@@ -1845,7 +1845,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/merchant-marine-retired-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/redtop_retmm_lg.jpg"
@@ -1878,7 +1878,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/armed-forces-reserve-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/af_reserved_lg.jpg"
@@ -1908,7 +1908,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/armed-forces-retired-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/af_retired_lg.jpg"
@@ -1940,7 +1940,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/vietnam-war-veteran-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/vietnam_lg.jpg"
@@ -1972,7 +1972,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/women-veterans-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/Women_Veterans_LicensePlate_1.jpg"
@@ -2008,7 +2008,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/arkansas/plates/world-war-ii-veteran-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/wwII_lg.jpg"
@@ -2040,7 +2040,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/arkansas/plates/antique-motorcycle-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/mc_antique_lg.jpg"
@@ -2070,7 +2070,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/arkansas/plates/persons-with-disabilities-motorcycle-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/mc_disabled_lg.jpg"
@@ -2102,7 +2102,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/arkansas/plates/purple-heart-motorcycle-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/mc_purpleheart_lg.jpg"
@@ -2132,7 +2132,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/arkansas/plates/personalized-motorcycle-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/mc_personalized_lg.jpg"
@@ -2162,7 +2162,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/arkansas/plates/veteran-of-foreign-wars-motorcycle-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/vfw_mc_lg.jpg"
@@ -2199,7 +2199,7 @@
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/ducks-unlimited-license-plate-design-1-valid-no-longer-issued.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/du_design1_lg.jpg"
@@ -2232,7 +2232,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/ducks-unlimited-license-plate-design-2.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/du_design2_lg.jpg"
@@ -2265,7 +2265,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/ducks-unlimited-license-plate-design-3.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/du_design3_lg.jpg"
@@ -2297,7 +2297,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/department-of-conservation-districts.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/Conservation_lg.jpg"
@@ -2330,7 +2330,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-fish-barred-owl-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/BarredOwl_GF.jpg"
@@ -2362,7 +2362,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-fish-bird-dog-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/GameFishBirdDog2ndCAD2020.jpg"
@@ -2394,7 +2394,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-and-fish-black-bear-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_bear_lg.jpg"
@@ -2426,7 +2426,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-and-fish-black-lab-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_blacklab_lg.jpg"
@@ -2458,7 +2458,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-and-fish-butterfly-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_butterfly_lg.jpg"
@@ -2490,7 +2490,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-fish-crappie-fish-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfcCrappieFish_lg.jpg"
@@ -2522,7 +2522,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-and-fish-deer-new-design-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_deer_2011_lg.jpg"
@@ -2554,7 +2554,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-fish-deer-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/GameFishDeer1stCAD-scaled.jpg"
@@ -2586,7 +2586,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-and-fish-deer-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_deer_lg.jpg"
@@ -2618,7 +2618,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-and-fish-eagle-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_eagle_lg.jpg"
@@ -2650,7 +2650,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-and-fish-elk-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_elk_lg.jpg"
@@ -2682,7 +2682,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-and-fish-hummingbird-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_hummingbird_lg.jpg"
@@ -2714,7 +2714,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-fish-ivory-billed-woodpecker-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_woodpecker_lg.jpg"
@@ -2746,7 +2746,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-and-fish-largemouth-bass-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_bass_lg.jpg"
@@ -2779,7 +2779,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-fish-longear-sunfish-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/Longear_Sunfish_v1_RS.jpg"
@@ -2811,7 +2811,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-and-fish-mallard-duck-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/afgc_mallard_lg.jpg"
@@ -2844,7 +2844,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-fish-monarch-butterfly.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/Monarch_Butterfly_GameFish.jpg"
@@ -2876,7 +2876,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-fish-painted-bunting-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/AR-GF-Painted-Bunting.png"
@@ -2908,7 +2908,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-fish-pintail-duck-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/GameFishPintailDuck1stCAD-scaled.jpg"
@@ -2941,7 +2941,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-and-fish-rainbow-trout-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_trout_lg.jpg"
@@ -2974,7 +2974,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-fish-red-cardinal-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/RedCardinal_lg.jpg"
@@ -3006,7 +3006,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-and-fish-red-fox-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/GameFish_RedFox-scaled.jpg"
@@ -3038,7 +3038,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-and-fish-smallmouth-bass-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfcSmBass_lg.jpg"
@@ -3071,7 +3071,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-and-fish-squirrel-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfcSquirrel_lg.jpg"
@@ -3103,7 +3103,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/game-and-fish-wild-turkey-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/agfc_turkey_lg.jpg"
@@ -3136,7 +3136,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/national-wild-turkey-federation.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/NWTF_lg.jpg"
@@ -3172,7 +3172,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/arkansas/plates/ambulance-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/ambulance_lg.jpg"
@@ -3202,7 +3202,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/arkansas/plates/arkansas-sheriffs-association.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/ASA_lg.jpg"
@@ -3234,7 +3234,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/arkansas/plates/fire-fighter-license-plate-active.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/firefighter_lg.jpg"
@@ -3264,7 +3264,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/arkansas/plates/fire-fighter-license-plate-memorial.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/firefighter_memorial_lg.jpg"
@@ -3294,7 +3294,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/arkansas/plates/arkansas-state-lodge-fraternal-order-of-police-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/FraternalOrder_ofPolice.jpg"
@@ -3326,7 +3326,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/arkansas/plates/arkansas-municipal-police-association-license-plate.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/AMPA_lg.jpg"
@@ -3361,7 +3361,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/arkansas/plates/fire-fighter-license-plate-retired.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/firefighter_ret_lg.jpg"
@@ -3391,7 +3391,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/arkansas/plates/arkansas-state-parks.jpg",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/StateParks_lg.jpg"
@@ -3423,7 +3423,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "state-packs/arkansas/plates/golf-association-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/golf_lg.jpg"
@@ -3455,7 +3455,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "state-packs/arkansas/plates/little-rock-rangers-soccer-club.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/LittleRockRangersSoccerClub2ndCAD-scaled.jpg"
@@ -3490,7 +3490,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "state-packs/arkansas/plates/ar-tennis-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/ARTennisLicensePlate2ndCAD.png"
@@ -3524,7 +3524,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/arkansas/plates/persons-with-disabilities-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/disabled_lg.jpg"
@@ -3558,7 +3558,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/arkansas/plates/personalized-license-plate.webp",
         "remoteUrl": "https://www.dfa.arkansas.gov/wp-content/uploads/pclp_lg.jpg"

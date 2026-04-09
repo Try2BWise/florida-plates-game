@@ -1,23 +1,17 @@
 export const plateCategories = [
-  "Accessibility",
-  "Civic & Causes",
-  "Commercial & Fleet",
-  "Education & Culture",
-  "Government & Official",
-  "Health & Family",
-  "Historical & Antique",
-  "Military Honors & History",
-  "Military Service",
-  "Motorcycle Plates",
-  "Nature & Wildlife",
-  "Professional Sports",
-  "Public Service",
+  "Civic",
+  "Commercial",
+  "First Responders",
+  "Government",
+  "Health",
+  "Heritage",
+  "Military",
+  "Motorcycle",
   "Schools",
-  "Special Use",
-  "Sports & Recreation",
-  "Standard Plates",
-  "Travel & Tourism",
-  "Universities"
+  "Sports",
+  "Standard",
+  "Universities",
+  "Wildlife & Nature"
 ] as const;
 
 export type PlateCategory = (typeof plateCategories)[number];

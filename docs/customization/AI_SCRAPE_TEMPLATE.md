@@ -45,24 +45,19 @@ Rules:
 - keep searchTerms lowercase
 - include abbreviations, nicknames, mascots, colors, and obvious visual descriptors when useful
 - use category values only from this list:
-  - Accessibility
-  - Civic & Causes
-  - Commercial & Fleet
-  - Education & Culture
-  - Government & Official
-  - Health & Family
-  - Historical & Antique
-  - Military Honors & History
-  - Military Service
-  - Motorcycle Plates
-  - Nature & Wildlife
-  - Professional Sports
-  - Public Service
-  - Special Use
-  - Sports & Recreation
-  - Standard Plates
-  - Travel & Tourism
+  - Civic
+  - Commercial
+  - First Responders
+  - Government
+  - Health
+  - Heritage
+  - Military
+  - Motorcycle
+  - Schools
+  - Sports
+  - Standard
   - Universities
+  - Wildlife & Nature
 - if a plate is clearly a legacy/current/motorcycle variant, preserve that using:
   - baseName
   - displayName

@@ -84,7 +84,7 @@ function toPlateCategory(value: string): PlateCategory {
   if (validCategories.has(value)) {
     return value as PlateCategory;
   }
-  return "Civic & Causes";
+  return "Civic";
 }
 
 function buildPlates(driverData: { plates: Array<{ category: string } & Record<string, unknown>> }): Plate[] {

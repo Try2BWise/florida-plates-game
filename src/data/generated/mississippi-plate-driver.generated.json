@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedDate": "2026-04-08",
+  "generatedDate": "2026-04-09",
   "generatedFrom": "src/data/mississippi-plate-master.json",
   "plateCount": 305,
   "plates": [
@@ -14,7 +14,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/4-h-club.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/4%252520-%252520H%252520Club_jpg.jpg.webp?itok=UGXrPhsW"
@@ -35,7 +35,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/alpha-kappa-alpha.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Alpha%252520Kappa%252520Alpha_jpg.jpg.webp?itok=vwXSvRl8"
@@ -56,7 +56,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/alpha-phi-alpha.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Alpha%20Phi%20Alpha.jpg.webp?itok=XvEDi-0Y"
@@ -77,7 +77,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/profession-of-pharmacy.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Profession%252520of%252520Pharmacy_jpg.jpg.webp?itok=0O0ldfWe"
@@ -102,7 +102,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/band-of-choctaw-indians.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Choctaw%252520Indians_jpg.jpg.webp?itok=nYcxpW9R"
@@ -125,7 +125,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/pearl-river-valley-water.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Pearl%252520River%252520Valley%252520Water_jpg.jpg.webp?itok=Jh0wJ3Kr"
@@ -152,7 +152,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/boy-scouts-of-america.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Boy%252520Scouts%252520of%252520America_jpg.jpg.webp?itok=WEql_CRf"
@@ -173,7 +173,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/delta-sigma-theta.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Delta%252520Sigma%252520Theta_jpg.jpg.webp?itok=jyG0qdzK"
@@ -194,7 +194,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/farm-families-of-mississippi.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Farm%252520Families%252520of%252520MS_jpg.jpg.webp?itok=unUiqSpL"
@@ -215,7 +215,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/friends-of-children-s-hospital.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Friends%2520of%2520Children%25E2%2580%2599s%2520Hospital.JPG.webp?itok=umVo_bjQ"
@@ -236,7 +236,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/friends-of-jackson-county-animal-shelter.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Jackson%252520County%252520Animal%252520Shelter_jpg.jpg.webp?itok=IHX2_D0Z"
@@ -257,7 +257,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/grand-lodge.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Grand%252520Lodge_jpg.jpg.webp?itok=M6uY3Pdc"
@@ -278,7 +278,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/heroines-of-jericho.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Heroines%252520of%252520Jericho_jpg.jpg.webp?itok=Jknuq4NT"
@@ -299,7 +299,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/children-s-advocacy-center.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Children%252527s%252520Advocacy_jpg.jpg.webp?itok=o4jrw-UT"
@@ -322,7 +322,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/kappa-alpha-psi.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Kappa%252520Alpha%252520Psi_jpg.jpg.webp?itok=DQAasRw8"
@@ -343,7 +343,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/knights-of-columbus.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Knights%252520of%252520Columbus_jpg.jpg.webp?itok=VXLqm66H"
@@ -364,7 +364,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/electric-power-association.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Electric%252520Power%252520Association_jpg.jpg.webp?itok=Qq6pwpv4"
@@ -390,7 +390,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-motosteps.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Mississippi%252520Motosteps_jpg.jpg.webp?itok=VEYqOrfE"
@@ -415,7 +415,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/maurice-f-lucas-sr-grand-chapter-of-the-eastern-star.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/GC.PNG.webp?itok=x0Pq2Rep"
@@ -436,7 +436,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-after-school-alliance.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Mississippi%252520After%252520School%252520Alliance_jpg.jpg.webp?itok=UYUncuDd"
@@ -457,7 +457,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-children-039-s-museum.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Children%252527s%252520Museum_jpg.jpg.webp?itok=3tkd7XQe"
@@ -478,7 +478,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-family-physicians.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Family%252520Physicians_jpg.jpg.webp?itok=SRzomJLm"
@@ -499,7 +499,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-nurses-foundation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Nurses%252520Foundation_jpg.jpg.webp?itok=GYX5S1T_"
@@ -523,7 +523,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/realtors-mississippi-association.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Realtors%252520%2528MS%252520Association%2529_jpg.jpg.webp?itok=JczD72gH"
@@ -547,7 +547,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/ms-sweet-potato.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Sweet%20Potato.jpg.webp?itok=bmipAcXP"
@@ -571,7 +571,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/mw-stringer-grand-lodge-f-amp-am-prince-hall-affiliated.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Grand%2520Lodge%2520MW%2520Stringer%2520F%2520AM%2520Prince%2520Hall%2520Affiliated_jpg.jpg.webp?itok=--D7d6SC"
@@ -592,7 +592,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/national-rifle-association.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/National%252520Rifle%252520Association_jpg.jpg.webp?itok=IzCXRNPm"
@@ -613,7 +613,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/omega-psi-phi.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Omega%252520Psi%252520Phi_jpg.jpg.webp?itok=zskPEIo8"
@@ -634,7 +634,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/phi-beta-sigma.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Phi%252520Beta%252520Sigma_jpg.jpg.webp?itok=-886Xg6x"
@@ -655,7 +655,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/professional-hair-designers.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Professional%252520Hair%252520Designers%252520Inc_jpg.jpg.webp?itok=p0f7cqy0"
@@ -681,7 +681,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/dental-hygienist.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Dental%252520Hygienist_jpg.jpg.webp?itok=JWlNy1tk"
@@ -709,7 +709,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/diocese-of-biloxi.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Screenshot%25202023-08-31%2520154222.jpg.webp?itok=fTFtk03T"
@@ -738,7 +738,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/rotary-international.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Rotary%252520District_jpg.jpg.webp?itok=5Ogf33eL"
@@ -759,7 +759,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/bicycle-share-the-road.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Bicycle%252520share%252520the%252520road_jpg.jpg.webp?itok=zH6QJg5a"
@@ -786,7 +786,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/sigma-gamma-rho-sorority-supporter.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/IN.PNG.webp?itok=sM5T92hQ"
@@ -807,7 +807,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/sons-of-confederate-veterans.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Sons%252520of%252520Confederate%252520Veterans_jpg.jpg.webp?itok=4bUfW_s2"
@@ -828,7 +828,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/sunflower-county-ministerial-alliance-counseling-services.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/TF.PNG.webp?itok=ytBRnGF7"
@@ -853,7 +853,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/support-teachers.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Support%252520Teachers_jpg.jpg.webp?itok=1PJcVEFz"
@@ -874,7 +874,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-loggers-association.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Loggers%252520Association_jpg.jpg.webp?itok=JZ1oAPzj"
@@ -900,7 +900,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/volunteer-service.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Volunteer%252520Service_jpg.jpg.webp?itok=JuDYZWoM"
@@ -925,7 +925,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/zeta-phi-beta-sorority.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Zeta%252520Phi%252520Beta_jpg.jpg.webp?itok=thCO91_C"
@@ -946,7 +946,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/apportioned-truck.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Apportioned%20Truck.png.webp?itok=YYRZd2Mv"
@@ -967,7 +967,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/board-of-contractor.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Board%252520of%252520Contractor_jpg.jpg.webp?itok=T0v6mU-l"
@@ -988,7 +988,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/church-bus.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Church%20Bus.jpg.webp?itok=ClKS4e_8"
@@ -1009,7 +1009,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/dealer-demo.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Demo%20Dealer.png.webp?itok=yYzV71kq"
@@ -1030,7 +1030,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/dealer-manufacturer.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Manufacturer%20Dealer.png.webp?itok=ZKAaVdv1"
@@ -1051,7 +1051,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/dealer-new.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/New%20Dealer.png.webp?itok=R9kSJ6Bb"
@@ -1072,7 +1072,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/dealer-trailer.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Trailer%20Dealer_0.png.webp?itok=IOi3xY7u"
@@ -1093,7 +1093,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/dealer-used.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Used%20Dealer.png.webp?itok=DYwru4Q_"
@@ -1114,7 +1114,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/dealer-wholesaler.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Wholesaler%20Dealer.png.webp?itok=BwGN6GFA"
@@ -1135,7 +1135,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/fleet.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Fleet.png.webp?itok=QoQ_rPbv"
@@ -1156,7 +1156,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/fleet-trailer-rental.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Fleet%252520renatal%252520trailer_jpg.jpg.webp?itok=Dpaopclz"
@@ -1177,7 +1177,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/harvest-permitees.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Harvest%20Permitees.png.webp?itok=FxbDmhBS"
@@ -1198,7 +1198,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/hearse.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Hearse.png.webp?itok=8szNCL1S"
@@ -1219,7 +1219,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/heavy-truck-trailer.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Heavy%20Truck.png.webp?itok=ul9pbVPF"
@@ -1240,7 +1240,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/private-trailer.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Private%20Trailer.png.webp?itok=6bWgRQ5o"
@@ -1261,7 +1261,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/school-bus.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/School%20Bus.png.webp?itok=O5-bO_iY"
@@ -1282,7 +1282,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/taxi.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Taxi.png.webp?itok=hyFRWkGy"
@@ -1303,7 +1303,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "state-packs/mississippi/plates/temporary-truck.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Temp_jpg.jpg.webp?itok=FkvwLZbz"
@@ -1324,7 +1324,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "state-packs/mississippi/plates/ex-us-house-of-representative.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/exusrep_jpg.jpg.webp?itok=EFt5irRq"
@@ -1345,7 +1345,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "state-packs/mississippi/plates/ex-us-senator.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Ex%252520US%252520Senator_jpg.jpg.webp?itok=5VD0m9r5"
@@ -1366,7 +1366,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "state-packs/mississippi/plates/former-governor.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Former%20Governor.png.webp?itok=Ot-y5dL2"
@@ -1387,7 +1387,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "state-packs/mississippi/plates/government.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Gov_jpg.jpg.webp?itok=LKI2C7ln"
@@ -1408,7 +1408,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "state-packs/mississippi/plates/governor.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Governor.png.webp?itok=zR0tBa3q"
@@ -1429,7 +1429,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-house-of-representative.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/House%252520of%252520Representative%252520%2528MS%2529_jpg.jpg.webp?itok=1NRavRRt"
@@ -1450,7 +1450,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-senator.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Senator%252520%2528MS%2529_jpg.jpg.webp?itok=bhAJbXu8"
@@ -1471,7 +1471,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "state-packs/mississippi/plates/state-flag.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/State%252520Flag_jpg.jpg.webp?itok=9tdGwIKc"
@@ -1494,7 +1494,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "state-packs/mississippi/plates/us-house-of-representative.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/US%252520House%252520of%252520Representative_jpg.jpg.webp?itok=wy5MKuDp"
@@ -1515,7 +1515,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "state-packs/mississippi/plates/us-senator.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/US%252520Senator_jpg.jpg.webp?itok=H8kxTI-n"
@@ -1536,7 +1536,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/alzheimer-s-awareness.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/UMMC-Alzheimer_0.JPG.webp?itok=asO8Bk2d"
@@ -1557,7 +1557,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/autism-awareness.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Autism%252520Awareness_jpg.jpg.webp?itok=RIttcHK0"
@@ -1578,7 +1578,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/breast-cancer-awareness.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Breast%252520Cancer%252520Awareness_jpg.jpg.webp?itok=1tmK99Tf"
@@ -1604,7 +1604,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/catch-a-dream-foundation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Catch%252520A%252520Dream_jpg.jpg.webp?itok=8-pedsmR"
@@ -1627,7 +1627,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/choose-life.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/CHLF%2520%2528002%2529.png.webp?itok=YjBvWNyJ"
@@ -1648,7 +1648,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/colon-cancer-prevention.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Colon%252520Cancer%252520Prevention_jpg.jpg.webp?itok=KFEUEXkP"
@@ -1671,7 +1671,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/diabetic.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Diabetic_jpg.jpg.webp?itok=Fq4uTn_u"
@@ -1692,7 +1692,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/down-syndrome-awareness.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Down%252520Syndrome%252520Awareness_jpg.jpg.webp?itok=UEK1lnus"
@@ -1713,7 +1713,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/dyslexia-awareness.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Dyslexia%252520Awareness_jpg.jpg.webp?itok=hzgeXAQV"
@@ -1734,7 +1734,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/fannie-lou-hamer-cancer-foundation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Fannie%252520Lou%252520Hamer%252520Cancer%252520Foundation_jpg.jpg.webp?itok=YwvqsB6Q"
@@ -1760,7 +1760,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/hearing-impaired.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Hearing%252520Impaired_jpg.jpg.webp?itok=KW3ztOVS"
@@ -1781,7 +1781,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/juvenile-diabetes.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Juvenile%20Daibet_0.gif.webp?itok=N5I358_B"
@@ -1804,7 +1804,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/juvenile-diabetes-research-foundation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/T1.PNG.webp?itok=jVYrlXUh"
@@ -1827,7 +1827,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/le-bonheur-children-s-hospital.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Le%252520Bonheur%252520Hospital_jpg.jpg.webp?itok=cbEbx8K2"
@@ -1848,7 +1848,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-blood-services-inc.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Mississippi%252520Blood%252520Services%252520Inc_jpg.jpg.webp?itok=09C4CcYL"
@@ -1873,7 +1873,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-organ-donor.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Organ%252520Donor_jpg.jpg.webp?itok=4cu9nXdi"
@@ -1897,7 +1897,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-toughest-kids-foundation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Toughest%252520Kids%252520Foundation_jpg.jpg.webp?itok=sh54vguD"
@@ -1922,7 +1922,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/mississippi/plates/st-jude-children-s-hospital.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/St.%252520Jude%252520Children%2525E2%252580%252599s%252520Hospital_jpg.jpg.webp?itok=YdHb8C9V"
@@ -1947,7 +1947,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/mississippi/plates/antique-car.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Antique%252520Car_jpg.jpg.webp?itok=_-rTXq45"
@@ -1968,7 +1968,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/mississippi/plates/antique-car-vanity.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Antique%252520Car%252520-%252520Vanity_jpg.jpg.webp?itok=ogru7OmW"
@@ -1989,7 +1989,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/mississippi/plates/antique-truck.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Antique%252520Truck_jpg.jpg.webp?itok=_j5irwi_"
@@ -2010,7 +2010,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/mississippi/plates/antique-truck-vanity.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Antique%252520Truck%252520-%252520Vanity_jpg.jpg.webp?itok=yFyc23AF"
@@ -2031,7 +2031,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/mississippi/plates/historic-natchez-city-of-natchez.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Historic%252520Natchez-City%252520of%252520Natchez_jpg.jpg.webp?itok=68PlWVkf"
@@ -2054,7 +2054,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/mississippi/plates/historical.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Historical_jpg.jpg.webp?itok=HuimFT_R"
@@ -2075,7 +2075,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/mississippi/plates/street-rod.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Street%252520Rod_jpg.jpg.webp?itok=Tz66VcQ1"
@@ -2096,7 +2096,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/100-disabled-veteran-air-force.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTVAF.JPG.JPG.webp?itok=5KpEeVr6"
@@ -2117,7 +2117,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/100-disabled-veteran-army.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTVAY.JPG.JPG.webp?itok=7RFuk8PQ"
@@ -2138,7 +2138,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/100-disabled-veteran-coast-guard.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTVCG.JPG.JPG.webp?itok=u2oAp5p2"
@@ -2159,7 +2159,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/100-disabled-veteran-marine.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTVMR.JPG.JPG.webp?itok=jieHkEWe"
@@ -2180,7 +2180,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/100-disabled-veteran-navy.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTVNV.JPG.JPG.webp?itok=y6yDf0WT"
@@ -2201,7 +2201,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/air-medal.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Air%252520Medal_jpg.jpg.webp?itok=MUrvqC7_"
@@ -2222,7 +2222,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/bronze-star.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Bronze%252520Star_jpg.jpg.webp?itok=MOL93P8F"
@@ -2243,7 +2243,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/bronze-star-disabled.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Bronze%252520Star%252520Disabled_jpg.jpg.webp?itok=1IZ0jUtf"
@@ -2264,7 +2264,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/combat-veteran-air-force.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Combat%252520Veteran%252520Air%252520Force_jpg.jpg.webp?itok=kkLnThkZ"
@@ -2285,7 +2285,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/combat-veteran-army.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Combat%252520Veteran%252520Army_jpg.jpg.webp?itok=KUlqQnu6"
@@ -2306,7 +2306,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/combat-veteran-coast-guard.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Combat%252520Veteran%252520Coast%252520Guard_jpg.jpg.webp?itok=Gz5v4voH"
@@ -2327,7 +2327,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/combat-veteran-marine.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Combat%252520Veteran%252520Marine_jpg.jpg.webp?itok=M6RhJMSh"
@@ -2348,7 +2348,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/combat-veteran-navy.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Combat%252520Veteran%252520Navy_jpg.jpg.webp?itok=QVKTPpZh"
@@ -2369,7 +2369,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/defense-freedom-medal.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Defense%252520Freedom%252520Medal_jpg.jpg.webp?itok=XdVXx4i4"
@@ -2390,7 +2390,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-air-force.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTDAF2.JPG.JPG.webp?itok=n6azMGaN"
@@ -2411,7 +2411,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-army.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTDAY2.JPG.JPG.webp?itok=W8PO7-J1"
@@ -2432,7 +2432,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-coast-guard.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTDCG2.JPG.JPG.webp?itok=6NSM0Jz7"
@@ -2453,7 +2453,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-marine.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTDMR2.JPG.JPG.webp?itok=MJ5uJhu-"
@@ -2474,7 +2474,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-navy.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTDNV2.JPG.jpg.webp?itok=JzHZsZ13"
@@ -2495,7 +2495,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-less-than-100.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Disabled%252520Veteran%252520less%252520than%252520100_jpg.jpg.webp?itok=Mg1u1-LL"
@@ -2516,7 +2516,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/distinguished-flying-cross.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Distinguished%252520Flying%252520Cross_jpg.jpg.webp?itok=fKcr7gU-"
@@ -2537,7 +2537,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/ex-prisoner-of-war.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Exprisonerofwar%252520%25281%2529_jpg.jpg.webp?itok=Jh9dgGUM"
@@ -2558,7 +2558,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/gold-star-air-force.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Gold%252520Star%252520Air%252520Force_jpg.jpg.webp?itok=Nb47OVzK"
@@ -2579,7 +2579,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/gold-star-army.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Gold%252520Star%252520Army_jpg.jpg.webp?itok=Uzb4PaE3"
@@ -2600,7 +2600,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/gold-star-coast-guard.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Gold%252520Star%252520Coast%252520Guard_jpg.jpg.webp?itok=BmTULEGp"
@@ -2621,7 +2621,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/gold-star-marine.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Gold%252520Star%252520Marine_jpg.jpg.webp?itok=uLqP0C1B"
@@ -2642,7 +2642,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/gold-star-navy.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Gold%252520Star%252520Navy_jpg.jpg.webp?itok=oDVnE4ZT"
@@ -2663,7 +2663,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/killed-in-action.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Killed%252520in%252520Action_jpg.jpg.webp?itok=GmAKawRS"
@@ -2684,7 +2684,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/medal-of-honor-army.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Medal%252520of%252520Honor%252520Army_jpg.jpg.webp?itok=NiFU_2CI"
@@ -2705,7 +2705,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/medal-of-honor-marine.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Medal%252520of%252520Honor%252520Marine_jpg.jpg.webp?itok=Un5aX5WZ"
@@ -2726,7 +2726,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/pearl-harbor.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Pearl%252520Harbor_jpg.jpg.webp?itok=NioF-Jwj"
@@ -2747,7 +2747,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/purple-heart-disabled.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Purple%252520Heart%252520Disabled_jpg.jpg.webp?itok=gqKSKd5x"
@@ -2768,7 +2768,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/purple-heart-original.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Purple%252520Heart%252520Original_jpg.jpg.webp?itok=pY0EmQZ9"
@@ -2789,7 +2789,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/silver-star.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Silver%252520Star_jpg.jpg.webp?itok=CykarxAe"
@@ -2810,7 +2810,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/active-reserve.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Active%252520Reserve_jpg.jpg.webp?itok=pFncKh3C"
@@ -2831,7 +2831,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/afghanistan-veteran.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Afghanistan%252520Veteran_jpg.jpg.webp?itok=k7Qfw1NA"
@@ -2852,7 +2852,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/american-legion.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%20American%20Legion%202024.jpg.webp?itok=eG-n274o"
@@ -2873,7 +2873,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/civil-air-patrol.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Civil%252520Air%252520Patrol_jpg.jpg.webp?itok=5-Csv8Ro"
@@ -2894,7 +2894,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/female-veteran-air-force.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/FAF_0.PNG.webp?itok=UVSJie_y"
@@ -2915,7 +2915,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/female-veteran-army.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/AYF_0.PNG.webp?itok=r0QzdOWC"
@@ -2936,7 +2936,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/female-veteran-coast-guard.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/FCG.PNG.webp?itok=jMGipGtW"
@@ -2957,7 +2957,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/female-veteran-marine.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MRF.PNG.webp?itok=KJzH5jGb"
@@ -2978,7 +2978,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/gulf-war-veteran.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Gulf%2520%2528002%2529.png.webp?itok=QQ6jrwC1"
@@ -2999,7 +2999,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/honoring-veterans.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Honoring%252520Veterans_jpg.jpg.webp?itok=vRwnb_AL"
@@ -3020,7 +3020,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/iraq-veteran.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Iraq%252520Veteran_jpg.jpg.webp?itok=aSH6_n2P"
@@ -3041,7 +3041,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/marine-corps.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Marine%252520Corp_jpg.jpg.webp?itok=YlOwaLyX"
@@ -3062,7 +3062,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/merchant-marine.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Merchant%2520%2528002%2529.png.webp?itok=fYpOnQsF"
@@ -3083,7 +3083,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/national-guard-special.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/National%20Guard_0.jpg.webp?itok=TgM86EUQ"
@@ -3104,7 +3104,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/navy-and-marine-corps.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Navy%252520and%252520Marine%252520Corps_jpg.jpg.webp?itok=oOnIF6Pn"
@@ -3125,7 +3125,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/veteran-air-force.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Veteran%252520Air%252520Force_jpg.jpg.webp?itok=PhD6kiTx"
@@ -3146,7 +3146,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/veteran-army.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Veteran%252520Army_jpg.jpg.webp?itok=j97QizF-"
@@ -3167,7 +3167,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/veteran-coast-guard.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Veteran%252520Coast%252520Guard_jpg.jpg.webp?itok=spm5ZQAA"
@@ -3188,7 +3188,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/veteran-marine.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Veteran%252520Marine_jpg.jpg.webp?itok=0GXlzUH1"
@@ -3209,7 +3209,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/veteran-navy.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Veteran%252520Navy_jpg.jpg.webp?itok=OXji5Nff"
@@ -3230,7 +3230,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/veterans-of-foreign-wars.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Veterans%252520of%252520Foreign%252520Wars_jpg.jpg.webp?itok=eUZ4VX0G"
@@ -3251,7 +3251,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/mississippi/plates/vietnam-veteran.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Vietnam%252520Veteran_jpg.jpg.webp?itok=pTi1-rYV"
@@ -3272,7 +3272,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/100-disabled-veteran-air-force-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/100%25%20Disabled%20Air%20Force%20Motorcycle.png.webp?itok=Wo1aUHZi"
@@ -3293,7 +3293,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/100-disabled-veteran-army-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/100%25%20Disabled%20Army%20Motorcycle%20.png.webp?itok=u2sF8JFE"
@@ -3314,7 +3314,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/100-disabled-veteran-coast-guard-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/100%25%20Disabled%20Coast%20Guard%20Motorcycle%20.png.webp?itok=oH11J3aQ"
@@ -3335,7 +3335,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/100-disabled-veteran-marine-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/100%25%20Disabled%20Marine%20Motorcycle%20.png.webp?itok=UJc37ZtX"
@@ -3356,7 +3356,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/100-disabled-veteran-navy-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/100%25%20Disabled%20Navy%20Motorcycle%20v1%20.png.webp?itok=NIXa3qIC"
@@ -3377,7 +3377,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/antique-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Antique%252520Motorcycle_jpg.jpg.webp?itok=4AbVlaxu"
@@ -3398,7 +3398,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/antique-motorcycle-vanity.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Antique%252520Motorcycle%252520-%252520Vanity_jpg.jpg.webp?itok=GINFuP6T"
@@ -3419,7 +3419,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/blackout-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Blackout%20Motorcycle.png.webp?itok=0SpOBqnG"
@@ -3440,7 +3440,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/dealer-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%20Dealer.png.webp?itok=8yZp6S-B"
@@ -3461,7 +3461,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Disabled%20Motorcycle.png.webp?itok=q4eH16iM"
@@ -3482,7 +3482,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-motorcycle-air-force.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTDVMAF2.JPG.JPG.webp?itok=szdq3iGO"
@@ -3503,7 +3503,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-motorcycle-army.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTDVMAY2.JPG.JPG.webp?itok=U3xlUKj5"
@@ -3524,7 +3524,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-motorcycle-coast-guard.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTDVMCG2.JPG.JPG.webp?itok=DuUIxnFk"
@@ -3545,7 +3545,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-motorcycle-marine.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTDVMMR2.JPG.JPG.webp?itok=6doP-QNG"
@@ -3566,7 +3566,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-american-veteran-motorcycle-navy.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS.PLTDVMNY2.JPG.JPG.webp?itok=QSN9co4J"
@@ -3587,7 +3587,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/disabled-veteran-motorcycle-navy.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/DAVNYG_0.PNG.webp?itok=39S0c0cL"
@@ -3608,7 +3608,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/government-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Mcgov_jpg.jpg.webp?itok=B3knoq0E"
@@ -3629,7 +3629,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/grand-lodge-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Grand%252520Lodge%252520-%252520Motorcycle_jpg.jpg.webp?itok=qX3FB-L6"
@@ -3650,7 +3650,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/hearing-impaired-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Hearing%252520Impair%252520-%252520Motorcycle_jpg.jpg.webp?itok=gMmcahdV"
@@ -3671,7 +3671,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-motosteps-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Mississippi%252520Motosteps-%252520Motorcycle_jpg.jpg.webp?itok=54J6Oi4F"
@@ -3692,7 +3692,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/motorcycle-national-guard.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%20National%20Guard.jpg.webp?itok=Sl3Y6who"
@@ -3713,7 +3713,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/omega-psi-phi-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Omega%252520Psi%252520Phi%252520Motorcycle_jpg.jpg.webp?itok=xNG-unmz"
@@ -3734,7 +3734,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/pearl-harbor-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Pearl%252520Harbor%252520Motorcycle_jpg.jpg.webp?itok=ll7DqKel"
@@ -3755,7 +3755,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/purple-heart-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Purple%252520Heart%252520Motorcycle_jpg.jpg.webp?itok=kCp-8lyn"
@@ -3776,7 +3776,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/sons-of-confederate-veterans-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Sons%252520of%252520Confederate%252520Veteran%252520Motorcycle_jpg.jpg.webp?itok=DHNxgmtW"
@@ -3797,7 +3797,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle.jpg.webp?itok=-l8DfOPT"
@@ -3818,7 +3818,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/motorcycle-trailer.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%20Trailer.jpg.webp?itok=r2rBFZP2"
@@ -3839,7 +3839,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/motorcycle-vanity.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%20Vanity.jpg.webp?itok=EyeEZan4"
@@ -3860,7 +3860,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/motorcycle-vanity-trailer.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%20Vanity%20Trailer.jpg.webp?itok=GZ6VnL5O"
@@ -3881,7 +3881,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/veteran-air-force-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%252520Veteran%252520Air%252520Force_jpg.jpg.webp?itok=W-fkb3JP"
@@ -3902,7 +3902,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/veteran-army-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%252520Veteran%252520Army_jpg.jpg.webp?itok=2-gjnvNY"
@@ -3923,7 +3923,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/veteran-coast-guard-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%252520Veteran%252520Coast%252520Guard_jpg.jpg.webp?itok=XiakGMMr"
@@ -3944,7 +3944,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/veteran-marine-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%252520Veteran%252520Marine_jpg.jpg.webp?itok=Uuppfo9H"
@@ -3965,7 +3965,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/mississippi/plates/veteran-navy-motorcycle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Motorcycle%252520Veteran%252520Navy_jpg.jpg.webp?itok=k_PgF6Iq"
@@ -3986,7 +3986,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/bass-department-of-wildlife-fisheries-and-parks.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Wildlife%252520Bass_jpg.jpg.webp?itok=eMEgr-pD"
@@ -4007,7 +4007,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/butterfly-department-of-wildlife-fisheries-and-parks.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Wildlife%252520Butterfly_jpg.jpg.webp?itok=FKyvwX8H"
@@ -4028,7 +4028,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/coastal-conservation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Coastal%252520Conservation_jpg.jpg.webp?itok=Azm1wQ1q"
@@ -4049,7 +4049,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/deer-department-of-wildlife-fisheries-and-parks.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Wildlife%252520Deer_jpg.jpg.webp?itok=ZA-Yn7Dp"
@@ -4070,7 +4070,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/delta-waterfowl.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Delta%252520Waterfowl_jpg.jpg.webp?itok=QISQR3S_"
@@ -4091,7 +4091,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/ducks-unlimited-inc.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Ducks_jpg.jpg.webp?itok=8jgGbEqR"
@@ -4117,7 +4117,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/forestry-association.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Forestry%252520Association_jpg.jpg.webp?itok=sSu1PIxY"
@@ -4143,7 +4143,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/hummingbird-department-of-wildlife-fisheries-and-parks.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Wildlife%252520Hummingbird_jpg.jpg.webp?itok=PgvsGD1r"
@@ -4164,7 +4164,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/i-care-for-animals.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/I%252520Care%252520for%252520Animals_jpg.jpg.webp?itok=Xuag5BI0"
@@ -4185,7 +4185,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/institute-for-marine-mammal-studies-protect-dolphin.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Protect%252520Dolphin_jpg.jpg.webp?itok=yPSB2P1P"
@@ -4206,7 +4206,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/institute-for-marine-mammal-studies-shark.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Institute%252520for%252520Marine%252520Mammal%252520Studies%252520-%252520Shark_jpg.jpg.webp?itok=2l1dRpnd"
@@ -4227,7 +4227,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/kemp-s-ridley-sea-turtle.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Kemp%252527s%252520Ridley%252520Sea%252520Turtle_jpg.jpg.webp?itok=ooR50q3f"
@@ -4248,7 +4248,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/lab-department-of-wildlife-fisheries-and-parks.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Wildlife%252520Lab_jpg.jpg.webp?itok=1eEFb2tv"
@@ -4269,7 +4269,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/mallard-department-of-wildlife-fisheries-and-parks.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Wildlife%252520-%252520Mallard_jpg.jpg.webp?itok=kzgGbxY6"
@@ -4290,7 +4290,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-state-parks.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/SP.PNG.webp?itok=opRkYMWG"
@@ -4311,7 +4311,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/national-wild-turkey-federation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/National%252520Wild%252520Turkey%252520Federation_jpg.jpg.webp?itok=YVdq8lxE"
@@ -4332,7 +4332,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/cattleman-s-foundation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Cattleman%252527s%252520Foundation_jpg.jpg.webp?itok=dMPqsmiq"
@@ -4358,7 +4358,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/rabbit-department-of-wildlife-fisheries-and-parks.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Wildlife%252520-%252520Rabbit_jpg.jpg.webp?itok=pif1e-yK"
@@ -4379,7 +4379,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/soil-conservation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Soil%252520Conservation_jpg.jpg.webp?itok=6sW1gdRk"
@@ -4400,7 +4400,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/speckled-trout-department-of-wildlife-fisheries-and-parks.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Wildlife%252520-%252520Speckled%252520Trout_jpg.jpg.webp?itok=Jk2ktKDi"
@@ -4421,7 +4421,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/turkey-department-of-wildlife-fisheries-and-parks.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Wildlife%252520Turkey_jpg.jpg.webp?itok=h5EWBYNG"
@@ -4442,7 +4442,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/wildlife-enforcement.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Wildlife%252520Enforcement_jpg.jpg.webp?itok=aCz2kSJJ"
@@ -4463,7 +4463,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/wildlife-federation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Wildlife%252520Federation_jpg.jpg.webp?itok=uuExamio"
@@ -4487,7 +4487,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-association-of-emergency-services.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Association%252520of%252520Emergency%252520Services_jpg.jpg.webp?itok=ADlXjEyw"
@@ -4513,7 +4513,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/mississippi/plates/fire-fighters.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Fire%252520Fighters_jpg.jpg.webp?itok=AQi1YDfv"
@@ -4534,7 +4534,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/mississippi/plates/honoring-fallen-officers.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Honoring%252520Fallen%252520Officers_jpg.jpg.webp?itok=Ed0hMesM"
@@ -4555,7 +4555,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/mississippi/plates/law-enforcement-police.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Police%252520Law%252520Enforcement_jpg.jpg.webp?itok=P6yOvtMD"
@@ -4576,7 +4576,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/mississippi/plates/law-enforcement-sheriff.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Sheriff%252520Law%252520Enforcement_jpg.jpg.webp?itok=hzZpOP2K"
@@ -4597,7 +4597,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/mississippi/plates/law-enforcement-state.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/State%252520Law%252520Enforcement_jpg.jpg.webp?itok=dyPS794M"
@@ -4618,7 +4618,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-law-enforcement-officers-association-supporter.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Law%252520Enforcement%252520Officers%252520Association_jpg.jpg.webp?itok=UjNVmr3_"
@@ -4643,7 +4643,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/mississippi/plates/ms-law-enforcement-officer-association-supporter.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/PMS.PNG.webp?itok=JxURNB1_"
@@ -4668,7 +4668,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/mississippi/plates/professional-fire-fighter.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Professional%252520Fire%252520Fighter_jpg.jpg.webp?itok=MQjYkjaN"
@@ -4693,7 +4693,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/mississippi/plates/retired-as-career-law-enforcement-officer.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Retired%252520Law%252520Enforcement_jpg.jpg.webp?itok=xMEf-NQb"
@@ -4714,7 +4714,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/mississippi/plates/retired-troopers.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Retired%252520Troopers_jpg.jpg.webp?itok=vSC1Y_dI"
@@ -4735,7 +4735,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/mississippi/plates/sheriff-s-office.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Sheriff%27s%20Office.jpg.webp?itok=hfsAlA8L"
@@ -5520,7 +5520,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/gulfport-police-athletic-league.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Gulfport%252520Police%252520Athletic%252520League_jpg.jpg.webp?itok=maYEV64J"
@@ -5541,7 +5541,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-golf-association.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Mississippi%252520Golf%252520Association_jpg.jpg.webp?itok=kcQTKMUc"
@@ -5562,7 +5562,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-tennis-association.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Tennis%252520Association_jpg.jpg.webp?itok=IgUKTnbr"
@@ -5583,7 +5583,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "state-packs/mississippi/plates/mixed-martial-arts.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Mixed%252520Martial%252520Arts_jpg.jpg.webp?itok=hJz6xgQz"
@@ -5604,7 +5604,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "state-packs/mississippi/plates/msu-baseball-championship.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MSU%2520Tag%2520Image.PNG.webp?itok=7UttMSk1"
@@ -5625,7 +5625,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "state-packs/mississippi/plates/new-orleans-saints-football.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/New%252520Orleans%252520Saints%252520Football_jpg.jpg.webp?itok=3_HUDRw8"
@@ -5646,7 +5646,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/ocean-springs-athletic-foundation.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Ocean%252520Springs%252520Athletic%252520Foundation_jpg.jpg.webp?itok=ZiFkwiW5"
@@ -5667,7 +5667,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-state-equine-association.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520State%252520Equine%252520Association_jpg.jpg.webp?itok=Ny1CK9KA"
@@ -5693,7 +5693,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/vancleave-home-run-club.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Vancleave%252520Home%252520Run%252520Club_jpg.jpg.webp?itok=piIKm1G1"
@@ -5714,7 +5714,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Civic",
       "image": {
         "path": "state-packs/mississippi/plates/youth-soccer-association.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Youth%252520Soccer%252520Association_jpg.jpg.webp?itok=pQeRBa9c"
@@ -5735,7 +5735,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/mississippi/plates/amateur-radio.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Amateur%252520Radio_jpg.jpg.webp?itok=t2KkVlCP"
@@ -5756,7 +5756,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/mississippi/plates/b10-blackout.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/B10%20Blackout.png.webp?itok=8yYc2Uqp"
@@ -5777,7 +5777,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/mississippi/plates/blackout-passenger.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Blackout%20Passenger.png.webp?itok=wJFsKS3e"
@@ -5798,7 +5798,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/mississippi/plates/blackout-pickup.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Blackout%20Pickup.png.webp?itok=rdWqhhfr"
@@ -5819,7 +5819,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/mississippi/plates/disabled.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Disabled.png.webp?itok=dh4z1ysu"
@@ -5840,7 +5840,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/mississippi/plates/ev-mississippi.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/SnipImage%2520%2528002%2529.JPG.webp?itok=YAXR1ap5"
@@ -5861,7 +5861,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/mississippi/plates/f10-blackout.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/F10%20Blackout.png.webp?itok=vmCRRIG8"
@@ -5882,7 +5882,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/mississippi/plates/passenger.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/standard%20passenger.png.webp?itok=qn-qzhvT"
@@ -5903,7 +5903,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/mississippi/plates/b16-b80.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/B16-B80.png.webp?itok=eDHXTTZ4"
@@ -5929,7 +5929,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/mississippi/plates/f16-f80.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/F16-F80.png.webp?itok=C9HzdVCt"
@@ -5955,7 +5955,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/mississippi/plates/vanity-passenger.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Passenger%20Vanity.jpg.webp?itok=7YfHf1vK"
@@ -5976,7 +5976,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/mississippi/plates/vanity-trailer.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Vanity%20Trailer.jpg.webp?itok=Ef3ju9Ga"
@@ -5997,7 +5997,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Travel & Tourism",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/mississippi/plates/dixie-national.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Dixie%252520National_jpg.jpg.webp?itok=ZdFITand"
@@ -6018,7 +6018,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Travel & Tourism",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/mississippi/plates/gulf-coast-regional-tourism-partnership.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Gulf%252520Coast%252520Regional%252520Tourism%252520Partnership_jpg.jpg.webp?itok=R5xvIOz8"
@@ -6039,7 +6039,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Travel & Tourism",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/jackson-zoo.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Jackson%252520Zoo_jpg.jpg.webp?itok=XpFMHthr"
@@ -6060,7 +6060,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Travel & Tourism",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-aquarium.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%2520Aquarium%2520%2528001%2529.JPG.webp?itok=sQtJ8QaH"
@@ -6081,7 +6081,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Travel & Tourism",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-home-of-the-blues.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/MS%252520Home%252520of%252520the%252520Blues_jpg.jpg.webp?itok=2mT14oji"
@@ -6102,7 +6102,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Travel & Tourism",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/mississippi/plates/mississippi-public-broadcasting.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Mississippi%20Public%20Broadcasting.png.webp?itok=_WLaG2el"
@@ -6123,7 +6123,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Travel & Tourism",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/mississippi/plates/tupelo-elvis-presley-fan-club.webp",
         "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Tupelo%252520Elvis%252520Presley%252520Fan%252520Club_jpg.jpg.webp?itok=y3hBi9dA"

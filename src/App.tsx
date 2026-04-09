@@ -918,9 +918,8 @@ function App() {
       case "those-who-serve":
         return discoveryEntries.filter(
           ({ plate }) =>
-            plate.category === "Military Service" ||
-            plate.category === "Military Honors & History" ||
-            plate.category === "Public Service"
+            plate.category === "Military" ||
+            plate.category === "First Responders"
         );
       case "i-get-around":
       case "road-trip": {

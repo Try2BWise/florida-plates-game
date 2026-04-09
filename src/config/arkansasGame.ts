@@ -2,11 +2,11 @@ import type { BadgeGroup } from "../lib/badges";
 import type { GameDefinition, PlateCategory } from "../types";
 
 export const arkansasMixedBagCategories = new Set<PlateCategory>([
-  "Civic & Causes",
-  "Health & Family",
-  "Education & Culture",
-  "Public Service",
-  "Travel & Tourism"
+  "Civic",
+  "Health",
+  "First Responders",
+  "Heritage",
+  "Wildlife & Nature"
 ]);
 
 // Arkansas has no panhandle equivalent — empty set for now

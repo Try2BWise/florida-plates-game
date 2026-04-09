@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedDate": "2026-04-06",
+  "generatedDate": "2026-04-09",
   "generatedFrom": "src/data/tennessee-plate-master.json",
   "plateCount": 210,
   "plates": [
@@ -14,7 +14,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/alabama.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Alabama.jpg"
@@ -35,7 +35,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/alpha-kappa-alpha.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Alpha%20Kappa%20Alpha.jpg"
@@ -56,7 +56,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/alpha-phi-alpha.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Alpha%20Phi%20Alpha.jpg"
@@ -77,7 +77,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/amateur-radio.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Amateur%20Radio.jpg"
@@ -98,7 +98,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/animal-friendly.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Animal%20Friendly.jpg"
@@ -119,7 +119,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/appalachian-trail.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Appalachian%20Trail.jpg"
@@ -140,7 +140,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/arkansas.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Arkansas.jpg"
@@ -161,7 +161,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/atlanta-braves.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Atlanta%20Braves.jpg"
@@ -182,7 +182,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/auburn.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Auburn.jpg"
@@ -203,7 +203,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/automobile.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Automobile.jpg"
@@ -224,7 +224,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/blue-star-family.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Blue%20Star%20Family.jpg"
@@ -245,7 +245,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/tennessee-association-of-realtors.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Association%20of%20Realtors.jpg"
@@ -266,7 +266,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/christian-brothers.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Christian%20Brothers.jpg"
@@ -287,7 +287,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/civil-war-preservation.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Civil%20War%20Preservation.jpg"
@@ -308,7 +308,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/clemson.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Clemson.jpg"
@@ -329,7 +329,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/coast-guard-commendation-medal.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Coast%20Guard%20Commendation%20Medal.jpg"
@@ -350,7 +350,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/coast-guard-medal.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Coast%20Guard%20Medal.jpg"
@@ -371,7 +371,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/tennesseans-for-the-arts.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennesseans%20for%20the%20Arts.jpg"
@@ -392,7 +392,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/crusade-against-darkness.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Crusade%20Against%20Darkness.jpg"
@@ -413,7 +413,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/delta-sigma-theta.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Delta%20Sigma%20Theta.jpg"
@@ -434,7 +434,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/dollywood-foundation.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Dollywood%20Foundation.jpg"
@@ -455,7 +455,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/down-syndrome-awareness.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Down%20Syndrome%20Awareness.jpg"
@@ -476,7 +476,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/drive-electric-tennessee.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Drive%20Electric%20Tennessee.jpg"
@@ -497,7 +497,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/elvis-presley-memorial-trauma-center.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Elvis%20Presley%20Memorial%20Trauma%20Center.jpg"
@@ -518,7 +518,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/enemy-evadee.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Enemy%20Evadee.jpg"
@@ -539,7 +539,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/equity-alliance.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Equity%20Alliance.jpg"
@@ -560,7 +560,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/explore-tn.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Explore%20TN.jpg"
@@ -587,7 +587,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/friends-of-shelby-bottoms.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Friends%20of%20Shelby%20Bottoms.jpg"
@@ -608,7 +608,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/gold-star-family.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Gold%20Star%20Family.jpg"
@@ -629,7 +629,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/harpeth-river-watershed.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Harpeth%20River%20Watershed.jpg"
@@ -650,7 +650,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/honorably-discharged.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Honorably%20Discharged.jpg"
@@ -671,7 +671,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/improve-hendersonville.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Improve%20Hendersonville.jpg"
@@ -692,7 +692,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/isaiah-117-house.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Isaiah%20117%20House.jpg"
@@ -713,7 +713,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/kappa-alpha-psi.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Kappa%20Alpha%20Psi.jpg"
@@ -734,7 +734,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/lineman-power-tennessee.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Lineman%20Power%20Tennessee.jpg"
@@ -755,7 +755,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/masons.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Masons.jpg"
@@ -776,7 +776,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/millennial-debt-foundation.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Millennial%20Debt%20Foundation.jpg"
@@ -797,7 +797,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/national-rifle-association.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/National%20Rifle%20Association.jpg"
@@ -820,7 +820,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/old-friends-senior-dog-sanctuary.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Old%20Friends%20Senior%20Dog%20Sanctuary.jpg"
@@ -841,7 +841,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/omega-psi-phi.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Omega%20Psi%20Phi.jpg"
@@ -862,7 +862,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/operation-inherent-resolve.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Operation%20Inherent%20Resolve.jpg"
@@ -883,7 +883,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/operation-inherent-resolve-era.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Operation%20Inherent%20Resolve%20Era.jpg"
@@ -904,7 +904,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/operation-new-dawn.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Operation%20New%20Dawn.jpg"
@@ -925,7 +925,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/operation-new-dawn-era.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Operation%20New%20Dawn%20Era.jpg"
@@ -946,7 +946,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/pat-summitt-foundation.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Pat%20Summitt%20Foundation.jpg"
@@ -974,7 +974,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/phi-beta-sigma.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Phi%20Beta%20Sigma.jpg"
@@ -995,7 +995,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/physician.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Physician.jpg"
@@ -1016,7 +1016,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/presidential-service-badge.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Presidential%20Service%20Badge.jpg"
@@ -1037,7 +1037,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/prisoner-of-war.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Prisoner%20of%20War.jpg"
@@ -1058,7 +1058,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/promote-peace.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Promote%20Peace.jpg"
@@ -1079,7 +1079,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/radnor-lake-preservation.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Radnor%20Lake%20Preservation.jpg"
@@ -1100,7 +1100,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/rakkasans.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Rakkasans.jpg"
@@ -1123,7 +1123,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/save-the-bees.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Save%20the%20Bees.jpg"
@@ -1144,7 +1144,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/service-dogs.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Service%20Dogs.jpg"
@@ -1170,7 +1170,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/share-the-road.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Share%20the%20Road.jpg"
@@ -1197,7 +1197,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/support-our-troops.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Support%20Our%20Troops.jpg"
@@ -1218,7 +1218,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/tennessee-nurses-foundation.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Nurses%20Foundation.jpg"
@@ -1239,7 +1239,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/tennessee-tiger-haven.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Tiger%20Haven.jpg"
@@ -1260,7 +1260,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/trauma-physician.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Trauma%20Physician.jpg"
@@ -1281,7 +1281,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/united-states-coast-guard.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/United%20States%20Coast%20Guard.jpg"
@@ -1302,7 +1302,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/united-states-reserve-forces.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/United%20States%20Reserve%20Forces.jpg"
@@ -1323,7 +1323,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/united-states-space-force.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/United%20States%20Space%20Force.jpg"
@@ -1344,7 +1344,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/us-coast-guard-auxiliary.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/US%20Coast%20Guard%20Auxiliary.jpg"
@@ -1365,7 +1365,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/usta-tennessee.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/USTA%20Tennessee.jpg"
@@ -1386,7 +1386,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/tennessee-walking-horse.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Walking%20Horse.jpg"
@@ -1407,7 +1407,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/youth-villages.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Youth%20Villages.jpg"
@@ -1428,7 +1428,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/zeta-phi-beta.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Zeta%20Phi%20Beta.jpg"
@@ -1449,7 +1449,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Schools",
       "image": {
         "path": "state-packs/tennessee/plates/agriculture.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Agriculture.jpg"
@@ -1470,7 +1470,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Schools",
       "image": {
         "path": "state-packs/tennessee/plates/helping-schools.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Helping%20Schools.jpg"
@@ -1491,7 +1491,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/tennessee-arts-commission-cool-cat.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Arts%20Commission%20-%20Cool%20Cat.jpg"
@@ -1512,7 +1512,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/tennessee-arts-commission-rainbow.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Arts%20Commission%20-%20Rainbow.jpg"
@@ -1533,7 +1533,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "state-packs/tennessee/plates/wilson-county-the-place-to-be.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Wilson%20County%20-%20The%20Place%20to%20Be.jpg"
@@ -1554,7 +1554,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/tennessee/plates/autism-awareness.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Autism%20Awareness.jpg"
@@ -1575,7 +1575,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/tennessee/plates/children-first.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Children%20First.jpg"
@@ -1596,7 +1596,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/tennessee/plates/choose-life.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Choose%20Life.jpg"
@@ -1617,7 +1617,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/tennessee/plates/driving-to-a-cure-breast-cancer-awareness.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Driving%20to%20a%20Cure%20-%20Breast%20Cancer%20Awareness.jpg"
@@ -1638,7 +1638,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/tennessee/plates/lebonheur-childrens-hospital.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/LeBonheur%20Children's%20Hospital.jpg"
@@ -1659,7 +1659,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/tennessee/plates/niswonger-childrens-hospital.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Niswonger%20Children%26%2339s%20Hospital.jpg"
@@ -1680,7 +1680,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "state-packs/tennessee/plates/st-jude-childrens-research-hospital.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/St%20Jude%20Children%26%2339s%20Research%20Hospital.jpg"
@@ -1701,7 +1701,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/tennessee/plates/antique-auto.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Antique%20Auto.jpg"
@@ -1722,7 +1722,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/tennessee/plates/antique-motorcycle.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Antique%20Motorcycle.jpg"
@@ -1743,7 +1743,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/tennessee/plates/friends-of-sycamore-shoals-historic-area.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Friends%20of%20Sycamore%20Shoals%20Historic%20Area.jpg"
@@ -1764,7 +1764,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/tennessee/plates/historic-franklin.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Historic%20Franklin.jpg"
@@ -1785,7 +1785,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/5th-special-forces-group-airborne.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/5th%20Special%20Forces%20Group%20-%20Airborne.jpg"
@@ -1806,7 +1806,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/air-force-cross.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Air%20Force%20Cross.jpg"
@@ -1827,7 +1827,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/air-medal-meritorious.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Air%20Medal%20-%20Meritorious.jpg"
@@ -1848,7 +1848,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/air-medal-valor.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Air%20Medal%20-%20Valor.jpg"
@@ -1869,7 +1869,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/bosnia-era-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Bosnia%20Era%20Veteran.jpg"
@@ -1890,7 +1890,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/bosnia-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Bosnia%20Veteran.jpg"
@@ -1911,7 +1911,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/bronze-star-meritorious.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Bronze%20Star%20-%20Meritorious.jpg"
@@ -1932,7 +1932,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/bronze-star-valor.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Bronze%20Star%20-%20Valor.jpg"
@@ -1953,7 +1953,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/cold-war-era-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Cold%20War%20Era%20Veteran.jpg"
@@ -1974,7 +1974,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/combat-action-badge.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Combat%20Action%20Badge.jpg"
@@ -1995,7 +1995,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/combat-infantry-badge.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Combat%20Infantry%20Badge.jpg"
@@ -2016,7 +2016,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/combat-medical-badge.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Combat%20Medical%20Badge.jpg"
@@ -2037,7 +2037,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/desert-storm-era-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Desert%20Storm%20Era%20Veteran.jpg"
@@ -2058,7 +2058,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/desert-storm-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Desert%20Storm%20Veteran.jpg"
@@ -2079,7 +2079,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/disabled-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Disabled%20Veteran.jpg"
@@ -2100,7 +2100,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/distinguished-flying-cross.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Distinguished%20Flying%20Cross.jpg"
@@ -2121,7 +2121,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/distinguished-service-cross.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Distinguished%20Service%20Cross.jpg"
@@ -2142,7 +2142,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/korean-service-defense-medal.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Korean%20Service%20Defense%20Medal.jpg"
@@ -2163,7 +2163,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/korean-war-era-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Korean%20War%20Era%20Veteran.jpg"
@@ -2184,7 +2184,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/korean-war-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Korean%20War%20Veteran.jpg"
@@ -2205,7 +2205,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/legion-of-merit.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Legion%20of%20Merit.jpg"
@@ -2226,7 +2226,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/medal-of-honor.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Medal%20of%20Honor.jpg"
@@ -2247,7 +2247,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/national-guard.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/National%20Guard.jpg"
@@ -2268,7 +2268,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/navy-cross.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Navy%20Cross.jpg"
@@ -2289,7 +2289,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/operation-enduring-freedom.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Operation%20Enduring%20Freedom.jpg"
@@ -2310,7 +2310,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/operation-enduring-freedom-era.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Operation%20Enduring%20Freedom%20Era.jpg"
@@ -2331,7 +2331,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/operation-iraqi-freedom.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Operation%20Iraqi%20Freedom.jpg"
@@ -2352,7 +2352,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/operation-iraqi-freedom-era.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Operation%20Iraqi%20Freedom%20Era.jpg"
@@ -2373,7 +2373,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/pearl-harbor-survivor.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Pearl%20Harbor%20Survivor.jpg"
@@ -2394,7 +2394,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/purple-heart.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Purple%20Heart.jpg"
@@ -2415,7 +2415,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/silver-star-valor.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Silver%20Star%20-%20Valor.jpg"
@@ -2436,7 +2436,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/somalia-era-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Somalia%20Era%20Veteran.jpg"
@@ -2457,7 +2457,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/somalia-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Somalia%20Veteran.jpg"
@@ -2478,7 +2478,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Civic",
       "image": {
         "path": "state-packs/tennessee/plates/sons-of-confederate-veterans.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Sons%20of%20Confederate%20Veterans.jpg"
@@ -2499,7 +2499,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/submarine-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Submarine%20Veteran.jpg"
@@ -2520,7 +2520,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/tennessee-woman-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Woman%20Veteran.jpg"
@@ -2541,7 +2541,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/united-states-air-force.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/United%20States%20Air%20Force.jpg"
@@ -2562,7 +2562,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/united-states-army.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/United%20States%20Army.jpg"
@@ -2583,7 +2583,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/united-states-marine-corps.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/United%20States%20Marine%20Corps.jpg"
@@ -2604,7 +2604,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/united-states-marine-corps-league.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/United%20States%20Marine%20Corps%20League.jpg"
@@ -2625,7 +2625,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/united-states-navy.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/United%20States%20Navy.jpg"
@@ -2646,7 +2646,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/us-army-ranger.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/US%20Army%20Ranger.jpg"
@@ -2667,7 +2667,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/vietnam-war-era-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Vietnam%20War%20Era%20Veteran.jpg"
@@ -2688,7 +2688,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/vietnam-war-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Vietnam%20War%20Veteran.jpg"
@@ -2709,7 +2709,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/women-veterans-of-color.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Women%20Veterans%20of%20Color.jpg"
@@ -2730,7 +2730,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/world-war-ii-era-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/World%20War%20II%20Era%20Veteran.jpg"
@@ -2751,7 +2751,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/tennessee/plates/world-war-ii-veteran.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/World%20War%20II%20Veteran.jpg"
@@ -2765,14 +2765,14 @@
     {
       "id": "tn-motorcycle",
       "slug": "motorcycle",
-      "name": "Motorcycle (Motorcycle)",
-      "displayName": "Motorcycle (Motorcycle)",
+      "name": "Motorcycle",
+      "displayName": "Motorcycle",
       "baseName": "Motorcycle",
       "variantLabel": "Motorcycle",
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/tennessee/plates/motorcycle.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Motorcycle.jpg"
@@ -2793,7 +2793,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/tennessee/plates/american-eagle-foundation.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/American%20Eagle%20Foundation.jpg"
@@ -2814,7 +2814,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/tennessee/plates/ducks-unlimited.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Ducks%20Unlimited.jpg"
@@ -2835,7 +2835,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/tennessee/plates/environment-state-parks.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Environment%20-%20State%20Parks.jpg"
@@ -2856,7 +2856,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/tennessee/plates/fish-and-wildlife-species-bear.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Fish%20%26%20Wildlife%20Species%20-%20Bear.jpg"
@@ -2877,7 +2877,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/tennessee/plates/fish-and-wildlife-species-turkey.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Fish%20%26%20Wildlife%20Species%20-%20Turkey.jpg"
@@ -2898,7 +2898,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/tennessee/plates/national-wild-turkey-federation.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/National%20Wild%20Turkey%20Federation.jpg"
@@ -2919,7 +2919,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/tennessee/plates/small-mouth-bass.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Small%20Mouth%20Bass.jpg"
@@ -2940,7 +2940,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/tennessee/plates/tennessee-arts-commission-fish.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Arts%20Commission%20-%20Fish.jpg"
@@ -2961,7 +2961,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/tennessee/plates/tennessee-wildlife-federation-hummingbird.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Wildlife%20Federation%20-%20Hummingbird.jpg"
@@ -2982,7 +2982,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/tennessee/plates/tennessee-wildlife-federation-multi-animal.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Wildlife%20Federation%20-%20Multi%20Animal.jpg"
@@ -3003,7 +3003,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/tennessee/plates/watchable-wildlife.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Watchable%20Wildlife.jpg"
@@ -3024,7 +3024,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "state-packs/tennessee/plates/nashville-predators.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Nashville%20Predators.jpg"
@@ -3045,7 +3045,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "state-packs/tennessee/plates/nashville-sc.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Nashville%20SC.jpg"
@@ -3066,7 +3066,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/tennessee/plates/sportsman-wildlife-foundation.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Sportsman%20Wildlife%20Foundation.jpg"
@@ -3087,7 +3087,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "state-packs/tennessee/plates/tennessee-titans.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Titans.jpg"
@@ -3108,7 +3108,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/tennessee/plates/emergency-e-plate.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Emergency%20-%20E%20Plate.jpg"
@@ -3129,7 +3129,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/tennessee/plates/firefighter.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Firefighter.jpg"
@@ -3150,7 +3150,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/tennessee/plates/fraternal-order-of-police.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Fraternal%20Order%20of%20Police.jpg"
@@ -3171,7 +3171,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/tennessee/plates/fraternal-order-of-police-associate-member.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Fraternal%20Order%20of%20Police%20-%20Associate%20Member.jpg"
@@ -3192,7 +3192,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/tennessee/plates/honoring-law-enforcement.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Honoring%20Law%20Enforcement.jpg"
@@ -3213,7 +3213,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/tennessee/plates/international-association-of-firefighters.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/International%20Association%20of%20Firefighters.jpg"
@@ -3234,7 +3234,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/tennessee/plates/paratrooper.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Paratrooper.jpg"
@@ -3255,7 +3255,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/tennessee/plates/rescue-squad.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Rescue%20Squad.jpg"
@@ -3276,7 +3276,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/tennessee/plates/rescue-squad-official.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Rescue%20Squad%20Official.jpg"
@@ -3297,7 +3297,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/tennessee/plates/retired-female-firefighter.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Retired%20Female%20Firefighter.jpg"
@@ -3318,7 +3318,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/tennessee/plates/retired-firefighter.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Retired%20Firefighter.jpg"
@@ -3339,7 +3339,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/tennessee/plates/tennessee-police-benevolent-association.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Police%20Benevolent%20Association.jpg"
@@ -3360,7 +3360,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/tennessee/plates/tennessee-sheriffs-association.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Tennessee%20Sheriffs%26%2339%20Association.jpg"
@@ -3381,7 +3381,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/tennessee/plates/automobile-in-god-we-trust.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Automobile%20-%20In%20God%20We%20Trust.jpg"
@@ -3402,7 +3402,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Travel & Tourism",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/tennessee/plates/friends-of-the-great-smoky-mountains.jpg",
         "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Friends%20of%20the%20Great%20Smoky%20Mountains.jpg"

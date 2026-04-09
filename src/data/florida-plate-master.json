@@ -22,7 +22,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "plates/state_of_vision.png",
         "remoteUrl": null
@@ -224,7 +224,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Schools",
       "image": {
         "path": "zip-plates/agricultural_education.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608163847.jpg"
@@ -346,7 +346,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/agriculture.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608163982.png"
@@ -463,7 +463,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/16_171_agriculture-consumer-services.png",
         "remoteUrl": null
@@ -530,7 +530,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "zip-plates/air_force_combat_action_medal.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4619110450.jpg"
@@ -657,7 +657,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "zip-plates/air_force_cross.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4619135986.jpg"
@@ -775,7 +775,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Special Use",
+      "category": "Standard",
       "image": {
         "path": "plates/21_241_amateur-radio.png",
         "remoteUrl": null
@@ -856,7 +856,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "plates/america-250-lp_original.png",
         "remoteUrl": null
@@ -940,7 +940,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/america_the_beautiful.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608290292.png"
@@ -1066,7 +1066,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/american_legion.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608285579.png"
@@ -1199,7 +1199,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "plates/american_red_cross.png",
         "remoteUrl": null
@@ -1290,7 +1290,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/animal_friend.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608290317.png"
@@ -1420,7 +1420,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "plates/animal_friend.png",
         "remoteUrl": null
@@ -1512,7 +1512,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "plates/17_194_antique.png",
         "remoteUrl": null
@@ -1585,7 +1585,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_250_antique.png",
         "remoteUrl": null
@@ -1658,7 +1658,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/16_170_apply-for-workforce-innovation.png",
         "remoteUrl": null
@@ -1725,7 +1725,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "plates/14_154_apportioned-irp.png",
         "remoteUrl": null
@@ -1790,7 +1790,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/aquaculture.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608290332.png"
@@ -1923,7 +1923,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "zip-plates/army_of_occupation.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4619136657.jpg"
@@ -2158,7 +2158,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Special Use",
+      "category": "Standard",
       "image": {
         "path": "plates/14_153_authenticated.png",
         "remoteUrl": null
@@ -2706,7 +2706,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/best_buddies_tom_brady.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4303967508.png"
@@ -2947,7 +2947,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/big_brothers_big_sisters.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608290426.png"
@@ -3073,7 +3073,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "zip-plates/blue_angels.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608319097.png"
@@ -3231,7 +3231,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "zip-plates/blue_angels_florida_motorcycle.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4653283020.png"
@@ -3341,7 +3341,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/bonefish_and_tarpon_trust.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608319112.png"
@@ -3470,7 +3470,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/scouting_teaches_values.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785266781.jpg"
@@ -3588,7 +3588,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "zip-plates/bronze_star.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4619135991.jpg"
@@ -3704,7 +3704,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "plates/CatchMeReleaseMe.png",
         "remoteUrl": null
@@ -3785,7 +3785,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/challenger_columbia.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4915351339.png"
@@ -3935,7 +3935,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "zip-plates/choose_life.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608341658.png"
@@ -4082,7 +4082,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/16_172_city.png",
         "remoteUrl": null
@@ -4147,7 +4147,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_251_city.png",
         "remoteUrl": null
@@ -4366,7 +4366,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "zip-plates/combat_action_badge.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4619135719.jpg"
@@ -4484,7 +4484,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "zip-plates/combat_action_ribbon.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4619135724.jpg"
@@ -4607,7 +4607,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "zip-plates/combat_infantry_badge.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4619159046.jpg"
@@ -4728,7 +4728,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "zip-plates/combat_medical_badge.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4619159051.jpg"
@@ -4849,7 +4849,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/conserve_florida_fisheries.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608319225.png"
@@ -4926,7 +4926,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/conserve_wildlife.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608341749.png"
@@ -5048,7 +5048,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "plates/conserve_wildlife.png",
         "remoteUrl": null
@@ -5140,7 +5140,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/16_174_county.png",
         "remoteUrl": null
@@ -5205,7 +5205,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_252_county.png",
         "remoteUrl": null
@@ -5283,7 +5283,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "plates/02_002_county-name.png",
         "remoteUrl": null
@@ -5357,7 +5357,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "plates/17_195_custom-vehicle.png",
         "remoteUrl": null
@@ -5431,7 +5431,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Special Use",
+      "category": "Commercial",
       "image": {
         "path": "plates/21_243_dealer.png",
         "remoteUrl": null
@@ -5512,7 +5512,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_253_dealer.png",
         "remoteUrl": null
@@ -5589,7 +5589,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "plates/16_175_department-of-corrections.png",
         "remoteUrl": null
@@ -5655,7 +5655,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/16_176_department-of-environmental-protection.png",
         "remoteUrl": null
@@ -5722,7 +5722,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/16_177_department-of-transportation.png",
         "remoteUrl": null
@@ -5788,7 +5788,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_255_disabled-veteran.png",
         "remoteUrl": null
@@ -5869,7 +5869,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Accessibility",
+      "category": "Standard",
       "image": {
         "path": "plates/15_162_disabled-person-wheelchair-suffix.png",
         "remoteUrl": null
@@ -5939,7 +5939,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Accessibility",
+      "category": "Military",
       "image": {
         "path": "plates/15_163_disabled-veteran.png",
         "remoteUrl": null
@@ -6043,7 +6043,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_254_disabled-person-wheelchair.png",
         "remoteUrl": null
@@ -6154,7 +6154,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Accessibility",
+      "category": "Military",
       "image": {
         "path": "plates/15_164_disabled-veteran-wheelchair.png",
         "remoteUrl": null
@@ -6234,7 +6234,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/discover_florida_horses.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608396839.png"
@@ -6363,7 +6363,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/discover_florida_oceans.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4915428151.jpg"
@@ -6508,7 +6508,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "zip-plates/distinguished_flying_cross.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4619159554.jpg"
@@ -6622,7 +6622,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "zip-plates/distinguished_service_cross.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4619159061.jpg"
@@ -6737,7 +6737,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/alpha_kappa_alpha_sorority_divine_nine.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608126232.png"
@@ -6831,7 +6831,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/alpha_phi_alpha_sorority_divine_nine.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608163999.png"
@@ -6925,7 +6925,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/delta_sigma_theta_sorority_divine_nine.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4608396769.png"
@@ -7019,7 +7019,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/iota_phi_theta_fraternity_divine_nine.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4731728565.jpg"
@@ -7113,7 +7113,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/kappa_alpha_psi_fraternity_divine_nine.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4731727574.jpg"
@@ -7207,7 +7207,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/omega_psi_phi_fraternity_divine_nine.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4731729806.jpg"
@@ -7301,7 +7301,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/phi_beta_sigma_fraternity_divine_nine.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4731727614.jpg"
@@ -7395,7 +7395,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/sigma_gamma_rho_sorority_divine_nine.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4731729828.jpg"
@@ -7489,7 +7489,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/zeta_phi_beta_sorority_divine_nine.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4731727624.jpg"
@@ -7583,7 +7583,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/16_178_division-of-driver-licenses.png",
         "remoteUrl": null
@@ -7650,7 +7650,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/16_179_division-of-motor-vehicles.png",
         "remoteUrl": null
@@ -7717,7 +7717,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/don_t_tread_on_me_gadsden_flag.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4758633179.jpg"
@@ -7791,7 +7791,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "plates/donate_organs.png",
         "remoteUrl": null
@@ -7870,7 +7870,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/ducks_unlimited.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4732197590.jpg"
@@ -8536,7 +8536,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "plates/15_166_emergency-management-personnel.png",
         "remoteUrl": null
@@ -8602,7 +8602,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "plates/15_167_emergency-medical-services.png",
         "remoteUrl": null
@@ -8668,7 +8668,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "zip-plates/end_breast_cancer.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4915414057.jpg"
@@ -8815,7 +8815,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/endless_summer.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1674791160.jpg"
@@ -8967,7 +8967,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/everglades_river_of_grass.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4915420802.jpg"
@@ -9205,7 +9205,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/19_217_ex-prisoner-of-war.png",
         "remoteUrl": null
@@ -9308,7 +9308,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Special Use",
+      "category": "Standard",
       "image": {
         "path": "plates/21_242_exempt-series.png",
         "remoteUrl": null
@@ -9390,7 +9390,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/explore_off_road.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/3528183219.jpg"
@@ -9516,7 +9516,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Travel & Tourism",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "plates/06_057_explore-our-state-parks.png",
         "remoteUrl": null
@@ -9612,7 +9612,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "zip-plates/fallen_law_enforcement_officers.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1819627244.jpg"
@@ -9736,7 +9736,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "zip-plates/family_first.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1784896397.jpg"
@@ -9875,7 +9875,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "zip-plates/family_values.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4665607737.jpg"
@@ -10006,7 +10006,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "plates/family_values.png",
         "remoteUrl": null
@@ -10099,7 +10099,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "plates/15_168_fire.png",
         "remoteUrl": null
@@ -10161,7 +10161,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "plates/16_180_fish-wildlife-commission.png",
         "remoteUrl": null
@@ -10228,7 +10228,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/fish.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1686281543.jpg"
@@ -10592,7 +10592,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "plates/14_155_fleet.png",
         "remoteUrl": null
@@ -10988,7 +10988,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/florida_bay_forever.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4940501126.png"
@@ -11328,7 +11328,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "plates/16_182_florida-department-of-veterans-affairs.png",
         "remoteUrl": null
@@ -11392,7 +11392,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/golf_capital_of_the_world.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1819511231.jpg"
@@ -11750,7 +11750,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "plates/16_183_florida-highway-patrol.png",
         "remoteUrl": null
@@ -11818,7 +11818,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_256_florida-highway-patrol.png",
         "remoteUrl": null
@@ -12614,7 +12614,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "plates/17_184_florida-national-guard.png",
         "remoteUrl": null
@@ -12680,7 +12680,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/florida_panthers.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4861660023.jpg"
@@ -12797,7 +12797,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "plates/florida_panthers.png",
         "remoteUrl": null
@@ -12902,7 +12902,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "zip-plates/salutes_veterans.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1704797540.jpg"
@@ -13076,7 +13076,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "plates/florida_sheriff_youth_ranch.png",
         "remoteUrl": null
@@ -13154,7 +13154,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "zip-plates/florida_sheriffs_association.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1819636257.jpg"
@@ -13486,7 +13486,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/support_florida_special_olympics.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/3883519071.jpg"
@@ -13553,7 +13553,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "plates/florida_special_olympic.png",
         "remoteUrl": null
@@ -13642,7 +13642,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "plates/11_118_florida-stands-with-israel.png",
         "remoteUrl": null
@@ -13924,7 +13924,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/18_199_foreign-organization.png",
         "remoteUrl": null
@@ -14002,7 +14002,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "plates/17_196_former-military-vehicle.png",
         "remoteUrl": null
@@ -14110,7 +14110,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_257_former-military-vehicle.png",
         "remoteUrl": null
@@ -14216,7 +14216,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "zip-plates/fraternal_order_of_police.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785077396.jpg"
@@ -14330,7 +14330,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/freemasonry.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785136038.jpg"
@@ -14455,7 +14455,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "plates/16_181_fwc-officer.png",
         "remoteUrl": null
@@ -14521,7 +14521,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/go_fishing.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1686283699.jpg"
@@ -14600,7 +14600,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/19_218_gold-star-family.png",
         "remoteUrl": null
@@ -14704,7 +14704,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "plates/14_156_heavy-truck-dual-plates.png",
         "remoteUrl": null
@@ -14770,7 +14770,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/helping_sea_turtles_survive.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1697106019.jpg"
@@ -14898,7 +14898,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Education & Culture",
+      "category": "Civic",
       "image": {
         "path": "plates/HispanicAchievers.png",
         "remoteUrl": null
@@ -15047,7 +15047,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Travel & Tourism",
+      "category": "Heritage",
       "image": {
         "path": "zip-plates/horse_country.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785112461.jpg"
@@ -15194,7 +15194,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "plates/18_197_horseless-carriage.png",
         "remoteUrl": null
@@ -15270,7 +15270,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_258_horseless-carriage.png",
         "remoteUrl": null
@@ -15346,7 +15346,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "zip-plates/hospice.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1819636382.jpg"
@@ -15498,7 +15498,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/18_200_house-speaker.png",
         "remoteUrl": null
@@ -15578,7 +15578,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/imagine.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785122494.jpg"
@@ -15725,7 +15725,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/in_god_we_trust.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785206256.jpg"
@@ -15921,7 +15921,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "plates/standard_in_god_we_trust.jpg",
         "remoteUrl": null
@@ -15991,7 +15991,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/indian_river_lagoon.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/3674717057.jpg"
@@ -16121,7 +16121,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "plates/indian_river_lagoon.png",
         "remoteUrl": null
@@ -16239,7 +16239,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "plates/09_091_inter-miami-cf.png",
         "remoteUrl": null
@@ -16317,7 +16317,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "zip-plates/invest_in_children.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785189981.jpg"
@@ -16466,7 +16466,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/jacksonville_jaguars.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785177931.jpg"
@@ -16810,7 +16810,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "plates/11_127_k9s-united.png",
         "remoteUrl": null
@@ -16888,7 +16888,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "plates/keep_kids_drug_free.png",
         "remoteUrl": null
@@ -17083,7 +17083,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "zip-plates/kids_deserve_justice.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1819578937.jpg"
@@ -17188,7 +17188,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/19_219_korean-war-veteran.png",
         "remoteUrl": null
@@ -17291,7 +17291,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/17_185_labor-employment-security.png",
         "remoteUrl": null
@@ -17358,7 +17358,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "zip-plates/laurens_kids.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785206598.jpg"
@@ -17443,7 +17443,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/live_the_dream.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785206779.jpg"
@@ -17806,7 +17806,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Special Use",
+      "category": "Commercial",
       "image": {
         "path": "plates/21_244_manufacturer.png",
         "remoteUrl": null
@@ -17887,7 +17887,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_259_manufacturer.png",
         "remoteUrl": null
@@ -17964,7 +17964,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Travel & Tourism",
+      "category": "Heritage",
       "image": {
         "path": "plates/12_130_margaritaville.png",
         "remoteUrl": null
@@ -18039,7 +18039,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/19_220_medal-of-honor-air-force.png",
         "remoteUrl": null
@@ -18152,7 +18152,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/19_221_medal-of-honor-army.png",
         "remoteUrl": null
@@ -18262,7 +18262,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/20_222_medal-of-honor-navy.png",
         "remoteUrl": null
@@ -18372,7 +18372,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/miami_dolphins.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785243658.jpg"
@@ -18499,7 +18499,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "plates/miami_dolphins.png",
         "remoteUrl": null
@@ -18612,7 +18612,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/miami_heat.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4758641695.jpg"
@@ -18739,7 +18739,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "plates/miami_heat.png",
         "remoteUrl": null
@@ -18852,7 +18852,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/miami_marlins.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785206983.jpg"
@@ -18979,7 +18979,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "plates/miami_marlins.png",
         "remoteUrl": null
@@ -19093,7 +19093,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "plates/21_239_miccosukee-indian.png",
         "remoteUrl": null
@@ -19160,7 +19160,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_260_miccosukee-indian.png",
         "remoteUrl": null
@@ -19240,7 +19240,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "zip-plates/moffitt_cancer_center.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785224795.jpg"
@@ -19366,7 +19366,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "zip-plates/florida_motorcycle.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4118466502.jpg"
@@ -19430,7 +19430,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/nascar.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/3883526113.jpg"
@@ -19562,7 +19562,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "plates/NASCAR.png",
         "remoteUrl": null
@@ -19648,7 +19648,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "plates/20_223_national-guard.png",
         "remoteUrl": null
@@ -19763,7 +19763,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/20_224_navy-cross.png",
         "remoteUrl": null
@@ -19868,7 +19868,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/20_225_navy-submariner.png",
         "remoteUrl": null
@@ -20109,7 +20109,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/17_186_north-broward-hospital-district.png",
         "remoteUrl": null
@@ -20385,7 +20385,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/18_201_official-congress.png",
         "remoteUrl": null
@@ -20465,7 +20465,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/18_202_official-house.png",
         "remoteUrl": null
@@ -20545,7 +20545,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/18_203_official-senate.png",
         "remoteUrl": null
@@ -20625,7 +20625,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/20_226_operation-desert-shield.png",
         "remoteUrl": null
@@ -20729,7 +20729,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/20_227_operation-desert-storm.png",
         "remoteUrl": null
@@ -20833,7 +20833,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/20_228_operation-enduring-freedom.png",
         "remoteUrl": null
@@ -20937,7 +20937,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/20_229_operation-iraqi-freedom.png",
         "remoteUrl": null
@@ -21041,7 +21041,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/orlando_city_soccer.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/3883859204.jpg"
@@ -21166,7 +21166,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/orlando_magic.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1819520214.jpg"
@@ -21524,7 +21524,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Accessibility",
+      "category": "Standard",
       "image": {
         "path": "plates/02_paralyzed_veterans_of_america.png",
         "remoteUrl": null
@@ -21601,7 +21601,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_261_paralyzed-veterans-of-america.png",
         "remoteUrl": null
@@ -21711,7 +21711,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "plates/parents_make_a_difference.png",
         "remoteUrl": null
@@ -21789,7 +21789,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/20_230_pearl-harbor-survivor.png",
         "remoteUrl": null
@@ -21894,7 +21894,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "plates/14_157_permanent-trailer.png",
         "remoteUrl": null
@@ -21959,7 +21959,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/play_tennis.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785264527.jpg"
@@ -22093,7 +22093,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "plates/15_169_police.png",
         "remoteUrl": null
@@ -22155,7 +22155,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "zip-plates/police_athletic_league.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1819495953.jpg"
@@ -22302,7 +22302,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "plates/police_benevolent_association.png",
         "remoteUrl": null
@@ -22379,7 +22379,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Special Use",
+      "category": "Standard",
       "image": {
         "path": "plates/21_247_pre-printed-temporary-license-plate.png",
         "remoteUrl": null
@@ -22464,7 +22464,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_268_pre-printed-temporary-license-plate.png",
         "remoteUrl": null
@@ -22545,7 +22545,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Special Use",
+      "category": "Standard",
       "image": {
         "path": "plates/21_245_press.png",
         "remoteUrl": null
@@ -22624,7 +22624,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/17_187_pride.png",
         "remoteUrl": null
@@ -22687,7 +22687,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "plates/07_064_protect-biscayne-bay.png",
         "remoteUrl": null
@@ -22768,7 +22768,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/protect_florida_springs.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1697083944.jpg"
@@ -22914,7 +22914,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/protect_florida_whales.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1697104365.jpg"
@@ -23060,7 +23060,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/protect_marine_wildlife.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/3883940592.jpg"
@@ -23188,7 +23188,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "plates/07_068_protect-our-oceans.png",
         "remoteUrl": null
@@ -23269,7 +23269,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/protect_our_reefs.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1819436867.jpg"
@@ -23417,7 +23417,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "plates/07_070_protect-the-gopher-tortoise.png",
         "remoteUrl": null
@@ -23498,7 +23498,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/protect_the_panther.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4048201919.jpg"
@@ -23611,7 +23611,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "plates/panther.png",
         "remoteUrl": null
@@ -23700,7 +23700,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/protect_wild_dolphins.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1819436832.jpg"
@@ -23846,7 +23846,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/17_188_public-service-commission.png",
         "remoteUrl": null
@@ -23912,7 +23912,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/20_231_purple-heart.png",
         "remoteUrl": null
@@ -24021,7 +24021,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_265_purple-heart.png",
         "remoteUrl": null
@@ -24131,7 +24131,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "plates/14_158_restricted.png",
         "remoteUrl": null
@@ -24193,7 +24193,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/18_204_retired-house.png",
         "remoteUrl": null
@@ -24273,7 +24273,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/18_205_retired-senate.png",
         "remoteUrl": null
@@ -25157,7 +25157,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "zip-plates/salutes_firefighters.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1819636526.jpg"
@@ -25291,7 +25291,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/save_our_seas.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1697135016.jpg"
@@ -25437,7 +25437,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/save_the_manatee.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1697186081.jpg"
@@ -25584,7 +25584,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/save_wild.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1697178606.jpg"
@@ -25732,7 +25732,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "plates/21_240_seminole-indian.png",
         "remoteUrl": null
@@ -25799,7 +25799,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_262_seminole-indian.png",
         "remoteUrl": null
@@ -25879,7 +25879,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/18_206_senate-president.png",
         "remoteUrl": null
@@ -25959,7 +25959,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/share_the_road.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785256921.jpg"
@@ -26108,7 +26108,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "plates/17_189_sheriff.png",
         "remoteUrl": null
@@ -26171,7 +26171,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/20_232_silver-star.png",
         "remoteUrl": null
@@ -26492,7 +26492,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_249_specialty.png",
         "remoteUrl": null
@@ -26567,7 +26567,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "plates/sportsmensNLT.png",
         "remoteUrl": null
@@ -26646,7 +26646,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "plates/StJohnsRiver.png",
         "remoteUrl": null
@@ -26725,7 +26725,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_263_standard.png",
         "remoteUrl": null
@@ -26801,7 +26801,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/17_190_state.png",
         "remoteUrl": null
@@ -26866,7 +26866,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "plates/17_191_state-fire-marshal.png",
         "remoteUrl": null
@@ -26932,7 +26932,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_264_state.png",
         "remoteUrl": null
@@ -27010,7 +27010,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/state_of_the_arts.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1819604870.jpg"
@@ -27161,7 +27161,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/state_wildflower.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1697171866.jpg"
@@ -27267,7 +27267,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "plates/state_wildflower.png",
         "remoteUrl": null
@@ -27559,7 +27559,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "zip-plates/stop_child_abuse.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785363095.jpg"
@@ -27706,7 +27706,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "zip-plates/stop_heart_disease.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4758658264.jpg"
@@ -27827,7 +27827,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "plates/18_198_street-rod.png",
         "remoteUrl": null
@@ -27902,7 +27902,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "plates/standard_sunshine_state.jpg",
         "remoteUrl": null
@@ -28022,7 +28022,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "zip-plates/support_autism_programs.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785363188.jpg"
@@ -28169,7 +28169,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Education & Culture",
+      "category": "Schools",
       "image": {
         "path": "zip-plates/support_education.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785366180.jpg"
@@ -28302,7 +28302,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Education & Culture",
+      "category": "Schools",
       "image": {
         "path": "plates/florida_educational.png",
         "remoteUrl": null
@@ -28424,7 +28424,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "zip-plates/support_home_ownership.png",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4748097668.png"
@@ -28537,7 +28537,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Health & Family",
+      "category": "Health",
       "image": {
         "path": "plates/homeownership.png",
         "remoteUrl": null
@@ -28626,7 +28626,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "zip-plates/support_law_enforcement.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1771151227.jpg"
@@ -28749,7 +28749,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/support_our_troops.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1704794826.jpg"
@@ -28912,7 +28912,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Travel & Tourism",
+      "category": "Civic",
       "image": {
         "path": "plates/12_140_support-scenic-walton.png",
         "remoteUrl": null
@@ -28990,7 +28990,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "plates/support_soccer.png",
         "remoteUrl": null
@@ -29066,7 +29066,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "plates/09_102_swim-for-life.png",
         "remoteUrl": null
@@ -29144,7 +29144,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/tampa_bay_buccaneers_nfl.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/5094076135.jpg"
@@ -29265,7 +29265,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "plates/tampa_bay_buccaneers.png",
         "remoteUrl": null
@@ -29372,7 +29372,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/tampa_bay_estuary.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1704792856.jpg"
@@ -29518,7 +29518,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/tampa_bay_lightning.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1819514699.jpg"
@@ -29600,7 +29600,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "plates/tampa_bay_lightning.png",
         "remoteUrl": null
@@ -29704,7 +29704,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Professional Sports",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/tampa_bay_rays_mlb.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785374398.jpg"
@@ -29848,7 +29848,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Special Use",
+      "category": "Standard",
       "image": {
         "path": "plates/21_246_temporary-employment.png",
         "remoteUrl": null
@@ -29930,7 +29930,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "plates/14_159_transporter.png",
         "remoteUrl": null
@@ -29992,7 +29992,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/trees_are_cool.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1704792903.jpg"
@@ -30138,7 +30138,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_270_under-21.png",
         "remoteUrl": null
@@ -30216,7 +30216,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "zip-plates/united_we_stand.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1819621870.jpg"
@@ -32051,7 +32051,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "zip-plates/us_air_force.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1704802084.jpg"
@@ -32206,7 +32206,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "zip-plates/us_army.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1704802142.jpg"
@@ -32358,7 +32358,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "zip-plates/us_coast_guard.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1704805054.jpg"
@@ -32511,7 +32511,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "zip-plates/us_marine_corps.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1730475413.jpg"
@@ -32666,7 +32666,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "zip-plates/us_navy.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1704806117.jpg"
@@ -32817,7 +32817,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports & Recreation",
+      "category": "Sports",
       "image": {
         "path": "zip-plates/us_olympics.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1819539373.jpg"
@@ -32928,7 +32928,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "zip-plates/us_paratrooper.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4619119552.jpg"
@@ -33073,7 +33073,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "plates/20_234_u-s-reserve.png",
         "remoteUrl": null
@@ -33189,7 +33189,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_266_veteran.png",
         "remoteUrl": null
@@ -33290,7 +33290,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "plates/20_235_veteran-of-u-s-armed-forces.png",
         "remoteUrl": null
@@ -33410,7 +33410,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/20_236_vietnam-war-veteran.png",
         "remoteUrl": null
@@ -33513,7 +33513,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Travel & Tourism",
+      "category": "Heritage",
       "image": {
         "path": "zip-plates/visit_our_lights.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/1785383255.jpg"
@@ -33644,7 +33644,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Travel & Tourism",
+      "category": "Heritage",
       "image": {
         "path": "plates/VisitOurLights.png",
         "remoteUrl": null
@@ -33763,7 +33763,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "plates/17_192_volunteer-fire-department.png",
         "remoteUrl": null
@@ -33830,7 +33830,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Travel & Tourism",
+      "category": "Heritage",
       "image": {
         "path": "zip-plates/walt_disney_world.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/3883541081.jpg"
@@ -33958,7 +33958,7 @@
       "plateType": "license_plate",
       "isCurrent": false,
       "isActive": false,
-      "category": "Travel & Tourism",
+      "category": "Heritage",
       "image": {
         "path": "plates/walt_disney_world_legacy.png",
         "remoteUrl": null
@@ -34235,7 +34235,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government & Official",
+      "category": "Government",
       "image": {
         "path": "plates/17_193_water-management-district.png",
         "remoteUrl": null
@@ -34419,7 +34419,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Nature & Wildlife",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "zip-plates/wildlife_foundation_of.jpg",
         "remoteUrl": "https://d2j6dbq0eux0bg.cloudfront.net/images/37174325/4758633199.jpg"
@@ -34524,7 +34524,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "plates/20_237_woman-veteran.png",
         "remoteUrl": null
@@ -34629,7 +34629,7 @@
       "plateType": "motorcycle_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "plates/22_267_woman-veteran.png",
         "remoteUrl": null
@@ -34735,7 +34735,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "plates/20_238_world-war-ii-veteran.png",
         "remoteUrl": null
@@ -34839,7 +34839,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "plates/14_161_wrecker-gross-vehicle-weight.png",
         "remoteUrl": null
@@ -34906,7 +34906,7 @@
       "plateType": "license_plate",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial & Fleet",
+      "category": "Commercial",
       "image": {
         "path": "plates/14_160_wrecker-standard.png",
         "remoteUrl": null
