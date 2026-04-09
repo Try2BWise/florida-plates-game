@@ -164,6 +164,38 @@ Current public release: `v1.8.0`
 - unified 3D icon set gives a premium, consistent visual identity
 - the design aligns with iOS HIG patterns (typography, spacing, materials)
 
+## Post-1.8.0: State Expansion Sprint
+
+Active state expansion is now the primary development track. The multi-state architecture proved out in v1.7.0 and has been the focus of recent work.
+
+### Delivered
+
+- added Kansas as the 7th state (85 plates: military, civic, universities, sports, wildlife)
+- standardized all states from 19 categories to a unified 13-category taxonomy
+- split composite plate images into individual entries via automated cropping
+- added alphabetical quickjump buttons to the state picker for scalability toward 50 states
+- fixed iOS tap targets across all interactive elements to 44px minimum
+- added copyright notice, acknowledgments, and StateFace license
+
+### State Expansion Status
+
+| State | Plates | Status |
+|-------|--------|--------|
+| Florida | 338 | Complete |
+| Mississippi | 305 | Complete |
+| Kentucky | 231 | Complete |
+| Tennessee | 210 | Complete |
+| Missouri | 162 | Complete |
+| Arkansas | 129 | Complete |
+| Kansas | 85 | Partial — military + personalized plates, more available |
+| Georgia | 340 codes | Scouted — images on mvd.dor.ga.gov, ready to scrape |
+
+### Next Expansion Targets
+
+Georgia is scouted and ready. The `mvd.dor.ga.gov` portal has ~340 plate codes with static image URLs at a predictable path (`images/2004/{CODE}_Large.jpg`). Some plates return "sample unavailable" so the real yield is estimated at 130-200+ plates with images.
+
+Beyond Georgia, state selection depends on DMV site accessibility. States with locked-down sites (Texas/MyPlates, Ohio dynamic forms) are not viable without manual image sourcing.
+
 ## v1.8.x
 
 Achievements visual polish round 2.
@@ -807,20 +839,9 @@ Definition of done:
 
 #### Phase D: First Non-Florida Validation Pack
 
-Goal:
-- prove the architecture with a second state, likely Arkansas
+**Completed.** Six additional states shipped: Mississippi, Arkansas, Missouri, Tennessee, Kentucky, and Kansas. Each has its own plate catalog, badge set, regional explorer badges, and game config. The architecture handles 7 states without issues.
 
-Tasks:
-- prepare an Arkansas master dataset
-- generate an Arkansas runtime driver
-- create Arkansas branding assets
-- decide whether Arkansas launches with:
-  - generic badges only
-  - or a full Arkansas badge set
-- verify that search, timeline, map, and caching work correctly with the new pack
-
-Definition of done:
-- at least two states can run from the same shell app
+Original goal was to prove the architecture with a second state. The result exceeded expectations — the pattern is repeatable and well-established.
 
 #### Phase E: Standalone Editor Support
 
@@ -843,17 +864,22 @@ Definition of done:
 
 ## Recommended Order
 
-1. `v1.8.x` achievements visual polish round 2
-2. `v1.9` framework extraction Phase 2 and editor-readiness
-3. `v1.10+` optional social layer and cloud identity
+1. **State expansion** — continue adding states toward 50 (Georgia is next)
+2. `v1.8.x` achievements visual polish round 2
+3. `v1.9` framework extraction Phase 2 and editor-readiness
+4. `v1.10+` optional social layer and cloud identity
 
 ## Immediate Next Step
 
-For the next cycle, the best targets are:
+The active focus is state expansion. The multi-state architecture is stable at 7 states and the workflow for adding new states is well-established:
 
-- achievements polish round 2 (horizontal carousel, tap feedback, tab transitions)
-- continue tightening category placement as outliers are found
-- evaluate framework extraction readiness
+1. Scrape plate images and metadata from state DMV/DOR sites
+2. Create master JSON with 13-category taxonomy
+3. Create game config with regional badge counties
+4. Register in state system (stateRegistry, activeGame, badges)
+5. Generate plate driver, type check, build, deploy
+
+Georgia is scouted and queued. Beyond that, state selection depends on DMV site accessibility — each state requires recon before committing.
 
 ## Parking Lot
 

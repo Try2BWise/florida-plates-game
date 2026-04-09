@@ -8,19 +8,23 @@ Installable offline-friendly license plate collecting game. Spot specialty plate
 
 | State | Plates | Region Badges | Source Agency |
 |-------|--------|---------------|--------------|
+| Arkansas | 129 | 6 regions + master | AR DFA |
 | Florida | 338 | 9 regions + master | FL DHSMV |
-| Mississippi | 306 | 5 regions + master | MS DOR |
-
-Mississippi regions follow the Mississippi Development Authority tourism regions: Hills, Delta, Capital/River, Pines, and Coastal.
+| Kansas | 85 | 6 regions + master | KS DOR |
+| Kentucky | 231 | 6 regions + master | KY KYTC |
+| Mississippi | 305 | 5 regions + master | MS DOR |
+| Missouri | 162 | 5 regions + master | MO DOR |
+| Tennessee | 210 | 3 regions + master | TN DOR |
 
 ## Features
 
 - **Plate collection** -- Mark plates found with timestamp, GPS coordinates, and reverse-geocoded locality name.
 - **Plate preview** -- Tap any plate image to view an enlarged preview with beneficiary, category, and notes.
-- **Search, filter, sort** -- Search by name or alias, filter by found/not found, sort by category or alphabetically.
-- **Merit badges** -- Earn badges across progress milestones, category completions, regional exploration, college plates, service plates, and more.
-- **Explore** -- Tabs for badges, stats dashboard, sighting map, and timeline.
-- **Multi-state** -- Switch between state packs from the state picker. Each state has its own plate catalog, badge set, and discovery data.
+- **Search, filter, sort** -- Search by name or alias, filter by found/not found, sort by category or alphabetically. 13 unified categories across all states.
+- **Achievements** -- Game Center-style hub with earned, in-progress, and locked badge sections. Badges span progress milestones, category completions, regional exploration, college plates, service plates, and more.
+- **Player ranks** -- Five-tier rank system (Rookie, Spotter, Collector, Road Scholar, Plate Master) based on badges earned.
+- **Journey & Map** -- Timeline of sightings with date grouping, plus a map view of discovery locations.
+- **Multi-state** -- Switch between state packs from the state picker with alphabetical quickjump. Each state has its own plate catalog, badge set, region badges, and discovery data.
 - **Settings** -- Light/dark mode, toggle optional controls.
 - **PWA** -- Install to iPhone or Android home screen. Works offline after first load.
 
