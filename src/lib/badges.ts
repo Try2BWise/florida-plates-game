@@ -676,6 +676,56 @@ export const badgeDefinitions: BadgeDefinition[] = [
     group: "florida",
     availableIn: "v1.4"
   },
+  // Kansas Explorer region badges
+  {
+    id: "ks-northwest-explorer",
+    name: "Northwest Plains Explorer",
+    description: "Find a plate in every Northwest Plains county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ks-northeast-explorer",
+    name: "Northeast Kansas Explorer",
+    description: "Find a plate in every Northeast Kansas county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ks-north-central-explorer",
+    name: "North Central Explorer",
+    description: "Find a plate in every North Central Kansas county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ks-south-central-explorer",
+    name: "South Central Explorer",
+    description: "Find a plate in every South Central Kansas county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ks-southwest-explorer",
+    name: "Southwest Kansas Explorer",
+    description: "Find a plate in every Southwest Kansas county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ks-southeast-explorer",
+    name: "Southeast Kansas Explorer",
+    description: "Find a plate in every Southeast Kansas county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-kansas",
+    name: "All Around Kansas",
+    description: "Earn every regional explorer badge.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
   // Florida Explorer region badges
   {
     id: "northwest-florida-explorer",
@@ -1037,6 +1087,7 @@ export function evaluateBadges(
     missouri: "all-around-missouri",
     tennessee: "all-around-tennessee",
     kentucky: "all-around-kentucky",
+    kansas: "all-around-kansas",
   };
   const allAroundId = allAroundIdMap[stateId] || "all-around-florida";
   const allRegionBadgesEarned = regionBadgeEntries.every(([, badge]) => badge.earned);
@@ -1325,6 +1376,11 @@ export function evaluateBadges(
     tennessee: new Set([
       "tn-east-explorer", "tn-middle-explorer", "tn-west-explorer",
       "all-around-tennessee",
+    ]),
+    kansas: new Set([
+      "ks-northwest-explorer", "ks-northeast-explorer", "ks-north-central-explorer",
+      "ks-south-central-explorer", "ks-southwest-explorer", "ks-southeast-explorer",
+      "all-around-kansas",
     ]),
     kentucky: new Set([
       "ky-bluegrass-explorer", "ky-eastern-mountain-explorer", "ky-knobs-explorer",
