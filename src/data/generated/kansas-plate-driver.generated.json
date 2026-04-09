@@ -14,7 +14,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-1st-infantry-division.jpg",
         "remoteUrl": null
@@ -40,7 +40,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Special Use",
+      "category": "Standard",
       "image": {
         "path": "state-packs/kansas/plates/ks-amateur-radio-operator.jpg",
         "remoteUrl": null
@@ -66,7 +66,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/kansas/plates/ks-antique.jpg",
         "remoteUrl": null
@@ -94,7 +94,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/kansas/plates/ks-antique-motorcycle.jpg",
         "remoteUrl": null
@@ -122,7 +122,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-armed-services-occupation-medal.jpg",
         "remoteUrl": null
@@ -148,7 +148,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard Plates",
+      "category": "Standard",
       "image": {
         "path": "state-packs/kansas/plates/ks-blackout.jpg",
         "remoteUrl": null
@@ -173,7 +173,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-branch-of-service.png",
         "remoteUrl": null
@@ -205,7 +205,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/kansas/plates/ks-choose-life.png",
         "remoteUrl": null
@@ -229,7 +229,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-congressional-medal-of-honor.jpg",
         "remoteUrl": null
@@ -258,7 +258,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-disabled-veteran.jpg",
         "remoteUrl": null
@@ -286,7 +286,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-disabled-veteran-wheelchair.jpg",
         "remoteUrl": null
@@ -315,7 +315,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/kansas/plates/ks-ems.jpg",
         "remoteUrl": null
@@ -345,7 +345,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/kansas/plates/ks-ems-motorcycle.jpg",
         "remoteUrl": null
@@ -373,7 +373,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-ex-prisoner-of-war.jpg",
         "remoteUrl": null
@@ -398,7 +398,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-families-of-the-fallen.jpg",
         "remoteUrl": null
@@ -427,7 +427,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Public Service",
+      "category": "First Responders",
       "image": {
         "path": "state-packs/kansas/plates/ks-firefighter.jpg",
         "remoteUrl": null
@@ -457,7 +457,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/kansas/plates/ks-firefighter-motorcycle.jpg",
         "remoteUrl": null
@@ -484,7 +484,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-gold-star-mother.jpg",
         "remoteUrl": null
@@ -512,7 +512,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/kansas/plates/ks-in-god-we-trust.jpg",
         "remoteUrl": null
@@ -538,7 +538,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-korean-war-veteran.png",
         "remoteUrl": null
@@ -565,7 +565,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-national-guard.jpg",
         "remoteUrl": null
@@ -591,7 +591,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-operation-desert-storm.png",
         "remoteUrl": null
@@ -620,7 +620,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-operation-enduring-freedom.png",
         "remoteUrl": null
@@ -648,7 +648,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-operation-iraqi-freedom.png",
         "remoteUrl": null
@@ -676,7 +676,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-pearl-harbor-survivor.jpg",
         "remoteUrl": null
@@ -703,7 +703,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-purple-heart.gif",
         "remoteUrl": null
@@ -732,7 +732,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/kansas/plates/ks-shriner.jpg",
         "remoteUrl": null
@@ -759,7 +759,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Honors & History",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-silver-star-medal.jpg",
         "remoteUrl": null
@@ -788,7 +788,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/kansas/plates/ks-special-interest.jpg",
         "remoteUrl": null
@@ -817,7 +817,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Historical & Antique",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/kansas/plates/ks-street-rod.jpg",
         "remoteUrl": null
@@ -846,7 +846,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic & Causes",
+      "category": "Civic",
       "image": {
         "path": "state-packs/kansas/plates/ks-support-the-troops.jpg",
         "remoteUrl": null
@@ -872,7 +872,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-veteran.jpg",
         "remoteUrl": null
@@ -901,7 +901,7 @@
       "plateType": "motorcycle",
       "isCurrent": true,
       "isActive": true,
-      "category": "Motorcycle Plates",
+      "category": "Motorcycle",
       "image": {
         "path": "state-packs/kansas/plates/ks-veteran-motorcycle.jpg",
         "remoteUrl": null
@@ -928,7 +928,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military Service",
+      "category": "Military",
       "image": {
         "path": "state-packs/kansas/plates/ks-vietnam-veteran.jpg",
         "remoteUrl": null
