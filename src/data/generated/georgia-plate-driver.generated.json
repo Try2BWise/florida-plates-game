@@ -447,7 +447,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Commercial",
+      "category": "Standard",
       "image": {
         "path": "state-packs/georgia/plates/ga-amateur-radio.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/AR_Large.jpg"
@@ -769,7 +769,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government",
+      "category": "Standard",
       "image": {
         "path": "state-packs/georgia/plates/ga-disabled-person-new-design.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/DP_Large.jpg"
@@ -790,7 +790,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Heritage",
+      "category": "Standard",
       "image": {
         "path": "state-packs/georgia/plates/ga-hobby-antique.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/HA_Large.jpg"
@@ -846,9 +846,9 @@
     {
       "id": "ga-dog-and-cat-sterilization-animal-friend",
       "slug": "dog-and-cat-sterilization-animal-friend",
-      "name": "Animal Friend",
-      "displayName": "Animal Friend",
-      "baseName": "Dog & Cat Sterilization - Animal Friend",
+      "name": "Spay & Neuter (Animal Rescue)",
+      "displayName": "Spay & Neuter (Animal Rescue)",
+      "baseName": "Spay & Neuter",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
@@ -1035,9 +1035,9 @@
     {
       "id": "ga-dog-and-cat-sterilization-feline-friend",
       "slug": "dog-and-cat-sterilization-feline-friend",
-      "name": "Spay & Neuter",
-      "displayName": "Spay & Neuter",
-      "baseName": "Dog & Cat Sterilization - Feline Friend",
+      "name": "Spay & Neuter (Feline Friend)",
+      "displayName": "Spay & Neuter (Feline Friend)",
+      "baseName": "Spay & Neuter",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
@@ -1056,9 +1056,9 @@
     {
       "id": "ga-dog-and-cat-sterilization-b",
       "slug": "dog-and-cat-sterilization-b",
-      "name": "Spay and Neuter",
-      "displayName": "Spay and Neuter",
-      "baseName": "Dog & Cat Sterilization - B",
+      "name": "Spay and Neuter (Animal Friend)",
+      "displayName": "Spay and Neuter (Animal Friend)",
+      "baseName": "Spay and Neuter",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
