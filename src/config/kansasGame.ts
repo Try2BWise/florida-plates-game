@@ -106,7 +106,7 @@ export const kansasGame: GameDefinition & {
       text: "Plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim.",
       agencyName: "Kansas Department of Revenue",
       agencyUrl: "https://ksrevenue.gov/",
-      logoPath: "state-packs/kansas/kdor-logo.svg",
+      logoPath: "state-packs/kansas/kdor-logo.png",
       logoAlt: "Kansas DOR logo"
     }
   },
