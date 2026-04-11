@@ -5,18 +5,18 @@
   "plateCount": 288,
   "plates": [
     {
-      "id": "ga-abraham-baldwin-agricultural-college-new-plates-are-no-longer-available",
-      "slug": "abraham-baldwin-agricultural-college-new-plates-are-no-longer-available",
-      "name": "Abraham Baldwin Agricultural College - New plates are no longer available",
-      "displayName": "Abraham Baldwin Agricultural College - New plates are no longer available",
-      "baseName": "Abraham Baldwin Agricultural College - New plates are no longer available",
+      "id": "ga-abraham-baldwin-agricultural-college",
+      "slug": "abraham-baldwin-agricultural-college",
+      "name": "Abraham Baldwin Agricultural College",
+      "displayName": "Abraham Baldwin Agricultural College",
+      "baseName": "Abraham Baldwin Agricultural College",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": false,
       "category": "Universities",
       "image": {
-        "path": "state-packs/georgia/plates/ga-abraham-baldwin-agricultural-college-new-plates-are-no-longer-available.jpg",
+        "path": "state-packs/georgia/plates/ga-abraham-baldwin-agricultural-college.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/AB_Large.jpg"
       },
       "sponsor": "Scholarship funds for enrolled undergraduate students",
@@ -489,18 +489,18 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-armstrong-atlantic-state-university-new-plates-are-no-longer-available",
-      "slug": "armstrong-atlantic-state-university-new-plates-are-no-longer-available",
-      "name": "Armstrong Atlantic State University - New plates are no longer available",
-      "displayName": "Armstrong Atlantic State University - New plates are no longer available",
-      "baseName": "Armstrong Atlantic State University - New plates are no longer available",
+      "id": "ga-armstrong-atlantic-state-university",
+      "slug": "armstrong-atlantic-state-university",
+      "name": "Armstrong Atlantic State University",
+      "displayName": "Armstrong Atlantic State University",
+      "baseName": "Armstrong Atlantic State University",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": false,
       "category": "Universities",
       "image": {
-        "path": "state-packs/georgia/plates/ga-armstrong-atlantic-state-university-new-plates-are-no-longer-available.jpg",
+        "path": "state-packs/georgia/plates/ga-armstrong-atlantic-state-university.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/AQ_Large.jpg"
       },
       "sponsor": "Scholarship funds for enrolled undergraduate students",
@@ -883,18 +883,18 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-brenau-university-new-plates-are-no-longer-available",
-      "slug": "brenau-university-new-plates-are-no-longer-available",
-      "name": "Brenau University - New plates are no longer available",
-      "displayName": "Brenau University - New plates are no longer available",
-      "baseName": "Brenau University - New plates are no longer available",
+      "id": "ga-brenau-university",
+      "slug": "brenau-university",
+      "name": "Brenau University",
+      "displayName": "Brenau University",
+      "baseName": "Brenau University",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": false,
       "category": "Universities",
       "image": {
-        "path": "state-packs/georgia/plates/ga-brenau-university-new-plates-are-no-longer-available.jpg",
+        "path": "state-packs/georgia/plates/ga-brenau-university.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/BR_Large.jpg"
       },
       "sponsor": "Scholarship funds for enrolled undergraduate students",
@@ -1172,18 +1172,18 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-columbus-state-university-new-plates-are-no-longer-available",
-      "slug": "columbus-state-university-new-plates-are-no-longer-available",
-      "name": "Columbus State University - New plates are no longer available",
-      "displayName": "Columbus State University - New plates are no longer available",
-      "baseName": "Columbus State University - New plates are no longer available",
+      "id": "ga-columbus-state-university",
+      "slug": "columbus-state-university",
+      "name": "Columbus State University",
+      "displayName": "Columbus State University",
+      "baseName": "Columbus State University",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": false,
       "category": "Universities",
       "image": {
-        "path": "state-packs/georgia/plates/ga-columbus-state-university-new-plates-are-no-longer-available.jpg",
+        "path": "state-packs/georgia/plates/ga-columbus-state-university.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/CC_Large.jpg"
       },
       "sponsor": "Scholarship funds for enrolled undergraduate students",
@@ -2386,18 +2386,18 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-georgia-college-and-state-university-new-plates-are-no-longer-available",
-      "slug": "georgia-college-and-state-university-new-plates-are-no-longer-available",
-      "name": "Georgia College and State University - New plates are no longer available",
-      "displayName": "Georgia College and State University - New plates are no longer available",
-      "baseName": "Georgia College and State University - New plates are no longer available",
+      "id": "ga-georgia-college-and-state-university",
+      "slug": "georgia-college-and-state-university",
+      "name": "Georgia College and State University",
+      "displayName": "Georgia College and State University",
+      "baseName": "Georgia College and State University",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": false,
       "category": "Universities",
       "image": {
-        "path": "state-packs/georgia/plates/ga-georgia-college-and-state-university-new-plates-are-no-longer-available.jpg",
+        "path": "state-packs/georgia/plates/ga-georgia-college-and-state-university.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/GU_Large.jpg"
       },
       "sponsor": "Scholarship funds for enrolled undergraduate students",
@@ -2634,18 +2634,18 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-georgia-prostate-cancer-coalition-new-plates-are-no-longer-available",
-      "slug": "georgia-prostate-cancer-coalition-new-plates-are-no-longer-available",
-      "name": "Georgia Prostate Cancer Coalition - New plates are no longer available",
-      "displayName": "Georgia Prostate Cancer Coalition - New plates are no longer available",
-      "baseName": "Georgia Prostate Cancer Coalition - New plates are no longer available",
+      "id": "ga-georgia-prostate-cancer-coalition",
+      "slug": "georgia-prostate-cancer-coalition",
+      "name": "Georgia Prostate Cancer Coalition",
+      "displayName": "Georgia Prostate Cancer Coalition",
+      "baseName": "Georgia Prostate Cancer Coalition",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": false,
       "category": "Health",
       "image": {
-        "path": "state-packs/georgia/plates/ga-georgia-prostate-cancer-coalition-new-plates-are-no-longer-available.jpg",
+        "path": "state-packs/georgia/plates/ga-georgia-prostate-cancer-coalition.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/GP_Large.jpg"
       },
       "sponsor": "Georgia Prostate Cancer Coalition ($22.00)",
@@ -3022,18 +3022,18 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-grady-health-foundation-new-plates-are-no-longer-available",
-      "slug": "grady-health-foundation-new-plates-are-no-longer-available",
-      "name": "Grady Health Foundation - New plates are no longer available",
-      "displayName": "Grady Health Foundation - New plates are no longer available",
-      "baseName": "Grady Health Foundation - New plates are no longer available",
+      "id": "ga-grady-health-foundation",
+      "slug": "grady-health-foundation",
+      "name": "Grady Health Foundation",
+      "displayName": "Grady Health Foundation",
+      "baseName": "Grady Health Foundation",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": false,
       "category": "Health",
       "image": {
-        "path": "state-packs/georgia/plates/ga-grady-health-foundation-new-plates-are-no-longer-available.jpg",
+        "path": "state-packs/georgia/plates/ga-grady-health-foundation.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/GH_Large.jpg"
       },
       "sponsor": "Grady Health Foundation",
@@ -3046,18 +3046,18 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-hampton-university-atlanta-alumni-new-plates-are-no-longer-available",
-      "slug": "hampton-university-atlanta-alumni-new-plates-are-no-longer-available",
-      "name": "Hampton University Atlanta Alumni - New plates are no longer available",
-      "displayName": "Hampton University Atlanta Alumni - New plates are no longer available",
-      "baseName": "Hampton University Atlanta Alumni - New plates are no longer available",
+      "id": "ga-hampton-university-atlanta-alumni",
+      "slug": "hampton-university-atlanta-alumni",
+      "name": "Hampton University Atlanta Alumni",
+      "displayName": "Hampton University Atlanta Alumni",
+      "baseName": "Hampton University Atlanta Alumni",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": false,
       "category": "Universities",
       "image": {
-        "path": "state-packs/georgia/plates/ga-hampton-university-atlanta-alumni-new-plates-are-no-longer-available.jpg",
+        "path": "state-packs/georgia/plates/ga-hampton-university-atlanta-alumni.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/H2_Large.jpg"
       },
       "sponsor": "Hampton University Chapter Atlanta Alumni Assoc",
@@ -3324,18 +3324,18 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-joan-gaeta-lung-cancer-fund-new-plates-are-no-longer-available",
-      "slug": "joan-gaeta-lung-cancer-fund-new-plates-are-no-longer-available",
-      "name": "Joan Gaeta Lung Cancer Fund - New plates are no longer available",
-      "displayName": "Joan Gaeta Lung Cancer Fund - New plates are no longer available",
-      "baseName": "Joan Gaeta Lung Cancer Fund - New plates are no longer available",
+      "id": "ga-joan-gaeta-lung-cancer-fund",
+      "slug": "joan-gaeta-lung-cancer-fund",
+      "name": "Joan Gaeta Lung Cancer Fund",
+      "displayName": "Joan Gaeta Lung Cancer Fund",
+      "baseName": "Joan Gaeta Lung Cancer Fund",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": false,
       "category": "Health",
       "image": {
-        "path": "state-packs/georgia/plates/ga-joan-gaeta-lung-cancer-fund-new-plates-are-no-longer-available.jpg",
+        "path": "state-packs/georgia/plates/ga-joan-gaeta-lung-cancer-fund.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/LJ_Large.jpg"
       },
       "sponsor": "The Joan Gaeta Lung Cancer Fund ($22.00)",
@@ -3555,18 +3555,18 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-lagrange-college-new-plates-are-no-longer-available",
-      "slug": "lagrange-college-new-plates-are-no-longer-available",
-      "name": "LaGrange College - New plates are no longer available",
-      "displayName": "LaGrange College - New plates are no longer available",
-      "baseName": "LaGrange College - New plates are no longer available",
+      "id": "ga-lagrange-college",
+      "slug": "lagrange-college",
+      "name": "LaGrange College",
+      "displayName": "LaGrange College",
+      "baseName": "LaGrange College",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": false,
       "category": "Universities",
       "image": {
-        "path": "state-packs/georgia/plates/ga-lagrange-college-new-plates-are-no-longer-available.jpg",
+        "path": "state-packs/georgia/plates/ga-lagrange-college.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/LG_Large.jpg"
       },
       "sponsor": "Scholarship funds for enrolled undergraduate students",
@@ -3713,18 +3713,18 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-life-university-new-plates-are-no-longer-available",
-      "slug": "life-university-new-plates-are-no-longer-available",
-      "name": "Life University - New plates are no longer available",
-      "displayName": "Life University - New plates are no longer available",
-      "baseName": "Life University - New plates are no longer available",
+      "id": "ga-life-university",
+      "slug": "life-university",
+      "name": "Life University",
+      "displayName": "Life University",
+      "baseName": "Life University",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": false,
       "category": "Universities",
       "image": {
-        "path": "state-packs/georgia/plates/ga-life-university-new-plates-are-no-longer-available.jpg",
+        "path": "state-packs/georgia/plates/ga-life-university.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/LF_Large.jpg"
       },
       "sponsor": "Scholarship funds for enrolled undergraduate students",
@@ -4456,18 +4456,18 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-oglethorpe-university-new-plates-are-no-longer-available",
-      "slug": "oglethorpe-university-new-plates-are-no-longer-available",
-      "name": "Oglethorpe University - New plates are no longer available",
-      "displayName": "Oglethorpe University - New plates are no longer available",
-      "baseName": "Oglethorpe University - New plates are no longer available",
+      "id": "ga-oglethorpe-university",
+      "slug": "oglethorpe-university",
+      "name": "Oglethorpe University",
+      "displayName": "Oglethorpe University",
+      "baseName": "Oglethorpe University",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": false,
       "category": "Universities",
       "image": {
-        "path": "state-packs/georgia/plates/ga-oglethorpe-university-new-plates-are-no-longer-available.jpg",
+        "path": "state-packs/georgia/plates/ga-oglethorpe-university.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/TH_Large.jpg"
       },
       "sponsor": "Scholarship funds for enrolled undergraduate students",
@@ -4873,18 +4873,18 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-race-car-hall-of-fame-new-plates-are-no-longer-available",
-      "slug": "race-car-hall-of-fame-new-plates-are-no-longer-available",
-      "name": "Race Car Hall of Fame - New plates are no longer available",
-      "displayName": "Race Car Hall of Fame - New plates are no longer available",
-      "baseName": "Race Car Hall of Fame - New plates are no longer available",
+      "id": "ga-race-car-hall-of-fame",
+      "slug": "race-car-hall-of-fame",
+      "name": "Race Car Hall of Fame",
+      "displayName": "Race Car Hall of Fame",
+      "baseName": "Race Car Hall of Fame",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": false,
       "category": "Civic",
       "image": {
-        "path": "state-packs/georgia/plates/ga-race-car-hall-of-fame-new-plates-are-no-longer-available.jpg",
+        "path": "state-packs/georgia/plates/ga-race-car-hall-of-fame.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/RQ_Large.jpg"
       },
       "sponsor": "Georgia Automobile Racing Hall of Fame Association",
@@ -5382,18 +5382,18 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-savannah-college-of-art-and-design-new-plates-are-no-longer-available",
-      "slug": "savannah-college-of-art-and-design-new-plates-are-no-longer-available",
-      "name": "Savannah College of Art & Design - New plates are no longer available",
-      "displayName": "Savannah College of Art & Design - New plates are no longer available",
-      "baseName": "Savannah College of Art & Design - New plates are no longer available",
+      "id": "ga-savannah-college-of-art-and-design",
+      "slug": "savannah-college-of-art-and-design",
+      "name": "Savannah College of Art & Design",
+      "displayName": "Savannah College of Art & Design",
+      "baseName": "Savannah College of Art & Design",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": false,
       "isActive": false,
       "category": "Universities",
       "image": {
-        "path": "state-packs/georgia/plates/ga-savannah-college-of-art-and-design-new-plates-are-no-longer-available.jpg",
+        "path": "state-packs/georgia/plates/ga-savannah-college-of-art-and-design.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/VK_Large.jpg"
       },
       "sponsor": "Scholarship funds for enrolled undergraduate students",
