@@ -37,6 +37,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI"
 .btn-primary:hover { filter: brightness(1.1); }
 .btn-save { background: var(--green); border-color: var(--green); color: #fff; }
 .btn-save:hover { filter: brightness(1.1); }
+.btn-danger { background: var(--danger); border-color: var(--danger); color: #fff; }
+.btn-danger:hover { filter: brightness(1.1); }
 .btn:disabled { opacity: 0.4; cursor: default; }
 
 /* File input */
@@ -158,6 +160,8 @@ input[type="checkbox"] { accent-color: var(--accent); }
   <select id="bulkCategory" onchange="bulkReassign(this.value)">
     <option value="">Choose category...</option>
   </select>
+  <span style="flex:1"></span>
+  <button class="btn btn-danger" onclick="bulkDelete()">Delete selected</button>
 </div>
 </div><!-- end app-header -->
 
@@ -421,6 +425,16 @@ function bulkReassign(cat) {
   renderAll();
 }
 
+function bulkDelete() {
+  if (selected.size === 0) return;
+  const count = selected.size;
+  if (!confirm('Delete ' + count + ' plate' + (count === 1 ? '' : 's') + '? This can be undone.')) return;
+  pushUndo();
+  masterData.plates = masterData.plates.filter(p => !selected.has(p.id));
+  selected.clear();
+  renderAll();
+}
+
 function isPlateChanged(plate) {
   const orig = originalPlates.find(p => p.id === plate.id);
   if (!orig) return true;
@@ -429,11 +443,19 @@ function isPlateChanged(plate) {
     JSON.stringify(plate.searchTerms) !== JSON.stringify(orig.searchTerms);
 }
 
+function getDeletedPlates() {
+  if (!masterData) return [];
+  const currentIds = new Set(masterData.plates.map(p => p.id));
+  return originalPlates.filter(p => !currentIds.has(p.id));
+}
+
 function updateChangeCount() {
-  const changed = masterData ? masterData.plates.filter(p => isPlateChanged(p)).length : 0;
-  document.getElementById('dirtyCount').textContent = changed;
-  document.getElementById('changeCount').textContent = changed > 0 ? changed + ' unsaved changes' : '';
-  document.getElementById('saveBtn').disabled = !masterData || changed === 0;
+  const edited = masterData ? masterData.plates.filter(p => isPlateChanged(p)).length : 0;
+  const deleted = getDeletedPlates().length;
+  const total = edited + deleted;
+  document.getElementById('dirtyCount').textContent = total;
+  document.getElementById('changeCount').textContent = total > 0 ? total + ' unsaved changes' : '';
+  document.getElementById('saveBtn').disabled = !masterData || total === 0;
 }
 
 function showDiff() {
@@ -451,11 +473,23 @@ function showDiff() {
     if (diffs.length > 0) changes.push({ plate: plate.name, diffs });
   });
 
-  if (changes.length === 0) { alert('No changes to save.'); return; }
+  const deleted = getDeletedPlates();
+
+  if (changes.length === 0 && deleted.length === 0) { alert('No changes to save.'); return; }
 
   let html = '<div class="modal-backdrop" onclick="closeModal()">';
   html += '<div class="modal" onclick="event.stopPropagation()">';
-  html += '<h2>' + changes.length + ' Plates Changed</h2>';
+  const parts = [];
+  if (changes.length > 0) parts.push(changes.length + ' edited');
+  if (deleted.length > 0) parts.push(deleted.length + ' deleted');
+  html += '<h2>' + parts.join(', ') + '</h2>';
+
+  if (deleted.length > 0) {
+    html += '<div style="margin-bottom:12px"><strong style="color:var(--danger)">Deleted:</strong></div>';
+    deleted.forEach(p => {
+      html += '<div class="diff-item"><div class="diff-plate" style="color:var(--danger)">' + escHtml(p.name) + ' <span style="font-weight:400;color:var(--muted)">(' + p.category + ')</span></div></div>';
+    });
+  }
   changes.forEach(c => {
     html += '<div class="diff-item"><div class="diff-plate">' + escHtml(c.plate) + '</div>';
     c.diffs.forEach(d => {
