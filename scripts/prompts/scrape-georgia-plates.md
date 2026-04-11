@@ -12,7 +12,7 @@ The **only** source to use is the Georgia Department of Revenue Motor Vehicle Di
 - **Detail page pattern**: `https://mvd.dor.ga.gov/motor/plates/PlateDetails.aspx?PlateCode=XX` (where XX is the 2-character plate code)
 - **Image URL pattern**: `https://mvd.dor.ga.gov/motor/plates/images/2004/{CODE}_Large.jpg`
 
-Do not use any other sites. All data must come from the GA DOR pages above.
+Do not use any other sites. All data must come from the GA DOR pages above. Trust PlateSelection.aspx as the full universe — don't hunt for hidden codes.
 
 ---
 
@@ -21,23 +21,26 @@ Do not use any other sites. All data must come from the GA DOR pages above.
 1. Start from the PlateSelection.aspx catalog page. Extract every plate code and name.
 2. For each plate code, visit `PlateDetails.aspx?PlateCode=XX` and extract:
    - Plate name
-   - Whether it's currently available or discontinued ("New plates are no longer available")
+   - Whether it's currently available or discontinued (any variation of "no longer available", "discontinued", etc.)
    - Fee information (if shown)
    - Sponsor/beneficiary (if shown)
    - The image URL: `images/2004/{CODE}_Large.jpg`
 3. Build the JSON entries using the schema below.
-4. Some detail pages may say "Sorry, the sample plate is currently unavailable" — still include the plate entry but set `image.remoteUrl` to the expected URL pattern anyway. I'll verify which images actually exist during download.
+4. Some detail pages may say "Sorry, the sample plate is currently unavailable" or fail to load — still include a minimal stub entry. Set `image.remoteUrl` to the expected URL pattern. I'll verify which images actually exist during download.
 
 ---
 
 ## Ground Rules
 
 - **Include every plate listed** on PlateSelection.aspx, whether current or discontinued.
-- **Include all motorcycle variants** as separate entries with `plateType: "motorcycle"` and `category: "Motorcycle"`.
-- **Include all military plates** individually — every branch and medal variant gets its own entry.
-- **When a plate's category is ambiguous**, honor the intent of the plate over the sponsor. Use `Civic` as the default for unclear cause/nonprofit plates.
+- **Each plate code = its own entry.** If Georgia lists them as separate codes, they get separate entries.
+- **Include all motorcycle variants** as separate entries with `plateType: "motorcycle"` and `category: "Motorcycle"`. Link to the passenger version via `variantOf` even if the name differs slightly.
+- **Include all military plates** individually — every branch and medal variant gets its own entry. Any plate with a military connection = category `Military`.
+- **All school-branded plates** (including college athletics) = `Universities`. Only use `Sports` for professional teams (Braves, Falcons, Hawks, Atlanta United, etc.).
+- **When a plate's category is ambiguous**, honor the intent of the plate over the sponsor. Log the ambiguity in `notes`. Use `Civic` as the default for unclear cause/nonprofit plates.
 - **Use the official DMV name** exactly as listed. I'll edit names later if needed.
-- **Only set `variantOf`** when there is a concrete, known connection (motorcycle variant of a passenger plate, etc.). Don't guess.
+- **Only set `variantOf`** when there is a concrete, known connection. Don't guess — leave `null` and I'll link manually.
+- **If a detail page fails or returns incomplete data**, include a stub entry and flag it in the issues report.
 
 ---
 
@@ -78,7 +81,7 @@ Top-level structure:
     "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/XX_Large.jpg"
   },
   "sponsor": "Organization name if listed",
-  "notes": "Discontinued, fees, restrictions, etc.",
+  "notes": "Discontinued, fees, restrictions, category notes, etc.",
   "searchTerms": ["lowercase name", "abbreviations", "colors", "imagery"],
   "variantOf": null,
   "relatedPlates": [],
@@ -98,36 +101,50 @@ Top-level structure:
 
 ## Field Rules
 
-**`id`**: `ga-` prefix + kebab-case. Example: `ga-university-of-georgia`, `ga-bronze-star-army`. For motorcycle variants: `ga-university-of-georgia-motorcycle`.
+**`id`**: `ga-` prefix + kebab-case. Example: `ga-university-of-georgia`, `ga-bronze-star-army`. For motorcycle variants: `ga-university-of-georgia-motorcycle`. Enforce uniqueness — if two plates normalize to the same slug, add a numeric suffix (`-1`, `-2`) and flag the collision.
 
 **`slug`**: Same as `id` without the `ga-` prefix.
 
+**`name` / `displayName`**: Keep identical. Use the official DMV name exactly as listed. For motorcycle variants, append ` (Motorcycle)`.
+
+**`baseName`**: The parent plate name without variant suffix. If `name` is `"University of Georgia (Motorcycle)"`, `baseName` is `"University of Georgia"`.
+
+**`variantLabel`**: `null` for the primary version. `"Motorcycle"` for motorcycle variants.
+
 **`plateType`**: `"passenger"` for standard plates. `"motorcycle"` for motorcycle variants.
+
+**`isCurrent`**: `false` if the catalog or detail page indicates the plate is discontinued (any wording variation).
+
+**`isActive`**: Same as `isCurrent`.
 
 **`category`**: Must be exactly one of:
 `Civic`, `Commercial`, `First Responders`, `Government`, `Health`, `Heritage`, `Military`, `Motorcycle`, `Schools`, `Sports`, `Standard`, `Universities`, `Wildlife & Nature`
 
-Use `Motorcycle` for all motorcycle variants. Use `Military` for all military plates (medals, branches, veterans, etc.).
+Rules:
+- `Motorcycle` for all motorcycle variants.
+- `Military` for any plate with a military connection. Military wins over all other categories.
+- `Universities` for all school-branded plates including college athletics.
+- `Sports` only for professional sports teams (Braves, Falcons, Hawks, Atlanta United, Sporting KC, etc.).
+- `Civic` as the default for unclear cause/nonprofit plates.
+- When ambiguous, log reasoning in `notes`.
 
 **`image.remoteUrl`**: Always populate this using the pattern `https://mvd.dor.ga.gov/motor/plates/images/2004/{CODE}_Large.jpg` where `{CODE}` is the plate code from PlateSelection.aspx. I will batch-download these separately and verify which ones actually resolve.
 
 **`image.path`**: Use `state-packs/georgia/plates/ga-{slug}.jpg`. Example: `state-packs/georgia/plates/ga-university-of-georgia.jpg`.
 
-**`searchTerms`**: Lowercase array. Include:
+**`sponsor`**: Organization name only. No URLs. Best-effort.
+
+**`notes`**: Free text. Include discontinued status, fee info, category ambiguity reasoning, restrictions, etc.
+
+**`searchTerms`**: Lowercase array. **Aim for high recall** — I can always trim, but I can't easily add what I don't have. Include:
 - Plate name and common abbreviations (e.g., `"uga"`, `"ga tech"`, `"gt"`)
 - Generic terms for visible imagery (e.g., `"peach"`, `"eagle"`, `"flag"`)
-- Major plate colors (e.g., `"red"`, `"black"`, `"gold"`)
+- Major plate colors — only colors you're confident about from the plate name or description. Don't guess from images.
 - Team mascot names where applicable (e.g., `"bulldogs"`, `"yellowjackets"`)
-
-**`sponsor`**: Organization name only. No URLs.
-
-**`isCurrent`**: `false` if the catalog page says "New plates are no longer available".
 
 **`variantOf`**: For motorcycle variants, set to the `id` of the passenger version. For all others, only set when there's a concrete connection. Leave `null` when unsure.
 
 **`sourceRefs[].sourceId`**: The 2-character plate code from the catalog (e.g., `"GT"`, `"DV"`, `"AA"`).
-
-**Slug collisions**: If two plates normalize to the same slug, add a numeric suffix (`-1`, `-2`).
 
 ---
 
@@ -147,8 +164,23 @@ Use `Motorcycle` for all motorcycle variants. Use `Military` for all military pl
 
 ---
 
-## Deliverable
+## Delivery
 
-A single JSON file: `georgia-plate-master.json`
+**Deliver in incremental batches of 50-100 plates** so I can catch schema issues early before you grind through all 340 codes. Include a brief **issues section** at the end of each batch noting:
+- Missing images / broken detail pages
+- Slug collisions
+- Category ambiguities
 
-Optimize the workflow however you see fit. The catalog has ~340 plate codes. Take your time and aim for completeness.
+---
+
+## Scraper Implementation
+
+**Build a production-ready scraper** (Python 3 script) that:
+- Hits PlateSelection.aspx, extracts all plate codes
+- Visits each PlateDetails.aspx?PlateCode=XX page and extracts data
+- Outputs `georgia-plate-master.json` to the current directory matching the schema above
+- Includes a brief progress log to stdout (e.g., `[12/340] GT — Georgia Institute of Technology`)
+- Uses standard libraries: `requests`, `BeautifulSoup`
+- Runs on Windows with Python 3 (WSL also available if needed)
+- Handles retries for transient failures
+- Includes a polite delay between requests (1-2 seconds) to avoid overwhelming the server
