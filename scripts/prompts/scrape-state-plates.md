@@ -1,6 +1,19 @@
 # Prompt: Scrape License Plate Data for [STATE]
 
-**Goal**: Research and compile a complete list of specialty/vanity license plates for **[STATE]** and output a JSON master file matching the schema below.
+**Goal**: Research and compile a complete list of specialty license plates for **[STATE]** and output a JSON master file matching the schema below.
+
+---
+
+## Ground Rules
+
+- **Only use official government sites** (state DMV, DOR, motor vehicle division). Do not use aggregation sites, collector sites, or third-party catalogs.
+- **Include every plate that was ever publicly available**, whether currently issued or discontinued.
+- **Legacy plates**: If a plate has had multiple designs over time, create separate entries for each version and link them via `variantOf`.
+- **Motorcycle variants**: Include all motorcycle versions, even if they are just a resized version of the passenger plate.
+- **Military plates**: Include every branch and medal variant individually.
+- **Sports/university plates**: Include all, not just major teams.
+- **If a plate's category is ambiguous**, honor the intent of the plate over the sponsor. For example, an FFA plate issued with a university is `Schools` (because of FFA), not `Universities`.
+- **When a cause/nonprofit plate doesn't clearly fit** a specific category, use `Civic`.
 
 ---
 
@@ -9,10 +22,11 @@
 Top-level structure:
 ```json
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "state": "[State Name]",
   "generatedDate": "YYYY-MM-DD",
   "description": "[State] plate master — sourced from [source name]",
-  "sourceFiles": ["[source URLs or names used]"],
+  "sourceFiles": ["[source URLs used]"],
   "plates": [ ...plate entries... ]
 }
 ```
@@ -23,36 +37,32 @@ Top-level structure:
 
 ```json
 {
-  "id": "kebab-case-unique-id",
+  "id": "[st]-kebab-case-unique-id",
   "slug": "kebab-case-unique-id",
   "name": "Human Readable Name",
   "displayName": "Human Readable Name",
   "baseName": "Human Readable Name",
-  "variantLabel": "Current",
-  "plateType": "license_plate",
+  "variantLabel": null,
+  "plateType": "passenger",
   "isCurrent": true,
   "isActive": true,
   "category": "Wildlife & Nature",
   "image": {
-    "path": "plates/filename.jpg",
-    "remoteUrl": null
+    "path": "state-packs/[state]/plates/[st]-[slug].jpg",
+    "remoteUrl": "https://full-url-to-plate-image-if-known"
   },
-  "sponsor": "Sponsoring organization name and URL if known",
-  "notes": "Any relevant notes about fees, restrictions, or history",
-  "metadataBlob": {
-    "sourceCategories": ["Original category from source"],
-    "aliases": [],
-    "rawNames": ["Exact name as it appeared in source"],
-    "urls": ["https://source-url-if-any"]
-  },
+  "sponsor": "Sponsoring organization name",
+  "notes": "Any relevant notes about restrictions or history",
   "searchTerms": ["lowercase name", "alternate keywords"],
   "variantOf": null,
   "relatedPlates": [],
+  "metadataBlob": null,
   "sourceRefs": [
     {
-      "source": "dmv-website",
-      "sourceId": "plate-name-or-url",
-      "versionId": "kebab-case-unique-id"
+      "source": "[State Agency Name]",
+      "sourceId": "plate-code-or-identifier",
+      "versionId": null,
+      "value": null
     }
   ]
 }
@@ -62,35 +72,45 @@ Top-level structure:
 
 ## Field Rules
 
-**`id` / `slug`**: kebab-case, lowercase, no special chars. If the same plate has a current and legacy version, suffix with `-legacy`. Example: `bear-preserve`, `bear-preserve-legacy`.
+**`id`**: State prefix + kebab-case slug. Example: `ga-university-of-georgia`, `ks-purple-heart`. If the same plate has a current and legacy version, suffix the legacy with `-legacy`. Example: `ga-university-of-georgia`, `ga-university-of-georgia-legacy`.
+
+**`slug`**: Same as `id` but without the state prefix.
+
+**`name` / `displayName`**: Use the official DMV name exactly as listed. For motorcycle variants, append ` (Motorcycle)` to the name. I'll edit names later if needed — the DMV name may also serve as a useful search term.
+
+**`baseName`**: The plate name without any variant suffix. For example, if `name` is `"University of Georgia (Motorcycle)"`, `baseName` is `"University of Georgia"`.
+
+**`variantLabel`**: `null` for the primary version. Use `"Motorcycle"` for motorcycle variants, `"Legacy"` for discontinued versions that have a current replacement.
+
+**`plateType`**: `"passenger"` for standard plates. `"motorcycle"` for motorcycle-only plates.
+
+**`isCurrent`**: `true` if the plate is currently available to order. `false` if retired/discontinued.
+
+**`isActive`**: Same as `isCurrent`.
 
 **`category`**: Must be exactly one of:
 `Civic`, `Commercial`, `First Responders`, `Government`, `Health`, `Heritage`, `Military`, `Motorcycle`, `Schools`, `Sports`, `Standard`, `Universities`, `Wildlife & Nature`
 
-**`plateType`**: Almost always `"license_plate"`. Use `"motorcycle_plate"` only if the plate is explicitly motorcycle-only. Append `" (Motorcycle)"` to the `name` for motorcycle variants.
+Use `Motorcycle` as the category for motorcycle variants.
 
-**`isCurrent`**: `true` if the plate is still available to order today. `false` if retired/discontinued.
+**`image.path`**: Use the convention `state-packs/[state]/plates/[st]-[slug].jpg` where `[state]` is the lowercase full state name and `[st]` is the 2-letter lowercase abbreviation. Example: `state-packs/georgia/plates/ga-university-of-georgia.jpg`.
 
-**`isActive`**: Same as `isCurrent` for this project.
+**`image.remoteUrl`**: If you can determine the image URL from the official site, include it. This is critical — I'll use these URLs to batch-download images separately. Set to `null` only if no image URL can be determined.
 
-**`variantLabel`**: `"Current"` for active plates, `"Legacy"` for discontinued versions of a plate that also has a current version. Leave `"Current"` if there's only one version.
+**`sponsor`**: Organization name only (no URLs). Best-effort.
 
-**`variantOf`**: If this is a legacy variant, set to the `id` of the current version. Otherwise `null`.
+**`searchTerms`**: Lowercase array. Include:
+- The plate name and common abbreviations (e.g., `"uga"`, `"ga tech"`)
+- Generic terms describing visible plate imagery (e.g., `"bird"` for a Turkey Hunting plate)
+- Major plate colors — background color and prominent logo/image colors (e.g., `"red"`, `"blue"`, `"gold"`)
 
-**`image.path`**: Use `"plates/[slug].jpg"` as a placeholder — images will be sourced separately. Set `remoteUrl` to `null`.
+**`variantOf`**: If this is a motorcycle variant, set to the `id` of the passenger version. If this is a legacy variant, set to the `id` of the current version. Only set this when there is a concrete, known connection. Do not guess or assume — it's better to leave it `null` and let me link them manually.
 
-**`sponsor`**: Best-effort. Include the issuing organization name and website if listed on the DMV page.
+**`relatedPlates`**: Array of `id` strings for plates that are clearly related (e.g., branch-specific military plates, a plate family). Same rule: only set when concrete.
 
-**`searchTerms`**: Lowercase array. Include the plate name, common abbreviations, and the sponsoring org name if notable.
+**`sourceRefs`**: One entry per plate. `source` is the agency name, `sourceId` is the plate code or identifier from the source site.
 
----
-
-## Sources to Check (in order of reliability)
-
-1. The official state DMV / motor vehicle website — look for a "specialty plates" or "personalized plates" catalog
-2. The state legislature's fee schedule (often lists all authorized plates with enabling statute)
-3. `motorists.org` or `plates.com` for supplemental coverage
-4. For discontinued plates, the Internet Archive / Wayback Machine snapshots of the DMV plate catalog
+**Slug collisions**: If two plates normalize to the same slug, add a numeric suffix (`-1`, `-2`).
 
 ---
 
@@ -98,12 +118,13 @@ Top-level structure:
 
 - All **specialty/organizational plates** (wildlife, universities, military, civic orgs, sports teams, etc.)
 - **Standard issue** plates (the default plate design) — one entry, category `Standard`
-- **Motorcycle** variants where they exist as a distinct design
-- **Discontinued/legacy** plates if you can find them — mark `isCurrent: false`
+- **All motorcycle variants**
+- **Discontinued/legacy** plates — mark `isCurrent: false`
+- **All military plates** including every branch and medal variant individually
 
 ## What to Skip
 
-- Vanity/personalized text plates (same design, different text)
+- Vanity/personalized text plates (same design, different custom text)
 - Temporary tags
 - Dealer/manufacturer plates
 
@@ -113,4 +134,4 @@ Top-level structure:
 
 A single JSON file: `[state]-plate-master.json`
 
-Aim for completeness over speed. If a plate's category is ambiguous, make a judgment call and note it in `notes`. If a plate has both a current and legacy design, create two entries linked via `variantOf`.
+Aim for completeness over speed. Optimize the workflow however you see fit — batching by category, alphabetical, etc. The build pipeline will validate the schema at build time, so don't worry about programmatic validation.
