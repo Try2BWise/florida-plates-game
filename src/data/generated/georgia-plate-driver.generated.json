@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "generatedDate": "2026-04-11",
   "generatedFrom": "src/data/georgia-plate-master.json",
-  "plateCount": 283,
+  "plateCount": 288,
   "plates": [
     {
       "id": "ga-abraham-baldwin-agricultural-college-new-plates-are-no-longer-available",
@@ -7365,6 +7365,142 @@
         "zoo atlanta"
       ],
       "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ga-woman-veteran-airforce-motorcycle",
+      "slug": "woman-veteran-airforce-motorcycle",
+      "name": "Woman Veteran Airforce (Motorcycle)",
+      "displayName": "Woman Veteran Airforce (Motorcycle)",
+      "baseName": "Woman Veteran Air Force",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-woman-veteran-airforce-motorcycle.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/FZ_Large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "woman veteran",
+        "air force",
+        "motorcycle",
+        "female",
+        "military"
+      ],
+      "variantOf": "ga-woman-veteran-air-force",
+      "relatedPlates": []
+    },
+    {
+      "id": "ga-woman-veteran-army-motorcycle",
+      "slug": "woman-veteran-army-motorcycle",
+      "name": "Woman Veteran Army (Motorcycle)",
+      "displayName": "Woman Veteran Army (Motorcycle)",
+      "baseName": "Woman Veteran Army",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-woman-veteran-army-motorcycle.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/YZ_Large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "woman veteran",
+        "army",
+        "motorcycle",
+        "female",
+        "military"
+      ],
+      "variantOf": "ga-woman-veteran-army",
+      "relatedPlates": []
+    },
+    {
+      "id": "ga-woman-veteran-coast-guard-motorcycle",
+      "slug": "woman-veteran-coast-guard-motorcycle",
+      "name": "Woman Veteran Coast Guard (Motorcycle)",
+      "displayName": "Woman Veteran Coast Guard (Motorcycle)",
+      "baseName": "Woman Veteran Coast Guard",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-woman-veteran-coast-guard-motorcycle.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/CZ_Large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "woman veteran",
+        "coast guard",
+        "motorcycle",
+        "female",
+        "military"
+      ],
+      "variantOf": "ga-woman-veteran-coast-guard",
+      "relatedPlates": []
+    },
+    {
+      "id": "ga-woman-veteran-marine-corps-motorcycle",
+      "slug": "woman-veteran-marine-corps-motorcycle",
+      "name": "Woman Veteran Marine Corps (Motorcycle)",
+      "displayName": "Woman Veteran Marine Corps (Motorcycle)",
+      "baseName": "Woman Veteran Marine Corps",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-woman-veteran-marine-corps-motorcycle.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/MZ_Large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "woman veteran",
+        "marine corps",
+        "marines",
+        "motorcycle",
+        "female",
+        "military"
+      ],
+      "variantOf": "ga-woman-veteran-marine-corps",
+      "relatedPlates": []
+    },
+    {
+      "id": "ga-woman-veteran-navy-motorcycle",
+      "slug": "woman-veteran-navy-motorcycle",
+      "name": "Woman Veteran Navy (Motorcycle)",
+      "displayName": "Woman Veteran Navy (Motorcycle)",
+      "baseName": "Woman Veteran Navy",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-woman-veteran-navy-motorcycle.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/NZ_Large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "woman veteran",
+        "navy",
+        "motorcycle",
+        "female",
+        "military"
+      ],
+      "variantOf": "ga-woman-veteran-navy",
       "relatedPlates": []
     }
   ]
