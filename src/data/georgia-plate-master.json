@@ -75,36 +75,6 @@
       ]
     },
     {
-      "id": "ga-alternative-fuel",
-      "slug": "alternative-fuel",
-      "name": "Alternative Fuel",
-      "displayName": "Alternative Fuel",
-      "baseName": "Alternative Fuel",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Standard",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-alternative-fuel.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/AF_Large.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Georgia DOR",
-          "sourceId": "AF",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ga-america-first-license-plate",
       "slug": "america-first-license-plate",
       "name": "America First License Plate",
@@ -366,36 +336,6 @@
       ]
     },
     {
-      "id": "ga-georgia-soccer-association",
-      "slug": "georgia-soccer-association",
-      "name": "Georgia Soccer Association",
-      "displayName": "Georgia Soccer Association",
-      "baseName": "Georgia Soccer Association",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Sports",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-georgia-soccer-association.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/SJ_Large.jpg"
-      },
-      "sponsor": "Georgia State Soccer Association",
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Georgia DOR",
-          "sourceId": "SJ",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ga-georgia-alliance-of-boys-and-girls-club-inc",
       "slug": "georgia-alliance-of-boys-and-girls-club-inc",
       "name": "Great Futures Start Here",
@@ -552,6 +492,41 @@
       ]
     },
     {
+      "id": "ga-share-the-road-bicycle-safety",
+      "slug": "share-the-road-bicycle-safety",
+      "name": "Share the Road",
+      "displayName": "Share the Road",
+      "baseName": "Share the Road – Bicycle Safety",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-share-the-road-bicycle-safety.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/RD_Large.jpg"
+      },
+      "sponsor": "Governor’s Highway Safety Program",
+      "notes": null,
+      "searchTerms": [
+        "bicycle",
+        "cycle",
+        "bicycling",
+        "cycling"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Georgia DOR",
+          "sourceId": "RD",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
       "id": "ga-sigma-gamma-rho-sorority-inc",
       "slug": "sigma-gamma-rho-sorority-inc",
       "name": "Sigma Gamma Rho Sorority Inc",
@@ -582,6 +557,36 @@
       ]
     },
     {
+      "id": "ga-support-our-troops",
+      "slug": "support-our-troops",
+      "name": "Support Our Troops",
+      "displayName": "Support Our Troops",
+      "baseName": "Support Our Troops",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-support-our-troops.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/OT_Large.jpg"
+      },
+      "sponsor": "Support Our Troops, Inc",
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Georgia DOR",
+          "sourceId": "OT",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
       "id": "ga-zeta-phi-beta-sorority-inc",
       "slug": "zeta-phi-beta-sorority-inc",
       "name": "Zeta Phi Beta Sorority Inc.",
@@ -606,36 +611,6 @@
         {
           "source": "Georgia DOR",
           "sourceId": "ZE",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ga-amateur-radio",
-      "slug": "amateur-radio",
-      "name": "Amateur Radio",
-      "displayName": "Amateur Radio",
-      "baseName": "Amateur Radio",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Standard",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-amateur-radio.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/AR_Large.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Georgia DOR",
-          "sourceId": "AR",
           "versionId": null,
           "value": null
         }
@@ -1060,90 +1035,32 @@
       ]
     },
     {
-      "id": "ga-disabled-person-new-design",
-      "slug": "disabled-person-new-design",
-      "name": "Disabled Person (New Design)",
-      "displayName": "Disabled Person (New Design)",
-      "baseName": "Disabled Person (New Design)",
+      "id": "ga-retired-legislators-emeritus",
+      "slug": "retired-legislators-emeritus",
+      "name": "Retired Legislators (Emeritus)",
+      "displayName": "Retired Legislators (Emeritus)",
+      "baseName": "Retired Legislators (Emeritus)",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Standard",
+      "category": "Government",
       "image": {
-        "path": "state-packs/georgia/plates/ga-disabled-person-new-design.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/DP_Large.jpg"
+        "path": "state-packs/georgia/plates/ga-retired-legislators-emeritus.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/LE_Large.jpg"
       },
-      "sponsor": "$1 to County Tag Agent - $19 to State Treasury",
+      "sponsor": "State of Georgia General Assembly",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "red"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
       "sourceRefs": [
         {
           "source": "Georgia DOR",
-          "sourceId": "DP",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ga-hobby-antique",
-      "slug": "hobby-antique",
-      "name": "Hobby Antique",
-      "displayName": "Hobby Antique",
-      "baseName": "Hobby Antique",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Standard",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-hobby-antique.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/HA_Large.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Georgia DOR",
-          "sourceId": "HA",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ga-prestige",
-      "slug": "prestige",
-      "name": "Prestige",
-      "displayName": "Prestige",
-      "baseName": "Prestige",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Standard",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-prestige.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/PR_Large.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Georgia DOR",
-          "sourceId": "PR",
+          "sourceId": "LE",
           "versionId": null,
           "value": null
         }
@@ -1174,36 +1091,6 @@
         {
           "source": "Georgia DOR",
           "sourceId": "C1",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ga-dog-and-cat-sterilization-animal-friend",
-      "slug": "dog-and-cat-sterilization-animal-friend",
-      "name": "Spay & Neuter (Animal Rescue)",
-      "displayName": "Spay & Neuter (Animal Rescue)",
-      "baseName": "Spay & Neuter",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Health",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-dog-and-cat-sterilization-animal-friend.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/DC_Large.jpg"
-      },
-      "sponsor": "Dog & Cat Sterilization FundTreasury",
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Georgia DOR",
-          "sourceId": "DC",
           "versionId": null,
           "value": null
         }
@@ -1450,6 +1337,36 @@
       ]
     },
     {
+      "id": "ga-dog-and-cat-sterilization-animal-friend",
+      "slug": "dog-and-cat-sterilization-animal-friend",
+      "name": "Spay & Neuter (Animal Rescue)",
+      "displayName": "Spay & Neuter (Animal Rescue)",
+      "baseName": "Spay & Neuter",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-dog-and-cat-sterilization-animal-friend.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/DC_Large.jpg"
+      },
+      "sponsor": "Dog & Cat Sterilization FundTreasury",
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Georgia DOR",
+          "sourceId": "DC",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
       "id": "ga-dog-and-cat-sterilization-feline-friend",
       "slug": "dog-and-cat-sterilization-feline-friend",
       "name": "Spay & Neuter (Feline Friend)",
@@ -1607,6 +1524,36 @@
         {
           "source": "Georgia DOR",
           "sourceId": "HL",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ga-sons-of-confederate-veterans",
+      "slug": "sons-of-confederate-veterans",
+      "name": "Sons of Confederate Veterans",
+      "displayName": "Sons of Confederate Veterans",
+      "baseName": "Sons of Confederate Veterans",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-sons-of-confederate-veterans.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/CV_Large.jpg"
+      },
+      "sponsor": "Georgia Sons of Confederate Veterans",
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Georgia DOR",
+          "sourceId": "CV",
           "versionId": null,
           "value": null
         }
@@ -3599,36 +3546,6 @@
       ]
     },
     {
-      "id": "ga-marine-habitat",
-      "slug": "marine-habitat",
-      "name": "Marine Habitat",
-      "displayName": "Marine Habitat",
-      "baseName": "Marine Habitat",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Wildlife & Nature",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-marine-habitat.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/NR_Large.jpg"
-      },
-      "sponsor": "Coastal Resources Division of the Department of Natural Resources",
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Georgia DOR",
-          "sourceId": "NR",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ga-medal-of-honor-air-force",
       "slug": "medal-of-honor-air-force",
       "name": "Medal of Honor Air Force",
@@ -4693,38 +4610,6 @@
       ]
     },
     {
-      "id": "ga-retired-legislators-emeritus",
-      "slug": "retired-legislators-emeritus",
-      "name": "Retired Legislators (Emeritus)",
-      "displayName": "Retired Legislators (Emeritus)",
-      "baseName": "Retired Legislators (Emeritus)",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Government",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-retired-legislators-emeritus.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/LE_Large.jpg"
-      },
-      "sponsor": "State of Georgia General Assembly",
-      "notes": null,
-      "searchTerms": [
-        "red"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Georgia DOR",
-          "sourceId": "LE",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ga-retired-marine",
       "slug": "retired-marine",
       "name": "Retired Marine",
@@ -4975,66 +4860,6 @@
         {
           "source": "Georgia DOR",
           "sourceId": "YA",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ga-sons-of-confederate-veterans",
-      "slug": "sons-of-confederate-veterans",
-      "name": "Sons of Confederate Veterans",
-      "displayName": "Sons of Confederate Veterans",
-      "baseName": "Sons of Confederate Veterans",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Heritage",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-sons-of-confederate-veterans.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/CV_Large.jpg"
-      },
-      "sponsor": "Georgia Sons of Confederate Veterans",
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Georgia DOR",
-          "sourceId": "CV",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ga-support-our-troops",
-      "slug": "support-our-troops",
-      "name": "Support Our Troops",
-      "displayName": "Support Our Troops",
-      "baseName": "Support Our Troops",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-support-our-troops.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/OT_Large.jpg"
-      },
-      "sponsor": "Support Our Troops, Inc",
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Georgia DOR",
-          "sourceId": "OT",
           "versionId": null,
           "value": null
         }
@@ -6620,6 +6445,36 @@
       ]
     },
     {
+      "id": "ga-georgia-soccer-association",
+      "slug": "georgia-soccer-association",
+      "name": "Georgia Soccer Association",
+      "displayName": "Georgia Soccer Association",
+      "baseName": "Georgia Soccer Association",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-georgia-soccer-association.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/SJ_Large.jpg"
+      },
+      "sponsor": "Georgia State Soccer Association",
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Georgia DOR",
+          "sourceId": "SJ",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
       "id": "ga-georgia-tennis-foundation",
       "slug": "georgia-tennis-foundation",
       "name": "Georgia Tennis Foundation",
@@ -6716,35 +6571,150 @@
       ]
     },
     {
-      "id": "ga-share-the-road-bicycle-safety",
-      "slug": "share-the-road-bicycle-safety",
-      "name": "Share the Road",
-      "displayName": "Share the Road",
-      "baseName": "Share the Road – Bicycle Safety",
+      "id": "ga-alternative-fuel",
+      "slug": "alternative-fuel",
+      "name": "Alternative Fuel",
+      "displayName": "Alternative Fuel",
+      "baseName": "Alternative Fuel",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic",
+      "category": "Standard",
       "image": {
-        "path": "state-packs/georgia/plates/ga-share-the-road-bicycle-safety.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/RD_Large.jpg"
+        "path": "state-packs/georgia/plates/ga-alternative-fuel.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/AF_Large.jpg"
       },
-      "sponsor": "Governor’s Highway Safety Program",
+      "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "bicycle",
-        "cycle",
-        "bicycling",
-        "cycling"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
       "sourceRefs": [
         {
           "source": "Georgia DOR",
-          "sourceId": "RD",
+          "sourceId": "AF",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ga-amateur-radio",
+      "slug": "amateur-radio",
+      "name": "Amateur Radio",
+      "displayName": "Amateur Radio",
+      "baseName": "Amateur Radio",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-amateur-radio.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/AR_Large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Georgia DOR",
+          "sourceId": "AR",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ga-disabled-person-new-design",
+      "slug": "disabled-person-new-design",
+      "name": "Disabled Person (New Design)",
+      "displayName": "Disabled Person (New Design)",
+      "baseName": "Disabled Person (New Design)",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-disabled-person-new-design.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/DP_Large.jpg"
+      },
+      "sponsor": "$1 to County Tag Agent - $19 to State Treasury",
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Georgia DOR",
+          "sourceId": "DP",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ga-hobby-antique",
+      "slug": "hobby-antique",
+      "name": "Hobby Antique",
+      "displayName": "Hobby Antique",
+      "baseName": "Hobby Antique",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-hobby-antique.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/HA_Large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Georgia DOR",
+          "sourceId": "HA",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ga-prestige",
+      "slug": "prestige",
+      "name": "Prestige",
+      "displayName": "Prestige",
+      "baseName": "Prestige",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-prestige.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/PR_Large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Georgia DOR",
+          "sourceId": "PR",
           "versionId": null,
           "value": null
         }
@@ -8508,7 +8478,8 @@
         "person",
         "mountains",
         "blue",
-        "yellow"
+        "yellow",
+        "hiker"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -8767,6 +8738,71 @@
       ]
     },
     {
+      "id": "ga-wildlife-4-butterfly",
+      "slug": "wildlife-4-butterfly",
+      "name": "Give Wildlife a Chance (Butterfly)",
+      "displayName": "Give Wildlife a Chance (Butterfly)",
+      "baseName": "Give Wildlife a Chance",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-wildlife-4-butterfly.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/WD_Large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "butterfly",
+        "monarch"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ga-wildlife-1-bald-eagle"
+      ],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Georgia DOR",
+          "sourceId": "WD",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "ga-marine-habitat",
+      "slug": "marine-habitat",
+      "name": "Marine Habitat",
+      "displayName": "Marine Habitat",
+      "baseName": "Marine Habitat",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-marine-habitat.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/NR_Large.jpg"
+      },
+      "sponsor": "Coastal Resources Division of the Department of Natural Resources",
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Georgia DOR",
+          "sourceId": "NR",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
       "id": "ga-earthecho-protect-wild-dolphins",
       "slug": "earthecho-protect-wild-dolphins",
       "name": "Protect Wild Dolphins",
@@ -8863,7 +8899,10 @@
         "land",
         "blue",
         "brown",
-        "red"
+        "red",
+        "ffa",
+        "4-h",
+        "4h"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -9080,41 +9119,6 @@
         {
           "source": "Georgia DOR",
           "sourceId": "ZA",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ga-wildlife-4-butterfly",
-      "slug": "wildlife-4-butterfly",
-      "name": "Give Wildlife a Chance (Butterfly)",
-      "displayName": "Give Wildlife a Chance (Butterfly)",
-      "baseName": "Give Wildlife a Chance",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Wildlife & Nature",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-wildlife-4-butterfly.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/WD_Large.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "butterfly",
-        "monarch"
-      ],
-      "variantOf": null,
-      "relatedPlates": [
-        "ga-wildlife-1-bald-eagle"
-      ],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Georgia DOR",
-          "sourceId": "WD",
           "versionId": null,
           "value": null
         }
