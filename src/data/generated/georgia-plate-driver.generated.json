@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "generatedDate": "2026-04-11",
   "generatedFrom": "src/data/georgia-plate-master.json",
-  "plateCount": 287,
+  "plateCount": 288,
   "plates": [
     {
       "id": "ga-aka-atlanta-chapter",
@@ -6236,9 +6236,9 @@
     {
       "id": "ga-wildlife-1-bald-eagle",
       "slug": "wildlife-1-bald-eagle",
-      "name": "Give Wildlife a Chance",
-      "displayName": "Give Wildlife a Chance",
-      "baseName": "Wildlife 1 - Bald Eagle",
+      "name": "Give Wildlife a Chance (Bald Eagle)",
+      "displayName": "Give Wildlife a Chance (Bald Eagle)",
+      "baseName": "Give Wildlife a Chance",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
@@ -6257,7 +6257,9 @@
         "blue"
       ],
       "variantOf": null,
-      "relatedPlates": []
+      "relatedPlates": [
+        "ga-wildlife-4-butterfly"
+      ]
     },
     {
       "id": "ga-earthecho-protect-wild-dolphins",
@@ -6491,6 +6493,32 @@
       ],
       "variantOf": null,
       "relatedPlates": []
+    },
+    {
+      "id": "ga-wildlife-4-butterfly",
+      "slug": "wildlife-4-butterfly",
+      "name": "Give Wildlife a Chance (Butterfly)",
+      "displayName": "Give Wildlife a Chance (Butterfly)",
+      "baseName": "Give Wildlife a Chance",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-wildlife-4-butterfly.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/WD_Large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "butterfly",
+        "monarch"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ga-wildlife-1-bald-eagle"
+      ]
     }
   ]
 }
