@@ -808,10 +808,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "first responder",
-        "public safety"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -841,10 +838,7 @@
       },
       "sponsor": "Peace Officers’ Annuity and Benefit Fund",
       "notes": null,
-      "searchTerms": [
-        "first responder",
-        "public safety"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -874,10 +868,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "first responder",
-        "public safety"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -907,10 +898,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "first responder",
-        "public safety"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -940,10 +928,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "first responder",
-        "public safety"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -973,10 +958,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "first responder",
-        "public safety"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1006,10 +988,7 @@
       },
       "sponsor": "Southeastern Firefighters Burn Foundation",
       "notes": null,
-      "searchTerms": [
-        "first responder",
-        "public safety"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1129,10 +1108,7 @@
       },
       "sponsor": "Georgia Non-game Wildlife Conservation/Habitat Acquisition",
       "notes": null,
-      "searchTerms": [
-        "nature",
-        "wildlife"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1681,11 +1657,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1715,11 +1687,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1749,11 +1717,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1783,11 +1747,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1817,11 +1777,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1852,10 +1808,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -1886,11 +1839,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1920,11 +1869,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1955,10 +1900,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "bronze",
-        "military",
-        "veteran",
-        "service"
+        "bronze"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -1990,10 +1932,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "bronze",
-        "military",
-        "veteran",
-        "service"
+        "bronze"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -2025,10 +1964,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "bronze",
-        "military",
-        "veteran",
-        "service"
+        "bronze"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -2060,10 +1996,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "bronze",
-        "military",
-        "veteran",
-        "service"
+        "bronze"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -2096,10 +2029,7 @@
       "notes": null,
       "searchTerms": [
         "bronze",
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -2130,11 +2060,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2164,11 +2090,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2198,11 +2120,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2232,11 +2150,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2266,11 +2180,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2301,10 +2211,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -2335,11 +2242,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2369,11 +2272,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2403,11 +2302,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2437,11 +2332,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2472,10 +2363,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -2506,11 +2394,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2540,11 +2424,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2574,11 +2454,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2609,10 +2485,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -2643,11 +2516,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2677,11 +2546,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2711,11 +2576,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2745,11 +2606,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2779,11 +2636,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2813,11 +2666,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2848,10 +2697,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -2882,11 +2728,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2916,11 +2758,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2951,10 +2789,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -2985,11 +2820,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3019,11 +2850,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3053,11 +2880,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3087,11 +2910,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3121,11 +2940,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3155,11 +2970,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3189,11 +3000,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3223,11 +3030,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3257,11 +3060,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3292,10 +3091,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -3327,10 +3123,7 @@
       "sponsor": "N/A",
       "notes": null,
       "searchTerms": [
-        "gold",
-        "military",
-        "veteran",
-        "service"
+        "gold"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -3361,11 +3154,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3395,11 +3184,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3429,11 +3214,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3463,11 +3244,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3498,10 +3275,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -3532,11 +3306,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3566,11 +3336,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3600,11 +3366,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3635,10 +3397,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -3669,11 +3428,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3703,11 +3458,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3737,11 +3488,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3771,11 +3518,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3805,11 +3548,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3840,10 +3579,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -3874,11 +3610,7 @@
       },
       "sponsor": "Coastal Resources Division of the Department of Natural Resources",
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3908,11 +3640,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3942,11 +3670,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3976,11 +3700,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -4010,11 +3730,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -4045,10 +3761,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4079,11 +3792,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -4113,11 +3822,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -4147,11 +3852,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -4181,11 +3882,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -4216,10 +3913,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4251,10 +3945,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "red",
-        "military",
-        "veteran",
-        "service"
+        "red"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4286,10 +3977,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "red",
-        "military",
-        "veteran",
-        "service"
+        "red"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4321,10 +4009,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4356,10 +4041,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4391,10 +4073,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4456,10 +4135,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "purple",
-        "military",
-        "veteran",
-        "service"
+        "purple"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4491,10 +4167,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "purple",
-        "military",
-        "veteran",
-        "service"
+        "purple"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4526,10 +4199,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "purple",
-        "military",
-        "veteran",
-        "service"
+        "purple"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4561,10 +4231,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "purple",
-        "military",
-        "veteran",
-        "service"
+        "purple"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4597,10 +4264,7 @@
       "notes": null,
       "searchTerms": [
         "navy",
-        "purple",
-        "military",
-        "veteran",
-        "service"
+        "purple"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4631,11 +4295,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -4666,10 +4326,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "red",
-        "military",
-        "veteran",
-        "service"
+        "red"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4700,11 +4357,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -4735,10 +4388,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "red",
-        "military",
-        "veteran",
-        "service"
+        "red"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4769,11 +4419,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -4804,10 +4450,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "red",
-        "military",
-        "veteran",
-        "service"
+        "red"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4838,11 +4481,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -4873,10 +4512,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "red",
-        "military",
-        "veteran",
-        "service"
+        "red"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4908,10 +4544,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4944,10 +4577,7 @@
       "notes": null,
       "searchTerms": [
         "navy",
-        "red",
-        "military",
-        "veteran",
-        "service"
+        "red"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4979,10 +4609,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "red",
-        "military",
-        "veteran",
-        "service"
+        "red"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -5014,10 +4641,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "red",
-        "military",
-        "veteran",
-        "service"
+        "red"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -5049,10 +4673,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "red",
-        "military",
-        "veteran",
-        "service"
+        "red"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -5084,10 +4705,7 @@
       "sponsor": "State of Georgia General Assembly",
       "notes": null,
       "searchTerms": [
-        "red",
-        "military",
-        "veteran",
-        "service"
+        "red"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -5119,10 +4737,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "red",
-        "military",
-        "veteran",
-        "service"
+        "red"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -5155,10 +4770,7 @@
       "notes": null,
       "searchTerms": [
         "navy",
-        "red",
-        "military",
-        "veteran",
-        "service"
+        "red"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -5190,10 +4802,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "silver",
-        "military",
-        "veteran",
-        "service"
+        "silver"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -5225,10 +4834,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "silver",
-        "military",
-        "veteran",
-        "service"
+        "silver"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -5260,10 +4866,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "silver",
-        "military",
-        "veteran",
-        "service"
+        "silver"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -5295,10 +4898,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "silver",
-        "military",
-        "veteran",
-        "service"
+        "silver"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -5331,10 +4931,7 @@
       "notes": null,
       "searchTerms": [
         "navy",
-        "silver",
-        "military",
-        "veteran",
-        "service"
+        "silver"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -5365,11 +4962,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -5399,11 +4992,7 @@
       },
       "sponsor": "Georgia Sons of Confederate Veterans",
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -5433,11 +5022,7 @@
       },
       "sponsor": "Support Our Troops, Inc",
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -5467,11 +5052,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -5501,11 +5082,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -5535,11 +5112,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -5569,11 +5142,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -5604,10 +5173,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -5638,11 +5204,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -5672,11 +5234,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -5706,11 +5264,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -5740,11 +5294,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -5775,10 +5325,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -5809,11 +5356,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -5843,11 +5386,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -5877,11 +5416,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -5911,11 +5446,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -5946,10 +5477,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -5980,11 +5508,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -6014,11 +5538,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -6048,11 +5568,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -6082,11 +5598,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -6117,10 +5629,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -6151,11 +5660,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -6185,11 +5690,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -6219,11 +5720,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -6253,11 +5750,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -6288,10 +5781,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -6322,11 +5812,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -6356,11 +5842,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -6390,11 +5872,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "military",
-        "veteran",
-        "service"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -6425,10 +5903,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy",
-        "military",
-        "veteran",
-        "service"
+        "navy"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -6460,9 +5935,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "allied veteran - motorcycle",
-        "motorcycle",
-        "bike"
+        "allied veteran - motorcycle"
       ],
       "variantOf": "ga-allied-veteran",
       "relatedPlates": [],
@@ -6494,9 +5967,7 @@
       "sponsor": "$1 to County Tag Agent - $19 to State Treasury",
       "notes": null,
       "searchTerms": [
-        "disabled person - motorcycle",
-        "motorcycle",
-        "bike"
+        "disabled person - motorcycle"
       ],
       "variantOf": "ga-disabled-person-new-design",
       "relatedPlates": [],
@@ -6528,9 +5999,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "disabled veteran motorcycle - motorcycle",
-        "motorcycle",
-        "bike"
+        "disabled veteran motorcycle - motorcycle"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -6562,9 +6031,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "hobby antique motorcycle - motorcycle",
-        "motorcycle",
-        "bike"
+        "hobby antique motorcycle - motorcycle"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -6596,9 +6063,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "meritorious service medal - motorcycle",
-        "motorcycle",
-        "bike"
+        "meritorious service medal - motorcycle"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -6630,9 +6095,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "omega psi phi - motorcycle",
-        "motorcycle",
-        "bike"
+        "omega psi phi - motorcycle"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -6664,9 +6127,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "prestige - motorcycle",
-        "motorcycle",
-        "bike"
+        "prestige - motorcycle"
       ],
       "variantOf": "ga-prestige",
       "relatedPlates": [],
@@ -6699,9 +6160,7 @@
       "notes": null,
       "searchTerms": [
         "purple heart - motorcycle",
-        "purple",
-        "motorcycle",
-        "bike"
+        "purple"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -6733,9 +6192,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "sigma gamma rho sorority inc - motorcycle",
-        "motorcycle",
-        "bike"
+        "sigma gamma rho sorority inc - motorcycle"
       ],
       "variantOf": "ga-sigma-gamma-rho-sorority-inc",
       "relatedPlates": [],
@@ -6767,9 +6224,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "standard - motorcycle",
-        "motorcycle",
-        "bike"
+        "standard - motorcycle"
       ],
       "variantOf": "ga-standard",
       "relatedPlates": [],
@@ -6801,9 +6256,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "us coast guard reserve - motorcycle",
-        "motorcycle",
-        "bike"
+        "us coast guard reserve - motorcycle"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -6837,9 +6290,7 @@
       "searchTerms": [
         "woman veteran",
         "air force",
-        "motorcycle",
-        "female",
-        "military"
+        "female"
       ],
       "variantOf": "ga-woman-veteran-air-force",
       "relatedPlates": [],
@@ -6873,9 +6324,7 @@
       "searchTerms": [
         "woman veteran",
         "army",
-        "motorcycle",
-        "female",
-        "military"
+        "female"
       ],
       "variantOf": "ga-woman-veteran-army",
       "relatedPlates": [],
@@ -6909,9 +6358,7 @@
       "searchTerms": [
         "woman veteran",
         "coast guard",
-        "motorcycle",
-        "female",
-        "military"
+        "female"
       ],
       "variantOf": "ga-woman-veteran-coast-guard",
       "relatedPlates": [],
@@ -6946,9 +6393,7 @@
         "woman veteran",
         "marine corps",
         "marines",
-        "motorcycle",
-        "female",
-        "military"
+        "female"
       ],
       "variantOf": "ga-woman-veteran-marine-corps",
       "relatedPlates": [],
@@ -6982,9 +6427,7 @@
       "searchTerms": [
         "woman veteran",
         "navy",
-        "motorcycle",
-        "female",
-        "military"
+        "female"
       ],
       "variantOf": "ga-woman-veteran-navy",
       "relatedPlates": [],
@@ -7048,9 +6491,7 @@
       "searchTerms": [
         "braves",
         "baseball",
-        "mlb",
-        "sports",
-        "team"
+        "mlb"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -7084,9 +6525,7 @@
       "searchTerms": [
         "falcons",
         "football",
-        "nfl",
-        "sports",
-        "team"
+        "nfl"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -7120,9 +6559,7 @@
       "searchTerms": [
         "hawks",
         "basketball",
-        "nba",
-        "sports",
-        "team"
+        "nba"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -7156,9 +6593,7 @@
       "searchTerms": [
         "atlanta united",
         "soccer",
-        "mls",
-        "sports",
-        "team"
+        "mls"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -7258,9 +6693,7 @@
       "searchTerms": [
         "nascar",
         "racing",
-        "motorsports",
-        "sports",
-        "team"
+        "motorsports"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -7355,8 +6788,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "peach",
-        "passenger"
+        "peach"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -7388,9 +6820,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "peach",
-        "standard",
-        "passenger"
+        "peach"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -7422,9 +6852,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "peach",
-        "standard",
-        "passenger"
+        "peach"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -7457,10 +6885,7 @@
       "notes": null,
       "searchTerms": [
         "abraham baldwin agricultural college - new plates are no longer available",
-        "abraham baldwin agricultural college new plates are no longer available",
-        "college",
-        "university",
-        "alumni"
+        "abraham baldwin agricultural college new plates are no longer available"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -7491,11 +6916,7 @@
       },
       "sponsor": "Alabama A&M University Alumni Association, Inc",
       "notes": null,
-      "searchTerms": [
-        "college",
-        "university",
-        "alumni"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -7525,11 +6946,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "college",
-        "university",
-        "alumni"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -7559,11 +6976,7 @@
       },
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
-      "searchTerms": [
-        "college",
-        "university",
-        "alumni"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -7595,10 +7008,7 @@
       "notes": null,
       "searchTerms": [
         "armstrong atlantic state university - new plates are no longer available",
-        "armstrong atlantic state university new plates are no longer available",
-        "college",
-        "university",
-        "alumni"
+        "armstrong atlantic state university new plates are no longer available"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -7629,11 +7039,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "college",
-        "university",
-        "alumni"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -7663,11 +7069,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "college",
-        "university",
-        "alumni"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -7697,11 +7099,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "college",
-        "university",
-        "alumni"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -7768,10 +7166,7 @@
       "notes": null,
       "searchTerms": [
         "augusta",
-        "jaguars",
-        "college",
-        "university",
-        "alumni"
+        "jaguars"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -7802,11 +7197,7 @@
       },
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
-      "searchTerms": [
-        "college",
-        "university",
-        "alumni"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -7838,10 +7229,7 @@
       "notes": null,
       "searchTerms": [
         "brenau university - new plates are no longer available",
-        "brenau university new plates are no longer available",
-        "college",
-        "university",
-        "alumni"
+        "brenau university new plates are no longer available"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -7874,10 +7262,7 @@
       "notes": null,
       "searchTerms": [
         "clark atlanta",
-        "panthers",
-        "college",
-        "university",
-        "alumni"
+        "panthers"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -7910,10 +7295,7 @@
       "notes": null,
       "searchTerms": [
         "columbus state university - new plates are no longer available",
-        "columbus state university new plates are no longer available",
-        "college",
-        "university",
-        "alumni"
+        "columbus state university new plates are no longer available"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -7946,10 +7328,7 @@
       "notes": null,
       "searchTerms": [
         "emory",
-        "eagles",
-        "college",
-        "university",
-        "alumni"
+        "eagles"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -7980,11 +7359,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "college",
-        "university",
-        "alumni"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -8014,11 +7389,7 @@
       },
       "sponsor": "See below",
       "notes": null,
-      "searchTerms": [
-        "college",
-        "university",
-        "alumni"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -8050,10 +7421,7 @@
       "notes": null,
       "searchTerms": [
         "fort valley state",
-        "wildcats",
-        "college",
-        "university",
-        "alumni"
+        "wildcats"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -8086,10 +7454,7 @@
       "notes": null,
       "searchTerms": [
         "georgia college and state university - new plates are no longer available",
-        "georgia college and state university new plates are no longer available",
-        "college",
-        "university",
-        "alumni"
+        "georgia college and state university new plates are no longer available"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -8122,10 +7487,7 @@
       "notes": null,
       "searchTerms": [
         "georgia southern",
-        "eagles",
-        "college",
-        "university",
-        "alumni"
+        "eagles"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -8158,10 +7520,7 @@
       "notes": null,
       "searchTerms": [
         "georgia state",
-        "panthers",
-        "college",
-        "university",
-        "alumni"
+        "panthers"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -8228,10 +7587,7 @@
       "notes": null,
       "searchTerms": [
         "hampton university atlanta alumni - new plates are no longer available",
-        "hampton university atlanta alumni new plates are no longer available",
-        "college",
-        "university",
-        "alumni"
+        "hampton university atlanta alumni new plates are no longer available"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -8264,10 +7620,7 @@
       "notes": null,
       "searchTerms": [
         "kennesaw state",
-        "owls",
-        "college",
-        "university",
-        "alumni"
+        "owls"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -8300,10 +7653,7 @@
       "notes": null,
       "searchTerms": [
         "lagrange college - new plates are no longer available",
-        "lagrange college new plates are no longer available",
-        "college",
-        "university",
-        "alumni"
+        "lagrange college new plates are no longer available"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -8336,10 +7686,7 @@
       "notes": null,
       "searchTerms": [
         "life university - new plates are no longer available",
-        "life university new plates are no longer available",
-        "college",
-        "university",
-        "alumni"
+        "life university new plates are no longer available"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -8370,11 +7717,7 @@
       },
       "sponsor": "State of Georgia Treasury",
       "notes": null,
-      "searchTerms": [
-        "college",
-        "university",
-        "alumni"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -8406,10 +7749,7 @@
       "notes": null,
       "searchTerms": [
         "mercer",
-        "bears",
-        "college",
-        "university",
-        "alumni"
+        "bears"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -8442,10 +7782,7 @@
       "notes": null,
       "searchTerms": [
         "michigan state",
-        "spartans",
-        "college",
-        "university",
-        "alumni"
+        "spartans"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -8477,10 +7814,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "bulldogs",
-        "college",
-        "university",
-        "alumni"
+        "bulldogs"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -8512,10 +7846,7 @@
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
       "searchTerms": [
-        "maroon tigers",
-        "college",
-        "university",
-        "alumni"
+        "maroon tigers"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -8844,9 +8175,6 @@
       "sponsor": "University of Alabama National Alumni Association",
       "notes": null,
       "searchTerms": [
-        "college",
-        "university",
-        "alumni",
         "red"
       ],
       "variantOf": null,
