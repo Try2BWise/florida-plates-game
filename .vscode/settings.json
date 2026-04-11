@@ -1,5 +1,5 @@
 {
-    "python.defaultInterpreterPath": "C:\\Python314\\python.exe",
+    "python.defaultInterpreterPath": "",
     "chat.tools.terminal.autoApprove": {
         "git fetch": true,
         "git add": true,
