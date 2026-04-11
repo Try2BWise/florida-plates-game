@@ -675,6 +675,49 @@ export const badgeDefinitions: BadgeDefinition[] = [
     group: "florida",
     availableIn: "v1.4"
   },
+  // Georgia Explorer region badges (derived from GA Regional Commissions)
+  {
+    id: "ga-north-georgia-explorer",
+    name: "North Georgia Explorer",
+    description: "Find a plate in every North Georgia county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ga-metro-atlanta-explorer",
+    name: "Metro Atlanta Explorer",
+    description: "Find a plate in every Metro Atlanta county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ga-central-georgia-explorer",
+    name: "Central Georgia Explorer",
+    description: "Find a plate in every Central Georgia county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ga-southwest-georgia-explorer",
+    name: "Southwest Georgia Explorer",
+    description: "Find a plate in every Southwest Georgia county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ga-southeast-georgia-explorer",
+    name: "Southeast Georgia Explorer",
+    description: "Find a plate in every Southeast Georgia county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-georgia",
+    name: "All Around Georgia",
+    description: "Earn every regional explorer badge.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
   // Kansas Explorer region badges
   {
     id: "ks-northwest-explorer",
@@ -1073,6 +1116,7 @@ export function evaluateBadges(
   // "All Around" badge: earned if all region badges are earned
   const allAroundIdMap: Record<string, string> = {
     florida: "all-around-florida",
+    georgia: "all-around-georgia",
     mississippi: "all-around-mississippi",
     arkansas: "all-around-arkansas",
     missouri: "all-around-missouri",
@@ -1367,6 +1411,11 @@ export function evaluateBadges(
     tennessee: new Set([
       "tn-east-explorer", "tn-middle-explorer", "tn-west-explorer",
       "all-around-tennessee",
+    ]),
+    georgia: new Set([
+      "ga-north-georgia-explorer", "ga-metro-atlanta-explorer", "ga-central-georgia-explorer",
+      "ga-southwest-georgia-explorer", "ga-southeast-georgia-explorer",
+      "all-around-georgia",
     ]),
     kansas: new Set([
       "ks-northwest-explorer", "ks-northeast-explorer", "ks-southwest-explorer",
