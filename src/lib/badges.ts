@@ -675,6 +675,49 @@ export const badgeDefinitions: BadgeDefinition[] = [
     group: "florida",
     availableIn: "v1.4"
   },
+  // Alabama Explorer region badges (derived from AL Regional Councils)
+  {
+    id: "al-north-alabama-explorer",
+    name: "North Alabama Explorer",
+    description: "Find a plate in every North Alabama county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "al-central-alabama-explorer",
+    name: "Central Alabama Explorer",
+    description: "Find a plate in every Central Alabama county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "al-west-alabama-explorer",
+    name: "West Alabama Explorer",
+    description: "Find a plate in every West Alabama county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "al-southeast-alabama-explorer",
+    name: "Southeast Alabama Explorer",
+    description: "Find a plate in every Southeast Alabama county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "al-gulf-coast-explorer",
+    name: "Gulf Coast Explorer",
+    description: "Find a plate in every Gulf Coast county.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-alabama",
+    name: "All Around Alabama",
+    description: "Earn every regional explorer badge.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
   // Georgia Explorer region badges (derived from GA Regional Commissions)
   {
     id: "ga-north-georgia-explorer",
@@ -1115,6 +1158,7 @@ export function evaluateBadges(
 
   // "All Around" badge: earned if all region badges are earned
   const allAroundIdMap: Record<string, string> = {
+    alabama: "all-around-alabama",
     florida: "all-around-florida",
     georgia: "all-around-georgia",
     mississippi: "all-around-mississippi",
@@ -1411,6 +1455,11 @@ export function evaluateBadges(
     tennessee: new Set([
       "tn-east-explorer", "tn-middle-explorer", "tn-west-explorer",
       "all-around-tennessee",
+    ]),
+    alabama: new Set([
+      "al-north-alabama-explorer", "al-central-alabama-explorer", "al-west-alabama-explorer",
+      "al-southeast-alabama-explorer", "al-gulf-coast-explorer",
+      "all-around-alabama",
     ]),
     georgia: new Set([
       "ga-north-georgia-explorer", "ga-metro-atlanta-explorer", "ga-central-georgia-explorer",

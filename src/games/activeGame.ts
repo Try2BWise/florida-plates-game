@@ -1,3 +1,13 @@
+import alabamaDriverData from "../data/generated/alabama-plate-driver.generated.json";
+import alabamaLegacyIdMap from "../data/generated/alabama-legacy-id-map.generated.json";
+import {
+  alabamaBadgeCounties,
+  alabamaBadgeGroupLabels,
+  alabamaBadgeGroupSymbols,
+  alabamaGame,
+  alabamaMixedBagCategories,
+  alabamaRegionScoutCounties
+} from "../config/alabamaGame";
 import floridaDriverData from "../data/generated/florida-plate-driver.generated.json";
 import floridaLegacyIdMap from "../data/generated/florida-legacy-id-map.generated.json";
 import mississippiDriverData from "../data/generated/mississippi-plate-driver.generated.json";
@@ -199,6 +209,21 @@ function loadTennesseePack() {
   };
 }
 
+function loadAlabamaPack() {
+  const plates = buildPlates(alabamaDriverData);
+  return {
+    game: alabamaGame,
+    badgeCounties: alabamaBadgeCounties,
+    badgeGroupLabels: alabamaBadgeGroupLabels,
+    badgeGroupSymbols: alabamaBadgeGroupSymbols,
+    mixedBagCategories: alabamaMixedBagCategories,
+    panhandleScoutCounties: alabamaRegionScoutCounties,
+    legacyIdMap: alabamaLegacyIdMap as Record<string, string>,
+    plates,
+    groupedPlates: buildGroupedPlates(plates),
+  };
+}
+
 function loadGeorgiaPack() {
   const plates = buildPlates(georgiaDriverData);
   return {
@@ -250,6 +275,7 @@ function loadStatePack(stateId: string) {
     case "arkansas": return loadArkansasPack();
     case "missouri": return loadMissouriPack();
     case "tennessee": return loadTennesseePack();
+    case "alabama": return loadAlabamaPack();
     case "georgia": return loadGeorgiaPack();
     case "kansas": return loadKansasPack();
     case "kentucky": return loadKentuckyPack();
