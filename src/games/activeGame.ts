@@ -254,5 +254,4 @@ export const activeStorage = {
   themeKey: "every-pl8-theme",
   uiPreferencesKey: "every-pl8-ui-preferences",
   onboardingHintKey: `${selectedId}-plates-onboarding-dismissed`,
-  progressExportFilename: `${selectedId}-plates-progress.json`
 };

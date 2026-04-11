@@ -1072,6 +1072,7 @@ export function evaluateBadges(
 
   // "All Around" badge: earned if all region badges are earned
   const allAroundIdMap: Record<string, string> = {
+    florida: "all-around-florida",
     mississippi: "all-around-mississippi",
     arkansas: "all-around-arkansas",
     missouri: "all-around-missouri",
@@ -1079,7 +1080,7 @@ export function evaluateBadges(
     kentucky: "all-around-kentucky",
     kansas: "all-around-kansas",
   };
-  const allAroundId = allAroundIdMap[stateId] || "all-around-florida";
+  const allAroundId = allAroundIdMap[stateId] ?? `all-around-${stateId}`;
   const allRegionBadgesEarned = regionBadgeEntries.every(([, badge]) => badge.earned);
   const allAroundBadge = {
     ...getBadgeDefinition(definitionsById, allAroundId),
