@@ -1,5 +1,6 @@
 export type IconName =
   | "chevron-left"
+  | "chevron-right"
   | "share"
   | "home"
   | "globe"
@@ -30,6 +31,11 @@ const paths: Record<IconName, JSX.Element> = {
   "chevron-left": (
     <>
       <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </>
+  ),
+  "chevron-right": (
+    <>
+      <path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </>
   ),
   share: (
@@ -143,8 +149,12 @@ const paths: Record<IconName, JSX.Element> = {
   ),
   pin: (
     <>
-      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="none" stroke="currentColor" strokeWidth="1.5" />
-      <circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      {/* Round head */}
+      <circle cx="12" cy="7" r="5" fill="currentColor" />
+      {/* Neck narrowing to pin */}
+      <path d="M10 11 Q10 14 12 14 Q14 14 14 11Z" fill="currentColor" />
+      {/* Pin shaft */}
+      <line x1="12" y1="14" x2="12" y2="22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
     </>
   ),
   lock: (

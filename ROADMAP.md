@@ -894,6 +894,7 @@ These are intentionally not committed to the next release yet.
 - custom badge artwork beyond the current icon system
 - optional social identity, leaderboard, and buddy-sharing features
 - a standalone external driver editor
+- **Export covers only the active state** — `handleExportProgress` serializes `discoveries` scoped to the current state's localStorage key (`{stateId}-plates-discoveries`). A full multi-state backup needs to iterate all known state IDs. Fix before shipping to a wider audience.
 
 ## Engagement Ideas
 

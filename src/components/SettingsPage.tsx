@@ -1,14 +1,15 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Icon } from "./Icon";
 import { PageView } from "./PageView";
 import { developer } from "../config/developer";
 
 interface SettingsPageProps {
   onBack: () => void;
-  theme: "light" | "dark";
-  onThemeToggle: () => void;
-  uiPreferences: { showSearch: boolean; showCategories: boolean; showArrangement: boolean };
-  onToggleUiPreference: (key: "showSearch" | "showCategories" | "showArrangement") => void;
+  theme: "light" | "dark" | "system";
+  resolvedTheme: "light" | "dark";
+  onThemeChange: (t: "light" | "dark" | "system") => void;
+  uiPreferences: { showSearch: boolean; showCategories: boolean; showArrangement: boolean; hapticsEnabled: boolean };
+  onToggleUiPreference: (key: "showSearch" | "showCategories" | "showArrangement" | "hapticsEnabled") => void;
   onForceReload: () => void;
   foundCount: number;
   onExportProgress: () => void;
@@ -28,11 +29,12 @@ interface SettingsPageProps {
 }
 
 export function SettingsPage({
-  onBack, theme, onThemeToggle, uiPreferences, onToggleUiPreference,
+  onBack, theme, resolvedTheme, onThemeChange, uiPreferences, onToggleUiPreference,
   onForceReload, foundCount, onExportProgress, onImportProgress, onClearDiscoveries,
   onShareApp, onChangeState, buildVersion, buildDateLabel, attribution
 }: SettingsPageProps) {
   const [activeTab, setActiveTab] = useState<"settings" | "about">("settings");
+  const importRef = useRef<HTMLInputElement>(null);
 
   return (
     <PageView
@@ -55,105 +57,148 @@ export function SettingsPage({
         </>
       }
     >
-      {activeTab === "settings" ? (
-        <div className="utility-stack">
-          <section className="utility-card">
-            <h3>Main screen controls</h3>
-            <p className="utility-card__meta" style={{ marginBottom: 8 }}>These toggles only change which controls appear on the main game screen.</p>
-            <div className="settings-list">
-              <button type="button" className="settings-row settings-row--compact" onClick={onThemeToggle}>
-                <span>Dark mode</span>
-                <span className={`toggle-switch ${theme === "dark" ? "toggle-switch--on" : ""}`} />
+      {activeTab === "settings" && (
+        <div className="ios-list">
+          <div>
+            <div className="ios-list__section-label">Display</div>
+            <div className="ios-list__group">
+              <button type="button" className="ios-list__row" onClick={() => onThemeChange(theme === "system" ? resolvedTheme : "system")}>
+                <span className="ios-list__row-label">Follow system</span>
+                <span className={`toggle-switch ${theme === "system" ? "toggle-switch--on" : ""}`} />
               </button>
-              <button type="button" className="settings-row settings-row--compact" onClick={() => onToggleUiPreference("showSearch")}>
-                <span>Show search</span>
+              <button
+                type="button"
+                className={`ios-list__row ${theme === "system" ? "ios-list__row--disabled" : ""}`}
+                onClick={() => theme !== "system" && onThemeChange(resolvedTheme === "dark" ? "light" : "dark")}
+                aria-disabled={theme === "system"}
+              >
+                <span className="ios-list__row-label">Dark mode</span>
+                <span className={`toggle-switch ${resolvedTheme === "dark" ? "toggle-switch--on" : ""} ${theme === "system" ? "toggle-switch--muted" : ""}`} />
+              </button>
+              <button type="button" className="ios-list__row" onClick={() => onToggleUiPreference("showSearch")}>
+                <span className="ios-list__row-label">Show search</span>
                 <span className={`toggle-switch ${uiPreferences.showSearch ? "toggle-switch--on" : ""}`} />
               </button>
-              <button type="button" className="settings-row settings-row--compact" onClick={() => onToggleUiPreference("showCategories")}>
-                <span>Show categories</span>
+              <button type="button" className="ios-list__row" onClick={() => onToggleUiPreference("showCategories")}>
+                <span className="ios-list__row-label">Show categories</span>
                 <span className={`toggle-switch ${uiPreferences.showCategories ? "toggle-switch--on" : ""}`} />
               </button>
-              <button type="button" className="settings-row settings-row--compact" onClick={() => onToggleUiPreference("showArrangement")}>
-                <span>Show sort</span>
+              <button type="button" className="ios-list__row" onClick={() => onToggleUiPreference("showArrangement")}>
+                <span className="ios-list__row-label">Show sort</span>
                 <span className={`toggle-switch ${uiPreferences.showArrangement ? "toggle-switch--on" : ""}`} />
               </button>
+              <button type="button" className="ios-list__row" onClick={() => onToggleUiPreference("hapticsEnabled")}>
+                <span className="ios-list__row-label">Haptics</span>
+                <span className={`toggle-switch ${uiPreferences.hapticsEnabled ? "toggle-switch--on" : ""}`} />
+              </button>
             </div>
-          </section>
-          <section className="utility-card utility-card--about">
-            <h3>App Management</h3>
-            <button type="button" className="view-toggle__chip" style={{ marginTop: 12, whiteSpace: 'nowrap', maxWidth: 'max-content', alignSelf: 'start' }} onClick={onForceReload}>Force Reload / Sync</button>
-            <button type="button" className="view-toggle__chip" style={{ marginTop: 8, whiteSpace: 'nowrap', maxWidth: 'max-content', alignSelf: 'start' }} onClick={onChangeState}>Change State</button>
-          </section>
-          <section className="utility-card">
-            <h3>Progress Management</h3>
-            <div className="utility-card__meta" style={{ marginBottom: 12 }}>
-              <ol style={{ paddingLeft: 18, margin: 0 }}>
-                <li>To export your progress, click <strong>Export Progress</strong>.</li>
-                <li>To import progress, click <strong>Import Progress</strong> and select a backup file.</li>
-              </ol>
+          </div>
+
+          <div>
+            <div className="ios-list__section-label">App</div>
+            <div className="ios-list__group">
+              <button type="button" className="ios-list__row" onClick={onForceReload}>
+                <span className="ios-list__row-label">Force Reload / Sync</span>
+                <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
+              </button>
+              <button type="button" className="ios-list__row" onClick={onChangeState}>
+                <span className="ios-list__row-label">Change State</span>
+                <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
+              </button>
             </div>
-            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 16 }}>
-              <button type="button" className="view-toggle__chip" onClick={onExportProgress} disabled={foundCount === 0}>Export Progress</button>
-              <label style={{ display: 'inline-block' }}>
-                <span style={{ display: 'none' }}>Import Progress</span>
-                <input type="file" accept="application/json" style={{ display: 'none' }} onChange={onImportProgress} />
-                <button type="button" className="view-toggle__chip" onClick={e => { (e.currentTarget.previousSibling as HTMLInputElement)?.click(); }}>Import Progress</button>
-              </label>
+          </div>
+
+          <div>
+            <div className="ios-list__section-label">Progress</div>
+            <div className="ios-list__group">
+              <button type="button" className="ios-list__row" onClick={onExportProgress} disabled={foundCount === 0}>
+                <span className="ios-list__row-label">Export Progress</span>
+                <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
+              </button>
+              <button type="button" className="ios-list__row" onClick={() => importRef.current?.click()}>
+                <span className="ios-list__row-label">Import Progress</span>
+                <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
+              </button>
+              <input ref={importRef} type="file" accept="application/json" style={{ display: "none" }} onChange={onImportProgress} />
             </div>
-            <div className="utility-card__meta" style={{ marginBottom: 8 }}>Clear all found plates from this device.</div>
-            <button type="button" className="clear-discoveries utility-card__action" onClick={onClearDiscoveries} disabled={foundCount === 0}>Clear found</button>
-          </section>
+            <div className="ios-list__section-footer">Export saves your found plates as a backup file. Import restores from a backup.</div>
+          </div>
+
+          <div>
+            <div className="ios-list__group">
+              <button type="button" className="ios-list__row ios-list__row--destructive" onClick={onClearDiscoveries} disabled={foundCount === 0}>
+                Clear Found Plates
+              </button>
+            </div>
+            <div className="ios-list__section-footer">Removes all found plates from this device.</div>
+          </div>
         </div>
-      ) : null}
-      {activeTab === "about" ? (
-        <div className="utility-stack">
-          <section className="utility-card">
-            <h3>About</h3>
-            <div className="about-table" style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 16, alignItems: 'start', width: '100%' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, width: 140, justifySelf: 'center' }}>
-                <a className="about-card__logo-link" href={developer.url} target="_blank" rel="noreferrer" aria-label={`Visit ${developer.name}`}>
-                  <img className="about-card__logo" src={`${import.meta.env.BASE_URL}${developer.logoPath}`} alt={developer.name} style={{ maxWidth: 120, height: 'auto', marginBottom: 8, display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
-                </a>
-              </div>
-              <div>
-                <p className="utility-card__meta" style={{ marginBottom: 4 }}>Developed by <a className="app-footer__link" href={developer.url} target="_blank" rel="noreferrer">{developer.name}</a>.</p>
-                <p className="utility-card__meta" style={{ marginBottom: 4 }}>Version {buildVersion} • Built {buildDateLabel}</p>
-                <button type="button" className="app-footer__share utility-card__action about-card__share" onClick={onShareApp} style={{ width: 'auto', marginTop: 8, display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
-                  <Icon name="share" size={16} /> Share
-                </button>
-              </div>
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, width: 140, justifySelf: 'center' }}>
-                <div style={{ background: '#fff', borderRadius: 8, padding: 8, width: 120, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                  <img src={`${import.meta.env.BASE_URL}${attribution.logoPath}`} alt={attribution.logoAlt} style={{ maxWidth: 104, height: 'auto', display: 'block' }} />
-                </div>
-              </div>
-              <div>
-                <p className="utility-card__meta" style={{ marginBottom: 0 }} dangerouslySetInnerHTML={{ __html: attribution.text.replace('{agency}', `<a href="${attribution.agencyUrl}" target="_blank" rel="noopener noreferrer">${attribution.agencyName}</a>`) }} />
-              </div>
+      )}
+
+      {activeTab === "about" && (
+        <div className="ios-list">
+          <div className="ios-list__hero">
+            <img
+              className="ios-list__hero-icon"
+              src={`${import.meta.env.BASE_URL}apple-touch-icon.png`}
+              alt="Every PL8"
+            />
+            <p className="ios-list__hero-name">Every PL8</p>
+            <p className="ios-list__hero-meta">Version {buildVersion} · Built {buildDateLabel}</p>
+            <button type="button" className="app-footer__share utility-card__action about-card__share" onClick={onShareApp} style={{ width: "auto", marginTop: "0.5rem", display: "inline-flex", alignItems: "center", gap: "0.4rem" }}>
+              <Icon name="share" size={16} /> Share
+            </button>
+          </div>
+
+          <div>
+            <div className="ios-list__section-label">Developer</div>
+            <div className="ios-list__group">
+              <a className="ios-list__row" href={developer.url} target="_blank" rel="noreferrer">
+                <span className="ios-list__row-label">{developer.name}</span>
+                <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
+              </a>
             </div>
-          </section>
-          <section className="utility-card">
-            <h3>Acknowledgments</h3>
-            <p className="utility-card__meta" style={{ marginBottom: 8 }}>
-              Badge icons from{" "}
-              <a className="app-footer__link" href="https://github.com/microsoft/fluentui-emoji" target="_blank" rel="noreferrer">
-                Microsoft Fluent Emoji
+          </div>
+
+          <div>
+            <div className="ios-list__section-label">Data Source</div>
+            <div className="ios-list__group">
+              <a className="ios-list__row" href={attribution.agencyUrl} target="_blank" rel="noreferrer">
+                <span className="ios-list__row-label">{attribution.agencyName}</span>
+                <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
               </a>
-              {" "}(MIT License).
-            </p>
-            <p className="utility-card__meta" style={{ marginBottom: 8 }}>
-              State outline shapes from{" "}
-              <a className="app-footer__link" href="https://proicons.com/icon-collections/stateface" target="_blank" rel="noreferrer">
-                StateFace
+            </div>
+            <div className="ios-list__section-footer">{attribution.text.replace("{agency}", attribution.agencyName)}</div>
+          </div>
+
+          <div>
+            <div className="ios-list__section-label">Acknowledgments</div>
+            <div className="ios-list__group">
+              <a className="ios-list__row" href="https://github.com/microsoft/fluentui-emoji" target="_blank" rel="noreferrer">
+                <span className="ios-list__row-label">Microsoft Fluent Emoji</span>
+                <span className="ios-list__row-value">MIT License</span>
+                <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
               </a>
-              {" "}by ProPublica (MIT License).
-            </p>
-            <p className="utility-card__meta" style={{ marginBottom: 0 }}>
-              &copy; 2026 Gorilla Grin. All rights reserved.
-            </p>
-          </section>
+              <a className="ios-list__row" href="https://proicons.com/icon-collections/stateface" target="_blank" rel="noreferrer">
+                <span className="ios-list__row-label">StateFace by ProPublica</span>
+                <span className="ios-list__row-value">MIT License</span>
+                <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div className="ios-list__section-label">Legal</div>
+            <div className="ios-list__group">
+              <a className="ios-list__row" href="privacy.html" target="_blank" rel="noreferrer">
+                <span className="ios-list__row-label">Privacy Policy</span>
+                <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
+              </a>
+            </div>
+            <div className="ios-list__section-footer">&copy; 2026 Gorilla Grin. All rights reserved.</div>
+          </div>
         </div>
-      ) : null}
+      )}
     </PageView>
   );
 }

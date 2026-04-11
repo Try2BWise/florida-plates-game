@@ -21,6 +21,7 @@ import { buildInfo } from "./generated/buildInfo";
 import { evaluateBadges, computePlayerRank, type BadgeGroup, type EvaluatedBadge } from "./lib/badges";
 import { formatDiscoveryTime } from "./lib/format";
 import { createDiscovery, enrichDiscoveryLocation } from "./lib/geolocation";
+import { hapticsPlateFound, hapticsBadgeEarned, hapticsPlateCleared } from "./lib/haptics";
 import { reverseGeocodePlace } from "./lib/reverseGeocode";
 import { loadDiscoveries, saveDiscoveries } from "./lib/storage";
 import type { Plate, PlateCategory, PlateDiscoveryMap } from "./types";
@@ -29,8 +30,9 @@ const THEME_STORAGE_KEY = "florida-plates-theme";
 const UI_PREFERENCES_STORAGE_KEY = "florida-plates-ui-preferences";
 const ONBOARDING_HINT_DISMISSED_STORAGE_KEY = "florida-plates-onboarding-dismissed";
 const BROWSE_PREFS_STORAGE_KEY = "every-pl8-browse-prefs";
+const SAFE_USE_ACKNOWLEDGED_STORAGE_KEY = "every-pl8-safe-use-acknowledged";
 
-type ThemeMode = "light" | "dark";
+type ThemeMode = "light" | "dark" | "system";
 type PlateVisibilityFilter = "all" | "found" | "missing";
 type PlateArrangement = "category" | "az" | "za";
 type AchievementsTab = "achievements" | "journey" | "map";
@@ -117,12 +119,14 @@ interface UiPreferences {
   showSearch: boolean;
   showCategories: boolean;
   showArrangement: boolean;
+  hapticsEnabled: boolean;
 }
 
 const defaultUiPreferences: UiPreferences = {
   showSearch: true,
   showCategories: true,
-  showArrangement: true
+  showArrangement: true,
+  hapticsEnabled: true
 };
 
 function loadUiPreferences(): UiPreferences {
@@ -136,7 +140,8 @@ function loadUiPreferences(): UiPreferences {
     return {
       showSearch: parsed.showSearch ?? defaultUiPreferences.showSearch,
       showCategories: parsed.showCategories ?? defaultUiPreferences.showCategories,
-      showArrangement: parsed.showArrangement ?? defaultUiPreferences.showArrangement
+      showArrangement: parsed.showArrangement ?? defaultUiPreferences.showArrangement,
+      hapticsEnabled: parsed.hapticsEnabled ?? defaultUiPreferences.hapticsEnabled
     };
   } catch {
     return defaultUiPreferences;
@@ -166,13 +171,15 @@ function loadBrowsePrefs(): BrowsePrefs {
 
 function getInitialTheme(): ThemeMode {
   const storedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
-  if (storedTheme === "light" || storedTheme === "dark") {
+  if (storedTheme === "light" || storedTheme === "dark" || storedTheme === "system") {
     return storedTheme;
   }
+  return "system";
+}
 
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
+function resolveTheme(theme: ThemeMode): "light" | "dark" {
+  if (theme !== "system") return theme;
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
 function loadOnboardingHintDismissed(): boolean {
@@ -242,6 +249,7 @@ function App() {
   );
   const [activePlateId, setActivePlateId] = useState<string | null>(null);
   const [theme, setTheme] = useState<ThemeMode>(() => getInitialTheme());
+  const [resolvedTheme, setResolvedTheme] = useState<"light" | "dark">(() => resolveTheme(getInitialTheme()));
   const [uiPreferences, setUiPreferences] = useState<UiPreferences>(() =>
     loadUiPreferences()
   );
@@ -250,11 +258,15 @@ function App() {
     useState<PlateVisibilityFilter>(() => loadBrowsePrefs().visibilityFilter);
   const [arrangement, setArrangement] = useState<PlateArrangement>(() => loadBrowsePrefs().arrangement);
   const [shareStatus, setShareStatus] = useState<string | null>(null);
+  const [badgeToasts, setBadgeToasts] = useState<Array<{ id: string; name: string }>>([]);
   const [isOnboardingHintDismissed, setIsOnboardingHintDismissed] = useState<boolean>(() =>
     loadOnboardingHintDismissed()
   );
   const [isUpdateReady, setIsUpdateReady] = useState(false);
   const [isClearConfirmOpen, setIsClearConfirmOpen] = useState(false);
+  const [isSafeUseAcknowledged, setIsSafeUseAcknowledged] = useState(
+    () => window.localStorage.getItem(SAFE_USE_ACKNOWLEDGED_STORAGE_KEY) === "true"
+  );
   const [activeView, setActiveView] = useState<ActiveView>(() =>
     getSelectedStateId() ? "home" : "state-picker"
   );
@@ -315,9 +327,21 @@ function App() {
   }, []);
 
   useEffect(() => {
-    document.documentElement.dataset.theme = theme;
-    window.localStorage.setItem(THEME_STORAGE_KEY, theme);
+    if (theme !== "system") {
+      setResolvedTheme(theme);
+      return;
+    }
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    const update = () => setResolvedTheme(mq.matches ? "dark" : "light");
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
   }, [theme]);
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = resolvedTheme;
+    window.localStorage.setItem(THEME_STORAGE_KEY, theme);
+  }, [theme, resolvedTheme]);
 
   useEffect(() => {
     window.localStorage.setItem(
@@ -699,6 +723,7 @@ function App() {
     () => computePlayerRank(earnedBadges.length, evaluatedBadges.length),
     [earnedBadges.length, evaluatedBadges.length]
   );
+
   // Group all badges (earned and unearned) by group for display
   const badgeGroupLabels: Record<BadgeGroup, string> = activeBadgeGroupLabels;
   const badgeGroupSymbols: Record<BadgeGroup, string> = activeBadgeGroupSymbols;
@@ -741,6 +766,7 @@ function App() {
 
   async function handleTogglePlate(plate: Plate, isFound: boolean) {
     if (isFound) {
+      if (uiPreferences.hapticsEnabled) void hapticsPlateCleared();
       setDiscoveries((current) => {
         const next = { ...current };
         delete next[plate.id];
@@ -751,6 +777,30 @@ function App() {
 
     setActivePlateId(plate.id);
     const discovery = await createDiscovery();
+
+    // Detect newly earned badges before state updates
+    const prevEarnedIds = new Set(
+      evaluateBadges(plates, normalizedDiscoveries, activeGame.id)
+        .filter(b => b.earned).map(b => b.id)
+    );
+    const nextNormalized = { ...normalizedDiscoveries, [plate.id]: discovery };
+    const newBadges = evaluateBadges(plates, nextNormalized, activeGame.id)
+      .filter(b => b.earned && !prevEarnedIds.has(b.id));
+
+    if (uiPreferences.hapticsEnabled) {
+      if (newBadges.length > 0) {
+        void hapticsBadgeEarned();
+      } else {
+        void hapticsPlateFound();
+      }
+    }
+
+    for (const badge of newBadges) {
+      const toastId = `${badge.id}-${Date.now()}`;
+      setBadgeToasts(prev => [...prev, { id: toastId, name: badge.name }]);
+      setTimeout(() => setBadgeToasts(prev => prev.filter(t => t.id !== toastId)), 4000);
+    }
+
     setDiscoveries((current) => ({
       ...current,
       [plate.id]: discovery
@@ -790,6 +840,11 @@ function App() {
       .finally(() => {
         setActivePlateId((current) => (current === plate.id ? null : current));
       });
+  }
+
+  function handleAcknowledgeSafeUse() {
+    window.localStorage.setItem(SAFE_USE_ACKNOWLEDGED_STORAGE_KEY, "true");
+    setIsSafeUseAcknowledged(true);
   }
 
   function handleClearDiscoveries() {
@@ -1119,6 +1174,8 @@ function App() {
   }
 
   return (
+    <>
+    <div className="status-bar-cover" aria-hidden="true" />
     <div className="app-shell">
       {(() => {
         const abbr = stateRegistry.find(s => s.id === activeGame.id)?.abbreviation;
@@ -1573,7 +1630,8 @@ function App() {
         <SettingsPage
           onBack={navigateHome}
           theme={theme}
-          onThemeToggle={() => setTheme((c) => c === "light" ? "dark" : "light")}
+          resolvedTheme={resolvedTheme}
+          onThemeChange={setTheme}
           uiPreferences={uiPreferences}
           onToggleUiPreference={toggleUiPreference}
           onForceReload={handleForceReload}
@@ -1686,6 +1744,15 @@ function App() {
           {shareStatus}
         </div>
       ) : null}
+      {badgeToasts.length > 0 && (
+        <div className="badge-toast-stack">
+          {badgeToasts.map(t => (
+            <div key={t.id} className="badge-toast" role="status">
+              Badge earned: {t.name}
+            </div>
+          ))}
+        </div>
+      )}
       {isUpdateReady ? (
         <div className="update-banner" role="status">
           <span>A new version is ready.</span>
@@ -1699,6 +1766,27 @@ function App() {
         </div>
       ) : null}
     </div>
+    {!isSafeUseAcknowledged && (
+      <div className="safe-use-overlay" role="dialog" aria-modal="true" aria-labelledby="safe-use-title">
+        <div className="safe-use-dialog">
+          <h2 className="safe-use-dialog__title" id="safe-use-title">Before you play</h2>
+          <ul className="safe-use-dialog__list">
+            <li>Never use this app while driving.</li>
+            <li>Always comply with hands-free and distracted-driving laws in your area.</li>
+            <li>Use only when parked or as a passenger.</li>
+            <li>You are solely responsible for how and when this app is used.</li>
+          </ul>
+          <button
+            type="button"
+            className="safe-use-dialog__btn"
+            onClick={handleAcknowledgeSafeUse}
+          >
+            I understand — let's play
+          </button>
+        </div>
+      </div>
+    )}
+    </>
   );
 }
 

@@ -116,7 +116,7 @@ export const floridaGame: GameDefinition & {
     appName: "Every PL8",
     appShareName: "Every PL8",
     shareUrl: "https://gorillagrin.com/florida-plates-game/",
-    appTagline: "Florida Edition",
+    appTagline: "Every PL8 — Florida",
     headerImage: {
       type: "logo",
       path: "state-pl8-logo.png",

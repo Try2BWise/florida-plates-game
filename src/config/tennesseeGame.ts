@@ -72,7 +72,7 @@ export const tennesseeGame: GameDefinition & {
     appName: "Every PL8",
     appShareName: "Every PL8",
     shareUrl: "https://gorillagrin.com/florida-plates-game/",
-    appTagline: "Tennessee Edition",
+    appTagline: "Every PL8 — Tennessee",
     headerImage: { type: "logo", path: "state-pl8-logo.png", alt: "State PL8 logo" },
     attribution: {
       text: "Plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim.",

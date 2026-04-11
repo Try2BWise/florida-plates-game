@@ -93,7 +93,7 @@ export const arkansasGame: GameDefinition & {
     appName: "Every PL8",
     appShareName: "Every PL8",
     shareUrl: "https://gorillagrin.com/florida-plates-game/",
-    appTagline: "Arkansas Edition",
+    appTagline: "Every PL8 — Arkansas",
     headerImage: {
       type: "logo",
       path: "state-pl8-logo.png",

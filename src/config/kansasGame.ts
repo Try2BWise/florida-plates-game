@@ -96,7 +96,7 @@ export const kansasGame: GameDefinition & {
     appName: "Every PL8",
     appShareName: "Every PL8",
     shareUrl: "https://gorillagrin.com/florida-plates-game/",
-    appTagline: "Kansas Edition",
+    appTagline: "Every PL8 — Kansas",
     headerImage: {
       type: "logo",
       path: "state-pl8-logo.png",

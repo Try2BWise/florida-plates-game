@@ -2,13 +2,19 @@ import type { PlateDiscovery } from "../types";
 import { reverseGeocodePlace } from "./reverseGeocode";
 
 function getCurrentPosition(): Promise<GeolocationPosition> {
-  return new Promise((resolve, reject) => {
+  const nativePromise = new Promise<GeolocationPosition>((resolve, reject) => {
     navigator.geolocation.getCurrentPosition(resolve, reject, {
       enableHighAccuracy: true,
       timeout: 10000,
       maximumAge: 0
     });
   });
+  // Hard-timeout: if iOS blocks geolocation entirely (e.g. missing permission
+  // key in Info.plist), the native API may never call either callback.
+  const timeoutPromise = new Promise<never>((_, reject) =>
+    setTimeout(() => reject(new Error("Location timeout")), 12000)
+  );
+  return Promise.race([nativePromise, timeoutPromise]);
 }
 
 export async function createDiscovery(): Promise<PlateDiscovery> {
