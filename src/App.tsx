@@ -12,7 +12,8 @@ import {
   activeBadgeGroupLabels,
   activeBadgeGroupSymbols,
   activeMixedBagCategories,
-  activePanhandleScoutCounties
+  activePanhandleScoutCounties,
+  activeStorage
 } from "./games/activeGame";
 import { stateRegistry } from "./games/stateRegistry";
 import { PlateCard } from "./components/PlateCard";
@@ -1085,14 +1086,32 @@ function App() {
     });
   }
 
-  // Export discoveries as JSON file
+  // Export discoveries for ALL states as a single JSON file
   function handleExportProgress() {
-    const data = JSON.stringify(discoveries, null, 2);
+    const allDiscoveries: Record<string, unknown> = {};
+    for (const state of stateRegistry) {
+      try {
+        const raw = window.localStorage.getItem(`${state.id}-plates-discoveries`);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (parsed && typeof parsed === "object" && Object.keys(parsed).length > 0) {
+            allDiscoveries[state.id] = parsed;
+          }
+        }
+      } catch { /* skip corrupt entries */ }
+    }
+    const envelope = {
+      format: "every-pl8-multi-state",
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      states: allDiscoveries,
+    };
+    const data = JSON.stringify(envelope, null, 2);
     const blob = new Blob([data], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'florida-plates-progress.json';
+    a.download = 'every-pl8-progress.json';
     document.body.appendChild(a);
     a.click();
     setTimeout(() => {
@@ -1101,7 +1120,7 @@ function App() {
     }, 0);
   }
 
-  // Import discoveries from JSON file
+  // Import discoveries from JSON file (supports multi-state and legacy single-state formats)
   function handleImportProgress(event: React.ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0];
     if (!file) return;
@@ -1109,12 +1128,34 @@ function App() {
     reader.onload = (e) => {
       try {
         const imported = JSON.parse(e.target?.result as string);
-        if (imported && typeof imported === 'object') {
-          setDiscoveries(imported);
-          setTransientStatus('Progress imported!');
-        } else {
+        if (!imported || typeof imported !== 'object') {
           setTransientStatus('Invalid file format');
+          return;
         }
+
+        // Multi-state envelope format
+        if (imported.format === "every-pl8-multi-state" && imported.states && typeof imported.states === "object") {
+          let restoredCount = 0;
+          for (const [stateId, stateDiscoveries] of Object.entries(imported.states)) {
+            if (stateDiscoveries && typeof stateDiscoveries === "object") {
+              window.localStorage.setItem(`${stateId}-plates-discoveries`, JSON.stringify(stateDiscoveries));
+              restoredCount++;
+            }
+          }
+          // Reload the active state's discoveries into memory
+          const activeRaw = window.localStorage.getItem(activeStorage.discoveriesKey);
+          if (activeRaw) {
+            try {
+              setDiscoveries(JSON.parse(activeRaw));
+            } catch { /* keep current */ }
+          }
+          setTransientStatus(`Progress restored for ${restoredCount} state${restoredCount === 1 ? "" : "s"}!`);
+          return;
+        }
+
+        // Legacy single-state format (flat discovery map) — import into active state only
+        setDiscoveries(imported);
+        setTransientStatus('Progress imported!');
       } catch {
         setTransientStatus('Import failed');
       }
