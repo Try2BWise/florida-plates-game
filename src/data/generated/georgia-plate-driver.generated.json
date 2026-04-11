@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "generatedDate": "2026-04-11",
   "generatedFrom": "src/data/georgia-plate-master.json",
-  "plateCount": 288,
+  "plateCount": 287,
   "plates": [
     {
       "id": "ga-aka-atlanta-chapter",
@@ -63,7 +63,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic",
+      "category": "Standard",
       "image": {
         "path": "state-packs/georgia/plates/ga-alternative-fuel.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/AF_Large.jpg"
@@ -273,7 +273,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic",
+      "category": "Sports",
       "image": {
         "path": "state-packs/georgia/plates/ga-georgia-soccer-association.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/SJ_Large.jpg"
@@ -367,6 +367,27 @@
       "image": {
         "path": "state-packs/georgia/plates/ga-phi-beta-sigma.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/PE_Large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ga-rotary-internati",
+      "slug": "rotary-internati",
+      "name": "Rotary International",
+      "displayName": "Rotary International",
+      "baseName": "Rotary Internati",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-rotary-internati.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/RI_Large.jpg"
       },
       "sponsor": null,
       "notes": null,
@@ -503,8 +524,8 @@
     {
       "id": "ga-mpohv-multipurpose-off-highway-vehicle",
       "slug": "mpohv-multipurpose-off-highway-vehicle",
-      "name": "MPOHV (Multipurpose Off-Highway Vehicle)",
-      "displayName": "MPOHV (Multipurpose Off-Highway Vehicle)",
+      "name": "Off-Road Vehicle",
+      "displayName": "Off-Road Vehicle",
       "baseName": "MPOHV (Multipurpose Off-Highway Vehicle)",
       "variantLabel": null,
       "plateType": "passenger",
@@ -517,15 +538,17 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "mpohv"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ga-taxi",
       "slug": "taxi",
-      "name": "Taxi",
-      "displayName": "Taxi",
+      "name": "Taxi Cab",
+      "displayName": "Taxi Cab",
       "baseName": "Taxi",
       "variantLabel": null,
       "plateType": "passenger",
@@ -601,15 +624,22 @@
       },
       "sponsor": "Peace Officers’ Annuity and Benefit Fund",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "police",
+        "blue",
+        "line",
+        "thin",
+        "ribbon",
+        "black"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ga-certified-firefighters",
       "slug": "certified-firefighters",
-      "name": "Certified Firefighters",
-      "displayName": "Certified Firefighters",
+      "name": "Certified Firefighter",
+      "displayName": "Certified Firefighter",
       "baseName": "Certified Firefighters",
       "variantLabel": null,
       "plateType": "passenger",
@@ -622,36 +652,17 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ga-georgia-dnr-law-enforcement-plate",
-      "slug": "georgia-dnr-law-enforcement-plate",
-      "name": "Georgia DNR Law Enforcement Plate",
-      "displayName": "Georgia DNR Law Enforcement Plate",
-      "baseName": "Georgia DNR Law Enforcement Plate",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "First Responders",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-georgia-dnr-law-enforcement-plate.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/LR_Large.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "red"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ga-georgia-emergency-medical-technicians",
       "slug": "georgia-emergency-medical-technicians",
-      "name": "Georgia Emergency Medical Technicians",
-      "displayName": "Georgia Emergency Medical Technicians",
+      "name": "Emergency Medical Technicians",
+      "displayName": "Emergency Medical Technicians",
       "baseName": "Georgia Emergency Medical Technicians",
       "variantLabel": null,
       "plateType": "passenger",
@@ -664,15 +675,20 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "emt",
+        "ems",
+        "hospital",
+        "blue"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ga-public-safety-first-responder",
       "slug": "public-safety-first-responder",
-      "name": "Public Safety First Responder",
-      "displayName": "Public Safety First Responder",
+      "name": "Injured in the Line of Duty",
+      "displayName": "Injured in the Line of Duty",
       "baseName": "Public Safety First Responder",
       "variantLabel": null,
       "plateType": "passenger",
@@ -683,9 +699,39 @@
         "path": "state-packs/georgia/plates/ga-public-safety-first-responder.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/PA_Large.jpg"
       },
+      "sponsor": "Public Safety First Responder",
+      "notes": null,
+      "searchTerms": [
+        "yellow"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ga-georgia-dnr-law-enforcement-plate",
+      "slug": "georgia-dnr-law-enforcement-plate",
+      "name": "Support Georgia Game Warderns",
+      "displayName": "Support Georgia Game Warderns",
+      "baseName": "Georgia DNR Law Enforcement Plate",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-georgia-dnr-law-enforcement-plate.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/LR_Large.jpg"
+      },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "law",
+        "enforcement",
+        "pavement",
+        "nature",
+        "water",
+        "mountain"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -706,7 +752,10 @@
       },
       "sponsor": "Southeastern Firefighters Burn Foundation",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "yellow",
+        "gold"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -741,7 +790,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/georgia/plates/ga-hobby-antique.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/HA_Large.jpg"
@@ -762,7 +811,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Government",
+      "category": "Standard",
       "image": {
         "path": "state-packs/georgia/plates/ga-prestige.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/PR_Large.jpg"
@@ -774,42 +823,42 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-wildlife-1-bald-eagle",
-      "slug": "wildlife-1-bald-eagle",
-      "name": "Wildlife 1 - Bald Eagle",
-      "displayName": "Wildlife 1 - Bald Eagle",
-      "baseName": "Wildlife 1 - Bald Eagle",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Government",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-wildlife-1-bald-eagle.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/WL_Large.jpg"
-      },
-      "sponsor": "Georgia Non-game Wildlife Conservation/Habitat Acquisition",
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ga-breast-cancer-awareness",
-      "slug": "breast-cancer-awareness",
-      "name": "Breast Cancer Awareness",
-      "displayName": "Breast Cancer Awareness",
-      "baseName": "Breast Cancer Awareness",
+      "id": "ga-fight-against-cancer",
+      "slug": "fight-against-cancer",
+      "name": "All Together Stop Cancer",
+      "displayName": "All Together Stop Cancer",
+      "baseName": "Fight Against Cancer",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Health",
       "image": {
-        "path": "state-packs/georgia/plates/ga-breast-cancer-awareness.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/BC_Large.jpg"
+        "path": "state-packs/georgia/plates/ga-fight-against-cancer.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/C1_Large.jpg"
       },
-      "sponsor": "Breast Cancer services for medically indigent women",
+      "sponsor": "Georgia Center for Oncology Research and Education, Inc",
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ga-dog-and-cat-sterilization-animal-friend",
+      "slug": "dog-and-cat-sterilization-animal-friend",
+      "name": "Animal Friend",
+      "displayName": "Animal Friend",
+      "baseName": "Dog & Cat Sterilization - Animal Friend",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-dog-and-cat-sterilization-animal-friend.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/DC_Large.jpg"
+      },
+      "sponsor": "Dog & Cat Sterilization FundTreasury",
       "notes": null,
       "searchTerms": [],
       "variantOf": null,
@@ -837,94 +886,10 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-dog-and-cat-sterilization-animal-friend",
-      "slug": "dog-and-cat-sterilization-animal-friend",
-      "name": "Dog & Cat Sterilization - Animal Friend",
-      "displayName": "Dog & Cat Sterilization - Animal Friend",
-      "baseName": "Dog & Cat Sterilization - Animal Friend",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Health",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-dog-and-cat-sterilization-animal-friend.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/DC_Large.jpg"
-      },
-      "sponsor": "Dog & Cat Sterilization FundTreasury",
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ga-dog-and-cat-sterilization-b",
-      "slug": "dog-and-cat-sterilization-b",
-      "name": "Dog & Cat Sterilization - B",
-      "displayName": "Dog & Cat Sterilization - B",
-      "baseName": "Dog & Cat Sterilization - B",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Health",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-dog-and-cat-sterilization-b.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/GL_Large.jpg"
-      },
-      "sponsor": "Dept. of Agriculture, Dog & Cat Sterilization Fund",
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ga-dog-and-cat-sterilization-feline-friend",
-      "slug": "dog-and-cat-sterilization-feline-friend",
-      "name": "Dog & Cat Sterilization - Feline Friend",
-      "displayName": "Dog & Cat Sterilization - Feline Friend",
-      "baseName": "Dog & Cat Sterilization - Feline Friend",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Health",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-dog-and-cat-sterilization-feline-friend.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/CT_Large.jpg"
-      },
-      "sponsor": "Dept. of Agriculture, Dog & Cat Sterilization Fund",
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ga-fight-against-cancer",
-      "slug": "fight-against-cancer",
-      "name": "Fight Against Cancer",
-      "displayName": "Fight Against Cancer",
-      "baseName": "Fight Against Cancer",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Health",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-fight-against-cancer.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/C1_Large.jpg"
-      },
-      "sponsor": "Georgia Center for Oncology Research and Education, Inc",
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
       "id": "ga-georgia-prostate-cancer-coalition",
       "slug": "georgia-prostate-cancer-coalition",
-      "name": "Georgia Prostate Cancer Coalition",
-      "displayName": "Georgia Prostate Cancer Coalition",
+      "name": "Cure Prostate Cancer",
+      "displayName": "Cure Prostate Cancer",
       "baseName": "Georgia Prostate Cancer Coalition",
       "variantLabel": null,
       "plateType": "passenger",
@@ -937,10 +902,28 @@
       },
       "sponsor": "Georgia Prostate Cancer Coalition ($22.00)",
       "notes": null,
-      "searchTerms": [
-        "georgia prostate cancer coalition - new plates are no longer available",
-        "georgia prostate cancer coalition new plates are no longer available"
-      ],
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ga-breast-cancer-awareness",
+      "slug": "breast-cancer-awareness",
+      "name": "Fight Breast Cancer",
+      "displayName": "Fight Breast Cancer",
+      "baseName": "Breast Cancer Awareness",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-breast-cancer-awareness.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/BC_Large.jpg"
+      },
+      "sponsor": "Breast Cancer services for medically indigent women",
+      "notes": null,
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -961,10 +944,7 @@
       },
       "sponsor": "Grady Health Foundation",
       "notes": null,
-      "searchTerms": [
-        "grady health foundation - new plates are no longer available",
-        "grady health foundation new plates are no longer available"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -985,18 +965,15 @@
       },
       "sponsor": "The Joan Gaeta Lung Cancer Fund ($22.00)",
       "notes": null,
-      "searchTerms": [
-        "joan gaeta lung cancer fund - new plates are no longer available",
-        "joan gaeta lung cancer fund new plates are no longer available"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ga-joanna-tag-pediatric-cancer-research",
       "slug": "joanna-tag-pediatric-cancer-research",
-      "name": "Joanna Tag - Pediatric Cancer Research",
-      "displayName": "Joanna Tag - Pediatric Cancer Research",
+      "name": "Joanna McAfee Childhood Cancer Foundation",
+      "displayName": "Joanna McAfee Childhood Cancer Foundation",
       "baseName": "Joanna Tag - Pediatric Cancer Research",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1056,10 +1033,52 @@
       "relatedPlates": []
     },
     {
+      "id": "ga-dog-and-cat-sterilization-feline-friend",
+      "slug": "dog-and-cat-sterilization-feline-friend",
+      "name": "Spay & Neuter",
+      "displayName": "Spay & Neuter",
+      "baseName": "Dog & Cat Sterilization - Feline Friend",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-dog-and-cat-sterilization-feline-friend.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/CT_Large.jpg"
+      },
+      "sponsor": "Dept. of Agriculture, Dog & Cat Sterilization Fund",
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ga-dog-and-cat-sterilization-b",
+      "slug": "dog-and-cat-sterilization-b",
+      "name": "Spay and Neuter",
+      "displayName": "Spay and Neuter",
+      "baseName": "Dog & Cat Sterilization - B",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/georgia/plates/ga-dog-and-cat-sterilization-b.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/GL_Large.jpg"
+      },
+      "sponsor": "Dept. of Agriculture, Dog & Cat Sterilization Fund",
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
       "id": "ga-georgia-masonic-charities-foundation-inc",
       "slug": "georgia-masonic-charities-foundation-inc",
-      "name": "Georgia Masonic Charities Foundation Inc",
-      "displayName": "Georgia Masonic Charities Foundation Inc",
+      "name": "Freemason",
+      "displayName": "Freemason",
       "baseName": "Georgia Masonic Charities Foundation Inc",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1070,17 +1089,19 @@
         "path": "state-packs/georgia/plates/ga-georgia-masonic-charities-foundation-inc.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/GI_Large.jpg"
       },
-      "sponsor": "See below",
+      "sponsor": "Georgia Masonic Charities Foundation Inc",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "compass"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ga-historic-preservation-efforts-in-ga",
       "slug": "historic-preservation-efforts-in-ga",
-      "name": "Historic Preservation Efforts in GA",
-      "displayName": "Historic Preservation Efforts in GA",
+      "name": "Historic Preservation",
+      "displayName": "Historic Preservation",
       "baseName": "Historic Preservation Efforts in GA",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1093,15 +1114,22 @@
       },
       "sponsor": "Department of Community Affairs – Historic Preservation Division",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "red",
+        "blue",
+        "building",
+        "house",
+        "store",
+        "brick"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ga-prince-hall-grand-lodge",
       "slug": "prince-hall-grand-lodge",
-      "name": "Prince Hall Grand Lodge",
-      "displayName": "Prince Hall Grand Lodge",
+      "name": "Prince Hall",
+      "displayName": "Prince Hall",
       "baseName": "Prince Hall Grand Lodge",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1114,36 +1142,19 @@
       },
       "sponsor": "See below",
       "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "ga-rotary-internati",
-      "slug": "rotary-internati",
-      "name": "Rotary Internati",
-      "displayName": "Rotary Internati",
-      "baseName": "Rotary Internati",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Heritage",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-rotary-internati.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/RI_Large.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "grand",
+        "lodge",
+        "mason"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ga-tybee-island-historical-society",
       "slug": "tybee-island-historical-society",
-      "name": "Tybee Island Historical Society",
-      "displayName": "Tybee Island Historical Society",
+      "name": "Tybee Island Lighthouse",
+      "displayName": "Tybee Island Lighthouse",
       "baseName": "Tybee Island Historical Society",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1156,7 +1167,10 @@
       },
       "sponsor": "Tybee Island Historical Society",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "blue",
+        "green"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -2547,7 +2561,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military",
+      "category": "Wildlife & Nature",
       "image": {
         "path": "state-packs/georgia/plates/ga-marine-habitat.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/NR_Large.jpg"
@@ -3326,7 +3340,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military",
+      "category": "Government",
       "image": {
         "path": "state-packs/georgia/plates/ga-retired-legislators-emeritus.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/LE_Large.jpg"
@@ -3533,7 +3547,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military",
+      "category": "Heritage",
       "image": {
         "path": "state-packs/georgia/plates/ga-sons-of-confederate-veterans.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/CV_Large.jpg"
@@ -3554,7 +3568,7 @@
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Military",
+      "category": "Civic",
       "image": {
         "path": "state-packs/georgia/plates/ga-support-our-troops.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/OT_Large.jpg"
@@ -4203,9 +4217,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "allied veteran - motorcycle"
-      ],
+      "searchTerms": [],
       "variantOf": "ga-allied-veteran",
       "relatedPlates": []
     },
@@ -4226,9 +4238,7 @@
       },
       "sponsor": "$1 to County Tag Agent - $19 to State Treasury",
       "notes": null,
-      "searchTerms": [
-        "disabled person - motorcycle"
-      ],
+      "searchTerms": [],
       "variantOf": "ga-disabled-person-new-design",
       "relatedPlates": []
     },
@@ -4249,9 +4259,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "disabled veteran motorcycle - motorcycle"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -4272,9 +4280,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "hobby antique motorcycle - motorcycle"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -4295,9 +4301,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "meritorious service medal - motorcycle"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -4318,9 +4322,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "omega psi phi - motorcycle"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -4341,9 +4343,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "prestige - motorcycle"
-      ],
+      "searchTerms": [],
       "variantOf": "ga-prestige",
       "relatedPlates": []
     },
@@ -4364,10 +4364,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "purple heart - motorcycle",
-        "purple"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -4388,9 +4385,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "sigma gamma rho sorority inc - motorcycle"
-      ],
+      "searchTerms": [],
       "variantOf": "ga-sigma-gamma-rho-sorority-inc",
       "relatedPlates": []
     },
@@ -4411,9 +4406,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "standard - motorcycle"
-      ],
+      "searchTerms": [],
       "variantOf": "ga-standard",
       "relatedPlates": []
     },
@@ -4434,9 +4427,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "us coast guard reserve - motorcycle"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -4458,8 +4449,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "woman veteran",
-        "air force",
         "female"
       ],
       "variantOf": "ga-woman-veteran-air-force",
@@ -4483,8 +4472,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "woman veteran",
-        "army",
         "female"
       ],
       "variantOf": "ga-woman-veteran-army",
@@ -4508,8 +4495,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "woman veteran",
-        "coast guard",
         "female"
       ],
       "variantOf": "ga-woman-veteran-coast-guard",
@@ -4533,9 +4518,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "woman veteran",
-        "marine corps",
-        "marines",
         "female"
       ],
       "variantOf": "ga-woman-veteran-marine-corps",
@@ -4559,8 +4541,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "woman veteran",
-        "navy",
         "female"
       ],
       "variantOf": "ga-woman-veteran-navy",
@@ -4583,15 +4563,18 @@
       },
       "sponsor": "Georgia Foundation for Public Education",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "red",
+        "apple"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ga-atlanta-braves-foundation",
       "slug": "atlanta-braves-foundation",
-      "name": "Atlanta Braves Foundation",
-      "displayName": "Atlanta Braves Foundation",
+      "name": "Atlanta Braves",
+      "displayName": "Atlanta Braves",
       "baseName": "Atlanta Braves Foundation",
       "variantLabel": null,
       "plateType": "passenger",
@@ -4605,9 +4588,9 @@
       "sponsor": "$10 to the Atlanta Braves Foundation",
       "notes": null,
       "searchTerms": [
-        "braves",
         "baseball",
-        "mlb"
+        "mlb",
+        "red"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -4630,9 +4613,11 @@
       "sponsor": "$10 to the Atlanta Falcons Youth Foundation",
       "notes": null,
       "searchTerms": [
-        "falcons",
         "football",
-        "nfl"
+        "nfl",
+        "bird",
+        "red",
+        "vlack"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -4640,8 +4625,8 @@
     {
       "id": "ga-atlanta-hawks-foundation",
       "slug": "atlanta-hawks-foundation",
-      "name": "Atlanta Hawks Foundation",
-      "displayName": "Atlanta Hawks Foundation",
+      "name": "Atlanta Hawks",
+      "displayName": "Atlanta Hawks",
       "baseName": "Atlanta Hawks Foundation",
       "variantLabel": null,
       "plateType": "passenger",
@@ -4655,9 +4640,10 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "hawks",
         "basketball",
-        "nba"
+        "nba",
+        "red",
+        "bird"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -4680,7 +4666,6 @@
       "sponsor": "See below",
       "notes": null,
       "searchTerms": [
-        "atlanta united",
         "soccer",
         "mls"
       ],
@@ -4731,15 +4716,18 @@
       },
       "sponsor": "Georgia Tennis Foundation",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "blue",
+        "green"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ga-nascar-officially-licensed-registration-plate",
       "slug": "nascar-officially-licensed-registration-plate",
-      "name": "NASCAR Officially Licensed Registration Plate",
-      "displayName": "NASCAR Officially Licensed Registration Plate",
+      "name": "NASCAR",
+      "displayName": "NASCAR",
       "baseName": "NASCAR Officially Licensed Registration Plate",
       "variantLabel": null,
       "plateType": "passenger",
@@ -4753,7 +4741,6 @@
       "sponsor": "State Treasury, Governors Office of Highway Safety, and NASCAR",
       "notes": null,
       "searchTerms": [
-        "nascar",
         "racing",
         "motorsports"
       ],
@@ -4777,31 +4764,33 @@
       },
       "sponsor": "Georgia Automobile Racing Hall of Fame Association",
       "notes": null,
-      "searchTerms": [
-        "race car hall of fame - new plates are no longer available",
-        "race car hall of fame new plates are no longer available"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
     },
     {
       "id": "ga-share-the-road-bicycle-safety",
       "slug": "share-the-road-bicycle-safety",
-      "name": "Share the Road – Bicycle Safety",
-      "displayName": "Share the Road – Bicycle Safety",
+      "name": "Share the Road",
+      "displayName": "Share the Road",
       "baseName": "Share the Road – Bicycle Safety",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Sports",
+      "category": "Civic",
       "image": {
         "path": "state-packs/georgia/plates/ga-share-the-road-bicycle-safety.jpg",
         "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/RD_Large.jpg"
       },
       "sponsor": "Governor’s Highway Safety Program",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "bicycle",
+        "cycle",
+        "bicycling",
+        "cycling"
+      ],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -4854,8 +4843,8 @@
     {
       "id": "ga-standard-usa-semiquincentennial-america-250",
       "slug": "standard-usa-semiquincentennial-america-250",
-      "name": "Standard USA Semiquincentennial/America 250",
-      "displayName": "Standard USA Semiquincentennial/America 250",
+      "name": "USA Semiquincentennial / America 250",
+      "displayName": "USA Semiquincentennial / America 250",
       "baseName": "Standard USA Semiquincentennial/America 250",
       "variantLabel": null,
       "plateType": "passenger",
@@ -4869,7 +4858,12 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "peach"
+        "flag",
+        "red",
+        "white",
+        "blue",
+        "revolutionary",
+        "1776"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -4892,8 +4886,8 @@
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
       "searchTerms": [
-        "abraham baldwin agricultural college - new plates are no longer available",
-        "abraham baldwin agricultural college new plates are no longer available"
+        "green",
+        "horse"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -4901,8 +4895,8 @@
     {
       "id": "ga-alabama-a-and-m-university-plate",
       "slug": "alabama-a-and-m-university-plate",
-      "name": "Alabama A & M University Plate",
-      "displayName": "Alabama A & M University Plate",
+      "name": "Alabama A & M University",
+      "displayName": "Alabama A & M University",
       "baseName": "Alabama A & M University Plate",
       "variantLabel": null,
       "plateType": "passenger",
@@ -4922,8 +4916,8 @@
     {
       "id": "ga-alabama-state-university-plate",
       "slug": "alabama-state-university-plate",
-      "name": "Alabama State University Plate",
-      "displayName": "Alabama State University Plate",
+      "name": "Alabama State University",
+      "displayName": "Alabama State University",
       "baseName": "Alabama State University Plate",
       "variantLabel": null,
       "plateType": "passenger",
@@ -4978,10 +4972,7 @@
       },
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
-      "searchTerms": [
-        "armstrong atlantic state university - new plates are no longer available",
-        "armstrong atlantic state university new plates are no longer available"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": []
     },
@@ -6243,27 +6234,27 @@
       "relatedPlates": []
     },
     {
-      "id": "ga-wildlife-4-butterfly",
-      "slug": "wildlife-4-butterfly",
+      "id": "ga-wildlife-1-bald-eagle",
+      "slug": "wildlife-1-bald-eagle",
       "name": "Give Wildlife a Chance",
       "displayName": "Give Wildlife a Chance",
-      "baseName": "Wildlife 4 - Butterfly",
+      "baseName": "Wildlife 1 - Bald Eagle",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
       "category": "Wildlife & Nature",
       "image": {
-        "path": "state-packs/georgia/plates/ga-wildlife-4-butterfly.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/WD_Large.jpg"
+        "path": "state-packs/georgia/plates/ga-wildlife-1-bald-eagle.jpg",
+        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/WL_Large.jpg"
       },
       "sponsor": "Georgia Non-game Wildlife Conservation/Habitat Acquisition",
       "notes": null,
       "searchTerms": [
-        "butterfly",
-        "blue",
-        "orange",
-        "sky"
+        "bird",
+        "eagle",
+        "bald",
+        "blue"
       ],
       "variantOf": null,
       "relatedPlates": []
