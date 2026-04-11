@@ -6423,9 +6423,9 @@
     {
       "id": "ga-wildflower-1",
       "slug": "wildflower-1",
-      "name": "Wildflower 1",
-      "displayName": "Wildflower 1",
-      "baseName": "Wildflower 1",
+      "name": "Wildflower (Black-eyed Susan)",
+      "displayName": "Wildflower (Black-eyed Susan)",
+      "baseName": "Wildflower",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
@@ -6439,7 +6439,8 @@
       "notes": null,
       "searchTerms": [
         "flower",
-        "yellow"
+        "yellow",
+        "black-eyed susan"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -6447,9 +6448,9 @@
     {
       "id": "ga-wildflower-2-purple",
       "slug": "wildflower-2-purple",
-      "name": "Wildflower 2",
-      "displayName": "Wildflower 2",
-      "baseName": "Wildflower 2 - Purple",
+      "name": "Wildflower (Purple Coneflower)",
+      "displayName": "Wildflower (Purple Coneflower)",
+      "baseName": "Wildflower",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
@@ -6463,7 +6464,9 @@
       "notes": null,
       "searchTerms": [
         "purple",
-        "flower"
+        "flower",
+        "coneflower",
+        "echinacea"
       ],
       "variantOf": null,
       "relatedPlates": []
