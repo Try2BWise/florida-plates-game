@@ -91,9 +91,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "alternative fuel"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -292,9 +290,7 @@
       },
       "sponsor": "Georgia Nurses Foundation ($22.00 per plate sold)",
       "notes": null,
-      "searchTerms": [
-        "georgia nurses foundation"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -324,9 +320,7 @@
       },
       "sponsor": "Georgia PGA Foundation",
       "notes": null,
-      "searchTerms": [
-        "georgia pga foundation"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -357,7 +351,6 @@
       "sponsor": "GA Council on Substance Abuse, Inc., and the GA Mental Health Consumer Network, Inc",
       "notes": null,
       "searchTerms": [
-        "ga council on substance abuse",
         "heart"
       ],
       "variantOf": null,
@@ -389,9 +382,7 @@
       },
       "sponsor": "Georgia State Soccer Association",
       "notes": null,
-      "searchTerms": [
-        "georgia soccer association"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -457,9 +448,7 @@
       },
       "sponsor": "Southeastern Education and",
       "notes": null,
-      "searchTerms": [
-        "kappa alpha psi"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -489,10 +478,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "omega psi phi fraternity, inc.",
-        "omega psi phi fraternity inc"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -522,9 +508,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "phi beta sigma"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -554,9 +538,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "sigma gamma rho sorority inc"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -586,10 +568,7 @@
       },
       "sponsor": "Zeta National Education Foundation, Inc",
       "notes": null,
-      "searchTerms": [
-        "zeta phi beta sorority inc.",
-        "zeta phi beta sorority inc"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -619,9 +598,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "amateur radio"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -651,9 +628,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "hearse"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -683,9 +658,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "limousine"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -715,9 +688,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "low speed vehicle"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -747,10 +718,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "mpohv (multipurpose off-highway vehicle)",
-        "mpohv multipurpose off highway vehicle"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -780,9 +748,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "taxi"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -812,9 +778,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "trailer"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -845,7 +809,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "ambulance",
         "first responder",
         "public safety"
       ],
@@ -879,7 +842,6 @@
       "sponsor": "Peace Officers’ Annuity and Benefit Fund",
       "notes": null,
       "searchTerms": [
-        "back the badge",
         "first responder",
         "public safety"
       ],
@@ -913,7 +875,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "certified firefighters",
         "first responder",
         "public safety"
       ],
@@ -947,7 +908,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "georgia dnr law enforcement plate",
         "first responder",
         "public safety"
       ],
@@ -981,7 +941,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "georgia emergency medical technicians",
         "first responder",
         "public safety"
       ],
@@ -1015,7 +974,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "public safety first responder",
         "first responder",
         "public safety"
       ],
@@ -1049,7 +1007,6 @@
       "sponsor": "Southeastern Firefighters Burn Foundation",
       "notes": null,
       "searchTerms": [
-        "thank a lineman",
         "first responder",
         "public safety"
       ],
@@ -1082,10 +1039,7 @@
       },
       "sponsor": "$1 to County Tag Agent - $19 to State Treasury",
       "notes": null,
-      "searchTerms": [
-        "disabled person (new design)",
-        "disabled person new design"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1115,9 +1069,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "hobby antique"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1147,9 +1099,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "prestige"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1180,8 +1130,6 @@
       "sponsor": "Georgia Non-game Wildlife Conservation/Habitat Acquisition",
       "notes": null,
       "searchTerms": [
-        "wildlife 1 - bald eagle",
-        "wildlife 1 bald eagle",
         "nature",
         "wildlife"
       ],
@@ -1214,9 +1162,7 @@
       },
       "sponsor": "Breast Cancer services for medically indigent women",
       "notes": null,
-      "searchTerms": [
-        "breast cancer awareness"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1246,10 +1192,7 @@
       },
       "sponsor": "Children’s Healthcare of Atlanta",
       "notes": null,
-      "searchTerms": [
-        "children’s healthcare of atlanta",
-        "children s healthcare of atlanta"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1279,10 +1222,7 @@
       },
       "sponsor": "Dog & Cat Sterilization FundTreasury",
       "notes": null,
-      "searchTerms": [
-        "dog & cat sterilization - animal friend",
-        "dog cat sterilization animal friend"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1312,10 +1252,7 @@
       },
       "sponsor": "Dept. of Agriculture, Dog & Cat Sterilization Fund",
       "notes": null,
-      "searchTerms": [
-        "dog & cat sterilization - b",
-        "dog cat sterilization b"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1345,10 +1282,7 @@
       },
       "sponsor": "Dept. of Agriculture, Dog & Cat Sterilization Fund",
       "notes": null,
-      "searchTerms": [
-        "dog & cat sterilization - feline friend",
-        "dog cat sterilization feline friend"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1378,9 +1312,7 @@
       },
       "sponsor": "Georgia Center for Oncology Research and Education, Inc",
       "notes": null,
-      "searchTerms": [
-        "fight against cancer"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1509,10 +1441,7 @@
       },
       "sponsor": "Joanna McAfee Childhood Cancer Foundation",
       "notes": null,
-      "searchTerms": [
-        "joanna tag - pediatric cancer research",
-        "joanna tag pediatric cancer research"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1542,9 +1471,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "shepherd center"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1574,9 +1501,7 @@
       },
       "sponsor": "Sickle Cell Foundation of Georgia Inc",
       "notes": null,
-      "searchTerms": [
-        "sickle cell foundation"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1606,9 +1531,7 @@
       },
       "sponsor": "See below",
       "notes": null,
-      "searchTerms": [
-        "georgia masonic charities foundation inc"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1638,9 +1561,7 @@
       },
       "sponsor": "Department of Community Affairs – Historic Preservation Division",
       "notes": null,
-      "searchTerms": [
-        "historic preservation efforts in ga"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1670,9 +1591,7 @@
       },
       "sponsor": "See below",
       "notes": null,
-      "searchTerms": [
-        "prince hall grand lodge"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1702,9 +1621,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "rotary internati"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1734,9 +1651,7 @@
       },
       "sponsor": "Tybee Island Historical Society",
       "notes": null,
-      "searchTerms": [
-        "tybee island historical society"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1767,7 +1682,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "air force cross air force",
         "military",
         "veteran",
         "service"
@@ -1802,7 +1716,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "air medal air force",
         "military",
         "veteran",
         "service"
@@ -1837,7 +1750,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "air medal army",
         "military",
         "veteran",
         "service"
@@ -1872,7 +1784,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "air medal coast guard",
         "military",
         "veteran",
         "service"
@@ -1907,7 +1818,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "air medal marine",
         "military",
         "veteran",
         "service"
@@ -1942,7 +1852,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "air medal navy",
         "navy",
         "military",
         "veteran",
@@ -1978,7 +1887,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "allied veteran",
         "military",
         "veteran",
         "service"
@@ -2013,7 +1921,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "army ranger",
         "military",
         "veteran",
         "service"
@@ -2048,7 +1955,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "bronze star air force",
         "bronze",
         "military",
         "veteran",
@@ -2084,7 +1990,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "bronze star army",
         "bronze",
         "military",
         "veteran",
@@ -2120,7 +2025,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "bronze star coast guard",
         "bronze",
         "military",
         "veteran",
@@ -2156,7 +2060,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "bronze star marine",
         "bronze",
         "military",
         "veteran",
@@ -2192,7 +2095,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "bronze star navy",
         "bronze",
         "navy",
         "military",
@@ -2229,7 +2131,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "chosin reservoir campaign of 1950 in north korea",
         "military",
         "veteran",
         "service"
@@ -2264,7 +2165,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "defense distinguished service medal air force",
         "military",
         "veteran",
         "service"
@@ -2299,7 +2199,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "defense distinguished service medal army",
         "military",
         "veteran",
         "service"
@@ -2334,7 +2233,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "defense distinguished service medal coast guard",
         "military",
         "veteran",
         "service"
@@ -2369,7 +2267,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "defense distinguished service medal marine",
         "military",
         "veteran",
         "service"
@@ -2404,7 +2301,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "defense distinguished service medal navy",
         "navy",
         "military",
         "veteran",
@@ -2440,7 +2336,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "defense superior marine",
         "military",
         "veteran",
         "service"
@@ -2475,7 +2370,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "defense superior service medal air force",
         "military",
         "veteran",
         "service"
@@ -2510,7 +2404,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "defense superior service medal army",
         "military",
         "veteran",
         "service"
@@ -2545,7 +2438,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "defense superior service medal coast guard",
         "military",
         "veteran",
         "service"
@@ -2580,7 +2472,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "defense superior service navy",
         "navy",
         "military",
         "veteran",
@@ -2616,7 +2507,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "desert storm air force",
         "military",
         "veteran",
         "service"
@@ -2651,7 +2541,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "desert storm army",
         "military",
         "veteran",
         "service"
@@ -2686,7 +2575,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "desert storm coast guard",
         "military",
         "veteran",
         "service"
@@ -2721,7 +2609,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "desert storm navy",
         "navy",
         "military",
         "veteran",
@@ -2757,8 +2644,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "desert storm u.s. marine",
-        "desert storm u s marine",
         "military",
         "veteran",
         "service"
@@ -2793,7 +2678,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "disabled veteran",
         "military",
         "veteran",
         "service"
@@ -2828,7 +2712,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "distinguished flying cross air force",
         "military",
         "veteran",
         "service"
@@ -2863,7 +2746,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "distinguished flying cross army",
         "military",
         "veteran",
         "service"
@@ -2898,7 +2780,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "distinguished flying cross coast guard",
         "military",
         "veteran",
         "service"
@@ -2933,7 +2814,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "distinguished flying cross marine",
         "military",
         "veteran",
         "service"
@@ -2968,7 +2848,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "distinguished flying cross navy",
         "navy",
         "military",
         "veteran",
@@ -3004,7 +2883,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "distinguished service medal air force",
         "military",
         "veteran",
         "service"
@@ -3039,7 +2917,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "distinguished service medal coast guard",
         "military",
         "veteran",
         "service"
@@ -3074,7 +2951,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "distinguished service medal navy",
         "navy",
         "military",
         "veteran",
@@ -3110,7 +2986,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "distinquished service cross army",
         "military",
         "veteran",
         "service"
@@ -3145,8 +3020,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "distinquished service medal - us army",
-        "distinquished service medal us army",
         "military",
         "veteran",
         "service"
@@ -3181,7 +3054,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "former prisoner of war",
         "military",
         "veteran",
         "service"
@@ -3216,7 +3088,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "georgia state defense force",
         "military",
         "veteran",
         "service"
@@ -3251,7 +3122,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "georgia veterans plate",
         "military",
         "veteran",
         "service"
@@ -3286,7 +3156,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "global war on terrorism air force",
         "military",
         "veteran",
         "service"
@@ -3321,7 +3190,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "global war on terrorism army",
         "military",
         "veteran",
         "service"
@@ -3356,7 +3224,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "global war on terrorism coast guard",
         "military",
         "veteran",
         "service"
@@ -3391,7 +3258,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "global war on terrorism marine",
         "military",
         "veteran",
         "service"
@@ -3426,7 +3292,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "global war on terrorism navy",
         "navy",
         "military",
         "veteran",
@@ -3462,7 +3327,6 @@
       "sponsor": "N/A",
       "notes": null,
       "searchTerms": [
-        "gold star family",
         "gold",
         "military",
         "veteran",
@@ -3498,7 +3362,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "homeland security service medal air force",
         "military",
         "veteran",
         "service"
@@ -3533,7 +3396,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "homeland security service medal army",
         "military",
         "veteran",
         "service"
@@ -3568,7 +3430,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "homeland security service medal coast guard",
         "military",
         "veteran",
         "service"
@@ -3603,7 +3464,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "homeland security service medal marine",
         "military",
         "veteran",
         "service"
@@ -3638,7 +3498,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "homeland security service medal navy",
         "navy",
         "military",
         "veteran",
@@ -3674,7 +3533,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "korean war air force",
         "military",
         "veteran",
         "service"
@@ -3709,7 +3567,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "korean war army",
         "military",
         "veteran",
         "service"
@@ -3744,7 +3601,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "korean war coast guard",
         "military",
         "veteran",
         "service"
@@ -3779,7 +3635,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "korean war navy",
         "navy",
         "military",
         "veteran",
@@ -3815,8 +3670,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "korean war u.s. marine",
-        "korean war u s marine",
         "military",
         "veteran",
         "service"
@@ -3851,7 +3704,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "legion of merit air force",
         "military",
         "veteran",
         "service"
@@ -3886,7 +3738,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "legion of merit army",
         "military",
         "veteran",
         "service"
@@ -3921,7 +3772,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "legion of merit coast guard",
         "military",
         "veteran",
         "service"
@@ -3956,7 +3806,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "legion of merit marine",
         "military",
         "veteran",
         "service"
@@ -3991,7 +3840,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "legion of merit navy",
         "navy",
         "military",
         "veteran",
@@ -4027,7 +3875,6 @@
       "sponsor": "Coastal Resources Division of the Department of Natural Resources",
       "notes": null,
       "searchTerms": [
-        "marine habitat",
         "military",
         "veteran",
         "service"
@@ -4062,7 +3909,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "medal of honor air force",
         "military",
         "veteran",
         "service"
@@ -4097,7 +3943,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "medal of honor army",
         "military",
         "veteran",
         "service"
@@ -4132,7 +3977,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "medal of honor coast guard",
         "military",
         "veteran",
         "service"
@@ -4167,7 +4011,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "medal of honor marine",
         "military",
         "veteran",
         "service"
@@ -4202,7 +4045,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "medal of honor navy",
         "navy",
         "military",
         "veteran",
@@ -4238,7 +4080,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "meritorious service medal air force",
         "military",
         "veteran",
         "service"
@@ -4273,7 +4114,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "meritorious service medal army",
         "military",
         "veteran",
         "service"
@@ -4308,7 +4148,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "meritorious service medal coast guard",
         "military",
         "veteran",
         "service"
@@ -4343,7 +4182,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "meritorious service medal marine corps",
         "military",
         "veteran",
         "service"
@@ -4378,7 +4216,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "meritorious service medal navy",
         "navy",
         "military",
         "veteran",
@@ -4414,8 +4251,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "national guard - retired",
-        "national guard retired",
         "red",
         "military",
         "veteran",
@@ -4451,8 +4286,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "national guard (active or retired)",
-        "national guard active or retired",
         "red",
         "military",
         "veteran",
@@ -4488,7 +4321,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy cross",
         "navy",
         "military",
         "veteran",
@@ -4524,7 +4356,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy cross us coast guard",
         "navy",
         "military",
         "veteran",
@@ -4560,7 +4391,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "navy cross us marine corps",
         "navy",
         "military",
         "veteran",
@@ -4595,9 +4425,7 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [
-        "pearl harbor survivor"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -4628,7 +4456,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "purple heart air force",
         "purple",
         "military",
         "veteran",
@@ -4664,7 +4491,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "purple heart army",
         "purple",
         "military",
         "veteran",
@@ -4700,7 +4526,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "purple heart coast guard",
         "purple",
         "military",
         "veteran",
@@ -4736,7 +4561,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "purple heart marine",
         "purple",
         "military",
         "veteran",
@@ -4772,7 +4596,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "purple heart navy",
         "navy",
         "purple",
         "military",
@@ -4809,7 +4632,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "reserve air force",
         "military",
         "veteran",
         "service"
@@ -4844,8 +4666,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "reserve air force - retired",
-        "reserve air force retired",
         "red",
         "military",
         "veteran",
@@ -4881,7 +4701,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "reserve army",
         "military",
         "veteran",
         "service"
@@ -4916,8 +4735,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "reserve army - retired",
-        "reserve army retired",
         "red",
         "military",
         "veteran",
@@ -4953,7 +4770,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "reserve coast guard",
         "military",
         "veteran",
         "service"
@@ -4988,8 +4804,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "reserve coast guard - retired",
-        "reserve coast guard retired",
         "red",
         "military",
         "veteran",
@@ -5025,7 +4839,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "reserve marine",
         "military",
         "veteran",
         "service"
@@ -5060,8 +4873,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "reserve marine - retired",
-        "reserve marine retired",
         "red",
         "military",
         "veteran",
@@ -5097,7 +4908,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "reserve navy",
         "navy",
         "military",
         "veteran",
@@ -5133,8 +4943,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "reserve navy - retired",
-        "reserve navy retired",
         "navy",
         "red",
         "military",
@@ -5171,7 +4979,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "retired air force",
         "red",
         "military",
         "veteran",
@@ -5207,7 +5014,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "retired army",
         "red",
         "military",
         "veteran",
@@ -5243,7 +5049,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "retired coast guard",
         "red",
         "military",
         "veteran",
@@ -5279,8 +5084,6 @@
       "sponsor": "State of Georgia General Assembly",
       "notes": null,
       "searchTerms": [
-        "retired legislators (emeritus)",
-        "retired legislators emeritus",
         "red",
         "military",
         "veteran",
@@ -5316,7 +5119,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "retired marine",
         "red",
         "military",
         "veteran",
@@ -5352,7 +5154,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "retired navy",
         "navy",
         "red",
         "military",
@@ -5389,7 +5190,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "silver star air force",
         "silver",
         "military",
         "veteran",
@@ -5425,7 +5225,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "silver star army",
         "silver",
         "military",
         "veteran",
@@ -5461,7 +5260,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "silver star coast guard",
         "silver",
         "military",
         "veteran",
@@ -5497,7 +5295,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "silver star marine",
         "silver",
         "military",
         "veteran",
@@ -5533,7 +5330,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "silver star navy",
         "navy",
         "silver",
         "military",
@@ -5570,7 +5366,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "soldiers medal",
         "military",
         "veteran",
         "service"
@@ -5605,7 +5400,6 @@
       "sponsor": "Georgia Sons of Confederate Veterans",
       "notes": null,
       "searchTerms": [
-        "sons of confederate veterans",
         "military",
         "veteran",
         "service"
@@ -5640,7 +5434,6 @@
       "sponsor": "Support Our Troops, Inc",
       "notes": null,
       "searchTerms": [
-        "support our troops",
         "military",
         "veteran",
         "service"
@@ -5675,7 +5468,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "veteran air force",
         "military",
         "veteran",
         "service"
@@ -5710,7 +5502,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "veteran army",
         "military",
         "veteran",
         "service"
@@ -5745,7 +5536,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "veteran coast guard",
         "military",
         "veteran",
         "service"
@@ -5780,7 +5570,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "veteran marine",
         "military",
         "veteran",
         "service"
@@ -5815,7 +5604,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "veteran navy",
         "navy",
         "military",
         "veteran",
@@ -5851,7 +5639,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "vietnam air force",
         "military",
         "veteran",
         "service"
@@ -5886,7 +5673,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "vietnam army",
         "military",
         "veteran",
         "service"
@@ -5921,7 +5707,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "vietnam coast guard",
         "military",
         "veteran",
         "service"
@@ -5956,7 +5741,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "vietnam marine",
         "military",
         "veteran",
         "service"
@@ -5991,7 +5775,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "vietnam navy",
         "navy",
         "military",
         "veteran",
@@ -6027,7 +5810,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "war in afghanistan air force",
         "military",
         "veteran",
         "service"
@@ -6062,7 +5844,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "war in afghanistan army",
         "military",
         "veteran",
         "service"
@@ -6097,7 +5878,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "war in afghanistan coast guard",
         "military",
         "veteran",
         "service"
@@ -6132,7 +5912,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "war in afghanistan marine",
         "military",
         "veteran",
         "service"
@@ -6167,7 +5946,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "war in afghanistan navy",
         "navy",
         "military",
         "veteran",
@@ -6203,7 +5981,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "war in iraq air force",
         "military",
         "veteran",
         "service"
@@ -6238,7 +6015,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "war in iraq army",
         "military",
         "veteran",
         "service"
@@ -6273,7 +6049,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "war in iraq coast guard",
         "military",
         "veteran",
         "service"
@@ -6308,7 +6083,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "war in iraq marine",
         "military",
         "veteran",
         "service"
@@ -6343,7 +6117,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "war in iraq navy",
         "navy",
         "military",
         "veteran",
@@ -6379,7 +6152,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "woman veteran air force",
         "military",
         "veteran",
         "service"
@@ -6414,7 +6186,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "woman veteran army",
         "military",
         "veteran",
         "service"
@@ -6449,7 +6220,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "woman veteran coast guard",
         "military",
         "veteran",
         "service"
@@ -6484,7 +6254,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "woman veteran marine corps",
         "military",
         "veteran",
         "service"
@@ -6519,7 +6288,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "woman veteran navy",
         "navy",
         "military",
         "veteran",
@@ -6555,7 +6323,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "world war ii army",
         "military",
         "veteran",
         "service"
@@ -6590,7 +6357,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "world war ii coast guard",
         "military",
         "veteran",
         "service"
@@ -6625,7 +6391,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "world war ii marine",
         "military",
         "veteran",
         "service"
@@ -6660,7 +6425,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "world war ii navy",
         "navy",
         "military",
         "veteran",
@@ -6696,10 +6460,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "allied veteran (motorcycle)",
-        "allied veteran",
         "allied veteran - motorcycle",
-        "allied veteran motorcycle",
         "motorcycle",
         "bike"
       ],
@@ -6734,9 +6495,6 @@
       "notes": null,
       "searchTerms": [
         "disabled person - motorcycle",
-        "disabled person",
-        "disabled person (motorcycle)",
-        "disabled person motorcycle",
         "motorcycle",
         "bike"
       ],
@@ -6771,9 +6529,6 @@
       "notes": null,
       "searchTerms": [
         "disabled veteran motorcycle - motorcycle",
-        "disabled veteran motorcycle (motorcycle)",
-        "disabled veteran motorcycle",
-        "disabled veteran motorcycle motorcycle",
         "motorcycle",
         "bike"
       ],
@@ -6808,9 +6563,6 @@
       "notes": null,
       "searchTerms": [
         "hobby antique motorcycle - motorcycle",
-        "hobby antique motorcycle (motorcycle)",
-        "hobby antique motorcycle",
-        "hobby antique motorcycle motorcycle",
         "motorcycle",
         "bike"
       ],
@@ -6845,9 +6597,6 @@
       "notes": null,
       "searchTerms": [
         "meritorious service medal - motorcycle",
-        "meritorious service medal",
-        "meritorious service medal (motorcycle)",
-        "meritorious service medal motorcycle",
         "motorcycle",
         "bike"
       ],
@@ -6881,10 +6630,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "omega psi phi",
         "omega psi phi - motorcycle",
-        "omega psi phi (motorcycle)",
-        "omega psi phi motorcycle",
         "motorcycle",
         "bike"
       ],
@@ -6918,10 +6664,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "prestige (motorcycle)",
-        "prestige",
         "prestige - motorcycle",
-        "prestige motorcycle",
         "motorcycle",
         "bike"
       ],
@@ -6956,9 +6699,6 @@
       "notes": null,
       "searchTerms": [
         "purple heart - motorcycle",
-        "purple heart (motorcycle)",
-        "purple heart",
-        "purple heart motorcycle",
         "purple",
         "motorcycle",
         "bike"
@@ -6993,10 +6733,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "sigma gamma rho sorority inc",
         "sigma gamma rho sorority inc - motorcycle",
-        "sigma gamma rho sorority inc (motorcycle)",
-        "sigma gamma rho sorority inc motorcycle",
         "motorcycle",
         "bike"
       ],
@@ -7031,9 +6768,6 @@
       "notes": null,
       "searchTerms": [
         "standard - motorcycle",
-        "standard",
-        "standard (motorcycle)",
-        "standard motorcycle",
         "motorcycle",
         "bike"
       ],
@@ -7067,10 +6801,7 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "us coast guard reserve (motorcycle)",
-        "us coast guard reserve",
         "us coast guard reserve - motorcycle",
-        "us coast guard reserve motorcycle",
         "motorcycle",
         "bike"
       ],
@@ -7284,9 +7015,7 @@
       },
       "sponsor": "Georgia Foundation for Public Education",
       "notes": null,
-      "searchTerms": [
-        "honor educators"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -7317,7 +7046,6 @@
       "sponsor": "$10 to the Atlanta Braves Foundation",
       "notes": null,
       "searchTerms": [
-        "atlanta braves foundation",
         "braves",
         "baseball",
         "mlb",
@@ -7354,7 +7082,6 @@
       "sponsor": "$10 to the Atlanta Falcons Youth Foundation",
       "notes": null,
       "searchTerms": [
-        "atlanta falcons",
         "falcons",
         "football",
         "nfl",
@@ -7391,7 +7118,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "atlanta hawks foundation",
         "hawks",
         "basketball",
         "nba",
@@ -7428,7 +7154,6 @@
       "sponsor": "See below",
       "notes": null,
       "searchTerms": [
-        "atlanta united soccer",
         "atlanta united",
         "soccer",
         "mls",
@@ -7500,9 +7225,7 @@
       },
       "sponsor": "Georgia Tennis Foundation",
       "notes": null,
-      "searchTerms": [
-        "georgia tennis foundation"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -7533,7 +7256,6 @@
       "sponsor": "State Treasury, Governors Office of Highway Safety, and NASCAR",
       "notes": null,
       "searchTerms": [
-        "nascar officially licensed registration plate",
         "nascar",
         "racing",
         "motorsports",
@@ -7602,10 +7324,7 @@
       },
       "sponsor": "Governor’s Highway Safety Program",
       "notes": null,
-      "searchTerms": [
-        "share the road – bicycle safety",
-        "share the road bicycle safety"
-      ],
+      "searchTerms": [],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -7636,7 +7355,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "standard",
         "peach",
         "passenger"
       ],
@@ -7670,7 +7388,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "standard alternate",
         "peach",
         "standard",
         "passenger"
@@ -7705,8 +7422,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "standard usa semiquincentennial/america 250",
-        "standard usa semiquincentennial america 250",
         "peach",
         "standard",
         "passenger"
@@ -7777,8 +7492,6 @@
       "sponsor": "Alabama A&M University Alumni Association, Inc",
       "notes": null,
       "searchTerms": [
-        "alabama a & m university plate",
-        "alabama a m university plate",
         "college",
         "university",
         "alumni"
@@ -7813,7 +7526,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "alabama state university plate",
         "college",
         "university",
         "alumni"
@@ -7848,7 +7560,6 @@
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
       "searchTerms": [
-        "albany state university",
         "college",
         "university",
         "alumni"
@@ -7919,7 +7630,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "atlanta clemson club",
         "college",
         "university",
         "alumni"
@@ -7954,7 +7664,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "atlanta gator club",
         "college",
         "university",
         "alumni"
@@ -7989,8 +7698,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "atlanta ole miss alumni association - university of mississippi",
-        "atlanta ole miss alumni association university of mississippi",
         "college",
         "university",
         "alumni"
@@ -8060,7 +7767,6 @@
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
       "searchTerms": [
-        "augusta university",
         "augusta",
         "jaguars",
         "college",
@@ -8097,7 +7803,6 @@
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
       "searchTerms": [
-        "berry college",
         "college",
         "university",
         "alumni"
@@ -8168,7 +7873,6 @@
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
       "searchTerms": [
-        "clark atlanta university",
         "clark atlanta",
         "panthers",
         "college",
@@ -8241,7 +7945,6 @@
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
       "searchTerms": [
-        "emory university",
         "emory",
         "eagles",
         "college",
@@ -8278,8 +7981,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "florida a & m university alumni",
-        "florida a m university alumni",
         "college",
         "university",
         "alumni"
@@ -8314,8 +8015,6 @@
       "sponsor": "See below",
       "notes": null,
       "searchTerms": [
-        "florida state university-atlanta seminole club",
-        "florida state university atlanta seminole club",
         "college",
         "university",
         "alumni"
@@ -8350,7 +8049,6 @@
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
       "searchTerms": [
-        "fort valley state university",
         "fort valley state",
         "wildcats",
         "college",
@@ -8423,7 +8121,6 @@
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
       "searchTerms": [
-        "georgia southern university",
         "georgia southern",
         "eagles",
         "college",
@@ -8460,8 +8157,6 @@
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
       "searchTerms": [
-        "georgia state university (new design)",
-        "georgia state university new design",
         "georgia state",
         "panthers",
         "college",
@@ -8498,8 +8193,6 @@
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
       "searchTerms": [
-        "georgia institute of technology",
-        "georgia tech",
         "gt",
         "yellow jackets",
         "yellowjackets"
@@ -8570,7 +8263,6 @@
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
       "searchTerms": [
-        "kennesaw state university",
         "kennesaw state",
         "owls",
         "college",
@@ -8679,8 +8371,6 @@
       "sponsor": "State of Georgia Treasury",
       "notes": null,
       "searchTerms": [
-        "lsu alumni association - atlanta chapter",
-        "lsu alumni association atlanta chapter",
         "college",
         "university",
         "alumni"
@@ -8715,7 +8405,6 @@
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
       "searchTerms": [
-        "mercer university",
         "mercer",
         "bears",
         "college",
@@ -8752,7 +8441,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "michigan state university",
         "michigan state",
         "spartans",
         "college",
@@ -8824,7 +8512,6 @@
       "sponsor": "Scholarship funds for enrolled undergraduate students",
       "notes": null,
       "searchTerms": [
-        "morehouse",
         "maroon tigers",
         "college",
         "university",
@@ -9713,7 +9400,6 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "georgia state parks plate",
         "tent",
         "red",
         "blue",
