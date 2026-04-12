@@ -1,4 +1,4 @@
-export const plateCategories = [
+export const statePackCategories = [
   "Civic",
   "Commercial",
   "First Responders",
@@ -13,6 +13,21 @@ export const plateCategories = [
   "Universities",
   "Wildlife & Nature"
 ] as const;
+
+export const fiftyStatesCategories = [
+  "New England",
+  "Middle Atlantic",
+  "East North Central",
+  "West North Central",
+  "South Atlantic",
+  "East South Central",
+  "West South Central",
+  "Mountain",
+  "Pacific",
+  "Territories"
+] as const;
+
+export const plateCategories = [...statePackCategories, ...fiftyStatesCategories] as const;
 
 export type PlateCategory = (typeof plateCategories)[number];
 

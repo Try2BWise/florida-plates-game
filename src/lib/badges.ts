@@ -91,6 +91,24 @@ const honorAndMedalPlateNames = [
 ];
 
 import { activeBadgeCounties, activeMixedBagCategories, activePanhandleScoutCounties } from "../games/activeGame";
+// ── 50 States plate ID sets ──
+const lower48Ids = new Set([
+  "a250-alabama", "a250-arizona", "a250-arkansas", "a250-california", "a250-colorado",
+  "a250-connecticut", "a250-delaware", "a250-florida", "a250-georgia", "a250-idaho",
+  "a250-illinois", "a250-indiana", "a250-iowa", "a250-kansas", "a250-kentucky",
+  "a250-louisiana", "a250-maine", "a250-maryland", "a250-massachusetts", "a250-michigan",
+  "a250-minnesota", "a250-mississippi", "a250-missouri", "a250-montana", "a250-nebraska",
+  "a250-nevada", "a250-new-hampshire", "a250-new-jersey", "a250-new-mexico", "a250-new-york",
+  "a250-north-carolina", "a250-north-dakota", "a250-ohio", "a250-oklahoma", "a250-oregon",
+  "a250-pennsylvania", "a250-rhode-island", "a250-south-carolina", "a250-south-dakota",
+  "a250-tennessee", "a250-texas", "a250-utah", "a250-vermont", "a250-virginia",
+  "a250-washington", "a250-west-virginia", "a250-wisconsin", "a250-wyoming"
+]);
+const all50StateIds = new Set([...lower48Ids, "a250-alaska", "a250-hawaii"]);
+const territoryIds = [
+  "a250-puerto-rico", "a250-us-virgin-islands", "a250-guam",
+  "a250-american-samoa", "a250-northern-mariana-islands"
+];
 
 const allBranchesPlateNames = [
   "U.S. Army",
@@ -874,6 +892,114 @@ export const badgeDefinitions: BadgeDefinition[] = [
     description: "Earn every regional explorer badge.",
     group: "florida",
     availableIn: "v1.4"
+  },
+  // ── 50 States badges ──
+  // Region Spotter badges (Census divisions)
+  {
+    id: "new-england-spotter",
+    name: "New England Spotter",
+    description: "Spot a plate from every New England state (CT, ME, MA, NH, RI, VT).",
+    group: "locality",
+    availableIn: "v1.4"
+  },
+  {
+    id: "middle-atlantic-spotter",
+    name: "Middle Atlantic Spotter",
+    description: "Spot a plate from every Middle Atlantic state (NJ, NY, PA).",
+    group: "locality",
+    availableIn: "v1.4"
+  },
+  {
+    id: "east-north-central-spotter",
+    name: "East North Central Spotter",
+    description: "Spot a plate from every East North Central state (IL, IN, MI, OH, WI).",
+    group: "locality",
+    availableIn: "v1.4"
+  },
+  {
+    id: "west-north-central-spotter",
+    name: "West North Central Spotter",
+    description: "Spot a plate from every West North Central state (IA, KS, MN, MO, NE, ND, SD).",
+    group: "locality",
+    availableIn: "v1.4"
+  },
+  {
+    id: "south-atlantic-spotter",
+    name: "South Atlantic Spotter",
+    description: "Spot a plate from every South Atlantic state (DE, DC, FL, GA, MD, NC, SC, VA, WV).",
+    group: "locality",
+    availableIn: "v1.4"
+  },
+  {
+    id: "east-south-central-spotter",
+    name: "East South Central Spotter",
+    description: "Spot a plate from every East South Central state (AL, KY, MS, TN).",
+    group: "locality",
+    availableIn: "v1.4"
+  },
+  {
+    id: "west-south-central-spotter",
+    name: "West South Central Spotter",
+    description: "Spot a plate from every West South Central state (AR, LA, OK, TX).",
+    group: "locality",
+    availableIn: "v1.4"
+  },
+  {
+    id: "mountain-spotter",
+    name: "Mountain Spotter",
+    description: "Spot a plate from every Mountain state (AZ, CO, ID, MT, NV, NM, UT, WY).",
+    group: "locality",
+    availableIn: "v1.4"
+  },
+  {
+    id: "pacific-spotter",
+    name: "Pacific Spotter",
+    description: "Spot a plate from every Pacific state (AK, CA, HI, OR, WA).",
+    group: "locality",
+    availableIn: "v1.4"
+  },
+  // Special milestones
+  {
+    id: "north-to-alaska",
+    name: "North to Alaska",
+    description: "Spot an Alaska plate.",
+    group: "collection",
+    availableIn: "v1.4"
+  },
+  {
+    id: "aloha",
+    name: "Aloha",
+    description: "Spot a Hawaii plate.",
+    group: "collection",
+    availableIn: "v1.4"
+  },
+  {
+    id: "no-taxation-without-representation",
+    name: "No Taxation Without Representation",
+    description: "Spot a District of Columbia plate.",
+    group: "collection",
+    availableIn: "v1.4"
+  },
+  {
+    id: "lower-48",
+    name: "Lower 48",
+    description: "Spot a plate from all 48 contiguous states.",
+    group: "collection",
+    availableIn: "v1.4"
+  },
+  {
+    id: "happy-250th",
+    name: "Happy 250th!",
+    description: "Spot a plate from all 50 states.",
+    group: "collection",
+    availableIn: "v1.4"
+  },
+  {
+    id: "island-hopper",
+    name: "Island Hopper",
+    description: "Spot a plate from every US territory (PR, USVI, GU, AS, CNMI).",
+    group: "collection",
+    availableIn: "v1.4"
   }
 ];
 
@@ -1168,14 +1294,14 @@ export function evaluateBadges(
     kentucky: "all-around-kentucky",
     kansas: "all-around-kansas",
   };
-  const allAroundId = allAroundIdMap[stateId] ?? `all-around-${stateId}`;
+  const allAroundId = allAroundIdMap[stateId];
   const allRegionBadgesEarned = regionBadgeEntries.every(([, badge]) => badge.earned);
-  const allAroundBadge = {
+  const allAroundBadge = allAroundId ? {
     ...getBadgeDefinition(definitionsById, allAroundId),
     earned: allRegionBadgesEarned,
     progressCurrent: regionBadgeEntries.filter(([, badge]) => badge.earned).length,
     progressTarget: regionBadgeEntries.length
-  };
+  } : null;
 
   const lookup = new Map<string, EvaluatedBadge>([
     ["first-spot", createThresholdBadge(getBadgeDefinition(definitionsById, "first-spot"), totalFound, 1)],
@@ -1408,8 +1534,57 @@ export function evaluateBadges(
     ["road-trip", createThresholdBadge(getBadgeDefinition(definitionsById, "road-trip"), uniqueLocalities, 10)],
     ["panhandle-scout", createThresholdBadge(getBadgeDefinition(definitionsById, "panhandle-scout"), panhandleCount, 1)],
     ...regionBadgeEntries,
-    [allAroundId, allAroundBadge],
+    ...(allAroundId && allAroundBadge ? [[allAroundId, allAroundBadge] as [string, EvaluatedBadge]] : []),
   ]);
+
+  // ── 50 States pack badges ──
+  if (stateId === "fifty-states") {
+    // Region Spotter badges — earned when ALL plates in a Census division are found
+    const divisionBadgeMap: [string, string][] = [
+      ["new-england-spotter", "New England"],
+      ["middle-atlantic-spotter", "Middle Atlantic"],
+      ["east-north-central-spotter", "East North Central"],
+      ["west-north-central-spotter", "West North Central"],
+      ["south-atlantic-spotter", "South Atlantic"],
+      ["east-south-central-spotter", "East South Central"],
+      ["west-south-central-spotter", "West South Central"],
+      ["mountain-spotter", "Mountain"],
+      ["pacific-spotter", "Pacific"],
+    ];
+    for (const [badgeId, category] of divisionBadgeMap) {
+      const total = plates.filter(p => p.category === category).length;
+      const found = countFoundInCategory(plates, discoveries, category as PlateCategory);
+      lookup.set(badgeId, createThresholdBadge(getBadgeDefinition(definitionsById, badgeId), found, total));
+    }
+
+    // Special milestone badges
+    const foundIds = new Set(Object.keys(discoveries));
+    const lower48Found = [...lower48Ids].filter(id => foundIds.has(id)).length;
+    const all50Found = [...all50StateIds].filter(id => foundIds.has(id)).length;
+    const territoriesFound = territoryIds.filter(id => foundIds.has(id)).length;
+
+    lookup.set("north-to-alaska", createThresholdBadge(
+      getBadgeDefinition(definitionsById, "north-to-alaska"),
+      foundIds.has("a250-alaska") ? 1 : 0, 1
+    ));
+    lookup.set("aloha", createThresholdBadge(
+      getBadgeDefinition(definitionsById, "aloha"),
+      foundIds.has("a250-hawaii") ? 1 : 0, 1
+    ));
+    lookup.set("no-taxation-without-representation", createThresholdBadge(
+      getBadgeDefinition(definitionsById, "no-taxation-without-representation"),
+      foundIds.has("a250-district-of-columbia") ? 1 : 0, 1
+    ));
+    lookup.set("lower-48", createThresholdBadge(
+      getBadgeDefinition(definitionsById, "lower-48"), lower48Found, 48
+    ));
+    lookup.set("happy-250th", createThresholdBadge(
+      getBadgeDefinition(definitionsById, "happy-250th"), all50Found, 50
+    ));
+    lookup.set("island-hopper", createThresholdBadge(
+      getBadgeDefinition(definitionsById, "island-hopper"), territoriesFound, territoryIds.length
+    ));
+  }
 
   const allEvaluated = badgeDefinitions.map((definition) => lookup.get(definition.id) ?? { ...definition, earned: false });
 
@@ -1475,6 +1650,13 @@ export function evaluateBadges(
       "ky-bluegrass-explorer", "ky-eastern-mountain-explorer", "ky-knobs-explorer",
       "ky-pennyrile-explorer", "ky-jackson-purchase-explorer", "ky-western-coalfields-explorer",
       "all-around-kentucky",
+    ]),
+    "fifty-states": new Set([
+      "new-england-spotter", "middle-atlantic-spotter", "east-north-central-spotter",
+      "west-north-central-spotter", "south-atlantic-spotter", "east-south-central-spotter",
+      "west-south-central-spotter", "mountain-spotter", "pacific-spotter",
+      "north-to-alaska", "aloha", "no-taxation-without-representation",
+      "lower-48", "happy-250th", "island-hopper",
     ]),
   };
   const activeBadgeIds = stateBadgeMap[stateId] || emptyBadgeIds;

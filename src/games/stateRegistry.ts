@@ -7,6 +7,7 @@ export interface StatePackMeta {
 }
 
 export const stateRegistry: StatePackMeta[] = [
+  { id: "fifty-states", name: "50 States", abbreviation: "US", tagline: "Celebrating 250 Years", available: true },
   { id: "alabama", name: "Alabama", abbreviation: "AL", tagline: "The Yellowhammer State", available: true },
   { id: "arkansas", name: "Arkansas", abbreviation: "AR", tagline: "The Natural State", available: true },
   { id: "florida", name: "Florida", abbreviation: "FL", tagline: "The Sunshine State", available: true },

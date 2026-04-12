@@ -88,7 +88,17 @@ import {
   kentuckyMixedBagCategories,
   kentuckyRegionScoutCounties
 } from "../config/kentuckyGame";
-import { plateCategories, type Plate, type PlateCategory } from "../types";
+import fiftyStatesDriverData from "../data/generated/fifty-states-plate-driver.generated.json";
+import fiftyStatesLegacyIdMap from "../data/generated/fifty-states-legacy-id-map.generated.json";
+import {
+  fiftyStatesBadgeCounties,
+  fiftyStatesBadgeGroupLabels,
+  fiftyStatesBadgeGroupSymbols,
+  fiftyStatesGame,
+  fiftyStatesMixedBagCategories,
+  fiftyStatesRegionScoutCounties
+} from "../config/fiftyStatesGame";
+import { plateCategories, statePackCategories, fiftyStatesCategories, type Plate, type PlateCategory } from "../types";
 
 /* ── State selection persistence ── */
 
@@ -124,8 +134,8 @@ function buildPlates(driverData: { plates: Array<{ category: string } & Record<s
   })) as Plate[];
 }
 
-function buildGroupedPlates(plates: Plate[]) {
-  return plateCategories
+function buildGroupedPlates(plates: Plate[], categories: readonly PlateCategory[] = statePackCategories) {
+  return categories
     .map((category) => ({
       category,
       plates: plates.filter((plate) => plate.category === category)
@@ -269,8 +279,24 @@ function loadKentuckyPack() {
   };
 }
 
+function loadFiftyStatesPack() {
+  const plates = buildPlates(fiftyStatesDriverData);
+  return {
+    game: fiftyStatesGame,
+    badgeCounties: fiftyStatesBadgeCounties,
+    badgeGroupLabels: fiftyStatesBadgeGroupLabels,
+    badgeGroupSymbols: fiftyStatesBadgeGroupSymbols,
+    mixedBagCategories: fiftyStatesMixedBagCategories,
+    panhandleScoutCounties: fiftyStatesRegionScoutCounties,
+    legacyIdMap: fiftyStatesLegacyIdMap as Record<string, string>,
+    plates,
+    groupedPlates: buildGroupedPlates(plates, fiftyStatesCategories),
+  };
+}
+
 function loadStatePack(stateId: string) {
   switch (stateId) {
+    case "fifty-states": return loadFiftyStatesPack();
     case "mississippi": return loadMississippiPack();
     case "arkansas": return loadArkansasPack();
     case "missouri": return loadMissouriPack();
