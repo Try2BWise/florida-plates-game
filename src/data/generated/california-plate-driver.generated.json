@@ -1,0 +1,1181 @@
+{
+  "schemaVersion": 2,
+  "generatedDate": "2026-04-12",
+  "generatedFrom": "src/data/california-plate-master.json",
+  "plateCount": 44,
+  "plates": [
+    {
+      "id": "ca-standard",
+      "slug": "standard",
+      "name": "Standard",
+      "displayName": "Standard",
+      "baseName": "Standard",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/california/plates/ca-standard.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Current base plate design (pass-1)",
+      "searchTerms": [
+        "standard",
+        "base",
+        "default"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-arts-council",
+      "slug": "arts-council",
+      "name": "Arts Council",
+      "displayName": "Arts Council",
+      "baseName": "Arts Council",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/california/plates/ca-arts-council.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": "California Arts Council",
+      "notes": null,
+      "searchTerms": [
+        "arts",
+        "council",
+        "culture"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-breast-cancer",
+      "slug": "breast-cancer",
+      "name": "Breast Cancer Awareness",
+      "displayName": "Breast Cancer Awareness",
+      "baseName": "Breast Cancer Awareness",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/california/plates/ca-breast-cancer.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "breast",
+        "cancer",
+        "pink ribbon"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-breast-cancer-mc",
+      "slug": "breast-cancer-mc",
+      "name": "Breast Cancer Awareness (Motorcycle)",
+      "displayName": "Breast Cancer Awareness (Motorcycle)",
+      "baseName": "Breast Cancer Awareness",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-breast-cancer-mc.png",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "breast",
+        "cancer",
+        "pink ribbon",
+        "motorcycle"
+      ],
+      "variantOf": "ca-breast-cancer",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-1960s-legacy",
+      "slug": "1960s-legacy",
+      "name": "California 1960s Legacy",
+      "displayName": "California 1960s Legacy",
+      "baseName": "California 1960s Legacy",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/california/plates/ca-1960s-legacy.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "1960s",
+        "legacy",
+        "retro",
+        "black plate"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-1960s-legacy-mc",
+      "slug": "1960s-legacy-mc",
+      "name": "California 1960s Legacy (Motorcycle)",
+      "displayName": "California 1960s Legacy (Motorcycle)",
+      "baseName": "California 1960s Legacy",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-1960s-legacy-mc.png",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "1960s",
+        "legacy",
+        "retro",
+        "black plate",
+        "motorcycle"
+      ],
+      "variantOf": "ca-1960s-legacy",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-cal-ag",
+      "slug": "cal-ag",
+      "name": "California Agriculture",
+      "displayName": "California Agriculture",
+      "baseName": "California Agriculture",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/california/plates/ca-cal-ag.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": "CalAg",
+      "notes": null,
+      "searchTerms": [
+        "cal",
+        "ag",
+        "agriculture",
+        "farming",
+        "calag"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-cal-ag-mc",
+      "slug": "cal-ag-mc",
+      "name": "California Agriculture (Motorcycle)",
+      "displayName": "California Agriculture (Motorcycle)",
+      "baseName": "California Agriculture",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-cal-ag-mc.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": "CalAg",
+      "notes": null,
+      "searchTerms": [
+        "cal",
+        "ag",
+        "agriculture",
+        "farming",
+        "calag",
+        "motorcycle"
+      ],
+      "variantOf": "ca-cal-ag",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-snoopy-museums",
+      "slug": "snoopy-museums",
+      "name": "California Museums (Snoopy)",
+      "displayName": "California Museums (Snoopy)",
+      "baseName": "California Museums (Snoopy)",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/california/plates/ca-snoopy-museums.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": "California Association of Museums",
+      "notes": null,
+      "searchTerms": [
+        "snoopy",
+        "museums",
+        "peanuts",
+        "charles schulz"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-snoopy-museums-mc",
+      "slug": "snoopy-museums-mc",
+      "name": "California Museums (Snoopy) (Motorcycle)",
+      "displayName": "California Museums (Snoopy) (Motorcycle)",
+      "baseName": "California Museums (Snoopy)",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-snoopy-museums-mc.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": "California Association of Museums",
+      "notes": null,
+      "searchTerms": [
+        "snoopy",
+        "museums",
+        "peanuts",
+        "charles schulz",
+        "motorcycle"
+      ],
+      "variantOf": "ca-snoopy-museums",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-collegiate-ucla",
+      "slug": "collegiate-ucla",
+      "name": "Collegiate (UCLA)",
+      "displayName": "Collegiate (UCLA)",
+      "baseName": "Collegiate (UCLA)",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/california/plates/ca-collegiate-ucla.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": "UCLA",
+      "notes": null,
+      "searchTerms": [
+        "collegiate",
+        "ucla",
+        "bruins",
+        "university"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-environmental",
+      "slug": "environmental",
+      "name": "Environmental",
+      "displayName": "Environmental",
+      "baseName": "Environmental",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/california/plates/ca-environmental.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "environmental",
+        "elp",
+        "environment",
+        "whale",
+        "sunset"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-environmental-mc",
+      "slug": "environmental-mc",
+      "name": "Environmental (Motorcycle)",
+      "displayName": "Environmental (Motorcycle)",
+      "baseName": "Environmental",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-environmental-mc.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "environmental",
+        "elp",
+        "environment",
+        "whale",
+        "sunset",
+        "motorcycle"
+      ],
+      "variantOf": "ca-environmental",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-firefighters",
+      "slug": "firefighters",
+      "name": "Firefighters",
+      "displayName": "Firefighters",
+      "baseName": "Firefighters",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/california/plates/ca-firefighters.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "firefighters",
+        "fire",
+        "firefighter"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-firefighters-mc",
+      "slug": "firefighters-mc",
+      "name": "Firefighters (Motorcycle)",
+      "displayName": "Firefighters (Motorcycle)",
+      "baseName": "Firefighters",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-firefighters-mc.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "firefighters",
+        "fire",
+        "firefighter",
+        "motorcycle"
+      ],
+      "variantOf": "ca-firefighters",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-kids-heart",
+      "slug": "kids-heart",
+      "name": "Have A Heart, Be A Star, Help Our KIDS",
+      "displayName": "Have A Heart, Be A Star, Help Our KIDS",
+      "baseName": "Have A Heart, Be A Star, Help Our KIDS",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/california/plates/ca-kids-heart.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "kids",
+        "heart",
+        "children",
+        "star"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-kids-heart-mc",
+      "slug": "kids-heart-mc",
+      "name": "Have A Heart, Be A Star, Help Our KIDS (Motorcycle)",
+      "displayName": "Have A Heart, Be A Star, Help Our KIDS (Motorcycle)",
+      "baseName": "Have A Heart, Be A Star, Help Our KIDS",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-kids-heart-mc.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "kids",
+        "heart",
+        "children",
+        "star",
+        "motorcycle"
+      ],
+      "variantOf": "ca-kids-heart",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-lake-tahoe",
+      "slug": "lake-tahoe",
+      "name": "Lake Tahoe Conservancy",
+      "displayName": "Lake Tahoe Conservancy",
+      "baseName": "Lake Tahoe Conservancy",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/california/plates/ca-lake-tahoe.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": "Lake Tahoe Conservancy",
+      "notes": null,
+      "searchTerms": [
+        "lake",
+        "tahoe",
+        "conservation"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-lake-tahoe-mc",
+      "slug": "lake-tahoe-mc",
+      "name": "Lake Tahoe Conservancy (Motorcycle)",
+      "displayName": "Lake Tahoe Conservancy (Motorcycle)",
+      "baseName": "Lake Tahoe Conservancy",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-lake-tahoe-mc.gif",
+        "remoteUrl": null
+      },
+      "sponsor": "Lake Tahoe Conservancy",
+      "notes": null,
+      "searchTerms": [
+        "lake",
+        "tahoe",
+        "conservation",
+        "motorcycle"
+      ],
+      "variantOf": "ca-lake-tahoe",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-memorial",
+      "slug": "memorial",
+      "name": "Memorial",
+      "displayName": "Memorial",
+      "baseName": "Memorial",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/california/plates/ca-memorial.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "memorial",
+        "remembrance"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-memorial-mc",
+      "slug": "memorial-mc",
+      "name": "Memorial (Motorcycle)",
+      "displayName": "Memorial (Motorcycle)",
+      "baseName": "Memorial",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-memorial-mc.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "memorial",
+        "remembrance",
+        "motorcycle"
+      ],
+      "variantOf": "ca-memorial",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-pet-lovers",
+      "slug": "pet-lovers",
+      "name": "Pet Lovers",
+      "displayName": "Pet Lovers",
+      "baseName": "Pet Lovers",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/california/plates/ca-pet-lovers.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "pet",
+        "lovers",
+        "pets",
+        "animals",
+        "dogs",
+        "cats",
+        "spay",
+        "neuter"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-pet-lovers-mc",
+      "slug": "pet-lovers-mc",
+      "name": "Pet Lovers (Motorcycle)",
+      "displayName": "Pet Lovers (Motorcycle)",
+      "baseName": "Pet Lovers",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-pet-lovers-mc.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "pet",
+        "lovers",
+        "pets",
+        "animals",
+        "dogs",
+        "cats",
+        "spay",
+        "neuter",
+        "motorcycle"
+      ],
+      "variantOf": "ca-pet-lovers",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-veterans-org",
+      "slug": "veterans-org",
+      "name": "Veterans' Organizations",
+      "displayName": "Veterans' Organizations",
+      "baseName": "Veterans' Organizations",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/california/plates/ca-veterans-org.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veterans",
+        "org",
+        "military",
+        "vet"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-veterans-org-mc",
+      "slug": "veterans-org-mc",
+      "name": "Veterans' Organizations (Motorcycle)",
+      "displayName": "Veterans' Organizations (Motorcycle)",
+      "baseName": "Veterans' Organizations",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-veterans-org-mc.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veterans",
+        "org",
+        "military",
+        "vet",
+        "motorcycle"
+      ],
+      "variantOf": "ca-veterans-org",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-whale-tail",
+      "slug": "whale-tail",
+      "name": "Whale Tail",
+      "displayName": "Whale Tail",
+      "baseName": "Whale Tail",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/california/plates/ca-whale-tail.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": "Coastal Protection",
+      "notes": null,
+      "searchTerms": [
+        "whale",
+        "tail",
+        "coastal",
+        "ocean",
+        "whale tail"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-whale-tail-mc",
+      "slug": "whale-tail-mc",
+      "name": "Whale Tail (Motorcycle)",
+      "displayName": "Whale Tail (Motorcycle)",
+      "baseName": "Whale Tail",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-whale-tail-mc.gif",
+        "remoteUrl": null
+      },
+      "sponsor": "Coastal Protection",
+      "notes": null,
+      "searchTerms": [
+        "whale",
+        "tail",
+        "coastal",
+        "ocean",
+        "whale tail",
+        "motorcycle"
+      ],
+      "variantOf": "ca-whale-tail",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-yosemite",
+      "slug": "yosemite",
+      "name": "Yosemite Conservancy",
+      "displayName": "Yosemite Conservancy",
+      "baseName": "Yosemite Conservancy",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/california/plates/ca-yosemite.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": "Yosemite Conservancy",
+      "notes": null,
+      "searchTerms": [
+        "yosemite",
+        "national park",
+        "half dome"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-yosemite-mc",
+      "slug": "yosemite-mc",
+      "name": "Yosemite Conservancy (Motorcycle)",
+      "displayName": "Yosemite Conservancy (Motorcycle)",
+      "baseName": "Yosemite Conservancy",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-yosemite-mc.gif",
+        "remoteUrl": null
+      },
+      "sponsor": "Yosemite Conservancy",
+      "notes": null,
+      "searchTerms": [
+        "yosemite",
+        "national park",
+        "half dome",
+        "motorcycle"
+      ],
+      "variantOf": "ca-yosemite",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-amateur-radio",
+      "slug": "amateur-radio",
+      "name": "Amateur Radio",
+      "displayName": "Amateur Radio",
+      "baseName": "Amateur Radio",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/california/plates/ca-amateur-radio.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "amateur",
+        "radio",
+        "ham radio",
+        "call sign",
+        "ham"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-bill-of-rights",
+      "slug": "bill-of-rights",
+      "name": "Bicentennial Bill of Rights",
+      "displayName": "Bicentennial Bill of Rights",
+      "baseName": "Bicentennial Bill of Rights",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/california/plates/ca-bill-of-rights.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Bicentennial commemorative",
+      "searchTerms": [
+        "bill",
+        "of",
+        "rights",
+        "bill of rights",
+        "bicentennial",
+        "constitution"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-disabled-person",
+      "slug": "disabled-person",
+      "name": "Disabled Person",
+      "displayName": "Disabled Person",
+      "baseName": "Disabled Person",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-disabled-person.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "disabled",
+        "person",
+        "handicap",
+        "accessibility"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-disabled-veteran",
+      "slug": "disabled-veteran",
+      "name": "Disabled Veteran",
+      "displayName": "Disabled Veteran",
+      "baseName": "Disabled Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/california/plates/ca-disabled-veteran.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "disabled",
+        "veteran",
+        "disabled veteran",
+        "dv"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-historic-vehicle",
+      "slug": "historic-vehicle",
+      "name": "Historical Vehicle",
+      "displayName": "Historical Vehicle",
+      "baseName": "Historical Vehicle",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/california/plates/ca-historic-vehicle.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "historic",
+        "vehicle",
+        "antique",
+        "classic car"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-horseless-carriage",
+      "slug": "horseless-carriage",
+      "name": "Horseless Carriage",
+      "displayName": "Horseless Carriage",
+      "baseName": "Horseless Carriage",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/california/plates/ca-horseless-carriage.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "horseless",
+        "carriage",
+        "horseless carriage",
+        "antique",
+        "pre-1936"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-olympic-1984",
+      "slug": "olympic-1984",
+      "name": "Olympic Games 1984",
+      "displayName": "Olympic Games 1984",
+      "baseName": "Olympic Games 1984",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/california/plates/ca-olympic-1984.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "1984 Los Angeles Olympics commemorative",
+      "searchTerms": [
+        "olympic",
+        "1984",
+        "olympics",
+        "los angeles",
+        "la"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-olympic-1984-mc",
+      "slug": "olympic-1984-mc",
+      "name": "Olympic Games 1984 (Motorcycle)",
+      "displayName": "Olympic Games 1984 (Motorcycle)",
+      "baseName": "Olympic Games 1984",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-olympic-1984-mc.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "1984 Los Angeles Olympics commemorative",
+      "searchTerms": [
+        "olympic",
+        "1984",
+        "olympics",
+        "los angeles",
+        "la",
+        "motorcycle"
+      ],
+      "variantOf": "ca-olympic-1984",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-medal-of-honor",
+      "slug": "medal-of-honor",
+      "name": "Congressional Medal of Honor",
+      "displayName": "Congressional Medal of Honor",
+      "baseName": "Congressional Medal of Honor",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/california/plates/ca-medal-of-honor.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "medal",
+        "of",
+        "honor",
+        "medal of honor",
+        "cmoh",
+        "congressional"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-gold-star-family",
+      "slug": "gold-star-family",
+      "name": "Gold Star Family",
+      "displayName": "Gold Star Family",
+      "baseName": "Gold Star Family",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/california/plates/ca-gold-star-family.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "gold",
+        "star",
+        "family",
+        "gold star",
+        "fallen hero"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-ex-prisoner-of-war",
+      "slug": "ex-prisoner-of-war",
+      "name": "Ex-Prisoner of War",
+      "displayName": "Ex-Prisoner of War",
+      "baseName": "Ex-Prisoner of War",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/california/plates/ca-ex-prisoner-of-war.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ex",
+        "prisoner",
+        "of",
+        "war",
+        "pow",
+        "prisoner of war"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-legion-of-valor",
+      "slug": "legion-of-valor",
+      "name": "Legion of Valor",
+      "displayName": "Legion of Valor",
+      "baseName": "Legion of Valor",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/california/plates/ca-legion-of-valor.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "legion",
+        "of",
+        "valor",
+        "legion of valor"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-pearl-harbor-survivor",
+      "slug": "pearl-harbor-survivor",
+      "name": "Pearl Harbor Survivor",
+      "displayName": "Pearl Harbor Survivor",
+      "baseName": "Pearl Harbor Survivor",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/california/plates/ca-pearl-harbor-survivor.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "pearl",
+        "harbor",
+        "survivor",
+        "pearl harbor",
+        "wwii"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-purple-heart",
+      "slug": "purple-heart",
+      "name": "Purple Heart",
+      "displayName": "Purple Heart",
+      "baseName": "Purple Heart",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/california/plates/ca-purple-heart.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "purple",
+        "heart",
+        "purple heart",
+        "wounded",
+        "combat"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-purple-heart-mc",
+      "slug": "purple-heart-mc",
+      "name": "Purple Heart (Motorcycle)",
+      "displayName": "Purple Heart (Motorcycle)",
+      "baseName": "Purple Heart",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-purple-heart-mc.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "purple",
+        "heart",
+        "purple heart",
+        "wounded",
+        "combat",
+        "motorcycle"
+      ],
+      "variantOf": "ca-purple-heart",
+      "relatedPlates": []
+    }
+  ]
+}

@@ -718,6 +718,135 @@ export const badgeDefinitions: BadgeDefinition[] = [
     group: "florida",
     availableIn: "v1.4"
   },
+  // Alaska Explorer region badges (geographic/economic regions)
+  {
+    id: "ak-southcentral-explorer",
+    name: "Southcentral Alaska Explorer",
+    description: "Find a plate in the Southcentral region (Anchorage, Kenai, Mat-Su).",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ak-southeast-explorer",
+    name: "Southeast Alaska Explorer",
+    description: "Find a plate in the Southeast region (Inside Passage).",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ak-interior-explorer",
+    name: "Interior Alaska Explorer",
+    description: "Find a plate in the Interior region (Fairbanks, Denali).",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ak-southwest-explorer",
+    name: "Southwest Alaska Explorer",
+    description: "Find a plate in the Southwest region (Kodiak, Bristol Bay, Aleutians).",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ak-arctic-explorer",
+    name: "Arctic Alaska Explorer",
+    description: "Find a plate in the Arctic region (North Slope, Northwest Arctic).",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-alaska",
+    name: "All Around Alaska",
+    description: "Earn every regional explorer badge.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  // Arizona Explorer region badges (based on COGs)
+  {
+    id: "az-central-explorer",
+    name: "Central Arizona Explorer",
+    description: "Find a plate in the Central Arizona region (Phoenix metro).",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "az-southern-explorer",
+    name: "Southern Arizona Explorer",
+    description: "Find a plate in the Southern Arizona region (Tucson, border).",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "az-northern-explorer",
+    name: "Northern Arizona Explorer",
+    description: "Find a plate in the Northern Arizona region (Flagstaff, Sedona).",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "az-western-explorer",
+    name: "Western Arizona Explorer",
+    description: "Find a plate in the Western Arizona region (Yuma, Havasu).",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "az-eastern-explorer",
+    name: "Eastern Arizona Explorer",
+    description: "Find a plate in the Eastern Arizona region (Gila, Graham).",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-arizona",
+    name: "All Around Arizona",
+    description: "Earn every regional explorer badge.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  // California Explorer region badges (Caltrans-derived)
+  {
+    id: "ca-socal-explorer",
+    name: "SoCal Explorer",
+    description: "Find a plate in the Southern California region.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ca-central-explorer",
+    name: "Central California Explorer",
+    description: "Find a plate in the Central Coast & Valley region.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ca-bay-area-explorer",
+    name: "Bay Area Explorer",
+    description: "Find a plate in the Bay Area & Northern Coast region.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ca-sacramento-explorer",
+    name: "Sacramento & Gold Country Explorer",
+    description: "Find a plate in the Sacramento & Gold Country region.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ca-far-north-explorer",
+    name: "Far North Explorer",
+    description: "Find a plate in the Far North region (Shasta, Redding).",
+    group: "florida",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-california",
+    name: "All Around California",
+    description: "Earn every regional explorer badge.",
+    group: "florida",
+    availableIn: "v1.4"
+  },
   // Georgia Explorer region badges (derived from GA Regional Commissions)
   {
     id: "ga-north-georgia-explorer",
@@ -1159,6 +1288,9 @@ export function evaluateBadges(
   // "All Around" badge: earned if all region badges are earned
   const allAroundIdMap: Record<string, string> = {
     alabama: "all-around-alabama",
+    alaska: "all-around-alaska",
+    arizona: "all-around-arizona",
+    california: "all-around-california",
     florida: "all-around-florida",
     georgia: "all-around-georgia",
     mississippi: "all-around-mississippi",
@@ -1460,6 +1592,21 @@ export function evaluateBadges(
       "al-north-alabama-explorer", "al-central-alabama-explorer", "al-west-alabama-explorer",
       "al-southeast-alabama-explorer", "al-gulf-coast-explorer",
       "all-around-alabama",
+    ]),
+    alaska: new Set([
+      "ak-southcentral-explorer", "ak-southeast-explorer", "ak-interior-explorer",
+      "ak-southwest-explorer", "ak-arctic-explorer",
+      "all-around-alaska",
+    ]),
+    arizona: new Set([
+      "az-central-explorer", "az-southern-explorer", "az-northern-explorer",
+      "az-western-explorer", "az-eastern-explorer",
+      "all-around-arizona",
+    ]),
+    california: new Set([
+      "ca-socal-explorer", "ca-central-explorer", "ca-bay-area-explorer",
+      "ca-sacramento-explorer", "ca-far-north-explorer",
+      "all-around-california",
     ]),
     georgia: new Set([
       "ga-north-georgia-explorer", "ga-metro-atlanta-explorer", "ga-central-georgia-explorer",

@@ -5,16 +5,24 @@ import { dirname, join, relative, resolve } from "node:path";
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const publicDir = join(repoRoot, "public");
-const platesDir = join(publicDir, "plates");
+const statePacksDir = join(publicDir, "state-packs");
 const badgesDir = join(publicDir, "badges");
-const iconSvgPath = join(publicDir, "app-icon.svg");
+const iconSourcePath = join(publicDir, "app-icon-source.png");
 const plateAssetsJsonPath = join(publicDir, "plate-assets.json");
 const badgeAssetsJsonPath = join(publicDir, "badge-assets.json");
 
-const plateAssets = readdirSync(platesDir)
-  .filter((fileName) => /\.(png|jpg)$/i.test(fileName))
-  .sort((left, right) => left.localeCompare(right))
-  .map((fileName) => `plates/${fileName}`);
+// Collect plate assets from all state-packs/*/plates/ directories
+const plateAssets = [];
+for (const stateDir of readdirSync(statePacksDir).sort()) {
+  const platesDir = join(statePacksDir, stateDir, "plates");
+  try {
+    for (const fileName of readdirSync(platesDir).sort()) {
+      if (/\.(png|jpg|gif)$/i.test(fileName)) {
+        plateAssets.push(`state-packs/${stateDir}/plates/${fileName}`);
+      }
+    }
+  } catch { /* no plates dir for this state */ }
+}
 
 const badgeAssets = readdirSync(badgesDir)
   .filter((fileName) => /\.(png|jpg)$/i.test(fileName))
@@ -24,7 +32,6 @@ const badgeAssets = readdirSync(badgesDir)
 writeFileSync(plateAssetsJsonPath, `${JSON.stringify(plateAssets, null, 2)}\n`);
 writeFileSync(badgeAssetsJsonPath, `${JSON.stringify(badgeAssets, null, 2)}\n`);
 
-const svgSource = readFileSync(iconSvgPath, "utf8");
 const iconTargets = [
   { fileName: "apple-touch-icon.png", size: 180 },
   { fileName: "pwa-192.png", size: 192 },
@@ -37,16 +44,13 @@ try {
     execFileSync(
       "magick",
       [
-        "svg:-",
-        "-background",
-        "none",
+        iconSourcePath,
         "-resize",
         `${target.size}x${target.size}`,
         outputPath
       ],
       {
-        input: svgSource,
-        stdio: ["pipe", "ignore", "ignore"]
+        stdio: ["ignore", "ignore", "ignore"]
       }
     );
   }

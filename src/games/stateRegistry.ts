@@ -8,7 +8,10 @@ export interface StatePackMeta {
 
 export const stateRegistry: StatePackMeta[] = [
   { id: "alabama", name: "Alabama", abbreviation: "AL", tagline: "The Yellowhammer State", available: true },
+  { id: "alaska", name: "Alaska", abbreviation: "AK", tagline: "The Last Frontier", available: true },
+  { id: "arizona", name: "Arizona", abbreviation: "AZ", tagline: "The Grand Canyon State", available: true },
   { id: "arkansas", name: "Arkansas", abbreviation: "AR", tagline: "The Natural State", available: true },
+  { id: "california", name: "California", abbreviation: "CA", tagline: "The Golden State", available: true },
   { id: "florida", name: "Florida", abbreviation: "FL", tagline: "The Sunshine State", available: true },
   { id: "georgia", name: "Georgia", abbreviation: "GA", tagline: "The Peach State", available: true },
   { id: "kansas", name: "Kansas", abbreviation: "KS", tagline: "The Sunflower State", available: true },

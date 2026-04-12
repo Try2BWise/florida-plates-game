@@ -1,0 +1,4469 @@
+{
+  "schemaVersion": 2,
+  "state": "Arizona",
+  "generatedDate": "2026-04-12",
+  "description": "Arizona plate master — sourced from azmvdnow.gov",
+  "sourceFiles": [
+    "https://azmvdnow.gov/plates"
+  ],
+  "plates": [
+    {
+      "id": "az-4az-kids",
+      "slug": "4az-kids",
+      "name": "4AZ Kids",
+      "displayName": "4AZ Kids",
+      "baseName": "4AZ Kids",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-4az-kids.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/4AZKids.jpg"
+      },
+      "sponsor": "Saguaros Childrens Charities Inc",
+      "notes": "$17 goes to support more than 30 local children’s charities across Arizona that provide critical care, education, and enrichment programs statewide.",
+      "searchTerms": [
+        "4az",
+        "kids"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "4AZKids.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-character-education",
+      "slug": "character-education",
+      "name": "A State of Good Character",
+      "displayName": "A State of Good Character",
+      "baseName": "Character Education",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-character-education.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/CharacterEducation.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "character",
+        "education"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "CharacterEducation.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-alice-cooper-solid-rock",
+      "slug": "alice-cooper-solid-rock",
+      "name": "Alice Cooper Solid Rock",
+      "displayName": "Alice Cooper Solid Rock",
+      "baseName": "Alice Cooper Solid Rock",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-alice-cooper-solid-rock.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/AliceCooperSolidRock.jpg"
+      },
+      "sponsor": "Solid Rock Teen Centers",
+      "notes": "$17 goes to provide a safe space for ALL teens ages 12-20 to spend their time, receive positive mentorship and FREE music, art, dance, photography and recording studio lessons and opportunities.",
+      "searchTerms": [
+        "alice",
+        "cooper",
+        "solid",
+        "rock"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "AliceCooperSolidRock.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-science-center",
+      "slug": "arizona-science-center",
+      "name": "Arizona Science Center",
+      "displayName": "Arizona Science Center",
+      "baseName": "Arizona Science Center",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-science-center.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaScienceCenter.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "arizona",
+        "science",
+        "center"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaScienceCenter.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-youth-charities",
+      "slug": "arizona-youth-charities",
+      "name": "Arizona Youth Charities",
+      "displayName": "Arizona Youth Charities",
+      "baseName": "Arizona Youth Charities",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-youth-charities.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaYouthCharities.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "arizona",
+        "youth",
+        "charities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaYouthCharities.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-boy-scoutsof-arizona",
+      "slug": "boy-scoutsof-arizona",
+      "name": "Boy Scouts of America",
+      "displayName": "Boy Scouts of America",
+      "baseName": "Boy Scoutsof Arizona",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-boy-scoutsof-arizona.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/BoyScoutsofArizona.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "boy",
+        "scoutsof",
+        "arizona"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "BoyScoutsofArizona.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-choose-life",
+      "slug": "choose-life",
+      "name": "Choose Life",
+      "displayName": "Choose Life",
+      "baseName": "Choose Life",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-choose-life.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ChooseLife.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "choose",
+        "life"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ChooseLife.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-empowering-charitable-organizations",
+      "slug": "empowering-charitable-organizations",
+      "name": "Empower",
+      "displayName": "Empower",
+      "baseName": "Empowering Charitable Organizations",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-empowering-charitable-organizations.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/EmpoweringCharitableOrganizations.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "empowering",
+        "charitable",
+        "organizations"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "EmpoweringCharitableOrganizations.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona4h",
+      "slug": "arizona4h",
+      "name": "Empowering Today's Youth - 4-H",
+      "displayName": "Empowering Today's Youth - 4-H",
+      "baseName": "Arizona4H",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona4h.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/Arizona4H.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "arizona4h"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "Arizona4H.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-hunger-relief",
+      "slug": "hunger-relief",
+      "name": "Ending Hunger One Plate at a Time",
+      "displayName": "Ending Hunger One Plate at a Time",
+      "baseName": "Hunger Relief",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-hunger-relief.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/HungerRelief.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "hunger",
+        "relief"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "HungerRelief.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-masonic-fraternity",
+      "slug": "masonic-fraternity",
+      "name": "Freemason",
+      "displayName": "Freemason",
+      "baseName": "Masonic Fraternity",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-masonic-fraternity.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/MasonicFraternity.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "masonic",
+        "fraternity"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "MasonicFraternity.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-channel8pbs",
+      "slug": "channel8pbs",
+      "name": "Friend of Ei8ht - PBS",
+      "displayName": "Friend of Ei8ht - PBS",
+      "baseName": "Channel8PBS",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-channel8pbs.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/Channel8PBS.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "channel8pbs"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "Channel8PBS.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-girl-scout",
+      "slug": "girl-scout",
+      "name": "Girl Scouts",
+      "displayName": "Girl Scouts",
+      "baseName": "Girl Scout",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-girl-scout.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/GirlScout.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "girl",
+        "scout"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "GirlScout.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-humanitarian-services",
+      "slug": "humanitarian-services",
+      "name": "Habitat for Humanity",
+      "displayName": "Habitat for Humanity",
+      "baseName": "Humanitarian Services",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-humanitarian-services.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/HumanitarianServices.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "humanitarian",
+        "services"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "HumanitarianServices.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-realtors",
+      "slug": "arizona-realtors",
+      "name": "Homes for All",
+      "displayName": "Homes for All",
+      "baseName": "Arizona Realtors",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-realtors.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaRealtors.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "arizona",
+        "realtors"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaRealtors.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-in-god-we-trust",
+      "slug": "in-god-we-trust",
+      "name": "In God We Trust",
+      "displayName": "In God We Trust",
+      "baseName": "In God We Trust",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-in-god-we-trust.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/InGodWeTrust.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "in",
+        "god",
+        "we",
+        "trust"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "InGodWeTrust.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-child-abuse-prevention",
+      "slug": "child-abuse-prevention",
+      "name": "It Shouldn't Hurt to Be a Child",
+      "displayName": "It Shouldn't Hurt to Be a Child",
+      "baseName": "Child Abuse Prevention",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-child-abuse-prevention.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ChildAbusePrevention.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "child",
+        "abuse",
+        "prevention"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ChildAbusePrevention.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-golden-rule",
+      "slug": "golden-rule",
+      "name": "Live Golden Rule",
+      "displayName": "Live Golden Rule",
+      "baseName": "Golden Rule",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-golden-rule.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/GoldenRule.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "golden",
+        "rule"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "GoldenRule.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-make-a-wish-arizona",
+      "slug": "make-a-wish-arizona",
+      "name": "Make A Wish Arizona",
+      "displayName": "Make A Wish Arizona",
+      "baseName": "Make A Wish Arizona",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-make-a-wish-arizona.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/MakeAWishArizona.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "make",
+        "wish",
+        "arizona"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "MakeAWishArizona.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-in-loving-memory",
+      "slug": "in-loving-memory",
+      "name": "No Child Grieves Alone",
+      "displayName": "No Child Grieves Alone",
+      "baseName": "In Loving Memory",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-in-loving-memory.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/InLovingMemory.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "in",
+        "loving",
+        "memory"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "InLovingMemory.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-rotary-international",
+      "slug": "rotary-international",
+      "name": "Service Above Self - Rotary International",
+      "displayName": "Service Above Self - Rotary International",
+      "baseName": "Rotary International",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-rotary-international.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/RotaryInternational.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "rotary",
+        "international"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "RotaryInternational.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-special-olympics-arizona",
+      "slug": "special-olympics-arizona",
+      "name": "Special Olympics Arizona",
+      "displayName": "Special Olympics Arizona",
+      "baseName": "Special Olympics Arizona",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-special-olympics-arizona.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/SpecialOlympicsArizona.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "special",
+        "olympics",
+        "arizona"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "SpecialOlympicsArizona.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-extraordinary-educator",
+      "slug": "extraordinary-educator",
+      "name": "Support Our Schools",
+      "displayName": "Support Our Schools",
+      "baseName": "Extraordinary Educator",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-extraordinary-educator.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ExtraordinaryEducator.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "extraordinary",
+        "educator"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ExtraordinaryEducator.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-education-and-community-enrichment",
+      "slug": "education-and-community-enrichment",
+      "name": "Supporting Arizona Education",
+      "displayName": "Supporting Arizona Education",
+      "baseName": "Education & Community Enrichment",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-education-and-community-enrichment.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/Education&CommunityEnrichment.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "education",
+        "and",
+        "community",
+        "enrichment"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "Education&CommunityEnrichment.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-teen-suicide-prevention",
+      "slug": "teen-suicide-prevention",
+      "name": "Teen Lifeline",
+      "displayName": "Teen Lifeline",
+      "baseName": "Teen Suicide Prevention",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-teen-suicide-prevention.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/TeenSuicidePrevention.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "teen",
+        "suicide",
+        "prevention"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "TeenSuicidePrevention.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-thunderbird-charities",
+      "slug": "thunderbird-charities",
+      "name": "Thunderbird Charities",
+      "displayName": "Thunderbird Charities",
+      "baseName": "Thunderbird Charities",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/arizona/plates/az-thunderbird-charities.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ThunderbirdCharities.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "thunderbird",
+        "charities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ThunderbirdCharities.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-fraternal-orderof-police",
+      "slug": "fraternal-orderof-police",
+      "name": "Fraternal Order of Police",
+      "displayName": "Fraternal Order of Police",
+      "baseName": "Fraternal Orderof Police",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/arizona/plates/az-fraternal-orderof-police.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/FraternalOrderofPolice.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "fraternal",
+        "orderof",
+        "police"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "FraternalOrderofPolice.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-honor-fallen-police-officers",
+      "slug": "honor-fallen-police-officers",
+      "name": "Honor Fallen Officers",
+      "displayName": "Honor Fallen Officers",
+      "baseName": "Honor Fallen Police Officers",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/arizona/plates/az-honor-fallen-police-officers.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/HonorFallenPoliceOfficers.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "honor",
+        "fallen",
+        "police",
+        "officers"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "HonorFallenPoliceOfficers.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-firefighter",
+      "slug": "firefighter",
+      "name": "Professional Fire Fighters",
+      "displayName": "Professional Fire Fighters",
+      "baseName": "Firefighter",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/arizona/plates/az-firefighter.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/Firefighter.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "firefighter"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "Firefighter.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-firefighter-safety",
+      "slug": "firefighter-safety",
+      "name": "Support Firefighter Training",
+      "displayName": "Support Firefighter Training",
+      "baseName": "Firefighter Safety",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/arizona/plates/az-firefighter-safety.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/FirefighterSafety.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "firefighter",
+        "safety"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "FirefighterSafety.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-first-responder",
+      "slug": "first-responder",
+      "name": "Supporting Public Safety",
+      "displayName": "Supporting Public Safety",
+      "baseName": "First Responder",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/arizona/plates/az-first-responder.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/FirstResponder.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "first",
+        "responder"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "FirstResponder.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-gila-river-indian-community",
+      "slug": "gila-river-indian-community",
+      "name": "Gila River Indian Community",
+      "displayName": "Gila River Indian Community",
+      "baseName": "Gila River Indian Community",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/arizona/plates/az-gila-river-indian-community.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/GilaRiverIndianCommunity.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "gila",
+        "river",
+        "indian",
+        "community"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "GilaRiverIndianCommunity.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-san-carlos-apache-tribe",
+      "slug": "san-carlos-apache-tribe",
+      "name": "Home of the Apache",
+      "displayName": "Home of the Apache",
+      "baseName": "San Carlos Apache Tribe",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/arizona/plates/az-san-carlos-apache-tribe.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/SanCarlosApacheTribe.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "san",
+        "carlos",
+        "apache",
+        "tribe"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "SanCarlosApacheTribe.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-hualapai-tribe",
+      "slug": "hualapai-tribe",
+      "name": "Hualapai Tribe",
+      "displayName": "Hualapai Tribe",
+      "baseName": "Hualapai Tribe",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/arizona/plates/az-hualapai-tribe.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/HualapaiTribe.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "hualapai",
+        "tribe"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "HualapaiTribe.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-navajo-nation",
+      "slug": "navajo-nation",
+      "name": "Navajo Nation",
+      "displayName": "Navajo Nation",
+      "baseName": "Navajo Nation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/arizona/plates/az-navajo-nation.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/NavajoNation.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "navajo",
+        "nation"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "NavajoNation.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-white-mountain-apache-tribe",
+      "slug": "white-mountain-apache-tribe",
+      "name": "White Mountain Apache",
+      "displayName": "White Mountain Apache",
+      "baseName": "White Mountain Apache Tribe",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/arizona/plates/az-white-mountain-apache-tribe.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/WhiteMountainApacheTribe.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "white",
+        "mountain",
+        "apache",
+        "tribe"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "WhiteMountainApacheTribe.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-alzheimers-disease-research",
+      "slug": "alzheimers-disease-research",
+      "name": "Alzheimers Disease Research",
+      "displayName": "Alzheimers Disease Research",
+      "baseName": "Alzheimers Disease Research",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/arizona/plates/az-alzheimers-disease-research.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/AlzheimersDiseaseResearch.jpg"
+      },
+      "sponsor": "Arizona Department of Health Services *Arizona Alzheimers Consortium",
+      "notes": "$17 goes to research to promote the scientific understanding and early detection of Alzheimer's disease and to educate Arizona residents about disease management.",
+      "searchTerms": [
+        "alzheimers",
+        "disease",
+        "research"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "AlzheimersDiseaseResearch.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-donate-life-arizona",
+      "slug": "donate-life-arizona",
+      "name": "Be an Organ Donor",
+      "displayName": "Be an Organ Donor",
+      "baseName": "Donate Life Arizona",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/arizona/plates/az-donate-life-arizona.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/DonateLifeArizona.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "donate",
+        "life",
+        "arizona"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "DonateLifeArizona.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-cancer-support",
+      "slug": "cancer-support",
+      "name": "Cancer Support Community",
+      "displayName": "Cancer Support Community",
+      "baseName": "Cancer Support",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/arizona/plates/az-cancer-support.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/CancerSupport.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "cancer",
+        "support"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "CancerSupport.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-childhood-cancer-research",
+      "slug": "childhood-cancer-research",
+      "name": "Curing Childhood Cancer",
+      "displayName": "Curing Childhood Cancer",
+      "baseName": "Childhood Cancer Research",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/arizona/plates/az-childhood-cancer-research.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ChildhoodCancerResearch.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "childhood",
+        "cancer",
+        "research"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ChildhoodCancerResearch.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-pink-ribbon",
+      "slug": "pink-ribbon",
+      "name": "Early Detection Saves Lives",
+      "displayName": "Early Detection Saves Lives",
+      "baseName": "Pink Ribbon",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/arizona/plates/az-pink-ribbon.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/PinkRibbon.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "pink",
+        "ribbon"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "PinkRibbon.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-congenital-heart-defect-awareness",
+      "slug": "congenital-heart-defect-awareness",
+      "name": "Keep Hearts Beating - Congenital Heart Defect",
+      "displayName": "Keep Hearts Beating - Congenital Heart Defect",
+      "baseName": "Congenital Heart Defect Awareness",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/arizona/plates/az-congenital-heart-defect-awareness.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/CongenitalHeartDefectAwareness.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "congenital",
+        "heart",
+        "defect",
+        "awareness"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "CongenitalHeartDefectAwareness.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-ovarian-cancer-awareness",
+      "slug": "ovarian-cancer-awareness",
+      "name": "National Ovarian Cancer Coalition",
+      "displayName": "National Ovarian Cancer Coalition",
+      "baseName": "Ovarian Cancer Awareness",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/arizona/plates/az-ovarian-cancer-awareness.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/OvarianCancerAwareness.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ovarian",
+        "cancer",
+        "awareness"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "OvarianCancerAwareness.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-no-one-fights-alone",
+      "slug": "no-one-fights-alone",
+      "name": "No One Fights Alone",
+      "displayName": "No One Fights Alone",
+      "baseName": "No One Fights Alone",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/arizona/plates/az-no-one-fights-alone.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/NoOneFightsAlone.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "no",
+        "one",
+        "fights",
+        "alone"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "NoOneFightsAlone.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-autism-support",
+      "slug": "autism-support",
+      "name": "Support Autism",
+      "displayName": "Support Autism",
+      "baseName": "Autism Support",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/arizona/plates/az-autism-support.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/AutismSupport.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "autism",
+        "support"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "AutismSupport.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-agriculture",
+      "slug": "arizona-agriculture",
+      "name": "Arizona Agriculture",
+      "displayName": "Arizona Agriculture",
+      "baseName": "Arizona Agriculture",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-agriculture.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaAgriculture.jpg"
+      },
+      "sponsor": "Arizona Department of Education",
+      "notes": "$17 goes to the Arizona FFA which provides premier leadership, personal growth, and career success opportunities for students enrolled in Agriculture Education programs in Arizona.",
+      "searchTerms": [
+        "arizona",
+        "agriculture"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaAgriculture.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-centennial",
+      "slug": "arizona-centennial",
+      "name": "Arizona Centennial",
+      "displayName": "Arizona Centennial",
+      "baseName": "Arizona Centennial",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-centennial.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaCentennial.jpg"
+      },
+      "sponsor": "University of Arizona",
+      "notes": "$17 goes to the Arizona Geological Survey to pay costs related to the maintenance and operation of mining, mineral, and natural resources educational museums.",
+      "searchTerms": [
+        "arizona",
+        "centennial"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaCentennial.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-highways",
+      "slug": "arizona-highways",
+      "name": "Arizona Highways Magazine",
+      "displayName": "Arizona Highways Magazine",
+      "baseName": "Arizona Highways",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-highways.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaHighways.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "arizona",
+        "highways"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaHighways.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-historical-society",
+      "slug": "arizona-historical-society",
+      "name": "Arizona Historical Society",
+      "displayName": "Arizona Historical Society",
+      "baseName": "Arizona Historical Society",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-historical-society.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaHistoricalSociety.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "arizona",
+        "historical",
+        "society"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaHistoricalSociety.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-barrett-jackson",
+      "slug": "barrett-jackson",
+      "name": "Barrett-Jackson",
+      "displayName": "Barrett-Jackson",
+      "baseName": "Barrett Jackson",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/arizona/plates/az-barrett-jackson.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/BarrettJackson.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "barrett",
+        "jackson"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "BarrettJackson.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-southwest-pga",
+      "slug": "southwest-pga",
+      "name": "Game of a Lifetime",
+      "displayName": "Game of a Lifetime",
+      "baseName": "Southwest PGA",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/arizona/plates/az-southwest-pga.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/SouthwestPGA.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "southwest",
+        "pga"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "SouthwestPGA.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-route66",
+      "slug": "route66",
+      "name": "Get Your Kicks - Route 66",
+      "displayName": "Get Your Kicks - Route 66",
+      "baseName": "Route66",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/arizona/plates/az-route66.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/Route66.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "route66"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "Route66.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-motorsports-comm",
+      "slug": "arizona-motorsports-comm",
+      "name": "NASCAR",
+      "displayName": "NASCAR",
+      "baseName": "Arizona Motorsports Comm",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-motorsports-comm.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaMotorsportsComm.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "arizona",
+        "motorsports",
+        "comm"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaMotorsportsComm.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-rodeo",
+      "slug": "arizona-rodeo",
+      "name": "Rodeo",
+      "displayName": "Rodeo",
+      "baseName": "Arizona Rodeo",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-rodeo.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaRodeo.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "arizona",
+        "rodeo"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaRodeo.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-state-forty-eight",
+      "slug": "state-forty-eight",
+      "name": "State Forty Eight",
+      "displayName": "State Forty Eight",
+      "baseName": "State Forty Eight",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/arizona/plates/az-state-forty-eight.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/StateFortyEight.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "state",
+        "forty",
+        "eight"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "StateFortyEight.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-verde-valley-wine-trail",
+      "slug": "verde-valley-wine-trail",
+      "name": "Take the Scenic Route",
+      "displayName": "Take the Scenic Route",
+      "baseName": "Verde Valley Wine Trail",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/arizona/plates/az-verde-valley-wine-trail.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/VerdeValleyWineTrail.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "verde",
+        "valley",
+        "wine",
+        "trail"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "VerdeValleyWineTrail.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-national-guard",
+      "slug": "national-guard",
+      "name": "Always Ready, Always There",
+      "displayName": "Always Ready, Always There",
+      "baseName": "National Guard",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-national-guard.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/NationalGuard.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "national",
+        "guard"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "NationalGuard.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-military-support-freedom",
+      "slug": "military-support-freedom",
+      "name": "Freedom",
+      "displayName": "Freedom",
+      "baseName": "Military Support Freedom",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-military-support-freedom.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/MilitarySupportFreedom.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "military",
+        "support",
+        "freedom"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "MilitarySupportFreedom.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-luke-afb",
+      "slug": "luke-afb",
+      "name": "The Sound of Freedom",
+      "displayName": "The Sound of Freedom",
+      "baseName": "Luke AFB",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-luke-afb.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/LukeAFB.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "luke",
+        "afb"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "LukeAFB.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-us-army",
+      "slug": "us-army",
+      "name": "US Army",
+      "displayName": "US Army",
+      "baseName": "US Army",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-us-army.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/USArmy.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "us",
+        "army"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "USArmy.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-us-marine",
+      "slug": "us-marine",
+      "name": "US Marine",
+      "displayName": "US Marine",
+      "baseName": "US Marine",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-us-marine.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/USMarine.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "us",
+        "marine"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "USMarine.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-veteran",
+      "slug": "veteran",
+      "name": "Veteran",
+      "displayName": "Veteran",
+      "baseName": "Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-veteran.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/Veteran.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veteran"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "Veteran.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-veteran-air-force",
+      "slug": "veteran-air-force",
+      "name": "Veteran Air Force",
+      "displayName": "Veteran Air Force",
+      "baseName": "Veteran Air Force",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-veteran-air-force.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/VeteranAirForce.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veteran",
+        "air",
+        "force"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "VeteranAirForce.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-veteran-army",
+      "slug": "veteran-army",
+      "name": "Veteran Army",
+      "displayName": "Veteran Army",
+      "baseName": "Veteran Army",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-veteran-army.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/VeteranArmy.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veteran",
+        "army"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "VeteranArmy.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-veteran-coast-guard",
+      "slug": "veteran-coast-guard",
+      "name": "Veteran Coast Guard",
+      "displayName": "Veteran Coast Guard",
+      "baseName": "Veteran Coast Guard",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-veteran-coast-guard.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/VeteranCoastGuard.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veteran",
+        "coast",
+        "guard"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "VeteranCoastGuard.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-veteran-native-amer-code-talk",
+      "slug": "veteran-native-amer-code-talk",
+      "name": "Veteran Codetalkers",
+      "displayName": "Veteran Codetalkers",
+      "baseName": "Veteran Native Amer Code Talk",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-veteran-native-amer-code-talk.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/VeteranNativeAmerCodeTalk.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veteran",
+        "native",
+        "code",
+        "talk",
+        "codetalkers"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "VeteranNativeAmerCodeTalk.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-veteran-marine",
+      "slug": "veteran-marine",
+      "name": "Veteran Marine",
+      "displayName": "Veteran Marine",
+      "baseName": "Veteran Marine",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-veteran-marine.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/VeteranMarine.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veteran",
+        "marine"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "VeteranMarine.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-veteran-navy",
+      "slug": "veteran-navy",
+      "name": "Veteran Navy",
+      "displayName": "Veteran Navy",
+      "baseName": "Veteran Navy",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-veteran-navy.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/VeteranNavy.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veteran",
+        "navy"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "VeteranNavy.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-veteransof-foreign-wars",
+      "slug": "veteransof-foreign-wars",
+      "name": "Veterans of Foreign Wars",
+      "displayName": "Veterans of Foreign Wars",
+      "baseName": "Veteransof Foreign Wars",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-veteransof-foreign-wars.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/VeteransofForeignWars.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veteransof",
+        "foreign",
+        "wars"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "VeteransofForeignWars.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-veteransof-foreign-wars-auxiliary",
+      "slug": "veteransof-foreign-wars-auxiliary",
+      "name": "VFW Auxiliary",
+      "displayName": "VFW Auxiliary",
+      "baseName": "Veteransof Foreign Wars Auxiliary",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-veteransof-foreign-wars-auxiliary.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/VeteransofForeignWarsAuxiliary.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veteransof",
+        "foreign",
+        "wars",
+        "auxiliary"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "VeteransofForeignWarsAuxiliary.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-women-veterans",
+      "slug": "women-veterans",
+      "name": "Women Veterans",
+      "displayName": "Women Veterans",
+      "baseName": "Women Veterans",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-women-veterans.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/WomenVeterans.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "women",
+        "veterans"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "WomenVeterans.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-women-veterans-air-force",
+      "slug": "women-veterans-air-force",
+      "name": "Women Veterans Air Force",
+      "displayName": "Women Veterans Air Force",
+      "baseName": "Women Veterans Air Force",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-women-veterans-air-force.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/WomenVeteransAirForce.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "women",
+        "veterans",
+        "air",
+        "force"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "WomenVeteransAirForce.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-women-veterans-army",
+      "slug": "women-veterans-army",
+      "name": "Women Veterans Army",
+      "displayName": "Women Veterans Army",
+      "baseName": "Women Veterans Army",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-women-veterans-army.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/WomenVeteransArmy.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "women",
+        "veterans",
+        "army"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "WomenVeteransArmy.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-women-veterans-coast-guard",
+      "slug": "women-veterans-coast-guard",
+      "name": "Women Veterans Coast Guard",
+      "displayName": "Women Veterans Coast Guard",
+      "baseName": "Women Veterans Coast Guard",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-women-veterans-coast-guard.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/WomenVeteransCoastGuard.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "women",
+        "veterans",
+        "coast",
+        "guard"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "WomenVeteransCoastGuard.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-women-veterans-marine",
+      "slug": "women-veterans-marine",
+      "name": "Women Veterans Marine",
+      "displayName": "Women Veterans Marine",
+      "baseName": "Women Veterans Marine",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-women-veterans-marine.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/WomenVeteransMarine.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "women",
+        "veterans",
+        "marine"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "WomenVeteransMarine.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-women-veterans-navy",
+      "slug": "women-veterans-navy",
+      "name": "Women Veterans Navy",
+      "displayName": "Women Veterans Navy",
+      "baseName": "Women Veterans Navy",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/arizona/plates/az-women-veterans-navy.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/WomenVeteransNavy.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "women",
+        "veterans",
+        "navy"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "WomenVeteransNavy.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-4az-kids-mc",
+      "slug": "4az-kids-mc",
+      "name": "4AZ Kids (Motorcycle)",
+      "displayName": "4AZ Kids (Motorcycle)",
+      "baseName": "4AZ Kids",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-4az-kids-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/4AZKidsMC.jpg"
+      },
+      "sponsor": "Saguaros Childrens Charities Inc",
+      "notes": "$17 goes to support more than 30 local children’s charities across Arizona that provide critical care, education, and enrichment programs statewide.",
+      "searchTerms": [
+        "4az",
+        "kids",
+        "mc"
+      ],
+      "variantOf": "az-4az-kids",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "4AZKidsMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-alice-cooper-solid-rock-mc",
+      "slug": "alice-cooper-solid-rock-mc",
+      "name": "Alice Cooper Solid Rock (Motorcycle)",
+      "displayName": "Alice Cooper Solid Rock (Motorcycle)",
+      "baseName": "Alice Cooper Solid Rock",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-alice-cooper-solid-rock-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/AliceCooperSolidRockMC.jpg"
+      },
+      "sponsor": "Solid Rock Teen Centers",
+      "notes": "$17 goes to provide a safe space for ALL teens ages 12-20 to spend their time, receive positive mentorship and FREE music, art, dance, photography and recording studio lessons and opportunities.",
+      "searchTerms": [
+        "alice",
+        "cooper",
+        "solid",
+        "rock",
+        "mc"
+      ],
+      "variantOf": "az-alice-cooper-solid-rock",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "AliceCooperSolidRockMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-national-guard-mc",
+      "slug": "national-guard-mc",
+      "name": "Always Ready, Always There (Motorcycle)",
+      "displayName": "Always Ready, Always There (Motorcycle)",
+      "baseName": "National Guard",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-national-guard-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/NationalGuardMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "national",
+        "guard",
+        "mc"
+      ],
+      "variantOf": "az-national-guard",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "NationalGuardMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-coyotes-mc",
+      "slug": "arizona-coyotes-mc",
+      "name": "Arizona Coyotes (Motorcycle)",
+      "displayName": "Arizona Coyotes (Motorcycle)",
+      "baseName": "Arizona Coyotes",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-coyotes-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaCoyotesMC.jpg"
+      },
+      "sponsor": "Arizona Coyotes Foundation",
+      "notes": "$17 goes to the Arizona Coyotes Foundation. The Arizona Coyotes Foundation strives to enhance the quality of life throughout Arizona by supporting organizations and programs that promote access to education, health and wellness and economic advancement for underserved and diverse communities.",
+      "searchTerms": [
+        "arizona",
+        "coyotes",
+        "mc"
+      ],
+      "variantOf": "az-arizona-coyotes",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaCoyotesMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-diamondbacks-mc",
+      "slug": "arizona-diamondbacks-mc",
+      "name": "Arizona Diamondbacks (Motorcycle)",
+      "displayName": "Arizona Diamondbacks (Motorcycle)",
+      "baseName": "Arizona Diamondbacks",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-diamondbacks-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaDiamondbacksMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "arizona",
+        "diamondbacks",
+        "mc"
+      ],
+      "variantOf": "az-arizona-diamondbacks",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaDiamondbacksMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-highways-mc",
+      "slug": "arizona-highways-mc",
+      "name": "Arizona Highways Magazine (Motorcycle)",
+      "displayName": "Arizona Highways Magazine (Motorcycle)",
+      "baseName": "Arizona Highways",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-highways-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaHighwaysMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "arizona",
+        "highways",
+        "mc"
+      ],
+      "variantOf": "az-arizona-highways",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaHighwaysMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-youth-charities-mc",
+      "slug": "arizona-youth-charities-mc",
+      "name": "Arizona Youth Charities (Motorcycle)",
+      "displayName": "Arizona Youth Charities (Motorcycle)",
+      "baseName": "Arizona Youth Charities",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-youth-charities-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaYouthCharitiesMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "arizona",
+        "youth",
+        "charities",
+        "mc"
+      ],
+      "variantOf": "az-arizona-youth-charities",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaYouthCharitiesMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-cancer-support-mc",
+      "slug": "cancer-support-mc",
+      "name": "Cancer Support Community (Motorcycle)",
+      "displayName": "Cancer Support Community (Motorcycle)",
+      "baseName": "Cancer Support",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-cancer-support-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/CancerSupportMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "cancer",
+        "support",
+        "mc"
+      ],
+      "variantOf": "az-cancer-support",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "CancerSupportMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-dine-college-warriors-mc",
+      "slug": "dine-college-warriors-mc",
+      "name": "Dine College (Motorcycle)",
+      "displayName": "Dine College (Motorcycle)",
+      "baseName": "Dine College Warriors",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-dine-college-warriors-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/DineCollegeWarriorsMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "dine",
+        "college",
+        "warriors",
+        "mc"
+      ],
+      "variantOf": "az-dine-college-warriors",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "DineCollegeWarriorsMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-empowering-charitable-organizations-mc",
+      "slug": "empowering-charitable-organizations-mc",
+      "name": "Empower (Motorcycle)",
+      "displayName": "Empower (Motorcycle)",
+      "baseName": "Empowering Charitable Organizations",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-empowering-charitable-organizations-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/EmpoweringCharitableOrganizationsMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "empowering",
+        "charitable",
+        "organizations",
+        "mc"
+      ],
+      "variantOf": "az-empowering-charitable-organizations",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "EmpoweringCharitableOrganizationsMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona4hmc",
+      "slug": "arizona4hmc",
+      "name": "Empowering Today's Youth - 4-H",
+      "displayName": "Empowering Today's Youth - 4-H",
+      "baseName": "Arizona4H(Motorcycle)",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona4hmc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/Arizona4HMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "arizona4hmc"
+      ],
+      "variantOf": "az-arizona4hmc",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "Arizona4HMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-military-support-freedom-mc",
+      "slug": "military-support-freedom-mc",
+      "name": "Freedom (Motorcycle)",
+      "displayName": "Freedom (Motorcycle)",
+      "baseName": "Military Support Freedom",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-military-support-freedom-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/MilitarySupportFreedomMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "military",
+        "support",
+        "freedom",
+        "mc"
+      ],
+      "variantOf": "az-military-support-freedom",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "MilitarySupportFreedomMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-route66mc",
+      "slug": "route66mc",
+      "name": "Get Your Kicks - Route 66 (Motorcycle)",
+      "displayName": "Get Your Kicks - Route 66 (Motorcycle)",
+      "baseName": "Route66(Motorcycle)",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-route66mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/Route66MC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "route66mc"
+      ],
+      "variantOf": "az-route66mc",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "Route66MC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-gila-river-indian-community-mc",
+      "slug": "gila-river-indian-community-mc",
+      "name": "Gila River Indian Community (Motorcycle)",
+      "displayName": "Gila River Indian Community (Motorcycle)",
+      "baseName": "Gila River Indian Community",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-gila-river-indian-community-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/GilaRiverIndianCommunityMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "gila",
+        "river",
+        "indian",
+        "community",
+        "mc"
+      ],
+      "variantOf": "az-gila-river-indian-community",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "GilaRiverIndianCommunityMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-realtors-mc",
+      "slug": "arizona-realtors-mc",
+      "name": "Homes for All (Motorcycle)",
+      "displayName": "Homes for All (Motorcycle)",
+      "baseName": "Arizona Realtors",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-realtors-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaRealtorsMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "arizona",
+        "realtors",
+        "mc"
+      ],
+      "variantOf": "az-arizona-realtors",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaRealtorsMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-honor-fallen-police-officers-mc",
+      "slug": "honor-fallen-police-officers-mc",
+      "name": "Honor Fallen Officers (Motorcycle)",
+      "displayName": "Honor Fallen Officers (Motorcycle)",
+      "baseName": "Honor Fallen Police Officers",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-honor-fallen-police-officers-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/HonorFallenPoliceOfficersMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "honor",
+        "fallen",
+        "police",
+        "officers",
+        "mc"
+      ],
+      "variantOf": "az-honor-fallen-police-officers",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "HonorFallenPoliceOfficersMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-hualapai-tribe-mc",
+      "slug": "hualapai-tribe-mc",
+      "name": "Hualapai Tribe (Motorcycle)",
+      "displayName": "Hualapai Tribe (Motorcycle)",
+      "baseName": "Hualapai Tribe",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-hualapai-tribe-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/HualapaiTribeMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "hualapai",
+        "tribe",
+        "mc"
+      ],
+      "variantOf": "az-hualapai-tribe",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "HualapaiTribeMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-keep-arizona-beautiful-mc",
+      "slug": "keep-arizona-beautiful-mc",
+      "name": "Keep It Beautiful (Motorcycle)",
+      "displayName": "Keep It Beautiful (Motorcycle)",
+      "baseName": "Keep Arizona Beautiful",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-keep-arizona-beautiful-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/KeepArizonaBeautifulMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "keep",
+        "arizona",
+        "beautiful",
+        "mc"
+      ],
+      "variantOf": "az-keep-arizona-beautiful",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "KeepArizonaBeautifulMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-ovarian-cancer-awareness-mc",
+      "slug": "ovarian-cancer-awareness-mc",
+      "name": "National Ovarian Cancer Coalition (Motorcycle)",
+      "displayName": "National Ovarian Cancer Coalition (Motorcycle)",
+      "baseName": "Ovarian Cancer Awareness",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-ovarian-cancer-awareness-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/OvarianCancerAwarenessMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ovarian",
+        "cancer",
+        "awareness",
+        "mc"
+      ],
+      "variantOf": "az-ovarian-cancer-awareness",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "OvarianCancerAwarenessMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-in-loving-memory-mc",
+      "slug": "in-loving-memory-mc",
+      "name": "No Child Grieves Alone (Motorcycle)",
+      "displayName": "No Child Grieves Alone (Motorcycle)",
+      "baseName": "In Loving Memory",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-in-loving-memory-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/InLovingMemoryMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "in",
+        "loving",
+        "memory",
+        "mc"
+      ],
+      "variantOf": "az-in-loving-memory",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "InLovingMemoryMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-no-one-fights-alone-mc",
+      "slug": "no-one-fights-alone-mc",
+      "name": "No One Fights Alone (Motorcycle)",
+      "displayName": "No One Fights Alone (Motorcycle)",
+      "baseName": "No One Fights Alone",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-no-one-fights-alone-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/NoOneFightsAloneMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "no",
+        "one",
+        "fights",
+        "alone",
+        "mc"
+      ],
+      "variantOf": "az-no-one-fights-alone",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "NoOneFightsAloneMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-phoenix-mercury-mc",
+      "slug": "phoenix-mercury-mc",
+      "name": "Phoenix Mercury (Motorcycle)",
+      "displayName": "Phoenix Mercury (Motorcycle)",
+      "baseName": "Phoenix Mercury",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-phoenix-mercury-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/PhoenixMercuryMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "phoenix",
+        "mercury",
+        "mc"
+      ],
+      "variantOf": "az-phoenix-mercury",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "PhoenixMercuryMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-phoenix-rising-fcmc",
+      "slug": "phoenix-rising-fcmc",
+      "name": "Phoenix Rising FC (Motorcycle)",
+      "displayName": "Phoenix Rising FC (Motorcycle)",
+      "baseName": "Phoenix Rising FC(Motorcycle)",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-phoenix-rising-fcmc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/PhoenixRisingFCMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "phoenix",
+        "rising",
+        "fcmc"
+      ],
+      "variantOf": "az-phoenix-rising-fcmc",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "PhoenixRisingFCMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-rotary-international-mc",
+      "slug": "rotary-international-mc",
+      "name": "Service Above Self - Rotary International (Motorcycle)",
+      "displayName": "Service Above Self - Rotary International (Motorcycle)",
+      "baseName": "Rotary International",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-rotary-international-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/RotaryInternationalMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "rotary",
+        "international",
+        "mc"
+      ],
+      "variantOf": "az-rotary-international",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "RotaryInternationalMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-state-forty-eight-mc",
+      "slug": "state-forty-eight-mc",
+      "name": "State Forty Eight (Motorcycle)",
+      "displayName": "State Forty Eight (Motorcycle)",
+      "baseName": "State Forty Eight",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-state-forty-eight-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/StateFortyEightMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "state",
+        "forty",
+        "eight",
+        "mc"
+      ],
+      "variantOf": "az-state-forty-eight",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "StateFortyEightMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-autism-support-mc",
+      "slug": "autism-support-mc",
+      "name": "Support Autism (Motorcycle)",
+      "displayName": "Support Autism (Motorcycle)",
+      "baseName": "Autism Support",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-autism-support-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/AutismSupportMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "autism",
+        "support",
+        "mc"
+      ],
+      "variantOf": "az-autism-support",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "AutismSupportMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-first-responder-mc",
+      "slug": "first-responder-mc",
+      "name": "Supporting Public Safety (Motorcycle)",
+      "displayName": "Supporting Public Safety (Motorcycle)",
+      "baseName": "First Responder",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-first-responder-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/FirstResponderMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "first",
+        "responder",
+        "mc"
+      ],
+      "variantOf": "az-first-responder",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "FirstResponderMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-verde-valley-wine-trail-mc",
+      "slug": "verde-valley-wine-trail-mc",
+      "name": "Take the Scenic Route (Motorcycle)",
+      "displayName": "Take the Scenic Route (Motorcycle)",
+      "baseName": "Verde Valley Wine Trail",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-verde-valley-wine-trail-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/VerdeValleyWineTrailMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "verde",
+        "valley",
+        "wine",
+        "trail",
+        "mc"
+      ],
+      "variantOf": "az-verde-valley-wine-trail",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "VerdeValleyWineTrailMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-teen-suicide-prevention-mc",
+      "slug": "teen-suicide-prevention-mc",
+      "name": "Teen Lifeline (Motorcycle)",
+      "displayName": "Teen Lifeline (Motorcycle)",
+      "baseName": "Teen Suicide Prevention",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-teen-suicide-prevention-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/TeenSuicidePreventionMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "teen",
+        "suicide",
+        "prevention",
+        "mc"
+      ],
+      "variantOf": "az-teen-suicide-prevention",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "TeenSuicidePreventionMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-luke-afbmc",
+      "slug": "luke-afbmc",
+      "name": "The Sound of Freedom (Motorcycle)",
+      "displayName": "The Sound of Freedom (Motorcycle)",
+      "baseName": "Luke AFB(Motorcycle)",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-luke-afbmc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/LukeAFBMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "luke",
+        "afbmc"
+      ],
+      "variantOf": "az-luke-afbmc",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "LukeAFBMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-thunderbird-charities-mc",
+      "slug": "thunderbird-charities-mc",
+      "name": "Thunderbird Charities (Motorcycle)",
+      "displayName": "Thunderbird Charities (Motorcycle)",
+      "baseName": "Thunderbird Charities",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-thunderbird-charities-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ThunderbirdCharitiesMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "thunderbird",
+        "charities",
+        "mc"
+      ],
+      "variantOf": "az-thunderbird-charities",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ThunderbirdCharitiesMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-us-army-mc",
+      "slug": "us-army-mc",
+      "name": "US Army (Motorcycle)",
+      "displayName": "US Army (Motorcycle)",
+      "baseName": "US Army",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-us-army-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/USArmyMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "us",
+        "army",
+        "mc"
+      ],
+      "variantOf": "az-us-army",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "USArmyMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-us-marine-mc",
+      "slug": "us-marine-mc",
+      "name": "US Marine (Motorcycle)",
+      "displayName": "US Marine (Motorcycle)",
+      "baseName": "US Marine",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-us-marine-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/USMarineMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "us",
+        "marine",
+        "mc"
+      ],
+      "variantOf": "az-us-marine",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "USMarineMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-veteran-mc",
+      "slug": "veteran-mc",
+      "name": "Veteran (Motorcycle)",
+      "displayName": "Veteran (Motorcycle)",
+      "baseName": "Veteran",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/arizona/plates/az-veteran-mc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/VeteranMC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veteran",
+        "mc"
+      ],
+      "variantOf": "az-veteran",
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "VeteranMC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-cardinals",
+      "slug": "arizona-cardinals",
+      "name": "Arizona Cardinals",
+      "displayName": "Arizona Cardinals",
+      "baseName": "Arizona Cardinals",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-cardinals.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaCardinals.jpg"
+      },
+      "sponsor": "Cardinals Charities",
+      "notes": "$17 goes to Cardinals Charities which supports programs designed to improve the lives of children, women, and minorities in Arizona.",
+      "searchTerms": [
+        "arizona",
+        "cardinals"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaCardinals.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-coyotes",
+      "slug": "arizona-coyotes",
+      "name": "Arizona Coyotes",
+      "displayName": "Arizona Coyotes",
+      "baseName": "Arizona Coyotes",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-coyotes.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaCoyotes.jpg"
+      },
+      "sponsor": "Arizona Coyotes Foundation",
+      "notes": "$17 goes to the Arizona Coyotes Foundation. The Arizona Coyotes Foundation strives to enhance the quality of life throughout Arizona by supporting organizations and programs that promote access to education, health and wellness and economic advancement for underserved and diverse communities.",
+      "searchTerms": [
+        "arizona",
+        "coyotes"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaCoyotes.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-diamondbacks",
+      "slug": "arizona-diamondbacks",
+      "name": "Arizona Diamondbacks",
+      "displayName": "Arizona Diamondbacks",
+      "baseName": "Arizona Diamondbacks",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-diamondbacks.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaDiamondbacks.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "arizona",
+        "diamondbacks"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaDiamondbacks.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-phoenix-mercury",
+      "slug": "phoenix-mercury",
+      "name": "Phoenix Mercury",
+      "displayName": "Phoenix Mercury",
+      "baseName": "Phoenix Mercury",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/arizona/plates/az-phoenix-mercury.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/PhoenixMercury.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "phoenix",
+        "mercury"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "PhoenixMercury.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-phoenix-rising-fc",
+      "slug": "phoenix-rising-fc",
+      "name": "Phoenix Rising FC",
+      "displayName": "Phoenix Rising FC",
+      "baseName": "Phoenix Rising FC",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/arizona/plates/az-phoenix-rising-fc.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/PhoenixRisingFC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "phoenix",
+        "rising",
+        "fc"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "PhoenixRisingFC.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-phoenix-suns",
+      "slug": "phoenix-suns",
+      "name": "Phoenix Suns",
+      "displayName": "Phoenix Suns",
+      "baseName": "Phoenix Suns",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/arizona/plates/az-phoenix-suns.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/PhoenixSuns.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "phoenix",
+        "suns"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "PhoenixSuns.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-alternative-fuel",
+      "slug": "alternative-fuel",
+      "name": "Alternative Fuel",
+      "displayName": "Alternative Fuel",
+      "baseName": "Alternative Fuel",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/arizona/plates/az-alternative-fuel.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/AlternativeFuel.jpg"
+      },
+      "sponsor": null,
+      "notes": "HURF (Highway User Revenue Fund)",
+      "searchTerms": [
+        "alternative",
+        "fuel"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "AlternativeFuel.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-passenger-vehicle",
+      "slug": "passenger-vehicle",
+      "name": "Passenger Vehicle",
+      "displayName": "Passenger Vehicle",
+      "baseName": "Passenger Vehicle",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/arizona/plates/az-passenger-vehicle.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/PassengerVehicle.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "passenger",
+        "vehicle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "PassengerVehicle.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-collegiate-asu",
+      "slug": "collegiate-asu",
+      "name": "Arizona State University",
+      "displayName": "Arizona State University",
+      "baseName": "Collegiate ASU",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/arizona/plates/az-collegiate-asu.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/CollegiateASU.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "collegiate",
+        "asu"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "CollegiateASU.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-dine-college-warriors",
+      "slug": "dine-college-warriors",
+      "name": "Dine College",
+      "displayName": "Dine College",
+      "baseName": "Dine College Warriors",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/arizona/plates/az-dine-college-warriors.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/DineCollegeWarriors.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "dine",
+        "college",
+        "warriors"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "DineCollegeWarriors.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-collegiate-bowl",
+      "slug": "collegiate-bowl",
+      "name": "Fiesta Bowl",
+      "displayName": "Fiesta Bowl",
+      "baseName": "Collegiate Bowl",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/arizona/plates/az-collegiate-bowl.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/CollegiateBowl.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "collegiate",
+        "bowl"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "CollegiateBowl.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-grand-canyon-university",
+      "slug": "grand-canyon-university",
+      "name": "Grand Canyon University",
+      "displayName": "Grand Canyon University",
+      "baseName": "Grand Canyon University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/arizona/plates/az-grand-canyon-university.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/GrandCanyonUniversity.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "grand",
+        "canyon",
+        "university"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "GrandCanyonUniversity.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-midwestern-university",
+      "slug": "midwestern-university",
+      "name": "Midwestern University",
+      "displayName": "Midwestern University",
+      "baseName": "Midwestern University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/arizona/plates/az-midwestern-university.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/MidwesternUniversity.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "midwestern",
+        "university"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "MidwesternUniversity.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-collegiate-nau",
+      "slug": "collegiate-nau",
+      "name": "NAU Lumberjacks",
+      "displayName": "NAU Lumberjacks",
+      "baseName": "Collegiate NAU",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/arizona/plates/az-collegiate-nau.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/CollegiateNAU.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "collegiate",
+        "nau"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "CollegiateNAU.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-thunderbird-school",
+      "slug": "thunderbird-school",
+      "name": "Thunderbird School of Global Management",
+      "displayName": "Thunderbird School of Global Management",
+      "baseName": "Thunderbird School",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/arizona/plates/az-thunderbird-school.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ThunderbirdSchool.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "thunderbird",
+        "school"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ThunderbirdSchool.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-collegiate-uof-a",
+      "slug": "collegiate-uof-a",
+      "name": "University of Arizona - Beardown",
+      "displayName": "University of Arizona - Beardown",
+      "baseName": "Collegiate Uof A",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/arizona/plates/az-collegiate-uof-a.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/CollegiateUofA.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "collegiate",
+        "uof"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "CollegiateUofA.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-universityof-phoenix",
+      "slug": "universityof-phoenix",
+      "name": "Universityof Phoenix",
+      "displayName": "Universityof Phoenix",
+      "baseName": "Universityof Phoenix",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/arizona/plates/az-universityof-phoenix.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/UniversityofPhoenix.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "universityof",
+        "phoenix"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "UniversityofPhoenix.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-arizona-sportsmen-wildlife",
+      "slug": "arizona-sportsmen-wildlife",
+      "name": "Conserving Wildlife",
+      "displayName": "Conserving Wildlife",
+      "baseName": "Arizona Sportsmen Wildlife",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/arizona/plates/az-arizona-sportsmen-wildlife.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaSportsmenWildlife.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "arizona",
+        "sportsmen",
+        "wildlife"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ArizonaSportsmenWildlife.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-keep-arizona-beautiful",
+      "slug": "keep-arizona-beautiful",
+      "name": "Keep It Beautiful",
+      "displayName": "Keep It Beautiful",
+      "baseName": "Keep Arizona Beautiful",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/arizona/plates/az-keep-arizona-beautiful.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/KeepArizonaBeautiful.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "keep",
+        "arizona",
+        "beautiful"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "KeepArizonaBeautiful.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-pet-friendly-spay-neuter",
+      "slug": "pet-friendly-spay-neuter",
+      "name": "Pets Enrich Our Lives",
+      "displayName": "Pets Enrich Our Lives",
+      "baseName": "Pet Friendly Spay Neuter",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/arizona/plates/az-pet-friendly-spay-neuter.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/PetFriendlySpayNeuter.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "pet",
+        "friendly",
+        "spay",
+        "neuter"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "PetFriendlySpayNeuter.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-environmental",
+      "slug": "environmental",
+      "name": "Protect Our Environment",
+      "displayName": "Protect Our Environment",
+      "baseName": "Environmental",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/arizona/plates/az-environmental.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/Environmental.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "environmental"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "Environmental.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "az-share-the-road",
+      "slug": "share-the-road",
+      "name": "Share the Road",
+      "displayName": "Share the Road",
+      "baseName": "Share The Road",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/arizona/plates/az-share-the-road.jpg",
+        "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ShareTheRoad.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "share",
+        "the",
+        "road"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Arizona MVD",
+          "sourceId": "ShareTheRoad.jpg",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    }
+  ]
+}

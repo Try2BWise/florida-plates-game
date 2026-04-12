@@ -1,0 +1,1287 @@
+{
+  "schemaVersion": 2,
+  "generatedDate": "2026-04-12",
+  "generatedFrom": "src/data/alaska-plate-master.json",
+  "plateCount": 47,
+  "plates": [
+    {
+      "id": "ak-standard-gold",
+      "slug": "standard-gold",
+      "name": "Standard Gold",
+      "displayName": "Standard Gold",
+      "baseName": "Standard Gold",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-standard-gold.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/ueafjour/blue-n-gold-1.png"
+      },
+      "sponsor": null,
+      "notes": "Standard issue Alaska plate — blue and gold design",
+      "searchTerms": [
+        "standard",
+        "gold",
+        "blue and gold",
+        "default",
+        "base plate"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-grizzly-bear",
+      "slug": "grizzly-bear",
+      "name": "Grizzly Bear",
+      "displayName": "Grizzly Bear",
+      "baseName": "Grizzly Bear",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-grizzly-bear.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/i24del1j/grizzly-bear.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "grizzly bear",
+        "bear",
+        "grizzly",
+        "brown bear",
+        "wildlife"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-celebrating-the-arts",
+      "slug": "celebrating-the-arts",
+      "name": "Celebrating the Arts",
+      "displayName": "Celebrating the Arts",
+      "baseName": "Celebrating the Arts",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-celebrating-the-arts.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/a0gl1y4f/fireweed.png"
+      },
+      "sponsor": null,
+      "notes": "Fireweed design",
+      "searchTerms": [
+        "celebrating the arts",
+        "arts",
+        "fireweed",
+        "culture"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-mountain",
+      "slug": "mountain",
+      "name": "Mountain",
+      "displayName": "Mountain",
+      "baseName": "Mountain",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-mountain.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/lu0gkl4c/mountain.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "mountain",
+        "denali",
+        "mountains",
+        "landscape"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-caribou",
+      "slug": "caribou",
+      "name": "Caribou",
+      "displayName": "Caribou",
+      "baseName": "Caribou",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-caribou.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/1hsp5wur/caribou.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "caribou",
+        "reindeer",
+        "wildlife"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-in-god-we-trust",
+      "slug": "in-god-we-trust",
+      "name": "In God We Trust",
+      "displayName": "In God We Trust",
+      "baseName": "In God We Trust",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-in-god-we-trust.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/5cxnurjj/ak-in-god-we-trust.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "in god we trust",
+        "faith",
+        "motto"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-honoring-fallen-police-officers",
+      "slug": "honoring-fallen-police-officers",
+      "name": "Honoring Fallen Police Officers",
+      "displayName": "Honoring Fallen Police Officers",
+      "baseName": "Honoring Fallen Police Officers",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-honoring-fallen-police-officers.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/nk2myuer/fallen-officer-large-plate.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "honoring fallen police officers",
+        "police",
+        "fallen officers",
+        "law enforcement",
+        "memorial"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-alaska-childrens-trust",
+      "slug": "alaska-childrens-trust",
+      "name": "Alaska Children's Trust",
+      "displayName": "Alaska Children's Trust",
+      "baseName": "Alaska Children's Trust",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-alaska-childrens-trust.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/ytebjcqg/kid.png"
+      },
+      "sponsor": "Alaska Children's Trust",
+      "notes": null,
+      "searchTerms": [
+        "alaska childrens trust",
+        "children",
+        "kids",
+        "youth"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-blood-bank-of-alaska",
+      "slug": "blood-bank-of-alaska",
+      "name": "Blood Bank of Alaska",
+      "displayName": "Blood Bank of Alaska",
+      "baseName": "Blood Bank of Alaska",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-blood-bank-of-alaska.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/sdrh4cot/blood-bank-plate-final.png"
+      },
+      "sponsor": "Blood Bank of Alaska",
+      "notes": null,
+      "searchTerms": [
+        "blood bank of alaska",
+        "blood bank",
+        "blood donation",
+        "donor"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-breast-cancer-awareness",
+      "slug": "breast-cancer-awareness",
+      "name": "Breast Cancer Awareness",
+      "displayName": "Breast Cancer Awareness",
+      "baseName": "Breast Cancer Awareness",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-breast-cancer-awareness.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/ysxlrhpf/breast-cancer.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "breast cancer awareness",
+        "breast cancer",
+        "cancer",
+        "pink ribbon"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-choose-life",
+      "slug": "choose-life",
+      "name": "Choose Life",
+      "displayName": "Choose Life",
+      "baseName": "Choose Life",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-choose-life.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/krzfzwxj/choose-life.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "choose life",
+        "pro-life"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-national-rifle-association",
+      "slug": "national-rifle-association",
+      "name": "National Rifle Association",
+      "displayName": "National Rifle Association",
+      "baseName": "National Rifle Association",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-national-rifle-association.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/vciof5ca/nra-license-plate-lg.png"
+      },
+      "sponsor": "National Rifle Association",
+      "notes": null,
+      "searchTerms": [
+        "national rifle association",
+        "nra",
+        "guns",
+        "firearms",
+        "second amendment"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-pro-family-pro-choice",
+      "slug": "pro-family-pro-choice",
+      "name": "Pro-Family, Pro-Choice",
+      "displayName": "Pro-Family, Pro-Choice",
+      "baseName": "Pro-Family, Pro-Choice",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-pro-family-pro-choice.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/zxnnmadp/pro-family-pro-choice-plate.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "pro-family pro-choice",
+        "pro choice",
+        "reproductive rights"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-support-our-troops",
+      "slug": "support-our-troops",
+      "name": "Support Our Troops",
+      "displayName": "Support Our Troops",
+      "baseName": "Support Our Troops",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-support-our-troops.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/2d1jmdax/support.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "support our troops",
+        "troops",
+        "military support",
+        "yellow ribbon"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-disabled-parking",
+      "slug": "disabled-parking",
+      "name": "Disabled w/ Parking Privileges",
+      "displayName": "Disabled w/ Parking Privileges",
+      "baseName": "Disabled w/ Parking Privileges",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-disabled-parking.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/xayfrqej/plate-disabled.png"
+      },
+      "sponsor": null,
+      "notes": "Includes parking privileges",
+      "searchTerms": [
+        "disabled",
+        "handicap",
+        "parking",
+        "accessibility"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-disabled-veteran-parking",
+        "ak-disabled-veteran-no-parking"
+      ]
+    },
+    {
+      "id": "ak-disabled-veteran-parking",
+      "slug": "disabled-veteran-parking",
+      "name": "Disabled Veteran w/ Parking Privileges",
+      "displayName": "Disabled Veteran w/ Parking Privileges",
+      "baseName": "Disabled Veteran w/ Parking Privileges",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-disabled-veteran-parking.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/o1vlp3d3/plate-disabled-veteran-parking.png"
+      },
+      "sponsor": null,
+      "notes": "Includes parking privileges",
+      "searchTerms": [
+        "disabled veteran",
+        "veteran",
+        "handicap",
+        "parking",
+        "dv"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-disabled-parking",
+        "ak-disabled-veteran-no-parking"
+      ]
+    },
+    {
+      "id": "ak-disabled-veteran-no-parking",
+      "slug": "disabled-veteran-no-parking",
+      "name": "Disabled Veteran w/o Parking Privileges",
+      "displayName": "Disabled Veteran w/o Parking Privileges",
+      "baseName": "Disabled Veteran w/o Parking Privileges",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-disabled-veteran-no-parking.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/wpgjz5nz/plate-disabled-veteran-parking-no.png"
+      },
+      "sponsor": null,
+      "notes": "No parking privileges",
+      "searchTerms": [
+        "disabled veteran",
+        "veteran",
+        "dv"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-disabled-parking",
+        "ak-disabled-veteran-parking"
+      ]
+    },
+    {
+      "id": "ak-uaa",
+      "slug": "uaa",
+      "name": "University of Alaska Anchorage",
+      "displayName": "University of Alaska Anchorage",
+      "baseName": "University of Alaska Anchorage",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-uaa.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/rxqiti0p/uaa.png"
+      },
+      "sponsor": "University of Alaska Anchorage",
+      "notes": null,
+      "searchTerms": [
+        "university of alaska anchorage",
+        "uaa",
+        "seawolves",
+        "anchorage"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-uaf",
+        "ak-uas"
+      ]
+    },
+    {
+      "id": "ak-uaf",
+      "slug": "uaf",
+      "name": "University of Alaska Fairbanks",
+      "displayName": "University of Alaska Fairbanks",
+      "baseName": "University of Alaska Fairbanks",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-uaf.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/bl2g0jvk/uaf.png"
+      },
+      "sponsor": "University of Alaska Fairbanks",
+      "notes": null,
+      "searchTerms": [
+        "university of alaska fairbanks",
+        "uaf",
+        "nanooks",
+        "fairbanks"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-uaa",
+        "ak-uas"
+      ]
+    },
+    {
+      "id": "ak-uas",
+      "slug": "uas",
+      "name": "University of Alaska Southeast",
+      "displayName": "University of Alaska Southeast",
+      "baseName": "University of Alaska Southeast",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-uas.jpg",
+        "remoteUrl": "https://dmv.alaska.gov/media/adujyo50/uaa-se2025.jpg"
+      },
+      "sponsor": "University of Alaska Southeast",
+      "notes": null,
+      "searchTerms": [
+        "university of alaska southeast",
+        "uas",
+        "juneau"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-uaa",
+        "ak-uaf"
+      ]
+    },
+    {
+      "id": "ak-pws",
+      "slug": "pws",
+      "name": "Prince William Sound College",
+      "displayName": "Prince William Sound College",
+      "baseName": "Prince William Sound College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-pws.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/45jnyt0l/pws.png"
+      },
+      "sponsor": "Prince William Sound College",
+      "notes": null,
+      "searchTerms": [
+        "prince william sound college",
+        "pws",
+        "valdez"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-alaska-national-guard",
+      "slug": "alaska-national-guard",
+      "name": "Alaska National Guard",
+      "displayName": "Alaska National Guard",
+      "baseName": "Alaska National Guard",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-alaska-national-guard.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/n45pdhfw/guard-plate.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "alaska national guard",
+        "national guard",
+        "guard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-unit-designator",
+      "slug": "unit-designator",
+      "name": "Unit Designator",
+      "displayName": "Unit Designator",
+      "baseName": "Unit Designator",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-unit-designator.jpg",
+        "remoteUrl": "https://dmv.alaska.gov/media/qxppp5mp/11th-airborne-license-plate.jpg"
+      },
+      "sponsor": null,
+      "notes": "Example shown: 11th Airborne Division",
+      "searchTerms": [
+        "unit designator",
+        "11th airborne",
+        "military unit",
+        "army unit"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-air-force",
+      "slug": "air-force",
+      "name": "Air Force",
+      "displayName": "Air Force",
+      "baseName": "Air Force",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-air-force.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/yu1agjpw/airforce.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "air force",
+        "usaf",
+        "veteran"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-army",
+        "ak-coast-guard",
+        "ak-marines",
+        "ak-navy",
+        "ak-space-force"
+      ]
+    },
+    {
+      "id": "ak-army",
+      "slug": "army",
+      "name": "Army",
+      "displayName": "Army",
+      "baseName": "Army",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-army.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/l2rlef5w/army.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "army",
+        "us army",
+        "veteran"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-air-force",
+        "ak-coast-guard",
+        "ak-marines",
+        "ak-navy",
+        "ak-space-force"
+      ]
+    },
+    {
+      "id": "ak-coast-guard",
+      "slug": "coast-guard",
+      "name": "Coast Guard",
+      "displayName": "Coast Guard",
+      "baseName": "Coast Guard",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-coast-guard.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/dcfjpm3v/coast-guard.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "coast guard",
+        "uscg",
+        "veteran"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-air-force",
+        "ak-army",
+        "ak-marines",
+        "ak-navy",
+        "ak-space-force"
+      ]
+    },
+    {
+      "id": "ak-marines",
+      "slug": "marines",
+      "name": "Marines",
+      "displayName": "Marines",
+      "baseName": "Marines",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-marines.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/bofoueji/marine.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "marines",
+        "usmc",
+        "marine corps",
+        "veteran"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-air-force",
+        "ak-army",
+        "ak-coast-guard",
+        "ak-navy",
+        "ak-space-force"
+      ]
+    },
+    {
+      "id": "ak-navy",
+      "slug": "navy",
+      "name": "Navy",
+      "displayName": "Navy",
+      "baseName": "Navy",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-navy.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/0l4i2shl/navy.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "navy",
+        "usn",
+        "veteran"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-air-force",
+        "ak-army",
+        "ak-coast-guard",
+        "ak-marines",
+        "ak-space-force"
+      ]
+    },
+    {
+      "id": "ak-space-force",
+      "slug": "space-force",
+      "name": "Space Force",
+      "displayName": "Space Force",
+      "baseName": "Space Force",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-space-force.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/xvymq3sx/space-force-veteran.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "space force",
+        "ussf",
+        "veteran"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-air-force",
+        "ak-army",
+        "ak-coast-guard",
+        "ak-marines",
+        "ak-navy"
+      ]
+    },
+    {
+      "id": "ak-former-prisoner-of-war",
+      "slug": "former-prisoner-of-war",
+      "name": "Former Prisoner of War",
+      "displayName": "Former Prisoner of War",
+      "baseName": "Former Prisoner of War",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-former-prisoner-of-war.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/iren1wex/pow.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "former prisoner of war",
+        "pow",
+        "prisoner of war"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-gold-star-family",
+      "slug": "gold-star-family",
+      "name": "Gold Star Family",
+      "displayName": "Gold Star Family",
+      "baseName": "Gold Star Family",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-gold-star-family.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/av3ccmcf/goldstar.png"
+      },
+      "sponsor": null,
+      "notes": "One-star variant; two-star variant also available",
+      "searchTerms": [
+        "gold star family",
+        "gold star",
+        "fallen hero",
+        "bereaved family"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-gold-star-family-2"
+      ]
+    },
+    {
+      "id": "ak-gold-star-family-2",
+      "slug": "gold-star-family-2",
+      "name": "Gold Star Family (Two Stars)",
+      "displayName": "Gold Star Family (Two Stars)",
+      "baseName": "Gold Star Family",
+      "variantLabel": "Two Stars",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-gold-star-family-2.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/uk0goygn/goldstar2.png"
+      },
+      "sponsor": null,
+      "notes": "Two-star variant",
+      "searchTerms": [
+        "gold star family",
+        "gold star",
+        "two stars"
+      ],
+      "variantOf": "ak-gold-star-family",
+      "relatedPlates": [
+        "ak-gold-star-family"
+      ]
+    },
+    {
+      "id": "ak-laos-vet",
+      "slug": "laos-vet",
+      "name": "Laos Vet",
+      "displayName": "Laos Vet",
+      "baseName": "Laos Vet",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-laos-vet.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/d2hpglw2/laosvet.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "laos vet",
+        "laos veteran",
+        "laos",
+        "secret war",
+        "vietnam era"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-pearl-harbor-survivor",
+      "slug": "pearl-harbor-survivor",
+      "name": "Pearl Harbor Survivor",
+      "displayName": "Pearl Harbor Survivor",
+      "baseName": "Pearl Harbor Survivor",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-pearl-harbor-survivor.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/edgdi4hf/pearl-harbor-survivor.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "pearl harbor survivor",
+        "pearl harbor",
+        "wwii",
+        "world war ii"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-purple-heart",
+      "slug": "purple-heart",
+      "name": "Purple Heart",
+      "displayName": "Purple Heart",
+      "baseName": "Purple Heart",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-purple-heart.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/5mbcquee/purple_heart.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "purple heart",
+        "wounded",
+        "combat wounded"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-veteran-commemorative",
+      "slug": "veteran-commemorative",
+      "name": "Veteran Commemorative",
+      "displayName": "Veteran Commemorative",
+      "baseName": "Veteran Commemorative",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-veteran-commemorative.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/w1xavru1/veteran-commemorative.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veteran commemorative",
+        "veteran",
+        "commemorative"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-iaff",
+      "slug": "iaff",
+      "name": "International Association of Fire Fighters",
+      "displayName": "International Association of Fire Fighters",
+      "baseName": "International Association of Fire Fighters",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-iaff.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/rj0bnnha/iaff.png"
+      },
+      "sponsor": "International Association of Fire Fighters",
+      "notes": null,
+      "searchTerms": [
+        "international association of fire fighters",
+        "iaff",
+        "firefighters",
+        "fire fighters",
+        "union"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-firefighter-ems"
+      ]
+    },
+    {
+      "id": "ak-freemason",
+      "slug": "freemason",
+      "name": "Freemason",
+      "displayName": "Freemason",
+      "baseName": "Freemason",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-freemason.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/ugzo1vnh/freemason.png"
+      },
+      "sponsor": "Masonic Lodge",
+      "notes": null,
+      "searchTerms": [
+        "freemason",
+        "mason",
+        "masonic",
+        "lodge",
+        "fraternal"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-knights-of-columbus",
+      "slug": "knights-of-columbus",
+      "name": "Knights of Columbus",
+      "displayName": "Knights of Columbus",
+      "baseName": "Knights of Columbus",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-knights-of-columbus.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/0b1fa4em/knightsofcolumbus.png"
+      },
+      "sponsor": "Knights of Columbus",
+      "notes": null,
+      "searchTerms": [
+        "knights of columbus",
+        "kofc",
+        "catholic",
+        "fraternal"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-lions-club",
+      "slug": "lions-club",
+      "name": "Lions Club",
+      "displayName": "Lions Club",
+      "baseName": "Lions Club",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-lions-club.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/x40lbe3z/lions.png"
+      },
+      "sponsor": "Lions Club International",
+      "notes": null,
+      "searchTerms": [
+        "lions club",
+        "lions international",
+        "service club"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-pioneers-of-alaska",
+      "slug": "pioneers-of-alaska",
+      "name": "Pioneers of Alaska",
+      "displayName": "Pioneers of Alaska",
+      "baseName": "Pioneers of Alaska",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-pioneers-of-alaska.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/av3ov1rq/pioneers-of-alaska-plate.png"
+      },
+      "sponsor": "Pioneers of Alaska",
+      "notes": null,
+      "searchTerms": [
+        "pioneers of alaska",
+        "pioneers",
+        "heritage",
+        "history"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-amateur-radio",
+      "slug": "amateur-radio",
+      "name": "Amateur Radio",
+      "displayName": "Amateur Radio",
+      "baseName": "Amateur Radio",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-amateur-radio.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/xpvlrjop/blue-n-gold.png"
+      },
+      "sponsor": null,
+      "notes": "Call sign plate",
+      "searchTerms": [
+        "amateur radio",
+        "ham radio",
+        "call sign",
+        "ham"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-custom-collector",
+      "slug": "custom-collector",
+      "name": "Custom Collector",
+      "displayName": "Custom Collector",
+      "baseName": "Custom Collector",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-custom-collector.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/dyoolhuv/collector.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "custom collector",
+        "collector",
+        "classic car",
+        "antique"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-historic-vehicle"
+      ]
+    },
+    {
+      "id": "ak-farm-vehicle",
+      "slug": "farm-vehicle",
+      "name": "Farm Vehicle",
+      "displayName": "Farm Vehicle",
+      "baseName": "Farm Vehicle",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-farm-vehicle.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/jauloerq/farm.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "farm vehicle",
+        "farm",
+        "agriculture",
+        "farming"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ak-firefighter-ems",
+      "slug": "firefighter-ems",
+      "name": "Firefighter/EMS",
+      "displayName": "Firefighter/EMS",
+      "baseName": "Firefighter/EMS",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-firefighter-ems.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/qrwlvo22/fire.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "firefighter",
+        "ems",
+        "fire",
+        "emergency medical",
+        "first responder"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-iaff"
+      ]
+    },
+    {
+      "id": "ak-historic-vehicle",
+      "slug": "historic-vehicle",
+      "name": "Historic Vehicle",
+      "displayName": "Historic Vehicle",
+      "baseName": "Historic Vehicle",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-historic-vehicle.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/nquhmeds/historic_vehicle.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "historic vehicle",
+        "historic",
+        "antique",
+        "classic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [
+        "ak-custom-collector"
+      ]
+    },
+    {
+      "id": "ak-iditarod-finisher",
+      "slug": "iditarod-finisher",
+      "name": "Iditarod Finisher",
+      "displayName": "Iditarod Finisher",
+      "baseName": "Iditarod Finisher",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/alaska/plates/ak-iditarod-finisher.png",
+        "remoteUrl": "https://dmv.alaska.gov/media/fnxlvgie/iditarod.png"
+      },
+      "sponsor": null,
+      "notes": "Available to Iditarod race finishers",
+      "searchTerms": [
+        "iditarod finisher",
+        "iditarod",
+        "dog sled",
+        "musher",
+        "sled dog race"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    }
+  ]
+}
