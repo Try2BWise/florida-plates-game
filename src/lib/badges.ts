@@ -1,4 +1,5 @@
 import type { Plate, PlateCategory, PlateDiscoveryMap } from "../types";
+import { stateRegistry } from "../games/stateRegistry";
 
 export type BadgeGroup =
   | "progress"
@@ -1249,7 +1250,11 @@ export function evaluateBadges(
 
   const panhandleCount = Object.values(discoveries).filter((discovery) => {
     const county = normalizeCountyName(discovery.county);
-    return county ? activePanhandleScoutCounties.has(county) : false;
+    if (!county || !activePanhandleScoutCounties.has(county)) return false;
+    // Same guard: only count discoveries in the active state
+    const activeName = stateRegistry.find((s) => s.id === stateId)?.name ?? null;
+    if (discovery.state && activeName && discovery.state !== activeName) return false;
+    return true;
   }).length;
   // Removed visitedCounties and countVisitedCounties (no longer used)
 
@@ -1260,7 +1265,11 @@ export function evaluateBadges(
     return county.replace(/\s+county$/i, "").trim();
   }
 
-  // For each region, count unique counties found
+  // For each region, count unique counties found.
+  // CRITICAL: only count discoveries made IN the active state to avoid
+  // county-name collisions across states (e.g., Perry County exists in
+  // both Arkansas and Tennessee).
+  const activeStateName = stateRegistry.find((s) => s.id === stateId)?.name ?? null;
   const foundCountiesByRegion: Record<string, Set<string>> = {};
   Object.keys(activeBadgeCounties).forEach((regionId) => {
     foundCountiesByRegion[regionId] = new Set<string>();
@@ -1268,6 +1277,12 @@ export function evaluateBadges(
   Object.values(discoveries).forEach((discovery) => {
     const county = normalizeCounty(discovery.county);
     if (!county) return;
+    // Skip if discovery has a state and it doesn't match the active state.
+    // Legacy discoveries with no state field are allowed through for
+    // backward compatibility.
+    if (discovery.state && activeStateName && discovery.state !== activeStateName) {
+      return;
+    }
     for (const [regionId, counties] of Object.entries(activeBadgeCounties)) {
       if (counties.includes(county)) {
         foundCountiesByRegion[regionId].add(county);
