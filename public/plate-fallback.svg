@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" fill="none">
+  <!-- Plate body -->
+  <rect x="3" y="3" width="294" height="144" rx="10" fill="#e8e8e8" stroke="#bbb" stroke-width="2"/>
+  <!-- Embossed border -->
+  <rect x="14" y="14" width="272" height="122" rx="4" stroke="#ccc" stroke-width="1" fill="none"/>
+  <!-- Bolt holes -->
+  <circle cx="28" cy="75" r="5" fill="#d0d0d0" stroke="#bbb" stroke-width="1"/>
+  <circle cx="272" cy="75" r="5" fill="#d0d0d0" stroke="#bbb" stroke-width="1"/>
+  <!-- Plate number area lines -->
+  <line x1="60" y1="58" x2="240" y2="58" stroke="#ccc" stroke-width="1.5" stroke-dasharray="12 6"/>
+  <line x1="60" y1="92" x2="240" y2="92" stroke="#ccc" stroke-width="1.5" stroke-dasharray="12 6"/>
+  <!-- Text -->
+  <text x="150" y="81" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#aaa">Image Unavailable</text>
+  <!-- State area -->
+  <text x="150" y="36" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#c0c0c0" letter-spacing="2">EVERY PL8</text>
+  <text x="150" y="130" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#c0c0c0">gorillagrin.com</text>
+</svg>

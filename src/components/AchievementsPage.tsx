@@ -383,7 +383,7 @@ export function AchievementsPage({
                       {entries.map(({ plate, discovery }) => (
                         <article className="utility-card timeline-entry" key={`${plate.id}-${discovery.foundAtIso}`}>
                           <div className="timeline-entry__plate">
-                            <img className="timeline-entry__image" src={`${import.meta.env.BASE_URL}${plate.image.path}`} alt={plate.name} />
+                            <img className="timeline-entry__image" src={`${import.meta.env.BASE_URL}${plate.image.path}`} alt={plate.name} onError={(e) => { (e.target as HTMLImageElement).src = `${import.meta.env.BASE_URL}plate-fallback.svg`; }} />
                             <div className="timeline-entry__copy">
                               <h4>{plate.name}</h4>
                               <p className="utility-card__meta">{formatDiscoveryTime(discovery.foundAtIso)}</p>

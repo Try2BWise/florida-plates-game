@@ -1,9 +1,10 @@
 import { activeLegacyIdMap, activeStorage } from "../games/activeGame";
+import { getItem, setItem } from "./persistentStorage";
 import type { PlateDiscoveryMap } from "../types";
 
 export function loadDiscoveries(): PlateDiscoveryMap {
   try {
-    const rawValue = window.localStorage.getItem(activeStorage.discoveriesKey);
+    const rawValue = getItem(activeStorage.discoveriesKey);
     if (!rawValue) {
       return {};
     }
@@ -32,5 +33,5 @@ export function loadDiscoveries(): PlateDiscoveryMap {
 }
 
 export function saveDiscoveries(discoveries: PlateDiscoveryMap): void {
-  window.localStorage.setItem(activeStorage.discoveriesKey, JSON.stringify(discoveries));
+  setItem(activeStorage.discoveriesKey, JSON.stringify(discoveries));
 }

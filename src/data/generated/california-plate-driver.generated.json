@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedDate": "2026-04-12",
+  "generatedDate": "2026-04-13",
   "generatedFrom": "src/data/california-plate-master.json",
-  "plateCount": 44,
+  "plateCount": 94,
   "plates": [
     {
       "id": "ca-standard",
@@ -20,13 +20,177 @@
         "remoteUrl": null
       },
       "sponsor": null,
-      "notes": "Current base plate design (pass-1)",
+      "notes": "Current base plate (pass-1)",
       "searchTerms": [
         "standard",
         "base",
         "default"
       ],
       "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-standard-2",
+      "slug": "standard-2",
+      "name": "Standard (Design 2)",
+      "displayName": "Standard (Design 2)",
+      "baseName": "Standard",
+      "variantLabel": "Design 2",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/california/plates/ca-standard-2.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Variant design pass-2",
+      "searchTerms": [
+        "standard"
+      ],
+      "variantOf": "ca-standard",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-standard-3",
+      "slug": "standard-3",
+      "name": "Standard (Design 3)",
+      "displayName": "Standard (Design 3)",
+      "baseName": "Standard",
+      "variantLabel": "Design 3",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/california/plates/ca-standard-3.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Variant design pass-3",
+      "searchTerms": [
+        "standard"
+      ],
+      "variantOf": "ca-standard",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-standard-4",
+      "slug": "standard-4",
+      "name": "Standard (Design 4)",
+      "displayName": "Standard (Design 4)",
+      "baseName": "Standard",
+      "variantLabel": "Design 4",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/california/plates/ca-standard-4.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Variant design pass-4",
+      "searchTerms": [
+        "standard"
+      ],
+      "variantOf": "ca-standard",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-standard-5",
+      "slug": "standard-5",
+      "name": "Standard (Design 5)",
+      "displayName": "Standard (Design 5)",
+      "baseName": "Standard",
+      "variantLabel": "Design 5",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/california/plates/ca-standard-5.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Variant design pass-5",
+      "searchTerms": [
+        "standard"
+      ],
+      "variantOf": "ca-standard",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-standard-6",
+      "slug": "standard-6",
+      "name": "Standard (Design 6)",
+      "displayName": "Standard (Design 6)",
+      "baseName": "Standard",
+      "variantLabel": "Design 6",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/california/plates/ca-standard-6.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Variant design pass-6",
+      "searchTerms": [
+        "standard"
+      ],
+      "variantOf": "ca-standard",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-motorcycle-standard",
+      "slug": "motorcycle-standard",
+      "name": "Motorcycle Standard",
+      "displayName": "Motorcycle Standard",
+      "baseName": "Motorcycle Standard",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-motorcycle-standard.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard motorcycle plate (mot-1)",
+      "searchTerms": [
+        "motorcycle",
+        "standard",
+        "bike"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-motorcycle-standard-2",
+      "slug": "motorcycle-standard-2",
+      "name": "Motorcycle Standard (Alt)",
+      "displayName": "Motorcycle Standard (Alt)",
+      "baseName": "Motorcycle Standard",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-motorcycle-standard-2.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Alternative motorcycle design (mot-2)",
+      "searchTerms": [
+        "motorcycle",
+        "standard"
+      ],
+      "variantOf": "ca-motorcycle-standard",
       "relatedPlates": []
     },
     {
@@ -774,9 +938,9 @@
     {
       "id": "ca-amateur-radio",
       "slug": "amateur-radio",
-      "name": "Amateur Radio",
-      "displayName": "Amateur Radio",
-      "baseName": "Amateur Radio",
+      "name": "Amateur Radio (Sun)",
+      "displayName": "Amateur Radio (Sun)",
+      "baseName": "Amateur Radio (Sun)",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
@@ -794,6 +958,280 @@
         "ham radio",
         "call sign",
         "ham"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-amateur-radio-script",
+      "slug": "amateur-radio-script",
+      "name": "Amateur Radio (Script)",
+      "displayName": "Amateur Radio (Script)",
+      "baseName": "Amateur Radio",
+      "variantLabel": "Script",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/california/plates/ca-amateur-radio-script.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "amateur",
+        "radio",
+        "script"
+      ],
+      "variantOf": "ca-amateur-radio",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-amateur-radio-block",
+      "slug": "amateur-radio-block",
+      "name": "Amateur Radio (Block)",
+      "displayName": "Amateur Radio (Block)",
+      "baseName": "Amateur Radio",
+      "variantLabel": "Block",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/california/plates/ca-amateur-radio-block.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "amateur",
+        "radio",
+        "block"
+      ],
+      "variantOf": "ca-amateur-radio",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-amateur-radio-bluegold",
+      "slug": "amateur-radio-bluegold",
+      "name": "Amateur Radio (Blue/Gold)",
+      "displayName": "Amateur Radio (Blue/Gold)",
+      "baseName": "Amateur Radio",
+      "variantLabel": "Blue/Gold",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/california/plates/ca-amateur-radio-bluegold.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "amateur",
+        "radio",
+        "bluegold"
+      ],
+      "variantOf": "ca-amateur-radio",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-citizens-band",
+      "slug": "citizens-band",
+      "name": "Citizens Band (Sun)",
+      "displayName": "Citizens Band (Sun)",
+      "baseName": "Citizens Band (Sun)",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/california/plates/ca-citizens-band.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "citizens",
+        "band",
+        "cb",
+        "radio"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-citizens-band-script",
+      "slug": "citizens-band-script",
+      "name": "Citizens Band (Script)",
+      "displayName": "Citizens Band (Script)",
+      "baseName": "Citizens Band",
+      "variantLabel": "Script",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/california/plates/ca-citizens-band-script.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "citizens",
+        "band",
+        "script"
+      ],
+      "variantOf": "ca-citizens-band",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-citizens-band-block",
+      "slug": "citizens-band-block",
+      "name": "Citizens Band (Block)",
+      "displayName": "Citizens Band (Block)",
+      "baseName": "Citizens Band",
+      "variantLabel": "Block",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/california/plates/ca-citizens-band-block.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "citizens",
+        "band",
+        "block"
+      ],
+      "variantOf": "ca-citizens-band",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-citizens-band-blkgold",
+      "slug": "citizens-band-blkgold",
+      "name": "Citizens Band (Black/Gold)",
+      "displayName": "Citizens Band (Black/Gold)",
+      "baseName": "Citizens Band",
+      "variantLabel": "Black/Gold",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/california/plates/ca-citizens-band-blkgold.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "citizens",
+        "band",
+        "blkgold"
+      ],
+      "variantOf": "ca-citizens-band",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-exempt",
+      "slug": "exempt",
+      "name": "Exempt",
+      "displayName": "Exempt",
+      "baseName": "Exempt",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-exempt.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "exempt",
+        "government",
+        "official"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-exempt-script",
+      "slug": "exempt-script",
+      "name": "Exempt (Script)",
+      "displayName": "Exempt (Script)",
+      "baseName": "Exempt",
+      "variantLabel": "Script",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-exempt-script.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "exempt",
+        "script"
+      ],
+      "variantOf": "ca-exempt",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-exempt-octagon-script",
+      "slug": "exempt-octagon-script",
+      "name": "Exempt (Octagon Script)",
+      "displayName": "Exempt (Octagon Script)",
+      "baseName": "Exempt",
+      "variantLabel": "Octagon",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-exempt-octagon-script.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "exempt",
+        "octagon",
+        "script"
+      ],
+      "variantOf": "ca-exempt",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-antique-motorcycle",
+      "slug": "antique-motorcycle",
+      "name": "Antique Motorcycle",
+      "displayName": "Antique Motorcycle",
+      "baseName": "Antique Motorcycle",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-antique-motorcycle.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "antique",
+        "motorcycle"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -879,6 +1317,31 @@
       "relatedPlates": []
     },
     {
+      "id": "ca-foreign-organization",
+      "slug": "foreign-organization",
+      "name": "Foreign Organization",
+      "displayName": "Foreign Organization",
+      "baseName": "Foreign Organization",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-foreign-organization.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "foreign",
+        "organization",
+        "diplomatic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
       "id": "ca-historic-vehicle",
       "slug": "historic-vehicle",
       "name": "Historical Vehicle",
@@ -900,6 +1363,31 @@
         "vehicle",
         "antique",
         "classic car"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-honorary-consul",
+      "slug": "honorary-consul",
+      "name": "Honorary Consul",
+      "displayName": "Honorary Consul",
+      "baseName": "Honorary Consul",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-honorary-consul.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "honorary",
+        "consul",
+        "diplomatic"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -927,6 +1415,79 @@
         "horseless carriage",
         "antique",
         "pre-1936"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-livery",
+      "slug": "livery",
+      "name": "Livery",
+      "displayName": "Livery",
+      "baseName": "Livery",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/california/plates/ca-livery.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "livery",
+        "taxi",
+        "limo"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-livery-elp",
+      "slug": "livery-elp",
+      "name": "Livery (Environmental)",
+      "displayName": "Livery (Environmental)",
+      "baseName": "Livery",
+      "variantLabel": "Environmental",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/california/plates/ca-livery-elp.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "livery",
+        "elp"
+      ],
+      "variantOf": "ca-livery",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-moped",
+      "slug": "moped",
+      "name": "Moped",
+      "displayName": "Moped",
+      "baseName": "Moped",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-moped.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "moped",
+        "scooter"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -987,6 +1548,106 @@
       "relatedPlates": []
     },
     {
+      "id": "ca-press-photographer",
+      "slug": "press-photographer",
+      "name": "Press Photographer",
+      "displayName": "Press Photographer",
+      "baseName": "Press Photographer",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/california/plates/ca-press-photographer.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "press",
+        "photographer",
+        "media"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-press-photographer-block",
+      "slug": "press-photographer-block",
+      "name": "Press Photographer (Block)",
+      "displayName": "Press Photographer (Block)",
+      "baseName": "Press Photographer",
+      "variantLabel": "Block",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/california/plates/ca-press-photographer-block.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "press",
+        "photographer",
+        "block"
+      ],
+      "variantOf": "ca-press-photographer",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-press-photographer-mc",
+      "slug": "press-photographer-mc",
+      "name": "Press Photographer (Motorcycle)",
+      "displayName": "Press Photographer (Motorcycle)",
+      "baseName": "Press Photographer",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-press-photographer-mc.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "press",
+        "photographer",
+        "mc"
+      ],
+      "variantOf": "ca-press-photographer",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-special-equipment",
+      "slug": "special-equipment",
+      "name": "Special Equipment",
+      "displayName": "Special Equipment",
+      "baseName": "Special Equipment",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/california/plates/ca-special-equipment.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "special",
+        "equipment",
+        "construction"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
       "id": "ca-medal-of-honor",
       "slug": "medal-of-honor",
       "name": "Congressional Medal of Honor",
@@ -1044,9 +1705,9 @@
     {
       "id": "ca-ex-prisoner-of-war",
       "slug": "ex-prisoner-of-war",
-      "name": "Ex-Prisoner of War",
-      "displayName": "Ex-Prisoner of War",
-      "baseName": "Ex-Prisoner of War",
+      "name": "Ex-Prisoner of War (Sun)",
+      "displayName": "Ex-Prisoner of War (Sun)",
+      "baseName": "Ex-Prisoner of War (Sun)",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
@@ -1067,6 +1728,131 @@
         "prisoner of war"
       ],
       "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-ex-pow-script",
+      "slug": "ex-pow-script",
+      "name": "Ex-Prisoner of War (Script)",
+      "displayName": "Ex-Prisoner of War (Script)",
+      "baseName": "Ex-Prisoner of War",
+      "variantLabel": "Script",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/california/plates/ca-ex-pow-script.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ex",
+        "pow",
+        "script"
+      ],
+      "variantOf": "ca-ex-prisoner-of-war",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-ex-pow-block",
+      "slug": "ex-pow-block",
+      "name": "Ex-Prisoner of War (Block)",
+      "displayName": "Ex-Prisoner of War (Block)",
+      "baseName": "Ex-Prisoner of War",
+      "variantLabel": "Block",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/california/plates/ca-ex-pow-block.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ex",
+        "pow",
+        "block"
+      ],
+      "variantOf": "ca-ex-prisoner-of-war",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-ex-pow-bluegold",
+      "slug": "ex-pow-bluegold",
+      "name": "Ex-Prisoner of War (Blue/Gold)",
+      "displayName": "Ex-Prisoner of War (Blue/Gold)",
+      "baseName": "Ex-Prisoner of War",
+      "variantLabel": "Blue/Gold",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/california/plates/ca-ex-pow-bluegold.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ex",
+        "pow",
+        "bluegold"
+      ],
+      "variantOf": "ca-ex-prisoner-of-war",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-ex-pow-plate",
+      "slug": "ex-pow-plate",
+      "name": "Ex-Prisoner of War (Alt)",
+      "displayName": "Ex-Prisoner of War (Alt)",
+      "baseName": "Ex-Prisoner of War",
+      "variantLabel": "Alt",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/california/plates/ca-ex-pow-plate.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ex",
+        "pow",
+        "plate"
+      ],
+      "variantOf": "ca-ex-prisoner-of-war",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-ex-pow-mc",
+      "slug": "ex-pow-mc",
+      "name": "Ex-Prisoner of War (Motorcycle)",
+      "displayName": "Ex-Prisoner of War (Motorcycle)",
+      "baseName": "Ex-Prisoner of War",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/california/plates/ca-ex-pow-mc.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ex",
+        "pow",
+        "mc"
+      ],
+      "variantOf": "ca-ex-prisoner-of-war",
       "relatedPlates": []
     },
     {
@@ -1175,6 +1961,457 @@
         "motorcycle"
       ],
       "variantOf": "ca-purple-heart",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-assembly-script",
+      "slug": "assembly-script",
+      "name": "California State Assembly (Script)",
+      "displayName": "California State Assembly (Script)",
+      "baseName": "California State Assembly (Script)",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-assembly-script.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "assembly",
+        "script",
+        "legislator"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-assembly-block",
+      "slug": "assembly-block",
+      "name": "California State Assembly (Block)",
+      "displayName": "California State Assembly (Block)",
+      "baseName": "California State Assembly",
+      "variantLabel": "Block",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-assembly-block.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "assembly",
+        "block"
+      ],
+      "variantOf": "ca-assembly-script",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-assembly-sun",
+      "slug": "assembly-sun",
+      "name": "California State Assembly (Sun)",
+      "displayName": "California State Assembly (Sun)",
+      "baseName": "California State Assembly",
+      "variantLabel": "Sun",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-assembly-sun.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "assembly",
+        "sun"
+      ],
+      "variantOf": "ca-assembly-script",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-assembly-bluegold",
+      "slug": "assembly-bluegold",
+      "name": "California State Assembly (Blue/Gold)",
+      "displayName": "California State Assembly (Blue/Gold)",
+      "baseName": "California State Assembly",
+      "variantLabel": "Blue/Gold",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-assembly-bluegold.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "assembly",
+        "bluegold"
+      ],
+      "variantOf": "ca-assembly-script",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-senate-script",
+      "slug": "senate-script",
+      "name": "California State Senate (Script)",
+      "displayName": "California State Senate (Script)",
+      "baseName": "California State Senate (Script)",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-senate-script.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "senate",
+        "script",
+        "state senate",
+        "legislator"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-senate-block",
+      "slug": "senate-block",
+      "name": "California State Senate (Block)",
+      "displayName": "California State Senate (Block)",
+      "baseName": "California State Senate",
+      "variantLabel": "Block",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-senate-block.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "senate",
+        "block"
+      ],
+      "variantOf": "ca-senate-script",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-senate-sun",
+      "slug": "senate-sun",
+      "name": "California State Senate (Sun)",
+      "displayName": "California State Senate (Sun)",
+      "baseName": "California State Senate",
+      "variantLabel": "Sun",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-senate-sun.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "senate",
+        "sun"
+      ],
+      "variantOf": "ca-senate-script",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-senate-bluegold",
+      "slug": "senate-bluegold",
+      "name": "California State Senate (Blue/Gold)",
+      "displayName": "California State Senate (Blue/Gold)",
+      "baseName": "California State Senate",
+      "variantLabel": "Blue/Gold",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-senate-bluegold.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "senate",
+        "bluegold"
+      ],
+      "variantOf": "ca-senate-script",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-senate-retired-bluegold",
+      "slug": "senate-retired-bluegold",
+      "name": "California State Senate Retired",
+      "displayName": "California State Senate Retired",
+      "baseName": "California State Senate Retired",
+      "variantLabel": "Retired",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-senate-retired-bluegold.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "senate",
+        "retired",
+        "bluegold"
+      ],
+      "variantOf": "ca-senate-script",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-us-congress-script",
+      "slug": "us-congress-script",
+      "name": "U.S. House of Representatives (Script)",
+      "displayName": "U.S. House of Representatives (Script)",
+      "baseName": "U.S. House of Representatives (Script)",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-us-congress-script.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "us",
+        "congress",
+        "script",
+        "us congress",
+        "representative",
+        "house"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-us-congress-block",
+      "slug": "us-congress-block",
+      "name": "U.S. House of Representatives (Block)",
+      "displayName": "U.S. House of Representatives (Block)",
+      "baseName": "U.S. House of Representatives",
+      "variantLabel": "Block",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-us-congress-block.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "us",
+        "congress",
+        "block"
+      ],
+      "variantOf": "ca-us-congress-script",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-us-congress-sun",
+      "slug": "us-congress-sun",
+      "name": "U.S. House of Representatives (Sun)",
+      "displayName": "U.S. House of Representatives (Sun)",
+      "baseName": "U.S. House of Representatives",
+      "variantLabel": "Sun",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-us-congress-sun.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "us",
+        "congress",
+        "sun"
+      ],
+      "variantOf": "ca-us-congress-script",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-us-congress-bluegold",
+      "slug": "us-congress-bluegold",
+      "name": "U.S. House of Representatives (Blue/Gold)",
+      "displayName": "U.S. House of Representatives (Blue/Gold)",
+      "baseName": "U.S. House of Representatives",
+      "variantLabel": "Blue/Gold",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-us-congress-bluegold.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "us",
+        "congress",
+        "bluegold"
+      ],
+      "variantOf": "ca-us-congress-script",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-us-senate-script",
+      "slug": "us-senate-script",
+      "name": "U.S. Senator (Script)",
+      "displayName": "U.S. Senator (Script)",
+      "baseName": "U.S. Senator (Script)",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-us-senate-script.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "us",
+        "senate",
+        "script",
+        "us senate",
+        "senator"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-us-senate-block",
+      "slug": "us-senate-block",
+      "name": "U.S. Senator (Block)",
+      "displayName": "U.S. Senator (Block)",
+      "baseName": "U.S. Senator",
+      "variantLabel": "Block",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-us-senate-block.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "us",
+        "senate",
+        "block"
+      ],
+      "variantOf": "ca-us-senate-script",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-us-senate-sun",
+      "slug": "us-senate-sun",
+      "name": "U.S. Senator (Sun)",
+      "displayName": "U.S. Senator (Sun)",
+      "baseName": "U.S. Senator",
+      "variantLabel": "Sun",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-us-senate-sun.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "us",
+        "senate",
+        "sun"
+      ],
+      "variantOf": "ca-us-senate-script",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-us-senate-bluegold",
+      "slug": "us-senate-bluegold",
+      "name": "U.S. Senator (Blue/Gold)",
+      "displayName": "U.S. Senator (Blue/Gold)",
+      "baseName": "U.S. Senator",
+      "variantLabel": "Blue/Gold",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-us-senate-bluegold.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "us",
+        "senate",
+        "bluegold"
+      ],
+      "variantOf": "ca-us-senate-script",
+      "relatedPlates": []
+    },
+    {
+      "id": "ca-us-senate-2nd-bluegold",
+      "slug": "us-senate-2nd-bluegold",
+      "name": "U.S. Senator (2nd Vehicle)",
+      "displayName": "U.S. Senator (2nd Vehicle)",
+      "baseName": "U.S. Senator",
+      "variantLabel": "2nd Vehicle",
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Government",
+      "image": {
+        "path": "state-packs/california/plates/ca-us-senate-2nd-bluegold.gif",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "us",
+        "senate",
+        "2nd",
+        "bluegold"
+      ],
+      "variantOf": "ca-us-senate-script",
       "relatedPlates": []
     }
   ]

@@ -1,20 +1,58 @@
-import type { PlateDiscovery } from "../types";
+import { Geolocation } from "@capacitor/geolocation";
 import { reverseGeocodePlace } from "./reverseGeocode";
+import type { PlateDiscovery } from "../types";
 
-function getCurrentPosition(): Promise<GeolocationPosition> {
-  const nativePromise = new Promise<GeolocationPosition>((resolve, reject) => {
-    navigator.geolocation.getCurrentPosition(resolve, reject, {
+async function getCurrentPosition(): Promise<{ latitude: number; longitude: number }> {
+  try {
+    // Try Capacitor native geolocation first
+    const position = await Geolocation.getCurrentPosition({
       enableHighAccuracy: true,
       timeout: 10000,
-      maximumAge: 0
     });
-  });
-  // Hard-timeout: if iOS blocks geolocation entirely (e.g. missing permission
-  // key in Info.plist), the native API may never call either callback.
-  const timeoutPromise = new Promise<never>((_, reject) =>
-    setTimeout(() => reject(new Error("Location timeout")), 12000)
-  );
-  return Promise.race([nativePromise, timeoutPromise]);
+    return {
+      latitude: position.coords.latitude,
+      longitude: position.coords.longitude,
+    };
+  } catch {
+    // Fall back to web API
+    return new Promise((resolve, reject) => {
+      if (!("geolocation" in navigator)) {
+        reject(new Error("Geolocation not available"));
+        return;
+      }
+
+      const timeoutId = setTimeout(() => reject(new Error("Location timeout")), 12000);
+
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          clearTimeout(timeoutId);
+          resolve({
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude,
+          });
+        },
+        (error) => {
+          clearTimeout(timeoutId);
+          reject(error);
+        },
+        { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+      );
+    });
+  }
+}
+
+/**
+ * Request location permission. Call before first use.
+ * Returns true if granted.
+ */
+export async function requestLocationPermission(): Promise<boolean> {
+  try {
+    const status = await Geolocation.requestPermissions();
+    return status.location === "granted" || status.coarseLocation === "granted";
+  } catch {
+    // Web fallback — permission is requested on first getCurrentPosition call
+    return true;
+  }
 }
 
 export async function createDiscovery(): Promise<PlateDiscovery> {
@@ -42,14 +80,8 @@ export async function enrichDiscoveryLocation(
     state: null
   };
 
-  if (!("geolocation" in navigator)) {
-    return emptyDiscovery;
-  }
-
   try {
-    const position = await getCurrentPosition();
-    const latitude = position.coords.latitude;
-    const longitude = position.coords.longitude;
+    const { latitude, longitude } = await getCurrentPosition();
     const place = await reverseGeocodePlace(latitude, longitude);
 
     return {

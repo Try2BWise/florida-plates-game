@@ -271,6 +271,14 @@ select {
   -webkit-tap-highlight-color: transparent;
   text-align: left;
   align-self: end;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.app-header__edition-chevron {
+  flex-shrink: 0;
+  color: var(--accent);
 }
 
 .plate-group__heading h2,
@@ -901,7 +909,7 @@ select {
 
 .plate-card {
   display: grid;
-  grid-template-columns: minmax(5.6rem, 0.84fr) minmax(0, 1fr) 2.4rem;
+  grid-template-columns: minmax(5.6rem, 0.84fr) minmax(0, 1fr) 2.75rem;
   gap: 0.5rem;
   align-items: center;
   width: 100%;
@@ -991,6 +999,7 @@ select {
   width: 2.75rem;
   height: 2.75rem;
   padding: 0;
+  margin-left: 0.25rem;
   border: none;
   border-radius: 50%;
   background: transparent;
@@ -1119,6 +1128,64 @@ select {
   color: #fff;
   box-shadow: 0 18px 30px rgba(22, 163, 74, 0.24);
   font-size: 0.95rem;
+}
+
+.badge-toast--proximity {
+  background: rgba(37, 99, 235, 0.92);
+  box-shadow: 0 18px 30px rgba(37, 99, 235, 0.24);
+}
+
+/* Hide bottom-anchored floating UI when keyboard is open */
+body.keyboard-open .badge-toast-stack,
+body.keyboard-open .update-banner {
+  display: none;
+}
+
+.geo-prompt-banner {
+  position: fixed;
+  left: 50%;
+  top: calc(1rem + env(safe-area-inset-top, 0px) + 3.2rem);
+  z-index: 35;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-width: min(calc(100vw - 2rem), 24rem);
+  padding: 0.7rem 0.85rem;
+  border-radius: 0.85rem;
+  background: rgba(37, 99, 235, 0.95);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: translateX(-50%);
+  animation: geo-prompt-slide-in 0.3s ease-out;
+}
+
+.geo-prompt-banner button {
+  flex-shrink: 0;
+  padding: 0.3rem 0.7rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.geo-prompt-banner button:active {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.geo-prompt-banner__dismiss {
+  padding: 0.15rem 0.4rem !important;
+  font-size: 1.1rem !important;
+  line-height: 1;
+}
+
+@keyframes geo-prompt-slide-in {
+  from { opacity: 0; transform: translateX(-50%) translateY(-0.5rem); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
 }
 
 .update-banner {
@@ -2289,6 +2356,7 @@ select {
 }
 
 .state-picker__header {
+  position: relative;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -2299,6 +2367,27 @@ select {
   background: color-mix(in srgb, var(--page-bg) 80%, transparent);
   backdrop-filter: blur(20px) saturate(1.5);
   -webkit-backdrop-filter: blur(20px) saturate(1.5);
+}
+
+.state-picker__settings-btn {
+  position: absolute;
+  top: calc(0.75rem + env(safe-area-inset-top, 0px));
+  right: 1rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: grid;
+  place-items: center;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-tap-highlight-color: transparent;
+  transition: color 0.15s;
+}
+
+.state-picker__settings-btn:active {
+  color: var(--text);
 }
 
 .state-picker__logo {
@@ -2446,6 +2535,13 @@ select {
   color: var(--muted);
 }
 
+.state-picker__progress {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 0.1rem;
+}
+
 .state-picker__coming-soon {
   font-size: 0.72rem;
   font-weight: 600;
@@ -2457,8 +2553,8 @@ select {
   flex-shrink: 0;
   display: grid;
   place-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
   padding: 0;
   border: none;
   border-radius: 50%;
@@ -2466,7 +2562,7 @@ select {
   color: var(--muted);
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  opacity: 0.5;
+  opacity: 0.3;
   transition: opacity 0.15s, color 0.15s;
 }
 
@@ -2475,12 +2571,19 @@ select {
   opacity: 1;
 }
 
+.state-picker__pin-btn:not(.state-picker__pin-btn--active):active {
+  opacity: 0.6;
+}
+
 .state-picker__pin-btn:active {
   opacity: 0.7;
 }
 
 .state-picker__section-label {
   align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   margin: 0.25rem 0 0;
   font-size: 0.72rem;
   font-weight: 600;

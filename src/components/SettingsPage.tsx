@@ -2,14 +2,20 @@ import { useRef, useState } from "react";
 import { Icon } from "./Icon";
 import { PageView } from "./PageView";
 import { developer } from "../config/developer";
+import { requestNotificationPermission, notifyBadgeProximity, scheduleInactivityTickler } from "../lib/notifications";
+import { isOnline } from "../lib/networkStatus";
+import { isInitialized } from "../lib/persistentStorage";
+import { checkGeoPrompt } from "../lib/geoPrompt";
+import { openInAppBrowser } from "../lib/inAppBrowser";
+import { InAppReview } from "@capacitor-community/in-app-review";
 
 interface SettingsPageProps {
   onBack: () => void;
   theme: "light" | "dark" | "system";
   resolvedTheme: "light" | "dark";
   onThemeChange: (t: "light" | "dark" | "system") => void;
-  uiPreferences: { showSearch: boolean; showCategories: boolean; showArrangement: boolean; hapticsEnabled: boolean };
-  onToggleUiPreference: (key: "showSearch" | "showCategories" | "showArrangement" | "hapticsEnabled") => void;
+  uiPreferences: { showSearch: boolean; showCategories: boolean; showArrangement: boolean; hapticsEnabled: boolean; notificationsEnabled: boolean; dailyReminderEnabled: boolean };
+  onToggleUiPreference: (key: "showSearch" | "showCategories" | "showArrangement" | "hapticsEnabled" | "notificationsEnabled" | "dailyReminderEnabled") => void;
   onForceReload: () => void;
   foundCount: number;
   onExportProgress: () => void;
@@ -34,6 +40,9 @@ export function SettingsPage({
   onShareApp, onChangeState, buildVersion, buildDateLabel, attribution
 }: SettingsPageProps) {
   const [activeTab, setActiveTab] = useState<"settings" | "about">("settings");
+  const [debugBadge, setDebugBadge] = useState<string | null>(null);
+  const [debugTickler, setDebugTickler] = useState<string | null>(null);
+  const [debugGeo, setDebugGeo] = useState<string | null>(null);
   const importRef = useRef<HTMLInputElement>(null);
 
   return (
@@ -91,7 +100,16 @@ export function SettingsPage({
                 <span className="ios-list__row-label">Haptics</span>
                 <span className={`toggle-switch ${uiPreferences.hapticsEnabled ? "toggle-switch--on" : ""}`} />
               </button>
+              <button type="button" className="ios-list__row" onClick={() => onToggleUiPreference("notificationsEnabled")}>
+                <span className="ios-list__row-label">Badge alerts</span>
+                <span className={`toggle-switch ${uiPreferences.notificationsEnabled ? "toggle-switch--on" : ""}`} />
+              </button>
+              <button type="button" className={`ios-list__row ${!uiPreferences.notificationsEnabled ? "ios-list__row--disabled" : ""}`} onClick={() => uiPreferences.notificationsEnabled && onToggleUiPreference("dailyReminderEnabled")} disabled={!uiPreferences.notificationsEnabled}>
+                <span className="ios-list__row-label">Daily reminder</span>
+                <span className={`toggle-switch ${uiPreferences.dailyReminderEnabled ? "toggle-switch--on" : ""} ${!uiPreferences.notificationsEnabled ? "toggle-switch--muted" : ""}`} />
+              </button>
             </div>
+            <div className="ios-list__section-footer">Badge alerts notify you when you're 1–2 plates away from earning a badge. Daily reminder fires at 6 PM.</div>
           </div>
 
           <div>
@@ -153,20 +171,20 @@ export function SettingsPage({
           <div>
             <div className="ios-list__section-label">Developer</div>
             <div className="ios-list__group">
-              <a className="ios-list__row" href={developer.url} target="_blank" rel="noreferrer">
+              <button type="button" className="ios-list__row" onClick={() => void openInAppBrowser(developer.url)}>
                 <span className="ios-list__row-label">{developer.name}</span>
                 <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
-              </a>
+              </button>
             </div>
           </div>
 
           <div>
             <div className="ios-list__section-label">Data Source</div>
             <div className="ios-list__group">
-              <a className="ios-list__row" href={attribution.agencyUrl} target="_blank" rel="noreferrer">
+              <button type="button" className="ios-list__row" onClick={() => void openInAppBrowser(attribution.agencyUrl)}>
                 <span className="ios-list__row-label">{attribution.agencyName}</span>
                 <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
-              </a>
+              </button>
             </div>
             <div className="ios-list__section-footer">{attribution.text.replace("{agency}", attribution.agencyName)}</div>
           </div>
@@ -174,16 +192,16 @@ export function SettingsPage({
           <div>
             <div className="ios-list__section-label">Acknowledgments</div>
             <div className="ios-list__group">
-              <a className="ios-list__row" href="https://github.com/microsoft/fluentui-emoji" target="_blank" rel="noreferrer">
+              <button type="button" className="ios-list__row" onClick={() => void openInAppBrowser("https://github.com/microsoft/fluentui-emoji")}>
                 <span className="ios-list__row-label">Microsoft Fluent Emoji</span>
                 <span className="ios-list__row-value">MIT License</span>
                 <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
-              </a>
-              <a className="ios-list__row" href="https://proicons.com/icon-collections/stateface" target="_blank" rel="noreferrer">
+              </button>
+              <button type="button" className="ios-list__row" onClick={() => void openInAppBrowser("https://proicons.com/icon-collections/stateface")}>
                 <span className="ios-list__row-label">StateFace by ProPublica</span>
                 <span className="ios-list__row-value">MIT License</span>
                 <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
-              </a>
+              </button>
             </div>
           </div>
 
@@ -196,6 +214,57 @@ export function SettingsPage({
               </a>
             </div>
             <div className="ios-list__section-footer">&copy; 2026 Gorilla Grin. All rights reserved.</div>
+          </div>
+
+          <div>
+            <div className="ios-list__section-label">Debug</div>
+            <div className="ios-list__group">
+              <button type="button" className="ios-list__row" onClick={async () => {
+                const granted = await requestNotificationPermission();
+                if (granted) {
+                  await notifyBadgeProximity("New England Spotter", 2);
+                  setDebugBadge("Sent");
+                } else {
+                  setDebugBadge("Denied");
+                }
+              }}>
+                <span className="ios-list__row-label">Test Badge Proximity</span>
+                <span className="ios-list__row-value">{debugBadge ?? "Tap to fire"}</span>
+              </button>
+              <button type="button" className="ios-list__row" onClick={async () => {
+                const granted = await requestNotificationPermission();
+                if (granted) {
+                  await scheduleInactivityTickler(0.003);
+                  setDebugTickler("~4 min");
+                } else {
+                  setDebugTickler("Denied");
+                }
+              }}>
+                <span className="ios-list__row-label">Test Inactivity Tickler</span>
+                <span className="ios-list__row-value">{debugTickler ?? "Tap to schedule"}</span>
+              </button>
+              <button type="button" className="ios-list__row" onClick={async () => {
+                const result = await checkGeoPrompt("__debug_force__");
+                setDebugGeo(result ? result.message : "No match");
+              }}>
+                <span className="ios-list__row-label">Test Geo-Prompt</span>
+                <span className="ios-list__row-value">{debugGeo ?? "Tap to check"}</span>
+              </button>
+              <button type="button" className="ios-list__row" onClick={async () => {
+                try { await InAppReview.requestReview(); } catch { /* no-op */ }
+              }}>
+                <span className="ios-list__row-label">Test Review Prompt</span>
+                <span className="ios-list__row-value">Tap to request</span>
+              </button>
+              <div className="ios-list__row">
+                <span className="ios-list__row-label">Persistent Storage</span>
+                <span className="ios-list__row-value">{isInitialized() ? "Active" : "Not init"}</span>
+              </div>
+              <div className="ios-list__row">
+                <span className="ios-list__row-label">Network</span>
+                <span className="ios-list__row-value">{isOnline() ? "Online" : "Offline"}</span>
+              </div>
+            </div>
           </div>
         </div>
       )}

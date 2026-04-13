@@ -38,6 +38,7 @@ export function PlateCard({
             src={imageSource}
             alt={plate.name}
             loading="lazy"
+            onError={(e) => { (e.target as HTMLImageElement).src = `${import.meta.env.BASE_URL}plate-fallback.svg`; }}
           />
         </div>
       </button>

@@ -4,7 +4,7 @@ import { AchievementsPage } from "./components/AchievementsPage";
 import { HelpPage } from "./components/HelpPage";
 import { SettingsPage } from "./components/SettingsPage";
 import { StatePicker } from "./components/StatePicker";
-import { getSelectedStateId } from "./games/activeGame";
+import { getSelectedStateId, setSelectedStateId } from "./games/activeGame";
 import { Icon } from "./components/Icon";
 import {
   activeGame,
@@ -25,6 +25,14 @@ import { createDiscovery, enrichDiscoveryLocation } from "./lib/geolocation";
 import { hapticsPlateFound, hapticsBadgeEarned, hapticsPlateCleared } from "./lib/haptics";
 import { reverseGeocodePlace } from "./lib/reverseGeocode";
 import { loadDiscoveries, saveDiscoveries } from "./lib/storage";
+import { getItem, setItem } from "./lib/persistentStorage";
+import { updateStatusBarStyle } from "./lib/statusBar";
+import { requestNotificationPermission, scheduleDailyReminder, cancelDailyReminder, scheduleInactivityTickler, cancelInactivityTickler } from "./lib/notifications";
+import { checkGeoPrompt } from "./lib/geoPrompt";
+import { Share } from "@capacitor/share";
+import { confirmNative } from "./lib/nativeDialog";
+import { copyToClipboard } from "./lib/clipboardWrite";
+import { requestAppReview } from "./lib/appReview";
 import type { Plate, PlateCategory, PlateDiscoveryMap } from "./types";
 
 const THEME_STORAGE_KEY = "florida-plates-theme";
@@ -121,18 +129,22 @@ interface UiPreferences {
   showCategories: boolean;
   showArrangement: boolean;
   hapticsEnabled: boolean;
+  notificationsEnabled: boolean;
+  dailyReminderEnabled: boolean;
 }
 
 const defaultUiPreferences: UiPreferences = {
   showSearch: true,
   showCategories: true,
   showArrangement: true,
-  hapticsEnabled: true
+  hapticsEnabled: true,
+  notificationsEnabled: false,
+  dailyReminderEnabled: false
 };
 
 function loadUiPreferences(): UiPreferences {
   try {
-    const rawValue = window.localStorage.getItem(UI_PREFERENCES_STORAGE_KEY);
+    const rawValue = getItem(UI_PREFERENCES_STORAGE_KEY);
     if (!rawValue) {
       return defaultUiPreferences;
     }
@@ -142,7 +154,9 @@ function loadUiPreferences(): UiPreferences {
       showSearch: parsed.showSearch ?? defaultUiPreferences.showSearch,
       showCategories: parsed.showCategories ?? defaultUiPreferences.showCategories,
       showArrangement: parsed.showArrangement ?? defaultUiPreferences.showArrangement,
-      hapticsEnabled: parsed.hapticsEnabled ?? defaultUiPreferences.hapticsEnabled
+      hapticsEnabled: parsed.hapticsEnabled ?? defaultUiPreferences.hapticsEnabled,
+      notificationsEnabled: parsed.notificationsEnabled ?? defaultUiPreferences.notificationsEnabled,
+      dailyReminderEnabled: parsed.dailyReminderEnabled ?? defaultUiPreferences.dailyReminderEnabled
     };
   } catch {
     return defaultUiPreferences;
@@ -157,7 +171,7 @@ interface BrowsePrefs {
 
 function loadBrowsePrefs(): BrowsePrefs {
   try {
-    const raw = window.localStorage.getItem(BROWSE_PREFS_STORAGE_KEY);
+    const raw = getItem(BROWSE_PREFS_STORAGE_KEY);
     if (!raw) return { visibilityFilter: "all", arrangement: "category", categoryFilters: [] };
     const parsed = JSON.parse(raw);
     return {
@@ -171,7 +185,7 @@ function loadBrowsePrefs(): BrowsePrefs {
 }
 
 function getInitialTheme(): ThemeMode {
-  const storedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
+  const storedTheme = getItem(THEME_STORAGE_KEY);
   if (storedTheme === "light" || storedTheme === "dark" || storedTheme === "system") {
     return storedTheme;
   }
@@ -185,7 +199,7 @@ function resolveTheme(theme: ThemeMode): "light" | "dark" {
 
 function loadOnboardingHintDismissed(): boolean {
   try {
-    return window.localStorage.getItem(ONBOARDING_HINT_DISMISSED_STORAGE_KEY) === "true";
+    return getItem(ONBOARDING_HINT_DISMISSED_STORAGE_KEY) === "true";
   } catch {
     return false;
   }
@@ -259,18 +273,19 @@ function App() {
     useState<PlateVisibilityFilter>(() => loadBrowsePrefs().visibilityFilter);
   const [arrangement, setArrangement] = useState<PlateArrangement>(() => loadBrowsePrefs().arrangement);
   const [shareStatus, setShareStatus] = useState<string | null>(null);
-  const [badgeToasts, setBadgeToasts] = useState<Array<{ id: string; name: string }>>([]);
+  const [badgeToasts, setBadgeToasts] = useState<Array<{ id: string; name: string; type: "earned" | "proximity" }>>([]);
   const [isOnboardingHintDismissed, setIsOnboardingHintDismissed] = useState<boolean>(() =>
     loadOnboardingHintDismissed()
   );
   const [isUpdateReady, setIsUpdateReady] = useState(false);
-  const [isClearConfirmOpen, setIsClearConfirmOpen] = useState(false);
   const [isSafeUseAcknowledged, setIsSafeUseAcknowledged] = useState(
-    () => window.localStorage.getItem(SAFE_USE_ACKNOWLEDGED_STORAGE_KEY) === "true"
+    () => getItem(SAFE_USE_ACKNOWLEDGED_STORAGE_KEY) === "true"
   );
   const [activeView, setActiveView] = useState<ActiveView>(() =>
     getSelectedStateId() ? "home" : "state-picker"
   );
+  const [settingsReturnView, setSettingsReturnView] = useState<ActiveView>("home");
+  const [geoPrompt, setGeoPrompt] = useState<{ message: string; stateId: string } | null>(null);
   const [isCategorySheetOpen, setIsCategorySheetOpen] = useState(false);
   const [isFilterSheetOpen, setIsFilterSheetOpen] = useState(false);
   const [isSortSheetOpen, setIsSortSheetOpen] = useState(false);
@@ -341,32 +356,24 @@ function App() {
 
   useEffect(() => {
     document.documentElement.dataset.theme = resolvedTheme;
-    window.localStorage.setItem(THEME_STORAGE_KEY, theme);
+    setItem(THEME_STORAGE_KEY, theme);
+    void updateStatusBarStyle(resolvedTheme);
   }, [theme, resolvedTheme]);
 
   useEffect(() => {
-    window.localStorage.setItem(
-      UI_PREFERENCES_STORAGE_KEY,
-      JSON.stringify(uiPreferences)
-    );
+    setItem(UI_PREFERENCES_STORAGE_KEY, JSON.stringify(uiPreferences));
   }, [uiPreferences]);
 
   useEffect(() => {
-    window.localStorage.setItem(
-      ONBOARDING_HINT_DISMISSED_STORAGE_KEY,
-      String(isOnboardingHintDismissed)
-    );
+    setItem(ONBOARDING_HINT_DISMISSED_STORAGE_KEY, String(isOnboardingHintDismissed));
   }, [isOnboardingHintDismissed]);
 
   useEffect(() => {
-    window.localStorage.setItem(
-      BROWSE_PREFS_STORAGE_KEY,
-      JSON.stringify({
-        visibilityFilter,
-        arrangement,
-        categoryFilters: [...selectedCategoryFilters]
-      })
-    );
+    setItem(BROWSE_PREFS_STORAGE_KEY, JSON.stringify({
+      visibilityFilter,
+      arrangement,
+      categoryFilters: [...selectedCategoryFilters]
+    }));
   }, [visibilityFilter, arrangement, selectedCategoryFilters]);
 
   useEffect(() => {
@@ -374,6 +381,13 @@ function App() {
       setSearchTerm("");
     }
   }, [uiPreferences.showSearch]);
+
+  // Geo-prompt: check on mount if user is in a state with an available pack
+  useEffect(() => {
+    void checkGeoPrompt(activeGame.id).then((prompt) => {
+      if (prompt) setGeoPrompt(prompt);
+    });
+  }, []);
 
   useEffect(() => {
     if (!uiPreferences.showSearch) {
@@ -389,11 +403,7 @@ function App() {
   }, [uiPreferences.showSearch]);
 
   useEffect(() => {
-    if (
-      !previewPlate &&
-      !isClearConfirmOpen &&
-      !activeBadgeDetail
-    ) {
+    if (!previewPlate && !activeBadgeDetail) {
       return;
     }
 
@@ -404,7 +414,7 @@ function App() {
       document.body.style.overflow = "";
       document.documentElement.style.overflow = "";
     };
-  }, [previewPlate, isClearConfirmOpen, activeBadgeDetail]);
+  }, [previewPlate, activeBadgeDetail]);
 
   useEffect(() => {
     function handleUpdateReady() {
@@ -798,8 +808,35 @@ function App() {
 
     for (const badge of newBadges) {
       const toastId = `${badge.id}-${Date.now()}`;
-      setBadgeToasts(prev => [...prev, { id: toastId, name: badge.name }]);
+      setBadgeToasts(prev => [...prev, { id: toastId, name: badge.name, type: "earned" }]);
       setTimeout(() => setBadgeToasts(prev => prev.filter(t => t.id !== toastId)), 4000);
+    }
+
+    // Request App Store review after major milestones (throttled to 90 days in appReview.ts)
+    const milestoneIds = new Set([
+      "halfway-home", "closing-in", "complete-set", "happy-250th",
+      "all-around-alabama", "all-around-alaska", "all-around-arizona", "all-around-arkansas",
+      "all-around-california", "all-around-florida", "all-around-georgia", "all-around-kansas",
+      "all-around-kentucky", "all-around-mississippi", "all-around-missouri", "all-around-tennessee",
+    ]);
+    if (newBadges.some(b => milestoneIds.has(b.id))) {
+      // Delay so the badge toast shows first
+      setTimeout(() => void requestAppReview(), 2500);
+    }
+
+    // Badge proximity toasts — show when 1-2 plates away from earning
+    if (newBadges.length === 0) {
+      const allBadgesAfter = evaluateBadges(plates, nextNormalized, activeGame.id);
+      for (const badge of allBadgesAfter) {
+        if (badge.earned || !badge.progressTarget || !badge.progressCurrent) continue;
+        const remaining = badge.progressTarget - badge.progressCurrent;
+        if (remaining >= 1 && remaining <= 2) {
+          const toastId = `prox-${badge.id}-${Date.now()}`;
+          setBadgeToasts(prev => [...prev, { id: toastId, name: `${remaining} more for ${badge.name}`, type: "proximity" }]);
+          setTimeout(() => setBadgeToasts(prev => prev.filter(t => t.id !== toastId)), 5000);
+          break; // Only show one proximity toast at a time
+        }
+      }
     }
 
     setDiscoveries((current) => ({
@@ -844,21 +881,24 @@ function App() {
   }
 
   function handleAcknowledgeSafeUse() {
-    window.localStorage.setItem(SAFE_USE_ACKNOWLEDGED_STORAGE_KEY, "true");
+    setItem(SAFE_USE_ACKNOWLEDGED_STORAGE_KEY, "true");
     setIsSafeUseAcknowledged(true);
   }
 
-  function handleClearDiscoveries() {
+  async function handleClearDiscoveries() {
     if (foundCount === 0) {
       return;
     }
-    setIsClearConfirmOpen(true);
-  }
-
-  function confirmClearDiscoveries() {
-    setDiscoveries({});
-    setActivePlateId(null);
-    setIsClearConfirmOpen(false);
+    const confirmed = await confirmNative({
+      title: "Clear found plates?",
+      message: "This will clear every found plate, timestamp, and saved location from this device.",
+      okButtonTitle: "Clear",
+      cancelButtonTitle: "Cancel",
+    });
+    if (confirmed) {
+      setDiscoveries({});
+      setActivePlateId(null);
+    }
   }
 
   function setTransientStatus(message: string, durationMs = 2500) {
@@ -868,17 +908,21 @@ function App() {
 
   async function handleShareText(title: string, text: string) {
     try {
+      // Try Capacitor native share first
+      await Share.share({ title, text, url: appShareUrl, dialogTitle: title });
+      return;
+    } catch {
+      // Fall back to Web Share API → clipboard → prompt
+    }
+
+    try {
       if (navigator.share) {
-        await navigator.share({
-          title,
-          text,
-          url: appShareUrl
-        });
+        await navigator.share({ title, text, url: appShareUrl });
         return;
       }
 
-      if (navigator.clipboard?.writeText) {
-        await navigator.clipboard.writeText(text);
+      const copied = await copyToClipboard(text);
+      if (copied) {
         setTransientStatus("Share text copied");
         return;
       }
@@ -1091,7 +1135,7 @@ function App() {
     const allDiscoveries: Record<string, unknown> = {};
     for (const state of stateRegistry) {
       try {
-        const raw = window.localStorage.getItem(`${state.id}-plates-discoveries`);
+        const raw = getItem(`${state.id}-plates-discoveries`);
         if (raw) {
           const parsed = JSON.parse(raw);
           if (parsed && typeof parsed === "object" && Object.keys(parsed).length > 0) {
@@ -1138,12 +1182,12 @@ function App() {
           let restoredCount = 0;
           for (const [stateId, stateDiscoveries] of Object.entries(imported.states)) {
             if (stateDiscoveries && typeof stateDiscoveries === "object") {
-              window.localStorage.setItem(`${stateId}-plates-discoveries`, JSON.stringify(stateDiscoveries));
+              setItem(`${stateId}-plates-discoveries`, JSON.stringify(stateDiscoveries));
               restoredCount++;
             }
           }
           // Reload the active state's discoveries into memory
-          const activeRaw = window.localStorage.getItem(activeStorage.discoveriesKey);
+          const activeRaw = getItem(activeStorage.discoveriesKey);
           if (activeRaw) {
             try {
               setDiscoveries(JSON.parse(activeRaw));
@@ -1202,10 +1246,40 @@ function App() {
   }
 
   function toggleUiPreference(key: keyof UiPreferences) {
-    setUiPreferences((current) => ({
-      ...current,
-      [key]: !current[key]
-    }));
+    setUiPreferences((current) => {
+      const next = { ...current, [key]: !current[key] };
+
+      // Request notification permission when enabling either notification feature
+      if ((key === "notificationsEnabled" || key === "dailyReminderEnabled") && next[key]) {
+        void requestNotificationPermission().then((granted) => {
+          if (!granted) {
+            // Permission denied — revert the toggle
+            setUiPreferences((c) => ({ ...c, [key]: false }));
+          } else if (key === "dailyReminderEnabled") {
+            void scheduleDailyReminder(18); // 6 PM
+          }
+        });
+      }
+
+      // Cancel daily reminder when disabling
+      if (key === "dailyReminderEnabled" && !next.dailyReminderEnabled) {
+        void cancelDailyReminder();
+      }
+
+      // Disable daily reminder and tickler if notifications are disabled
+      if (key === "notificationsEnabled" && !next.notificationsEnabled) {
+        next.dailyReminderEnabled = false;
+        void cancelDailyReminder();
+        void cancelInactivityTickler();
+      }
+
+      // Start tickler when notifications are enabled
+      if (key === "notificationsEnabled" && next.notificationsEnabled) {
+        void scheduleInactivityTickler(3);
+      }
+
+      return next;
+    });
   }
 
   function navigateHome() {
@@ -1249,7 +1323,10 @@ function App() {
               <span className="welcome-sign__tagline">{activeGame.branding.headerImage.line3}</span>
             </div>
           )}
-          <button type="button" className="app-header__edition" onClick={() => setActiveView("state-picker")}>{activeGame.branding.appTagline}</button>
+          <button type="button" className="app-header__edition" onClick={() => setActiveView("state-picker")}>
+            <Icon name="chevron-left" size={18} className="app-header__edition-chevron" />
+            {activeGame.branding.appTagline}
+          </button>
           <div className="app-header__stats" aria-live="polite">
             <div className="app-header__kpi">
               <span className="app-header__kpi-value">{foundCount}</span>
@@ -1422,7 +1499,7 @@ function App() {
         <button
           type="button"
           className="bottom-dock__item"
-          onClick={() => setActiveView("settings")}
+          onClick={() => { setSettingsReturnView("home"); setActiveView("settings"); }}
           aria-label="Settings"
         >
           <Icon name="gear" size={22} className="bottom-dock__icon" />
@@ -1464,6 +1541,7 @@ function App() {
                   className="preview-sheet__image"
                   src={`${import.meta.env.BASE_URL}${previewPlate.image.path}`}
                   alt={previewPlate.name}
+                  onError={(e) => { (e.target as HTMLImageElement).src = `${import.meta.env.BASE_URL}plate-fallback.svg`; }}
                 />
               </div>
               {previewPlate.sponsor ? (
@@ -1498,47 +1576,7 @@ function App() {
         </div>
       ) : null}
 
-      {isClearConfirmOpen ? (
-        <div
-          className="confirm-modal-backdrop"
-          role="presentation"
-          onClick={() => setIsClearConfirmOpen(false)}
-        >
-          <section
-            className="confirm-modal"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="clear-confirm-title"
-            aria-describedby="clear-confirm-description"
-            onClick={(event) => event.stopPropagation()}
-          >
-            <p className="confirm-modal__eyebrow">Clear found plates</p>
-            <h2 className="confirm-modal__title" id="clear-confirm-title">
-              Remove all saved sightings?
-            </h2>
-            <p className="confirm-modal__description" id="clear-confirm-description">
-              This will clear every found plate, timestamp, and saved location from this
-              device.
-            </p>
-            <div className="confirm-modal__actions">
-              <button
-                type="button"
-                className="confirm-modal__button confirm-modal__button--secondary"
-                onClick={() => setIsClearConfirmOpen(false)}
-              >
-                Cancel
-              </button>
-              <button
-                type="button"
-                className="confirm-modal__button confirm-modal__button--danger"
-                onClick={confirmClearDiscoveries}
-              >
-                Clear found
-              </button>
-            </div>
-          </section>
-        </div>
-      ) : null}
+      {/* Clear-discoveries confirm replaced by native Dialog (confirmNative) */}
 
       {/* ── Bottom sheets for Category, Filter, Sort ── */}
 
@@ -1630,7 +1668,7 @@ function App() {
       ) : null}
 
       {activeView === "state-picker" ? (
-        <StatePicker />
+        <StatePicker onOpenSettings={() => { setSettingsReturnView("state-picker"); setActiveView("settings"); }} />
       ) : null}
 
       {activeView === "achievements" ? (
@@ -1669,7 +1707,13 @@ function App() {
 
       {activeView === "settings" ? (
         <SettingsPage
-          onBack={navigateHome}
+          onBack={() => {
+            if (settingsReturnView === "state-picker") {
+              setActiveView("state-picker");
+            } else {
+              navigateHome();
+            }
+          }}
           theme={theme}
           resolvedTheme={resolvedTheme}
           onThemeChange={setTheme}
@@ -1788,10 +1832,21 @@ function App() {
       {badgeToasts.length > 0 && (
         <div className="badge-toast-stack">
           {badgeToasts.map(t => (
-            <div key={t.id} className="badge-toast" role="status">
-              Badge earned: {t.name}
+            <div key={t.id} className={`badge-toast ${t.type === "proximity" ? "badge-toast--proximity" : ""}`} role="status">
+              {t.type === "earned" ? `Badge earned: ${t.name}` : t.name}
             </div>
           ))}
+        </div>
+      )}
+      {geoPrompt && (
+        <div className="geo-prompt-banner" role="status">
+          <span>{geoPrompt.message}</span>
+          <button type="button" onClick={() => {
+            setGeoPrompt(null);
+            setSelectedStateId(geoPrompt.stateId);
+            window.location.reload();
+          }}>Switch</button>
+          <button type="button" className="geo-prompt-banner__dismiss" onClick={() => setGeoPrompt(null)} aria-label="Dismiss">&times;</button>
         </div>
       )}
       {isUpdateReady ? (

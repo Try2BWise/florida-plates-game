@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedDate": "2026-04-12",
+  "generatedDate": "2026-04-13",
   "generatedFrom": "src/data/arizona-plate-master.json",
   "plateCount": 132,
   "plates": [
@@ -43,8 +43,8 @@
         "path": "state-packs/arizona/plates/az-character-education.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/CharacterEducation.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Arizona Department of Education",
+      "notes": "$17 goes to a special fund for character education programs. ",
       "searchTerms": [
         "character",
         "education"
@@ -70,10 +70,8 @@
       "sponsor": "Solid Rock Teen Centers",
       "notes": "$17 goes to provide a safe space for ALL teens ages 12-20 to spend their time, receive positive mentorship and FREE music, art, dance, photography and recording studio lessons and opportunities.",
       "searchTerms": [
-        "alice",
-        "cooper",
-        "solid",
-        "rock"
+        "red",
+        "black"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -93,8 +91,8 @@
         "path": "state-packs/arizona/plates/az-arizona-science-center.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaScienceCenter.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Arizona Science Center",
+      "notes": "Arizona Department of Education",
       "searchTerms": [
         "arizona",
         "science",
@@ -118,8 +116,8 @@
         "path": "state-packs/arizona/plates/az-arizona-youth-charities.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaYouthCharities.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Executive Council Charities",
+      "notes": "$17 goes to providing grants to programs focused on helping youth in Arizona overcome adversity and reach their full potential as productive, caring, responsible citizens.",
       "searchTerms": [
         "arizona",
         "youth",
@@ -217,8 +215,8 @@
         "path": "state-packs/arizona/plates/az-arizona4h.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/Arizona4H.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Arizona 4-H Youth Foundation",
+      "notes": "$17 goes toward inspiring the next generation of inventors, entrepreneurs and community leaders through Arizona 4-H. ",
       "searchTerms": [
         "arizona4h"
       ],
@@ -359,8 +357,8 @@
         "path": "state-packs/arizona/plates/az-arizona-realtors.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaRealtors.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Arizona Realtors Foundation for Housing & Community Outreach",
+      "notes": "$17 goes to the Arizona REALTORS® Foundation for Housing and Community Outreach to provide charitable support to Arizona communities in establishing housing projects. Housing needs projects are efforts and programs that address the condition of, access to, and availability of housing.",
       "searchTerms": [
         "arizona",
         "realtors"
@@ -557,8 +555,8 @@
         "path": "state-packs/arizona/plates/az-extraordinary-educator.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ExtraordinaryEducator.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Madison Elementary School",
+      "notes": "$17 goes to Arizona public educators who propose extraordinary activities, projects, or lessons for students in K-8. ",
       "searchTerms": [
         "extraordinary",
         "educator"
@@ -581,13 +579,16 @@
         "path": "state-packs/arizona/plates/az-education-and-community-enrichment.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/Education&CommunityEnrichment.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Scottsdate Charros, INC.",
+      "notes": "$17 goes to a special fund that provides scholarships and grants to eligible teachers and students to fund continuing education.",
       "searchTerms": [
         "education",
-        "and",
         "community",
-        "enrichment"
+        "enrichment",
+        "black",
+        "star",
+        "grey",
+        "gray"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -758,7 +759,10 @@
       "notes": null,
       "searchTerms": [
         "first",
-        "responder"
+        "responder",
+        "police",
+        "fire",
+        "ems"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -907,9 +911,11 @@
       "sponsor": "Arizona Department of Health Services *Arizona Alzheimers Consortium",
       "notes": "$17 goes to research to promote the scientific understanding and early detection of Alzheimer's disease and to educate Arizona residents about disease management.",
       "searchTerms": [
-        "alzheimers",
-        "disease",
-        "research"
+        "yellow",
+        "purple",
+        "white",
+        "face",
+        "brain"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -1104,8 +1110,8 @@
         "path": "state-packs/arizona/plates/az-autism-support.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/AutismSupport.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "First Place AZ & Southwest Autism Research & Resource Center",
+      "notes": "$17 of the fee collected will drive autism research and provide a lifetime support for individuals with autism and their families.",
       "searchTerms": [
         "autism",
         "support"
@@ -1116,8 +1122,8 @@
     {
       "id": "az-arizona-agriculture",
       "slug": "arizona-agriculture",
-      "name": "Arizona Agriculture",
-      "displayName": "Arizona Agriculture",
+      "name": "Arizona Agriculture - FFA",
+      "displayName": "Arizona Agriculture - FFA",
       "baseName": "Arizona Agriculture",
       "variantLabel": null,
       "plateType": "passenger",
@@ -1131,8 +1137,11 @@
       "sponsor": "Arizona Department of Education",
       "notes": "$17 goes to the Arizona FFA which provides premier leadership, personal growth, and career success opportunities for students enrolled in Agriculture Education programs in Arizona.",
       "searchTerms": [
-        "arizona",
-        "agriculture"
+        "ffa",
+        "future",
+        "farmers",
+        "wood",
+        "black"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -1155,8 +1164,11 @@
       "sponsor": "University of Arizona",
       "notes": "$17 goes to the Arizona Geological Survey to pay costs related to the maintenance and operation of mining, mineral, and natural resources educational museums.",
       "searchTerms": [
-        "arizona",
-        "centennial"
+        "centennial",
+        "star",
+        "yellow",
+        "red",
+        "blue"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -1176,11 +1188,15 @@
         "path": "state-packs/arizona/plates/az-arizona-highways.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaHighways.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Arizona Highways Magazine",
+      "notes": "$17 goes to the Arizona Highways magazine.",
       "searchTerms": [
-        "arizona",
-        "highways"
+        "cactus",
+        "sunset",
+        "pink",
+        "red",
+        "orange",
+        "yellow"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -1200,12 +1216,11 @@
         "path": "state-packs/arizona/plates/az-arizona-historical-society.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaHistoricalSociety.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Arizona Historical Society",
+      "notes": "$17 goes to the Arizona Historical Society to fund their museums and programs state-wide.",
       "searchTerms": [
-        "arizona",
-        "historical",
-        "society"
+        "blue",
+        "sky"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -1321,8 +1336,8 @@
         "path": "state-packs/arizona/plates/az-arizona-rodeo.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaRodeo.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Old Town Scottsdale Rodeo Museum",
+      "notes": " $17 goes to promote, educate and preserve the history of the Arizona Rodeo.",
       "searchTerms": [
         "arizona",
         "rodeo"
@@ -1397,10 +1412,14 @@
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/NationalGuard.jpg"
       },
       "sponsor": null,
-      "notes": null,
+      "notes": "$17 of the fee goes to support programs and services for the men, women, families, and mission of the Arizona National Guard.",
       "searchTerms": [
-        "national",
-        "guard"
+        "black",
+        "star",
+        "soldier",
+        "gray",
+        "grey",
+        "gold"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -1919,11 +1938,8 @@
       "sponsor": "Solid Rock Teen Centers",
       "notes": "$17 goes to provide a safe space for ALL teens ages 12-20 to spend their time, receive positive mentorship and FREE music, art, dance, photography and recording studio lessons and opportunities.",
       "searchTerms": [
-        "alice",
-        "cooper",
-        "solid",
-        "rock",
-        "mc"
+        "red",
+        "black"
       ],
       "variantOf": "az-alice-cooper-solid-rock",
       "relatedPlates": []
@@ -1944,11 +1960,14 @@
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/NationalGuardMC.jpg"
       },
       "sponsor": null,
-      "notes": null,
+      "notes": "$17 of the fee goes to support programs and services for the men, women, families, and mission of the Arizona National Guard.",
       "searchTerms": [
-        "national",
-        "guard",
-        "mc"
+        "black",
+        "star",
+        "soldier",
+        "gray",
+        "grey",
+        "hold"
       ],
       "variantOf": "az-national-guard",
       "relatedPlates": []
@@ -1971,9 +1990,9 @@
       "sponsor": "Arizona Coyotes Foundation",
       "notes": "$17 goes to the Arizona Coyotes Foundation. The Arizona Coyotes Foundation strives to enhance the quality of life throughout Arizona by supporting organizations and programs that promote access to education, health and wellness and economic advancement for underserved and diverse communities.",
       "searchTerms": [
-        "arizona",
         "coyotes",
-        "mc"
+        "hockey",
+        "nhl"
       ],
       "variantOf": "az-arizona-coyotes",
       "relatedPlates": []
@@ -1993,12 +2012,12 @@
         "path": "state-packs/arizona/plates/az-arizona-diamondbacks-mc.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaDiamondbacksMC.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Arizona Diamondbacks Foundation",
+      "notes": "$17 goes to the Arizona Diamondbacks Foundation funding baseball and softball equipment, programming and outreach initiatives for underserved youth statewide. ",
       "searchTerms": [
-        "arizona",
         "diamondbacks",
-        "mc"
+        "mlb",
+        "baseball"
       ],
       "variantOf": "az-arizona-diamondbacks",
       "relatedPlates": []
@@ -2018,8 +2037,8 @@
         "path": "state-packs/arizona/plates/az-arizona-highways-mc.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaHighwaysMC.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Arizona Highways Magazine",
+      "notes": "$17 goes to the Arizona Highways magazine.",
       "searchTerms": [
         "arizona",
         "highways",
@@ -2043,8 +2062,8 @@
         "path": "state-packs/arizona/plates/az-arizona-youth-charities-mc.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaYouthCharitiesMC.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Executive Council Charities",
+      "notes": "$17 goes to providing grants to programs focused on helping youth in Arizona overcome adversity and reach their full potential as productive, caring, responsible citizens.",
       "searchTerms": [
         "arizona",
         "youth",
@@ -2146,8 +2165,8 @@
         "path": "state-packs/arizona/plates/az-arizona4hmc.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/Arizona4HMC.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Arizona 4-H Youth Foundation",
+      "notes": "$17 goes toward inspiring the next generation of inventors, entrepreneurs and community leaders through Arizona 4-H. ",
       "searchTerms": [
         "arizona4hmc"
       ],
@@ -2245,8 +2264,8 @@
         "path": "state-packs/arizona/plates/az-arizona-realtors-mc.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaRealtorsMC.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Arizona Realtors Foundation for Housing & Community Outreach",
+      "notes": "$17 goes to the Arizona REALTORS® Foundation for Housing and Community Outreach to provide charitable support to Arizona communities in establishing housing projects. Housing needs projects are efforts and programs that address the condition of, access to, and availability of housing.",
       "searchTerms": [
         "arizona",
         "realtors",
@@ -2528,8 +2547,8 @@
         "path": "state-packs/arizona/plates/az-autism-support-mc.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/AutismSupportMC.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "First Place AZ & Southwest Autism Research & Resource Center",
+      "notes": "$17 of the fee collected will drive autism research and provide a lifetime support for individuals with autism and their families.",
       "searchTerms": [
         "autism",
         "support",
@@ -2757,8 +2776,11 @@
       "sponsor": "Cardinals Charities",
       "notes": "$17 goes to Cardinals Charities which supports programs designed to improve the lives of children, women, and minorities in Arizona.",
       "searchTerms": [
-        "arizona",
-        "cardinals"
+        "cardinals",
+        "nfl",
+        "football",
+        "red",
+        "bird"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -2781,8 +2803,9 @@
       "sponsor": "Arizona Coyotes Foundation",
       "notes": "$17 goes to the Arizona Coyotes Foundation. The Arizona Coyotes Foundation strives to enhance the quality of life throughout Arizona by supporting organizations and programs that promote access to education, health and wellness and economic advancement for underserved and diverse communities.",
       "searchTerms": [
-        "arizona",
-        "coyotes"
+        "coyotes",
+        "hockey",
+        "nhl"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -2802,11 +2825,12 @@
         "path": "state-packs/arizona/plates/az-arizona-diamondbacks.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaDiamondbacks.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Arizona Diamondbacks Foundation",
+      "notes": "$17 goes to the Arizona Diamondbacks Foundation funding baseball and softball equipment, programming and outreach initiatives for underserved youth statewide. ",
       "searchTerms": [
-        "arizona",
-        "diamondbacks"
+        "diamondbacks",
+        "mlb",
+        "baseball"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -2902,8 +2926,10 @@
       "sponsor": null,
       "notes": "HURF (Highway User Revenue Fund)",
       "searchTerms": [
-        "alternative",
-        "fuel"
+        "blue",
+        "sky",
+        "clouds",
+        "white"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -2947,11 +2973,13 @@
         "path": "state-packs/arizona/plates/az-collegiate-asu.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/CollegiateASU.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Arizona State University",
+      "notes": "$17 of the initial and annual renewal fee goes to the university for academic scholarships.",
       "searchTerms": [
-        "collegiate",
-        "asu"
+        "asu",
+        "sun",
+        "devils",
+        "sundevils"
       ],
       "variantOf": null,
       "relatedPlates": []
@@ -3165,8 +3193,8 @@
         "path": "state-packs/arizona/plates/az-arizona-sportsmen-wildlife.jpg",
         "remoteUrl": "https://mvmpublic.blob.core.usgovcloudapi.net/plates/ArizonaSportsmenWildlife.jpg"
       },
-      "sponsor": null,
-      "notes": null,
+      "sponsor": "Arizona Sportsmen for Wildlife Conservation",
+      "notes": "$17 of the fee will fund wildlife habitat projects, outdoor recreation and educational opportunities.",
       "searchTerms": [
         "arizona",
         "sportsmen",

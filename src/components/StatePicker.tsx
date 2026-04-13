@@ -1,14 +1,15 @@
 import { useMemo, useRef, useState } from "react";
 import { stateRegistry } from "../games/stateRegistry";
-import { setSelectedStateId } from "../games/activeGame";
+import { setSelectedStateId, plateCountsByState, getDiscoveryCountForState } from "../games/activeGame";
 import { Icon } from "./Icon";
 import { hapticsPinToggled } from "../lib/haptics";
+import { getItem, setItem } from "../lib/persistentStorage";
 
 const PINNED_STATES_KEY = "every-pl8-pinned-states";
 
 function loadPinnedIds(): Set<string> {
   try {
-    const raw = window.localStorage.getItem(PINNED_STATES_KEY);
+    const raw = getItem(PINNED_STATES_KEY);
     if (!raw) return new Set();
     const parsed = JSON.parse(raw);
     if (Array.isArray(parsed)) return new Set(parsed as string[]);
@@ -17,14 +18,15 @@ function loadPinnedIds(): Set<string> {
 }
 
 function savePinnedIds(ids: Set<string>): void {
-  window.localStorage.setItem(PINNED_STATES_KEY, JSON.stringify([...ids]));
+  setItem(PINNED_STATES_KEY, JSON.stringify([...ids]));
 }
 
 interface StatePickerProps {
   onSelect?: () => void;
+  onOpenSettings?: () => void;
 }
 
-export function StatePicker({ onSelect }: StatePickerProps) {
+export function StatePicker({ onSelect, onOpenSettings }: StatePickerProps) {
   const [loadingId, setLoadingId] = useState<string | null>(null);
   const [pinnedIds, setPinnedIds] = useState<Set<string>>(() => loadPinnedIds());
   const cardRefs = useRef<Record<string, HTMLButtonElement | null>>({});
@@ -100,6 +102,8 @@ export function StatePicker({ onSelect }: StatePickerProps) {
   function renderCard(state: typeof stateRegistry[0], refKey: string) {
     const isPinned = pinnedIds.has(state.id);
     const isLoading = loadingId === state.id;
+    const totalPlates = plateCountsByState[state.id] ?? 0;
+    const foundCount = state.available && totalPlates > 0 ? getDiscoveryCountForState(state.id) : 0;
     return (
       <button
         key={refKey}
@@ -128,6 +132,11 @@ export function StatePicker({ onSelect }: StatePickerProps) {
           <span className="state-picker__tagline">
             {isLoading ? "Loading..." : state.tagline}
           </span>
+          {state.available && totalPlates > 0 && (
+            <span className="state-picker__progress" aria-label={`${foundCount} of ${totalPlates} plates found`}>
+              {foundCount} / {totalPlates} plates
+            </span>
+          )}
         </div>
         {!state.available ? (
           <span className="state-picker__coming-soon">Coming Soon</span>
@@ -140,7 +149,7 @@ export function StatePicker({ onSelect }: StatePickerProps) {
             aria-pressed={isPinned}
             disabled={loadingId !== null}
           >
-            <Icon name="pin" size={16} />
+            <Icon name="pin" size={22} />
           </button>
         )}
       </button>
@@ -150,6 +159,16 @@ export function StatePicker({ onSelect }: StatePickerProps) {
   return (
     <div className="state-picker">
       <div className="state-picker__header">
+        {onOpenSettings && (
+          <button
+            type="button"
+            className="state-picker__settings-btn"
+            onClick={onOpenSettings}
+            aria-label="Settings"
+          >
+            <Icon name="gear" size={22} />
+          </button>
+        )}
         <img
           className="state-picker__logo"
           src={`${import.meta.env.BASE_URL}state-pl8-logo.png`}
@@ -189,7 +208,7 @@ export function StatePicker({ onSelect }: StatePickerProps) {
       <div className="state-picker__list">
         {pinnedStates.length > 0 && (
           <>
-            <p className="state-picker__section-label" ref={pinnedSectionRef} aria-label="Pinned states"><Icon name="pin" size={13} /></p>
+            <p className="state-picker__section-label" ref={pinnedSectionRef} aria-label="Pinned states">Pinned <Icon name="pin" size={13} /></p>
             {pinnedStates.map(s => renderCard(s, `pinned-${s.id}`))}
             <div className="state-picker__section-divider" aria-hidden="true" />
           </>

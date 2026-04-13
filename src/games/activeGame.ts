@@ -119,21 +119,18 @@ import {
   kentuckyRegionScoutCounties
 } from "../config/kentuckyGame";
 import { plateCategories, type Plate, type PlateCategory } from "../types";
+import { getItem, setItem } from "../lib/persistentStorage";
 
 /* ── State selection persistence ── */
 
 const SELECTED_STATE_KEY = "every-pl8-selected-state";
 
 export function getSelectedStateId(): string | null {
-  try {
-    return window.localStorage.getItem(SELECTED_STATE_KEY);
-  } catch {
-    return null;
-  }
+  return getItem(SELECTED_STATE_KEY);
 }
 
 export function setSelectedStateId(id: string): void {
-  window.localStorage.setItem(SELECTED_STATE_KEY, id);
+  setItem(SELECTED_STATE_KEY, id);
 }
 
 /* ── State pack loader ── */
@@ -362,6 +359,36 @@ function loadStatePack(stateId: string) {
       return loadFloridaPack();
   }
 }
+
+/* ── Discovery count helper (for state picker progress display) ── */
+
+export function getDiscoveryCountForState(stateId: string): number {
+  const raw = getItem(`${stateId}-plates-discoveries`);
+  if (!raw) return 0;
+  try {
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === "object" ? Object.keys(parsed).length : 0;
+  } catch {
+    return 0;
+  }
+}
+
+/* ── Plate counts per state (for state picker progress display) ── */
+
+export const plateCountsByState: Record<string, number> = {
+  alabama: alabamaDriverData.plates.length,
+  alaska: alaskaDriverData.plates.length,
+  arizona: arizonaDriverData.plates.length,
+  arkansas: arkansasDriverData.plates.length,
+  california: californiaDriverData.plates.length,
+  florida: floridaDriverData.plates.length,
+  georgia: georgiaDriverData.plates.length,
+  kansas: kansasDriverData.plates.length,
+  kentucky: kentuckyDriverData.plates.length,
+  mississippi: mississippiDriverData.plates.length,
+  missouri: missouriDriverData.plates.length,
+  tennessee: tennesseeDriverData.plates.length,
+};
 
 /* ── Active exports ── */
 
