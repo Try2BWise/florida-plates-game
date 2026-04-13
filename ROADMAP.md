@@ -166,16 +166,24 @@ Current public release: `v1.8.0`
 
 ## Post-1.8.0: State Expansion Sprint
 
-Active state expansion is now the primary development track. The multi-state architecture proved out in v1.7.0 and has been the focus of recent work.
+Active state expansion is the primary development track. The multi-state architecture proved out in v1.7.0 and has scaled cleanly to 12 states.
 
 ### Delivered
 
-- added Kansas as the 7th state (85 plates: military, civic, universities, sports, wildlife)
-- standardized all states from 19 categories to a unified 13-category taxonomy
+- 12 states live: Florida, Mississippi, Georgia, Kentucky, Tennessee, Missouri, Arkansas, Arizona, Alabama, California, Kansas, Alaska
+- ~2,120 plates across all states
+- standardized all states to a unified 13-category taxonomy
 - split composite plate images into individual entries via automated cropping
-- added alphabetical quickjump buttons to the state picker for scalability toward 50 states
+- alphabetical quickjump buttons in the state picker
+- pinning support — favorites surface to the top
+- per-state progress display in the picker
 - fixed iOS tap targets across all interactive elements to 44px minimum
-- added copyright notice, acknowledgments, and StateFace license
+- copyright notice, acknowledgments, and StateFace license
+- Capacitor iOS packaging in progress (App Store prep)
+- multi-state progress export (covers all states, not just active)
+- cross-state county collision fix in region badge evaluator
+- state-specific region badge icons (Fluent Emoji 3D set, MIT) — first batch implemented for TN/KY/KS/GA/AL/AK/AZ/CA
+- BADGE_ICONS.md tracking doc with full icon roadmap
 
 ### State Expansion Status
 
@@ -183,18 +191,85 @@ Active state expansion is now the primary development track. The multi-state arc
 |-------|--------|--------|
 | Florida | 338 | Complete |
 | Mississippi | 305 | Complete |
-| Kentucky | 231 | Complete |
+| Georgia | 287 | Complete (scraped from GA DOR) |
+| Kentucky | 230 | Complete |
 | Tennessee | 210 | Complete |
 | Missouri | 162 | Complete |
+| Arizona | 132 | Complete |
 | Arkansas | 129 | Complete |
-| Kansas | 85 | Partial — military + personalized plates, more available |
-| Georgia | 340 codes | Scouted — images on mvd.dor.ga.gov, ready to scrape |
+| Alabama | 99 | Complete (scraped via WP REST API) |
+| California | 94 | Complete |
+| Kansas | 85 | Complete (military + personalized) |
+| Alaska | 47 | Complete |
 
-### Next Expansion Targets
+## v1.9 — Path to 50 States
 
-Georgia is scouted and ready. The `mvd.dor.ga.gov` portal has ~340 plate codes with static image URLs at a predictable path (`images/2004/{CODE}_Large.jpg`). Some plates return "sample unavailable" so the real yield is estimated at 130-200+ plates with images.
+The remaining 38 states are the focus of the next major release. Strategy is **breadth-first**: get all 50 states into the app with at least the standard plate, then go back state-by-state for full plate scraping. This avoids the trap of getting stuck on one hard state and lets users start spotting plates in any state immediately.
 
-Beyond Georgia, state selection depends on DMV site accessibility. States with locked-down sites (Texas/MyPlates, Ohio dynamic forms) are not viable without manual image sourcing.
+### Phased approach
+
+#### Phase A: Standard plate sweep (38 states × ~5 min each)
+
+For each missing state:
+- Standard passenger plate image (manually grabbed)
+- State outline SVG (already have all 50)
+- Minimal game config with placeholder regions
+- Wired into the state picker
+
+**Definition of done:** all 50 states selectable, every state has at least one plate to spot.
+
+This unlocks gameplay for users physically driving anywhere in the US, which is the single biggest scope-of-play win.
+
+#### Phase B: Full scraping by state difficulty tier
+
+Once Phase A is done, work through full plate catalogs in order of scrape difficulty.
+
+**Tier 1 — clean static catalogs or APIs** (model: GA, AL, KS)
+- Look for WordPress REST API (`/wp-json/wp/v2/license-plates` or similar custom post type)
+- Look for direct image URL patterns on the DMV site
+- Likely candidates worth recon: NC (retry with WP REST), VA, IN, OK, SC, OR
+- Yields: 100-400+ plates per state
+
+**Tier 2 — listing page only, no detail pages** (model: KS-personalized)
+- DMV lists plate names with thumbnails on a single index page
+- Scrape the index, no per-plate drill-down needed
+- Yields: 30-80 plates per state
+
+**Tier 3 — sponsor-link maze** (model: original KS)
+- DMV site lists plates but links to external sponsor sites with wildly different formats
+- Hand-curate from official portal where available, supplement with manual entry
+- Lower yields but possible
+
+**Tier 4 — locked down or vendor-managed** (model: TX/MyPlates, OH dynamic form)
+- Cloudflare-protected vendor sites, JS-driven dynamic forms
+- May require physical photos or alternate sources (legislature fee schedule, Wayback Machine)
+- Last resort, but standard plate is still achievable manually
+
+### Per-state research checklist
+
+For each state, capture:
+- Official DMV/DOR specialty plate URL
+- Scrape difficulty tier
+- Image URL pattern (if Tier 1)
+- Official region source (tourism, planning commissions, DOT districts)
+- Notes on any state-specific signature imagery for badges
+
+### Architectural work to support 50 states
+
+These become important as the bundle scales:
+
+- **Lazy state pack loading** — 50 packs × ~3KB plate metadata = ~30MB bundled JSON if eagerly loaded. Should fetch active state's pack on demand via dynamic import or manifest fetch.
+- **Image hosting strategy** — 50 states × ~150 images × ~50KB ≈ 400MB. Repo size becomes a real concern. Options: keep in repo with LFS, push to a CDN (Cloudflare R2/Pages), or rely on PWA caching from the live origin.
+- **Build-time optimization** — `prebuild` regenerates all plate drivers. Should only regenerate changed states.
+- **Florida-specific debt cleanup** — `isLikelyInFlorida()`, `escapee` badge logic, `BadgeGroup: "florida"` semantic mismatch, hardcoded plate name lists in App.tsx. This was queued for v1.9 originally; now blocks clean scaling.
+
+### Pre-launch quality work
+
+- Region badge validation across all states (Kansas-style gap check)
+- Category consistency review per state
+- Search term curation patterns
+- BADGE_ICONS.md completion (per BADGE_ICONS.md tracking)
+- Per-state quality pass: dedupe, clean names, image sizing
 
 ## v1.8.x
 
