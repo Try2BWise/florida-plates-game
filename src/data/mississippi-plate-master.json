@@ -1116,36 +1116,6 @@
       ]
     },
     {
-      "id": "ms-sons-of-confederate-veterans",
-      "slug": "sons-of-confederate-veterans",
-      "name": "Sons of Confederate Veterans",
-      "displayName": "Sons of Confederate Veterans",
-      "baseName": "Sons of Confederate Veterans",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/mississippi/plates/sons-of-confederate-veterans.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Sons%252520of%252520Confederate%252520Veterans_jpg.jpg.webp?itok=4bUfW_s2"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Mississippi DOR",
-          "sourceId": "sons-of-confederate-veterans",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ms-sunflower-county-ministerial-alliance-counseling-services",
       "slug": "sunflower-county-ministerial-alliance-counseling-services",
       "name": "Sunflower County Ministerial Alliance",
@@ -5330,36 +5300,6 @@
         {
           "source": "Mississippi DOR",
           "sourceId": "purple-heart-motorcycle",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
-      "id": "ms-sons-of-confederate-veterans-motorcycle",
-      "slug": "sons-of-confederate-veterans-motorcycle",
-      "name": "Sons of Confederate Veterans (Motorcycle)",
-      "displayName": "Sons of Confederate Veterans (Motorcycle)",
-      "baseName": "Sons of Confederate Veterans",
-      "variantLabel": "Motorcycle",
-      "plateType": "motorcycle",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Motorcycle",
-      "image": {
-        "path": "state-packs/mississippi/plates/sons-of-confederate-veterans-motorcycle.webp",
-        "remoteUrl": "https://www.dor.ms.gov/sites/default/files/styles/medium/public/motor-vehicle-services/license-plates/Sons%252520of%252520Confederate%252520Veteran%252520Motorcycle_jpg.jpg.webp?itok=DHNxgmtW"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": "ms-sons-of-confederate-veterans",
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Mississippi DOR",
-          "sourceId": "sons-of-confederate-veterans-motorcycle",
           "versionId": null,
           "value": null
         }

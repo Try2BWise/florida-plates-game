@@ -161,6 +161,7 @@ Rules:
 - Vanity/personalized text plates (same design, different custom text)
 - Temporary tags
 - Dealer plates
+- **Sons of Confederate Veterans** plates and any plate prominently displaying the Confederate battle flag (project-wide policy decision)
 
 ---
 

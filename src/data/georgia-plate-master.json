@@ -1530,36 +1530,6 @@
       ]
     },
     {
-      "id": "ga-sons-of-confederate-veterans",
-      "slug": "sons-of-confederate-veterans",
-      "name": "Sons of Confederate Veterans",
-      "displayName": "Sons of Confederate Veterans",
-      "baseName": "Sons of Confederate Veterans",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Heritage",
-      "image": {
-        "path": "state-packs/georgia/plates/ga-sons-of-confederate-veterans.jpg",
-        "remoteUrl": "https://mvd.dor.ga.gov/motor/plates/images/2004/CV_Large.jpg"
-      },
-      "sponsor": "Georgia Sons of Confederate Veterans",
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Georgia DOR",
-          "sourceId": "CV",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "ga-tybee-island-historical-society",
       "slug": "tybee-island-historical-society",
       "name": "Tybee Island Lighthouse",

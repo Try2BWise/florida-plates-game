@@ -131,6 +131,7 @@ interface UiPreferences {
   hapticsEnabled: boolean;
   notificationsEnabled: boolean;
   dailyReminderEnabled: boolean;
+  locationCaptureEnabled: boolean;
 }
 
 const defaultUiPreferences: UiPreferences = {
@@ -139,7 +140,8 @@ const defaultUiPreferences: UiPreferences = {
   showArrangement: true,
   hapticsEnabled: true,
   notificationsEnabled: false,
-  dailyReminderEnabled: false
+  dailyReminderEnabled: false,
+  locationCaptureEnabled: true
 };
 
 function loadUiPreferences(): UiPreferences {
@@ -156,7 +158,8 @@ function loadUiPreferences(): UiPreferences {
       showArrangement: parsed.showArrangement ?? defaultUiPreferences.showArrangement,
       hapticsEnabled: parsed.hapticsEnabled ?? defaultUiPreferences.hapticsEnabled,
       notificationsEnabled: parsed.notificationsEnabled ?? defaultUiPreferences.notificationsEnabled,
-      dailyReminderEnabled: parsed.dailyReminderEnabled ?? defaultUiPreferences.dailyReminderEnabled
+      dailyReminderEnabled: parsed.dailyReminderEnabled ?? defaultUiPreferences.dailyReminderEnabled,
+      locationCaptureEnabled: parsed.locationCaptureEnabled ?? defaultUiPreferences.locationCaptureEnabled
     };
   } catch {
     return defaultUiPreferences;
@@ -843,6 +846,11 @@ function App() {
       ...current,
       [plate.id]: discovery
     }));
+
+    if (!uiPreferences.locationCaptureEnabled) {
+      // Location capture disabled by user — skip geolocation lookup entirely
+      return;
+    }
 
     void enrichDiscoveryLocation(discovery.foundAtIso)
       .then((enrichedDiscovery) => {

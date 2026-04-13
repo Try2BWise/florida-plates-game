@@ -3516,36 +3516,6 @@
       ]
     },
     {
-      "id": "tn-sons-of-confederate-veterans",
-      "slug": "sons-of-confederate-veterans",
-      "name": "Sons of Confederate Veterans",
-      "displayName": "Sons of Confederate Veterans",
-      "baseName": "Sons of Confederate Veterans",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/tennessee/plates/sons-of-confederate-veterans.jpg",
-        "remoteUrl": "https://www.tn.gov/content/dam/tn/revenue/images/licenseplates/plates-gallery-photos/Sons%20of%20Confederate%20Veterans.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": null,
-      "sourceRefs": [
-        {
-          "source": "Tennessee DOR",
-          "sourceId": "sons-of-confederate-veterans",
-          "versionId": null,
-          "value": null
-        }
-      ]
-    },
-    {
       "id": "tn-submarine-veteran",
       "slug": "submarine-veteran",
       "name": "Submarine Veteran",

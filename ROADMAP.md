@@ -432,6 +432,14 @@ Optional social layer and cloud identity.
 - friends / buddy connections
 - optional regional or map-based social views
 
+## Explicit Non-Goals
+
+These are deliberately out of scope. Document so future contributors don't pursue them.
+
+- **No camera capture or photo features.** The app does not request or use camera permissions. Plate spotting is based on what you see, not what you photograph.
+- **No user-uploaded content of any kind.** No community photo submissions, no user notes shared across players, no comments. Eliminates moderation burden, COPPA exposure for user-generated content, and image rights complications.
+- **No Sons of Confederate Veterans plates.** Project-wide policy: any plate prominently featuring the Confederate battle flag is excluded from packs, regardless of which state issues it. Reduces App Store content review risk and aligns with the educational/family positioning. Already removed from GA, MS, TN; scrape prompts updated to skip these in future scrapes.
+
 ## Parking Lot
 
 These are intentionally not committed to the next release yet.

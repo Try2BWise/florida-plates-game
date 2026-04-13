@@ -14,8 +14,8 @@ interface SettingsPageProps {
   theme: "light" | "dark" | "system";
   resolvedTheme: "light" | "dark";
   onThemeChange: (t: "light" | "dark" | "system") => void;
-  uiPreferences: { showSearch: boolean; showCategories: boolean; showArrangement: boolean; hapticsEnabled: boolean; notificationsEnabled: boolean; dailyReminderEnabled: boolean };
-  onToggleUiPreference: (key: "showSearch" | "showCategories" | "showArrangement" | "hapticsEnabled" | "notificationsEnabled" | "dailyReminderEnabled") => void;
+  uiPreferences: { showSearch: boolean; showCategories: boolean; showArrangement: boolean; hapticsEnabled: boolean; notificationsEnabled: boolean; dailyReminderEnabled: boolean; locationCaptureEnabled: boolean };
+  onToggleUiPreference: (key: "showSearch" | "showCategories" | "showArrangement" | "hapticsEnabled" | "notificationsEnabled" | "dailyReminderEnabled" | "locationCaptureEnabled") => void;
   onForceReload: () => void;
   foundCount: number;
   onExportProgress: () => void;
@@ -113,6 +113,17 @@ export function SettingsPage({
           </div>
 
           <div>
+            <div className="ios-list__section-label">Privacy</div>
+            <div className="ios-list__group">
+              <button type="button" className="ios-list__row" onClick={() => onToggleUiPreference("locationCaptureEnabled")}>
+                <span className="ios-list__row-label">Record location with finds</span>
+                <span className={`toggle-switch ${uiPreferences.locationCaptureEnabled ? "toggle-switch--on" : ""}`} />
+              </button>
+            </div>
+            <div className="ios-list__section-footer">When on, your approximate location is saved with each plate you mark found, enabling map and regional badges. Stored only on your device. Turn off to skip the location lookup without revoking iOS Location Services permission.</div>
+          </div>
+
+          <div>
             <div className="ios-list__section-label">App</div>
             <div className="ios-list__group">
               <button type="button" className="ios-list__row" onClick={onForceReload}>
@@ -202,7 +213,33 @@ export function SettingsPage({
                 <span className="ios-list__row-value">MIT License</span>
                 <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
               </button>
+              <button type="button" className="ios-list__row" onClick={() => void openInAppBrowser("https://react.dev/")}>
+                <span className="ios-list__row-label">React</span>
+                <span className="ios-list__row-value">MIT License</span>
+                <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
+              </button>
+              <button type="button" className="ios-list__row" onClick={() => void openInAppBrowser("https://capacitorjs.com/")}>
+                <span className="ios-list__row-label">Capacitor by Ionic</span>
+                <span className="ios-list__row-value">MIT License</span>
+                <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
+              </button>
+              <button type="button" className="ios-list__row" onClick={() => void openInAppBrowser("https://github.com/capacitor-community/in-app-review")}>
+                <span className="ios-list__row-label">Capacitor Community In-App Review</span>
+                <span className="ios-list__row-value">MIT License</span>
+                <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
+              </button>
+              <button type="button" className="ios-list__row" onClick={() => void openInAppBrowser("https://vitejs.dev/")}>
+                <span className="ios-list__row-label">Vite</span>
+                <span className="ios-list__row-value">MIT License</span>
+                <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
+              </button>
+              <button type="button" className="ios-list__row" onClick={() => void openInAppBrowser("https://www.typescriptlang.org/")}>
+                <span className="ios-list__row-label">TypeScript</span>
+                <span className="ios-list__row-value">Apache 2.0</span>
+                <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
+              </button>
             </div>
+            <div className="ios-list__section-footer">Capacitor includes the App, Action Sheet, App Launcher, Browser, Clipboard, Dialog, Geolocation, Haptics, Keyboard, Local Notifications, Network, Preferences, Screen Orientation, Share, Splash Screen, and Status Bar plugins (all MIT licensed).</div>
           </div>
 
           <div>
