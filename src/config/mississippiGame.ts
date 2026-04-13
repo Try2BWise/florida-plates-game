@@ -99,7 +99,7 @@ export const mississippiGame: GameDefinition & {
       alt: "State PL8 logo"
     },
     attribution: {
-      text: "Plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim.",
+      text: "Plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim. Logos, mascots, names, and other marks depicted on these plates are the property of their respective owners and are shown solely for identification of the license plates issued by the {agency}.",
       agencyName: "Mississippi Department of Revenue",
       agencyUrl: "https://www.dor.ms.gov/",
       logoPath: "state-packs/mississippi/dor-logo.png",
@@ -155,6 +155,6 @@ export const mississippiGame: GameDefinition & {
   },
   about: {
     fairUseNotice:
-      "Plate images are not the intellectual property of Gorilla Grin. They belong to the Mississippi Department of Revenue and are displayed here for identification, educational, and entertainment purposes under a fair use claim."
+      "Plate images are not the intellectual property of Gorilla Grin. They belong to the Mississippi Department of Revenue and are displayed here for identification, educational, and entertainment purposes under a fair use claim. Logos, mascots, names, and other marks depicted on these plates are the property of their respective owners and are shown solely for identification of the license plates issued by the Mississippi Department of Revenue."
   }
 };

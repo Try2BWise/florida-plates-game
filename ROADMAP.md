@@ -446,6 +446,48 @@ These are intentionally not committed to the next release yet.
 - optional social identity, leaderboard, and buddy-sharing features
 - a standalone external driver editor
 
+### State Facts Educational Layer
+
+A public-domain dataset (`us_state_facts.json`) covering all 50 states + DC + 5 territories
+is available, sourced from US Census ACS 2023, Decennial 2020, Census TIGER, and Wikidata
+(CC0). Each jurisdiction has: capital, nickname, statehood date, population, land area,
+density, motto + translation, state bird/flower/tree, highest point, timezone, demonym,
+named-after, and 3 fun facts.
+
+Ideas for integration, ordered by impact-to-effort:
+
+**Quick wins**
+- **State Picker preview** — long-press or tap-detail on a state card surfaces capital,
+  nickname, statehood date, fun fact. Adds context to the picker.
+- **State Detail / About page** — full fact card (capital, motto, bird, flower, tree,
+  highest point, demonym, fun facts). Becomes the educational anchor for each state.
+- **"Did You Know?" rotation** — daily rotating fact on app open or in achievements hub.
+
+**Knowledge-based gameplay**
+- **Knowledge badges driven by facts data**:
+  - "Cardinal" — find a plate in a state where the cardinal is the state bird
+  - "Above 5000 ft" — find plates in states with highest points above an elevation threshold
+  - "Original 13" — collect plates from all original 13 colonies (statehood pre-1789)
+  - "Newest States" — collect from the 5 most recently admitted states
+  - "Bird Watcher", "Flower Picker", "Tree Hugger" — collect plates representing every
+    distinct state bird/flower/tree
+- **Geography quiz mode** — capital, motto, bird/flower trivia tied to spotted plates.
+  Game Center leaderboard friendly.
+
+**Travel companion**
+- **Geofence-triggered welcome** — when crossing into a new state, surface a notification
+  with the state's stats and a fun fact. Reinforces the road-trip identity of the app.
+
+**Educational pack mode** (longer term)
+- Possibly a distinct "Learn the States" mode using the same data, separate from plate
+  spotting. Appeals to parents using the app with kids; opens an educational positioning
+  story for App Store.
+
+**Implementation notes**
+- Data file is small (~70KB). Could ship in the bundle today.
+- As state packs move to lazy loading, the per-state facts move with them.
+- License is fully clean: US Government public domain + Wikidata CC0.
+
 ## Engagement Ideas
 
 These are good candidates for future fun-factor improvements, but they are intentionally below search, taxonomy, and modularization in priority.

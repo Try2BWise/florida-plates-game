@@ -108,7 +108,7 @@ export const georgiaGame: GameDefinition & {
       alt: "State PL8 logo"
     },
     attribution: {
-      text: "Plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim.",
+      text: "Plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim. Logos, mascots, names, and other marks depicted on these plates are the property of their respective owners and are shown solely for identification of the license plates issued by the {agency}.",
       agencyName: "Georgia Department of Revenue",
       agencyUrl: "https://dor.georgia.gov/",
       logoPath: "state-packs/georgia/ga-dor-logo.png",
@@ -164,6 +164,6 @@ export const georgiaGame: GameDefinition & {
   },
   about: {
     fairUseNotice:
-      "Plate images are not the intellectual property of Gorilla Grin. They belong to the Georgia Department of Revenue and are displayed here for identification, educational, and entertainment purposes under a fair use claim."
+      "Plate images are not the intellectual property of Gorilla Grin. They belong to the Georgia Department of Revenue and are displayed here for identification, educational, and entertainment purposes under a fair use claim. Logos, mascots, names, and other marks depicted on these plates are the property of their respective owners and are shown solely for identification of the license plates issued by the Georgia Department of Revenue."
   }
 };

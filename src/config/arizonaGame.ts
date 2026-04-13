@@ -72,7 +72,7 @@ export const arizonaGame: GameDefinition & {
     appTagline: "Every PL8 — Arizona",
     headerImage: { type: "logo", path: "state-pl8-logo.png", alt: "State PL8 logo" },
     attribution: {
-      text: "Plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim.",
+      text: "Plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim. Logos, mascots, names, and other marks depicted on these plates are the property of their respective owners and are shown solely for identification of the license plates issued by the {agency}.",
       agencyName: "Arizona Motor Vehicle Division",
       agencyUrl: "https://azmvdnow.gov/",
       logoPath: "",
@@ -89,5 +89,5 @@ export const arizonaGame: GameDefinition & {
     install: ["iPhone: open the game in Safari, tap Share, then choose Add to Home Screen.", "Android: open the game in Chrome, then use Add to Home screen or Install app.", "Once it loads online at least once, it can keep working offline."],
     safeUse: ["For your safety and the safety of others, never use this app while driving.", "Always comply with all applicable traffic laws, including hands-free and distracted-driving regulations in your area.", "Use this app only when your vehicle is parked in a safe location or when operated by a passenger.", "By using this app, you agree that you are solely responsible for how and when it is used."]
   },
-  about: { fairUseNotice: "Plate images are not the intellectual property of Gorilla Grin. They belong to the Arizona Motor Vehicle Division and are displayed here for identification, educational, and entertainment purposes under a fair use claim." }
+  about: { fairUseNotice: "Plate images are not the intellectual property of Gorilla Grin. They belong to the Arizona Motor Vehicle Division and are displayed here for identification, educational, and entertainment purposes under a fair use claim. Logos, mascots, names, and other marks depicted on these plates are the property of their respective owners and are shown solely for identification of the license plates issued by the Arizona Motor Vehicle Division." }
 };

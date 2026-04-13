@@ -123,7 +123,7 @@ export const floridaGame: GameDefinition & {
       alt: "State PL8 logo"
     },
     attribution: {
-      text: "Plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim.",
+      text: "Plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim. Logos, mascots, names, and other marks depicted on these plates are the property of their respective owners and are shown solely for identification of the license plates issued by the {agency}.",
       agencyName: "Florida Department of Highway Safety and Motor Vehicles",
       agencyUrl: "https://www.flhsmv.gov/",
       logoPath: "state-packs/florida/dmv-logo.png",
@@ -179,6 +179,6 @@ export const floridaGame: GameDefinition & {
   },
   about: {
     fairUseNotice:
-      "Plate images are not the intellectual property of Gorilla Grin. They belong to the Florida Department of Highway Safety and Motor Vehicles and are displayed here for identification, educational, and entertainment purposes under a fair use claim."
+      "Plate images are not the intellectual property of Gorilla Grin. They belong to the Florida Department of Highway Safety and Motor Vehicles and are displayed here for identification, educational, and entertainment purposes under a fair use claim. Logos, mascots, names, and other marks depicted on these plates are the property of their respective owners and are shown solely for identification of the license plates issued by the Florida Department of Highway Safety and Motor Vehicles."
   }
 };

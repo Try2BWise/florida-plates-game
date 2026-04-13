@@ -88,7 +88,7 @@ To set up from scratch:
 
 ## Acknowledgments
 
-- Plate images belong to their respective state motor vehicle agencies and are displayed for identification and entertainment purposes under a fair use claim.
+- Plate images belong to their respective state motor vehicle agencies and are displayed for identification, educational, and entertainment purposes under a fair use claim. Logos, mascots, names, and other marks depicted on these plates are the property of their respective owners and are shown solely for identification of the license plates issued by the state agencies.
 - Badge icons from [Microsoft Fluent Emoji](https://github.com/microsoft/fluentui-emoji) (MIT License).
 - State outline shapes from [StateFace](https://proicons.com/icon-collections/stateface) by ProPublica (MIT License).
 
