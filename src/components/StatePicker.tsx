@@ -172,7 +172,7 @@ export function StatePicker({ onSelect, onOpenSettings }: StatePickerProps) {
         <img
           className="state-picker__logo"
           src={`${import.meta.env.BASE_URL}state-pl8-logo.png`}
-          alt="State PL8"
+          alt="Every PL8"
         />
         <h1 className="state-picker__title">Every PL8</h1>
         <p className="state-picker__subtitle">Choose your state to start collecting</p>

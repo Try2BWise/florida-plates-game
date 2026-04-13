@@ -76,7 +76,7 @@ export const alaskaGame: GameDefinition & {
     appShareName: "Every PL8",
     shareUrl: "https://gorillagrin.com/florida-plates-game/",
     appTagline: "Every PL8 — Alaska",
-    headerImage: { type: "logo", path: "state-pl8-logo.png", alt: "State PL8 logo" },
+    headerImage: { type: "logo", path: "state-pl8-logo.png", alt: "Every PL8 logo" },
     attribution: {
       text: "Plate images are not the intellectual property of Gorilla Grin. They belong to the {agency} and are displayed here for identification, educational, and entertainment purposes under a fair use claim. Logos, mascots, names, and other marks depicted on these plates are the property of their respective owners and are shown solely for identification of the license plates issued by the {agency}.",
       agencyName: "Alaska Division of Motor Vehicles",
