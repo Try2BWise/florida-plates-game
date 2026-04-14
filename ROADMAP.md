@@ -449,7 +449,7 @@ These are intentionally not committed to the next release yet.
 - rarity-based scoring
 - history/year-based gameplay
 - in-app miscategorization reporting
-- richer map provider or real slippy-map implementation
+- real interactive map (see second Parking Lot for full Leaflet plan)
 - custom badge artwork beyond the current icon system
 - optional social identity, leaderboard, and buddy-sharing features
 - a standalone external driver editor
@@ -1015,7 +1015,16 @@ These are intentionally not committed to the next release yet.
 - rarity-based scoring
 - history/year-based gameplay
 - in-app miscategorization reporting
-- richer map provider or real slippy-map implementation
+- **Real interactive map** — replace the CSS pin-plot in Explore → Map with Leaflet + OpenStreetMap. Details:
+  - Stack: `leaflet` + `react-leaflet` (~40KB gzipped, free, no API key)
+  - Discoveries plotted as markers with plate name + date popups
+  - Auto-fit bounds to show all pins
+  - Optional marker clustering for 100+ discoveries
+  - Optional state outline overlay for active state boundaries
+  - All data is local (lat/lng from discoveries) — no backend needed
+  - Works on PWA and iOS native; tiles cache well for offline
+  - Alternatives considered: MapLibre GL (heavier, ~200KB), Google Maps (costs money), Apple MapKit JS (needs token)
+  - Estimated effort: 1-2 hours basic, +1 hour for clustering/outlines
 - custom badge artwork beyond the current icon system
 - optional social identity, leaderboard, and buddy-sharing features
 - a standalone external driver editor
