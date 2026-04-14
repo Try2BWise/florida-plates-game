@@ -91,7 +91,7 @@ export const alabamaGame: GameDefinition & {
     appTagline: "Every PL8 — Alabama",
     headerImage: {
       type: "logo",
-      path: "state-pl8-logo.png",
+      path: "every-pl8-logo.png",
       alt: "Every PL8 logo"
     },
     attribution: {

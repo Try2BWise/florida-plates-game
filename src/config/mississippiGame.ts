@@ -95,7 +95,7 @@ export const mississippiGame: GameDefinition & {
     appTagline: "Every PL8 — Mississippi",
     headerImage: {
       type: "logo",
-      path: "state-pl8-logo.png",
+      path: "every-pl8-logo.png",
       alt: "Every PL8 logo"
     },
     attribution: {
