@@ -243,6 +243,18 @@ export function SettingsPage({
           </div>
 
           <div>
+            <div className="ios-list__section-label">Support</div>
+            <div className="ios-list__group">
+              <a className="ios-list__row" href="mailto:feedback@gorillagrin.com?subject=Every%20PL8%20Feedback">
+                <span className="ios-list__row-label">Send Feedback</span>
+                <span className="ios-list__row-value">feedback@gorillagrin.com</span>
+                <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
+              </a>
+            </div>
+            <div className="ios-list__section-footer">Found a bug, mis-categorized plate, or have a suggestion? Send us a note.</div>
+          </div>
+
+          <div>
             <div className="ios-list__section-label">Legal</div>
             <div className="ios-list__group">
               <a className="ios-list__row" href="privacy.html" target="_blank" rel="noreferrer">
