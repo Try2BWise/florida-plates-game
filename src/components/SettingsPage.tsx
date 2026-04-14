@@ -197,7 +197,7 @@ export function SettingsPage({
                 <Icon name="chevron-right" size={14} className="ios-list__row-chevron" />
               </button>
             </div>
-            <div className="ios-list__section-footer">{attribution.text.replace("{agency}", attribution.agencyName)}</div>
+            <div className="ios-list__section-footer">{attribution.text.split("{agency}").join(attribution.agencyName)}</div>
           </div>
 
           <div>
