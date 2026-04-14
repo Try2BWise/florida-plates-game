@@ -26,6 +26,8 @@ const storageKeys = [
   "every-pl8-last-review-prompt",
   // Per-state discovery keys
   ...stateRegistry.map(s => `${s.id}-plates-discoveries`),
+  // Per-state custom plates
+  ...stateRegistry.map(s => `${s.id}-custom-plates`),
 ];
 
 Promise.all([

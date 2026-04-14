@@ -263,7 +263,7 @@ select {
   padding: 0;
   border: none;
   background: none;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 5vw, 1.5rem);
   font-weight: 800;
   line-height: 1.1;
   color: var(--text);
@@ -274,6 +274,8 @@ select {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .app-header__edition-chevron {
@@ -1091,6 +1093,67 @@ select {
   background: color-mix(in srgb, #c94747 88%, #9e2727);
   color: #fff7f7;
   box-shadow: 0 12px 24px rgba(158, 39, 39, 0.24);
+}
+
+/* ── Custom Plates ── */
+
+.custom-plate__add-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+  padding: 0.55rem 1rem;
+  border: 1.5px dashed var(--accent);
+  border-radius: 0.62rem;
+  background: transparent;
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.custom-plate__add-btn:active {
+  background: var(--accent-soft);
+}
+
+.plate-group__empty {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-style: italic;
+  margin: 0.25rem 0;
+}
+
+.custom-plate__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.custom-plate__input {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--card-border);
+  border-radius: 0.5rem;
+  background: var(--page-bg);
+  color: var(--text);
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.custom-plate__input::placeholder {
+  color: var(--muted);
+}
+
+.custom-plate__input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+.plate-card--custom {
+  border-left: 3px solid var(--accent);
 }
 
 .plate-card--found .plate-card__timestamp,
@@ -2722,7 +2785,7 @@ body.keyboard-open .update-banner {
   }
 
   .app-header__edition {
-    font-size: 1.15rem;
+    font-size: clamp(0.9rem, 4.5vw, 1.15rem);
   }
 
   .app-header {

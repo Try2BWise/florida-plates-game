@@ -59,6 +59,11 @@ export function HelpPage({ onBack, helpContent }: HelpPageProps) {
               ))}
             </div>
           </section>
+          <section className="utility-card">
+            <h3>About this catalog</h3>
+            <p className="utility-card__meta">Plate catalogs are sourced from official state motor vehicle agencies. While we strive for completeness, some plates may be missing or outdated.</p>
+            <p className="utility-card__meta">If you spot a plate that isn't listed, use the + button in the My Plates section to add it yourself. Your custom plates are saved locally on your device.</p>
+          </section>
         </div>
       ) : null}
       {activeTab === "safe" ? (

@@ -33,6 +33,7 @@ import { Share } from "@capacitor/share";
 import { confirmNative } from "./lib/nativeDialog";
 import { copyToClipboard } from "./lib/clipboardWrite";
 import { requestAppReview } from "./lib/appReview";
+import { loadCustomPlates, addCustomPlate, deleteCustomPlate, type CustomPlate } from "./lib/customPlates";
 import type { Plate, PlateCategory, PlateDiscoveryMap } from "./types";
 
 const THEME_STORAGE_KEY = "florida-plates-theme";
@@ -289,6 +290,10 @@ function App() {
   );
   const [settingsReturnView, setSettingsReturnView] = useState<ActiveView>("home");
   const [geoPrompt, setGeoPrompt] = useState<{ message: string; stateId: string } | null>(null);
+  const [customPlates, setCustomPlates] = useState<CustomPlate[]>(() => loadCustomPlates(activeGame.id));
+  const [isAddCustomPlateOpen, setIsAddCustomPlateOpen] = useState(false);
+  const [customPlateName, setCustomPlateName] = useState("");
+  const [customPlateNotes, setCustomPlateNotes] = useState("");
   const [isCategorySheetOpen, setIsCategorySheetOpen] = useState(false);
   const [isFilterSheetOpen, setIsFilterSheetOpen] = useState(false);
   const [isSortSheetOpen, setIsSortSheetOpen] = useState(false);
@@ -508,7 +513,7 @@ function App() {
       ),
     [discoveryEntries]
   );
-  const foundCount = discoveryEntries.length;
+  const foundCount = discoveryEntries.length + customPlates.length;
   const localityCount = useMemo(() => new Set(
     Object.values(discoveries).map((d) => d.locality).filter((l): l is string => Boolean(l))
   ).size, [discoveries]);
@@ -891,6 +896,36 @@ function App() {
   function handleAcknowledgeSafeUse() {
     setItem(SAFE_USE_ACKNOWLEDGED_STORAGE_KEY, "true");
     setIsSafeUseAcknowledged(true);
+  }
+
+  function handleAddCustomPlate() {
+    const name = customPlateName.trim();
+    if (!name) return;
+    const newPlate = addCustomPlate(activeGame.id, {
+      name,
+      notes: customPlateNotes.trim(),
+      category: "My Plates",
+      latitude: null,
+      longitude: null,
+      locality: null,
+    });
+    setCustomPlates(prev => [...prev, newPlate]);
+    setCustomPlateName("");
+    setCustomPlateNotes("");
+    setIsAddCustomPlateOpen(false);
+  }
+
+  async function handleDeleteCustomPlate(plateId: string) {
+    const confirmed = await confirmNative({
+      title: "Delete custom plate?",
+      message: "This plate will be removed from your collection.",
+      okButtonTitle: "Delete",
+      cancelButtonTitle: "Cancel",
+    });
+    if (confirmed) {
+      deleteCustomPlate(activeGame.id, plateId);
+      setCustomPlates(prev => prev.filter(p => p.id !== plateId));
+    }
   }
 
   async function handleClearDiscoveries() {
@@ -1475,7 +1510,100 @@ function App() {
             </p>
           </section>
         )}
+
+        {/* ── My Plates (user-created) ── */}
+        <section className="plate-group">
+          <div className="plate-group__heading">
+            <h2>My Plates</h2>
+            <span>{customPlates.length}</span>
+          </div>
+          {customPlates.length > 0 ? (
+            <div className="plate-list">
+              {customPlates.map(cp => (
+                <article className="plate-card plate-card--custom" key={cp.id}>
+                  <div className="plate-card__image-button">
+                    <div className="plate-card__image-wrap">
+                      <img
+                        className="plate-card__image"
+                        src={`${import.meta.env.BASE_URL}my-pl8.svg`}
+                        alt="Custom plate"
+                      />
+                    </div>
+                  </div>
+                  <div className="plate-card__info" style={{ cursor: "default" }}>
+                    <span className="plate-card__name">{cp.name}</span>
+                    {cp.notes && <span className="plate-card__meta">{cp.notes}</span>}
+                    <span className="plate-card__meta plate-card__meta--muted">
+                      {new Date(cp.foundAtIso).toLocaleDateString()}
+                    </span>
+                  </div>
+                  <button
+                    type="button"
+                    className="plate-card__toggle"
+                    onClick={() => void handleDeleteCustomPlate(cp.id)}
+                    aria-label={`Delete ${cp.name}`}
+                  >
+                    <Icon name="close" size={16} className="plate-card__plus-icon" />
+                  </button>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <p className="plate-group__empty">Spot a plate that isn't listed? Add it here.</p>
+          )}
+          <button
+            type="button"
+            className="custom-plate__add-btn"
+            onClick={() => setIsAddCustomPlateOpen(true)}
+          >
+            <Icon name="plus-circle" size={16} /> Add plate
+          </button>
+        </section>
       </main>
+
+      {/* ── Add Custom Plate Modal ── */}
+      {isAddCustomPlateOpen && (
+        <div className="confirm-modal-backdrop" role="presentation" onClick={() => setIsAddCustomPlateOpen(false)}>
+          <section className="confirm-modal" role="dialog" aria-modal="true" onClick={e => e.stopPropagation()}>
+            <h2 className="confirm-modal__title">Add a plate</h2>
+            <p className="confirm-modal__description">Add a plate you spotted that isn't in the official catalog.</p>
+            <div className="custom-plate__form">
+              <input
+                type="text"
+                className="custom-plate__input"
+                placeholder="Plate name (e.g., U.S. Marine Corps)"
+                value={customPlateName}
+                onChange={e => setCustomPlateName(e.target.value)}
+                autoFocus
+              />
+              <input
+                type="text"
+                className="custom-plate__input"
+                placeholder="Notes (optional)"
+                value={customPlateNotes}
+                onChange={e => setCustomPlateNotes(e.target.value)}
+              />
+            </div>
+            <div className="confirm-modal__actions">
+              <button
+                type="button"
+                className="confirm-modal__button confirm-modal__button--secondary"
+                onClick={() => { setIsAddCustomPlateOpen(false); setCustomPlateName(""); setCustomPlateNotes(""); }}
+              >
+                Cancel
+              </button>
+              <button
+                type="button"
+                className="confirm-modal__button"
+                onClick={handleAddCustomPlate}
+                disabled={!customPlateName.trim()}
+              >
+                Add
+              </button>
+            </div>
+          </section>
+        </div>
+      )}
 
       <nav className="bottom-dock" aria-label="Primary app navigation">
         <button
