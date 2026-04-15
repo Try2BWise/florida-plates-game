@@ -514,9 +514,6 @@ function App() {
     [discoveryEntries]
   );
   const foundCount = discoveryEntries.length + customPlates.length;
-  const localityCount = useMemo(() => new Set(
-    Object.values(discoveries).map((d) => d.locality).filter((l): l is string => Boolean(l))
-  ).size, [discoveries]);
   const geotaggedEntries = useMemo(() =>
     discoveryEntries.filter(({ discovery }) => discovery.latitude !== null && discovery.longitude !== null),
     [discoveryEntries]
@@ -598,35 +595,6 @@ function App() {
       ),
     [filteredGroups]
   );
-  const categoryStats = useMemo(
-    () =>
-      groupedPlates.map(({ category, plates: categoryPlates }) => {
-        const found = categoryPlates.filter((plate) => normalizedDiscoveries[plate.id]).length;
-        return {
-          category,
-          found,
-          total: categoryPlates.length,
-          percent: Math.round((found / categoryPlates.length) * 100)
-        };
-      }),
-    [normalizedDiscoveries]
-  );
-  const topLocalities = useMemo(() => {
-    const localityCounts = new Map<string, number>();
-
-    for (const { discovery } of discoveryEntries) {
-      const locality = discovery.locality;
-      if (!locality) {
-        continue;
-      }
-
-      localityCounts.set(locality, (localityCounts.get(locality) ?? 0) + 1);
-    }
-
-    return [...localityCounts.entries()]
-      .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0]))
-      .slice(0, 6);
-  }, [discoveryEntries]);
   const timelineGroups = useMemo(() => {
     const sortedEntries = [...discoveryEntries].sort((left, right) => {
       const comparison =
@@ -662,7 +630,6 @@ function App() {
     });
   }, [timelineGroups]);
 
-  const newestSighting = discoveryEntries[0] ?? null;
   const oldestSighting =
     discoveryEntries.length > 0
       ? discoveryEntries[discoveryEntries.length - 1]
@@ -1750,13 +1717,6 @@ function App() {
           onBack={navigateHome}
           activeTab={activeAchievementsTab}
           onTabChange={setActiveAchievementsTab}
-          foundCount={foundCount}
-          totalPlates={plates.length}
-          localityCount={localityCount}
-          categoryStats={categoryStats}
-          topLocalities={topLocalities}
-          newestSighting={newestSighting}
-          oldestSighting={oldestSighting}
           evaluatedBadges={evaluatedBadges}
           earnedBadges={earnedBadges}
           allBadgeGroups={allBadgeGroups}
