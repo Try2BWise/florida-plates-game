@@ -4,6 +4,7 @@ import type { IconName } from "./Icon";
 import { BadgeIcon } from "./BadgeIcon";
 import { PageView } from "./PageView";
 import { ProgressRing } from "./ProgressRing";
+import { DiscoveryMap } from "./DiscoveryMap";
 import { formatDiscoveryTime } from "../lib/format";
 import type { EvaluatedBadge, BadgeGroup, PlayerRankInfo } from "../lib/badges";
 import type { Plate, PlateDiscovery } from "../types";
@@ -21,23 +22,6 @@ interface CategoryStat {
   found: number;
   total: number;
   percent: number;
-}
-
-interface MapPin {
-  id: string;
-  plateName: string;
-  locality: string | null;
-  left: number;
-  top: number;
-  latitude: number;
-  longitude: number;
-}
-
-interface MapBounds {
-  north: string;
-  south: string;
-  east: string;
-  west: string;
 }
 
 interface AchievementsPageProps {
@@ -68,9 +52,8 @@ interface AchievementsPageProps {
   collapsedTimelineDates: Set<string>;
   onToggleTimelineDate: (dateLabel: string) => void;
   // Map
-  mapPins: MapPin[];
-  mapBounds: MapBounds | null;
   geotaggedEntries: DiscoveryEntry[];
+  resolvedTheme: "light" | "dark";
 }
 
 function getLocationStatus(discovery: PlateDiscovery): string {
@@ -86,7 +69,7 @@ export function AchievementsPage({
   evaluatedBadges, earnedBadges, allBadgeGroups, badgeGroupLabels, badgeGroupSymbols, onBadgeDetail,
   playerRank,
   timelineSort, onTimelineSortChange, timelineGroups, collapsedTimelineDates, onToggleTimelineDate,
-  mapPins, mapBounds, geotaggedEntries
+  geotaggedEntries, resolvedTheme
 }: AchievementsPageProps) {
   const [showLocked, setShowLocked] = useState(false);
 
@@ -407,25 +390,9 @@ export function AchievementsPage({
       ) : null}
 
       {activeTab === "map" ? (
-        mapPins.length > 0 ? (
+        geotaggedEntries.length > 0 ? (
           <div className="utility-stack">
-            <section className="map-card">
-              <div className="map-card__surface">
-                <div className="map-card__grid" />
-                {mapBounds ? (
-                  <>
-                    <div className="map-card__label map-card__label--north">N {mapBounds.north}</div>
-                    <div className="map-card__label map-card__label--south">S {mapBounds.south}</div>
-                    <div className="map-card__label map-card__label--west">W {mapBounds.west}</div>
-                    <div className="map-card__label map-card__label--east">E {mapBounds.east}</div>
-                  </>
-                ) : null}
-                {mapPins.map((pin) => (
-                  <button key={pin.id} type="button" className="map-card__pin" style={{ left: `${pin.left}%`, top: `${pin.top}%` }} title={`${pin.plateName}${pin.locality ? ` - ${pin.locality}` : ""}`} aria-label={`${pin.plateName}${pin.locality ? ` in ${pin.locality}` : ""}`} />
-                ))}
-              </div>
-              <p className="map-card__note">Dynamic pushpin plot based on the current spread of saved GPS sightings.</p>
-            </section>
+            <DiscoveryMap entries={geotaggedEntries} resolvedTheme={resolvedTheme} />
             <div className="utility-list utility-list--compact">
               {geotaggedEntries.slice(0, 10).map(({ plate, discovery }) => (
                 <article className="utility-card" key={`${plate.id}-map`}>

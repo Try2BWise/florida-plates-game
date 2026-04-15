@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import "leaflet/dist/leaflet.css";
 import "./styles.css";
 import { registerServiceWorker } from "./registerServiceWorker";
 import { initStorage, getItem } from "./lib/persistentStorage";

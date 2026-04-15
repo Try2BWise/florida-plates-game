@@ -662,68 +662,6 @@ function App() {
     });
   }, [timelineGroups]);
 
-  const mapPins = useMemo(
-    () => {
-      const plottedEntries = discoveryEntries.filter(
-        ({ discovery }) =>
-          discovery.latitude !== null && discovery.longitude !== null
-      );
-
-      if (plottedEntries.length === 0) {
-        return [];
-      }
-
-      const latitudes = plottedEntries.map(({ discovery }) => discovery.latitude!);
-      const longitudes = plottedEntries.map(({ discovery }) => discovery.longitude!);
-      const minLatitude = Math.min(...latitudes);
-      const maxLatitude = Math.max(...latitudes);
-      const minLongitude = Math.min(...longitudes);
-      const maxLongitude = Math.max(...longitudes);
-      const latitudePadding = Math.max(0.35, (maxLatitude - minLatitude) * 0.18);
-      const longitudePadding = Math.max(0.35, (maxLongitude - minLongitude) * 0.18);
-      const boundedMinLatitude = minLatitude - latitudePadding;
-      const boundedMaxLatitude = maxLatitude + latitudePadding;
-      const boundedMinLongitude = minLongitude - longitudePadding;
-      const boundedMaxLongitude = maxLongitude + longitudePadding;
-
-      return plottedEntries.map(({ plate, discovery }) => {
-        const x =
-          ((discovery.longitude! - boundedMinLongitude) /
-            (boundedMaxLongitude - boundedMinLongitude)) *
-          100;
-        const y =
-          (1 -
-            (discovery.latitude! - boundedMinLatitude) /
-              (boundedMaxLatitude - boundedMinLatitude)) *
-          100;
-
-        return {
-          id: plate.id,
-          plateName: plate.name,
-          locality: discovery.locality,
-          latitude: discovery.latitude!,
-          longitude: discovery.longitude!,
-          left: Math.min(96, Math.max(4, x)),
-          top: Math.min(94, Math.max(6, y))
-        };
-      });
-    },
-    [discoveryEntries]
-  );
-  const mapBounds = useMemo(() => {
-    if (mapPins.length === 0) {
-      return null;
-    }
-
-    const latitudes = mapPins.map((pin) => pin.latitude);
-    const longitudes = mapPins.map((pin) => pin.longitude);
-    return {
-      north: Math.max(...latitudes).toFixed(2),
-      south: Math.min(...latitudes).toFixed(2),
-      east: Math.max(...longitudes).toFixed(2),
-      west: Math.min(...longitudes).toFixed(2)
-    };
-  }, [mapPins]);
   const newestSighting = discoveryEntries[0] ?? null;
   const oldestSighting =
     discoveryEntries.length > 0
@@ -1831,9 +1769,8 @@ function App() {
           timelineGroups={timelineGroups}
           collapsedTimelineDates={collapsedTimelineDates}
           onToggleTimelineDate={toggleTimelineDate}
-          mapPins={mapPins}
-          mapBounds={mapBounds}
           geotaggedEntries={geotaggedEntries}
+          resolvedTheme={resolvedTheme}
         />
       ) : null}
 

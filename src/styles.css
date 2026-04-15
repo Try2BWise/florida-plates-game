@@ -2144,96 +2144,46 @@ body.keyboard-open .update-banner {
 }
 
 
-.map-card {
-  display: grid;
-  gap: 0.6rem;
-  padding: 0.95rem;
-  border: 1px solid var(--card-border);
+.discovery-map {
+  height: 60vh;
+  min-height: 320px;
+  width: 100%;
   border-radius: 1rem;
-  background: var(--surface);
+  overflow: hidden;
+  border: 1px solid var(--card-border);
   box-shadow: var(--card-shadow);
 }
 
-.map-card__surface {
-  position: relative;
-  min-height: 16rem;
-  overflow: hidden;
-  border-radius: 1rem;
-  background:
-    radial-gradient(circle at 24% 22%, rgba(255, 255, 255, 0.75), transparent 18%),
-    radial-gradient(circle at 72% 64%, rgba(255, 255, 255, 0.25), transparent 14%),
-    linear-gradient(180deg, #d9f2fb 0%, #a8dff0 100%);
+.discovery-map .leaflet-container {
+  height: 100%;
+  width: 100%;
+  background: var(--surface);
+  font-family: inherit;
 }
 
-.map-card__grid {
-  position: absolute;
-  inset: 0;
-  background:
-    repeating-linear-gradient(
-      0deg,
-      rgba(15, 76, 92, 0.08) 0 1px,
-      transparent 1px 20%
-    ),
-    repeating-linear-gradient(
-      90deg,
-      rgba(15, 76, 92, 0.08) 0 1px,
-      transparent 1px 20%
-    );
-}
-
-.map-card__label {
-  position: absolute;
-  z-index: 1;
-  color: rgba(18, 52, 59, 0.64);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: none;
-}
-
-.map-card__label--north {
-  top: 0.8rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.map-card__label--south {
-  bottom: 0.8rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.map-card__label--west {
-  left: 0.8rem;
-  top: 50%;
-  transform: translateY(-50%) rotate(-90deg);
-  transform-origin: left center;
-}
-
-.map-card__label--east {
-  right: 0.8rem;
-  top: 50%;
-  transform: translateY(-50%) rotate(90deg);
-  transform-origin: right center;
-}
-
-.map-card__pin {
-  position: absolute;
-  z-index: 2;
-  width: 0.95rem;
-  height: 0.95rem;
-  margin: -0.48rem 0 0 -0.48rem;
+.discovery-map__pin-wrapper {
+  background: transparent;
   border: 0;
-  border-radius: 50% 50% 50% 0;
-  background: #d74343;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.88);
-  transform: rotate(-45deg);
 }
 
-.map-card__note {
-  margin: 0;
+.discovery-map__pin {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+.discovery-map .leaflet-popup-content {
+  margin: 0.6rem 0.8rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.discovery-map .leaflet-popup-content small {
   color: var(--muted);
-  font-size: 0.76rem;
+  font-size: 0.78rem;
 }
 
 .settings-list {
@@ -2968,8 +2918,9 @@ body.keyboard-open .update-banner {
     gap: 0.62rem;
   }
 
-  .map-card__surface {
-    min-height: 13.5rem;
+  .discovery-map {
+    height: 50vh;
+    min-height: 280px;
   }
 
   .settings-row {
