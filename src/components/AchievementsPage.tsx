@@ -391,20 +391,7 @@ export function AchievementsPage({
 
       {activeTab === "map" ? (
         geotaggedEntries.length > 0 ? (
-          <div className="utility-stack">
-            <DiscoveryMap entries={geotaggedEntries} resolvedTheme={resolvedTheme} />
-            <div className="utility-list utility-list--compact">
-              {geotaggedEntries.slice(0, 10).map(({ plate, discovery }) => (
-                <article className="utility-card" key={`${plate.id}-map`}>
-                  <div className="utility-card__header">
-                    <h3>{plate.name}</h3>
-                    <span>{discovery.locality ?? "Pinned"}</span>
-                  </div>
-                  <p className="utility-card__meta">{discovery.latitude?.toFixed(4)}, {discovery.longitude?.toFixed(4)}</p>
-                </article>
-              ))}
-            </div>
-          </div>
+          <DiscoveryMap entries={geotaggedEntries} resolvedTheme={resolvedTheme} />
         ) : (
           <section className="empty-state">
             <h2>No map pins yet</h2>
