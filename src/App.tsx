@@ -949,14 +949,13 @@ function App() {
         return findDiscoveriesForCategories(["Universities"]);
       case "green-light":
       case "eco-scout":
-        return findDiscoveriesForCategories(["Nature & Wildlife"]);
+        return findDiscoveriesForCategories(["Wildlife & Nature"]);
       case "healing-hands":
-        return findDiscoveriesForCategories(["Health & Family"]);
+        return findDiscoveriesForCategories(["Health"]);
       case "sports-fan":
       case "all-teams":
-        return findDiscoveriesForCategories(["Professional Sports"]);
       case "game-on":
-        return findDiscoveriesForCategories(["Sports & Recreation"]);
+        return findDiscoveriesForCategories(["Sports"]);
       case "mixed-bag":
       case "full-spectrum":
         return discoveryEntries.filter(({ plate }) => activeMixedBagCategories.has(plate.category));
