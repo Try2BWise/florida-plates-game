@@ -75,6 +75,12 @@ export const arkansasBadgeGroupSymbols: Record<BadgeGroup, string> = {
 
 export const arkansasBadgePlateSets: Record<string, string[]> = {};
 
+export const arkansasBadgeIds = new Set<string>([
+  "ar-ozarks-explorer", "ar-delta-explorer", "ar-capital-explorer",
+  "ar-river-valley-explorer", "ar-ouachitas-explorer", "ar-timberlands-explorer",
+  "all-around-arkansas",
+]);
+
 export const arkansasGame: GameDefinition & {
   share: {
     appMessage: string;

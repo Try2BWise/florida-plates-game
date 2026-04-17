@@ -61,6 +61,12 @@ export const arizonaBadgeGroupSymbols: Record<BadgeGroup, string> = {
 
 export const arizonaBadgePlateSets: Record<string, string[]> = {};
 
+export const arizonaBadgeIds = new Set<string>([
+  "az-central-explorer", "az-southern-explorer", "az-northern-explorer",
+  "az-western-explorer", "az-eastern-explorer",
+  "all-around-arizona",
+]);
+
 export const arizonaGame: GameDefinition & {
   share: { appMessage: string; badgeMessage: (badgeName: string) => string; };
   help: { howToPlay: string[]; usefulTools: string[]; install: string[]; safeUse: string[]; };

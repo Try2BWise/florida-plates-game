@@ -74,6 +74,12 @@ export const kentuckyBadgeGroupSymbols: Record<BadgeGroup, string> = {
 
 export const kentuckyBadgePlateSets: Record<string, string[]> = {};
 
+export const kentuckyBadgeIds = new Set<string>([
+  "ky-bluegrass-explorer", "ky-eastern-mountain-explorer", "ky-knobs-explorer",
+  "ky-pennyrile-explorer", "ky-jackson-purchase-explorer", "ky-western-coalfields-explorer",
+  "all-around-kentucky",
+]);
+
 export const kentuckyGame: GameDefinition & {
   share: { appMessage: string; badgeMessage: (badgeName: string) => string; };
   help: { howToPlay: string[]; usefulTools: string[]; install: string[]; safeUse: string[]; };

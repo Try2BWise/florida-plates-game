@@ -83,6 +83,12 @@ export const georgiaBadgeGroupSymbols: Record<BadgeGroup, string> = {
 
 export const georgiaBadgePlateSets: Record<string, string[]> = {};
 
+export const georgiaBadgeIds = new Set<string>([
+  "ga-north-georgia-explorer", "ga-metro-atlanta-explorer", "ga-central-georgia-explorer",
+  "ga-southwest-georgia-explorer", "ga-southeast-georgia-explorer",
+  "all-around-georgia",
+]);
+
 export const georgiaGame: GameDefinition & {
   share: {
     appMessage: string;

@@ -78,6 +78,12 @@ export const kansasBadgeGroupSymbols: Record<BadgeGroup, string> = {
 
 export const kansasBadgePlateSets: Record<string, string[]> = {};
 
+export const kansasBadgeIds = new Set<string>([
+  "ks-northwest-explorer", "ks-northeast-explorer", "ks-southwest-explorer",
+  "ks-south-central-explorer", "ks-southeast-explorer",
+  "all-around-kansas",
+]);
+
 export const kansasGame: GameDefinition & {
   share: {
     appMessage: string;

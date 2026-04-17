@@ -67,6 +67,12 @@ export const alaskaBadgeGroupSymbols: Record<BadgeGroup, string> = {
 
 export const alaskaBadgePlateSets: Record<string, string[]> = {};
 
+export const alaskaBadgeIds = new Set<string>([
+  "ak-southcentral-explorer", "ak-southeast-explorer", "ak-interior-explorer",
+  "ak-southwest-explorer", "ak-arctic-explorer",
+  "all-around-alaska",
+]);
+
 export const alaskaGame: GameDefinition & {
   share: { appMessage: string; badgeMessage: (badgeName: string) => string; };
   help: { howToPlay: string[]; usefulTools: string[]; install: string[]; safeUse: string[]; };

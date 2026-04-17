@@ -176,6 +176,26 @@ export const floridaBadgePlateSets: Record<string, string[]> = {
   ]
 };
 
+/**
+ * State-specific badge IDs for Florida: the nine regional-explorer badges,
+ * the all-around completion, plus Florida-only locality/sports/service
+ * collection badges. Generic badges (progress, category, etc.) are not
+ * listed here — they're in `genericBadgeIds` inside badges.ts.
+ */
+export const floridaBadgeIds = new Set<string>([
+  // Regional explorers
+  "northwest-florida-explorer", "north-central-florida-explorer", "northeast-florida-explorer",
+  "central-west-florida-explorer", "central-florida-explorer", "central-east-florida-explorer",
+  "southwest-florida-explorer", "southeast-florida-explorer", "florida-keys-explorer",
+  "all-around-florida",
+  // Florida-only locality badges
+  "panhandle-scout", "coastal-cruiser", "farm-fresh", "thrill-ride",
+  // Florida-only sports
+  "grand-slam", "touchdown", "hat-trick", "slam-dunk", "goal", "checkered-flag",
+  // Florida-only service
+  "those-who-serve", "back-the-blue", "fire-watch",
+]);
+
 export const floridaGame: GameDefinition & {
   share: {
     appMessage: string;

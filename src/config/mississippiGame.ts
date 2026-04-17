@@ -74,6 +74,12 @@ export const mississippiBadgeGroupSymbols: Record<BadgeGroup, string> = {
 
 export const mississippiBadgePlateSets: Record<string, string[]> = {};
 
+export const mississippiBadgeIds = new Set<string>([
+  "ms-hills-explorer", "ms-delta-explorer", "ms-capital-river-explorer",
+  "ms-pines-explorer", "ms-coastal-explorer",
+  "all-around-mississippi",
+]);
+
 export const mississippiGame: GameDefinition & {
   share: {
     appMessage: string;

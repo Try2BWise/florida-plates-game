@@ -80,6 +80,12 @@ export const missouriBadgeGroupSymbols: Record<BadgeGroup, string> = {
 
 export const missouriBadgePlateSets: Record<string, string[]> = {};
 
+export const missouriBadgeIds = new Set<string>([
+  "mo-northwest-explorer", "mo-northeast-explorer", "mo-central-explorer",
+  "mo-southwest-explorer", "mo-southeast-explorer",
+  "all-around-missouri",
+]);
+
 export const missouriGame: GameDefinition & {
   share: {
     appMessage: string;

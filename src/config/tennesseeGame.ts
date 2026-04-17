@@ -64,6 +64,11 @@ export const tennesseeBadgeGroupSymbols: Record<BadgeGroup, string> = {
 
 export const tennesseeBadgePlateSets: Record<string, string[]> = {};
 
+export const tennesseeBadgeIds = new Set<string>([
+  "tn-east-explorer", "tn-middle-explorer", "tn-west-explorer",
+  "all-around-tennessee",
+]);
+
 export const tennesseeGame: GameDefinition & {
   share: { appMessage: string; badgeMessage: (badgeName: string) => string; };
   help: { howToPlay: string[]; usefulTools: string[]; install: string[]; safeUse: string[]; };

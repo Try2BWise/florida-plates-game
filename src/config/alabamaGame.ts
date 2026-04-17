@@ -70,6 +70,12 @@ export const alabamaBadgeGroupSymbols: Record<BadgeGroup, string> = {
 
 export const alabamaBadgePlateSets: Record<string, string[]> = {};
 
+export const alabamaBadgeIds = new Set<string>([
+  "al-north-alabama-explorer", "al-central-alabama-explorer", "al-west-alabama-explorer",
+  "al-southeast-alabama-explorer", "al-gulf-coast-explorer",
+  "all-around-alabama",
+]);
+
 export const alabamaGame: GameDefinition & {
   share: {
     appMessage: string;

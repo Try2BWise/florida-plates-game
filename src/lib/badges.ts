@@ -48,6 +48,7 @@ const firstRespondersCategory: PlateCategory = "First Responders";
 
 import {
   activeBadgeCounties,
+  activeBadgeIds,
   activeBadgePlateSets,
   activeMixedBagCategories,
   activePanhandleScoutCounties
@@ -1242,22 +1243,9 @@ export function evaluateBadges(
     )
   ]);
 
-  // "All Around" badge: earned if all region badges are earned
-  const allAroundIdMap: Record<string, string> = {
-    alabama: "all-around-alabama",
-    alaska: "all-around-alaska",
-    arizona: "all-around-arizona",
-    california: "all-around-california",
-    florida: "all-around-florida",
-    georgia: "all-around-georgia",
-    mississippi: "all-around-mississippi",
-    arkansas: "all-around-arkansas",
-    missouri: "all-around-missouri",
-    tennessee: "all-around-tennessee",
-    kentucky: "all-around-kentucky",
-    kansas: "all-around-kansas",
-  };
-  const allAroundId = allAroundIdMap[stateId] ?? `all-around-${stateId}`;
+  // "All Around" badge: earned if all region badges are earned. The badge id
+  // follows the convention `all-around-<stateId>` for every state.
+  const allAroundId = `all-around-${stateId}`;
   const allRegionBadgesEarned = regionBadgeEntries.every(([, badge]) => badge.earned);
   const allAroundBadge = {
     ...getBadgeDefinition(definitionsById, allAroundId),
@@ -1502,86 +1490,10 @@ export function evaluateBadges(
 
   const allEvaluated = badgeDefinitions.map((definition) => lookup.get(definition.id) ?? { ...definition, earned: false });
 
-  // State-specific badge IDs
-  const floridaBadgeIds = new Set([
-    "northwest-florida-explorer", "north-central-florida-explorer", "northeast-florida-explorer",
-    "central-west-florida-explorer", "central-florida-explorer", "central-east-florida-explorer",
-    "southwest-florida-explorer", "southeast-florida-explorer", "florida-keys-explorer",
-    "all-around-florida",
-    // Florida-only locality badges
-    "panhandle-scout", "coastal-cruiser", "farm-fresh", "thrill-ride",
-    // Florida-only sports
-    "grand-slam", "touchdown", "hat-trick", "slam-dunk", "goal", "checkered-flag",
-    // Florida-only service
-    "those-who-serve", "back-the-blue", "fire-watch",
-  ]);
-
-  const mississippiBadgeIds = new Set([
-    "ms-hills-explorer", "ms-delta-explorer", "ms-capital-river-explorer",
-    "ms-pines-explorer", "ms-coastal-explorer", "all-around-mississippi",
-  ]);
-
-  const arkansasBadgeIds = new Set([
-    "ar-ozarks-explorer", "ar-delta-explorer", "ar-capital-explorer",
-    "ar-river-valley-explorer", "ar-ouachitas-explorer", "ar-timberlands-explorer",
-    "all-around-arkansas",
-  ]);
-
-  const missouriBadgeIds = new Set([
-    "mo-northwest-explorer", "mo-northeast-explorer", "mo-central-explorer",
-    "mo-southwest-explorer", "mo-southeast-explorer", "all-around-missouri",
-  ]);
-
-  // States with no region badges yet get an empty set (generic badges only)
-  const emptyBadgeIds = new Set<string>();
-
-  // Filter to generic badges + badges for the active state
-  const stateBadgeMap: Record<string, Set<string>> = {
-    florida: floridaBadgeIds,
-    mississippi: mississippiBadgeIds,
-    arkansas: arkansasBadgeIds,
-    missouri: missouriBadgeIds,
-    tennessee: new Set([
-      "tn-east-explorer", "tn-middle-explorer", "tn-west-explorer",
-      "all-around-tennessee",
-    ]),
-    alabama: new Set([
-      "al-north-alabama-explorer", "al-central-alabama-explorer", "al-west-alabama-explorer",
-      "al-southeast-alabama-explorer", "al-gulf-coast-explorer",
-      "all-around-alabama",
-    ]),
-    alaska: new Set([
-      "ak-southcentral-explorer", "ak-southeast-explorer", "ak-interior-explorer",
-      "ak-southwest-explorer", "ak-arctic-explorer",
-      "all-around-alaska",
-    ]),
-    arizona: new Set([
-      "az-central-explorer", "az-southern-explorer", "az-northern-explorer",
-      "az-western-explorer", "az-eastern-explorer",
-      "all-around-arizona",
-    ]),
-    california: new Set([
-      "ca-socal-explorer", "ca-central-explorer", "ca-bay-area-explorer",
-      "ca-sacramento-explorer", "ca-far-north-explorer",
-      "all-around-california",
-    ]),
-    georgia: new Set([
-      "ga-north-georgia-explorer", "ga-metro-atlanta-explorer", "ga-central-georgia-explorer",
-      "ga-southwest-georgia-explorer", "ga-southeast-georgia-explorer",
-      "all-around-georgia",
-    ]),
-    kansas: new Set([
-      "ks-northwest-explorer", "ks-northeast-explorer", "ks-southwest-explorer",
-      "ks-south-central-explorer", "ks-southeast-explorer",
-      "all-around-kansas",
-    ]),
-    kentucky: new Set([
-      "ky-bluegrass-explorer", "ky-eastern-mountain-explorer", "ky-knobs-explorer",
-      "ky-pennyrile-explorer", "ky-jackson-purchase-explorer", "ky-western-coalfields-explorer",
-      "all-around-kentucky",
-    ]),
-  };
-  const activeBadgeIds = stateBadgeMap[stateId] || emptyBadgeIds;
+  // Filter to generic badges + badges for the active state. Each state's
+  // badge-id set is declared in that state's config (e.g. floridaBadgeIds in
+  // src/config/floridaGame.ts) and flows through activeGame.ts as
+  // `activeBadgeIds`.
   return allEvaluated.filter((badge) => genericBadgeIds.has(badge.id) || activeBadgeIds.has(badge.id));
 }
 

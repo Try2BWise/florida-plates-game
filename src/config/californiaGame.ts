@@ -68,6 +68,12 @@ export const californiaBadgeGroupSymbols: Record<BadgeGroup, string> = {
 
 export const californiaBadgePlateSets: Record<string, string[]> = {};
 
+export const californiaBadgeIds = new Set<string>([
+  "ca-socal-explorer", "ca-central-explorer", "ca-bay-area-explorer",
+  "ca-sacramento-explorer", "ca-far-north-explorer",
+  "all-around-california",
+]);
+
 export const californiaGame: GameDefinition & {
   share: { appMessage: string; badgeMessage: (badgeName: string) => string; };
   help: { howToPlay: string[]; usefulTools: string[]; install: string[]; safeUse: string[]; };
