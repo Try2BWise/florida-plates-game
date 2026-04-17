@@ -4,6 +4,7 @@ import {
   alabamaBadgeCounties,
   alabamaBadgeGroupLabels,
   alabamaBadgeGroupSymbols,
+  alabamaBadgePlateSets,
   alabamaGame,
   alabamaMixedBagCategories,
   alabamaRegionScoutCounties
@@ -14,6 +15,7 @@ import {
   alaskaBadgeCounties,
   alaskaBadgeGroupLabels,
   alaskaBadgeGroupSymbols,
+  alaskaBadgePlateSets,
   alaskaGame,
   alaskaMixedBagCategories,
   alaskaRegionScoutCounties
@@ -24,6 +26,7 @@ import {
   arizonaBadgeCounties,
   arizonaBadgeGroupLabels,
   arizonaBadgeGroupSymbols,
+  arizonaBadgePlateSets,
   arizonaGame,
   arizonaMixedBagCategories,
   arizonaRegionScoutCounties
@@ -34,6 +37,7 @@ import {
   californiaBadgeCounties,
   californiaBadgeGroupLabels,
   californiaBadgeGroupSymbols,
+  californiaBadgePlateSets,
   californiaGame,
   californiaMixedBagCategories,
   californiaRegionScoutCounties
@@ -46,6 +50,7 @@ import {
   floridaBadgeCounties,
   floridaBadgeGroupLabels,
   floridaBadgeGroupSymbols,
+  floridaBadgePlateSets,
   floridaGame,
   floridaMixedBagCategories,
   floridaPanhandleScoutCounties
@@ -54,6 +59,7 @@ import {
   mississippiBadgeCounties,
   mississippiBadgeGroupLabels,
   mississippiBadgeGroupSymbols,
+  mississippiBadgePlateSets,
   mississippiGame,
   mississippiMixedBagCategories,
   mississippiRegionScoutCounties
@@ -64,6 +70,7 @@ import {
   arkansasBadgeCounties,
   arkansasBadgeGroupLabels,
   arkansasBadgeGroupSymbols,
+  arkansasBadgePlateSets,
   arkansasGame,
   arkansasMixedBagCategories,
   arkansasRegionScoutCounties
@@ -74,6 +81,7 @@ import {
   missouriBadgeCounties,
   missouriBadgeGroupLabels,
   missouriBadgeGroupSymbols,
+  missouriBadgePlateSets,
   missouriGame,
   missouriMixedBagCategories,
   missouriRegionScoutCounties
@@ -84,6 +92,7 @@ import {
   tennesseeBadgeCounties,
   tennesseeBadgeGroupLabels,
   tennesseeBadgeGroupSymbols,
+  tennesseeBadgePlateSets,
   tennesseeGame,
   tennesseeMixedBagCategories,
   tennesseeRegionScoutCounties
@@ -94,6 +103,7 @@ import {
   georgiaBadgeCounties,
   georgiaBadgeGroupLabels,
   georgiaBadgeGroupSymbols,
+  georgiaBadgePlateSets,
   georgiaGame,
   georgiaMixedBagCategories,
   georgiaRegionScoutCounties
@@ -104,6 +114,7 @@ import {
   kansasBadgeCounties,
   kansasBadgeGroupLabels,
   kansasBadgeGroupSymbols,
+  kansasBadgePlateSets,
   kansasGame,
   kansasMixedBagCategories,
   kansasRegionScoutCounties
@@ -114,6 +125,7 @@ import {
   kentuckyBadgeCounties,
   kentuckyBadgeGroupLabels,
   kentuckyBadgeGroupSymbols,
+  kentuckyBadgePlateSets,
   kentuckyGame,
   kentuckyMixedBagCategories,
   kentuckyRegionScoutCounties
@@ -169,6 +181,7 @@ function loadFloridaPack() {
     badgeGroupLabels: floridaBadgeGroupLabels,
     badgeGroupSymbols: floridaBadgeGroupSymbols,
     mixedBagCategories: floridaMixedBagCategories,
+    badgePlateSets: floridaBadgePlateSets,
     panhandleScoutCounties: floridaPanhandleScoutCounties,
     legacyIdMap: floridaLegacyIdMap as Record<string, string>,
     plates,
@@ -184,6 +197,7 @@ function loadMississippiPack() {
     badgeGroupLabels: mississippiBadgeGroupLabels,
     badgeGroupSymbols: mississippiBadgeGroupSymbols,
     mixedBagCategories: mississippiMixedBagCategories,
+    badgePlateSets: mississippiBadgePlateSets,
     panhandleScoutCounties: mississippiRegionScoutCounties,
     legacyIdMap: mississippiLegacyIdMap as Record<string, string>,
     plates,
@@ -199,6 +213,7 @@ function loadArkansasPack() {
     badgeGroupLabels: arkansasBadgeGroupLabels,
     badgeGroupSymbols: arkansasBadgeGroupSymbols,
     mixedBagCategories: arkansasMixedBagCategories,
+    badgePlateSets: arkansasBadgePlateSets,
     panhandleScoutCounties: arkansasRegionScoutCounties,
     legacyIdMap: arkansasLegacyIdMap as Record<string, string>,
     plates,
@@ -214,6 +229,7 @@ function loadMissouriPack() {
     badgeGroupLabels: missouriBadgeGroupLabels,
     badgeGroupSymbols: missouriBadgeGroupSymbols,
     mixedBagCategories: missouriMixedBagCategories,
+    badgePlateSets: missouriBadgePlateSets,
     panhandleScoutCounties: missouriRegionScoutCounties,
     legacyIdMap: missouriLegacyIdMap as Record<string, string>,
     plates,
@@ -229,6 +245,7 @@ function loadTennesseePack() {
     badgeGroupLabels: tennesseeBadgeGroupLabels,
     badgeGroupSymbols: tennesseeBadgeGroupSymbols,
     mixedBagCategories: tennesseeMixedBagCategories,
+    badgePlateSets: tennesseeBadgePlateSets,
     panhandleScoutCounties: tennesseeRegionScoutCounties,
     legacyIdMap: tennesseeLegacyIdMap as Record<string, string>,
     plates,
@@ -244,6 +261,7 @@ function loadAlaskaPack() {
     badgeGroupLabels: alaskaBadgeGroupLabels,
     badgeGroupSymbols: alaskaBadgeGroupSymbols,
     mixedBagCategories: alaskaMixedBagCategories,
+    badgePlateSets: alaskaBadgePlateSets,
     panhandleScoutCounties: alaskaRegionScoutCounties,
     legacyIdMap: alaskaLegacyIdMap as Record<string, string>,
     plates,
@@ -259,6 +277,7 @@ function loadArizonaPack() {
     badgeGroupLabels: arizonaBadgeGroupLabels,
     badgeGroupSymbols: arizonaBadgeGroupSymbols,
     mixedBagCategories: arizonaMixedBagCategories,
+    badgePlateSets: arizonaBadgePlateSets,
     panhandleScoutCounties: arizonaRegionScoutCounties,
     legacyIdMap: arizonaLegacyIdMap as Record<string, string>,
     plates,
@@ -274,6 +293,7 @@ function loadCaliforniaPack() {
     badgeGroupLabels: californiaBadgeGroupLabels,
     badgeGroupSymbols: californiaBadgeGroupSymbols,
     mixedBagCategories: californiaMixedBagCategories,
+    badgePlateSets: californiaBadgePlateSets,
     panhandleScoutCounties: californiaRegionScoutCounties,
     legacyIdMap: californiaLegacyIdMap as Record<string, string>,
     plates,
@@ -289,6 +309,7 @@ function loadAlabamaPack() {
     badgeGroupLabels: alabamaBadgeGroupLabels,
     badgeGroupSymbols: alabamaBadgeGroupSymbols,
     mixedBagCategories: alabamaMixedBagCategories,
+    badgePlateSets: alabamaBadgePlateSets,
     panhandleScoutCounties: alabamaRegionScoutCounties,
     legacyIdMap: alabamaLegacyIdMap as Record<string, string>,
     plates,
@@ -304,6 +325,7 @@ function loadGeorgiaPack() {
     badgeGroupLabels: georgiaBadgeGroupLabels,
     badgeGroupSymbols: georgiaBadgeGroupSymbols,
     mixedBagCategories: georgiaMixedBagCategories,
+    badgePlateSets: georgiaBadgePlateSets,
     panhandleScoutCounties: georgiaRegionScoutCounties,
     legacyIdMap: georgiaLegacyIdMap as Record<string, string>,
     plates,
@@ -319,6 +341,7 @@ function loadKansasPack() {
     badgeGroupLabels: kansasBadgeGroupLabels,
     badgeGroupSymbols: kansasBadgeGroupSymbols,
     mixedBagCategories: kansasMixedBagCategories,
+    badgePlateSets: kansasBadgePlateSets,
     panhandleScoutCounties: kansasRegionScoutCounties,
     legacyIdMap: kansasLegacyIdMap as Record<string, string>,
     plates,
@@ -334,6 +357,7 @@ function loadKentuckyPack() {
     badgeGroupLabels: kentuckyBadgeGroupLabels,
     badgeGroupSymbols: kentuckyBadgeGroupSymbols,
     mixedBagCategories: kentuckyMixedBagCategories,
+    badgePlateSets: kentuckyBadgePlateSets,
     panhandleScoutCounties: kentuckyRegionScoutCounties,
     legacyIdMap: kentuckyLegacyIdMap as Record<string, string>,
     plates,
@@ -401,6 +425,7 @@ export const activeBadgeCounties = pack.badgeCounties;
 export const activeBadgeGroupLabels = pack.badgeGroupLabels;
 export const activeBadgeGroupSymbols = pack.badgeGroupSymbols;
 export const activeMixedBagCategories = pack.mixedBagCategories;
+export const activeBadgePlateSets = pack.badgePlateSets;
 export const activePanhandleScoutCounties = pack.panhandleScoutCounties;
 export const activeLegacyIdMap = pack.legacyIdMap;
 export const activePlates = pack.plates;

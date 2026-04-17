@@ -65,7 +65,7 @@ export const georgiaBadgeGroupLabels: Record<BadgeGroup, string> = {
   college: "College Track",
   locality: "Places",
   service: "Those Who Serve",
-  florida: "Georgia Explorer",
+  regional: "Georgia Explorer",
   test: "Test"
 };
 
@@ -77,9 +77,11 @@ export const georgiaBadgeGroupSymbols: Record<BadgeGroup, string> = {
   college: "cap",
   locality: "pin",
   service: "shield",
-  florida: "compass",
+  regional: "compass",
   test: "star"
 };
+
+export const georgiaBadgePlateSets: Record<string, string[]> = {};
 
 export const georgiaGame: GameDefinition & {
   share: {

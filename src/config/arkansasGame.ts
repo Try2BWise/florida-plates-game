@@ -57,7 +57,7 @@ export const arkansasBadgeGroupLabels: Record<BadgeGroup, string> = {
   college: "College Track",
   locality: "Places",
   service: "Those Who Serve",
-  florida: "Arkansas Explorer",
+  regional: "Arkansas Explorer",
   test: "Test"
 };
 
@@ -69,9 +69,11 @@ export const arkansasBadgeGroupSymbols: Record<BadgeGroup, string> = {
   college: "cap",
   locality: "pin",
   service: "shield",
-  florida: "compass",
+  regional: "compass",
   test: "star"
 };
+
+export const arkansasBadgePlateSets: Record<string, string[]> = {};
 
 export const arkansasGame: GameDefinition & {
   share: {

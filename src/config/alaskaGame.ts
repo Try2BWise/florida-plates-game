@@ -49,7 +49,7 @@ export const alaskaBadgeGroupLabels: Record<BadgeGroup, string> = {
   college: "College Track",
   locality: "Places",
   service: "Those Who Serve",
-  florida: "Alaska Explorer",
+  regional: "Alaska Explorer",
   test: "Test"
 };
 
@@ -61,9 +61,11 @@ export const alaskaBadgeGroupSymbols: Record<BadgeGroup, string> = {
   college: "cap",
   locality: "pin",
   service: "shield",
-  florida: "compass",
+  regional: "compass",
   test: "star"
 };
+
+export const alaskaBadgePlateSets: Record<string, string[]> = {};
 
 export const alaskaGame: GameDefinition & {
   share: { appMessage: string; badgeMessage: (badgeName: string) => string; };

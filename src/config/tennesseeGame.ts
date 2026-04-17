@@ -46,7 +46,7 @@ export const tennesseeBadgeGroupLabels: Record<BadgeGroup, string> = {
   college: "College Track",
   locality: "Places",
   service: "Those Who Serve",
-  florida: "Tennessee Explorer",
+  regional: "Tennessee Explorer",
   test: "Test"
 };
 
@@ -58,9 +58,11 @@ export const tennesseeBadgeGroupSymbols: Record<BadgeGroup, string> = {
   college: "cap",
   locality: "pin",
   service: "shield",
-  florida: "compass",
+  regional: "compass",
   test: "star"
 };
+
+export const tennesseeBadgePlateSets: Record<string, string[]> = {};
 
 export const tennesseeGame: GameDefinition & {
   share: { appMessage: string; badgeMessage: (badgeName: string) => string; };

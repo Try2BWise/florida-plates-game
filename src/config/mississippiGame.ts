@@ -56,7 +56,7 @@ export const mississippiBadgeGroupLabels: Record<BadgeGroup, string> = {
   college: "College Track",
   locality: "Places",
   service: "Those Who Serve",
-  florida: "Mississippi Explorer",
+  regional: "Mississippi Explorer",
   test: "Test"
 };
 
@@ -68,9 +68,11 @@ export const mississippiBadgeGroupSymbols: Record<BadgeGroup, string> = {
   college: "cap",
   locality: "pin",
   service: "shield",
-  florida: "compass",
+  regional: "compass",
   test: "star"
 };
+
+export const mississippiBadgePlateSets: Record<string, string[]> = {};
 
 export const mississippiGame: GameDefinition & {
   share: {

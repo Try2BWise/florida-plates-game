@@ -50,7 +50,7 @@ export const californiaBadgeGroupLabels: Record<BadgeGroup, string> = {
   college: "College Track",
   locality: "Places",
   service: "Those Who Serve",
-  florida: "California Explorer",
+  regional: "California Explorer",
   test: "Test"
 };
 
@@ -62,9 +62,11 @@ export const californiaBadgeGroupSymbols: Record<BadgeGroup, string> = {
   college: "cap",
   locality: "pin",
   service: "shield",
-  florida: "compass",
+  regional: "compass",
   test: "star"
 };
+
+export const californiaBadgePlateSets: Record<string, string[]> = {};
 
 export const californiaGame: GameDefinition & {
   share: { appMessage: string; badgeMessage: (badgeName: string) => string; };

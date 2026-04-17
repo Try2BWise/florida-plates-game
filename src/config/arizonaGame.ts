@@ -43,7 +43,7 @@ export const arizonaBadgeGroupLabels: Record<BadgeGroup, string> = {
   college: "College Track",
   locality: "Places",
   service: "Those Who Serve",
-  florida: "Arizona Explorer",
+  regional: "Arizona Explorer",
   test: "Test"
 };
 
@@ -55,9 +55,11 @@ export const arizonaBadgeGroupSymbols: Record<BadgeGroup, string> = {
   college: "cap",
   locality: "pin",
   service: "shield",
-  florida: "compass",
+  regional: "compass",
   test: "star"
 };
+
+export const arizonaBadgePlateSets: Record<string, string[]> = {};
 
 export const arizonaGame: GameDefinition & {
   share: { appMessage: string; badgeMessage: (badgeName: string) => string; };

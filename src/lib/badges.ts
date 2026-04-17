@@ -9,7 +9,7 @@ export type BadgeGroup =
   | "college"
   | "locality"
   | "service"
-  | "florida"
+  | "regional"
   | "test";
 
 type BadgeAvailability = "v1.4" | "later";
@@ -35,85 +35,23 @@ const militaryCategory: PlateCategory = "Military";
 const firstRespondersCategory: PlateCategory = "First Responders";
 
 
-const baseballPlateNames = ["Miami Marlins (Baseball)", "Tampa Bay Rays (Baseball)"];
-const footballPlateNames = [
-  "Jacksonville Jaguars (Football)",
-  "Miami Dolphins (Football)",
-  "Tampa Bay Buccaneers (Football)"
-];
-const lawEnforcementPlateNames = [
-  "Fallen Law Enforcement Officers",
-  "Florida Sheriffs Association",
-  "Fraternal Order of Police",
-  "Police Athletic League",
-  "Police Benevolent Association",
-  "Support Law Enforcement"
-];
-const publicSafetyPlateNames = [
-  ...lawEnforcementPlateNames,
-  "Salutes Firefighters"
-];
-const coastalCruiserPlateNames = [
-  "Discover Florida's Oceans",
-  "Florida Bay Forever",
-  "Indian River Lagoon",
-  "Protect Marine Wildlife",
-  "Protect Our Reefs",
-  "Save Our Seas",
-  "Tampa Bay Estuary"
-];
-const farmFreshPlateNames = [
-  "Agriculture",
-  "Agricultural Education",
-  "Agriculture & Consumer Services"
-];
-const distinguishedPlateNames = [
-  "Distinguished Flying Cross",
-  "Distinguished Service Cross",
-  "Air Force Cross"
-];
-const combatBadgePlateNames = [
-  "Combat Action Badge",
-  "Combat Action Ribbon",
-  "Combat Infantry Badge",
-  "Combat Medical Badge"
-];
-const honorAndMedalPlateNames = [
-  "Air Force Combat Action Medal",
-  "Air Force Cross",
-  "Army of Occupation",
-  "Bronze Star",
-  "Combat Action Badge",
-  "Combat Action Ribbon",
-  "Combat Infantry Badge",
-  "Combat Medical Badge",
-  "Distinguished Flying Cross",
-  "Distinguished Service Cross"
-];
+import {
+  activeBadgeCounties,
+  activeBadgePlateSets,
+  activeMixedBagCategories,
+  activePanhandleScoutCounties
+} from "../games/activeGame";
 
-import { activeBadgeCounties, activeMixedBagCategories, activePanhandleScoutCounties } from "../games/activeGame";
-
-const allBranchesPlateNames = [
-  "U.S. Army",
-  "U.S. Navy",
-  "U.S. Air Force",
-  "U.S. Marine Corps",
-  "U.S. Coast Guard"
-];
-
-const hockeyPlateNames = [
-  "Florida Panthers (Hockey)",
-  "Tampa Bay Lightning (Hockey)"
-];
-
-const basketballPlateNames = [
-  "Miami Heat (Basketball)",
-  "Orlando Magic (Basketball)"
-];
-const soccerPlateNames = [
-  "Inter Miami FC (Soccer)",
-  "Orlando City (Soccer)"
-];
+/**
+ * State-specific plate-name lists (sports teams, law enforcement, military,
+ * etc.) used to feed collection/service badges are provided by the active
+ * state's game config via `activeBadgePlateSets`. Look them up by badge id:
+ *   activeBadgePlateSets["grand-slam"] // → ["Miami Marlins (Baseball)", ...]
+ *
+ * States that don't define a given badge return an empty array; the
+ * state-filter at the bottom of evaluateBadges() ensures those badges
+ * don't surface in the UI anyway.
+ */
 
 export const badgeDefinitions: BadgeDefinition[] = [
   {
@@ -436,7 +374,7 @@ export const badgeDefinitions: BadgeDefinition[] = [
   {
     id: "escapee",
     name: "Escapee",
-    description: "Find a plate outside of Florida.",
+    description: "Find a plate outside your home state.",
     group: "locality",
     availableIn: "v1.4"
   },
@@ -466,42 +404,42 @@ export const badgeDefinitions: BadgeDefinition[] = [
     id: "ms-hills-explorer",
     name: "Hills Explorer",
     description: "Find a plate in every Hills region county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ms-delta-explorer",
     name: "Delta Explorer",
     description: "Find a plate in every Delta region county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ms-capital-river-explorer",
     name: "Capital/River Explorer",
     description: "Find a plate in every Capital/River region county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ms-pines-explorer",
     name: "Pines Explorer",
     description: "Find a plate in every Pines region county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ms-coastal-explorer",
     name: "Coastal Explorer",
     description: "Find a plate in every Coastal region county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "all-around-mississippi",
     name: "All Around Mississippi",
     description: "Earn every regional explorer badge.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   // Arkansas Explorer region badges
@@ -509,49 +447,49 @@ export const badgeDefinitions: BadgeDefinition[] = [
     id: "ar-ozarks-explorer",
     name: "Ozarks Explorer",
     description: "Find a plate in every Ozarks region county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ar-delta-explorer",
     name: "Delta Explorer",
     description: "Find a plate in every Delta region county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ar-capital-explorer",
     name: "Capital Explorer",
     description: "Find a plate in every Capital region county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ar-river-valley-explorer",
     name: "River Valley Explorer",
     description: "Find a plate in every River Valley region county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ar-ouachitas-explorer",
     name: "Ouachitas Explorer",
     description: "Find a plate in every Ouachitas region county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ar-timberlands-explorer",
     name: "Timberlands Explorer",
     description: "Find a plate in every Timberlands region county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "all-around-arkansas",
     name: "All Around Arkansas",
     description: "Earn every regional explorer badge.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   // Tennessee Explorer region badges (Grand Divisions)
@@ -559,28 +497,28 @@ export const badgeDefinitions: BadgeDefinition[] = [
     id: "tn-east-explorer",
     name: "East Tennessee Explorer",
     description: "Find a plate in every East Tennessee county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "tn-middle-explorer",
     name: "Middle Tennessee Explorer",
     description: "Find a plate in every Middle Tennessee county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "tn-west-explorer",
     name: "West Tennessee Explorer",
     description: "Find a plate in every West Tennessee county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "all-around-tennessee",
     name: "All Around Tennessee",
     description: "Earn every regional explorer badge.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   // Kentucky Explorer region badges
@@ -588,49 +526,49 @@ export const badgeDefinitions: BadgeDefinition[] = [
     id: "ky-bluegrass-explorer",
     name: "Bluegrass Explorer",
     description: "Find a plate in every Bluegrass region county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ky-eastern-mountain-explorer",
     name: "Eastern Mountain Explorer",
     description: "Find a plate in every Eastern Mountain Coal Fields county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ky-knobs-explorer",
     name: "Knobs Arc Explorer",
     description: "Find a plate in every Knobs Arc county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ky-pennyrile-explorer",
     name: "Pennyrile Explorer",
     description: "Find a plate in every Pennyrile region county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ky-jackson-purchase-explorer",
     name: "Jackson Purchase Explorer",
     description: "Find a plate in every Jackson Purchase county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ky-western-coalfields-explorer",
     name: "Western Coal Fields Explorer",
     description: "Find a plate in every Western Coal Fields county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "all-around-kentucky",
     name: "All Around Kentucky",
     description: "Earn every regional explorer badge.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   // Missouri Explorer region badges
@@ -638,42 +576,42 @@ export const badgeDefinitions: BadgeDefinition[] = [
     id: "mo-northwest-explorer",
     name: "Northwest Missouri Explorer",
     description: "Find a plate in every Northwest Missouri county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "mo-northeast-explorer",
     name: "Northeast Missouri Explorer",
     description: "Find a plate in every Northeast Missouri county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "mo-central-explorer",
     name: "Central Missouri Explorer",
     description: "Find a plate in every Central Missouri county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "mo-southwest-explorer",
     name: "Southwest Missouri Explorer",
     description: "Find a plate in every Southwest Missouri county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "mo-southeast-explorer",
     name: "Southeast Missouri Explorer",
     description: "Find a plate in every Southeast Missouri county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "all-around-missouri",
     name: "All Around Missouri",
     description: "Earn every regional explorer badge.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   // Alabama Explorer region badges (derived from AL Regional Councils)
@@ -681,42 +619,42 @@ export const badgeDefinitions: BadgeDefinition[] = [
     id: "al-north-alabama-explorer",
     name: "North Alabama Explorer",
     description: "Find a plate in every North Alabama county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "al-central-alabama-explorer",
     name: "Central Alabama Explorer",
     description: "Find a plate in every Central Alabama county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "al-west-alabama-explorer",
     name: "West Alabama Explorer",
     description: "Find a plate in every West Alabama county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "al-southeast-alabama-explorer",
     name: "Southeast Alabama Explorer",
     description: "Find a plate in every Southeast Alabama county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "al-gulf-coast-explorer",
     name: "Gulf Coast Explorer",
     description: "Find a plate in every Gulf Coast county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "all-around-alabama",
     name: "All Around Alabama",
     description: "Earn every regional explorer badge.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   // Alaska Explorer region badges (geographic/economic regions)
@@ -724,42 +662,42 @@ export const badgeDefinitions: BadgeDefinition[] = [
     id: "ak-southcentral-explorer",
     name: "Southcentral Alaska Explorer",
     description: "Find a plate in the Southcentral region (Anchorage, Kenai, Mat-Su).",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ak-southeast-explorer",
     name: "Southeast Alaska Explorer",
     description: "Find a plate in the Southeast region (Inside Passage).",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ak-interior-explorer",
     name: "Interior Alaska Explorer",
     description: "Find a plate in the Interior region (Fairbanks, Denali).",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ak-southwest-explorer",
     name: "Southwest Alaska Explorer",
     description: "Find a plate in the Southwest region (Kodiak, Bristol Bay, Aleutians).",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ak-arctic-explorer",
     name: "Arctic Alaska Explorer",
     description: "Find a plate in the Arctic region (North Slope, Northwest Arctic).",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "all-around-alaska",
     name: "All Around Alaska",
     description: "Earn every regional explorer badge.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   // Arizona Explorer region badges (based on COGs)
@@ -767,42 +705,42 @@ export const badgeDefinitions: BadgeDefinition[] = [
     id: "az-central-explorer",
     name: "Central Arizona Explorer",
     description: "Find a plate in the Central Arizona region (Phoenix metro).",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "az-southern-explorer",
     name: "Southern Arizona Explorer",
     description: "Find a plate in the Southern Arizona region (Tucson, border).",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "az-northern-explorer",
     name: "Northern Arizona Explorer",
     description: "Find a plate in the Northern Arizona region (Flagstaff, Sedona).",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "az-western-explorer",
     name: "Western Arizona Explorer",
     description: "Find a plate in the Western Arizona region (Yuma, Havasu).",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "az-eastern-explorer",
     name: "Eastern Arizona Explorer",
     description: "Find a plate in the Eastern Arizona region (Gila, Graham).",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "all-around-arizona",
     name: "All Around Arizona",
     description: "Earn every regional explorer badge.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   // California Explorer region badges (Caltrans-derived)
@@ -810,42 +748,42 @@ export const badgeDefinitions: BadgeDefinition[] = [
     id: "ca-socal-explorer",
     name: "SoCal Explorer",
     description: "Find a plate in the Southern California region.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ca-central-explorer",
     name: "Central California Explorer",
     description: "Find a plate in the Central Coast & Valley region.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ca-bay-area-explorer",
     name: "Bay Area Explorer",
     description: "Find a plate in the Bay Area & Northern Coast region.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ca-sacramento-explorer",
     name: "Sacramento & Gold Country Explorer",
     description: "Find a plate in the Sacramento & Gold Country region.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ca-far-north-explorer",
     name: "Far North Explorer",
     description: "Find a plate in the Far North region (Shasta, Redding).",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "all-around-california",
     name: "All Around California",
     description: "Earn every regional explorer badge.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   // Georgia Explorer region badges (derived from GA Regional Commissions)
@@ -853,42 +791,42 @@ export const badgeDefinitions: BadgeDefinition[] = [
     id: "ga-north-georgia-explorer",
     name: "North Georgia Explorer",
     description: "Find a plate in every North Georgia county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ga-metro-atlanta-explorer",
     name: "Metro Atlanta Explorer",
     description: "Find a plate in every Metro Atlanta county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ga-central-georgia-explorer",
     name: "Central Georgia Explorer",
     description: "Find a plate in every Central Georgia county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ga-southwest-georgia-explorer",
     name: "Southwest Georgia Explorer",
     description: "Find a plate in every Southwest Georgia county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ga-southeast-georgia-explorer",
     name: "Southeast Georgia Explorer",
     description: "Find a plate in every Southeast Georgia county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "all-around-georgia",
     name: "All Around Georgia",
     description: "Earn every regional explorer badge.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   // Kansas Explorer region badges
@@ -896,42 +834,42 @@ export const badgeDefinitions: BadgeDefinition[] = [
     id: "ks-northwest-explorer",
     name: "Northwest Kansas Explorer",
     description: "Find a plate in every Northwest Kansas county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ks-northeast-explorer",
     name: "Northeast Kansas Explorer",
     description: "Find a plate in every Northeast Kansas county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ks-southwest-explorer",
     name: "Southwest Kansas Explorer",
     description: "Find a plate in every Southwest Kansas county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ks-south-central-explorer",
     name: "South Central Kansas Explorer",
     description: "Find a plate in every South Central Kansas county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "ks-southeast-explorer",
     name: "Southeast Kansas Explorer",
     description: "Find a plate in every Southeast Kansas county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "all-around-kansas",
     name: "All Around Kansas",
     description: "Earn every regional explorer badge.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   // Florida Explorer region badges
@@ -939,70 +877,70 @@ export const badgeDefinitions: BadgeDefinition[] = [
     id: "northwest-florida-explorer",
     name: "Northwest Florida Explorer",
     description: "Find a plate in every Northwest Florida (Panhandle) county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "north-central-florida-explorer",
     name: "North Central Florida Explorer",
     description: "Find a plate in every North Central Florida (Big Bend) county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "northeast-florida-explorer",
     name: "Northeast Florida Explorer",
     description: "Find a plate in every Northeast Florida (First Coast) county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "central-west-florida-explorer",
     name: "Central West Florida Explorer",
     description: "Find a plate in every Central West Florida (Suncoast) county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "central-florida-explorer",
     name: "Central Florida Explorer",
     description: "Find a plate in every Central Florida (Heart of Florida) county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "central-east-florida-explorer",
     name: "Central East Florida Explorer",
     description: "Find a plate in every Central East Florida (Space Coast) county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "southwest-florida-explorer",
     name: "Southwest Florida Explorer",
     description: "Find a plate in every Southwest Florida (Paradise Coast) county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "southeast-florida-explorer",
     name: "Southeast Florida Explorer",
     description: "Find a plate in every Southeast Florida (Gold Coast) county.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "florida-keys-explorer",
     name: "Florida Keys Explorer",
     description: "Find a plate in Monroe County (Florida Keys).",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   },
   {
     id: "all-around-florida",
     name: "All Around Florida",
     description: "Earn every regional explorer badge.",
-    group: "florida",
+    group: "regional",
     availableIn: "v1.4"
   }
 ];
@@ -1109,7 +1047,7 @@ function countFoundInCollection(
 }
 
 function isHonorOrMedalPlate(plate: Plate): boolean {
-  return honorAndMedalPlateNames.includes(plate.name);
+  return (activeBadgePlateSets["decorated-service"] ?? []).includes(plate.name);
 }
 
 function isServiceCategoryPlate(plate: Plate): boolean {
@@ -1190,10 +1128,6 @@ function normalizeCountyName(county: string | null | undefined): string | null {
 }
 
 
-function isLikelyInFlorida(latitude: number, longitude: number): boolean {
-  return latitude >= 24.3 && latitude <= 31.1 && longitude >= -87.8 && longitude <= -79.7;
-}
-
 const genericBadgeIds = new Set([
   // Progress
   "first-spot", "five-alive", "ten-down", "quarter-mark", "halfway-home", "closing-in", "complete-set",
@@ -1204,7 +1138,7 @@ const genericBadgeIds = new Set([
   // Service (count-based)
   "reporting-for-duty", "on-call", "in-service",
   // Locality (generic)
-  "i-get-around", "road-trip",
+  "i-get-around", "road-trip", "escapee",
 ]);
 
 export function evaluateBadges(
@@ -1236,16 +1170,13 @@ export function evaluateBadges(
       .filter((locality): locality is string => Boolean(locality))
   ).size;
 
-  const outsideFloridaCount = Object.values(discoveries).filter((discovery) => {
-    if (discovery.state) {
-      return discovery.state !== "Florida";
-    }
-
-    if (discovery.latitude !== null && discovery.longitude !== null) {
-      return !isLikelyInFlorida(discovery.latitude, discovery.longitude);
-    }
-
-    return false;
+  // Escapee: plates spotted outside the active (home) state. Only counts
+  // discoveries where discovery.state is populated (by reverse-geocoding);
+  // legacy discoveries without a state field don't count.
+  const activeStateNameForEscapee = stateRegistry.find((s) => s.id === stateId)?.name ?? null;
+  const outsideStateCount = Object.values(discoveries).filter((discovery) => {
+    if (!discovery.state || !activeStateNameForEscapee) return false;
+    return discovery.state !== activeStateNameForEscapee;
   }).length;
 
   const panhandleCount = Object.values(discoveries).filter((discovery) => {
@@ -1350,7 +1281,7 @@ export function evaluateBadges(
       "coastal-cruiser",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "coastal-cruiser"),
-        countFoundInCollection(plates, discoveries, coastalCruiserPlateNames),
+        countFoundInCollection(plates, discoveries, activeBadgePlateSets["coastal-cruiser"] ?? []),
         5
       )
     ],
@@ -1358,7 +1289,7 @@ export function evaluateBadges(
       "farm-fresh",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "farm-fresh"),
-        countFoundInCollection(plates, discoveries, farmFreshPlateNames),
+        countFoundInCollection(plates, discoveries, activeBadgePlateSets["farm-fresh"] ?? []),
         3
       )
     ],
@@ -1372,15 +1303,15 @@ export function evaluateBadges(
       "all-branches",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "all-branches"),
-        countFoundByNames(plates, discoveries, allBranchesPlateNames),
-        allBranchesPlateNames.length
+        countFoundByNames(plates, discoveries, activeBadgePlateSets["all-branches"] ?? []),
+        (activeBadgePlateSets["all-branches"] ?? []).length
       )
     ],
     [
       "back-the-blue",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "back-the-blue"),
-        countFoundByNames(plates, discoveries, lawEnforcementPlateNames),
+        countFoundByNames(plates, discoveries, activeBadgePlateSets["back-the-blue"] ?? []),
         3
       )
     ],
@@ -1388,7 +1319,7 @@ export function evaluateBadges(
       "fire-watch",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "fire-watch"),
-        countFoundByNames(plates, discoveries, ["Salutes Firefighters"]),
+        countFoundByNames(plates, discoveries, activeBadgePlateSets["fire-watch"] ?? []),
         1
       )
     ],
@@ -1396,7 +1327,7 @@ export function evaluateBadges(
       "united-front",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "united-front"),
-        countFoundByNames(plates, discoveries, publicSafetyPlateNames),
+        countFoundByNames(plates, discoveries, activeBadgePlateSets["united-front"] ?? []),
         5
       )
     ],
@@ -1404,7 +1335,7 @@ export function evaluateBadges(
       "air-support",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "air-support"),
-        countFoundByNames(plates, discoveries, ["Blue Angels"]),
+        countFoundByNames(plates, discoveries, activeBadgePlateSets["air-support"] ?? []),
         1
       )
     ],
@@ -1412,7 +1343,7 @@ export function evaluateBadges(
       "airborne",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "airborne"),
-        countFoundByNames(plates, discoveries, ["U.S. Paratroopers"]),
+        countFoundByNames(plates, discoveries, activeBadgePlateSets["airborne"] ?? []),
         1
       )
     ],
@@ -1428,7 +1359,7 @@ export function evaluateBadges(
       "bronze-star-honor",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "bronze-star-honor"),
-        countFoundByNames(plates, discoveries, ["Bronze Star"]),
+        countFoundByNames(plates, discoveries, activeBadgePlateSets["bronze-star-honor"] ?? []),
         1
       )
     ],
@@ -1436,7 +1367,7 @@ export function evaluateBadges(
       "distinguished",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "distinguished"),
-        countFoundByNames(plates, discoveries, distinguishedPlateNames),
+        countFoundByNames(plates, discoveries, activeBadgePlateSets["distinguished"] ?? []),
         1
       )
     ],
@@ -1444,7 +1375,7 @@ export function evaluateBadges(
       "combat-ready",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "combat-ready"),
-        countFoundByNames(plates, discoveries, combatBadgePlateNames),
+        countFoundByNames(plates, discoveries, activeBadgePlateSets["combat-ready"] ?? []),
         1
       )
     ],
@@ -1452,7 +1383,7 @@ export function evaluateBadges(
       "decorated-service",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "decorated-service"),
-        countFoundByNames(plates, discoveries, honorAndMedalPlateNames),
+        countFoundByNames(plates, discoveries, activeBadgePlateSets["decorated-service"] ?? []),
         3
       )
     ],
@@ -1498,47 +1429,47 @@ export function evaluateBadges(
       "grand-slam",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "grand-slam"),
-        countFoundInCollection(plates, discoveries, baseballPlateNames),
-        baseballPlateNames.length
+        countFoundInCollection(plates, discoveries, activeBadgePlateSets["grand-slam"] ?? []),
+        (activeBadgePlateSets["grand-slam"] ?? []).length
       )
     ],
     [
       "touchdown",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "touchdown"),
-        countFoundInCollection(plates, discoveries, footballPlateNames),
-        footballPlateNames.length
+        countFoundInCollection(plates, discoveries, activeBadgePlateSets["touchdown"] ?? []),
+        (activeBadgePlateSets["touchdown"] ?? []).length
       )
     ],
     [
       "hat-trick",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "hat-trick"),
-        countFoundInCollection(plates, discoveries, hockeyPlateNames),
-        hockeyPlateNames.length
+        countFoundInCollection(plates, discoveries, activeBadgePlateSets["hat-trick"] ?? []),
+        (activeBadgePlateSets["hat-trick"] ?? []).length
       )
     ],
     [
       "slam-dunk",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "slam-dunk"),
-        countFoundInCollection(plates, discoveries, basketballPlateNames),
-        basketballPlateNames.length
+        countFoundInCollection(plates, discoveries, activeBadgePlateSets["slam-dunk"] ?? []),
+        (activeBadgePlateSets["slam-dunk"] ?? []).length
       )
     ],
     [
       "goal",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "goal"),
-        countFoundInCollection(plates, discoveries, soccerPlateNames),
-        soccerPlateNames.length
+        countFoundInCollection(plates, discoveries, activeBadgePlateSets["goal"] ?? []),
+        (activeBadgePlateSets["goal"] ?? []).length
       )
     ],
     [
       "checkered-flag",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "checkered-flag"),
-        countFoundInCollection(plates, discoveries, ["NASCAR"]),
+        countFoundInCollection(plates, discoveries, activeBadgePlateSets["checkered-flag"] ?? []),
         1
       )
     ],
@@ -1546,11 +1477,11 @@ export function evaluateBadges(
       "thrill-ride",
       createThresholdBadge(
         getBadgeDefinition(definitionsById, "thrill-ride"),
-        countFoundInCollection(plates, discoveries, ["Walt Disney World"]),
+        countFoundInCollection(plates, discoveries, activeBadgePlateSets["thrill-ride"] ?? []),
         1
       )
     ],
-    ["escapee", createThresholdBadge(getBadgeDefinition(definitionsById, "escapee"), outsideFloridaCount, 1)],
+    ["escapee", createThresholdBadge(getBadgeDefinition(definitionsById, "escapee"), outsideStateCount, 1)],
     ["i-get-around", createThresholdBadge(getBadgeDefinition(definitionsById, "i-get-around"), uniqueLocalities, 5)],
     ["road-trip", createThresholdBadge(getBadgeDefinition(definitionsById, "road-trip"), uniqueLocalities, 10)],
     ["panhandle-scout", createThresholdBadge(getBadgeDefinition(definitionsById, "panhandle-scout"), panhandleCount, 1)],
@@ -1567,7 +1498,7 @@ export function evaluateBadges(
     "southwest-florida-explorer", "southeast-florida-explorer", "florida-keys-explorer",
     "all-around-florida",
     // Florida-only locality badges
-    "panhandle-scout", "escapee", "coastal-cruiser", "farm-fresh", "thrill-ride",
+    "panhandle-scout", "coastal-cruiser", "farm-fresh", "thrill-ride",
     // Florida-only sports
     "grand-slam", "touchdown", "hat-trick", "slam-dunk", "goal", "checkered-flag",
     // Florida-only service

@@ -52,7 +52,7 @@ export const alabamaBadgeGroupLabels: Record<BadgeGroup, string> = {
   college: "College Track",
   locality: "Places",
   service: "Those Who Serve",
-  florida: "Alabama Explorer",
+  regional: "Alabama Explorer",
   test: "Test"
 };
 
@@ -64,9 +64,11 @@ export const alabamaBadgeGroupSymbols: Record<BadgeGroup, string> = {
   college: "cap",
   locality: "pin",
   service: "shield",
-  florida: "compass",
+  regional: "compass",
   test: "star"
 };
+
+export const alabamaBadgePlateSets: Record<string, string[]> = {};
 
 export const alabamaGame: GameDefinition & {
   share: {

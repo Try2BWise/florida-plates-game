@@ -62,7 +62,7 @@ export const missouriBadgeGroupLabels: Record<BadgeGroup, string> = {
   college: "College Track",
   locality: "Places",
   service: "Those Who Serve",
-  florida: "Missouri Explorer",
+  regional: "Missouri Explorer",
   test: "Test"
 };
 
@@ -74,9 +74,11 @@ export const missouriBadgeGroupSymbols: Record<BadgeGroup, string> = {
   college: "cap",
   locality: "pin",
   service: "shield",
-  florida: "compass",
+  regional: "compass",
   test: "star"
 };
+
+export const missouriBadgePlateSets: Record<string, string[]> = {};
 
 export const missouriGame: GameDefinition & {
   share: {

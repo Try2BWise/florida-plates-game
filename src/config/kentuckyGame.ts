@@ -56,7 +56,7 @@ export const kentuckyBadgeGroupLabels: Record<BadgeGroup, string> = {
   college: "College Track",
   locality: "Places",
   service: "Those Who Serve",
-  florida: "Kentucky Explorer",
+  regional: "Kentucky Explorer",
   test: "Test"
 };
 
@@ -68,9 +68,11 @@ export const kentuckyBadgeGroupSymbols: Record<BadgeGroup, string> = {
   college: "cap",
   locality: "pin",
   service: "shield",
-  florida: "compass",
+  regional: "compass",
   test: "star"
 };
+
+export const kentuckyBadgePlateSets: Record<string, string[]> = {};
 
 export const kentuckyGame: GameDefinition & {
   share: { appMessage: string; badgeMessage: (badgeName: string) => string; };

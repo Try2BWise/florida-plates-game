@@ -80,7 +80,7 @@ export const floridaBadgeGroupLabels: Record<BadgeGroup, string> = {
   college: "College Track",
   locality: "Places",
   service: "Those Who Serve",
-  florida: "Florida Explorer",
+  regional: "Florida Explorer",
   test: "Test"
 };
 
@@ -92,8 +92,88 @@ export const floridaBadgeGroupSymbols: Record<BadgeGroup, string> = {
   college: "cap",
   locality: "pin",
   service: "shield",
-  florida: "compass",
+  regional: "compass",
   test: "star"
+};
+
+/**
+ * Plate-name lists feeding Florida-only collection/service/sports badges.
+ * Keyed by badge id. Other states get an empty object; the state-filtering
+ * in evaluateBadges() ensures Florida-specific badges don't surface on them.
+ */
+export const floridaBadgePlateSets: Record<string, string[]> = {
+  "coastal-cruiser": [
+    "Discover Florida's Oceans",
+    "Florida Bay Forever",
+    "Indian River Lagoon",
+    "Protect Marine Wildlife",
+    "Protect Our Reefs",
+    "Save Our Seas",
+    "Tampa Bay Estuary"
+  ],
+  "farm-fresh": [
+    "Agriculture",
+    "Agricultural Education",
+    "Agriculture & Consumer Services"
+  ],
+  "grand-slam": ["Miami Marlins (Baseball)", "Tampa Bay Rays (Baseball)"],
+  touchdown: [
+    "Jacksonville Jaguars (Football)",
+    "Miami Dolphins (Football)",
+    "Tampa Bay Buccaneers (Football)"
+  ],
+  "hat-trick": ["Florida Panthers (Hockey)", "Tampa Bay Lightning (Hockey)"],
+  "slam-dunk": ["Miami Heat (Basketball)", "Orlando Magic (Basketball)"],
+  goal: ["Inter Miami FC (Soccer)", "Orlando City (Soccer)"],
+  "checkered-flag": ["NASCAR"],
+  "thrill-ride": ["Walt Disney World"],
+  "all-branches": [
+    "U.S. Army",
+    "U.S. Navy",
+    "U.S. Air Force",
+    "U.S. Marine Corps",
+    "U.S. Coast Guard"
+  ],
+  "back-the-blue": [
+    "Fallen Law Enforcement Officers",
+    "Florida Sheriffs Association",
+    "Fraternal Order of Police",
+    "Police Athletic League",
+    "Police Benevolent Association",
+    "Support Law Enforcement"
+  ],
+  "fire-watch": ["Salutes Firefighters"],
+  "united-front": [
+    "Fallen Law Enforcement Officers",
+    "Florida Sheriffs Association",
+    "Fraternal Order of Police",
+    "Police Athletic League",
+    "Police Benevolent Association",
+    "Support Law Enforcement",
+    "Salutes Firefighters"
+  ],
+  "air-support": ["Blue Angels"],
+  airborne: ["U.S. Paratroopers"],
+  "bronze-star-honor": ["Bronze Star"],
+  distinguished: ["Air Force Cross", "Distinguished Flying Cross", "Distinguished Service Cross"],
+  "combat-ready": [
+    "Combat Action Badge",
+    "Combat Action Ribbon",
+    "Combat Infantry Badge",
+    "Combat Medical Badge"
+  ],
+  "decorated-service": [
+    "Air Force Combat Action Medal",
+    "Air Force Cross",
+    "Army of Occupation",
+    "Bronze Star",
+    "Combat Action Badge",
+    "Combat Action Ribbon",
+    "Combat Infantry Badge",
+    "Combat Medical Badge",
+    "Distinguished Flying Cross",
+    "Distinguished Service Cross"
+  ]
 };
 
 export const floridaGame: GameDefinition & {

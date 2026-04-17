@@ -11,6 +11,7 @@ import {
   activeBadgeCounties,
   activeBadgeGroupLabels,
   activeBadgeGroupSymbols,
+  activeBadgePlateSets,
   activeMixedBagCategories,
   activePanhandleScoutCounties,
   activeStorage
@@ -48,82 +49,6 @@ type PlateArrangement = "category" | "az" | "za";
 type AchievementsTab = "achievements" | "journey" | "map";
 type ActiveView = "home" | "achievements" | "help" | "settings" | "state-picker";
 type TimelineSort = "desc" | "asc";
-
-const badgePlateSets: Record<string, string[]> = {
-  "coastal-cruiser": [
-    "Discover Florida's Oceans",
-    "Florida Bay Forever",
-    "Indian River Lagoon",
-    "Protect Marine Wildlife",
-    "Protect Our Reefs",
-    "Save Our Seas",
-    "Tampa Bay Estuary"
-  ],
-  "farm-fresh": [
-    "Agriculture",
-    "Agricultural Education",
-    "Agriculture & Consumer Services"
-  ],
-  "grand-slam": ["Miami Marlins (Baseball)", "Tampa Bay Rays (Baseball)"],
-  touchdown: [
-    "Jacksonville Jaguars (Football)",
-    "Miami Dolphins (Football)",
-    "Tampa Bay Buccaneers (Football)"
-  ],
-  "hat-trick": ["Florida Panthers (Hockey)", "Tampa Bay Lightning (Hockey)"],
-  "slam-dunk": ["Miami Heat (Basketball)", "Orlando Magic (Basketball)"],
-  goal: ["Inter Miami FC (Soccer)", "Orlando City (Soccer)"],
-  "checkered-flag": ["NASCAR"],
-  "thrill-ride": ["Walt Disney World"],
-  "all-branches": [
-    "U.S. Army",
-    "U.S. Navy",
-    "U.S. Air Force",
-    "U.S. Marine Corps",
-    "U.S. Coast Guard"
-  ],
-  "back-the-blue": [
-    "Fallen Law Enforcement Officers",
-    "Florida Sheriffs Association",
-    "Fraternal Order of Police",
-    "Police Athletic League",
-    "Police Benevolent Association",
-    "Support Law Enforcement"
-  ],
-  "fire-watch": ["Salutes Firefighters"],
-  "united-front": [
-    "Fallen Law Enforcement Officers",
-    "Florida Sheriffs Association",
-    "Fraternal Order of Police",
-    "Police Athletic League",
-    "Police Benevolent Association",
-    "Support Law Enforcement",
-    "Salutes Firefighters"
-  ],
-  "air-support": ["Blue Angels"],
-  airborne: ["U.S. Paratroopers"],
-  "bronze-star-honor": ["Bronze Star"],
-  distinguished: ["Air Force Cross", "Distinguished Flying Cross", "Distinguished Service Cross"],
-  "combat-ready": [
-    "Combat Action Badge",
-    "Combat Action Ribbon",
-    "Combat Infantry Badge",
-    "Combat Medical Badge"
-  ],
-  "decorated-service": [
-    "Air Force Combat Action Medal",
-    "Air Force Cross",
-    "Army of Occupation",
-    "Bronze Star",
-    "Combat Action Badge",
-    "Combat Action Ribbon",
-    "Combat Infantry Badge",
-    "Combat Medical Badge",
-    "Distinguished Flying Cross",
-    "Distinguished Service Cross"
-  ]
-};
-
 
 interface UiPreferences {
   showSearch: boolean;
@@ -980,31 +905,21 @@ function App() {
           return true;
         });
       }
-      case "escapee":
+      case "escapee": {
+        const activeStateName = stateRegistry.find((s) => s.id === activeGame.id)?.name ?? null;
         return discoveryEntries.filter(({ discovery }) => {
-          if (discovery.state) {
-            return discovery.state !== "Florida";
-          }
-
-          if (discovery.latitude !== null && discovery.longitude !== null) {
-            return !(
-              discovery.latitude >= 24.3 &&
-              discovery.latitude <= 31.1 &&
-              discovery.longitude >= -87.8 &&
-              discovery.longitude <= -79.7
-            );
-          }
-
-          return false;
+          if (!discovery.state || !activeStateName) return false;
+          return discovery.state !== activeStateName;
         });
+      }
       case "panhandle-scout":
         return discoveryEntries.filter(({ discovery }) => {
           const county = discovery.county?.replace(/\s+County$/i, "").trim() ?? null;
           return county ? activePanhandleScoutCounties.has(county) : false;
         });
       default:
-        if (badgePlateSets[badge.id]) {
-          return findDiscoveriesForPlateNames(badgePlateSets[badge.id]);
+        if (activeBadgePlateSets[badge.id]) {
+          return findDiscoveriesForPlateNames(activeBadgePlateSets[badge.id]);
         }
 
         if (activeBadgeCounties[badge.id]) {
@@ -1822,7 +1737,7 @@ function App() {
                 </button>
               ) : null}
 
-              {activeBadgeDetail.group === "florida" &&
+              {activeBadgeDetail.group === "regional" &&
               activeBadgeDetail.id.endsWith("-explorer") &&
               activeBadgeCounties?.[activeBadgeDetail.id] ? (
                 <div style={{ marginTop: '0.5rem' }}>
