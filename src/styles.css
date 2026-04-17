@@ -2798,5 +2798,92 @@ body.keyboard-open .update-banner {
 
 }
 
+/* ───────────────────────────────────────────────────────────
+   v1.8.x Achievements polish — Batch 1 (motion) + Batch 2 (New! experience)
+   ─────────────────────────────────────────────────────────── */
 
+/* Tab crossfade — each Achievements sub-tab fades in on mount */
+.achievements-tab-panel {
+  animation: achievements-tab-fade 200ms ease-out both;
+}
+
+@keyframes achievements-tab-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Section reveal — stagger the hero + earned/in-progress/locked cards
+   when the Achievements tab mounts. Targets direct children of the
+   achievements-sections container. */
+.achievements-sections > * {
+  animation: achievements-reveal 260ms ease-out both;
+}
+.achievements-sections > :nth-child(1) { animation-delay: 0ms; }
+.achievements-sections > :nth-child(2) { animation-delay: 60ms; }
+.achievements-sections > :nth-child(3) { animation-delay: 120ms; }
+.achievements-sections > :nth-child(4) { animation-delay: 180ms; }
+
+@keyframes achievements-reveal {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Tap feedback — iOS-style press-down on any tappable badge card */
+.badge-icon-grid-item {
+  transition: transform 120ms ease-out;
+  -webkit-tap-highlight-color: transparent;
+}
+.badge-icon-grid-item:active {
+  transform: scale(0.96);
+}
+
+/* "New!" experience — pulsing glow + pill on just-earned badges.
+   The pill sits OUTSIDE the frame (which has overflow:hidden) via a
+   positioned wrapper. */
+.badge-frame-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-frame--new {
+  animation: badge-new-pulse 1600ms ease-out infinite;
+}
+
+@keyframes badge-new-pulse {
+  0%   { box-shadow: 0 0 0 2.5px var(--badge-group-color, var(--accent)),
+                     0 0 0 0 color-mix(in srgb, var(--accent) 55%, transparent); }
+  70%  { box-shadow: 0 0 0 2.5px var(--badge-group-color, var(--accent)),
+                     0 0 0 10px color-mix(in srgb, var(--accent) 0%, transparent); }
+  100% { box-shadow: 0 0 0 2.5px var(--badge-group-color, var(--accent)),
+                     0 0 0 0 color-mix(in srgb, var(--accent) 0%, transparent); }
+}
+
+.badge-new-pill {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  z-index: 2;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 0.6rem;
+  font-weight: 800;
+  line-height: 1;
+  padding: 3px 7px;
+  border-radius: 999px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+/* Respect users who prefer reduced motion — flatten all polish animations */
+@media (prefers-reduced-motion: reduce) {
+  .achievements-tab-panel { animation: none; }
+  .achievements-sections > * { animation: none; }
+  .badge-icon-grid-item { transition: none; }
+  .badge-icon-grid-item:active { transform: none; }
+  .badge-frame--new { animation: none; }
+}
 

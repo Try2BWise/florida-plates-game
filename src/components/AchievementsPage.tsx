@@ -100,8 +100,9 @@ export function AchievementsPage({
         </>
       }
     >
+    <div className="achievements-tab-panel" key={activeTab}>
       {activeTab === "achievements" ? (
-        <div className="utility-stack">
+        <div className="utility-stack achievements-sections">
           {/* ── Hero summary ── */}
           <div className="achievements-hero">
             <ProgressRing
@@ -144,10 +145,14 @@ export function AchievementsPage({
                       <div className="badge-icon-grid">
                         {badges.map((badge) => {
                           const idx = badgeIndex++;
+                          const frameClass = `badge-frame badge-frame--earned${badge.isNew ? " badge-frame--new" : ""}`;
                           return (
                             <div className="badge-icon-grid-item" key={badge.id} tabIndex={0} role="button" aria-label={badge.name} onClick={() => onBadgeDetail(badge)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") onBadgeDetail(badge); }} style={{ outline: "none", cursor: "pointer" }}>
-                              <div className="badge-frame badge-frame--earned" style={{ width: 88, height: 88, "--badge-group-color": badgeGroupColors[group] ?? "var(--accent)", "--badge-index": idx } as React.CSSProperties}>
-                                <BadgeIcon badge={badge} size={88} />
+                              <div className="badge-frame-wrapper">
+                                <div className={frameClass} style={{ width: 88, height: 88, "--badge-group-color": badgeGroupColors[group] ?? "var(--accent)", "--badge-index": idx } as React.CSSProperties}>
+                                  <BadgeIcon badge={badge} size={88} />
+                                </div>
+                                {badge.isNew ? <span className="badge-new-pill" aria-label="Newly earned">New</span> : null}
                               </div>
                               <span className="badge-medal-label">{badge.name}</span>
                             </div>
@@ -288,6 +293,7 @@ export function AchievementsPage({
           </section>
         )
       ) : null}
+    </div>
     </PageView>
   );
 }

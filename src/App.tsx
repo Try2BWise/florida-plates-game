@@ -35,7 +35,8 @@ import { confirmNative } from "./lib/nativeDialog";
 import { copyToClipboard } from "./lib/clipboardWrite";
 import { requestAppReview } from "./lib/appReview";
 import { loadCustomPlates, addCustomPlate, deleteCustomPlate, type CustomPlate } from "./lib/customPlates";
-import type { Plate, PlateCategory, PlateDiscoveryMap } from "./types";
+import { loadBadgeHistory, saveBadgeHistory, reconcileBadgeHistory, markAllAsSeen } from "./lib/badgeHistory";
+import type { BadgeHistoryMap, Plate, PlateCategory, PlateDiscoveryMap } from "./types";
 
 const THEME_STORAGE_KEY = "florida-plates-theme";
 const UI_PREFERENCES_STORAGE_KEY = "florida-plates-ui-preferences";
@@ -559,10 +560,63 @@ function App() {
     discoveryEntries.length > 0
       ? discoveryEntries[discoveryEntries.length - 1]
       : null;
-  const evaluatedBadges = useMemo(
+  const rawEvaluatedBadges = useMemo(
     () => evaluateBadges(plates, normalizedDiscoveries, activeGame.id),
     [normalizedDiscoveries]
   );
+
+  // Badge history — tracks when each badge was first earned and whether the
+  // user has "seen" it since. Drives the "New!" pulse and the "Earned on
+  // [date]" stamp in the detail modal. Per-state, localStorage-backed.
+  const [badgeHistory, setBadgeHistory] = useState<BadgeHistoryMap>(() =>
+    loadBadgeHistory(activeGame.id)
+  );
+
+  // Reconcile history whenever the evaluated badges change. Fresh earns get
+  // timestamped + marked unseen; legacy earns (first run) get stamped as
+  // already-seen with no date to avoid a "New!" flood on upgrade.
+  useEffect(() => {
+    const nowIso = new Date().toISOString();
+    const { next, changed } = reconcileBadgeHistory(badgeHistory, rawEvaluatedBadges, nowIso);
+    if (changed) {
+      setBadgeHistory(next);
+      saveBadgeHistory(activeGame.id, next);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [rawEvaluatedBadges]);
+
+  // Auto-dismiss the "New!" pulse: mark all unseen badges as seen when the
+  // user LEAVES the Achievements tab (via cleanup). This way a pulse earned
+  // just before opening the tab stays visible during the visit, and only
+  // gets cleared once the user navigates away.
+  useEffect(() => {
+    if (activeView !== "achievements" || activeAchievementsTab !== "achievements") return;
+    return () => {
+      const { next, changed } = markAllAsSeen(badgeHistory);
+      if (changed) {
+        setBadgeHistory(next);
+        saveBadgeHistory(activeGame.id, next);
+      }
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeView, activeAchievementsTab]);
+
+  // Decorate raw badges with history-derived fields so the rest of the app
+  // (and AchievementsPage) can read `earnedAtIso` and `isNew` directly.
+  const evaluatedBadges = useMemo(
+    () =>
+      rawEvaluatedBadges.map((badge) => {
+        if (!badge.earned) return badge;
+        const entry = badgeHistory[badge.id];
+        return {
+          ...badge,
+          earnedAtIso: entry?.earnedAtIso ?? null,
+          isNew: entry ? !entry.seen : false
+        };
+      }),
+    [rawEvaluatedBadges, badgeHistory]
+  );
+
   // Filter for earned badges
   const earnedBadges = useMemo(
     () => evaluatedBadges.filter((badge) => badge.earned),
@@ -1718,6 +1772,18 @@ function App() {
                 <span className="preview-sheet__label">Status</span>
                 <strong>{activeBadgeDetail.earned ? "Earned" : "Not yet"}</strong>
               </div>
+              {activeBadgeDetail.earned && activeBadgeDetail.earnedAtIso ? (
+                <div className="preview-sheet__row">
+                  <span className="preview-sheet__label">Earned on</span>
+                  <strong>
+                    {new Intl.DateTimeFormat("en-US", {
+                      month: "long",
+                      day: "numeric",
+                      year: "numeric"
+                    }).format(new Date(activeBadgeDetail.earnedAtIso))}
+                  </strong>
+                </div>
+              ) : null}
               {activeBadgeDetail.progressTarget && activeBadgeDetail.progressTarget > 1 ? (
                 <div className="preview-sheet__row">
                   <span className="preview-sheet__label">Progress</span>

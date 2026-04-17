@@ -29,6 +29,8 @@ const storageKeys = [
   ...stateRegistry.map(s => `${s.id}-plates-discoveries`),
   // Per-state custom plates
   ...stateRegistry.map(s => `${s.id}-custom-plates`),
+  // Per-state badge history (when each badge was earned, plus "seen" flag)
+  ...stateRegistry.map(s => `${s.id}-plates-badge-history`),
 ];
 
 Promise.all([

@@ -80,6 +80,23 @@ export interface PlateDiscovery {
 
 export type PlateDiscoveryMap = Record<string, PlateDiscovery>;
 
+export interface BadgeHistoryEntry {
+  /**
+   * ISO timestamp of when the badge first became earned in this state pack.
+   * `null` means the badge was already earned before badge history tracking
+   * started (legacy migration) — the detail modal shows a plain "Earned"
+   * label without a date.
+   */
+  earnedAtIso: string | null;
+  /**
+   * True once the user has opened the Achievements tab after this badge
+   * was earned. False = show the "New!" pulse + pill.
+   */
+  seen: boolean;
+}
+
+export type BadgeHistoryMap = Record<string, BadgeHistoryEntry>;
+
 export interface GameInstallInstructions {
   ios: string;
   android: string;

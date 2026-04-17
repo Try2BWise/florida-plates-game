@@ -26,6 +26,17 @@ export interface EvaluatedBadge extends BadgeDefinition {
   earned: boolean;
   progressCurrent?: number;
   progressTarget?: number;
+  /**
+   * ISO timestamp of when this badge was first earned. Populated by App.tsx
+   * from the badgeHistory store; `null` means earned before history tracking
+   * began (legacy); `undefined` means the badge is not earned.
+   */
+  earnedAtIso?: string | null;
+  /**
+   * True if the user hasn't yet opened the Achievements tab after this
+   * badge was earned. Drives the "New!" pulse + pill.
+   */
+  isNew?: boolean;
 }
 
 const natureCategory: PlateCategory = "Wildlife & Nature";
