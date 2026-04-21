@@ -1040,6 +1040,49 @@ export const badgeDefinitions: BadgeDefinition[] = [
     description: "Earn every regional explorer badge.",
     group: "regional",
     availableIn: "v1.4"
+  },
+  // Iowa Explorer region badges
+  {
+    id: "ia-northwest-explorer",
+    name: "Northwest Iowa Explorer",
+    description: "Find a plate in a Northwest Iowa county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ia-northeast-explorer",
+    name: "Northeast Iowa Explorer",
+    description: "Find a plate in a Northeast Iowa county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ia-central-explorer",
+    name: "Central Iowa Explorer",
+    description: "Find a plate in a Central Iowa county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ia-southwest-explorer",
+    name: "Southwest Iowa Explorer",
+    description: "Find a plate in a Southwest Iowa county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "ia-southeast-explorer",
+    name: "Southeast Iowa Explorer",
+    description: "Find a plate in a Southeast Iowa county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-iowa",
+    name: "All Around Iowa",
+    description: "Earn every regional explorer badge.",
+    group: "regional",
+    availableIn: "v1.4"
   }
 ];
 

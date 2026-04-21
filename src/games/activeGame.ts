@@ -142,6 +142,18 @@ import {
   kentuckyMixedBagCategories,
   kentuckyRegionScoutCounties
 } from "../config/kentuckyGame";
+import iowaDriverData from "../data/generated/iowa-plate-driver.generated.json";
+import iowaLegacyIdMap from "../data/generated/iowa-legacy-id-map.generated.json";
+import {
+  iowaBadgeCounties,
+  iowaBadgeGroupLabels,
+  iowaBadgeGroupSymbols,
+  iowaBadgeIds,
+  iowaBadgePlateSets,
+  iowaGame,
+  iowaMixedBagCategories,
+  iowaRegionScoutCounties
+} from "../config/iowaGame";
 import ohioDriverData from "../data/generated/ohio-plate-driver.generated.json";
 import ohioLegacyIdMap from "../data/generated/ohio-legacy-id-map.generated.json";
 import {
@@ -413,6 +425,23 @@ function loadKentuckyPack() {
   };
 }
 
+function loadIowaPack() {
+  const plates = buildPlates(iowaDriverData);
+  return {
+    game: iowaGame,
+    badgeCounties: iowaBadgeCounties,
+    badgeGroupLabels: iowaBadgeGroupLabels,
+    badgeGroupSymbols: iowaBadgeGroupSymbols,
+    mixedBagCategories: iowaMixedBagCategories,
+    badgePlateSets: iowaBadgePlateSets,
+    badgeIds: iowaBadgeIds,
+    panhandleScoutCounties: iowaRegionScoutCounties,
+    legacyIdMap: iowaLegacyIdMap as Record<string, string>,
+    plates,
+    groupedPlates: buildGroupedPlates(plates),
+  };
+}
+
 function loadOhioPack() {
   const plates = buildPlates(ohioDriverData);
   return {
@@ -459,6 +488,7 @@ function loadStatePack(stateId: string) {
     case "california": return loadCaliforniaPack();
     case "georgia": return loadGeorgiaPack();
     case "kansas": return loadKansasPack();
+    case "iowa": return loadIowaPack();
     case "kentucky": return loadKentuckyPack();
     case "ohio": return loadOhioPack();
     case "west-virginia": return loadWestVirginiaPack();
@@ -491,6 +521,7 @@ export const plateCountsByState: Record<string, number> = {
   california: californiaDriverData.plates.length,
   florida: floridaDriverData.plates.length,
   georgia: georgiaDriverData.plates.length,
+  iowa: iowaDriverData.plates.length,
   kansas: kansasDriverData.plates.length,
   kentucky: kentuckyDriverData.plates.length,
   mississippi: mississippiDriverData.plates.length,

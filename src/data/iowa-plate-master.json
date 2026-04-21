@@ -1,0 +1,2693 @@
+{
+  "schemaVersion": 2,
+  "state": "Iowa",
+  "generatedDate": "2026-04-21",
+  "description": "Iowa license plates sourced from the Iowa Department of Transportation.",
+  "sourceFiles": [
+    "https://iowadot.gov/registration-plates/license-plates/personalized-specialty-plates"
+  ],
+  "plates": [
+    {
+      "id": "ia-amateur-radio-call-letter",
+      "slug": "amateur-radio-call-letter",
+      "name": "Amateur Radio Call Letter",
+      "displayName": "Amateur Radio Call Letter",
+      "baseName": "Amateur Radio Call Letter",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-amateur-radio-call-letter.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/amateur_1.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "amateur",
+        "radio",
+        "call",
+        "letter",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "amateur",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-blackout",
+      "slug": "blackout",
+      "name": "Blackout",
+      "displayName": "Blackout",
+      "baseName": "Blackout",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-blackout.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2024-11/Blackout-sm.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "blackout",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "Blackout",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-choose-life",
+      "slug": "choose-life",
+      "name": "Choose Life",
+      "displayName": "Choose Life",
+      "baseName": "Choose Life",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-choose-life.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/chooselife_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "choose",
+        "life",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "chooselife",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-decal",
+      "slug": "decal",
+      "name": "Decal",
+      "displayName": "Decal",
+      "baseName": "Decal",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-decal.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/DecalPlatesm.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "decal",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "decal",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-education",
+      "slug": "education",
+      "name": "Education",
+      "displayName": "Education",
+      "baseName": "Education",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-education.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-05/educational_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "education",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "educational",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-fly-our-colors",
+      "slug": "fly-our-colors",
+      "name": "Fly Our Colors",
+      "displayName": "Fly Our Colors",
+      "baseName": "Fly Our Colors",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-fly-our-colors.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2024-11/FlyOurColors-sm_1.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "fly",
+        "our",
+        "colors",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "Fly-our-colors-plate",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-god-bless-america",
+      "slug": "god-bless-america",
+      "name": "God Bless America",
+      "displayName": "God Bless America",
+      "baseName": "God Bless America",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-god-bless-america.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/bless_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "god",
+        "bless",
+        "america",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "bless",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-personal",
+      "slug": "personal",
+      "name": "Personal",
+      "displayName": "Personal",
+      "baseName": "Personal",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-personal.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2024-11/personal_0.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "personal",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "personal",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-share-the-road",
+      "slug": "share-the-road",
+      "name": "Share the Road",
+      "displayName": "Share the Road",
+      "baseName": "Share the Road",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-share-the-road.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/share_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "share",
+        "road",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "share",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-shriners",
+      "slug": "shriners",
+      "name": "Shriners",
+      "displayName": "Shriners",
+      "baseName": "Shriners",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-shriners.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/shriners_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "shriners",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "shriners",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-cattlemen-care",
+      "slug": "cattlemen-care",
+      "name": "Cattlemen Care",
+      "displayName": "Cattlemen Care",
+      "baseName": "Cattlemen Care",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-cattlemen-care.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/cattlemen.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "cattlemen",
+        "care",
+        "commercial"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "cattlemen",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-emergency-medical-services",
+      "slug": "emergency-medical-services",
+      "name": "Emergency Medical Services",
+      "displayName": "Emergency Medical Services",
+      "baseName": "Emergency Medical Services",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-emergency-medical-services.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/emt_small.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "emergency",
+        "medical",
+        "services",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "emergency",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-fallen-peace-officer",
+      "slug": "fallen-peace-officer",
+      "name": "Fallen Peace Officer",
+      "displayName": "Fallen Peace Officer",
+      "baseName": "Fallen Peace Officer",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-fallen-peace-officer.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/fallenofficer_sm.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "fallen",
+        "peace",
+        "officer",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "FallenOfficer",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-firefighter",
+      "slug": "firefighter",
+      "name": "Firefighter",
+      "displayName": "Firefighter",
+      "baseName": "Firefighter",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-firefighter.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/fire.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "firefighter",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "firefighter",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-professional-firefighter",
+      "slug": "professional-firefighter",
+      "name": "Professional Firefighter",
+      "displayName": "Professional Firefighter",
+      "baseName": "Professional Firefighter",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-professional-firefighter.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/firefighter_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "professional",
+        "firefighter",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "professionalfirefighter",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-breast-cancer-awareness",
+      "slug": "breast-cancer-awareness",
+      "name": "Breast Cancer Awareness",
+      "displayName": "Breast Cancer Awareness",
+      "baseName": "Breast Cancer Awareness",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-breast-cancer-awareness.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/cancer.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "breast",
+        "cancer",
+        "awareness",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "breastcancer",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-love-our-kids",
+      "slug": "love-our-kids",
+      "name": "Love Our Kids",
+      "displayName": "Love Our Kids",
+      "baseName": "Love Our Kids",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-love-our-kids.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/kid_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "love",
+        "our",
+        "kids",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "kid",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-organ-and-tissue-donor",
+      "slug": "organ-and-tissue-donor",
+      "name": "Organ and Tissue Donor",
+      "displayName": "Organ and Tissue Donor",
+      "baseName": "Organ and Tissue Donor",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-organ-and-tissue-donor.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/donor_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "organ",
+        "tissue",
+        "donor",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "donor",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-persons-with-disabilities",
+      "slug": "persons-with-disabilities",
+      "name": "Persons with Disabilities",
+      "displayName": "Persons with Disabilities",
+      "baseName": "Persons with Disabilities",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-persons-with-disabilities.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/disabilities.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "persons",
+        "disabilities",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "disabilities",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-iowa-heritage",
+      "slug": "iowa-heritage",
+      "name": "Iowa Heritage",
+      "displayName": "Iowa Heritage",
+      "baseName": "Iowa Heritage",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-iowa-heritage.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/heritage.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "heritage",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-bronze-star",
+      "slug": "bronze-star",
+      "name": "Bronze Star",
+      "displayName": "Bronze Star",
+      "baseName": "Bronze Star",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-bronze-star.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/bronze_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "bronze",
+        "star",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military Service Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "bronze",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-disabled-veteran",
+      "slug": "disabled-veteran",
+      "name": "Disabled Veteran",
+      "displayName": "Disabled Veteran",
+      "baseName": "Disabled Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-disabled-veteran.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2026-02/dveteran_0.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "disabled",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military Service Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "dveteran",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-distinguished-service-cross",
+      "slug": "distinguished-service-cross",
+      "name": "Distinguished Service Cross",
+      "displayName": "Distinguished Service Cross",
+      "baseName": "Distinguished Service Cross",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-distinguished-service-cross.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/distinguished_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "distinguished",
+        "service",
+        "cross",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military Service Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "armedforces",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-ex-prisoner-of-war",
+      "slug": "ex-prisoner-of-war",
+      "name": "Ex - Prisoner of War",
+      "displayName": "Ex - Prisoner of War",
+      "baseName": "Ex - Prisoner of War",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-ex-prisoner-of-war.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/expow_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "prisoner",
+        "war",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military Service Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "expow",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-gold-star",
+      "slug": "gold-star",
+      "name": "Gold Star",
+      "displayName": "Gold Star",
+      "baseName": "Gold Star",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-gold-star.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/goldstar_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "gold",
+        "star",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military Service Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "goldstar",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-iowa-national-guard",
+      "slug": "iowa-national-guard",
+      "name": "Iowa National Guard",
+      "displayName": "Iowa National Guard",
+      "baseName": "Iowa National Guard",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-iowa-national-guard.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/natguard_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "national",
+        "guard",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military Service Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "natguard",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-legion-of-merit",
+      "slug": "legion-of-merit",
+      "name": "Legion of Merit",
+      "displayName": "Legion of Merit",
+      "baseName": "Legion of Merit",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-legion-of-merit.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/merit_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "legion",
+        "merit",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military Service Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "merit",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-medal-of-honor-air-force",
+      "slug": "medal-of-honor-air-force",
+      "name": "Medal of Honor - Air Force",
+      "displayName": "Medal of Honor - Air Force",
+      "baseName": "Medal of Honor - Air Force",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-medal-of-honor-air-force.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/honor2.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "medal",
+        "honor",
+        "air",
+        "force",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military Service Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "honor",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-pearl-harbor",
+      "slug": "pearl-harbor",
+      "name": "Pearl Harbor",
+      "displayName": "Pearl Harbor",
+      "baseName": "Pearl Harbor",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-pearl-harbor.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/pearl_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "pearl",
+        "harbor",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military Service Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "pearl",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-purple-heart",
+      "slug": "purple-heart",
+      "name": "Purple Heart",
+      "displayName": "Purple Heart",
+      "baseName": "Purple Heart",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-purple-heart.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/purple_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "purple",
+        "heart",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military Service Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "purple",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-retired-air-force",
+      "slug": "retired-air-force",
+      "name": "Retired Air Force",
+      "displayName": "Retired Air Force",
+      "baseName": "Retired Air Force",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-retired-air-force.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/service1_sm.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "retired",
+        "air",
+        "force",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military Service Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "services",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-silver-star",
+      "slug": "silver-star",
+      "name": "Silver Star",
+      "displayName": "Silver Star",
+      "baseName": "Silver Star",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-silver-star.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/silver_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "silver",
+        "star",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military Service Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "silver",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-veteran-s",
+      "slug": "veteran-s",
+      "name": "Veteran's",
+      "displayName": "Veteran's",
+      "baseName": "Veteran's",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-veteran-s.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/veteran_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military Service Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "veteran",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-iowa-ag-literacy-ffa-and-4-h",
+      "slug": "iowa-ag-literacy-ffa-and-4-h",
+      "name": "Iowa Ag Literacy, FFA and 4 - H",
+      "displayName": "Iowa Ag Literacy, FFA and 4 - H",
+      "baseName": "Iowa Ag Literacy, FFA and 4 - H",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-iowa-ag-literacy-ffa-and-4-h.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/AgLit-small.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "literacy",
+        "ffa",
+        "schools"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "Iowa-Ag-Literacy",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-motorcycle-rider-education",
+      "slug": "motorcycle-rider-education",
+      "name": "Motorcycle Rider Education",
+      "displayName": "Motorcycle Rider Education",
+      "baseName": "Motorcycle Rider Education",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-motorcycle-rider-education.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/mcrider.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "motorcycle",
+        "rider",
+        "education",
+        "schools"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "mcrider",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-allen-college",
+      "slug": "allen-college",
+      "name": "Allen College",
+      "displayName": "Allen College",
+      "baseName": "Allen College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-allen-college.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/AllenCollege.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "allen",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "Allen",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-briar-cliff-university",
+      "slug": "briar-cliff-university",
+      "name": "Briar Cliff University",
+      "displayName": "Briar Cliff University",
+      "baseName": "Briar Cliff University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-briar-cliff-university.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/BriarCliff.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "briar",
+        "cliff",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "Briar-Cliff",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-buena-vista-university",
+      "slug": "buena-vista-university",
+      "name": "Buena Vista University",
+      "displayName": "Buena Vista University",
+      "baseName": "Buena Vista University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-buena-vista-university.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/buenavista_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "buena",
+        "vista",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "buenavista",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-central-college",
+      "slug": "central-college",
+      "name": "Central College",
+      "displayName": "Central College",
+      "baseName": "Central College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-central-college.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/central.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "central",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "central",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-clarke-university",
+      "slug": "clarke-university",
+      "name": "Clarke University",
+      "displayName": "Clarke University",
+      "baseName": "Clarke University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-clarke-university.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/ClarkeUniversitysm.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "clarke",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "Clarke-University",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-coe-college",
+      "slug": "coe-college",
+      "name": "Coe College",
+      "displayName": "Coe College",
+      "baseName": "Coe College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-coe-college.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/coe.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "coe",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "coe",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-cornell-college",
+      "slug": "cornell-college",
+      "name": "Cornell College",
+      "displayName": "Cornell College",
+      "baseName": "Cornell College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-cornell-college.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/cornell.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "cornell",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "cornell",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-des-moines-university",
+      "slug": "des-moines-university",
+      "name": "Des Moines University",
+      "displayName": "Des Moines University",
+      "baseName": "Des Moines University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-des-moines-university.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/dmu_0.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "des",
+        "moines",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "dmu",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-dordt-college",
+      "slug": "dordt-college",
+      "name": "Dordt College",
+      "displayName": "Dordt College",
+      "baseName": "Dordt College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-dordt-college.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/dordt.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "dordt",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "dordt",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-drake-university",
+      "slug": "drake-university",
+      "name": "Drake University",
+      "displayName": "Drake University",
+      "baseName": "Drake University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-drake-university.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/drake.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "drake",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "drake",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-emmaus-bible-college",
+      "slug": "emmaus-bible-college",
+      "name": "Emmaus Bible College",
+      "displayName": "Emmaus Bible College",
+      "baseName": "Emmaus Bible College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-emmaus-bible-college.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-05/Emmaus-Bible-College_0.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "emmaus",
+        "bible",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "Emmaus",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-graceland-university",
+      "slug": "graceland-university",
+      "name": "Graceland University",
+      "displayName": "Graceland University",
+      "baseName": "Graceland University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-graceland-university.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/graceland.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "graceland",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "graceland",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-grand-view-university",
+      "slug": "grand-view-university",
+      "name": "Grand View University",
+      "displayName": "Grand View University",
+      "baseName": "Grand View University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-grand-view-university.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/grandview.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "grand",
+        "view",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "grandview",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-grinnell-college",
+      "slug": "grinnell-college",
+      "name": "Grinnell College",
+      "displayName": "Grinnell College",
+      "baseName": "Grinnell College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-grinnell-college.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/grinnellplate.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "grinnell",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "grinnell",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-iowa-state-university",
+      "slug": "iowa-state-university",
+      "name": "Iowa State University",
+      "displayName": "Iowa State University",
+      "baseName": "Iowa State University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-iowa-state-university.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/cyclones.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "state",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "isu",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-iowa-wesleyan-university",
+      "slug": "iowa-wesleyan-university",
+      "name": "Iowa Wesleyan University",
+      "displayName": "Iowa Wesleyan University",
+      "baseName": "Iowa Wesleyan University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-iowa-wesleyan-university.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/Iowa-Wesleyan-Universitysm.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "wesleyan",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "Iowa-Wesleyan-University",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-loras-college",
+      "slug": "loras-college",
+      "name": "Loras College",
+      "displayName": "Loras College",
+      "baseName": "Loras College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-loras-college.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/loras.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "loras",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "loras",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-luther-college",
+      "slug": "luther-college",
+      "name": "Luther College",
+      "displayName": "Luther College",
+      "baseName": "Luther College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-luther-college.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/luther.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "luther",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "luther",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-mercy-college-of-health-sciences",
+      "slug": "mercy-college-of-health-sciences",
+      "name": "Mercy College of Health Sciences",
+      "displayName": "Mercy College of Health Sciences",
+      "baseName": "Mercy College of Health Sciences",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-mercy-college-of-health-sciences.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/Mercy-College-of-Health-Sciences_0.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "mercy",
+        "college",
+        "health",
+        "sciences",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "Mercy",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-morningside-university",
+      "slug": "morningside-university",
+      "name": "Morningside University",
+      "displayName": "Morningside University",
+      "baseName": "Morningside University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-morningside-university.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/morningside_sm.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "morningside",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "Morningside-College-Plates",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-mount-mercy-university",
+      "slug": "mount-mercy-university",
+      "name": "Mount Mercy University",
+      "displayName": "Mount Mercy University",
+      "baseName": "Mount Mercy University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-mount-mercy-university.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/mountmercy.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "mount",
+        "mercy",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "mountmercy",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-northwestern-college",
+      "slug": "northwestern-college",
+      "name": "Northwestern College",
+      "displayName": "Northwestern College",
+      "baseName": "Northwestern College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-northwestern-college.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/redraiders.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "northwestern",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "redraiders",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-palmer-college",
+      "slug": "palmer-college",
+      "name": "Palmer College",
+      "displayName": "Palmer College",
+      "baseName": "Palmer College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-palmer-college.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/Palmer.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "palmer",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "palmer",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-saint-ambrose-university",
+      "slug": "saint-ambrose-university",
+      "name": "Saint Ambrose University",
+      "displayName": "Saint Ambrose University",
+      "baseName": "Saint Ambrose University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-saint-ambrose-university.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/stambrose.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "saint",
+        "ambrose",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "saint-ambrose",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-simpson-college",
+      "slug": "simpson-college",
+      "name": "Simpson College",
+      "displayName": "Simpson College",
+      "baseName": "Simpson College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-simpson-college.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/simpson.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "simpson",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "simpson",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-university-of-dubuque",
+      "slug": "university-of-dubuque",
+      "name": "University of Dubuque",
+      "displayName": "University of Dubuque",
+      "baseName": "University of Dubuque",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-university-of-dubuque.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/uofdubuque2.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "university",
+        "dubuque",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "UofDubuqe",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-university-of-iowa",
+      "slug": "university-of-iowa",
+      "name": "University of Iowa",
+      "displayName": "University of Iowa",
+      "baseName": "University of Iowa",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-university-of-iowa.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/U-of-Iowa-plate.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "hawks",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-university-of-northern-iowa",
+      "slug": "university-of-northern-iowa",
+      "name": "University of Northern Iowa",
+      "displayName": "University of Northern Iowa",
+      "baseName": "University of Northern Iowa",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-university-of-northern-iowa.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/panthers.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "university",
+        "northern",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "panthers",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-upper-iowa-university",
+      "slug": "upper-iowa-university",
+      "name": "Upper Iowa University",
+      "displayName": "Upper Iowa University",
+      "baseName": "Upper Iowa University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-upper-iowa-university.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/upperiowa_0.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "upper",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "upperiowa",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-wartburg-college",
+      "slug": "wartburg-college",
+      "name": "Wartburg College",
+      "displayName": "Wartburg College",
+      "baseName": "Wartburg College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-wartburg-college.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/wartburg.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "wartburg",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "wartburg",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-william-penn",
+      "slug": "william-penn",
+      "name": "William Penn",
+      "displayName": "William Penn",
+      "baseName": "William Penn",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-william-penn.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/wpenn.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "william",
+        "penn",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College and University Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "wpenn",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-ducks-unlimited",
+      "slug": "ducks-unlimited",
+      "name": "Ducks Unlimited",
+      "displayName": "Ducks Unlimited",
+      "baseName": "Ducks Unlimited",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-ducks-unlimited.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/ducks_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ducks",
+        "unlimited",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Personalized and Specialty Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "ducks",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-natural-resources-deer",
+      "slug": "natural-resources-deer",
+      "name": "Natural Resources - Deer",
+      "displayName": "Natural Resources - Deer",
+      "baseName": "Natural Resources - Deer",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-natural-resources-deer.png",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/deer.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "natural",
+        "resources",
+        "deer",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Natural Resources Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "natural",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-natural-resources-eagle",
+      "slug": "natural-resources-eagle",
+      "name": "Natural Resources - Eagle",
+      "displayName": "Natural Resources - Eagle",
+      "baseName": "Natural Resources - Eagle",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-natural-resources-eagle.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/eagle_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "natural",
+        "resources",
+        "eagle",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Natural Resources Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "eagle",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-natural-resources-goldfinch",
+      "slug": "natural-resources-goldfinch",
+      "name": "Natural Resources - Goldfinch",
+      "displayName": "Natural Resources - Goldfinch",
+      "baseName": "Natural Resources - Goldfinch",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-natural-resources-goldfinch.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/goldfinch_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "natural",
+        "resources",
+        "goldfinch",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Natural Resources Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "goldfinch",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-natural-resources-pheasant",
+      "slug": "natural-resources-pheasant",
+      "name": "Natural Resources - Pheasant",
+      "displayName": "Natural Resources - Pheasant",
+      "baseName": "Natural Resources - Pheasant",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-natural-resources-pheasant.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/pheasant_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "natural",
+        "resources",
+        "pheasant",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Natural Resources Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "pheasant",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "ia-natural-resources-trout",
+      "slug": "natural-resources-trout",
+      "name": "Natural Resources - Trout",
+      "displayName": "Natural Resources - Trout",
+      "baseName": "Natural Resources - Trout",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/iowa/plates/ia-natural-resources-trout.jpg",
+        "remoteUrl": "https://iowadot.gov/sites/default/files/images/2025-04/trout_small.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "natural",
+        "resources",
+        "trout",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Natural Resources Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Iowa DOT",
+          "sourceId": "trout",
+          "versionId": null
+        }
+      ]
+    }
+  ]
+}
