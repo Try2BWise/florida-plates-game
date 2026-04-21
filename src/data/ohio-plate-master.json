@@ -43,43 +43,6 @@
       ]
     },
     {
-      "id": "oh-a-kid-again",
-      "slug": "a-kid-again",
-      "name": "A Kid Again",
-      "displayName": "A Kid Again",
-      "baseName": "A Kid Again",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-a-kid-again.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_a-kid-again.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "kid",
-        "again",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_a-kid-again",
-          "versionId": null
-        }
-      ]
-    },
-    {
       "id": "oh-amaranth-grand-chapter-order-of-the-eastern-star",
       "slug": "amaranth-grand-chapter-order-of-the-eastern-star",
       "name": "Amaranth Grand Chapter Order of the Eastern Star",
@@ -196,43 +159,6 @@
       ]
     },
     {
-      "id": "oh-blanchester-wildcats",
-      "slug": "blanchester-wildcats",
-      "name": "Blanchester Wildcats",
-      "displayName": "Blanchester Wildcats",
-      "baseName": "Blanchester Wildcats",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-blanchester-wildcats.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_ blanchester_wildcats.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "blanchester",
-        "wildcats",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_ blanchester_wildcats",
-          "versionId": null
-        }
-      ]
-    },
-    {
       "id": "oh-boy-scouts",
       "slug": "boy-scouts",
       "name": "Boy Scouts",
@@ -265,43 +191,6 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_boy_scouts",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-camp-bus",
-      "slug": "camp-bus",
-      "name": "Camp Bus",
-      "displayName": "Camp Bus",
-      "baseName": "Camp Bus",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-camp-bus.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_camp_bus.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "camp",
-        "bus",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_camp_bus",
           "versionId": null
         }
       ]
@@ -376,44 +265,6 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_casa_ohio",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-choose-life-adoption",
-      "slug": "choose-life-adoption",
-      "name": "Choose Life Adoption",
-      "displayName": "Choose Life Adoption",
-      "baseName": "Choose Life Adoption",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-choose-life-adoption.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_choose_life.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "choose",
-        "life",
-        "adoption",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_choose_life",
           "versionId": null
         }
       ]
@@ -527,42 +378,6 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_creative-ohio",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-disability",
-      "slug": "disability",
-      "name": "Disability",
-      "displayName": "Disability",
-      "baseName": "Disability",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-disability.jpg",
-        "remoteUrl": "http://www.bmv.ohio.gov/img/special_plates/ohio_pride/disability.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "disability",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Accessible Plates/Removable Windshield Placards"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "disability",
           "versionId": null
         }
       ]
@@ -794,43 +609,6 @@
       ]
     },
     {
-      "id": "oh-farm-bus",
-      "slug": "farm-bus",
-      "name": "Farm Bus",
-      "displayName": "Farm Bus",
-      "baseName": "Farm Bus",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-farm-bus.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_temp_farm_bus.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "farm",
-        "bus",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_temp_farm_bus",
-          "versionId": null
-        }
-      ]
-    },
-    {
       "id": "oh-freemason",
       "slug": "freemason",
       "name": "Freemason",
@@ -1018,81 +796,6 @@
       ]
     },
     {
-      "id": "oh-girls-run-plate",
-      "slug": "girls-run-plate",
-      "name": "Girls Run plate",
-      "displayName": "Girls Run plate",
-      "baseName": "Girls Run plate",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-girls-run-plate.jpg",
-        "remoteUrl": "https://bmv.ohio.gov/img/special_plates/ohio_pride/si_girls_run.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "girls",
-        "run",
-        "plate",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_girls_run",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-glen-helen",
-      "slug": "glen-helen",
-      "name": "Glen Helen",
-      "displayName": "Glen Helen",
-      "baseName": "Glen Helen",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-glen-helen.jpg",
-        "remoteUrl": "https://bmv.ohio.gov/img/special_plates/ohio_pride/si_glen_helen.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "glen",
-        "helen",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_glen_helen",
-          "versionId": null
-        }
-      ]
-    },
-    {
       "id": "oh-habitat-for-humanity",
       "slug": "habitat-for-humanity",
       "name": "Habitat for Humanity",
@@ -1125,191 +828,6 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_habitat-for-humanity",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-harrison-central-huskies",
-      "slug": "harrison-central-huskies",
-      "name": "Harrison Central Huskies",
-      "displayName": "Harrison Central Huskies",
-      "baseName": "Harrison Central Huskies",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-harrison-central-huskies.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_harrison_central_huskies.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "harrison",
-        "central",
-        "huskies",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_harrison_central_huskies",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-healthy-new-albany",
-      "slug": "healthy-new-albany",
-      "name": "Healthy New Albany",
-      "displayName": "Healthy New Albany",
-      "baseName": "Healthy New Albany",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-healthy-new-albany.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/sp_healthy_new_albany.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "healthy",
-        "new",
-        "albany",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "sp_healthy_new_albany",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-history",
-      "slug": "history",
-      "name": "History",
-      "displayName": "History",
-      "baseName": "History",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-history.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/sp_history.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "history",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "sp_history",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-kayak",
-      "slug": "kayak",
-      "name": "kayak",
-      "displayName": "kayak",
-      "baseName": "kayak",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-kayak.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_lake_erie_kayak.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "kayak",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_lake_erie_kayak",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-kids-first",
-      "slug": "kids-first",
-      "name": "Kids First",
-      "displayName": "Kids First",
-      "baseName": "Kids First",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-kids-first.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_kids_first.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "kids",
-        "first",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_kids_first",
           "versionId": null
         }
       ]
@@ -1383,117 +901,6 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_KofC",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-kyler-strong-foundation",
-      "slug": "kyler-strong-foundation",
-      "name": "Kyler Strong Foundation",
-      "displayName": "Kyler Strong Foundation",
-      "baseName": "Kyler Strong Foundation",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-kyler-strong-foundation.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_kylerstrong_foundation.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "kyler",
-        "strong",
-        "foundation",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_kylerstrong_foundation",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-limo",
-      "slug": "limo",
-      "name": "Limo",
-      "displayName": "Limo",
-      "baseName": "Limo",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-limo.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_limo.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "limo",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_limo",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-lincoln-highway",
-      "slug": "lincoln-highway",
-      "name": "Lincoln Highway",
-      "displayName": "Lincoln Highway",
-      "baseName": "Lincoln Highway",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-lincoln-highway.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_lincoln-highway.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "lincoln",
-        "highway",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_lincoln-highway",
           "versionId": null
         }
       ]
@@ -1574,121 +981,6 @@
       ]
     },
     {
-      "id": "oh-massillon-tigers",
-      "slug": "massillon-tigers",
-      "name": "Massillon Tigers",
-      "displayName": "Massillon Tigers",
-      "baseName": "Massillon Tigers",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-massillon-tigers.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_massillontigers.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "massillon",
-        "tigers",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_massillontigers",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-nasa-glenn-research-center",
-      "slug": "nasa-glenn-research-center",
-      "name": "NASA Glenn Research Center",
-      "displayName": "NASA Glenn Research Center",
-      "baseName": "NASA Glenn Research Center",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-nasa-glenn-research-center.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_nasa-glenn-research.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "nasa",
-        "glenn",
-        "research",
-        "center",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_nasa-glenn-research",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-national-aviation-hall-of-fame",
-      "slug": "national-aviation-hall-of-fame",
-      "name": "National Aviation Hall of Fame",
-      "displayName": "National Aviation Hall of Fame",
-      "baseName": "National Aviation Hall of Fame",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-national-aviation-hall-of-fame.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_aviation_hof.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "national",
-        "aviation",
-        "hall",
-        "fame",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_aviation_hof",
-          "versionId": null
-        }
-      ]
-    },
-    {
       "id": "oh-national-council-of-negro-women",
       "slug": "national-council-of-negro-women",
       "name": "National Council of Negro Women",
@@ -1728,43 +1020,6 @@
       ]
     },
     {
-      "id": "oh-non-transport",
-      "slug": "non-transport",
-      "name": "Non-transport",
-      "displayName": "Non-transport",
-      "baseName": "Non-transport",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-non-transport.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/nontransport.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "non",
-        "transport",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "nontransport",
-          "versionId": null
-        }
-      ]
-    },
-    {
       "id": "oh-nra-foundation",
       "slug": "nra-foundation",
       "name": "NRA Foundation",
@@ -1797,118 +1052,6 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_nra_foundation",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-ohio-battleflag",
-      "slug": "ohio-battleflag",
-      "name": "Ohio Battleflag",
-      "displayName": "Ohio Battleflag",
-      "baseName": "Ohio Battleflag",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-ohio-battleflag.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_ohio_battleflag.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "ohio",
-        "battleflag",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_ohio_battleflag",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-ohio-beef",
-      "slug": "ohio-beef",
-      "name": "Ohio Beef",
-      "displayName": "Ohio Beef",
-      "baseName": "Ohio Beef",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-ohio-beef.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_cattlemens.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "ohio",
-        "beef",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_cattlemens",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-ohio-beef-truck",
-      "slug": "ohio-beef-truck",
-      "name": "Ohio Beef Truck",
-      "displayName": "Ohio Beef Truck",
-      "baseName": "Ohio Beef Truck",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-ohio-beef-truck.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_cattlemens_truck.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "ohio",
-        "beef",
-        "truck",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_cattlemens_truck",
           "versionId": null
         }
       ]
@@ -1989,241 +1132,6 @@
       ]
     },
     {
-      "id": "oh-ohio-horses",
-      "slug": "ohio-horses",
-      "name": "Ohio Horses",
-      "displayName": "Ohio Horses",
-      "baseName": "Ohio Horses",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-ohio-horses.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_ohio_horses.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "ohio",
-        "horses",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_ohio_horses",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-ohio-mountain-bike-alliance",
-      "slug": "ohio-mountain-bike-alliance",
-      "name": "Ohio Mountain Bike Alliance",
-      "displayName": "Ohio Mountain Bike Alliance",
-      "baseName": "Ohio Mountain Bike Alliance",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-ohio-mountain-bike-alliance.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_ohio-mountain-bike-alliance.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "ohio",
-        "mountain",
-        "bike",
-        "alliance",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_ohio-mountain-bike-alliance",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-ohio-natural-energy-foundation",
-      "slug": "ohio-natural-energy-foundation",
-      "name": "Ohio Natural Energy Foundation",
-      "displayName": "Ohio Natural Energy Foundation",
-      "baseName": "Ohio Natural Energy Foundation",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-ohio-natural-energy-foundation.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_oil-gas-energy.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "ohio",
-        "natural",
-        "energy",
-        "foundation",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_oil-gas-energy",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-ohio-natural-energy-foundation-trailer",
-      "slug": "ohio-natural-energy-foundation-trailer",
-      "name": "Ohio Natural Energy Foundation Trailer",
-      "displayName": "Ohio Natural Energy Foundation Trailer",
-      "baseName": "Ohio Natural Energy Foundation Trailer",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-ohio-natural-energy-foundation-trailer.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_oil-gas-energy-trailer.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "ohio",
-        "natural",
-        "energy",
-        "foundation",
-        "trailer",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_oil-gas-energy-trailer",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-ohio-natural-energy-foundation-truck",
-      "slug": "ohio-natural-energy-foundation-truck",
-      "name": "Ohio Natural Energy Foundation Truck",
-      "displayName": "Ohio Natural Energy Foundation Truck",
-      "baseName": "Ohio Natural Energy Foundation Truck",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-ohio-natural-energy-foundation-truck.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_oil-gas-energy-truck.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "ohio",
-        "natural",
-        "energy",
-        "foundation",
-        "truck",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_oil-gas-energy-truck",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-ohio-society-daughters-of-the-american-revolution",
-      "slug": "ohio-society-daughters-of-the-american-revolution",
-      "name": "Ohio Society Daughters of the American Revolution",
-      "displayName": "Ohio Society Daughters of the American Revolution",
-      "baseName": "Ohio Society Daughters of the American Revolution",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-ohio-society-daughters-of-the-american-revolution.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_daughters_of_the_american_revolution.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "ohio",
-        "society",
-        "daughters",
-        "american",
-        "revolution",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_daughters_of_the_american_revolution",
-          "versionId": null
-        }
-      ]
-    },
-    {
       "id": "oh-one-nation-under-god",
       "slug": "one-nation-under-god",
       "name": "One Nation Under God",
@@ -2258,81 +1166,6 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_one_nation_God",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-patrol-supporter",
-      "slug": "patrol-supporter",
-      "name": "Patrol Supporter",
-      "displayName": "Patrol Supporter",
-      "baseName": "Patrol Supporter",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-patrol-supporter.jpg",
-        "remoteUrl": "https://bmv.ohio.gov/img/special_plates/ohio_pride/si_supporter.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "patrol",
-        "supporter",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_supporter",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-phi-beta-sigma",
-      "slug": "phi-beta-sigma",
-      "name": "Phi Beta Sigma",
-      "displayName": "Phi Beta Sigma",
-      "baseName": "Phi Beta Sigma",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-phi-beta-sigma.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_sigma.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "phi",
-        "beta",
-        "sigma",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_sigma",
           "versionId": null
         }
       ]
@@ -2413,82 +1246,6 @@
       ]
     },
     {
-      "id": "oh-professional-football-hall-of-fame",
-      "slug": "professional-football-hall-of-fame",
-      "name": "Professional Football Hall of Fame",
-      "displayName": "Professional Football Hall of Fame",
-      "baseName": "Professional Football Hall of Fame",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-professional-football-hall-of-fame.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_football_hof.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "professional",
-        "football",
-        "hall",
-        "fame",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_football_hof",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-pupil-transportation",
-      "slug": "pupil-transportation",
-      "name": "Pupil Transportation",
-      "displayName": "Pupil Transportation",
-      "baseName": "Pupil Transportation",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-pupil-transportation.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_pupil_transportation_safety.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "pupil",
-        "transportation",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_pupil_transportation_safety",
-          "versionId": null
-        }
-      ]
-    },
-    {
       "id": "oh-realtor",
       "slug": "realtor",
       "name": "Realtor",
@@ -2520,45 +1277,6 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_realtor",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-rock-and-roll-hall-of-fame",
-      "slug": "rock-and-roll-hall-of-fame",
-      "name": "Rock and Roll Hall of Fame",
-      "displayName": "Rock and Roll Hall of Fame",
-      "baseName": "Rock and Roll Hall of Fame",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-rock-and-roll-hall-of-fame.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_rock_roll_hof.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "rock",
-        "roll",
-        "hall",
-        "fame",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_rock_roll_hof",
           "versionId": null
         }
       ]
@@ -2596,44 +1314,6 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_rotary",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-saint-albert-the-great",
-      "slug": "saint-albert-the-great",
-      "name": "Saint Albert the Great",
-      "displayName": "Saint Albert the Great",
-      "baseName": "Saint Albert the Great",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-saint-albert-the-great.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_saintalbert.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "saint",
-        "albert",
-        "great",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_saintalbert",
           "versionId": null
         }
       ]
@@ -2750,153 +1430,6 @@
       ]
     },
     {
-      "id": "oh-sportsmen-bass",
-      "slug": "sportsmen-bass",
-      "name": "Sportsmen Bass",
-      "displayName": "Sportsmen Bass",
-      "baseName": "Sportsmen Bass",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-sportsmen-bass.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_odnr_smallmouth.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "sportsmen",
-        "bass",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_odnr_smallmouth",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-sportsmen-deer",
-      "slug": "sportsmen-deer",
-      "name": "Sportsmen Deer",
-      "displayName": "Sportsmen Deer",
-      "baseName": "Sportsmen Deer",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-sportsmen-deer.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_odnr_deer.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "sportsmen",
-        "deer",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_odnr_deer",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-sportsmen-turkey",
-      "slug": "sportsmen-turkey",
-      "name": "Sportsmen Turkey",
-      "displayName": "Sportsmen Turkey",
-      "baseName": "Sportsmen Turkey",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-sportsmen-turkey.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_odnr_turkey.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "sportsmen",
-        "turkey",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_odnr_turkey",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-st-xavier",
-      "slug": "st-xavier",
-      "name": "St. Xavier",
-      "displayName": "St. Xavier",
-      "baseName": "St. Xavier",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-st-xavier.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_st_xavier.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "xavier",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_st_xavier",
-          "versionId": null
-        }
-      ]
-    },
-    {
       "id": "oh-stopbully",
       "slug": "stopbully",
       "name": "stopbully",
@@ -2928,154 +1461,6 @@
         {
           "source": "Ohio BMV",
           "sourceId": "stop_bullying",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-summit-metro-parks",
-      "slug": "summit-metro-parks",
-      "name": "Summit Metro Parks",
-      "displayName": "Summit Metro Parks",
-      "baseName": "Summit Metro Parks",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-summit-metro-parks.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_summit-metro-parks.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "summit",
-        "metro",
-        "parks",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_summit-metro-parks",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-superman",
-      "slug": "superman",
-      "name": "Superman",
-      "displayName": "Superman",
-      "baseName": "Superman",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-superman.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_superman.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "superman",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_superman",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-support-our-troops",
-      "slug": "support-our-troops",
-      "name": "Support Our Troops",
-      "displayName": "Support Our Troops",
-      "baseName": "Support Our Troops",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-support-our-troops.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_support_troops.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "support",
-        "our",
-        "troops",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_support_troops",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-television",
-      "slug": "television",
-      "name": "Television",
-      "displayName": "Television",
-      "baseName": "Television",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-television.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_television.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "television",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_television",
           "versionId": null
         }
       ]
@@ -3118,26 +1503,25 @@
       ]
     },
     {
-      "id": "oh-the-leader-in-flight",
-      "slug": "the-leader-in-flight",
-      "name": "The Leader in Flight",
-      "displayName": "The Leader in Flight",
-      "baseName": "The Leader in Flight",
+      "id": "oh-ambulette",
+      "slug": "ambulette",
+      "name": "Ambulette",
+      "displayName": "Ambulette",
+      "baseName": "Ambulette",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic",
+      "category": "Commercial",
       "image": {
-        "path": "state-packs/ohio/plates/oh-the-leader-in-flight.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_Leader_in_flight.jpg"
+        "path": "state-packs/ohio/plates/oh-ambulette.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_ambulette.jpg"
       },
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "leader",
-        "flight",
-        "civic"
+        "ambulette",
+        "commercial"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -3149,69 +1533,32 @@
       "sourceRefs": [
         {
           "source": "Ohio BMV",
-          "sourceId": "si_Leader_in_flight",
+          "sourceId": "si_ambulette",
           "versionId": null
         }
       ]
     },
     {
-      "id": "oh-toledo-harbor",
-      "slug": "toledo-harbor",
-      "name": "Toledo Harbor",
-      "displayName": "Toledo Harbor",
-      "baseName": "Toledo Harbor",
+      "id": "oh-camp-bus",
+      "slug": "camp-bus",
+      "name": "Camp Bus",
+      "displayName": "Camp Bus",
+      "baseName": "Camp Bus",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
       "isActive": true,
-      "category": "Civic",
+      "category": "Commercial",
       "image": {
-        "path": "state-packs/ohio/plates/oh-toledo-harbor.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_lake_erie.jpg"
+        "path": "state-packs/ohio/plates/oh-camp-bus.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_camp_bus.jpg"
       },
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "toledo",
-        "harbor",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_lake_erie",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-transit-bus",
-      "slug": "transit-bus",
-      "name": "Transit Bus",
-      "displayName": "Transit Bus",
-      "baseName": "Transit Bus",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-transit-bus.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_transit_bus.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "transit",
+        "camp",
         "bus",
-        "civic"
+        "commercial"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -3223,120 +1570,7 @@
       "sourceRefs": [
         {
           "source": "Ohio BMV",
-          "sourceId": "si_transit_bus",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-university-of-alabama",
-      "slug": "university-of-alabama",
-      "name": "University of Alabama",
-      "displayName": "University of Alabama",
-      "baseName": "University of Alabama",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-university-of-alabama.jpg",
-        "remoteUrl": "https://bmv.ohio.gov/img/special_plates/ohio_pride/c_alabama.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "university",
-        "alabama",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "c_alabama",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-west-virginia-university",
-      "slug": "west-virginia-university",
-      "name": "West Virginia University",
-      "displayName": "West Virginia University",
-      "baseName": "West Virginia University",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-west-virginia-university.jpg",
-        "remoteUrl": "https://bmv.ohio.gov/img/special_plates/ohio_pride/c_west-viriginia-university.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "west",
-        "virginia",
-        "university",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "c_west-viriginia-university",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-westerville-parks-foundation",
-      "slug": "westerville-parks-foundation",
-      "name": "Westerville Parks Foundation",
-      "displayName": "Westerville Parks Foundation",
-      "baseName": "Westerville Parks Foundation",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-westerville-parks-foundation.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_westerville-parks.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "westerville",
-        "parks",
-        "foundation",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_westerville-parks",
+          "sourceId": "si_camp_bus",
           "versionId": null
         }
       ]
@@ -3451,6 +1685,43 @@
       ]
     },
     {
+      "id": "oh-farm-bus",
+      "slug": "farm-bus",
+      "name": "Farm Bus",
+      "displayName": "Farm Bus",
+      "baseName": "Farm Bus",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-farm-bus.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_temp_farm_bus.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "farm",
+        "bus",
+        "commercial"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_temp_farm_bus",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-hogan-truck",
       "slug": "hogan-truck",
       "name": "Hogan Truck",
@@ -3560,6 +1831,273 @@
       ]
     },
     {
+      "id": "oh-limo",
+      "slug": "limo",
+      "name": "Limo",
+      "displayName": "Limo",
+      "baseName": "Limo",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-limo.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_limo.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "limo",
+        "commercial"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_limo",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-non-transport",
+      "slug": "non-transport",
+      "name": "Non-transport",
+      "displayName": "Non-transport",
+      "baseName": "Non-transport",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-non-transport.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/nontransport.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "non",
+        "transport",
+        "commercial"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "nontransport",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-ohio-beef",
+      "slug": "ohio-beef",
+      "name": "Ohio Beef",
+      "displayName": "Ohio Beef",
+      "baseName": "Ohio Beef",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-ohio-beef.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_cattlemens.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ohio",
+        "beef",
+        "commercial"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_cattlemens",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-ohio-beef-truck",
+      "slug": "ohio-beef-truck",
+      "name": "Ohio Beef Truck",
+      "displayName": "Ohio Beef Truck",
+      "baseName": "Ohio Beef Truck",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-ohio-beef-truck.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_cattlemens_truck.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ohio",
+        "beef",
+        "truck",
+        "commercial"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_cattlemens_truck",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-ohio-natural-energy-foundation",
+      "slug": "ohio-natural-energy-foundation",
+      "name": "Ohio Natural Energy Foundation",
+      "displayName": "Ohio Natural Energy Foundation",
+      "baseName": "Ohio Natural Energy Foundation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-ohio-natural-energy-foundation.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_oil-gas-energy.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ohio",
+        "natural",
+        "energy",
+        "foundation",
+        "commercial"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_oil-gas-energy",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-ohio-natural-energy-foundation-trailer",
+      "slug": "ohio-natural-energy-foundation-trailer",
+      "name": "Ohio Natural Energy Foundation Trailer",
+      "displayName": "Ohio Natural Energy Foundation Trailer",
+      "baseName": "Ohio Natural Energy Foundation Trailer",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-ohio-natural-energy-foundation-trailer.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_oil-gas-energy-trailer.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ohio",
+        "natural",
+        "energy",
+        "foundation",
+        "trailer",
+        "commercial"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_oil-gas-energy-trailer",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-ohio-natural-energy-foundation-truck",
+      "slug": "ohio-natural-energy-foundation-truck",
+      "name": "Ohio Natural Energy Foundation Truck",
+      "displayName": "Ohio Natural Energy Foundation Truck",
+      "baseName": "Ohio Natural Energy Foundation Truck",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-ohio-natural-energy-foundation-truck.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_oil-gas-energy-truck.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ohio",
+        "natural",
+        "energy",
+        "foundation",
+        "truck",
+        "commercial"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_oil-gas-energy-truck",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-pohl",
       "slug": "pohl",
       "name": "Pohl",
@@ -3596,6 +2134,79 @@
       ]
     },
     {
+      "id": "oh-television",
+      "slug": "television",
+      "name": "Television",
+      "displayName": "Television",
+      "baseName": "Television",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-television.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_television.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "television",
+        "commercial"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_television",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-transit-bus",
+      "slug": "transit-bus",
+      "name": "Transit Bus",
+      "displayName": "Transit Bus",
+      "baseName": "Transit Bus",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-transit-bus.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_transit_bus.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "transit",
+        "bus",
+        "commercial"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_transit_bus",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-ambulance",
       "slug": "ambulance",
       "name": "Ambulance",
@@ -3627,42 +2238,6 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_ambulance",
-          "versionId": null
-        }
-      ]
-    },
-    {
-      "id": "oh-ambulette",
-      "slug": "ambulette",
-      "name": "Ambulette",
-      "displayName": "Ambulette",
-      "baseName": "Ambulette",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "First Responders",
-      "image": {
-        "path": "state-packs/ohio/plates/oh-ambulette.jpg",
-        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_ambulette.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "ambulette",
-        "first responders"
-      ],
-      "variantOf": null,
-      "relatedPlates": [],
-      "metadataBlob": {
-        "sourceCategories": [
-          "Organizational Plates"
-        ]
-      },
-      "sourceRefs": [
-        {
-          "source": "Ohio BMV",
-          "sourceId": "si_ambulette",
           "versionId": null
         }
       ]
@@ -3822,6 +2397,43 @@
       ]
     },
     {
+      "id": "oh-patrol-supporter",
+      "slug": "patrol-supporter",
+      "name": "Patrol Supporter",
+      "displayName": "Patrol Supporter",
+      "baseName": "Patrol Supporter",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-patrol-supporter.jpg",
+        "remoteUrl": "https://bmv.ohio.gov/img/special_plates/ohio_pride/si_supporter.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "patrol",
+        "supporter",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_supporter",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-professional-firefighters",
       "slug": "professional-firefighters",
       "name": "Professional Firefighters",
@@ -3928,6 +2540,43 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_volunteer_firefighter",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-a-kid-again",
+      "slug": "a-kid-again",
+      "name": "A Kid Again",
+      "displayName": "A Kid Again",
+      "baseName": "A Kid Again",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-a-kid-again.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_a-kid-again.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "kid",
+        "again",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_a-kid-again",
           "versionId": null
         }
       ]
@@ -4160,6 +2809,44 @@
       ]
     },
     {
+      "id": "oh-choose-life-adoption",
+      "slug": "choose-life-adoption",
+      "name": "Choose Life Adoption",
+      "displayName": "Choose Life Adoption",
+      "baseName": "Choose Life Adoption",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-choose-life-adoption.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_choose_life.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "choose",
+        "life",
+        "adoption",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_choose_life",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-choose-life-heart",
       "slug": "choose-life-heart",
       "name": "Choose Life Heart",
@@ -4270,6 +2957,42 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_conquercancer",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-disability",
+      "slug": "disability",
+      "name": "Disability",
+      "displayName": "Disability",
+      "baseName": "Disability",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-disability.jpg",
+        "remoteUrl": "http://www.bmv.ohio.gov/img/special_plates/ohio_pride/disability.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "disability",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Accessible Plates/Removable Windshield Placards"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "disability",
           "versionId": null
         }
       ]
@@ -4388,6 +3111,44 @@
       ]
     },
     {
+      "id": "oh-healthy-new-albany",
+      "slug": "healthy-new-albany",
+      "name": "Healthy New Albany",
+      "displayName": "Healthy New Albany",
+      "baseName": "Healthy New Albany",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-healthy-new-albany.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/sp_healthy_new_albany.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "healthy",
+        "new",
+        "albany",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "sp_healthy_new_albany",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-juvenile-diabetes-research-foundation",
       "slug": "juvenile-diabetes-research-foundation",
       "name": "Juvenile Diabetes Research Foundation",
@@ -4422,6 +3183,81 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_juvenile_diabetes_research_foundation",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-kids-first",
+      "slug": "kids-first",
+      "name": "Kids First",
+      "displayName": "Kids First",
+      "baseName": "Kids First",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-kids-first.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_kids_first.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "kids",
+        "first",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_kids_first",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-kyler-strong-foundation",
+      "slug": "kyler-strong-foundation",
+      "name": "Kyler Strong Foundation",
+      "displayName": "Kyler Strong Foundation",
+      "baseName": "Kyler Strong Foundation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-kyler-strong-foundation.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_kylerstrong_foundation.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "kyler",
+        "strong",
+        "foundation",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_kylerstrong_foundation",
           "versionId": null
         }
       ]
@@ -5036,6 +3872,42 @@
       ]
     },
     {
+      "id": "oh-history",
+      "slug": "history",
+      "name": "History",
+      "displayName": "History",
+      "baseName": "History",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-history.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/sp_history.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "history",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "sp_history",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-honorary-commodore-organization",
       "slug": "honorary-commodore-organization",
       "name": "Honorary Commodore Organization",
@@ -5069,6 +3941,43 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_commodore",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-lincoln-highway",
+      "slug": "lincoln-highway",
+      "name": "Lincoln Highway",
+      "displayName": "Lincoln Highway",
+      "baseName": "Lincoln Highway",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-lincoln-highway.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_lincoln-highway.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "lincoln",
+        "highway",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_lincoln-highway",
           "versionId": null
         }
       ]
@@ -5108,6 +4017,124 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_medina_county_history",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-nasa-glenn-research-center",
+      "slug": "nasa-glenn-research-center",
+      "name": "NASA Glenn Research Center",
+      "displayName": "NASA Glenn Research Center",
+      "baseName": "NASA Glenn Research Center",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-nasa-glenn-research-center.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_nasa-glenn-research.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "nasa",
+        "glenn",
+        "research",
+        "center",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_nasa-glenn-research",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-national-aviation-hall-of-fame",
+      "slug": "national-aviation-hall-of-fame",
+      "name": "National Aviation Hall of Fame",
+      "displayName": "National Aviation Hall of Fame",
+      "baseName": "National Aviation Hall of Fame",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-national-aviation-hall-of-fame.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_aviation_hof.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "national",
+        "aviation",
+        "hall",
+        "fame",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_aviation_hof",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-ohio-society-daughters-of-the-american-revolution",
+      "slug": "ohio-society-daughters-of-the-american-revolution",
+      "name": "Ohio Society Daughters of the American Revolution",
+      "displayName": "Ohio Society Daughters of the American Revolution",
+      "baseName": "Ohio Society Daughters of the American Revolution",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-ohio-society-daughters-of-the-american-revolution.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_daughters_of_the_american_revolution.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ohio",
+        "society",
+        "daughters",
+        "american",
+        "revolution",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_daughters_of_the_american_revolution",
           "versionId": null
         }
       ]
@@ -5223,6 +4250,45 @@
       ]
     },
     {
+      "id": "oh-rock-and-roll-hall-of-fame",
+      "slug": "rock-and-roll-hall-of-fame",
+      "name": "Rock and Roll Hall of Fame",
+      "displayName": "Rock and Roll Hall of Fame",
+      "baseName": "Rock and Roll Hall of Fame",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-rock-and-roll-hall-of-fame.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_rock_roll_hof.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "rock",
+        "roll",
+        "hall",
+        "fame",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_rock_roll_hof",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-stan-hywet-hall-and-gardens",
       "slug": "stan-hywet-hall-and-gardens",
       "name": "Stan Hywet Hall and Gardens",
@@ -5293,6 +4359,42 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_streetrod",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-superman",
+      "slug": "superman",
+      "name": "Superman",
+      "displayName": "Superman",
+      "baseName": "Superman",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-superman.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_superman.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "superman",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_superman",
           "versionId": null
         }
       ]
@@ -5747,6 +4849,43 @@
       ]
     },
     {
+      "id": "oh-ohio-battleflag",
+      "slug": "ohio-battleflag",
+      "name": "Ohio Battleflag",
+      "displayName": "Ohio Battleflag",
+      "baseName": "Ohio Battleflag",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-ohio-battleflag.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_ohio_battleflag.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ohio",
+        "battleflag",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_ohio_battleflag",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-pow-mia",
       "slug": "pow-mia",
       "name": "POW MIA",
@@ -5854,6 +4993,81 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_sons-american-legion",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-support-our-troops",
+      "slug": "support-our-troops",
+      "name": "Support Our Troops",
+      "displayName": "Support Our Troops",
+      "baseName": "Support Our Troops",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-support-our-troops.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_support_troops.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "support",
+        "our",
+        "troops",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_support_troops",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-the-leader-in-flight",
+      "slug": "the-leader-in-flight",
+      "name": "The Leader in Flight",
+      "displayName": "The Leader in Flight",
+      "baseName": "The Leader in Flight",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-the-leader-in-flight.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_Leader_in_flight.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "leader",
+        "flight",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_Leader_in_flight",
           "versionId": null
         }
       ]
@@ -6040,6 +5254,43 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_arch_moeller",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-blanchester-wildcats",
+      "slug": "blanchester-wildcats",
+      "name": "Blanchester Wildcats",
+      "displayName": "Blanchester Wildcats",
+      "baseName": "Blanchester Wildcats",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-blanchester-wildcats.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_ blanchester_wildcats.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "blanchester",
+        "wildcats",
+        "schools"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_ blanchester_wildcats",
           "versionId": null
         }
       ]
@@ -6431,6 +5682,44 @@
       ]
     },
     {
+      "id": "oh-harrison-central-huskies",
+      "slug": "harrison-central-huskies",
+      "name": "Harrison Central Huskies",
+      "displayName": "Harrison Central Huskies",
+      "baseName": "Harrison Central Huskies",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-harrison-central-huskies.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_harrison_central_huskies.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "harrison",
+        "central",
+        "huskies",
+        "schools"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_harrison_central_huskies",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-hudson-city-schools",
       "slug": "hudson-city-schools",
       "name": "Hudson City Schools",
@@ -6657,6 +5946,43 @@
       ]
     },
     {
+      "id": "oh-massillon-tigers",
+      "slug": "massillon-tigers",
+      "name": "Massillon Tigers",
+      "displayName": "Massillon Tigers",
+      "baseName": "Massillon Tigers",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-massillon-tigers.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_massillontigers.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "massillon",
+        "tigers",
+        "schools"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_massillontigers",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-north-royalton-city-schools",
       "slug": "north-royalton-city-schools",
       "name": "North Royalton City Schools",
@@ -6772,6 +6098,44 @@
       ]
     },
     {
+      "id": "oh-phi-beta-sigma",
+      "slug": "phi-beta-sigma",
+      "name": "Phi Beta Sigma",
+      "displayName": "Phi Beta Sigma",
+      "baseName": "Phi Beta Sigma",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-phi-beta-sigma.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_sigma.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "phi",
+        "beta",
+        "sigma",
+        "schools"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_sigma",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-phi-theta-kappa",
       "slug": "phi-theta-kappa",
       "name": "Phi Theta Kappa",
@@ -6805,6 +6169,43 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_phi_theta_kappa",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-pupil-transportation",
+      "slug": "pupil-transportation",
+      "name": "Pupil Transportation",
+      "displayName": "Pupil Transportation",
+      "baseName": "Pupil Transportation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-pupil-transportation.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_pupil_transportation_safety.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "pupil",
+        "transportation",
+        "schools"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_pupil_transportation_safety",
           "versionId": null
         }
       ]
@@ -6880,6 +6281,44 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_ross-high-school",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-saint-albert-the-great",
+      "slug": "saint-albert-the-great",
+      "name": "Saint Albert the Great",
+      "displayName": "Saint Albert the Great",
+      "baseName": "Saint Albert the Great",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-saint-albert-the-great.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_saintalbert.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "saint",
+        "albert",
+        "great",
+        "schools"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_saintalbert",
           "versionId": null
         }
       ]
@@ -7033,6 +6472,42 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_st_johns_jesuit",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-st-xavier",
+      "slug": "st-xavier",
+      "name": "St. Xavier",
+      "displayName": "St. Xavier",
+      "baseName": "St. Xavier",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-st-xavier.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_st_xavier.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "xavier",
+        "schools"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_st_xavier",
           "versionId": null
         }
       ]
@@ -7674,6 +7149,44 @@
       ]
     },
     {
+      "id": "oh-girls-run-plate",
+      "slug": "girls-run-plate",
+      "name": "Girls Run plate",
+      "displayName": "Girls Run plate",
+      "baseName": "Girls Run plate",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-girls-run-plate.jpg",
+        "remoteUrl": "https://bmv.ohio.gov/img/special_plates/ohio_pride/si_girls_run.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "girls",
+        "run",
+        "plate",
+        "sports"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_girls_run",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-little-brown-jug",
       "slug": "little-brown-jug",
       "name": "Little Brown Jug",
@@ -7707,6 +7220,45 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_little_brown_jug",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-professional-football-hall-of-fame",
+      "slug": "professional-football-hall-of-fame",
+      "name": "Professional Football Hall of Fame",
+      "displayName": "Professional Football Hall of Fame",
+      "baseName": "Professional Football Hall of Fame",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-professional-football-hall-of-fame.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_football_hof.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "professional",
+        "football",
+        "hall",
+        "fame",
+        "sports"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_football_hof",
           "versionId": null
         }
       ]
@@ -8509,6 +8061,43 @@
       ]
     },
     {
+      "id": "oh-university-of-alabama",
+      "slug": "university-of-alabama",
+      "name": "University of Alabama",
+      "displayName": "University of Alabama",
+      "baseName": "University of Alabama",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-university-of-alabama.jpg",
+        "remoteUrl": "https://bmv.ohio.gov/img/special_plates/ohio_pride/c_alabama.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "university",
+        "alabama",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "c_alabama",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-university-of-cincinnati",
       "slug": "university-of-cincinnati",
       "name": "University of Cincinnati",
@@ -8765,6 +8354,44 @@
         {
           "source": "Ohio BMV",
           "sourceId": "c_toledorocket",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-west-virginia-university",
+      "slug": "west-virginia-university",
+      "name": "West Virginia University",
+      "displayName": "West Virginia University",
+      "baseName": "West Virginia University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-west-virginia-university.jpg",
+        "remoteUrl": "https://bmv.ohio.gov/img/special_plates/ohio_pride/c_west-viriginia-university.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "west",
+        "virginia",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "c_west-viriginia-university",
           "versionId": null
         }
       ]
@@ -9299,6 +8926,43 @@
       ]
     },
     {
+      "id": "oh-glen-helen",
+      "slug": "glen-helen",
+      "name": "Glen Helen",
+      "displayName": "Glen Helen",
+      "baseName": "Glen Helen",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-glen-helen.jpg",
+        "remoteUrl": "https://bmv.ohio.gov/img/special_plates/ohio_pride/si_glen_helen.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "glen",
+        "helen",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_glen_helen",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-honey-bee",
       "slug": "honey-bee",
       "name": "Honey Bee",
@@ -9331,6 +8995,42 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_honey_bee",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-kayak",
+      "slug": "kayak",
+      "name": "kayak",
+      "displayName": "kayak",
+      "baseName": "kayak",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-kayak.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_lake_erie_kayak.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "kayak",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_lake_erie_kayak",
           "versionId": null
         }
       ]
@@ -9560,6 +9260,43 @@
       ]
     },
     {
+      "id": "oh-ohio-horses",
+      "slug": "ohio-horses",
+      "name": "Ohio Horses",
+      "displayName": "Ohio Horses",
+      "baseName": "Ohio Horses",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-ohio-horses.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_ohio_horses.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ohio",
+        "horses",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_ohio_horses",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-ohio-horses-outline",
       "slug": "ohio-horses-outline",
       "name": "Ohio Horses Outline",
@@ -9632,6 +9369,45 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_rabbit-rescue",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-ohio-mountain-bike-alliance",
+      "slug": "ohio-mountain-bike-alliance",
+      "name": "Ohio Mountain Bike Alliance",
+      "displayName": "Ohio Mountain Bike Alliance",
+      "baseName": "Ohio Mountain Bike Alliance",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-ohio-mountain-bike-alliance.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_ohio-mountain-bike-alliance.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ohio",
+        "mountain",
+        "bike",
+        "alliance",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_ohio-mountain-bike-alliance",
           "versionId": null
         }
       ]
@@ -9898,6 +9674,117 @@
       ]
     },
     {
+      "id": "oh-sportsmen-bass",
+      "slug": "sportsmen-bass",
+      "name": "Sportsmen Bass",
+      "displayName": "Sportsmen Bass",
+      "baseName": "Sportsmen Bass",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-sportsmen-bass.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_odnr_smallmouth.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "sportsmen",
+        "bass",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_odnr_smallmouth",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-sportsmen-deer",
+      "slug": "sportsmen-deer",
+      "name": "Sportsmen Deer",
+      "displayName": "Sportsmen Deer",
+      "baseName": "Sportsmen Deer",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-sportsmen-deer.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_odnr_deer.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "sportsmen",
+        "deer",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_odnr_deer",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-sportsmen-turkey",
+      "slug": "sportsmen-turkey",
+      "name": "Sportsmen Turkey",
+      "displayName": "Sportsmen Turkey",
+      "baseName": "Sportsmen Turkey",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-sportsmen-turkey.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_odnr_turkey.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "sportsmen",
+        "turkey",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_odnr_turkey",
+          "versionId": null
+        }
+      ]
+    },
+    {
       "id": "oh-state-parks",
       "slug": "state-parks",
       "name": "State Parks",
@@ -9930,6 +9817,81 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_ohio_state_parks",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-summit-metro-parks",
+      "slug": "summit-metro-parks",
+      "name": "Summit Metro Parks",
+      "displayName": "Summit Metro Parks",
+      "baseName": "Summit Metro Parks",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-summit-metro-parks.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_summit-metro-parks.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "summit",
+        "metro",
+        "parks",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_summit-metro-parks",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-toledo-harbor",
+      "slug": "toledo-harbor",
+      "name": "Toledo Harbor",
+      "displayName": "Toledo Harbor",
+      "baseName": "Toledo Harbor",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-toledo-harbor.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_lake_erie.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "toledo",
+        "harbor",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_lake_erie",
           "versionId": null
         }
       ]
@@ -10005,6 +9967,44 @@
         {
           "source": "Ohio BMV",
           "sourceId": "si_weirdo-cat-lovers-of-cleveland",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "oh-westerville-parks-foundation",
+      "slug": "westerville-parks-foundation",
+      "name": "Westerville Parks Foundation",
+      "displayName": "Westerville Parks Foundation",
+      "baseName": "Westerville Parks Foundation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/ohio/plates/oh-westerville-parks-foundation.jpg",
+        "remoteUrl": "https://www.bmv.ohio.gov/img/special_plates/ohio_pride/si_westerville-parks.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "westerville",
+        "parks",
+        "foundation",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organizational Plates"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Ohio BMV",
+          "sourceId": "si_westerville-parks",
           "versionId": null
         }
       ]

@@ -64,7 +64,7 @@ const OH_SPORTS_TEAMS = [
 const OH_GREEK_ORGS = [
   "alpha kappa alpha", "alpha phi alpha", "delta sigma theta",
   "kappa alpha psi", "omega psi phi", "sigma gamma rho",
-  "phi theta kappa", "zeta phi beta", "iota phi theta"
+  "phi theta kappa", "phi beta sigma", "zeta phi beta", "iota phi theta"
 ];
 
 /**
@@ -74,7 +74,7 @@ const OH_GREEK_ORGS = [
  * Wildlife rule.
  */
 const OH_KEYWORD_RULES = [
-  // ── Specific-name overrides (beat broader keyword rules below) ──
+  // ── Named overrides that must beat everything below ──
   { keywords: ["habitat for humanity"], category: "Civic" },
   { keywords: ["ronald mcdonald house"], category: "Health" },
   { keywords: ["red cross"], category: "Health" },
@@ -82,34 +82,65 @@ const OH_KEYWORD_RULES = [
   { keywords: ["fallen lineworker", "fallenlinemen"], category: "Civic" },
   { keywords: ["share the road"], category: "Civic" },
 
-  // ── Schools — Greek orgs and school-district plates ──
-  { keywords: OH_GREEK_ORGS, category: "Schools" },
-  { keywords: ["high school", "schools", "academy", "preparatory", "hudson-schools", "dublin-city", "cuyahoga-heights", "north-royalton", "stow-munroe", "twinsburg", "solon schools", "padua-franciscan", "walsh-jesuit", "elder", "university-schools", "revere-local"], category: "Schools" },
+  // ── Industry / commodity promotion plates (Commercial, not Civic) ──
+  { keywords: ["ohio beef", "ohio natural energy"], category: "Commercial" },
 
-  // ── Universities (rare in Organizational, usually in Collegiate) ──
-  { keywords: ["notre dame", "west-virginia-university"], category: "Universities" },
+  // ── Single-word plates with specific meanings ──
+  { keywords: ["disability"], category: "Health" },
+
+  // ── Kyler Strong Foundation (pediatric cancer — scraped name doesn't reveal this) ──
+  { keywords: ["kyler strong"], category: "Health" },
+
+  // ── Out-of-state universities (collegiate alumni plates filed under
+  //    Organizational in the scrape) ──
+  { keywords: ["university of alabama", "west virginia university", "university of notre dame"], category: "Universities" },
+
+  // ── K-12 school-team / parish-school plates (no "school" in name) ──
+  { keywords: ["blanchester wildcats", "harrison central huskies", "massillon tigers", "chardon high school", "saint albert", "st. xavier", "st xavier", "st. john's jesuit", "gilmour academy", "la salle"], category: "Schools" },
+
+  // ── Halls of Fame (Ohio has three famous ones, each a different bucket) ──
+  { keywords: ["football hall of fame"], category: "Sports" },
+  { keywords: ["rock and roll hall of fame"], category: "Heritage" },
+  { keywords: ["aviation hall of fame", "national aviation"], category: "Heritage" },
+
+  // ── Commercial vehicle / special-use designations (not civic orgs) ──
+  { keywords: ["transit bus", "camp bus", "farm bus", "ambulette", "limo", "non-transport", "nontransport", "television"], category: "Commercial" },
+
+  // ── Pupil Transportation (school buses) ──
+  { keywords: ["pupil transportation"], category: "Schools" },
+
+  // ── Ohio outdoor / parks / trails / nature preserves ──
+  { keywords: ["glen helen", "metro parks", "westerville parks", "toledo harbor", "mountain bike", "kayak", "ohio horses", "sportsmen", "ottawa wildlife"], category: "Wildlife & Nature" },
+
+  // ── Schools — Greek orgs, school districts, anything with "school" ──
+  { keywords: OH_GREEK_ORGS, category: "Schools" },
+  { keywords: ["high school", "schools", "school ", " school", "academy", "preparatory", "hudson-schools", "dublin-city", "cuyahoga-heights", "north-royalton", "stow-munroe", "twinsburg", "solon schools", "padua-franciscan", "walsh-jesuit", "elder", "university-schools", "revere-local", "west technical"], category: "Schools" },
+
+  // ── Universities — broader catch for Ohio collegiate alumni plates ──
+  { keywords: ["university of", "college"], category: "Universities" },
 
   // ── Health ──
-  { keywords: ["cancer", "als awareness", "autism", "diabetes", "suicide prevention", "heart", "disability", "awareness", "donate life", "hospital", "childrens", "brain tumor", "pediatric", "respiratory", "nurses", "physician", "juvenile diabetes", "conquercancer", "bottoms up diaper"], category: "Health" },
+  { keywords: ["cancer", "als awareness", "autism", "diabetes", "suicide prevention", "heart", "disability", "awareness", "donate life", "hospital", "childrens", "children's", "brain tumor", "pediatric", "respiratory", "nurses", "physician", "juvenile diabetes", "conquercancer", "bottoms up diaper", "a kid again", "healthy", "kids first", "choose life"], category: "Health" },
 
   // ── First Responders ──
-  { keywords: ["fire", "ems", "police", "sheriff", "ambulance", "ambulette", "paramedic", "fop", "cops", "firefighter", "chiefs of police"], category: "First Responders" },
+  { keywords: ["fire", "ems", "police", "sheriff", "ambulance", "paramedic", "fop", "cops", "firefighter", "chiefs of police", "patrol supporter"], category: "First Responders" },
 
   // ── Military ──
-  { keywords: ["army", "navy", "marine", "air force", "coast guard", "veteran", "vfw", "legion", "pow", "mia", "paratroopers", "airborne", "combat", "military sacrifice", "support troops", "honor our fallen", "gold star", "folds of honor", "save a warrior", "dav ", "civil air patrol", "military", "voiture", "gsf vietnam"], category: "Military" },
+  { keywords: ["army", "navy", "marine", "air force", "coast guard", "veteran", "vfw", "legion", "pow ", "pow-mia", " pow", "mia", "paratroopers", "airborne", "combat", "military sacrifice", "support our troops", "support troops", "honor our fallen", "gold star", "folds of honor", "save a warrior", "dav ", "civil air patrol", "military", "voiture", "gsf vietnam", "battleflag", "leader in flight"], category: "Military" },
 
   // ── Wildlife & Nature ──
-  { keywords: ["wildlife", "nature", "conservation", "habitat", "preserve", "zoo", "ducks unlimited", "bald eagle", "bullfrog", "honey bee", "monarch butterfly", "cat friendly", "dog friendly", "cat lovers", "rabbit rescue", "paws", "odnr deer", "odnr smallmouth", "odnr turkey", "bird sanctuary", "state parks", "scenic rivers", "cuyahoga valley", "lake erie", "smokey bear", "trees", "keep ohio beautiful", "pets"], category: "Wildlife & Nature" },
+  { keywords: ["wildlife", "nature", "conservation", "habitat", "preserve", "zoo", "ducks unlimited", "bald eagle", "bullfrog", "honey bee", "monarch butterfly", "cat friendly", "dog friendly", "cat lovers", "rabbit rescue", "paws", "odnr", "bird sanctuary", "state parks", "scenic rivers", "cuyahoga valley", "lake erie", "smokey bear", "trees", "keep ohio beautiful", "pets", "pet friendly"], category: "Wildlife & Nature" },
 
   // ── Sports (pro teams + sports orgs) ──
   { keywords: OH_SPORTS_TEAMS, category: "Sports" },
+  { keywords: ["baseball for all", "girls run"], category: "Sports" },
   { keywords: ["buckeyecorvette", "corvette", "streetrod", "collector", "commodore"], category: "Heritage" },
 
   // ── Heritage / historical ──
-  { keywords: ["heritage", "historical", "historic", "bicentennial", "colonial", "commemorative", "replica", "perrys monument", "perrys_monument", "fallentimbers", "stanhywet", "statehouse", "medina_county_history"], category: "Heritage" },
+  { keywords: ["heritage", "historical", "historic", "history", "bicentennial", "colonial", "commemorative", "replica", "perry's monument", "perrys monument", "fallen timbers", "stan hywet", "statehouse", "medina county history", "lincoln highway", "daughters of the american revolution", "nasa glenn", "superman"], category: "Heritage" },
 
-  // ── Civic (specific overrides) ──
-  { keywords: ["one_nation_god", "in god we trust"], category: "Civic" }
+  // ── Civic (remaining pattern matches) ──
+  { keywords: ["in god we trust", "one nation"], category: "Civic" }
 ];
 
 /**
@@ -141,7 +172,7 @@ function mapCategory(plate) {
     }
     return "Government";
   }
-  if (scrapedCat === "Accessible Plates/Removable Windshield Placards") return "Civic";
+  if (scrapedCat === "Accessible Plates/Removable Windshield Placards") return "Health";
   if (scrapedCat === "Company Logo Plates") return "Commercial";
 
   // Organizational Plates — apply keyword overrides
