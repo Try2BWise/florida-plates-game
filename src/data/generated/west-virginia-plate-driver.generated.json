@@ -180,32 +180,6 @@
       "relatedPlates": []
     },
     {
-      "id": "wv-fraternal-order-of-police",
-      "slug": "fraternal-order-of-police",
-      "name": "Fraternal Order of Police",
-      "displayName": "Fraternal Order of Police",
-      "baseName": "Fraternal Order of Police",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/west-virginia/plates/wv-fraternal-order-of-police.jpg",
-        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Fraternal-Order-of-Police.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "fraternal",
-        "order",
-        "police",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
       "id": "wv-friends-of-coal",
       "slug": "friends-of-coal",
       "name": "Friends of Coal",
@@ -435,32 +409,6 @@
       "relatedPlates": []
     },
     {
-      "id": "wv-wounded-in-the-line-of-duty",
-      "slug": "wounded-in-the-line-of-duty",
-      "name": "Wounded in the Line of Duty",
-      "displayName": "Wounded in the Line of Duty",
-      "baseName": "Wounded in the Line of Duty",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Civic",
-      "image": {
-        "path": "state-packs/west-virginia/plates/wv-wounded-in-the-line-of-duty.jpg",
-        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Wounded-In-The-Line-Of-Duty.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "wounded",
-        "line",
-        "duty",
-        "civic"
-      ],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
       "id": "wv-911-enhanced-council",
       "slug": "911-enhanced-council",
       "name": "911-Enhanced Council",
@@ -644,6 +592,32 @@
       "relatedPlates": []
     },
     {
+      "id": "wv-fraternal-order-of-police",
+      "slug": "fraternal-order-of-police",
+      "name": "Fraternal Order of Police",
+      "displayName": "Fraternal Order of Police",
+      "baseName": "Fraternal Order of Police",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-fraternal-order-of-police.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Fraternal-Order-of-Police.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "fraternal",
+        "order",
+        "police",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
       "id": "wv-professional-firefighter",
       "slug": "professional-firefighter",
       "name": "Professional Firefighter",
@@ -688,6 +662,32 @@
       "searchTerms": [
         "volunteer",
         "firefighter",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-wounded-in-the-line-of-duty",
+      "slug": "wounded-in-the-line-of-duty",
+      "name": "Wounded in the Line of Duty",
+      "displayName": "Wounded in the Line of Duty",
+      "baseName": "Wounded in the Line of Duty",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-wounded-in-the-line-of-duty.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Wounded-In-The-Line-Of-Duty.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "wounded",
+        "line",
+        "duty",
         "first responders"
       ],
       "variantOf": null,

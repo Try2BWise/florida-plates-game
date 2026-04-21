@@ -60,9 +60,10 @@ const WV_KEYWORD_RULES = [
   { keywords: ["cancer", "awareness", "organ donor", "hospital", "childrens", "children's", "cure childhood", "mobility impaired", "disabled", "chiropractic"], category: "Health" },
 
   // ── First Responders ──
-  // Back the Blue variants are police-support, not military — they route here
-  // even though the scrape filed them under the generic "Associations" bucket.
-  { keywords: ["fire fighter", "firefighter", "emergency medical", "ems", "deputy sheriff", "certified firefighter", "professional firefighter", "volunteer firefighter", "911", "9-1-1", "back the blue"], category: "First Responders" },
+  // Back the Blue variants and "line of duty" honor plates are police/fire
+  // support, not military — they route here even though the scrape filed
+  // them under the generic "Associations" bucket.
+  { keywords: ["fire fighter", "firefighter", "emergency medical", "ems", "deputy sheriff", "certified firefighter", "professional firefighter", "volunteer firefighter", "911", "9-1-1", "back the blue", "line of duty", "fraternal order of police", "police", "sheriff", "fop"], category: "First Responders" },
 
   // ── Wildlife & Nature ──
   { keywords: ["wildlife", "nature", "conservation", "deer", "brook trout", "bluebird", "eastern elk", "box turtle", "protect pollinators", "whitewater rafting"], category: "Wildlife & Nature" },
