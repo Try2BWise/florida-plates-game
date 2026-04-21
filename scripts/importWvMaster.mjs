@@ -60,13 +60,15 @@ const WV_KEYWORD_RULES = [
   { keywords: ["cancer", "awareness", "organ donor", "hospital", "childrens", "children's", "cure childhood", "mobility impaired", "disabled", "chiropractic"], category: "Health" },
 
   // ── First Responders ──
-  { keywords: ["fire fighter", "firefighter", "emergency medical", "ems", "deputy sheriff", "certified firefighter", "professional firefighter", "volunteer firefighter", "911", "9-1-1"], category: "First Responders" },
+  // Back the Blue variants are police-support, not military — they route here
+  // even though the scrape filed them under the generic "Associations" bucket.
+  { keywords: ["fire fighter", "firefighter", "emergency medical", "ems", "deputy sheriff", "certified firefighter", "professional firefighter", "volunteer firefighter", "911", "9-1-1", "back the blue"], category: "First Responders" },
 
   // ── Wildlife & Nature ──
   { keywords: ["wildlife", "nature", "conservation", "deer", "brook trout", "bluebird", "eastern elk", "box turtle", "protect pollinators", "whitewater rafting"], category: "Wildlife & Nature" },
 
   // ── Military ──
-  { keywords: ["military", "back the blue"], category: "Military" },
+  { keywords: ["military"], category: "Military" },
 
   // ── Heritage ──
   { keywords: ["antique vehicle", "classic car", "9-11 commemorative", "9/11"], category: "Heritage" },
@@ -75,7 +77,7 @@ const WV_KEYWORD_RULES = [
   { keywords: ["bowlers", "square and round dance"], category: "Sports" },
 
   // ── Civic (fraternal orgs and general interest) ──
-  { keywords: ["lions", "rotary", "masons", "a.f. & a.m", "a.f. a.m", "p.h.a", "shriner", "elks", "knights of columbus", "contractors association", "coal", "gas", "oil", "realtors", "league of postmasters", "friends of coal", "back the blue wounded"], category: "Civic" }
+  { keywords: ["lions", "rotary", "masons", "a.f. & a.m", "a.f. a.m", "p.h.a", "shriner", "elks", "knights of columbus", "contractors association", "coal", "gas", "oil", "realtors", "league of postmasters", "friends of coal"], category: "Civic" }
 ];
 
 /**

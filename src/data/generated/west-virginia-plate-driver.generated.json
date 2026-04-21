@@ -487,6 +487,61 @@
       "relatedPlates": []
     },
     {
+      "id": "wv-back-the-blue",
+      "slug": "back-the-blue",
+      "name": "Back the Blue",
+      "displayName": "Back the Blue",
+      "baseName": "Back the Blue",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-back-the-blue.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Back_the_Blue.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "back",
+        "blue",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-back-the-blue-wounded-in-the-line-of-duty-or-surviving-spouse",
+      "slug": "back-the-blue-wounded-in-the-line-of-duty-or-surviving-spouse",
+      "name": "Back the Blue Wounded in the Line of Duty or Surviving Spouse",
+      "displayName": "Back the Blue Wounded in the Line of Duty or Surviving Spouse",
+      "baseName": "Back the Blue Wounded in the Line of Duty or Surviving Spouse",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-back-the-blue-wounded-in-the-line-of-duty-or-surviving-spouse.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Back_the_Blue_-_Wounded_in_Line_of_Duty.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "back",
+        "blue",
+        "wounded",
+        "line",
+        "duty",
+        "surviving",
+        "spouse",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
       "id": "wv-certified-firefighter",
       "slug": "certified-firefighter",
       "name": "Certified Firefighter",
@@ -1191,61 +1246,6 @@
       "searchTerms": [
         "army",
         "retired",
-        "military"
-      ],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "wv-back-the-blue",
-      "slug": "back-the-blue",
-      "name": "Back the Blue",
-      "displayName": "Back the Blue",
-      "baseName": "Back the Blue",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military",
-      "image": {
-        "path": "state-packs/west-virginia/plates/wv-back-the-blue.jpg",
-        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Back_the_Blue.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "back",
-        "blue",
-        "military"
-      ],
-      "variantOf": null,
-      "relatedPlates": []
-    },
-    {
-      "id": "wv-back-the-blue-wounded-in-the-line-of-duty-or-surviving-spouse",
-      "slug": "back-the-blue-wounded-in-the-line-of-duty-or-surviving-spouse",
-      "name": "Back the Blue Wounded in the Line of Duty or Surviving Spouse",
-      "displayName": "Back the Blue Wounded in the Line of Duty or Surviving Spouse",
-      "baseName": "Back the Blue Wounded in the Line of Duty or Surviving Spouse",
-      "variantLabel": null,
-      "plateType": "passenger",
-      "isCurrent": true,
-      "isActive": true,
-      "category": "Military",
-      "image": {
-        "path": "state-packs/west-virginia/plates/wv-back-the-blue-wounded-in-the-line-of-duty-or-surviving-spouse.jpg",
-        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Back_the_Blue_-_Wounded_in_Line_of_Duty.jpg"
-      },
-      "sponsor": null,
-      "notes": null,
-      "searchTerms": [
-        "back",
-        "blue",
-        "wounded",
-        "line",
-        "duty",
-        "surviving",
-        "spouse",
         "military"
       ],
       "variantOf": null,
