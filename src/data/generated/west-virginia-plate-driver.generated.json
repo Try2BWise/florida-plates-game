@@ -2,6 +2,2580 @@
   "schemaVersion": 2,
   "generatedDate": "2026-04-21",
   "generatedFrom": "src/data/west virginia-plate-master.json",
-  "plateCount": 0,
-  "plates": []
+  "plateCount": 101,
+  "plates": [
+    {
+      "id": "wv-a-f-a-m",
+      "slug": "a-f-a-m",
+      "name": "A.F. & A.M.",
+      "displayName": "A.F. & A.M.",
+      "baseName": "A.F. & A.M.",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-a-f-a-m.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Grand-Lodge-Ancient-Free-and-Accepted-Masons.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-amateur-radio",
+      "slug": "amateur-radio",
+      "name": "Amateur Radio",
+      "displayName": "Amateur Radio",
+      "baseName": "Amateur Radio",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-amateur-radio.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Amateur-Radio.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "amateur",
+        "radio",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-benevolent-protective-order-of-elks",
+      "slug": "benevolent-protective-order-of-elks",
+      "name": "Benevolent Protective Order of Elks",
+      "displayName": "Benevolent Protective Order of Elks",
+      "baseName": "Benevolent Protective Order of Elks",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-benevolent-protective-order-of-elks.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Benevolent-Protective-Order-of-Elks.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "benevolent",
+        "protective",
+        "order",
+        "elks",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-beni-kedem-temple",
+      "slug": "beni-kedem-temple",
+      "name": "Beni Kedem Temple",
+      "displayName": "Beni Kedem Temple",
+      "baseName": "Beni Kedem Temple",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-beni-kedem-temple.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Beni-Kedem.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "beni",
+        "kedem",
+        "temple",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-contractors-association-of-wv",
+      "slug": "contractors-association-of-wv",
+      "name": "Contractors Association of WV",
+      "displayName": "Contractors Association of WV",
+      "baseName": "Contractors Association of WV",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-contractors-association-of-wv.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/CAWV.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "contractors",
+        "association",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-distinguished-medal-of-valor",
+      "slug": "distinguished-medal-of-valor",
+      "name": "Distinguished Medal of Valor",
+      "displayName": "Distinguished Medal of Valor",
+      "baseName": "Distinguished Medal of Valor",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-distinguished-medal-of-valor.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Distinguished-Medal-of-Valor.jpeg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "distinguished",
+        "medal",
+        "valor",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-f-a-m-p-h-a",
+      "slug": "f-a-m-p-h-a",
+      "name": "F. & A.M. P.H.A.",
+      "displayName": "F. & A.M. P.H.A.",
+      "baseName": "F. & A.M. P.H.A.",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-f-a-m-p-h-a.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Most-Worshipful-Prince-Hall-Grand-Lodge.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-fraternal-order-of-police",
+      "slug": "fraternal-order-of-police",
+      "name": "Fraternal Order of Police",
+      "displayName": "Fraternal Order of Police",
+      "baseName": "Fraternal Order of Police",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-fraternal-order-of-police.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Fraternal-Order-of-Police.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "fraternal",
+        "order",
+        "police",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-friends-of-coal",
+      "slug": "friends-of-coal",
+      "name": "Friends of Coal",
+      "displayName": "Friends of Coal",
+      "baseName": "Friends of Coal",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-friends-of-coal.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Friends-of-Coal.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "friends",
+        "coal",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-gas-oil-association-of-wv",
+      "slug": "gas-oil-association-of-wv",
+      "name": "Gas & Oil Association of WV",
+      "displayName": "Gas & Oil Association of WV",
+      "baseName": "Gas & Oil Association of WV",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-gas-oil-association-of-wv.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Gas_and_Oil_Assoc_of_WV.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "gas",
+        "oil",
+        "association",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-in-god-we-trust",
+      "slug": "in-god-we-trust",
+      "name": "In God We Trust",
+      "displayName": "In God We Trust",
+      "baseName": "In God We Trust",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-in-god-we-trust.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/In-God-We-Trust.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "god",
+        "trust",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-knights-of-columbus",
+      "slug": "knights-of-columbus",
+      "name": "Knights of Columbus",
+      "displayName": "Knights of Columbus",
+      "baseName": "Knights of Columbus",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-knights-of-columbus.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Knights-of-Columbus.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "knights",
+        "columbus",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-league-of-postmasters",
+      "slug": "league-of-postmasters",
+      "name": "League of Postmasters",
+      "displayName": "League of Postmasters",
+      "baseName": "League of Postmasters",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-league-of-postmasters.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/League-of-Postmasters.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "league",
+        "postmasters",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-lions-international",
+      "slug": "lions-international",
+      "name": "Lions International",
+      "displayName": "Lions International",
+      "baseName": "Lions International",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-lions-international.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Lions-International.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "lions",
+        "international",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-osiris-shriner",
+      "slug": "osiris-shriner",
+      "name": "Osiris Shriner",
+      "displayName": "Osiris Shriner",
+      "baseName": "Osiris Shriner",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-osiris-shriner.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Osiris-Shriner.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "osiris",
+        "shriner",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-rotary-international",
+      "slug": "rotary-international",
+      "name": "Rotary International",
+      "displayName": "Rotary International",
+      "baseName": "Rotary International",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-rotary-international.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Rotary-International.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "rotary",
+        "international",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-west-virginia-realtor-s-association-plate",
+      "slug": "west-virginia-realtor-s-association-plate",
+      "name": "West Virginia Realtor's Association Plate",
+      "displayName": "West Virginia Realtor's Association Plate",
+      "baseName": "West Virginia Realtor's Association Plate",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-west-virginia-realtor-s-association-plate.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/rethumbnail.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "west",
+        "virginia",
+        "realtor",
+        "association",
+        "plate",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-wounded-in-the-line-of-duty",
+      "slug": "wounded-in-the-line-of-duty",
+      "name": "Wounded in the Line of Duty",
+      "displayName": "Wounded in the Line of Duty",
+      "baseName": "Wounded in the Line of Duty",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-wounded-in-the-line-of-duty.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Wounded-In-The-Line-Of-Duty.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "wounded",
+        "line",
+        "duty",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-911-enhanced-council",
+      "slug": "911-enhanced-council",
+      "name": "911-Enhanced Council",
+      "displayName": "911-Enhanced Council",
+      "baseName": "911-Enhanced Council",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-911-enhanced-council.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/911-Enhanced-Telecommunicator.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "911",
+        "enhanced",
+        "council",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-certified-firefighter",
+      "slug": "certified-firefighter",
+      "name": "Certified Firefighter",
+      "displayName": "Certified Firefighter",
+      "baseName": "Certified Firefighter",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-certified-firefighter.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Certified-Firefighter.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "certified",
+        "firefighter",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-deputy-sheriffs-association",
+      "slug": "deputy-sheriffs-association",
+      "name": "Deputy Sheriffs Association",
+      "displayName": "Deputy Sheriffs Association",
+      "baseName": "Deputy Sheriffs Association",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-deputy-sheriffs-association.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Deputy-Sheriffs-Association.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "deputy",
+        "sheriffs",
+        "association",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-emergency-medical-services",
+      "slug": "emergency-medical-services",
+      "name": "Emergency Medical Services",
+      "displayName": "Emergency Medical Services",
+      "baseName": "Emergency Medical Services",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-emergency-medical-services.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Emergency-Medical-Services.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "emergency",
+        "medical",
+        "services",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-fire-fighter",
+      "slug": "fire-fighter",
+      "name": "Fire Fighter",
+      "displayName": "Fire Fighter",
+      "baseName": "Fire Fighter",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-fire-fighter.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Fire-Fighter.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "fire",
+        "fighter",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-professional-firefighter",
+      "slug": "professional-firefighter",
+      "name": "Professional Firefighter",
+      "displayName": "Professional Firefighter",
+      "baseName": "Professional Firefighter",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-professional-firefighter.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Professional-Firefighter.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "professional",
+        "firefighter",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-volunteer-firefighter",
+      "slug": "volunteer-firefighter",
+      "name": "Volunteer Firefighter",
+      "displayName": "Volunteer Firefighter",
+      "baseName": "Volunteer Firefighter",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-volunteer-firefighter.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Volunteer-Firefighter.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "volunteer",
+        "firefighter",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-breast-cancer-awareness",
+      "slug": "breast-cancer-awareness",
+      "name": "Breast Cancer Awareness",
+      "displayName": "Breast Cancer Awareness",
+      "baseName": "Breast Cancer Awareness",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-breast-cancer-awareness.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Breast-Cancer-Awareness.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "breast",
+        "cancer",
+        "awareness",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-cure-childhood-cancer",
+      "slug": "cure-childhood-cancer",
+      "name": "Cure Childhood Cancer",
+      "displayName": "Cure Childhood Cancer",
+      "baseName": "Cure Childhood Cancer",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-cure-childhood-cancer.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/CCC.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "cure",
+        "childhood",
+        "cancer",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-hoops-children-s-family-hospital",
+      "slug": "hoops-children-s-family-hospital",
+      "name": "Hoops Children's Family Hospital",
+      "displayName": "Hoops Children's Family Hospital",
+      "baseName": "Hoops Children's Family Hospital",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-hoops-children-s-family-hospital.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/hh-thumbnail.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "hoops",
+        "children",
+        "family",
+        "hospital",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-mobility-impaired",
+      "slug": "mobility-impaired",
+      "name": "Mobility Impaired",
+      "displayName": "Mobility Impaired",
+      "baseName": "Mobility Impaired",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-mobility-impaired.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Mobility-Impaired.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "mobility",
+        "impaired",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-organ-donor",
+      "slug": "organ-donor",
+      "name": "Organ Donor",
+      "displayName": "Organ Donor",
+      "baseName": "Organ Donor",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-organ-donor.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Organ-Donor.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "organ",
+        "donor",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-wv-chiropractic-society",
+      "slug": "wv-chiropractic-society",
+      "name": "WV Chiropractic Society",
+      "displayName": "WV Chiropractic Society",
+      "baseName": "WV Chiropractic Society",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-wv-chiropractic-society.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/WV-Chiro-Society.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "chiropractic",
+        "society",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-9-11-commemorative",
+      "slug": "9-11-commemorative",
+      "name": "9-11 Commemorative",
+      "displayName": "9-11 Commemorative",
+      "baseName": "9-11 Commemorative",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-9-11-commemorative.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/9-11.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "commemorative",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-antique-vehicle",
+      "slug": "antique-vehicle",
+      "name": "Antique Vehicle",
+      "displayName": "Antique Vehicle",
+      "baseName": "Antique Vehicle",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-antique-vehicle.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Antique-Vehicle.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "antique",
+        "vehicle",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-classic-car",
+      "slug": "classic-car",
+      "name": "Classic Car",
+      "displayName": "Classic Car",
+      "baseName": "Classic Car",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-classic-car.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Classic-Car.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "classic",
+        "car",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-ffa-4h",
+      "slug": "ffa-4h",
+      "name": "FFA - 4H",
+      "displayName": "FFA - 4H",
+      "baseName": "FFA - 4H",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-ffa-4h.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/FFA-4-H.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ffa",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-standard",
+      "slug": "standard",
+      "name": "Standard",
+      "displayName": "Standard",
+      "baseName": "Standard",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-standard.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Standard.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "standard",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-united-we-stand",
+      "slug": "united-we-stand",
+      "name": "United We Stand",
+      "displayName": "United We Stand",
+      "baseName": "United We Stand",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-united-we-stand.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/United-We-Stand.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "united",
+        "stand",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-82nd-airborne-division-association",
+      "slug": "82nd-airborne-division-association",
+      "name": "82nd Airborne Division Association",
+      "displayName": "82nd Airborne Division Association",
+      "baseName": "82nd Airborne Division Association",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-82nd-airborne-division-association.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/82nd-Airborne-Div-Association.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "82nd",
+        "airborne",
+        "division",
+        "association",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-air-force-cross",
+      "slug": "air-force-cross",
+      "name": "Air Force Cross",
+      "displayName": "Air Force Cross",
+      "baseName": "Air Force Cross",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-air-force-cross.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Air-Force-Cross.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "air",
+        "force",
+        "cross",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-air-force-reserves",
+      "slug": "air-force-reserves",
+      "name": "Air Force Reserves",
+      "displayName": "Air Force Reserves",
+      "baseName": "Air Force Reserves",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-air-force-reserves.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Air-Force-Reserves.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "air",
+        "force",
+        "reserves",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-air-force-retired",
+      "slug": "air-force-retired",
+      "name": "Air Force Retired",
+      "displayName": "Air Force Retired",
+      "baseName": "Air Force Retired",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-air-force-retired.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Air-Force-Retired.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "air",
+        "force",
+        "retired",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-air-medal",
+      "slug": "air-medal",
+      "name": "Air Medal",
+      "displayName": "Air Medal",
+      "baseName": "Air Medal",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-air-medal.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Air-Medal_plate.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "air",
+        "medal",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-air-national-guard",
+      "slug": "air-national-guard",
+      "name": "Air National Guard",
+      "displayName": "Air National Guard",
+      "baseName": "Air National Guard",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-air-national-guard.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Air-National-Guard.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "air",
+        "national",
+        "guard",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-american-legion",
+      "slug": "american-legion",
+      "name": "American Legion",
+      "displayName": "American Legion",
+      "baseName": "American Legion",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-american-legion.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/American-Legion.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "american",
+        "legion",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-army-national-guard",
+      "slug": "army-national-guard",
+      "name": "Army National Guard",
+      "displayName": "Army National Guard",
+      "baseName": "Army National Guard",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-army-national-guard.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Army-National-Guard.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "army",
+        "national",
+        "guard",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-army-reserves",
+      "slug": "army-reserves",
+      "name": "Army Reserves",
+      "displayName": "Army Reserves",
+      "baseName": "Army Reserves",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-army-reserves.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Army-Reserves.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "army",
+        "reserves",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-army-retired",
+      "slug": "army-retired",
+      "name": "Army Retired",
+      "displayName": "Army Retired",
+      "baseName": "Army Retired",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-army-retired.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Army-Retired.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "army",
+        "retired",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-back-the-blue",
+      "slug": "back-the-blue",
+      "name": "Back the Blue",
+      "displayName": "Back the Blue",
+      "baseName": "Back the Blue",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-back-the-blue.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Back_the_Blue.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "back",
+        "blue",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-back-the-blue-wounded-in-the-line-of-duty-or-surviving-spouse",
+      "slug": "back-the-blue-wounded-in-the-line-of-duty-or-surviving-spouse",
+      "name": "Back the Blue Wounded in the Line of Duty or Surviving Spouse",
+      "displayName": "Back the Blue Wounded in the Line of Duty or Surviving Spouse",
+      "baseName": "Back the Blue Wounded in the Line of Duty or Surviving Spouse",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-back-the-blue-wounded-in-the-line-of-duty-or-surviving-spouse.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Back_the_Blue_-_Wounded_in_Line_of_Duty.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "back",
+        "blue",
+        "wounded",
+        "line",
+        "duty",
+        "surviving",
+        "spouse",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-bronze-star",
+      "slug": "bronze-star",
+      "name": "Bronze Star",
+      "displayName": "Bronze Star",
+      "baseName": "Bronze Star",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-bronze-star.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Bronze-Star.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "bronze",
+        "star",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-coast-guard-reserves",
+      "slug": "coast-guard-reserves",
+      "name": "Coast Guard Reserves",
+      "displayName": "Coast Guard Reserves",
+      "baseName": "Coast Guard Reserves",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-coast-guard-reserves.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Coast-Guard-Reserves.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "coast",
+        "guard",
+        "reserves",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-coast-guard-retired",
+      "slug": "coast-guard-retired",
+      "name": "Coast Guard Retired",
+      "displayName": "Coast Guard Retired",
+      "baseName": "Coast Guard Retired",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-coast-guard-retired.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Coast-Guard-Retired.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "coast",
+        "guard",
+        "retired",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-combat-infantry-badge",
+      "slug": "combat-infantry-badge",
+      "name": "Combat Infantry Badge",
+      "displayName": "Combat Infantry Badge",
+      "baseName": "Combat Infantry Badge",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-combat-infantry-badge.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Combat-Infantry-Badge.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "combat",
+        "infantry",
+        "badge",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-combat-medic",
+      "slug": "combat-medic",
+      "name": "Combat Medic",
+      "displayName": "Combat Medic",
+      "baseName": "Combat Medic",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-combat-medic.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Combat-Medic.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "combat",
+        "medic",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-disabled-american-veterans",
+      "slug": "disabled-american-veterans",
+      "name": "Disabled American Veterans",
+      "displayName": "Disabled American Veterans",
+      "baseName": "Disabled American Veterans",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-disabled-american-veterans.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Disaled-American-Veterans.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "disabled",
+        "american",
+        "veterans",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-disabled-veterans",
+      "slug": "disabled-veterans",
+      "name": "Disabled Veterans",
+      "displayName": "Disabled Veterans",
+      "baseName": "Disabled Veterans",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-disabled-veterans.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Disabled-Veterans.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "disabled",
+        "veterans",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-disabled-veterans-mobility-impaired",
+      "slug": "disabled-veterans-mobility-impaired",
+      "name": "Disabled Veterans Mobility Impaired",
+      "displayName": "Disabled Veterans Mobility Impaired",
+      "baseName": "Disabled Veterans Mobility Impaired",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-disabled-veterans-mobility-impaired.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Disabled-Veteran-Mobility-Impaired_thumb.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "disabled",
+        "veterans",
+        "mobility",
+        "impaired",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-distinguished-flying-cross",
+      "slug": "distinguished-flying-cross",
+      "name": "Distinguished Flying Cross",
+      "displayName": "Distinguished Flying Cross",
+      "baseName": "Distinguished Flying Cross",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-distinguished-flying-cross.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Distinguished-Flying-Cross.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "distinguished",
+        "flying",
+        "cross",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-distinguished-service-cross",
+      "slug": "distinguished-service-cross",
+      "name": "Distinguished Service Cross",
+      "displayName": "Distinguished Service Cross",
+      "baseName": "Distinguished Service Cross",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-distinguished-service-cross.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Distinguished-Service-Cross.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "distinguished",
+        "service",
+        "cross",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-former-prisoner-of-war",
+      "slug": "former-prisoner-of-war",
+      "name": "Former Prisoner of War",
+      "displayName": "Former Prisoner of War",
+      "baseName": "Former Prisoner of War",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-former-prisoner-of-war.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Former-POW.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "former",
+        "prisoner",
+        "war",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-gold-star-family",
+      "slug": "gold-star-family",
+      "name": "Gold Star Family",
+      "displayName": "Gold Star Family",
+      "baseName": "Gold Star Family",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-gold-star-family.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Gold-Star-Family.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "gold",
+        "star",
+        "family",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-korean-war-veteran",
+      "slug": "korean-war-veteran",
+      "name": "Korean War Veteran",
+      "displayName": "Korean War Veteran",
+      "baseName": "Korean War Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-korean-war-veteran.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Korean-War-Veteran.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "korean",
+        "war",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-marine-corps-league",
+      "slug": "marine-corps-league",
+      "name": "Marine Corps League",
+      "displayName": "Marine Corps League",
+      "baseName": "Marine Corps League",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-marine-corps-league.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Marine-Corps-League.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "marine",
+        "corps",
+        "league",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-marine-corps-reserves",
+      "slug": "marine-corps-reserves",
+      "name": "Marine Corps Reserves",
+      "displayName": "Marine Corps Reserves",
+      "baseName": "Marine Corps Reserves",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-marine-corps-reserves.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Marine-Corps-Reserves.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "marine",
+        "corps",
+        "reserves",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-marines-corps-retired",
+      "slug": "marines-corps-retired",
+      "name": "Marines Corps Retired",
+      "displayName": "Marines Corps Retired",
+      "baseName": "Marines Corps Retired",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-marines-corps-retired.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Marine-Corps-Retired.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "marines",
+        "corps",
+        "retired",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-medal-of-honor",
+      "slug": "medal-of-honor",
+      "name": "Medal of Honor",
+      "displayName": "Medal of Honor",
+      "baseName": "Medal of Honor",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-medal-of-honor.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Medal-of-Honor.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "medal",
+        "honor",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-navy-cross",
+      "slug": "navy-cross",
+      "name": "Navy Cross",
+      "displayName": "Navy Cross",
+      "baseName": "Navy Cross",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-navy-cross.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Navy-Cross.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "navy",
+        "cross",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-navy-reserve",
+      "slug": "navy-reserve",
+      "name": "Navy Reserve",
+      "displayName": "Navy Reserve",
+      "baseName": "Navy Reserve",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-navy-reserve.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Navy-Reserves.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "navy",
+        "reserve",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-navy-retired",
+      "slug": "navy-retired",
+      "name": "Navy Retired",
+      "displayName": "Navy Retired",
+      "baseName": "Navy Retired",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-navy-retired.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Navy-Retired.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "navy",
+        "retired",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-pearl-harbor-survivor",
+      "slug": "pearl-harbor-survivor",
+      "name": "Pearl Harbor Survivor",
+      "displayName": "Pearl Harbor Survivor",
+      "baseName": "Pearl Harbor Survivor",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-pearl-harbor-survivor.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Pearl-Harbor-Survivor.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "pearl",
+        "harbor",
+        "survivor",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-persian-gulf-veteran",
+      "slug": "persian-gulf-veteran",
+      "name": "Persian Gulf Veteran",
+      "displayName": "Persian Gulf Veteran",
+      "baseName": "Persian Gulf Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-persian-gulf-veteran.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Persian-Golf-Veteran.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "persian",
+        "gulf",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-purple-heart",
+      "slug": "purple-heart",
+      "name": "Purple Heart",
+      "displayName": "Purple Heart",
+      "baseName": "Purple Heart",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-purple-heart.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Purple-Heart.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "purple",
+        "heart",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-silver-star",
+      "slug": "silver-star",
+      "name": "Silver Star",
+      "displayName": "Silver Star",
+      "baseName": "Silver Star",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-silver-star.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Silver-Star.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "silver",
+        "star",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-veteran",
+      "slug": "veteran",
+      "name": "Veteran",
+      "displayName": "Veteran",
+      "baseName": "Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-veteran.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Veteran.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-vietnam-war-veteran",
+      "slug": "vietnam-war-veteran",
+      "name": "Vietnam War Veteran",
+      "displayName": "Vietnam War Veteran",
+      "baseName": "Vietnam War Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-vietnam-war-veteran.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Vietnam-War-Veteran.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "vietnam",
+        "war",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-war-on-terrorism-afghanistan",
+      "slug": "war-on-terrorism-afghanistan",
+      "name": "War On Terrorism - Afghanistan",
+      "displayName": "War On Terrorism - Afghanistan",
+      "baseName": "War On Terrorism - Afghanistan",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-war-on-terrorism-afghanistan.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/War-On-Terrorism-Afghanistan-Campaign.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "war",
+        "terrorism",
+        "afghanistan",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-war-on-terrorism-iraq",
+      "slug": "war-on-terrorism-iraq",
+      "name": "War on Terrorism - Iraq",
+      "displayName": "War on Terrorism - Iraq",
+      "baseName": "War on Terrorism - Iraq",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-war-on-terrorism-iraq.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/War-On-Terrorism-Iraq-Campaign.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "war",
+        "terrorism",
+        "iraq",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-women-veterans",
+      "slug": "women-veterans",
+      "name": "Women Veterans",
+      "displayName": "Women Veterans",
+      "baseName": "Women Veterans",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-women-veterans.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Women-Veterans.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "women",
+        "veterans",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-world-war-ii-veteran",
+      "slug": "world-war-ii-veteran",
+      "name": "World War II Veteran",
+      "displayName": "World War II Veteran",
+      "baseName": "World War II Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-world-war-ii-veteran.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/World-War-II-Veteran.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "world",
+        "war",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-character-education",
+      "slug": "character-education",
+      "name": "Character Education",
+      "displayName": "Character Education",
+      "baseName": "Character Education",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-character-education.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Character-Education.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "character",
+        "education",
+        "schools"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-educator",
+      "slug": "educator",
+      "name": "Educator",
+      "displayName": "Educator",
+      "baseName": "Educator",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-educator.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Educator.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "educator",
+        "schools"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-pupil-transportation",
+      "slug": "pupil-transportation",
+      "name": "Pupil Transportation",
+      "displayName": "Pupil Transportation",
+      "baseName": "Pupil Transportation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-pupil-transportation.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Pupil-Transportation.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "pupil",
+        "transportation",
+        "schools"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-bowlers",
+      "slug": "bowlers",
+      "name": "Bowlers",
+      "displayName": "Bowlers",
+      "baseName": "Bowlers",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-bowlers.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Bowler.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "bowlers",
+        "sports"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-wv-square-and-round-dance-federation",
+      "slug": "wv-square-and-round-dance-federation",
+      "name": "WV Square and Round Dance Federation",
+      "displayName": "WV Square and Round Dance Federation",
+      "baseName": "WV Square and Round Dance Federation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-wv-square-and-round-dance-federation.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Square-Round-Clog-Dancing.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "square",
+        "round",
+        "dance",
+        "federation",
+        "sports"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-alderson-broaddus-college",
+      "slug": "alderson-broaddus-college",
+      "name": "Alderson-Broaddus College",
+      "displayName": "Alderson-Broaddus College",
+      "baseName": "Alderson-Broaddus College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-alderson-broaddus-college.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Alderson-Broaddus-College.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "alderson",
+        "broaddus",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-concord-college",
+      "slug": "concord-college",
+      "name": "Concord College",
+      "displayName": "Concord College",
+      "baseName": "Concord College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-concord-college.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Concord-College.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "concord",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-davis-and-elkins",
+      "slug": "davis-and-elkins",
+      "name": "Davis and Elkins",
+      "displayName": "Davis and Elkins",
+      "baseName": "Davis and Elkins",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-davis-and-elkins.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Davis-and-Elkins.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "davis",
+        "elkins",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-marshall-university",
+      "slug": "marshall-university",
+      "name": "Marshall University",
+      "displayName": "Marshall University",
+      "baseName": "Marshall University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-marshall-university.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Marshall_new_plate.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "marshall",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-penn-state-alumni",
+      "slug": "penn-state-alumni",
+      "name": "Penn State Alumni",
+      "displayName": "Penn State Alumni",
+      "baseName": "Penn State Alumni",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-penn-state-alumni.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Penn-State-Alumni.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "penn",
+        "state",
+        "alumni",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-virginia-tech",
+      "slug": "virginia-tech",
+      "name": "Virginia Tech",
+      "displayName": "Virginia Tech",
+      "baseName": "Virginia Tech",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-virginia-tech.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Virginia-Tech.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "virginia",
+        "tech",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-wesleyan-college",
+      "slug": "wesleyan-college",
+      "name": "Wesleyan College",
+      "displayName": "Wesleyan College",
+      "baseName": "Wesleyan College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-wesleyan-college.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Wesleyan-College.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "wesleyan",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-west-virginia-state-college",
+      "slug": "west-virginia-state-college",
+      "name": "West Virginia State College",
+      "displayName": "West Virginia State College",
+      "baseName": "West Virginia State College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-west-virginia-state-college.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/West-Virginia-State-College.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "west",
+        "virginia",
+        "state",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-west-virginia-university",
+      "slug": "west-virginia-university",
+      "name": "West Virginia University",
+      "displayName": "West Virginia University",
+      "baseName": "West Virginia University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-west-virginia-university.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/WVU.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "west",
+        "virginia",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-wv-tech",
+      "slug": "wv-tech",
+      "name": "WV Tech",
+      "displayName": "WV Tech",
+      "baseName": "WV Tech",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-wv-tech.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/WV-Tech.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "tech",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-protect-pollinators",
+      "slug": "protect-pollinators",
+      "name": "Protect Pollinators",
+      "displayName": "Protect Pollinators",
+      "baseName": "Protect Pollinators",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-protect-pollinators.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Protect_Pollinators.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "protect",
+        "pollinators",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-whitewater-rafting",
+      "slug": "whitewater-rafting",
+      "name": "Whitewater Rafting",
+      "displayName": "Whitewater Rafting",
+      "baseName": "Whitewater Rafting",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-whitewater-rafting.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Whitewater.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "whitewater",
+        "rafting",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-wildlife-bluebird",
+      "slug": "wildlife-bluebird",
+      "name": "Wildlife - Bluebird",
+      "displayName": "Wildlife - Bluebird",
+      "baseName": "Wildlife - Bluebird",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-wildlife-bluebird.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Bluebird.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "wildlife",
+        "bluebird",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-wildlife-box-turtle",
+      "slug": "wildlife-box-turtle",
+      "name": "Wildlife - Box Turtle",
+      "displayName": "Wildlife - Box Turtle",
+      "baseName": "Wildlife - Box Turtle",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-wildlife-box-turtle.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Wildlife-Box-Turtle.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "wildlife",
+        "box",
+        "turtle",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-wildlife-brook-trout",
+      "slug": "wildlife-brook-trout",
+      "name": "Wildlife - Brook Trout",
+      "displayName": "Wildlife - Brook Trout",
+      "baseName": "Wildlife - Brook Trout",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-wildlife-brook-trout.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Trout.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "wildlife",
+        "brook",
+        "trout",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-wildlife-deer",
+      "slug": "wildlife-deer",
+      "name": "Wildlife - Deer",
+      "displayName": "Wildlife - Deer",
+      "baseName": "Wildlife - Deer",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-wildlife-deer.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Wildlife-Deer.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "wildlife",
+        "deer",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "wv-wildlife-eastern-elk",
+      "slug": "wildlife-eastern-elk",
+      "name": "Wildlife - Eastern Elk",
+      "displayName": "Wildlife - Eastern Elk",
+      "baseName": "Wildlife - Eastern Elk",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/west-virginia/plates/wv-wildlife-eastern-elk.jpg",
+        "remoteUrl": "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/PublishingImages/LicensePlateImages/Large/Elk.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "wildlife",
+        "eastern",
+        "elk",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    }
+  ]
 }
