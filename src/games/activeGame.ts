@@ -142,6 +142,30 @@ import {
   kentuckyMixedBagCategories,
   kentuckyRegionScoutCounties
 } from "../config/kentuckyGame";
+import ohioDriverData from "../data/generated/ohio-plate-driver.generated.json";
+import ohioLegacyIdMap from "../data/generated/ohio-legacy-id-map.generated.json";
+import {
+  ohioBadgeCounties,
+  ohioBadgeGroupLabels,
+  ohioBadgeGroupSymbols,
+  ohioBadgeIds,
+  ohioBadgePlateSets,
+  ohioGame,
+  ohioMixedBagCategories,
+  ohioRegionScoutCounties
+} from "../config/ohioGame";
+import westVirginiaDriverData from "../data/generated/west-virginia-plate-driver.generated.json";
+import westVirginiaLegacyIdMap from "../data/generated/west-virginia-legacy-id-map.generated.json";
+import {
+  westVirginiaBadgeCounties,
+  westVirginiaBadgeGroupLabels,
+  westVirginiaBadgeGroupSymbols,
+  westVirginiaBadgeIds,
+  westVirginiaBadgePlateSets,
+  westVirginiaGame,
+  westVirginiaMixedBagCategories,
+  westVirginiaRegionScoutCounties
+} from "../config/westVirginiaGame";
 import { plateCategories, type Plate, type PlateCategory } from "../types";
 import { getItem, setItem } from "../lib/persistentStorage";
 
@@ -389,6 +413,40 @@ function loadKentuckyPack() {
   };
 }
 
+function loadOhioPack() {
+  const plates = buildPlates(ohioDriverData);
+  return {
+    game: ohioGame,
+    badgeCounties: ohioBadgeCounties,
+    badgeGroupLabels: ohioBadgeGroupLabels,
+    badgeGroupSymbols: ohioBadgeGroupSymbols,
+    mixedBagCategories: ohioMixedBagCategories,
+    badgePlateSets: ohioBadgePlateSets,
+    badgeIds: ohioBadgeIds,
+    panhandleScoutCounties: ohioRegionScoutCounties,
+    legacyIdMap: ohioLegacyIdMap as Record<string, string>,
+    plates,
+    groupedPlates: buildGroupedPlates(plates),
+  };
+}
+
+function loadWestVirginiaPack() {
+  const plates = buildPlates(westVirginiaDriverData);
+  return {
+    game: westVirginiaGame,
+    badgeCounties: westVirginiaBadgeCounties,
+    badgeGroupLabels: westVirginiaBadgeGroupLabels,
+    badgeGroupSymbols: westVirginiaBadgeGroupSymbols,
+    mixedBagCategories: westVirginiaMixedBagCategories,
+    badgePlateSets: westVirginiaBadgePlateSets,
+    badgeIds: westVirginiaBadgeIds,
+    panhandleScoutCounties: westVirginiaRegionScoutCounties,
+    legacyIdMap: westVirginiaLegacyIdMap as Record<string, string>,
+    plates,
+    groupedPlates: buildGroupedPlates(plates),
+  };
+}
+
 function loadStatePack(stateId: string) {
   switch (stateId) {
     case "mississippi": return loadMississippiPack();
@@ -402,6 +460,8 @@ function loadStatePack(stateId: string) {
     case "georgia": return loadGeorgiaPack();
     case "kansas": return loadKansasPack();
     case "kentucky": return loadKentuckyPack();
+    case "ohio": return loadOhioPack();
+    case "west-virginia": return loadWestVirginiaPack();
     case "florida":
     default:
       return loadFloridaPack();
@@ -435,7 +495,9 @@ export const plateCountsByState: Record<string, number> = {
   kentucky: kentuckyDriverData.plates.length,
   mississippi: mississippiDriverData.plates.length,
   missouri: missouriDriverData.plates.length,
+  ohio: ohioDriverData.plates.length,
   tennessee: tennesseeDriverData.plates.length,
+  "west-virginia": westVirginiaDriverData.plates.length,
 };
 
 /* ── Active exports ── */

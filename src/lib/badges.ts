@@ -954,6 +954,92 @@ export const badgeDefinitions: BadgeDefinition[] = [
     description: "Earn every regional explorer badge.",
     group: "regional",
     availableIn: "v1.4"
+  },
+  // Ohio Explorer region badges
+  {
+    id: "oh-northwest-explorer",
+    name: "Northwest Ohio Explorer",
+    description: "Find a plate in a Northwest Ohio county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "oh-northeast-explorer",
+    name: "Northeast Ohio Explorer",
+    description: "Find a plate in a Northeast Ohio county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "oh-central-explorer",
+    name: "Central Ohio Explorer",
+    description: "Find a plate in a Central Ohio county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "oh-southwest-explorer",
+    name: "Southwest Ohio Explorer",
+    description: "Find a plate in a Southwest Ohio county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "oh-southeast-explorer",
+    name: "Southeast Ohio Explorer",
+    description: "Find a plate in a Southeast (Appalachian) Ohio county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-ohio",
+    name: "All Around Ohio",
+    description: "Earn every regional explorer badge.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  // West Virginia Explorer region badges
+  {
+    id: "wv-eastern-panhandle-explorer",
+    name: "Eastern Panhandle Explorer",
+    description: "Find a plate in an Eastern Panhandle county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "wv-potomac-highlands-explorer",
+    name: "Potomac Highlands Explorer",
+    description: "Find a plate in a Potomac Highlands county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "wv-mountaineer-country-explorer",
+    name: "Mountaineer Country Explorer",
+    description: "Find a plate in a Mountaineer Country or Northern Panhandle county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "wv-metro-valley-explorer",
+    name: "Metro Valley Explorer",
+    description: "Find a plate in a Metro Valley county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "wv-new-river-mountain-lakes-explorer",
+    name: "New River & Mountain Lakes Explorer",
+    description: "Find a plate in a New River or Mountain Lakes county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-west-virginia",
+    name: "All Around West Virginia",
+    description: "Earn every regional explorer badge.",
+    group: "regional",
+    availableIn: "v1.4"
   }
 ];
 

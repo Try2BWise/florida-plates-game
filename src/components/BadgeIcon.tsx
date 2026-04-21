@@ -125,6 +125,20 @@ const customBadgeArtById: Record<string, string> = {
   "ca-sacramento-explorer": "compass-new.png",
   "ca-far-north-explorer": "mountain.png",
   "all-around-california": "bear.png",
+  // Ohio
+  "oh-northwest-explorer": "compass-new.png",
+  "oh-northeast-explorer": "compass-new.png",
+  "oh-central-explorer": "compass-new.png",
+  "oh-southwest-explorer": "compass-new.png",
+  "oh-southeast-explorer": "mountain.png",
+  "all-around-ohio": "compass-new.png",
+  // West Virginia
+  "wv-eastern-panhandle-explorer": "compass-new.png",
+  "wv-potomac-highlands-explorer": "mountain.png",
+  "wv-mountaineer-country-explorer": "compass-new.png",
+  "wv-metro-valley-explorer": "compass-new.png",
+  "wv-new-river-mountain-lakes-explorer": "water-wave.png",
+  "all-around-west-virginia": "mountain.png",
 };
 
 export function BadgeIcon({ badge, size = 96, className = "" }: BadgeIconProps) {

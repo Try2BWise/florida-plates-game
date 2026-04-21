@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 2,
+  "state": "Ohio",
+  "generatedDate": "2026-04-21",
+  "description": "Ohio license plates sourced from the Ohio Bureau of Motor Vehicles.",
+  "sourceFiles": [
+    "https://www.bmv.ohio.gov/vr-sp-geninfo.aspx"
+  ],
+  "plates": []
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 2,
+  "state": "West Virginia",
+  "generatedDate": "2026-04-21",
+  "description": "West Virginia license plates sourced from the West Virginia Division of Motor Vehicles.",
+  "sourceFiles": [
+    "https://transportation.wv.gov/DMV/Vehicle-Services/License-Plates/Special-Plates/"
+  ],
+  "plates": []
+}
