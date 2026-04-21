@@ -1,0 +1,4511 @@
+{
+  "schemaVersion": 2,
+  "state": "Minnesota",
+  "generatedDate": "2026-04-21",
+  "description": "Minnesota license plates sourced from the Minnesota Department of Public Safety (Driver and Vehicle Services).",
+  "sourceFiles": [
+    "https://dps.mn.gov/divisions/dvs/vehicle/license-plates"
+  ],
+  "plates": [
+    {
+      "id": "mn-amateur-radio",
+      "slug": "amateur-radio",
+      "name": "Amateur Radio",
+      "displayName": "Amateur Radio",
+      "baseName": "Amateur Radio",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-amateur-radio.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Amateur-Radio-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "amateur",
+        "radio",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Amateur Radio"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "amateur-radio",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-blackout",
+      "slug": "blackout",
+      "name": "Blackout",
+      "displayName": "Blackout",
+      "baseName": "Blackout",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-blackout.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Blackout-Blank-1500x763.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "blackout",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Blackout"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "blackout-blank",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-citizens-band-radio",
+      "slug": "citizens-band-radio",
+      "name": "Citizens Band Radio",
+      "displayName": "Citizens Band Radio",
+      "baseName": "Citizens Band Radio",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-citizens-band-radio.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Citizen-Band-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "citizens",
+        "band",
+        "radio",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Amateur Radio"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "citizen-band",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-honorary-consul",
+      "slug": "honorary-consul",
+      "name": "Honorary Consul",
+      "displayName": "Honorary Consul",
+      "baseName": "Honorary Consul",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-honorary-consul.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Honorary-Consul-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "honorary",
+        "consul",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Honorary Consul"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "honorary-consul",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-lion-s-club",
+      "slug": "lion-s-club",
+      "name": "Lion's Club",
+      "displayName": "Lion's Club",
+      "baseName": "Lion's Club",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-lion-s-club.png",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Lions-Club-Text-1500x751.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "lion",
+        "club",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Lions Club"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "lions-club",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-minnesota-100-club",
+      "slug": "minnesota-100-club",
+      "name": "Minnesota 100 Club",
+      "displayName": "Minnesota 100 Club",
+      "baseName": "Minnesota 100 Club",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-minnesota-100-club.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Minnesota-100-Club-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "100",
+        "club",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN 100 Club"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "minnesota-100-club",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-missing-and-murdered-indigenous-relatives-mmir",
+      "slug": "missing-and-murdered-indigenous-relatives-mmir",
+      "name": "Missing and Murdered Indigenous Relatives (MMIR)",
+      "displayName": "Missing and Murdered Indigenous Relatives (MMIR)",
+      "baseName": "Missing and Murdered Indigenous Relatives (MMIR)",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-missing-and-murdered-indigenous-relatives-mmir.png",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/MMIR-Text-1500x751.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "missing",
+        "murdered",
+        "indigenous",
+        "relatives",
+        "mmir",
+        "civic"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MMIR"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "mmir",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-agriculture",
+      "slug": "agriculture",
+      "name": "Agriculture",
+      "displayName": "Agriculture",
+      "baseName": "Agriculture",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-agriculture.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Agriculture-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "agriculture",
+        "commercial"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Agriculture"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "agriculture",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-law-enforcement-memorial",
+      "slug": "law-enforcement-memorial",
+      "name": "Law Enforcement Memorial",
+      "displayName": "Law Enforcement Memorial",
+      "baseName": "Law Enforcement Memorial",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-law-enforcement-memorial.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Law-Enforcement-Memorial-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "law",
+        "enforcement",
+        "memorial",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Law Enforcement Memorial"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "law-enforcement-memorial",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-retired-firefighter",
+      "slug": "retired-firefighter",
+      "name": "Retired Firefighter",
+      "displayName": "Retired Firefighter",
+      "baseName": "Retired Firefighter",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-retired-firefighter.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Retired-Firefighter-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "retired",
+        "firefighter",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Firefighter"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "retired-firefighter",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-volunteer-firefighter",
+      "slug": "volunteer-firefighter",
+      "name": "Volunteer Firefighter",
+      "displayName": "Volunteer Firefighter",
+      "baseName": "Volunteer Firefighter",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-volunteer-firefighter.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Firefighter-Text-1500x751_0.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "volunteer",
+        "firefighter",
+        "first responders"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Firefighter"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "firefighter-text-1500x751-0",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-disability",
+      "slug": "disability",
+      "name": "Disability",
+      "displayName": "Disability",
+      "baseName": "Disability",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-disability.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Standard-MC-Disability-Text-Cropped-1500x842.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "disability",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Disability"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "standard-mc-disability-text-cropped",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-standard-disability",
+      "slug": "standard-disability",
+      "name": "Standard Disability",
+      "displayName": "Standard Disability",
+      "baseName": "Standard Disability",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-standard-disability.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Standard-Passenger-Dis.-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "standard",
+        "disability",
+        "health"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Disability"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "standard-passenger-dis",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-classic",
+      "slug": "classic",
+      "name": "Classic",
+      "displayName": "Classic",
+      "baseName": "Classic",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-classic.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Standard-Classic-MC-Text-Cropped-1500x847.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "classic",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collector Class"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "standard-classic-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-collector",
+      "slug": "collector",
+      "name": "Collector",
+      "displayName": "Collector",
+      "baseName": "Collector",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-collector.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Standard-Collector-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "collector",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collector Class"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "standard-collector",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-pioneer",
+      "slug": "pioneer",
+      "name": "Pioneer",
+      "displayName": "Pioneer",
+      "baseName": "Pioneer",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-pioneer.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Standard-Pioneer-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "pioneer",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collector Class"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "standard-pioneer",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-street-rod",
+      "slug": "street-rod",
+      "name": "Street Rod",
+      "displayName": "Street Rod",
+      "baseName": "Street Rod",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-street-rod.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Standard-Street-Rod-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "street",
+        "rod",
+        "heritage"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collector Class"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "standard-street-rod",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-afghanistan-war-veteran",
+      "slug": "afghanistan-war-veteran",
+      "name": "Afghanistan War Veteran",
+      "displayName": "Afghanistan War Veteran",
+      "baseName": "Afghanistan War Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-afghanistan-war-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Afghan-War-Campaign-Medal-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "afghanistan",
+        "war",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-afghan-war-campaign-medal",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-american-legion",
+      "slug": "american-legion",
+      "name": "American Legion",
+      "displayName": "American Legion",
+      "baseName": "American Legion",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-american-legion.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/American-Legion-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "american",
+        "legion",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "american-legion",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-armed-forces-expeditionary-medal",
+      "slug": "armed-forces-expeditionary-medal",
+      "name": "Armed Forces Expeditionary Medal",
+      "displayName": "Armed Forces Expeditionary Medal",
+      "baseName": "Armed Forces Expeditionary Medal",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-armed-forces-expeditionary-medal.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Armed-Forces-Expeditionary-Medal-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "armed",
+        "forces",
+        "expeditionary",
+        "medal",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-armed-forces-expeditionary-medal",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-bronze-star-veteran",
+      "slug": "bronze-star-veteran",
+      "name": "Bronze Star Veteran",
+      "displayName": "Bronze Star Veteran",
+      "baseName": "Bronze Star Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-bronze-star-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Bronze-Star-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "bronze",
+        "star",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-bronze-star",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-combat-wounded-purple-heart-veteran",
+      "slug": "combat-wounded-purple-heart-veteran",
+      "name": "Combat Wounded (Purple Heart) Veteran",
+      "displayName": "Combat Wounded (Purple Heart) Veteran",
+      "baseName": "Combat Wounded (Purple Heart) Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-combat-wounded-purple-heart-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Combat-Wounded-Purple-Heart-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "combat",
+        "wounded",
+        "purple",
+        "heart",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-combat-wounded-purple-heart",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-congressional-medal-of-honor-veteran",
+      "slug": "congressional-medal-of-honor-veteran",
+      "name": "Congressional Medal of Honor Veteran",
+      "displayName": "Congressional Medal of Honor Veteran",
+      "baseName": "Congressional Medal of Honor Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-congressional-medal-of-honor-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Medal-of-Honor-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "congressional",
+        "medal",
+        "honor",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-medal-of-honor",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-disabled-american-veteran-organization",
+      "slug": "disabled-american-veteran-organization",
+      "name": "Disabled American Veteran Organization",
+      "displayName": "Disabled American Veteran Organization",
+      "baseName": "Disabled American Veteran Organization",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-disabled-american-veteran-organization.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Disabled-American-Vet-Org-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "disabled",
+        "american",
+        "veteran",
+        "organization",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "disabled-american-vet-org",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-ex-pow-veteran",
+      "slug": "ex-pow-veteran",
+      "name": "Ex-POW Veteran",
+      "displayName": "Ex-POW Veteran",
+      "baseName": "Ex-POW Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-ex-pow-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Ex-POW-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "pow",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-ex-pow",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-global-war-on-terror-gwot-service-medal-veteran",
+      "slug": "global-war-on-terror-gwot-service-medal-veteran",
+      "name": "Global War on Terror (GWOT) Service Medal Veteran",
+      "displayName": "Global War on Terror (GWOT) Service Medal Veteran",
+      "baseName": "Global War on Terror (GWOT) Service Medal Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-global-war-on-terror-gwot-service-medal-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-GWOT-Service-Medal-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "global",
+        "war",
+        "terror",
+        "gwot",
+        "service",
+        "medal",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-gwot-service-medal",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-global-war-on-terror-gwot-veteran",
+      "slug": "global-war-on-terror-gwot-veteran",
+      "name": "Global War on Terror (GWOT) Veteran",
+      "displayName": "Global War on Terror (GWOT) Veteran",
+      "baseName": "Global War on Terror (GWOT) Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-global-war-on-terror-gwot-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-GWOT-Expeditionary-Medal-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "global",
+        "war",
+        "terror",
+        "gwot",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-gwot-expeditionary-medal",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-gold-star-family",
+      "slug": "gold-star-family",
+      "name": "Gold Star Family",
+      "displayName": "Gold Star Family",
+      "baseName": "Gold Star Family",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-gold-star-family.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Gold-Star-Family-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "gold",
+        "star",
+        "family",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "gold-star-family",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-gulf-war-veteran",
+      "slug": "gulf-war-veteran",
+      "name": "Gulf War Veteran",
+      "displayName": "Gulf War Veteran",
+      "baseName": "Gulf War Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-gulf-war-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Gulf-War-Desert-Storm-Medal-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "gulf",
+        "war",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-gulf-war-desert-storm-medal",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-gulf-war-veteran-soldier-at-arms",
+      "slug": "gulf-war-veteran-soldier-at-arms",
+      "name": "Gulf War Veteran Soldier at Arms",
+      "displayName": "Gulf War Veteran Soldier at Arms",
+      "baseName": "Gulf War Veteran Soldier at Arms",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-gulf-war-veteran-soldier-at-arms.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Gulf-War-Soldier-At-Arms-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "gulf",
+        "war",
+        "veteran",
+        "soldier",
+        "arms",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-gulf-war-soldier-at-arms",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-iraq-war-veteran",
+      "slug": "iraq-war-veteran",
+      "name": "Iraq War Veteran",
+      "displayName": "Iraq War Veteran",
+      "baseName": "Iraq War Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-iraq-war-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Iraq-War-Campaign-Medal-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "iraq",
+        "war",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-iraq-war-campaign-medal",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-korean-defense-service-veteran",
+      "slug": "korean-defense-service-veteran",
+      "name": "Korean Defense Service Veteran",
+      "displayName": "Korean Defense Service Veteran",
+      "baseName": "Korean Defense Service Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-korean-defense-service-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Korean-Defense-Service-Medal-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "korean",
+        "defense",
+        "service",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-korean-defense-service-medal",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-korean-war-veteran",
+      "slug": "korean-war-veteran",
+      "name": "Korean War Veteran",
+      "displayName": "Korean War Veteran",
+      "baseName": "Korean War Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-korean-war-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Korean-Service-Medal-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "korean",
+        "war",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-korean-service-medal",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-korean-war-veteran-soldier-at-arms",
+      "slug": "korean-war-veteran-soldier-at-arms",
+      "name": "Korean War Veteran Soldier at Arms",
+      "displayName": "Korean War Veteran Soldier at Arms",
+      "baseName": "Korean War Veteran Soldier at Arms",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-korean-war-veteran-soldier-at-arms.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Korean-Soldier-At-Arms-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "korean",
+        "war",
+        "veteran",
+        "soldier",
+        "arms",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-korean-soldier-at-arms",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-laos-war-veteran",
+      "slug": "laos-war-veteran",
+      "name": "Laos War Veteran",
+      "displayName": "Laos War Veteran",
+      "baseName": "Laos War Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-laos-war-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Laos-War-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "laos",
+        "war",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-laos-war",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-national-guard",
+      "slug": "national-guard",
+      "name": "National Guard",
+      "displayName": "National Guard",
+      "baseName": "National Guard",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-national-guard.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/National-Guard-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "national",
+        "guard",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "national-guard",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-pearl-harbor-survivor-veteran",
+      "slug": "pearl-harbor-survivor-veteran",
+      "name": "Pearl Harbor Survivor Veteran",
+      "displayName": "Pearl Harbor Survivor Veteran",
+      "baseName": "Pearl Harbor Survivor Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-pearl-harbor-survivor-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Pearl-Harbor-Survivor-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "pearl",
+        "harbor",
+        "survivor",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-pearl-harbor-survivor",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-proud-to-be-a-veteran",
+      "slug": "proud-to-be-a-veteran",
+      "name": "Proud to be a Veteran",
+      "displayName": "Proud to be a Veteran",
+      "baseName": "Proud to be a Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-proud-to-be-a-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Proud-to-be-a-Veteran-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "proud",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "proud-to-be-a-veteran",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-ready-reserve",
+      "slug": "ready-reserve",
+      "name": "Ready Reserve",
+      "displayName": "Ready Reserve",
+      "baseName": "Ready Reserve",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-ready-reserve.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Ready-Reserve-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "ready",
+        "reserve",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "ready-reserve",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-silver-star-veteran",
+      "slug": "silver-star-veteran",
+      "name": "Silver Star Veteran",
+      "displayName": "Silver Star Veteran",
+      "baseName": "Silver Star Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-silver-star-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Silver-Star-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "silver",
+        "star",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-silver-star",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-veteran-of-foreign-wars-vfw",
+      "slug": "veteran-of-foreign-wars-vfw",
+      "name": "Veteran of Foreign Wars (VFW)",
+      "displayName": "Veteran of Foreign Wars (VFW)",
+      "baseName": "Veteran of Foreign Wars (VFW)",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-veteran-of-foreign-wars-vfw.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Veteran-of-Foreign-Wars-VFW-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "veteran",
+        "foreign",
+        "wars",
+        "vfw",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "veteran-of-foreign-wars-vfw",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-vietnam-veteran",
+      "slug": "vietnam-veteran",
+      "name": "Vietnam Veteran",
+      "displayName": "Vietnam Veteran",
+      "baseName": "Vietnam Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-vietnam-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Vietnam-Service-Medal-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "vietnam",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-vietnam-service-medal",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-vietnam-veteran-soldier-at-arms",
+      "slug": "vietnam-veteran-soldier-at-arms",
+      "name": "Vietnam Veteran Soldier at Arms",
+      "displayName": "Vietnam Veteran Soldier at Arms",
+      "baseName": "Vietnam Veteran Soldier at Arms",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-vietnam-veteran-soldier-at-arms.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Vietnam-Soldier-At-Arms-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "vietnam",
+        "veteran",
+        "soldier",
+        "arms",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-vietnam-soldier-at-arms",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-woman-veteran",
+      "slug": "woman-veteran",
+      "name": "Woman Veteran",
+      "displayName": "Woman Veteran",
+      "baseName": "Woman Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-woman-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Woman-Veteran-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "woman",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-woman-veteran",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-world-war-ii-veteran",
+      "slug": "world-war-ii-veteran",
+      "name": "World War II Veteran",
+      "displayName": "World War II Veteran",
+      "baseName": "World War II Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-world-war-ii-veteran.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-World-War-II-Service-Medal-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "world",
+        "war",
+        "veteran",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-world-war-ii-service-medal",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-world-war-ii-veteran-soldier-at-arms",
+      "slug": "world-war-ii-veteran-soldier-at-arms",
+      "name": "World War II Veteran Soldier at Arms",
+      "displayName": "World War II Veteran Soldier at Arms",
+      "baseName": "World War II Veteran Soldier at Arms",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-world-war-ii-veteran-soldier-at-arms.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-World-War-II-Soldier-At-Arms-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "world",
+        "war",
+        "veteran",
+        "soldier",
+        "arms",
+        "military"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-world-war-ii-soldier-at-arms",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-afghanistan-war-veteran-mc",
+      "slug": "afghanistan-war-veteran-mc",
+      "name": "Afghanistan War Veteran (Motorcycle)",
+      "displayName": "Afghanistan War Veteran (Motorcycle)",
+      "baseName": "Afghanistan War Veteran",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-afghanistan-war-veteran-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Afghan-War-MC-Text-Cropped-1500x844.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "afghanistan",
+        "war",
+        "veteran",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-afghan-war-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-agriculture-mc",
+      "slug": "agriculture-mc",
+      "name": "Agriculture (Motorcycle)",
+      "displayName": "Agriculture (Motorcycle)",
+      "baseName": "Agriculture",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-agriculture-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Agriculture-MC-Blank-Cropped-1500x844.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "agriculture",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Agriculture"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "agriculture-mc-blank-cropped",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-blackout-mc",
+      "slug": "blackout-mc",
+      "name": "Blackout (Motorcycle)",
+      "displayName": "Blackout (Motorcycle)",
+      "baseName": "Blackout",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-blackout-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Blackout-MC-Blank-Cropped-1500x847.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "blackout",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Blackout"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "blackout-mc-blank-cropped",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-combat-wounded-purple-heart-veteran-mc",
+      "slug": "combat-wounded-purple-heart-veteran-mc",
+      "name": "Combat Wounded (Purple Heart) Veteran (Motorcycle)",
+      "displayName": "Combat Wounded (Purple Heart) Veteran (Motorcycle)",
+      "baseName": "Combat Wounded (Purple Heart) Veteran",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-combat-wounded-purple-heart-veteran-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Combat-Wounded-Purple-Heart-MC-Text-Cropped-1500x846.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "combat",
+        "wounded",
+        "purple",
+        "heart",
+        "veteran",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-combat-wounded-purple-heart-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-ex-pow-veteran-mc",
+      "slug": "ex-pow-veteran-mc",
+      "name": "Ex-POW Veteran (Motorcycle)",
+      "displayName": "Ex-POW Veteran (Motorcycle)",
+      "baseName": "Ex-POW Veteran",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-ex-pow-veteran-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Ex-POW-MC-Text-Cropped-1500x846.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "pow",
+        "veteran",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-ex-pow-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-global-war-on-terror-gwot-veteran-mc",
+      "slug": "global-war-on-terror-gwot-veteran-mc",
+      "name": "Global War on Terror (GWOT) Veteran (Motorcycle)",
+      "displayName": "Global War on Terror (GWOT) Veteran (Motorcycle)",
+      "baseName": "Global War on Terror (GWOT) Veteran",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-global-war-on-terror-gwot-veteran-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-GWOT-Medal-MC-Text-Cropped-1500x846.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "global",
+        "war",
+        "terror",
+        "gwot",
+        "veteran",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-gwot-medal-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-gold-star-family-mc",
+      "slug": "gold-star-family-mc",
+      "name": "Gold Star Family (Motorcycle)",
+      "displayName": "Gold Star Family (Motorcycle)",
+      "baseName": "Gold Star Family",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-gold-star-family-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Gold-Star-Family-MC-Text-Cropped-1500x844.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "gold",
+        "star",
+        "family",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "gold-star-family-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-gulf-war-veteran-mc",
+      "slug": "gulf-war-veteran-mc",
+      "name": "Gulf War Veteran (Motorcycle)",
+      "displayName": "Gulf War Veteran (Motorcycle)",
+      "baseName": "Gulf War Veteran",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-gulf-war-veteran-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Gulf-War-MC-Text-Cropped-1500x844.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "gulf",
+        "war",
+        "veteran",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-gulf-war-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-iraq-war-veteran-mc",
+      "slug": "iraq-war-veteran-mc",
+      "name": "Iraq War Veteran (Motorcycle)",
+      "displayName": "Iraq War Veteran (Motorcycle)",
+      "baseName": "Iraq War Veteran",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-iraq-war-veteran-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Iraq-War-MC-Text-Cropped-1500x844.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "iraq",
+        "war",
+        "veteran",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-iraq-war-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-korean-defense-service-veteran-mc",
+      "slug": "korean-defense-service-veteran-mc",
+      "name": "Korean Defense Service Veteran (Motorcycle)",
+      "displayName": "Korean Defense Service Veteran (Motorcycle)",
+      "baseName": "Korean Defense Service Veteran",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-korean-defense-service-veteran-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Korean-Defense-MC-Text-Cropped-1500x844.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "korean",
+        "defense",
+        "service",
+        "veteran",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-korean-defense-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-law-enforcement-memorial-mc",
+      "slug": "law-enforcement-memorial-mc",
+      "name": "Law Enforcement Memorial (Motorcycle)",
+      "displayName": "Law Enforcement Memorial (Motorcycle)",
+      "baseName": "Law Enforcement Memorial",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-law-enforcement-memorial-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Law-Enforcement-Memorial-MC-Text-Cropped-1500x847.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "law",
+        "enforcement",
+        "memorial",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Law Enforcement Memorial"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "law-enforcement-memorial-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-lion-s-club-mc",
+      "slug": "lion-s-club-mc",
+      "name": "Lion's Club (Motorcycle)",
+      "displayName": "Lion's Club (Motorcycle)",
+      "baseName": "Lion's Club",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-lion-s-club-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Lions-Club-MC-Text-Cropped-1500x847.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "lion",
+        "club",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Lions Club"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "lions-club-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-lynx-mc",
+      "slug": "lynx-mc",
+      "name": "Lynx (Motorcycle)",
+      "displayName": "Lynx (Motorcycle)",
+      "baseName": "Lynx",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-lynx-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/MN-Sports-Lynx-MC-Text-Cropped-1500x841.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "lynx",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Pro Sports"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "mn-sports-lynx-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-minnesota-100-club-mc",
+      "slug": "minnesota-100-club-mc",
+      "name": "Minnesota 100 Club (Motorcycle)",
+      "displayName": "Minnesota 100 Club (Motorcycle)",
+      "baseName": "Minnesota 100 Club",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-minnesota-100-club-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Minnesota-100-Club-MC-Blank-Cropped-1500x846.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "100",
+        "club",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN 100 Club"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "minnesota-100-club-mc-blank-cropped",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-minnesota-golf-mc",
+      "slug": "minnesota-golf-mc",
+      "name": "Minnesota Golf (Motorcycle)",
+      "displayName": "Minnesota Golf (Motorcycle)",
+      "baseName": "Minnesota Golf",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-minnesota-golf-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Minnesota-Golf-MC-Text-Cropped-1500x846.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "golf",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Golf"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "minnesota-golf-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-minnesota-united-mc",
+      "slug": "minnesota-united-mc",
+      "name": "Minnesota United (Motorcycle)",
+      "displayName": "Minnesota United (Motorcycle)",
+      "baseName": "Minnesota United",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-minnesota-united-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/MN-Sports-United-MC-Text-Cropped.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "united",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Pro Sports"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "mn-sports-united-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-missing-and-murdered-indigenous-relatives-mmir-mc",
+      "slug": "missing-and-murdered-indigenous-relatives-mmir-mc",
+      "name": "Missing and Murdered Indigenous Relatives (MMIR) (Motorcycle)",
+      "displayName": "Missing and Murdered Indigenous Relatives (MMIR) (Motorcycle)",
+      "baseName": "Missing and Murdered Indigenous Relatives (MMIR)",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-missing-and-murdered-indigenous-relatives-mmir-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/MMIR-MC-Text-Cropped-1500x814.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "missing",
+        "murdered",
+        "indigenous",
+        "relatives",
+        "mmir",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MMIR"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "mmir-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-moped",
+      "slug": "moped",
+      "name": "Moped",
+      "displayName": "Moped",
+      "baseName": "Moped",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-moped.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Standard-Moped-Text-Cropped-1500x842.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "moped",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Motorcycle"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "standard-moped-text-cropped",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-proud-to-be-a-veteran-mc",
+      "slug": "proud-to-be-a-veteran-mc",
+      "name": "Proud to be a Veteran (Motorcycle)",
+      "displayName": "Proud to be a Veteran (Motorcycle)",
+      "baseName": "Proud to be a Veteran",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-proud-to-be-a-veteran-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Proud-to-be-a-Veteran-MC-Text-Cropped-1500x849.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "proud",
+        "veteran",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "proud-to-be-a-veteran-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-retired-firefighter-mc",
+      "slug": "retired-firefighter-mc",
+      "name": "Retired Firefighter (Motorcycle)",
+      "displayName": "Retired Firefighter (Motorcycle)",
+      "baseName": "Retired Firefighter",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-retired-firefighter-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Retired-Firefighter-MC-Text-Cropped-1500x844.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "retired",
+        "firefighter",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Firefighter"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "retired-firefighter-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-standard",
+      "slug": "standard",
+      "name": "Standard",
+      "displayName": "Standard",
+      "baseName": "Standard",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-standard.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Standard-MC-Text-Cropped.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "standard",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Motorcycle"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "standard-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-timberwolves-mc",
+      "slug": "timberwolves-mc",
+      "name": "Timberwolves (Motorcycle)",
+      "displayName": "Timberwolves (Motorcycle)",
+      "baseName": "Timberwolves",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-timberwolves-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/MN-Sports-Timberwolves-MC-Text-Cropped-1500x841.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "timberwolves",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Pro Sports"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "mn-sports-timberwolves-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-twins-mc",
+      "slug": "twins-mc",
+      "name": "Twins (Motorcycle)",
+      "displayName": "Twins (Motorcycle)",
+      "baseName": "Twins",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-twins-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/MN-Sports-Twins-MC-Text-Cropped-1500x842.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "twins",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Pro Sports"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "mn-sports-twins-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-vertical",
+      "slug": "vertical",
+      "name": "Vertical",
+      "displayName": "Vertical",
+      "baseName": "Vertical",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-vertical.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Standard-MC-Vertical-Text-Cropped.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "vertical",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Motorcycle"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "standard-mc-vertical-text-cropped",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-vietnam-veteran-mc",
+      "slug": "vietnam-veteran-mc",
+      "name": "Vietnam Veteran (Motorcycle)",
+      "displayName": "Vietnam Veteran (Motorcycle)",
+      "baseName": "Vietnam Veteran",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-vietnam-veteran-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Vietnam-MC-Text-Cropped-1500x844.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "vietnam",
+        "veteran",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-vietnam-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-vikings-mc",
+      "slug": "vikings-mc",
+      "name": "Vikings (Motorcycle)",
+      "displayName": "Vikings (Motorcycle)",
+      "baseName": "Vikings",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-vikings-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/MN-Sports-Vikings-MC-Text-Cropped-1500x842.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "vikings",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Pro Sports"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "mn-sports-vikings-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-volunteer-firefighter-mc",
+      "slug": "volunteer-firefighter-mc",
+      "name": "Volunteer Firefighter (Motorcycle)",
+      "displayName": "Volunteer Firefighter (Motorcycle)",
+      "baseName": "Volunteer Firefighter",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-volunteer-firefighter-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Firefighter-MC-Text-Cropped-1500x841.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "volunteer",
+        "firefighter",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Firefighter"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "firefighter-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-wild-mc",
+      "slug": "wild-mc",
+      "name": "Wild (Motorcycle)",
+      "displayName": "Wild (Motorcycle)",
+      "baseName": "Wild",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-wild-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/MN-Sports-Wild-MC-Text-Cropped-1500x844.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "wild",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Pro Sports"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "mn-sports-wild-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-woman-veteran-mc",
+      "slug": "woman-veteran-mc",
+      "name": "Woman Veteran (Motorcycle)",
+      "displayName": "Woman Veteran (Motorcycle)",
+      "baseName": "Woman Veteran",
+      "variantLabel": "Motorcycle",
+      "plateType": "motorcycle",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Motorcycle",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-woman-veteran-mc.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Vet-Woman-Veteran-MC-Text-Cropped-1500x844.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "woman",
+        "veteran",
+        "motorcycle"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military and Veteran"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "vet-woman-veteran-mc",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-lynx",
+      "slug": "lynx",
+      "name": "Lynx",
+      "displayName": "Lynx",
+      "baseName": "Lynx",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-lynx.png",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/MN-Sports-Lynx-Blank-1500x744.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "lynx",
+        "sports"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Pro Sports"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "mn-sports-lynx-blank",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-minnesota-golf",
+      "slug": "minnesota-golf",
+      "name": "Minnesota Golf",
+      "displayName": "Minnesota Golf",
+      "baseName": "Minnesota Golf",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-minnesota-golf.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Minnesota-Golf-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "golf",
+        "sports"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Golf"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "minnesota-golf",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-minnesota-united",
+      "slug": "minnesota-united",
+      "name": "Minnesota United",
+      "displayName": "Minnesota United",
+      "baseName": "Minnesota United",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-minnesota-united.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/MN-Sports-United-Text-1500x763.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "united",
+        "sports"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Pro Sports"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "mn-sports-united",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-timberwolves",
+      "slug": "timberwolves",
+      "name": "Timberwolves",
+      "displayName": "Timberwolves",
+      "baseName": "Timberwolves",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-timberwolves.png",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/MN-Sports-Timberwolves-Blank-1500x752.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "timberwolves",
+        "sports"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Pro Sports"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "mn-sports-timberwolves-blank",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-twins",
+      "slug": "twins",
+      "name": "Twins",
+      "displayName": "Twins",
+      "baseName": "Twins",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-twins.png",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/MN-Sports-Twins-Text-1500x750.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "twins",
+        "sports"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Pro Sports"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "mn-sports-twins",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-vikings",
+      "slug": "vikings",
+      "name": "Vikings",
+      "displayName": "Vikings",
+      "baseName": "Vikings",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-vikings.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/MN-Sports-Vikings-Text-1500x758.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "vikings",
+        "sports"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Pro Sports"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "mn-sports-vikings",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-wild",
+      "slug": "wild",
+      "name": "Wild",
+      "displayName": "Wild",
+      "baseName": "Wild",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-wild.png",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/MN-Sports-Wild-Text-1500x766.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "wild",
+        "sports"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "MN Pro Sports"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "mn-sports-wild",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-standard-passenger",
+      "slug": "standard-passenger",
+      "name": "Standard passenger",
+      "displayName": "Standard passenger",
+      "baseName": "Standard passenger",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-standard-passenger.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Standard-Passenger-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "standard",
+        "passenger"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "standard-passenger",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-augsburg-college",
+      "slug": "augsburg-college",
+      "name": "Augsburg College",
+      "displayName": "Augsburg College",
+      "baseName": "Augsburg College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-augsburg-college.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-Augsburg-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "augsburg",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-augsburg",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-bemidji-state-university",
+      "slug": "bemidji-state-university",
+      "name": "Bemidji State University",
+      "displayName": "Bemidji State University",
+      "baseName": "Bemidji State University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-bemidji-state-university.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-Bemidji-State-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "bemidji",
+        "state",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-bemidji-state",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-bethel-university",
+      "slug": "bethel-university",
+      "name": "Bethel University",
+      "displayName": "Bethel University",
+      "baseName": "Bethel University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-bethel-university.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-Bethel-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "bethel",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-bethel",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-college-of-st-benedict",
+      "slug": "college-of-st-benedict",
+      "name": "College of St. Benedict",
+      "displayName": "College of St. Benedict",
+      "baseName": "College of St. Benedict",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-college-of-st-benedict.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/BENNIESREADY.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "college",
+        "benedict",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "benniesready",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-concordia-college-moorhead",
+      "slug": "concordia-college-moorhead",
+      "name": "Concordia College Moorhead",
+      "displayName": "Concordia College Moorhead",
+      "baseName": "Concordia College Moorhead",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-concordia-college-moorhead.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-Concordia-Moorhead-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "concordia",
+        "college",
+        "moorhead",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-concordia-moorhead",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-concordia-university-st-paul",
+      "slug": "concordia-university-st-paul",
+      "name": "Concordia University St. Paul",
+      "displayName": "Concordia University St. Paul",
+      "baseName": "Concordia University St. Paul",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-concordia-university-st-paul.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-Concordia-St.-Paul-Text-1500x768.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "concordia",
+        "university",
+        "paul",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-concordia-st-paul",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-crown-college",
+      "slug": "crown-college",
+      "name": "Crown College",
+      "displayName": "Crown College",
+      "baseName": "Crown College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-crown-college.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-Crown-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "crown",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-crown",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-gustavus-adolphus-college",
+      "slug": "gustavus-adolphus-college",
+      "name": "Gustavus Adolphus College",
+      "displayName": "Gustavus Adolphus College",
+      "baseName": "Gustavus Adolphus College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-gustavus-adolphus-college.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-Gustavus-Adolphus-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "gustavus",
+        "adolphus",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-gustavus-adolphus",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-hamline-university",
+      "slug": "hamline-university",
+      "name": "Hamline University",
+      "displayName": "Hamline University",
+      "baseName": "Hamline University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-hamline-university.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-Hamline-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "hamline",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-hamline",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-macalester-college",
+      "slug": "macalester-college",
+      "name": "Macalester College",
+      "displayName": "Macalester College",
+      "baseName": "Macalester College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-macalester-college.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-Macalester-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "macalester",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-macalester",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-metro-state-university",
+      "slug": "metro-state-university",
+      "name": "Metro State University",
+      "displayName": "Metro State University",
+      "baseName": "Metro State University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-metro-state-university.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-Metro-State-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "metro",
+        "state",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-metro-state",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-minnesota-state-mankato",
+      "slug": "minnesota-state-mankato",
+      "name": "Minnesota State Mankato",
+      "displayName": "Minnesota State Mankato",
+      "baseName": "Minnesota State Mankato",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-minnesota-state-mankato.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-MN-State-Mankato-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "state",
+        "mankato",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-mn-state-mankato",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-minnesota-state-university-moorhead",
+      "slug": "minnesota-state-university-moorhead",
+      "name": "Minnesota State University Moorhead",
+      "displayName": "Minnesota State University Moorhead",
+      "baseName": "Minnesota State University Moorhead",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-minnesota-state-university-moorhead.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-MN-State-Univ-Moorhead-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "state",
+        "university",
+        "moorhead",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-mn-state-univ-moorhead",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-saint-john-s-university",
+      "slug": "saint-john-s-university",
+      "name": "Saint John's University",
+      "displayName": "Saint John's University",
+      "baseName": "Saint John's University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-saint-john-s-university.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-St-Johns-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "saint",
+        "john",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-st-johns",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-saint-mary-s-university",
+      "slug": "saint-mary-s-university",
+      "name": "Saint Mary's University",
+      "displayName": "Saint Mary's University",
+      "baseName": "Saint Mary's University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-saint-mary-s-university.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-St-Marys-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "saint",
+        "mary",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-st-marys",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-southwest-minnesota-state-university",
+      "slug": "southwest-minnesota-state-university",
+      "name": "Southwest Minnesota State University",
+      "displayName": "Southwest Minnesota State University",
+      "baseName": "Southwest Minnesota State University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-southwest-minnesota-state-university.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-Southwest-MN-State-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "southwest",
+        "state",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-southwest-mn-state",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-st-catherine-university",
+      "slug": "st-catherine-university",
+      "name": "St. Catherine University",
+      "displayName": "St. Catherine University",
+      "baseName": "St. Catherine University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-st-catherine-university.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-St-Catherine-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "catherine",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-st-catherine",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-st-cloud-state-university",
+      "slug": "st-cloud-state-university",
+      "name": "St. Cloud State University",
+      "displayName": "St. Cloud State University",
+      "baseName": "St. Cloud State University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-st-cloud-state-university.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-St-Cloud-State-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "cloud",
+        "state",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-st-cloud-state",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-st-olaf-college",
+      "slug": "st-olaf-college",
+      "name": "St. Olaf College",
+      "displayName": "St. Olaf College",
+      "baseName": "St. Olaf College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-st-olaf-college.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-St-Olaf-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "olaf",
+        "college",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-st-olaf",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-the-college-of-st-scholastica",
+      "slug": "the-college-of-st-scholastica",
+      "name": "The College of St. Scholastica",
+      "displayName": "The College of St. Scholastica",
+      "baseName": "The College of St. Scholastica",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-the-college-of-st-scholastica.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-St-Scholastica-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "college",
+        "scholastica",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-st-scholastica",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-university-of-minnesota",
+      "slug": "university-of-minnesota",
+      "name": "University of Minnesota",
+      "displayName": "University of Minnesota",
+      "baseName": "University of Minnesota",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-university-of-minnesota.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-UofM-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-uofm",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-university-of-minnesota-crookston",
+      "slug": "university-of-minnesota-crookston",
+      "name": "University of Minnesota Crookston",
+      "displayName": "University of Minnesota Crookston",
+      "baseName": "University of Minnesota Crookston",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-university-of-minnesota-crookston.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-UofM-Crookston-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "university",
+        "crookston",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-uofm-crookston",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-university-of-minnesota-duluth",
+      "slug": "university-of-minnesota-duluth",
+      "name": "University of Minnesota Duluth",
+      "displayName": "University of Minnesota Duluth",
+      "baseName": "University of Minnesota Duluth",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-university-of-minnesota-duluth.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-UofM-Duluth-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "university",
+        "duluth",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-uofm-duluth",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-university-of-minnesota-morris",
+      "slug": "university-of-minnesota-morris",
+      "name": "University of Minnesota Morris",
+      "displayName": "University of Minnesota Morris",
+      "baseName": "University of Minnesota Morris",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-university-of-minnesota-morris.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-UofM-Morris-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "university",
+        "morris",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-uofm-morris",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-university-of-northwestern-st-paul",
+      "slug": "university-of-northwestern-st-paul",
+      "name": "University of Northwestern St. Paul",
+      "displayName": "University of Northwestern St. Paul",
+      "baseName": "University of Northwestern St. Paul",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-university-of-northwestern-st-paul.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-Univ-of-Northwestern-St.-Paul-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "university",
+        "northwestern",
+        "paul",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-univ-of-northwestern-st-paul",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-university-of-st-thomas",
+      "slug": "university-of-st-thomas",
+      "name": "University of St. Thomas",
+      "displayName": "University of St. Thomas",
+      "baseName": "University of St. Thomas",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-university-of-st-thomas.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-St-Thomas-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "university",
+        "thomas",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-st-thomas",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-winona-state-university",
+      "slug": "winona-state-university",
+      "name": "Winona State University",
+      "displayName": "Winona State University",
+      "baseName": "Winona State University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-winona-state-university.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Collegiate-Winona-State-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "winona",
+        "state",
+        "university",
+        "universities"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Collegiate"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "collegiate-winona-state",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-critical-habitat-angler",
+      "slug": "critical-habitat-angler",
+      "name": "Critical Habitat Angler",
+      "displayName": "Critical Habitat Angler",
+      "baseName": "Critical Habitat Angler",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-critical-habitat-angler.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Critical-Habitat-Angler-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "critical",
+        "habitat",
+        "angler",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Critical Habitat"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "critical-habitat-angler",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-critical-habitat-buck",
+      "slug": "critical-habitat-buck",
+      "name": "Critical Habitat Buck",
+      "displayName": "Critical Habitat Buck",
+      "baseName": "Critical Habitat Buck",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-critical-habitat-buck.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Critical-Habitat-Buck-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "critical",
+        "habitat",
+        "buck",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Critical Habitat"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "critical-habitat-buck",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-critical-habitat-chickadee",
+      "slug": "critical-habitat-chickadee",
+      "name": "Critical Habitat Chickadee",
+      "displayName": "Critical Habitat Chickadee",
+      "baseName": "Critical Habitat Chickadee",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-critical-habitat-chickadee.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Critical-Habitat-Chickadee-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "critical",
+        "habitat",
+        "chickadee",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Critical Habitat"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "critical-habitat-chickadee",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-critical-habitat-deer",
+      "slug": "critical-habitat-deer",
+      "name": "Critical Habitat Deer",
+      "displayName": "Critical Habitat Deer",
+      "baseName": "Critical Habitat Deer",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-critical-habitat-deer.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Critical-Habitat-Deer-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "critical",
+        "habitat",
+        "deer",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Critical Habitat"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "critical-habitat-deer",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-critical-habitat-lady-slipper",
+      "slug": "critical-habitat-lady-slipper",
+      "name": "Critical Habitat Lady Slipper",
+      "displayName": "Critical Habitat Lady Slipper",
+      "baseName": "Critical Habitat Lady Slipper",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-critical-habitat-lady-slipper.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Critical-Habitat-Lady-Slipper-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "critical",
+        "habitat",
+        "lady",
+        "slipper",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Critical Habitat"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "critical-habitat-lady-slipper",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-critical-habitat-loon",
+      "slug": "critical-habitat-loon",
+      "name": "Critical Habitat Loon",
+      "displayName": "Critical Habitat Loon",
+      "baseName": "Critical Habitat Loon",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-critical-habitat-loon.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Critical-Habitat-Loon-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "critical",
+        "habitat",
+        "loon",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Critical Habitat"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "critical-habitat-loon",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-critical-habitat-moose",
+      "slug": "critical-habitat-moose",
+      "name": "Critical Habitat Moose",
+      "displayName": "Critical Habitat Moose",
+      "baseName": "Critical Habitat Moose",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-critical-habitat-moose.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Critical-Habitat-Moose-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "critical",
+        "habitat",
+        "moose",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Critical Habitat"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "critical-habitat-moose",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-critical-habitat-pheasant",
+      "slug": "critical-habitat-pheasant",
+      "name": "Critical Habitat Pheasant",
+      "displayName": "Critical Habitat Pheasant",
+      "baseName": "Critical Habitat Pheasant",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-critical-habitat-pheasant.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Critical-Habitat-Pheasant-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "critical",
+        "habitat",
+        "pheasant",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Critical Habitat"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "critical-habitat-pheasant",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-critical-habitat-pollinator",
+      "slug": "critical-habitat-pollinator",
+      "name": "Critical Habitat Pollinator",
+      "displayName": "Critical Habitat Pollinator",
+      "baseName": "Critical Habitat Pollinator",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-critical-habitat-pollinator.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Critical-Habitat-Pollinator-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "critical",
+        "habitat",
+        "pollinator",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Critical Habitat"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "critical-habitat-pollinator",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "mn-critical-habitat-turkey",
+      "slug": "critical-habitat-turkey",
+      "name": "Critical Habitat Turkey",
+      "displayName": "Critical Habitat Turkey",
+      "baseName": "Critical Habitat Turkey",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/minnesota/plates/mn-critical-habitat-turkey.jpg",
+        "remoteUrl": "https://assets.dps.mn.gov/files/dvs/Critical-Habitat-Turkey-Text-1500x751.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [
+        "critical",
+        "habitat",
+        "turkey",
+        "wildlife & nature"
+      ],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Critical Habitat"
+        ]
+      },
+      "sourceRefs": [
+        {
+          "source": "Minnesota DVS",
+          "sourceId": "critical-habitat-turkey",
+          "versionId": null
+        }
+      ]
+    }
+  ]
+}

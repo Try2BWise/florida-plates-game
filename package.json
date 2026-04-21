@@ -7,9 +7,9 @@
     "dev": "vite",
     "dev:host": "vite --host 0.0.0.0",
     "generate:build-info": "node scripts/generateBuildInfo.mjs",
-    "generate:plate-driver": "node scripts/generatePlateDriver.mjs alabama alaska arizona arkansas california florida georgia iowa kansas kentucky mississippi missouri ohio tennessee west-virginia",
+    "generate:plate-driver": "node scripts/generatePlateDriver.mjs alabama alaska arizona arkansas california florida georgia iowa kansas kentucky minnesota mississippi missouri ohio tennessee west-virginia",
     "generate:pwa-assets": "node scripts/generatePwaAssets.mjs",
-    "prebuild": "node scripts/generatePlateDriver.mjs alabama alaska arizona arkansas california florida georgia iowa kansas kentucky mississippi missouri ohio tennessee west-virginia && node scripts/generatePwaAssets.mjs && node scripts/generateBuildInfo.mjs",
+    "prebuild": "node scripts/generatePlateDriver.mjs alabama alaska arizona arkansas california florida georgia iowa kansas kentucky minnesota mississippi missouri ohio tennessee west-virginia && node scripts/generatePwaAssets.mjs && node scripts/generateBuildInfo.mjs",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "preview:host": "vite preview --host 0.0.0.0"

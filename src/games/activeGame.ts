@@ -142,6 +142,18 @@ import {
   kentuckyMixedBagCategories,
   kentuckyRegionScoutCounties
 } from "../config/kentuckyGame";
+import minnesotaDriverData from "../data/generated/minnesota-plate-driver.generated.json";
+import minnesotaLegacyIdMap from "../data/generated/minnesota-legacy-id-map.generated.json";
+import {
+  minnesotaBadgeCounties,
+  minnesotaBadgeGroupLabels,
+  minnesotaBadgeGroupSymbols,
+  minnesotaBadgeIds,
+  minnesotaBadgePlateSets,
+  minnesotaGame,
+  minnesotaMixedBagCategories,
+  minnesotaRegionScoutCounties
+} from "../config/minnesotaGame";
 import iowaDriverData from "../data/generated/iowa-plate-driver.generated.json";
 import iowaLegacyIdMap from "../data/generated/iowa-legacy-id-map.generated.json";
 import {
@@ -425,6 +437,23 @@ function loadKentuckyPack() {
   };
 }
 
+function loadMinnesotaPack() {
+  const plates = buildPlates(minnesotaDriverData);
+  return {
+    game: minnesotaGame,
+    badgeCounties: minnesotaBadgeCounties,
+    badgeGroupLabels: minnesotaBadgeGroupLabels,
+    badgeGroupSymbols: minnesotaBadgeGroupSymbols,
+    mixedBagCategories: minnesotaMixedBagCategories,
+    badgePlateSets: minnesotaBadgePlateSets,
+    badgeIds: minnesotaBadgeIds,
+    panhandleScoutCounties: minnesotaRegionScoutCounties,
+    legacyIdMap: minnesotaLegacyIdMap as Record<string, string>,
+    plates,
+    groupedPlates: buildGroupedPlates(plates),
+  };
+}
+
 function loadIowaPack() {
   const plates = buildPlates(iowaDriverData);
   return {
@@ -490,6 +519,7 @@ function loadStatePack(stateId: string) {
     case "kansas": return loadKansasPack();
     case "iowa": return loadIowaPack();
     case "kentucky": return loadKentuckyPack();
+    case "minnesota": return loadMinnesotaPack();
     case "ohio": return loadOhioPack();
     case "west-virginia": return loadWestVirginiaPack();
     case "florida":
@@ -524,6 +554,7 @@ export const plateCountsByState: Record<string, number> = {
   iowa: iowaDriverData.plates.length,
   kansas: kansasDriverData.plates.length,
   kentucky: kentuckyDriverData.plates.length,
+  minnesota: minnesotaDriverData.plates.length,
   mississippi: mississippiDriverData.plates.length,
   missouri: missouriDriverData.plates.length,
   ohio: ohioDriverData.plates.length,

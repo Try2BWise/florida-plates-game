@@ -1083,6 +1083,49 @@ export const badgeDefinitions: BadgeDefinition[] = [
     description: "Earn every regional explorer badge.",
     group: "regional",
     availableIn: "v1.4"
+  },
+  // Minnesota Explorer region badges
+  {
+    id: "mn-northwest-explorer",
+    name: "Northwest Minnesota Explorer",
+    description: "Find a plate in a Northwest Minnesota county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "mn-northeast-explorer",
+    name: "Arrowhead Explorer",
+    description: "Find a plate in a Northeast Minnesota (Arrowhead) county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "mn-central-explorer",
+    name: "Central Minnesota Explorer",
+    description: "Find a plate in a Central Minnesota county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "mn-metro-explorer",
+    name: "Twin Cities Explorer",
+    description: "Find a plate in a Twin Cities Metro county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "mn-southern-explorer",
+    name: "Southern Minnesota Explorer",
+    description: "Find a plate in a Southern Minnesota county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-minnesota",
+    name: "All Around Minnesota",
+    description: "Earn every regional explorer badge.",
+    group: "regional",
+    availableIn: "v1.4"
   }
 ];
 

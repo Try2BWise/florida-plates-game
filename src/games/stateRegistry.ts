@@ -17,6 +17,7 @@ export const stateRegistry: StatePackMeta[] = [
   { id: "iowa", name: "Iowa", abbreviation: "IA", tagline: "The Hawkeye State", available: true },
   { id: "kansas", name: "Kansas", abbreviation: "KS", tagline: "The Sunflower State", available: true },
   { id: "kentucky", name: "Kentucky", abbreviation: "KY", tagline: "The Bluegrass State", available: true },
+  { id: "minnesota", name: "Minnesota", abbreviation: "MN", tagline: "The North Star State", available: true },
   { id: "mississippi", name: "Mississippi", abbreviation: "MS", tagline: "The Magnolia State", available: true },
   { id: "missouri", name: "Missouri", abbreviation: "MO", tagline: "The Show-Me State", available: true },
   { id: "ohio", name: "Ohio", abbreviation: "OH", tagline: "The Buckeye State", available: true },

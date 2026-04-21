@@ -146,6 +146,13 @@ const customBadgeArtById: Record<string, string> = {
   "ia-southwest-explorer": "compass-new.png",
   "ia-southeast-explorer": "compass-new.png",
   "all-around-iowa": "compass-new.png",
+  // Minnesota
+  "mn-northwest-explorer": "compass-new.png",
+  "mn-northeast-explorer": "water-wave.png",
+  "mn-central-explorer": "compass-new.png",
+  "mn-metro-explorer": "compass-new.png",
+  "mn-southern-explorer": "compass-new.png",
+  "all-around-minnesota": "compass-new.png",
 };
 
 export function BadgeIcon({ badge, size = 96, className = "" }: BadgeIconProps) {
