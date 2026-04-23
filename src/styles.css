@@ -740,6 +740,10 @@ select {
   color: var(--muted);
   font-size: 0.82rem;
   line-height: 1.45;
+  /* Preserve hard line breaks in notes strings (used for multi-line
+     per-state facts on USA 50-State plates). Single-line notes on
+     other plate packs are unaffected. */
+  white-space: pre-line;
 }
 
 .preview-sheet__found-btn {

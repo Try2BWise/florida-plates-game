@@ -32,15 +32,22 @@ export function StatePicker({ onSelect, onOpenSettings }: StatePickerProps) {
   const cardRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const pinnedSectionRef = useRef<HTMLParagraphElement | null>(null);
 
+  // USA is always pinned to the very top as a featured game mode —
+  // excluded from the pin-toggle list and the alphabetical sections.
+  const featuredMode = useMemo(
+    () => stateRegistry.find(s => s.id === "usa") ?? null,
+    []
+  );
+
   // Pinned section — in pin order (order they were pinned)
   const pinnedStates = useMemo(
-    () => stateRegistry.filter(s => pinnedIds.has(s.id)),
+    () => stateRegistry.filter(s => s.id !== "usa" && pinnedIds.has(s.id)),
     [pinnedIds]
   );
 
-  // Main alphabetical list — excludes pinned states
+  // Main alphabetical list — excludes pinned states and the featured USA mode
   const unPinnedStates = useMemo(
-    () => stateRegistry.filter(s => !pinnedIds.has(s.id)),
+    () => stateRegistry.filter(s => s.id !== "usa" && !pinnedIds.has(s.id)),
     [pinnedIds]
   );
 
@@ -140,6 +147,10 @@ export function StatePicker({ onSelect, onOpenSettings }: StatePickerProps) {
         </div>
         {!state.available ? (
           <span className="state-picker__coming-soon">Coming Soon</span>
+        ) : state.id === "usa" ? (
+          // USA is always pinned to the top as a featured mode — no
+          // per-user pin toggle.
+          null
         ) : (
           <button
             type="button"
@@ -206,6 +217,12 @@ export function StatePicker({ onSelect, onOpenSettings }: StatePickerProps) {
         </nav>
       </div>
       <div className="state-picker__list">
+        {featuredMode && (
+          <>
+            {renderCard(featuredMode, `featured-${featuredMode.id}`)}
+            <div className="state-picker__section-divider" aria-hidden="true" />
+          </>
+        )}
         {pinnedStates.length > 0 && (
           <>
             <p className="state-picker__section-label" ref={pinnedSectionRef} aria-label="Pinned states">Pinned <Icon name="pin" size={13} /></p>

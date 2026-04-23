@@ -12,7 +12,7 @@
  * Then:     npm run generate:plate-driver usa
  */
 
-import { copyFileSync, mkdirSync, readdirSync, writeFileSync } from "node:fs";
+import { copyFileSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join, resolve, dirname, extname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -21,8 +21,49 @@ const __dirname = dirname(__filename);
 const repoRoot = resolve(__dirname, "..");
 
 const SCRAPE_DIR = "C:\\Users\\bwise\\OneDrive\\Gorilla Grin\\USA\\source_images";
+const FACTS_CSV = "C:\\Users\\bwise\\OneDrive\\Gorilla Grin\\us_states_fast_facts.csv";
 const OUT_PLATES_DIR = join(repoRoot, "public", "state-packs", "usa", "plates");
 const OUT_MASTER = join(repoRoot, "src", "data", "usa-plate-master.json");
+
+// ── Load + parse state facts CSV ──────────────────────────────────
+// Columns: State, Area_sq_mi, Area_Rank, Admission_Date, Capital,
+//          Nickname, State_Bird, State_Flower, State_Tree
+function loadFacts() {
+  const rows = readFileSync(FACTS_CSV, "utf8").split(/\r?\n/).filter(Boolean);
+  const header = rows.shift().split(",");
+  const byState = {};
+  for (const row of rows) {
+    // Simple CSV split — facts CSV has no embedded commas in values.
+    const cells = row.split(",");
+    const obj = Object.fromEntries(header.map((h, i) => [h, cells[i]]));
+    byState[obj.State] = obj;
+  }
+  return byState;
+}
+
+/**
+ * Format a state's facts into a multi-line notes string that reads well
+ * in the preview sheet. We lead with the nickname, then put the most
+ * "trivia-worthy" facts together.
+ */
+function formatFacts(f) {
+  if (!f) return null;
+  // Parse the date as UTC so a local-timezone shift doesn't move Dec 14
+  // → Dec 13. We want the calendar date exactly as given.
+  const admissionDate = new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(`${f.Admission_Date}T00:00:00Z`));
+  const area = parseInt(f.Area_sq_mi, 10).toLocaleString("en-US");
+  return [
+    f.Nickname,
+    `Capital: ${f.Capital} · Admitted ${admissionDate}`,
+    `Bird: ${f.State_Bird} · Flower: ${f.State_Flower} · Tree: ${f.State_Tree}`,
+    `Area: ${area} sq mi (#${f.Area_Rank})`,
+  ].join("\n");
+}
 
 mkdirSync(OUT_PLATES_DIR, { recursive: true });
 
@@ -60,8 +101,10 @@ function slugify(name) {
 const sourceFiles = readdirSync(SCRAPE_DIR)
   .filter((f) => /\.(jpg|jpeg|png)$/i.test(f))
   .sort();
+const facts = loadFacts();
 
 console.log(`Found ${sourceFiles.length} source image files in ${SCRAPE_DIR}`);
+console.log(`Loaded facts for ${Object.keys(facts).length} states`);
 
 const plates = [];
 let imagesCopied = 0;
@@ -100,11 +143,13 @@ for (const [code, name] of Object.entries(STATE_NAMES)) {
       remoteUrl: null
     },
     sponsor: null,
-    notes: `Standard-issue ${name} license plate.`,
+    notes: formatFacts(facts[name]) ?? `Standard-issue ${name} license plate.`,
     searchTerms: [
       name.toLowerCase(),
       code.toLowerCase(),
-      "standard"
+      "standard",
+      // Include the nickname in search terms so "peach state" → Georgia, etc.
+      ...(facts[name]?.Nickname ? [facts[name].Nickname.toLowerCase()] : []),
     ],
     variantOf: null,
     relatedPlates: [],

@@ -1774,15 +1774,32 @@ export function evaluateBadges(
 
   const allEvaluated = badgeDefinitions.map((definition) => lookup.get(definition.id) ?? { ...definition, earned: false });
 
+  // In USA mode (50-State Challenge), every plate is category "Standard"
+  // and no state-specialty plate sets exist. Category, college, and
+  // service progression badges can never be earned, and Escapee doesn't
+  // make sense when every state IS a target. Suppress all of those so
+  // the Achievements grid shows only what the player can actually earn.
+  const usaExcludedGenericBadges = new Set([
+    "escapee",
+    // Category-progression (require specific plate categories)
+    "mixed-bag", "full-spectrum",
+    "green-light", "eco-scout",
+    "sports-fan", "all-teams",
+    "healing-hands",
+    "game-on",
+    // College Track (no Universities plates in USA pack)
+    "first-day-of-school", "campus-tour",
+    "freshman", "sophomore", "junior", "senior", "graduation-day",
+    // Service progression (no Military/First Responders plates)
+    "reporting-for-duty", "on-call", "in-service",
+  ]);
+
   // Filter to generic badges + badges for the active state. Each state's
   // badge-id set is declared in that state's config (e.g. floridaBadgeIds in
   // src/config/floridaGame.ts) and flows through activeGame.ts as
   // `activeBadgeIds`.
   return allEvaluated.filter((badge) => {
-    // Escapee ("find a plate outside your home state") is meaningless in
-    // the 50-State Challenge — every state IS your target, there's no
-    // home state to escape from. Suppress it for USA mode.
-    if (stateId === "usa" && badge.id === "escapee") return false;
+    if (stateId === "usa" && usaExcludedGenericBadges.has(badge.id)) return false;
     return genericBadgeIds.has(badge.id) || activeBadgeIds.has(badge.id);
   });
 }
