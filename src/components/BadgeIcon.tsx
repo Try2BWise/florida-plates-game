@@ -13,6 +13,9 @@ const customBadgeArtById: Record<string, string> = {
   "complete-set": "trophy-new.png",
   "game-on": "goal-net.png",
   "thrill-ride": "roller-coaster-new.png",
+  // Category completion
+  "mixed-bag": "paw-prints.png",
+  "full-spectrum": "trophy-new.png",
   // Sports
   "grand-slam": "baseball.png",
   touchdown: "american-football.png",
@@ -20,6 +23,8 @@ const customBadgeArtById: Record<string, string> = {
   "slam-dunk": "basketball.png",
   goal: "soccer-ball.png",
   "checkered-flag": "chequered-flag.png",
+  "sports-fan": "soccer-ball.png",
+  "all-teams": "trophy-new.png",
   // Nature / Geography
   "coastal-cruiser": "water-wave.png",
   "farm-fresh": "tractor.png",
@@ -29,11 +34,23 @@ const customBadgeArtById: Record<string, string> = {
   "panhandle-scout": "world-map.png",
   "green-light": "leaf-new.png",
   "eco-scout": "paw-prints.png",
-  // Service / Public
+  // Service / Public Safety
   "healing-hands": "hospital-new.png",
   "those-who-serve": "shield-new.png",
   "back-the-blue": "police-car-light.png",
   "fire-watch": "fire-engine.png",
+  "reporting-for-duty": "shield-new.png",
+  "on-call": "shield-new.png",
+  "in-service": "shield-new.png",
+  "united-front": "police-car-light.png",
+  // Military / Veteran honors
+  "all-branches": "glowing-star.png",
+  "air-support": "chequered-flag.png",
+  airborne: "shield-new.png",
+  "bronze-star-honor": "3rd-place-medal.png",
+  distinguished: "glowing-star.png",
+  "combat-ready": "shield-new.png",
+  "decorated-service": "glowing-star.png",
   // Education (College Track)
   "first-day-of-school": "school-new.png",
   "campus-tour": "backpack-new.png",
