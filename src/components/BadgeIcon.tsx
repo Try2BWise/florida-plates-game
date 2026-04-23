@@ -175,6 +175,15 @@ const customBadgeArtById: Record<string, string> = {
   "mn-metro-explorer": "cityscape.png",
   "mn-southern-explorer": "corn.png",
   "all-around-minnesota": "all-around-minnesota.svg",
+  // 50-State Challenge (USA mode)
+  "usa-northeast-explorer": "cityscape.png",
+  "usa-midwest-explorer": "wheat.png",
+  "usa-south-explorer": "peach.png",
+  "usa-west-explorer": "mountain.png",
+  "usa-pacific-explorer": "water-wave.png",
+  "usa-alaska": "polar-bear.png",
+  "usa-hawaii": "beach.png",
+  "all-around-usa": "all-around-usa.svg",
 };
 
 export function BadgeIcon({ badge, size = 96, className = "" }: BadgeIconProps) {

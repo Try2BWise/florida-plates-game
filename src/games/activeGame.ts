@@ -106,6 +106,18 @@ import {
   tennesseeMixedBagCategories,
   tennesseeRegionScoutCounties
 } from "../config/tennesseeGame";
+import usaDriverData from "../data/generated/usa-plate-driver.generated.json";
+import usaLegacyIdMap from "../data/generated/usa-legacy-id-map.generated.json";
+import {
+  usaBadgeCounties,
+  usaBadgeGroupLabels,
+  usaBadgeGroupSymbols,
+  usaBadgeIds,
+  usaBadgePlateSets,
+  usaGame,
+  usaMixedBagCategories,
+  usaRegionScoutCounties
+} from "../config/usaGame";
 import georgiaDriverData from "../data/generated/georgia-plate-driver.generated.json";
 import georgiaLegacyIdMap from "../data/generated/georgia-legacy-id-map.generated.json";
 import {
@@ -437,6 +449,23 @@ function loadKentuckyPack() {
   };
 }
 
+function loadUsaPack() {
+  const plates = buildPlates(usaDriverData);
+  return {
+    game: usaGame,
+    badgeCounties: usaBadgeCounties,
+    badgeGroupLabels: usaBadgeGroupLabels,
+    badgeGroupSymbols: usaBadgeGroupSymbols,
+    mixedBagCategories: usaMixedBagCategories,
+    badgePlateSets: usaBadgePlateSets,
+    badgeIds: usaBadgeIds,
+    panhandleScoutCounties: usaRegionScoutCounties,
+    legacyIdMap: usaLegacyIdMap as Record<string, string>,
+    plates,
+    groupedPlates: buildGroupedPlates(plates),
+  };
+}
+
 function loadMinnesotaPack() {
   const plates = buildPlates(minnesotaDriverData);
   return {
@@ -521,6 +550,7 @@ function loadStatePack(stateId: string) {
     case "kentucky": return loadKentuckyPack();
     case "minnesota": return loadMinnesotaPack();
     case "ohio": return loadOhioPack();
+    case "usa": return loadUsaPack();
     case "west-virginia": return loadWestVirginiaPack();
     case "florida":
     default:
@@ -559,6 +589,7 @@ export const plateCountsByState: Record<string, number> = {
   missouri: missouriDriverData.plates.length,
   ohio: ohioDriverData.plates.length,
   tennessee: tennesseeDriverData.plates.length,
+  usa: usaDriverData.plates.length,
   "west-virginia": westVirginiaDriverData.plates.length,
 };
 

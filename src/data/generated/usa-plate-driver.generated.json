@@ -1,0 +1,1258 @@
+{
+  "schemaVersion": 2,
+  "generatedDate": "2026-04-23",
+  "generatedFrom": "src/data/usa-plate-master.json",
+  "plateCount": 50,
+  "plates": [
+    {
+      "id": "usa-alabama",
+      "slug": "alabama",
+      "name": "Alabama",
+      "displayName": "Alabama",
+      "baseName": "Alabama",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-alabama.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Alabama license plate.",
+      "searchTerms": [
+        "alabama",
+        "al",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-alaska",
+      "slug": "alaska",
+      "name": "Alaska",
+      "displayName": "Alaska",
+      "baseName": "Alaska",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-alaska.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Alaska license plate.",
+      "searchTerms": [
+        "alaska",
+        "ak",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-arizona",
+      "slug": "arizona",
+      "name": "Arizona",
+      "displayName": "Arizona",
+      "baseName": "Arizona",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-arizona.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Arizona license plate.",
+      "searchTerms": [
+        "arizona",
+        "az",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-arkansas",
+      "slug": "arkansas",
+      "name": "Arkansas",
+      "displayName": "Arkansas",
+      "baseName": "Arkansas",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-arkansas.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Arkansas license plate.",
+      "searchTerms": [
+        "arkansas",
+        "ar",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-california",
+      "slug": "california",
+      "name": "California",
+      "displayName": "California",
+      "baseName": "California",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-california.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue California license plate.",
+      "searchTerms": [
+        "california",
+        "ca",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-colorado",
+      "slug": "colorado",
+      "name": "Colorado",
+      "displayName": "Colorado",
+      "baseName": "Colorado",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-colorado.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Colorado license plate.",
+      "searchTerms": [
+        "colorado",
+        "co",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-connecticut",
+      "slug": "connecticut",
+      "name": "Connecticut",
+      "displayName": "Connecticut",
+      "baseName": "Connecticut",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-connecticut.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Connecticut license plate.",
+      "searchTerms": [
+        "connecticut",
+        "ct",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-delaware",
+      "slug": "delaware",
+      "name": "Delaware",
+      "displayName": "Delaware",
+      "baseName": "Delaware",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-delaware.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Delaware license plate.",
+      "searchTerms": [
+        "delaware",
+        "de",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-florida",
+      "slug": "florida",
+      "name": "Florida",
+      "displayName": "Florida",
+      "baseName": "Florida",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-florida.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Florida license plate.",
+      "searchTerms": [
+        "florida",
+        "fl",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-georgia",
+      "slug": "georgia",
+      "name": "Georgia",
+      "displayName": "Georgia",
+      "baseName": "Georgia",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-georgia.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Georgia license plate.",
+      "searchTerms": [
+        "georgia",
+        "ga",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-hawaii",
+      "slug": "hawaii",
+      "name": "Hawaii",
+      "displayName": "Hawaii",
+      "baseName": "Hawaii",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-hawaii.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Hawaii license plate.",
+      "searchTerms": [
+        "hawaii",
+        "hi",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-idaho",
+      "slug": "idaho",
+      "name": "Idaho",
+      "displayName": "Idaho",
+      "baseName": "Idaho",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-idaho.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Idaho license plate.",
+      "searchTerms": [
+        "idaho",
+        "id",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-illinois",
+      "slug": "illinois",
+      "name": "Illinois",
+      "displayName": "Illinois",
+      "baseName": "Illinois",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-illinois.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Illinois license plate.",
+      "searchTerms": [
+        "illinois",
+        "il",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-indiana",
+      "slug": "indiana",
+      "name": "Indiana",
+      "displayName": "Indiana",
+      "baseName": "Indiana",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-indiana.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Indiana license plate.",
+      "searchTerms": [
+        "indiana",
+        "in",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-iowa",
+      "slug": "iowa",
+      "name": "Iowa",
+      "displayName": "Iowa",
+      "baseName": "Iowa",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-iowa.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Iowa license plate.",
+      "searchTerms": [
+        "iowa",
+        "ia",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-kansas",
+      "slug": "kansas",
+      "name": "Kansas",
+      "displayName": "Kansas",
+      "baseName": "Kansas",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-kansas.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Kansas license plate.",
+      "searchTerms": [
+        "kansas",
+        "ks",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-kentucky",
+      "slug": "kentucky",
+      "name": "Kentucky",
+      "displayName": "Kentucky",
+      "baseName": "Kentucky",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-kentucky.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Kentucky license plate.",
+      "searchTerms": [
+        "kentucky",
+        "ky",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-louisiana",
+      "slug": "louisiana",
+      "name": "Louisiana",
+      "displayName": "Louisiana",
+      "baseName": "Louisiana",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-louisiana.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Louisiana license plate.",
+      "searchTerms": [
+        "louisiana",
+        "la",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-maine",
+      "slug": "maine",
+      "name": "Maine",
+      "displayName": "Maine",
+      "baseName": "Maine",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-maine.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Maine license plate.",
+      "searchTerms": [
+        "maine",
+        "me",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-maryland",
+      "slug": "maryland",
+      "name": "Maryland",
+      "displayName": "Maryland",
+      "baseName": "Maryland",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-maryland.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Maryland license plate.",
+      "searchTerms": [
+        "maryland",
+        "md",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-massachusetts",
+      "slug": "massachusetts",
+      "name": "Massachusetts",
+      "displayName": "Massachusetts",
+      "baseName": "Massachusetts",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-massachusetts.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Massachusetts license plate.",
+      "searchTerms": [
+        "massachusetts",
+        "ma",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-michigan",
+      "slug": "michigan",
+      "name": "Michigan",
+      "displayName": "Michigan",
+      "baseName": "Michigan",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-michigan.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Michigan license plate.",
+      "searchTerms": [
+        "michigan",
+        "mi",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-minnesota",
+      "slug": "minnesota",
+      "name": "Minnesota",
+      "displayName": "Minnesota",
+      "baseName": "Minnesota",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-minnesota.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Minnesota license plate.",
+      "searchTerms": [
+        "minnesota",
+        "mn",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-mississippi",
+      "slug": "mississippi",
+      "name": "Mississippi",
+      "displayName": "Mississippi",
+      "baseName": "Mississippi",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-mississippi.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Mississippi license plate.",
+      "searchTerms": [
+        "mississippi",
+        "ms",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-missouri",
+      "slug": "missouri",
+      "name": "Missouri",
+      "displayName": "Missouri",
+      "baseName": "Missouri",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-missouri.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Missouri license plate.",
+      "searchTerms": [
+        "missouri",
+        "mo",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-montana",
+      "slug": "montana",
+      "name": "Montana",
+      "displayName": "Montana",
+      "baseName": "Montana",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-montana.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Montana license plate.",
+      "searchTerms": [
+        "montana",
+        "mt",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-nebraska",
+      "slug": "nebraska",
+      "name": "Nebraska",
+      "displayName": "Nebraska",
+      "baseName": "Nebraska",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-nebraska.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Nebraska license plate.",
+      "searchTerms": [
+        "nebraska",
+        "ne",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-nevada",
+      "slug": "nevada",
+      "name": "Nevada",
+      "displayName": "Nevada",
+      "baseName": "Nevada",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-nevada.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Nevada license plate.",
+      "searchTerms": [
+        "nevada",
+        "nv",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-new-hampshire",
+      "slug": "new-hampshire",
+      "name": "New Hampshire",
+      "displayName": "New Hampshire",
+      "baseName": "New Hampshire",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-new-hampshire.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue New Hampshire license plate.",
+      "searchTerms": [
+        "new hampshire",
+        "nh",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-new-jersey",
+      "slug": "new-jersey",
+      "name": "New Jersey",
+      "displayName": "New Jersey",
+      "baseName": "New Jersey",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-new-jersey.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue New Jersey license plate.",
+      "searchTerms": [
+        "new jersey",
+        "nj",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-new-mexico",
+      "slug": "new-mexico",
+      "name": "New Mexico",
+      "displayName": "New Mexico",
+      "baseName": "New Mexico",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-new-mexico.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue New Mexico license plate.",
+      "searchTerms": [
+        "new mexico",
+        "nm",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-new-york",
+      "slug": "new-york",
+      "name": "New York",
+      "displayName": "New York",
+      "baseName": "New York",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-new-york.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue New York license plate.",
+      "searchTerms": [
+        "new york",
+        "ny",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-north-carolina",
+      "slug": "north-carolina",
+      "name": "North Carolina",
+      "displayName": "North Carolina",
+      "baseName": "North Carolina",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-north-carolina.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue North Carolina license plate.",
+      "searchTerms": [
+        "north carolina",
+        "nc",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-north-dakota",
+      "slug": "north-dakota",
+      "name": "North Dakota",
+      "displayName": "North Dakota",
+      "baseName": "North Dakota",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-north-dakota.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue North Dakota license plate.",
+      "searchTerms": [
+        "north dakota",
+        "nd",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-ohio",
+      "slug": "ohio",
+      "name": "Ohio",
+      "displayName": "Ohio",
+      "baseName": "Ohio",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-ohio.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Ohio license plate.",
+      "searchTerms": [
+        "ohio",
+        "oh",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-oklahoma",
+      "slug": "oklahoma",
+      "name": "Oklahoma",
+      "displayName": "Oklahoma",
+      "baseName": "Oklahoma",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-oklahoma.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Oklahoma license plate.",
+      "searchTerms": [
+        "oklahoma",
+        "ok",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-oregon",
+      "slug": "oregon",
+      "name": "Oregon",
+      "displayName": "Oregon",
+      "baseName": "Oregon",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-oregon.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Oregon license plate.",
+      "searchTerms": [
+        "oregon",
+        "or",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-pennsylvania",
+      "slug": "pennsylvania",
+      "name": "Pennsylvania",
+      "displayName": "Pennsylvania",
+      "baseName": "Pennsylvania",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-pennsylvania.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Pennsylvania license plate.",
+      "searchTerms": [
+        "pennsylvania",
+        "pa",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-rhode-island",
+      "slug": "rhode-island",
+      "name": "Rhode Island",
+      "displayName": "Rhode Island",
+      "baseName": "Rhode Island",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-rhode-island.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Rhode Island license plate.",
+      "searchTerms": [
+        "rhode island",
+        "ri",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-south-carolina",
+      "slug": "south-carolina",
+      "name": "South Carolina",
+      "displayName": "South Carolina",
+      "baseName": "South Carolina",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-south-carolina.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue South Carolina license plate.",
+      "searchTerms": [
+        "south carolina",
+        "sc",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-south-dakota",
+      "slug": "south-dakota",
+      "name": "South Dakota",
+      "displayName": "South Dakota",
+      "baseName": "South Dakota",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-south-dakota.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue South Dakota license plate.",
+      "searchTerms": [
+        "south dakota",
+        "sd",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-tennessee",
+      "slug": "tennessee",
+      "name": "Tennessee",
+      "displayName": "Tennessee",
+      "baseName": "Tennessee",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-tennessee.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Tennessee license plate.",
+      "searchTerms": [
+        "tennessee",
+        "tn",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-texas",
+      "slug": "texas",
+      "name": "Texas",
+      "displayName": "Texas",
+      "baseName": "Texas",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-texas.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Texas license plate.",
+      "searchTerms": [
+        "texas",
+        "tx",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-utah",
+      "slug": "utah",
+      "name": "Utah",
+      "displayName": "Utah",
+      "baseName": "Utah",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-utah.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Utah license plate.",
+      "searchTerms": [
+        "utah",
+        "ut",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-vermont",
+      "slug": "vermont",
+      "name": "Vermont",
+      "displayName": "Vermont",
+      "baseName": "Vermont",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-vermont.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Vermont license plate.",
+      "searchTerms": [
+        "vermont",
+        "vt",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-virginia",
+      "slug": "virginia",
+      "name": "Virginia",
+      "displayName": "Virginia",
+      "baseName": "Virginia",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-virginia.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Virginia license plate.",
+      "searchTerms": [
+        "virginia",
+        "va",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-washington",
+      "slug": "washington",
+      "name": "Washington",
+      "displayName": "Washington",
+      "baseName": "Washington",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-washington.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Washington license plate.",
+      "searchTerms": [
+        "washington",
+        "wa",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-west-virginia",
+      "slug": "west-virginia",
+      "name": "West Virginia",
+      "displayName": "West Virginia",
+      "baseName": "West Virginia",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-west-virginia.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue West Virginia license plate.",
+      "searchTerms": [
+        "west virginia",
+        "wv",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-wisconsin",
+      "slug": "wisconsin",
+      "name": "Wisconsin",
+      "displayName": "Wisconsin",
+      "baseName": "Wisconsin",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-wisconsin.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Wisconsin license plate.",
+      "searchTerms": [
+        "wisconsin",
+        "wi",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    },
+    {
+      "id": "usa-wyoming",
+      "slug": "wyoming",
+      "name": "Wyoming",
+      "displayName": "Wyoming",
+      "baseName": "Wyoming",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/usa/plates/usa-wyoming.jpg",
+        "remoteUrl": null
+      },
+      "sponsor": null,
+      "notes": "Standard-issue Wyoming license plate.",
+      "searchTerms": [
+        "wyoming",
+        "wy",
+        "standard"
+      ],
+      "variantOf": null,
+      "relatedPlates": []
+    }
+  ]
+}

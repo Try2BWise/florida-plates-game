@@ -1126,6 +1126,63 @@ export const badgeDefinitions: BadgeDefinition[] = [
     description: "Earn every regional explorer badge.",
     group: "regional",
     availableIn: "v1.4"
+  },
+  // 50-State Challenge (USA mode)
+  {
+    id: "usa-northeast-explorer",
+    name: "Northeast Explorer",
+    description: "Spot a plate from every Northeast state.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "usa-midwest-explorer",
+    name: "Midwest Explorer",
+    description: "Spot a plate from every Midwest state.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "usa-south-explorer",
+    name: "South Explorer",
+    description: "Spot a plate from every Southern state.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "usa-west-explorer",
+    name: "Mountain West Explorer",
+    description: "Spot a plate from every Mountain West state.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "usa-pacific-explorer",
+    name: "Pacific Explorer",
+    description: "Spot a plate from every Pacific state.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "usa-alaska",
+    name: "Last Frontier",
+    description: "Spot an Alaska plate — they're rare south of the Lower 48 border.",
+    group: "collection",
+    availableIn: "v1.4"
+  },
+  {
+    id: "usa-hawaii",
+    name: "Aloha State",
+    description: "Spot a Hawaii plate — the other state you'll rarely see on the mainland.",
+    group: "collection",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-usa",
+    name: "All Around USA",
+    description: "Earn every US regional explorer badge.",
+    group: "regional",
+    availableIn: "v1.4"
   }
 ];
 
@@ -1419,12 +1476,45 @@ export function evaluateBadges(
   // follows the convention `all-around-<stateId>` for every state.
   const allAroundId = `all-around-${stateId}`;
   const allRegionBadgesEarned = regionBadgeEntries.every(([, badge]) => badge.earned);
-  const allAroundBadge = {
+  let allAroundBadge: EvaluatedBadge = {
     ...getBadgeDefinition(definitionsById, allAroundId),
     earned: allRegionBadgesEarned,
     progressCurrent: regionBadgeEntries.filter(([, badge]) => badge.earned).length,
     progressTarget: regionBadgeEntries.length
   };
+
+  // 50-State Challenge (USA mode) uses STATE-list regional badges, not
+  // counties. Build those entries from activeBadgePlateSets and override
+  // the all-around-usa calculation to track the 5 regional USA badges.
+  const usaRegionBadgeIds = [
+    "usa-northeast-explorer",
+    "usa-midwest-explorer",
+    "usa-south-explorer",
+    "usa-west-explorer",
+    "usa-pacific-explorer",
+  ];
+  const usaRegionBadgeEntries: [string, EvaluatedBadge][] =
+    stateId === "usa"
+      ? usaRegionBadgeIds.map((badgeId) => {
+          const names = activeBadgePlateSets[badgeId] ?? [];
+          return [
+            badgeId,
+            createThresholdBadge(
+              getBadgeDefinition(definitionsById, badgeId),
+              countFoundByNames(plates, discoveries, names),
+              names.length
+            ),
+          ];
+        })
+      : [];
+  if (stateId === "usa") {
+    allAroundBadge = {
+      ...getBadgeDefinition(definitionsById, "all-around-usa"),
+      earned: usaRegionBadgeEntries.every(([, b]) => b.earned),
+      progressCurrent: usaRegionBadgeEntries.filter(([, b]) => b.earned).length,
+      progressTarget: usaRegionBadgeEntries.length,
+    };
+  }
 
   const lookup = new Map<string, EvaluatedBadge>([
     ["first-spot", createThresholdBadge(getBadgeDefinition(definitionsById, "first-spot"), totalFound, 1)],
@@ -1657,6 +1747,28 @@ export function evaluateBadges(
     ["road-trip", createThresholdBadge(getBadgeDefinition(definitionsById, "road-trip"), uniqueLocalities, 10)],
     ["panhandle-scout", createThresholdBadge(getBadgeDefinition(definitionsById, "panhandle-scout"), panhandleCount, 1)],
     ...regionBadgeEntries,
+    ...usaRegionBadgeEntries,
+    // 50-State Challenge — iconic "hard to find" plates
+    ...(stateId === "usa"
+      ? ([
+          [
+            "usa-alaska",
+            createThresholdBadge(
+              getBadgeDefinition(definitionsById, "usa-alaska"),
+              countFoundByNames(plates, discoveries, activeBadgePlateSets["usa-alaska"] ?? []),
+              1
+            ),
+          ],
+          [
+            "usa-hawaii",
+            createThresholdBadge(
+              getBadgeDefinition(definitionsById, "usa-hawaii"),
+              countFoundByNames(plates, discoveries, activeBadgePlateSets["usa-hawaii"] ?? []),
+              1
+            ),
+          ],
+        ] as [string, EvaluatedBadge][])
+      : []),
     [allAroundId, allAroundBadge],
   ]);
 
@@ -1666,7 +1778,13 @@ export function evaluateBadges(
   // badge-id set is declared in that state's config (e.g. floridaBadgeIds in
   // src/config/floridaGame.ts) and flows through activeGame.ts as
   // `activeBadgeIds`.
-  return allEvaluated.filter((badge) => genericBadgeIds.has(badge.id) || activeBadgeIds.has(badge.id));
+  return allEvaluated.filter((badge) => {
+    // Escapee ("find a plate outside your home state") is meaningless in
+    // the 50-State Challenge — every state IS your target, there's no
+    // home state to escape from. Suppress it for USA mode.
+    if (stateId === "usa" && badge.id === "escapee") return false;
+    return genericBadgeIds.has(badge.id) || activeBadgeIds.has(badge.id);
+  });
 }
 
 /* ── Player Rank System ── */
