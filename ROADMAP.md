@@ -1,10 +1,86 @@
 # Every PL8 Roadmap
 
-This roadmap reflects the current released state of `Every PL8` after `v1.8.0` and outlines the most useful next release tracks.
+This roadmap reflects the current released state of `Every PL8` after `v1.9.0` and outlines the most useful next release tracks.
 
 ## Current Release
 
-Current public release: `v1.8.0`
+Current public release: `v1.9.0`
+
+## Shipped In v1.9.0
+
+`v1.9.0` was a sprawling release covering **four new state packs, a second game mode, major architectural debt cleanup, an Achievements polish pass, a full badge-icon audit + asset expansion, a privacy/legal pass, and the first interactive map**. It's less a themed release than a "finish everything that was blocking the App Store push" release.
+
+### Delivered
+
+**New game mode: USA 50-State Challenge**
+- Classic road-trip game — one standard plate per state, 50 total, played across the entire country
+- Loads as a pinned-at-top entry in the State Picker alongside the 16 specialty packs
+- Per-state facts in every detail card (nickname, capital, admission date, state bird/flower/tree, area + rank) ingested from an external CSV
+- US Census regional badges (Northeast / Midwest / South / Mountain West / Pacific) + iconic singletons for Alaska and Hawaii + an "All Around USA" capstone
+- Badge set trimmed for the mode: 19 genericbadges that would never fire (college, category, service progression, escapee) are suppressed so the Achievements grid shows only what's earnable
+
+**Four new specialty state packs** (Phase B, full catalogs)
+- **Ohio** (267 plates, 5 regions) — scraped from bmv.ohio.gov
+- **West Virginia** (101 plates, 5 regions) — scraped from transportation.wv.gov/DMV, with thumbnail-fallback handling for 2 plates whose full-size images were broken
+- **Iowa** (72 plates, 5 regions) — scraped from iowadot.gov with Drupal image-style handling
+- **Minnesota** (120 plates, 5 regions) — scraped from dps.mn.gov via Next.js `__NEXT_DATA__` regex extraction; 29 motorcycle variants routed cleanly to a Motorcycle category
+- Total state coverage: 12 → **16 specialty packs + USA mode**
+
+**Real interactive map** (replaces the abstract CSS pin plot)
+- Leaflet + react-leaflet, CARTO tile providers (free, no API key)
+- Auto-fit bounds, light/dark tile adaptation, popups with plate name + locality + date
+- Custom divIcon markers sidestep the Vite + Leaflet broken-default-icon issue
+- Tile fetches disclosed in the privacy policy
+
+**Achievements polish batch** (v1.8.x motion + "New!" experience)
+- iOS-style press-down tap feedback (scale 0.96) on badge cards
+- Staggered fade+slide section reveal when the Achievements tab mounts
+- 200ms opacity crossfade between Achievements / Journey / Map
+- Pulsing glow + "NEW" pill on badges earned since you last opened the tab
+- "Earned on [date]" row in the badge detail modal
+- Auto-dismiss on tab leave (you see the pulse during your visit, it clears when you navigate away)
+- All honor `prefers-reduced-motion`
+
+**Journey tab simplification**
+- Removed the stats-dashboard dilution (completion rings, category bars, top localities, first/most-recent cards)
+- Journey is now just the chronological Timeline — sort toggle + date-grouped discovery list
+- ~310 lines of dead code + unused CSS deleted across App.tsx, AchievementsPage.tsx, styles.css
+
+**Badge icon audit — three-phase pass**
+- **Phase 1 (missing icons):** 15 category/service/military badges that previously rendered as plain medals now carry thematic artwork from the existing library
+- **Phase 2 (asset expansion):** 16 new Fluent Emoji 3D PNGs added (cityscape, wheat, beach, rocket, anchor, bridge, corn, cherry-blossom, fish, snowflake, airplane, parachute, handshake, star, passport, palette) — library grew from 40 → 56
+- **Phase 3 (regional differentiation):** compass-new usage dropped from 75 → 21 by differentiating most state regions (Missouri, Georgia, Alaska, California, Iowa all got every region uniquely iconed; Mississippi went from 3 → all 6 unique)
+- **State silhouettes for all-around badges:** all 16 state-pack "All Around X" badges now display that state's silhouette filled in the brand accent color (generated from the pre-existing `public/state-outlines/*.svg` files)
+
+**Florida-specific debt cleanup** (ROADMAP item from v1.9 planning)
+- `isLikelyInFlorida()` bounding box deleted; escapee evaluation uses `discovery.state` + active state name
+- `escapee` badge generalized — moved from Florida-only to generic, description now "Find a plate outside your home state", earnable in every state pack (and correctly suppressed in USA mode)
+- `BadgeGroup: "florida"` renamed to `"regional"` — structural group literal no longer misnamed
+- `badgePlateSets` hardcoded constants moved out of App.tsx into floridaGame.ts as `floridaBadgePlateSets`; duplicate constants in badges.ts deleted in favor of `activeBadgePlateSets`
+- `stateBadgeMap` (78-line hardcoded per-state Set<string> block inside evaluateBadges) moved to per-state configs as `<state>BadgeIds`
+- `allAroundIdMap` (13-line redundant map) deleted — fallback template literal produced identical strings
+
+**California fair-use disclaimer**
+- California's DMV actively licenses specialty plate artwork from third parties, adding a copyright layer beyond base designs
+- In-app attribution and privacy policy both carry California-specific language citing 17 U.S.C. § 107
+
+**Badge categorization fixes**
+- Green Light / Healing Hands / Sports Fan / All Teams / Game On supporting-discoveries list now correctly maps to their categories (previously pointed at non-existent category names)
+- Ohio Civic bucket cleaned up: 89 → 40 (49 plates moved to Schools, Health, Commercial, Heritage, etc. via better keyword rules)
+- West Virginia: Back the Blue and Wounded in Line of Duty / FOP correctly route to First Responders
+
+### Architecture groundwork
+
+- 14 `load<State>Pack()` functions in activeGame.ts share the same shape, ready for a factory refactor if needed
+- All per-state configs follow a consistent export pattern (`<state>BadgeCounties`, `<state>BadgeIds`, `<state>BadgePlateSets`, `<state>Game`, etc.)
+- Scraper pattern matured enough to handle three different DMV site styles: traditional HTML (OH, WV), Drupal with image-style transforms (IA), JS-rendered Next.js SPAs (MN)
+
+### Result
+
+- 16 specialty packs + a fully-formed USA 50-state mode make the app genuinely national
+- Achievements grid has been trimmed of monotony (most regions now uniquely iconed) and polished with motion and the "New!" experience
+- No Florida-specific code remains in the shared badge library — adding the next 34 states requires only a new config file per state, no `badges.ts` edits
+- The app is in a genuinely clean architectural spot. The path from here to App Store submission is non-code work (screenshots, listing copy, developer enrollment, Mac time).
 
 ## Shipped In v1.3.0
 
@@ -187,38 +263,48 @@ Active state expansion is the primary development track. The multi-state archite
 
 ### State Expansion Status
 
-| State | Plates | Status |
-|-------|--------|--------|
-| Florida | 338 | Complete |
-| Mississippi | 305 | Complete |
-| Georgia | 287 | Complete (scraped from GA DOR) |
-| Kentucky | 230 | Complete |
-| Tennessee | 210 | Complete |
-| Missouri | 162 | Complete |
-| Arizona | 132 | Complete |
-| Arkansas | 129 | Complete |
-| Alabama | 99 | Complete (scraped via WP REST API) |
-| California | 94 | Complete |
-| Kansas | 85 | Complete (military + personalized) |
-| Alaska | 47 | Complete |
+**Phase B** (full specialty catalog scraped + regional explorer badges):
 
-## v1.9 — Path to 50 States
+| State | Plates | Status | Notes |
+|-------|--------|--------|-------|
+| Florida | 338 | Complete | v1.x baseline |
+| Mississippi | 303 | Complete | v1.7 |
+| Georgia | 287 | Complete | v1.7 (GA DOR) |
+| Ohio | 267 | Complete | **v1.9** (BMV) |
+| Kentucky | 230 | Complete | v1.7 |
+| Tennessee | 209 | Complete | v1.7 |
+| Missouri | 162 | Complete | v1.7 |
+| Arizona | 132 | Complete | v1.8 |
+| Arkansas | 129 | Complete | v1.7 |
+| Minnesota | 120 | Complete | **v1.9** (DPS/DVS, Next.js JSON extraction) |
+| West Virginia | 101 | Complete | **v1.9** (WV DMV, 2 thumbnail-fallback plates) |
+| Alabama | 99 | Complete | v1.8 (WP REST API) |
+| California | 94 | Complete | v1.8 |
+| Kansas | 85 | Complete | v1.8 |
+| Iowa | 72 | Complete | **v1.9** (Iowa DOT, Drupal) |
+| Alaska | 47 | Complete | v1.8 |
 
-The remaining 38 states are the focus of the next major release. Strategy is **breadth-first**: get all 50 states into the app with at least the standard plate, then go back state-by-state for full plate scraping. This avoids the trap of getting stuck on one hard state and lets users start spotting plates in any state immediately.
+**Separate game mode:**
+
+| Pack | Plates | Status | Notes |
+|-------|--------|--------|-------|
+| USA 50-State Challenge | 50 | Complete | **v1.9** — classic road-trip game, one standard plate per state |
+
+**Running totals:** 16 specialty state packs + 1 national-mode pack = **2,725 plates across 17 packs.**
+
+Remaining: 34 states (Idaho, Illinois, Indiana, Louisiana, Maine, Maryland, Massachusetts, Michigan, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South Dakota, Texas, Utah, Vermont, Virginia, Washington, Wisconsin, Wyoming, Colorado, Connecticut, Delaware, Hawaii). Their standard plates are already in the USA mode; Phase B (per-state specialty catalogs) is the next scaling arc.
+
+## Post-v1.9: Path to 50 Specialty Packs
+
+**Status update:** the "Phase A" breadth unlock shipped in v1.9.0 via the **USA 50-State Challenge game mode**. Every state now has a standard plate playable in that mode, so gameplay is immediately available for users physically driving anywhere in the US. What remains is **Phase B** — building out full per-state specialty catalogs for the 34 states not yet covered as their own pack.
+
+The strategy below still holds for Phase B work. Tier assignments can be read as expected scrape difficulty for the remaining states.
 
 ### Phased approach
 
-#### Phase A: Standard plate sweep (38 states × ~5 min each)
+#### Phase A: Standard plate sweep ✅ SHIPPED v1.9.0
 
-For each missing state:
-- Standard passenger plate image (manually grabbed)
-- State outline SVG (already have all 50)
-- Minimal game config with placeholder regions
-- Wired into the state picker
-
-**Definition of done:** all 50 states selectable, every state has at least one plate to spot.
-
-This unlocks gameplay for users physically driving anywhere in the US, which is the single biggest scope-of-play win.
+Rather than adding 34 more tiny per-state packs, Phase A was delivered as the **USA 50-State Challenge** game mode: one pack with 50 plates (one per state), pinned to the top of the State Picker. Every state is immediately playable. Per-state specialty packs still get added one-by-one under Phase B.
 
 #### Phase B: Full scraping by state difficulty tier
 
@@ -258,10 +344,10 @@ For each state, capture:
 
 These become important as the bundle scales:
 
-- **Lazy state pack loading** — 50 packs × ~3KB plate metadata = ~30MB bundled JSON if eagerly loaded. Should fetch active state's pack on demand via dynamic import or manifest fetch.
-- **Image hosting strategy** — 50 states × ~150 images × ~50KB ≈ 400MB. Repo size becomes a real concern. Options: keep in repo with LFS, push to a CDN (Cloudflare R2/Pages), or rely on PWA caching from the live origin.
-- **Build-time optimization** — `prebuild` regenerates all plate drivers. Should only regenerate changed states.
-- **Florida-specific debt cleanup** — `isLikelyInFlorida()`, `escapee` badge logic, `BadgeGroup: "florida"` semantic mismatch, hardcoded plate name lists in App.tsx. This was queued for v1.9 originally; now blocks clean scaling.
+- **Lazy state pack loading** — 50 packs × ~3KB plate metadata = ~30MB bundled JSON if eagerly loaded. Should fetch active state's pack on demand via dynamic import or manifest fetch. *(Still open.)*
+- **Image hosting strategy** — 50 states × ~150 images × ~50KB ≈ 400MB. Repo size becomes a real concern. Options: keep in repo with LFS, push to a CDN (Cloudflare R2/Pages), or rely on PWA caching from the live origin. *(Still open; current repo size is manageable at 16 packs.)*
+- **Build-time optimization** — `prebuild` regenerates all plate drivers. Should only regenerate changed states. *(Still open; ~2s today across 17 packs.)*
+- ~~**Florida-specific debt cleanup** — `isLikelyInFlorida()`, `escapee` badge logic, `BadgeGroup: "florida"` semantic mismatch, hardcoded plate name lists in App.tsx.~~ ✅ **SHIPPED v1.9.0.** The shared badge library no longer has any Florida-specific code path. Adding a new state requires zero edits to `badges.ts`.
 
 ### Pre-launch quality work
 
@@ -271,9 +357,9 @@ These become important as the bundle scales:
 - BADGE_ICONS.md completion (per BADGE_ICONS.md tracking)
 - Per-state quality pass: dedupe, clean names, image sizing
 
-## v1.8.x
+## v1.8.x (partially ✅ shipped in v1.9.0)
 
-Achievements visual polish round 2.
+Achievements visual polish round 2. The **motion** and **"New!" experience** batches shipped in v1.9.0; the remaining items below are still open for a future polish round.
 
 ### Goals
 
@@ -331,29 +417,29 @@ Completed.
 
 ### Phase 2: Isolate Domain Logic
 
-Started, but not finished.
+✅ Largely shipped in v1.9.0.
 
-Already moving in this direction:
+Done:
 
-- the app now consumes a generated plate driver instead of a Florida-only hand-shaped runtime catalog
-- Florida-specific category and naming rules are increasingly data-driven
-- the new master/runtime split creates a better seam for future tooling and future states
+- the app consumes a generated plate driver instead of a Florida-only hand-shaped runtime catalog
+- Florida-specific category and naming rules are data-driven
+- the master/runtime split creates a clean seam for tooling and future states
+- ~~separate generic badge evaluation from Florida badge definitions~~ ✅ `isLikelyInFlorida`, `escapee`, `BadgeGroup: "florida"` → `"regional"`, `stateBadgeMap`, and `allAroundIdMap` all retired. `badges.ts` is state-agnostic.
+- ~~move Florida-specific grouping and progression logic out of the main app flow~~ ✅ `badgePlateSets` and the 13 plate-name constants moved out of App.tsx / badges.ts into `floridaGame.ts` as `floridaBadgePlateSets`, flowing through `activeGame.ts` as `activeBadgePlateSets`.
 
-Still to do:
+Still open:
 
-- separate generic badge evaluation from Florida badge definitions
-- move more Florida-specific grouping and progression logic out of the main app flow
-- make more of the browse/search behavior consume declarative game data rather than Florida assumptions
+- make more of the browse/search behavior consume declarative game data rather than Florida assumptions (search-term handling, category sort ordering, some specific UI strings)
 
-## v1.9
+## Post-v1.9 — Framework Extraction Phase 3 / Editor Readiness
 
-Framework extraction Phase 2 and editor-readiness.
+Framework extraction Phase 2 largely shipped in v1.9.0 alongside the Florida debt cleanup. What remains for Phase 3 is editor-readiness.
 
 ### Goals
 
-- keep paying down the Florida-specific technical debt without over-abstracting
 - shape the codebase so a separate future driver editor has a clean target
-- make another state feasible without committing to it yet
+- document the master-JSON schema as a contract
+- decide which runtime fields are authoring-only vs runtime-only
 
 ### Checklist
 
@@ -1015,16 +1101,7 @@ These are intentionally not committed to the next release yet.
 - rarity-based scoring
 - history/year-based gameplay
 - in-app miscategorization reporting
-- **Real interactive map** — replace the CSS pin-plot in Explore → Map with Leaflet + OpenStreetMap. Details:
-  - Stack: `leaflet` + `react-leaflet` (~40KB gzipped, free, no API key)
-  - Discoveries plotted as markers with plate name + date popups
-  - Auto-fit bounds to show all pins
-  - Optional marker clustering for 100+ discoveries
-  - Optional state outline overlay for active state boundaries
-  - All data is local (lat/lng from discoveries) — no backend needed
-  - Works on PWA and iOS native; tiles cache well for offline
-  - Alternatives considered: MapLibre GL (heavier, ~200KB), Google Maps (costs money), Apple MapKit JS (needs token)
-  - Estimated effort: 1-2 hours basic, +1 hour for clustering/outlines
+- ~~**Real interactive map**~~ — ✅ SHIPPED v1.9.0. Leaflet + react-leaflet + CARTO tiles, with auto-fit bounds, light/dark adaptation, and plate+date popups. Clustering and state-outline overlays deferred to a future polish pass if needed.
 - custom badge artwork beyond the current icon system
 - optional social identity, leaderboard, and buddy-sharing features
 - a standalone external driver editor
