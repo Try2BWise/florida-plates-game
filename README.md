@@ -28,13 +28,13 @@ Pick one state and hunt its full specialty catalog — dozens to hundreds of des
 | Kentucky | 230 | 6 + all-around | KY KYTC |
 | Minnesota | 120 | 5 + all-around | MN DPS (DVS) |
 | Mississippi | 303 | 5 + all-around | MS DOR |
-| Missouri | 162 | 5 + all-around | MO DOR |
+| Missouri | 166 | 5 + all-around | MO DOR |
 | Ohio | 267 | 5 + all-around | OH BMV |
 | Tennessee | 209 | 3 + all-around | TN DOR |
 | West Virginia | 101 | 5 + all-around | WV DMV |
 | **USA (50-State)** | **50** | **5 regions + 2 iconic + all-around** | **Aggregate** |
 
-**17 packs · ~2,725 plates total**
+**17 packs · ~2,729 plates total**
 
 ## Features
 

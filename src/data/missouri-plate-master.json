@@ -114,7 +114,9 @@
       },
       "sponsor": "Missouri State Beekeepers Association",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "Bee Friendly (Missouri State Beekeepers Association)"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -234,7 +236,9 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "Missouri Elks Association"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -962,7 +966,8 @@
         "bicycle",
         "cycle",
         "bike",
-        "cycling"
+        "cycling",
+        "Missouri Bicycle and Pedestrian Federation"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -1083,7 +1088,9 @@
       },
       "sponsor": "Missouri Federation Of Square & Round Dance Clubs",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "Missouri Federation Of Square & Round Dance Clubs"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1115,7 +1122,8 @@
       "notes": null,
       "searchTerms": [
         "union",
-        "horses"
+        "horses",
+        "MKN Teamsters"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -1146,7 +1154,9 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "MASTERS"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1476,7 +1486,9 @@
       },
       "sponsor": "Missouri Nurses Foundation",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "Missouri Nurses Foundation"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -1566,7 +1578,10 @@
       },
       "sponsor": "American Heart Association",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "American Heart Association (Winning Women)",
+        "AHA"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2017,7 +2032,8 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "dav"
+        "dav",
+        "Wartime Disabled - DAV"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -2860,7 +2876,8 @@
       "notes": null,
       "searchTerms": [
         "gold",
-        "star"
+        "star",
+        "Some Gave All (Gold Star)"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -2891,7 +2908,9 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "American Legion"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -2952,7 +2971,8 @@
       "sponsor": null,
       "notes": null,
       "searchTerms": [
-        "vfw"
+        "vfw",
+        "Veterans Of Foreign Wars (VFW)"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -3823,7 +3843,9 @@
       },
       "sponsor": null,
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "Cave State"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -3853,7 +3875,9 @@
       },
       "sponsor": "Missouri Travel Council",
       "notes": null,
-      "searchTerms": [],
+      "searchTerms": [
+        "Missouri Travel Council"
+      ],
       "variantOf": null,
       "relatedPlates": [],
       "metadataBlob": null,
@@ -4068,7 +4092,8 @@
         "university",
         "pig",
         "sooie",
-        "fayetteville"
+        "fayetteville",
+        "Arkansas Alumni - Go Hogs!"
       ],
       "variantOf": null,
       "relatedPlates": [],
@@ -4415,9 +4440,9 @@
     {
       "id": "mo-ranken-technical-college",
       "slug": "ranken-technical-college",
-      "name": "Ranken Technical College ",
-      "displayName": "Ranken Technical College ",
-      "baseName": "Ranken Technical College ",
+      "name": "Ranken Technical College",
+      "displayName": "Ranken Technical College",
+      "baseName": "Ranken Technical College",
       "variantLabel": null,
       "plateType": "passenger",
       "isCurrent": true,
@@ -4887,6 +4912,126 @@
         {
           "source": "Missouri DOR",
           "sourceId": "wwu",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "mo-dont-tread-on-me",
+      "slug": "dont-tread-on-me",
+      "name": "Don't Tread on Me",
+      "displayName": "Don't Tread on Me",
+      "baseName": "Don't Tread on Me",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/missouri/plates/tread.gif",
+        "remoteUrl": "https://dor.mo.gov/motor-vehicle/plates/images/tread.gif"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Missouri DOR",
+          "sourceId": "tread",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "mo-id-rather-fly",
+      "slug": "id-rather-fly",
+      "name": "I'd Rather Fly",
+      "displayName": "I'd Rather Fly",
+      "baseName": "I'd Rather Fly",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/missouri/plates/ratherfly.gif",
+        "remoteUrl": "https://dor.mo.gov/motor-vehicle/plates/images/ratherfly.gif"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Missouri DOR",
+          "sourceId": "ratherfly",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "mo-im-pet-friendly",
+      "slug": "im-pet-friendly",
+      "name": "I'm Pet Friendly",
+      "displayName": "I'm Pet Friendly",
+      "baseName": "I'm Pet Friendly",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/missouri/plates/petfriendly.gif",
+        "remoteUrl": "https://dor.mo.gov/motor-vehicle/plates/images/petfriendly.gif"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Missouri DOR",
+          "sourceId": "petfriendly",
+          "versionId": null,
+          "value": null
+        }
+      ]
+    },
+    {
+      "id": "mo-wilsons-creek-national-battlefield",
+      "slug": "wilsons-creek-national-battlefield",
+      "name": "Wilson's Creek National Battlefield",
+      "displayName": "Wilson's Creek National Battlefield",
+      "baseName": "Wilson's Creek National Battlefield",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/missouri/plates/wilcreek.gif",
+        "remoteUrl": "https://dor.mo.gov/motor-vehicle/plates/images/wilcreek.gif"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": null,
+      "sourceRefs": [
+        {
+          "source": "Missouri DOR",
+          "sourceId": "wilcreek",
           "versionId": null,
           "value": null
         }
