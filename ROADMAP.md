@@ -271,9 +271,10 @@ Active state expansion is the primary development track. The multi-state archite
 | Mississippi | 303 | Complete | v1.7 |
 | Georgia | 287 | Complete | v1.7 (GA DOR) |
 | Ohio | 267 | Complete | **v1.9** (BMV) |
+| South Carolina | 236 | Complete | **v1.9** (SC DMV, single-page Drupal scrape) |
 | Kentucky | 230 | Complete | v1.7 |
 | Tennessee | 209 | Complete | v1.7 |
-| Missouri | 162 | Complete | v1.7 |
+| Missouri | 166 | Complete | v1.7 (audited to DMV parity in v1.9) |
 | Arizona | 132 | Complete | v1.8 |
 | Arkansas | 129 | Complete | v1.7 |
 | Minnesota | 120 | Complete | **v1.9** (DPS/DVS, Next.js JSON extraction) |
@@ -290,9 +291,9 @@ Active state expansion is the primary development track. The multi-state archite
 |-------|--------|--------|-------|
 | USA 50-State Challenge | 50 | Complete | **v1.9** — classic road-trip game, one standard plate per state |
 
-**Running totals:** 16 specialty state packs + 1 national-mode pack = **2,725 plates across 17 packs.**
+**Running totals:** 17 specialty state packs + 1 national-mode pack = **2,965 plates across 18 packs.**
 
-Remaining: 34 states (Idaho, Illinois, Indiana, Louisiana, Maine, Maryland, Massachusetts, Michigan, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South Dakota, Texas, Utah, Vermont, Virginia, Washington, Wisconsin, Wyoming, Colorado, Connecticut, Delaware, Hawaii). Their standard plates are already in the USA mode; Phase B (per-state specialty catalogs) is the next scaling arc.
+Remaining: 33 states (Idaho, Illinois, Indiana, Louisiana, Maine, Maryland, Massachusetts, Michigan, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Dakota, Texas, Utah, Vermont, Virginia, Washington, Wisconsin, Wyoming, Colorado, Connecticut, Delaware, Hawaii). Their standard plates are already in the USA mode; Phase B (per-state specialty catalogs) is the next scaling arc.
 
 ## Post-v1.9: Path to 50 Specialty Packs
 

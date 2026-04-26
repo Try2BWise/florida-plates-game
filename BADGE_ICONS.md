@@ -102,6 +102,7 @@ These would require new badge definitions in `badges.ts` AND new evaluation logi
 | West Virginia | 4 of 5 unique | Eastern Panhandle→wheat, Potomac Highlands→mountain, Metro Valley→cityscape, New River & Mountain Lakes→water-wave |
 | Iowa | **all 5 regions unique** ✅ | NW→wheat, NE→fish (Driftless), Central→cityscape (Des Moines), SW→corn, SE→water-wave (Mississippi) |
 | Minnesota | 4 of 5 unique | NW→wheat (Red River Valley), NE (Arrowhead)→water-wave, Central→fish (10k lakes), Metro→cityscape, Southern→corn |
+| South Carolina | **all 4 regions unique** ✅ | Upstate→mountain (Blue Ridge), Midlands→cityscape (Columbia), Pee Dee→chequered-flag (Darlington Raceway), Lowcountry→anchor (Charleston) |
 
 ### USA 50-State Challenge mode
 

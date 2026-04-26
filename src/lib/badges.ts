@@ -1041,6 +1041,42 @@ export const badgeDefinitions: BadgeDefinition[] = [
     group: "regional",
     availableIn: "v1.4"
   },
+  // South Carolina Explorer region badges
+  {
+    id: "sc-upstate-explorer",
+    name: "Upstate Explorer",
+    description: "Find a plate in an Upstate (Upcountry) county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "sc-midlands-explorer",
+    name: "Midlands Explorer",
+    description: "Find a plate in a Midlands county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "sc-pee-dee-explorer",
+    name: "Pee Dee Explorer",
+    description: "Find a plate in a Pee Dee county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "sc-lowcountry-explorer",
+    name: "Lowcountry Explorer",
+    description: "Find a plate in a Lowcountry county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-south-carolina",
+    name: "All Around South Carolina",
+    description: "Earn every regional explorer badge.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
   // Iowa Explorer region badges
   {
     id: "ia-northwest-explorer",

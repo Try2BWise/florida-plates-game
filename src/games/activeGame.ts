@@ -202,6 +202,18 @@ import {
   westVirginiaMixedBagCategories,
   westVirginiaRegionScoutCounties
 } from "../config/westVirginiaGame";
+import southCarolinaDriverData from "../data/generated/south-carolina-plate-driver.generated.json";
+import southCarolinaLegacyIdMap from "../data/generated/south-carolina-legacy-id-map.generated.json";
+import {
+  southCarolinaBadgeCounties,
+  southCarolinaBadgeGroupLabels,
+  southCarolinaBadgeGroupSymbols,
+  southCarolinaBadgeIds,
+  southCarolinaBadgePlateSets,
+  southCarolinaGame,
+  southCarolinaMixedBagCategories,
+  southCarolinaRegionScoutCounties
+} from "../config/southCarolinaGame";
 import { plateCategories, type Plate, type PlateCategory } from "../types";
 import { getItem, setItem } from "../lib/persistentStorage";
 
@@ -534,6 +546,23 @@ function loadWestVirginiaPack() {
   };
 }
 
+function loadSouthCarolinaPack() {
+  const plates = buildPlates(southCarolinaDriverData);
+  return {
+    game: southCarolinaGame,
+    badgeCounties: southCarolinaBadgeCounties,
+    badgeGroupLabels: southCarolinaBadgeGroupLabels,
+    badgeGroupSymbols: southCarolinaBadgeGroupSymbols,
+    mixedBagCategories: southCarolinaMixedBagCategories,
+    badgePlateSets: southCarolinaBadgePlateSets,
+    badgeIds: southCarolinaBadgeIds,
+    panhandleScoutCounties: southCarolinaRegionScoutCounties,
+    legacyIdMap: southCarolinaLegacyIdMap as Record<string, string>,
+    plates,
+    groupedPlates: buildGroupedPlates(plates),
+  };
+}
+
 function loadStatePack(stateId: string) {
   switch (stateId) {
     case "mississippi": return loadMississippiPack();
@@ -550,6 +579,7 @@ function loadStatePack(stateId: string) {
     case "kentucky": return loadKentuckyPack();
     case "minnesota": return loadMinnesotaPack();
     case "ohio": return loadOhioPack();
+    case "south-carolina": return loadSouthCarolinaPack();
     case "usa": return loadUsaPack();
     case "west-virginia": return loadWestVirginiaPack();
     case "florida":
@@ -588,6 +618,7 @@ export const plateCountsByState: Record<string, number> = {
   mississippi: mississippiDriverData.plates.length,
   missouri: missouriDriverData.plates.length,
   ohio: ohioDriverData.plates.length,
+  "south-carolina": southCarolinaDriverData.plates.length,
   tennessee: tennesseeDriverData.plates.length,
   usa: usaDriverData.plates.length,
   "west-virginia": westVirginiaDriverData.plates.length,
