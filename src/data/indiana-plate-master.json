@@ -1,0 +1,5561 @@
+{
+  "schemaVersion": 2,
+  "state": "Indiana",
+  "generatedDate": "2026-05-02",
+  "description": "Indiana license plates sourced from the Indiana Bureau of Motor Vehicles plate gallery CSV.",
+  "sourceFiles": [
+    "https://www.in.gov/bmv/registration-plates/license-plates-overview/_plates-data.csv"
+  ],
+  "plates": [
+    {
+      "id": "in-4-h-foundation",
+      "slug": "4-h-foundation",
+      "name": "4-H Foundation",
+      "displayName": "4-H Foundation",
+      "baseName": "4-H Foundation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/indiana/plates/in-4-h-foundation.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_i4hf-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana 4-H Foundation, Inc.Agricultural Administration Building615 W. State St.West Lafayette, IN 47907(765) 494-8483",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "258",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-500-festival",
+      "slug": "500-festival",
+      "name": "500 Festival",
+      "displayName": "500 Festival",
+      "baseName": "500 Festival",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-500-festival.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/500_Festival.jpg"
+      },
+      "sponsor": null,
+      "notes": "500 Festival, Inc.21 Virginia Avenue, Suite 500Indianapolis, IN 46204",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100798",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-a-kid-again-inc",
+      "slug": "a-kid-again-inc",
+      "name": "A Kid Again, Inc",
+      "displayName": "A Kid Again, Inc",
+      "baseName": "A Kid Again, Inc",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-a-kid-again-inc.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/a-kid-again-plate.png"
+      },
+      "sponsor": null,
+      "notes": "A Kid Again Inc8275 Allison Pointe TrlSuite 220Indianapolis, IN 46250(317) 759-3560",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPAKA6",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-abraham-lincolns-boyhood-home",
+      "slug": "abraham-lincolns-boyhood-home",
+      "name": "Abraham Lincolns Boyhood Home",
+      "displayName": "Abraham Lincolns Boyhood Home",
+      "baseName": "Abraham Lincolns Boyhood Home",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/indiana/plates/in-abraham-lincolns-boyhood-home.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_ab-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana State Museum & Historic Sites650 W Washington StreetIndianapolis, IN 46204",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100500",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-alzheimer-s-association",
+      "slug": "alzheimer-s-association",
+      "name": "Alzheimer’s Association",
+      "displayName": "Alzheimer’s Association",
+      "baseName": "Alzheimer’s Association",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-alzheimer-s-association.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/alzheimers-plate.png"
+      },
+      "sponsor": null,
+      "notes": "Alzheimer’s Association, Greater Indiana Chapter50 East 91st Street, Suite 100Indianapolis, IN 46240(317) 575-9620",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPALZ7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-amateur-radio",
+      "slug": "amateur-radio",
+      "name": "Amateur Radio",
+      "displayName": "Amateur Radio",
+      "baseName": "Amateur Radio",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-amateur-radio.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/amateur-radio-plate.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": "0",
+        "adminFee": "8",
+        "personalizationFee": "0",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "201",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-american-diabetes-association",
+      "slug": "american-diabetes-association",
+      "name": "American Diabetes Association",
+      "displayName": "American Diabetes Association",
+      "baseName": "American Diabetes Association",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-american-diabetes-association.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_ada-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "American Diabetes Association (Indiana Area)604 Allisonville RoadSuite 140Indianapolis, IN 46250(317) 352-9226888-DIABETES",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100637",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-american-foundation-for-suicide-prevention",
+      "slug": "american-foundation-for-suicide-prevention",
+      "name": "American Foundation for Suicide Prevention",
+      "displayName": "American Foundation for Suicide Prevention",
+      "baseName": "American Foundation for Suicide Prevention",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-american-foundation-for-suicide-prevention.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/afsp-2019.jpg"
+      },
+      "sponsor": null,
+      "notes": "America Foundation for Suicide Prevention14350 Mundy Drive Suite 800-199Noblesville, IN 46060",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100874",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-american-legion",
+      "slug": "american-legion",
+      "name": "American Legion",
+      "displayName": "American Legion",
+      "baseName": "American Legion",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-american-legion.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/millitaryplate_al-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "American Legion Department of Indiana777 North Meridian StreetIndianapolis, IN 46204(317) 630-1200",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "10",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "299",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-american-legion-auxiliary",
+      "slug": "american-legion-auxiliary",
+      "name": "American Legion Auxiliary",
+      "displayName": "American Legion Auxiliary",
+      "baseName": "American Legion Auxiliary",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-american-legion-auxiliary.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/american-legion-aux-lp.png"
+      },
+      "sponsor": null,
+      "notes": "American Legion Auxiliary3450 Founders RoadIndianapolis, IN 46268(317) 569 4500",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPALA7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-anderson-university",
+      "slug": "anderson-university",
+      "name": "Anderson University",
+      "displayName": "Anderson University",
+      "baseName": "Anderson University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-anderson-university.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/collegeplate_au-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Office of Alumni Relations1100 East Fifth StreetAnderson, IN 46012-3495(765) 641-4100",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "266",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-armed-forces-expeditionary",
+      "slug": "armed-forces-expeditionary",
+      "name": "Armed Forces Expeditionary",
+      "displayName": "Armed Forces Expeditionary",
+      "baseName": "Armed Forces Expeditionary",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-armed-forces-expeditionary.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/armed-forces-expeditionary.png"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4522",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "15",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100985",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-army-medal-of-honor",
+      "slug": "army-medal-of-honor",
+      "name": "Army Medal of Honor",
+      "displayName": "Army Medal of Honor",
+      "baseName": "Army Medal of Honor",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-army-medal-of-honor.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/medal-of-honor.png"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4522",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "0",
+        "adminFee": "5",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "SR0123",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-arts-trust",
+      "slug": "arts-trust",
+      "name": "Arts Trust",
+      "displayName": "Arts Trust",
+      "baseName": "Arts Trust",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-arts-trust.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_iac-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Arts Commission Cultural Trust100 North Senate Avenue, Room N505Indianapolis, IN 46204(463) 221-8405",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "290",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-autism-awareness",
+      "slug": "autism-awareness",
+      "name": "Autism Awareness",
+      "displayName": "Autism Awareness",
+      "baseName": "Autism Awareness",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-autism-awareness.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_asi-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Autism Society of Indiana10255 Commerce DriveSuite 164Carmel, IN 46032info@inautism.org800-609-8449",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100565",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-ball-state-university",
+      "slug": "ball-state-university",
+      "name": "Ball State University",
+      "displayName": "Ball State University",
+      "baseName": "Ball State University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-ball-state-university.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Ball-State_Formatted_2017.jpg"
+      },
+      "sponsor": null,
+      "notes": "Ball State Alumni Association2800 Bethel AvenueMuncie, IN 47306-0075(765) 285-1080",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "218",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-black-expo",
+      "slug": "black-expo",
+      "name": "Black Expo",
+      "displayName": "Black Expo",
+      "baseName": "Black Expo",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/indiana/plates/in-black-expo.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/orgplate_be-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Black Expo601 N. Shortridge RoadIndianapolis, IN 46219(317) 925-2702, Ext. 38",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "268",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-blackout",
+      "slug": "blackout",
+      "name": "Blackout",
+      "displayName": "Blackout",
+      "baseName": "Blackout",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-blackout.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/blackout-plate-standard.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": null,
+        "adminFee": "45",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-boy-scouts",
+      "slug": "boy-scouts",
+      "name": "Boy Scouts",
+      "displayName": "Boy Scouts",
+      "baseName": "Boy Scouts",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-boy-scouts.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/scouting-america-plate.png"
+      },
+      "sponsor": null,
+      "notes": "Boy Scouts of America - Crossroads of America Council7125 Fall Creek Road, NorthIndianapolis, IN 46256(317) 813-7125",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "280",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-boys-and-girls-club-in-indiana-inc",
+      "slug": "boys-and-girls-club-in-indiana-inc",
+      "name": "Boys and Girls Club in Indiana Inc",
+      "displayName": "Boys and Girls Club in Indiana Inc",
+      "baseName": "Boys and Girls Club in Indiana Inc",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/indiana/plates/in-boys-and-girls-club-in-indiana-inc.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/boys-and-girls-clubs-plate.png"
+      },
+      "sponsor": null,
+      "notes": "Boys and Girls Club in Indiana, Inc6929 E 10th Street, #296Indianapolis, IN 46219(317) 408-2133",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPBGC6",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-breakthrough-t1d",
+      "slug": "breakthrough-t1d",
+      "name": "Breakthrough T1D",
+      "displayName": "Breakthrough T1D",
+      "baseName": "Breakthrough T1D",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-breakthrough-t1d.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/breakthrough-t1d.jpg"
+      },
+      "sponsor": null,
+      "notes": "Breakthrough T1D10401 N Meridian Street, Suite 150Indianapolis, IN 46290(574) 273-1810",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "300",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-breast-cancer-awareness",
+      "slug": "breast-cancer-awareness",
+      "name": "Breast Cancer Awareness",
+      "displayName": "Breast Cancer Awareness",
+      "baseName": "Breast Cancer Awareness",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-breast-cancer-awareness.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_ibcat-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Breast Cancer Awareness TrustP.O. Box 8212Evansville, IN 47716-8212(866) 724-2228",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "294",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-bus",
+      "slug": "bus",
+      "name": "Bus",
+      "displayName": "Bus",
+      "baseName": "Bus",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-bus.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/bus_general.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": null,
+        "adminFee": null,
+        "personalizationFee": null,
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100527",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-butler-university",
+      "slug": "butler-university",
+      "name": "Butler University",
+      "displayName": "Butler University",
+      "baseName": "Butler University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-butler-university.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/collegeplate_bu-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Butler University4600 Sunset AvenueIndianapolis, IN 46208(317) 940-9946 or (800) 368-6852, Ext. 9946",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "250",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-cancer-support-community",
+      "slug": "cancer-support-community",
+      "name": "Cancer Support Community",
+      "displayName": "Cancer Support Community",
+      "baseName": "Cancer Support Community",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-cancer-support-community.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/cancer-support-community-plate.png"
+      },
+      "sponsor": null,
+      "notes": "5150 W 71st StIndianapolis, IN 46268 (317) 257-1505",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100992",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-d-a-r-e-indiana-trust",
+      "slug": "d-a-r-e-indiana-trust",
+      "name": "D.A.R.E. Indiana Trust",
+      "displayName": "D.A.R.E. Indiana Trust",
+      "baseName": "D.A.R.E. Indiana Trust",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-d-a-r-e-indiana-trust.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_dare-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "D.A.R.E. Indiana11495 North Pennsylvania StreetSuite 103Carmel, IN 46032(317) 816-1615",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "286",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-delta-research-and-educational-foundation",
+      "slug": "delta-research-and-educational-foundation",
+      "name": "Delta Research and Educational Foundation",
+      "displayName": "Delta Research and Educational Foundation",
+      "baseName": "Delta Research and Educational Foundation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-delta-research-and-educational-foundation.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/collegeplate_delta.jpg"
+      },
+      "sponsor": null,
+      "notes": "1703 New Hampshire Avenue NorthwestWashington, DC 20009(202) 347-1337",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "15",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100893",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-depauw-university",
+      "slug": "depauw-university",
+      "name": "DePauw University",
+      "displayName": "DePauw University",
+      "baseName": "DePauw University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-depauw-university.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/collegeplate_du-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Office of Alumni Engagement201 East Seminary StreetGreencastle, IN 46135(765) 658-4085",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "256",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-disability",
+      "slug": "disability",
+      "name": "Disability",
+      "displayName": "Disability",
+      "baseName": "Disability",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-disability.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/standplate_disability-large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": null,
+        "adminFee": null,
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100518",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-disability-blackout",
+      "slug": "disability-blackout",
+      "name": "Disability Blackout",
+      "displayName": "Disability Blackout",
+      "baseName": "Disability Blackout",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-disability-blackout.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/blackout-disability.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": null,
+        "adminFee": "45",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100519",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-disabled-hoosier-air-force-veteran",
+      "slug": "disabled-hoosier-air-force-veteran",
+      "name": "Disabled Hoosier Air Force Veteran",
+      "displayName": "Disabled Hoosier Air Force Veteran",
+      "baseName": "Disabled Hoosier Air Force Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-disabled-hoosier-air-force-veteran.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/disabled-air-force-plate.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4522",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "0",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100895",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-disabled-hoosier-army-veteran",
+      "slug": "disabled-hoosier-army-veteran",
+      "name": "Disabled Hoosier Army Veteran",
+      "displayName": "Disabled Hoosier Army Veteran",
+      "baseName": "Disabled Hoosier Army Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-disabled-hoosier-army-veteran.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/disabled-army-plate.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4522",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "0",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100896",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-disabled-hoosier-coast-guard-veteran",
+      "slug": "disabled-hoosier-coast-guard-veteran",
+      "name": "Disabled Hoosier Coast Guard Veteran",
+      "displayName": "Disabled Hoosier Coast Guard Veteran",
+      "baseName": "Disabled Hoosier Coast Guard Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-disabled-hoosier-coast-guard-veteran.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/disabled-coast-guard-plate.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4522",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "0",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100897",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-disabled-hoosier-marine-veteran",
+      "slug": "disabled-hoosier-marine-veteran",
+      "name": "Disabled Hoosier Marine Veteran",
+      "displayName": "Disabled Hoosier Marine Veteran",
+      "baseName": "Disabled Hoosier Marine Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-disabled-hoosier-marine-veteran.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/disabled-marine-plate.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4522",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "0",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100898",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-disabled-hoosier-merchant-marine-veteran",
+      "slug": "disabled-hoosier-merchant-marine-veteran",
+      "name": "Disabled Hoosier Merchant Marine Veteran",
+      "displayName": "Disabled Hoosier Merchant Marine Veteran",
+      "baseName": "Disabled Hoosier Merchant Marine Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-disabled-hoosier-merchant-marine-veteran.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/disabled-merchant-marine-plate.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4522",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "0",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100899",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-disabled-hoosier-navy-veteran",
+      "slug": "disabled-hoosier-navy-veteran",
+      "name": "Disabled Hoosier Navy Veteran",
+      "displayName": "Disabled Hoosier Navy Veteran",
+      "baseName": "Disabled Hoosier Navy Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-disabled-hoosier-navy-veteran.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/disabled-navy-plate.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4522",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "0",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100900",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-donate-life",
+      "slug": "donate-life",
+      "name": "Donate Life",
+      "displayName": "Donate Life",
+      "baseName": "Donate Life",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-donate-life.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_dli-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Donate Life Indiana3760 Guion RoadIndianapolis, IN 46222(317) 222-3414",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100643",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-ducks-unlimited",
+      "slug": "ducks-unlimited",
+      "name": "Ducks Unlimited",
+      "displayName": "Ducks Unlimited",
+      "baseName": "Ducks Unlimited",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/indiana/plates/in-ducks-unlimited.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Ducks_Unlimited_Web_Page.jpg"
+      },
+      "sponsor": null,
+      "notes": "Ducks UnlimitedPO Box 80111Indianapolis, IN 46280(734) 623-2000",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100666",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-environmental",
+      "slug": "environmental",
+      "name": "Environmental",
+      "displayName": "Environmental",
+      "baseName": "Environmental",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/indiana/plates/in-environmental.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_iht-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "President Benjamin Harrison Conservation Trust402 West Washington Street, W256Indianapolis, IN 46204(317) 233-1002",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "234",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-ex-pow",
+      "slug": "ex-pow",
+      "name": "Ex-POW",
+      "displayName": "Ex-POW",
+      "baseName": "Ex-POW",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-ex-pow.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/millitaryplate_epow-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4520",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "0",
+        "adminFee": "5",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100521",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-farm",
+      "slug": "farm",
+      "name": "Farm",
+      "displayName": "Farm",
+      "baseName": "Farm",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-farm.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/farm-vehicle-plate.png"
+      },
+      "sponsor": null,
+      "notes": "Commercial Vehicle Enforcement Division7811 Milhouse Road, Suite SIndianapolis, IN 46241Email: CVEDInfoandHelpline@isp.in.govTelephone: 317-615-7373Fax: 317-237-2116\"",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": null,
+        "adminFee": null,
+        "personalizationFee": null,
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "PB4000",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-first-responders",
+      "slug": "first-responders",
+      "name": "First Responders",
+      "displayName": "First Responders",
+      "baseName": "First Responders",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/indiana/plates/in-first-responders.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_ihsf-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Homeland Security302 West Washington StreetRoom E208 - IGCS Indianapolis, IN 46204(317) 232-2222",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "276",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-fleet-vehicle",
+      "slug": "fleet-vehicle",
+      "name": "Fleet Vehicle",
+      "displayName": "Fleet Vehicle",
+      "baseName": "Fleet Vehicle",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-fleet-vehicle.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/fleet_plate.jpg"
+      },
+      "sponsor": null,
+      "notes": "You may submit the Application for Fleet Vehicle Registration - State Form 55894 by mail to the address listed on the application.",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Other"
+        ],
+        "groupFee": null,
+        "adminFee": null,
+        "personalizationFee": null,
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100814",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-fort-wayne-zoological-society-inc",
+      "slug": "fort-wayne-zoological-society-inc",
+      "name": "Fort Wayne Zoological Society, Inc",
+      "displayName": "Fort Wayne Zoological Society, Inc",
+      "baseName": "Fort Wayne Zoological Society, Inc",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/indiana/plates/in-fort-wayne-zoological-society-inc.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/fort-wayne-zoo-plate.png"
+      },
+      "sponsor": null,
+      "notes": "Fort Wayne Zoological Society, Inc3411 Sherman BlvdFort Wayne, IN 46808(260) 427-6800",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPFWZ6",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-franklin-college",
+      "slug": "franklin-college",
+      "name": "Franklin College",
+      "displayName": "Franklin College",
+      "baseName": "Franklin College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-franklin-college.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_fc-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Franklin College101 Branigin BoulevardFranklin, IN 46131",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100216",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-fraternal-order-of-police",
+      "slug": "fraternal-order-of-police",
+      "name": "Fraternal Order of Police",
+      "displayName": "Fraternal Order of Police",
+      "baseName": "Fraternal Order of Police",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/indiana/plates/in-fraternal-order-of-police.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/orgplate_fop-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Fraternal Order Of Police Of Indiana1427 East Washington StreetIndianapolis, IN 46201(317) 635-5539",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "0",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": false
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "214",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-freemason",
+      "slug": "freemason",
+      "name": "Freemason",
+      "displayName": "Freemason",
+      "baseName": "Freemason",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-freemason.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_gliphl-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Grand Lodge Of Free and Accepted Masons Of Indiana5605 East 38th StreetIndianapolis, IN 46244(317) 634-7904",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": false
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "230",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-future-farmers-of-america-ffa-trust",
+      "slug": "future-farmers-of-america-ffa-trust",
+      "name": "Future Farmers of America (FFA) Trust",
+      "displayName": "Future Farmers of America (FFA) Trust",
+      "baseName": "Future Farmers of America (FFA) Trust",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/indiana/plates/in-future-farmers-of-america-ffa-trust.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/orgplate_ffa-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana FFA Foundation and Leadership Center P.O. Box 9Trafalgar, IN 46181-0492(317) 878-5464",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "284",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-general-trailer",
+      "slug": "general-trailer",
+      "name": "General Trailer",
+      "displayName": "General Trailer",
+      "baseName": "General Trailer",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-general-trailer.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/general-trailer.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": null,
+        "adminFee": null,
+        "personalizationFee": null,
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "PB3000",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-gold-star-family",
+      "slug": "gold-star-family",
+      "name": "Gold Star Family",
+      "displayName": "Gold Star Family",
+      "baseName": "Gold Star Family",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-gold-star-family.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/gold-star-family-plate.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4520",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "0",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": false
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100577",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-golf-foundation",
+      "slug": "golf-foundation",
+      "name": "Golf Foundation",
+      "displayName": "Golf Foundation",
+      "baseName": "Golf Foundation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/indiana/plates/in-golf-foundation.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Golf_Found_Plate.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Golf Foundation9795 Crosspoint Blvd. Suite 170Indianapolis IN, 46256PO Box 26159Indianapolis, IN 46226",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100817",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-greenways-foundation",
+      "slug": "greenways-foundation",
+      "name": "Greenways Foundation",
+      "displayName": "Greenways Foundation",
+      "baseName": "Greenways Foundation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/indiana/plates/in-greenways-foundation.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_greenways-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Greenways FoundationP.O. Box 80091Indianapolis, IN 46280(317) 767-9875",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100619",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-habitat-for-humanity",
+      "slug": "habitat-for-humanity",
+      "name": "Habitat for Humanity",
+      "displayName": "Habitat for Humanity",
+      "baseName": "Habitat for Humanity",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-habitat-for-humanity.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/orgplate_hfh-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Habitat for Humanity 101 W Ohio Street Ste 2000Indianapolis, Indiana 46204(317) 454-8090",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100250",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-hanover-college",
+      "slug": "hanover-college",
+      "name": "Hanover College",
+      "displayName": "Hanover College",
+      "baseName": "Hanover College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-hanover-college.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/hanover-college-2020.jpg"
+      },
+      "sponsor": null,
+      "notes": "Hanover College517 Ball Drive Hanover, IN 47243(812) 866-7012",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100236",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-health-foundation-of-greater-indianapolis",
+      "slug": "health-foundation-of-greater-indianapolis",
+      "name": "Health Foundation of Greater Indianapolis",
+      "displayName": "Health Foundation of Greater Indianapolis",
+      "baseName": "Health Foundation of Greater Indianapolis",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-health-foundation-of-greater-indianapolis.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_hfgi-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "The Health Foundation of Greater Indianapolis, Inc.429 East Vermont Street, Suite 400Indianapolis, IN 46202(317) 630-1805",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "278",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-historic",
+      "slug": "historic",
+      "name": "Historic",
+      "displayName": "Historic",
+      "baseName": "Historic",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/indiana/plates/in-historic.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/standplate_antiquecar-large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": null,
+        "adminFee": null,
+        "personalizationFee": null,
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100509",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-hoosier-air-force-veteran",
+      "slug": "hoosier-air-force-veteran",
+      "name": "Hoosier Air Force Veteran",
+      "displayName": "Hoosier Air Force Veteran",
+      "baseName": "Hoosier Air Force Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-hoosier-air-force-veteran.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Air_Force_Veteran.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4520",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "15",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100738",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-hoosier-army-veteran",
+      "slug": "hoosier-army-veteran",
+      "name": "Hoosier Army Veteran",
+      "displayName": "Hoosier Army Veteran",
+      "baseName": "Hoosier Army Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-hoosier-army-veteran.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Army_Veteran.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4520",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "15",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100726",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-hoosier-coast-guard-veteran",
+      "slug": "hoosier-coast-guard-veteran",
+      "name": "Hoosier Coast Guard Veteran",
+      "displayName": "Hoosier Coast Guard Veteran",
+      "baseName": "Hoosier Coast Guard Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-hoosier-coast-guard-veteran.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Coast_Guard_Veteran.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4520",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "15",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100750",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-hoosier-marine-veteran",
+      "slug": "hoosier-marine-veteran",
+      "name": "Hoosier Marine Veteran",
+      "displayName": "Hoosier Marine Veteran",
+      "baseName": "Hoosier Marine Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-hoosier-marine-veteran.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Marine_Corps_Veteran.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4520",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "15",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100744",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-hoosier-merchant-marine-veteran",
+      "slug": "hoosier-merchant-marine-veteran",
+      "name": "Hoosier Merchant Marine Veteran",
+      "displayName": "Hoosier Merchant Marine Veteran",
+      "baseName": "Hoosier Merchant Marine Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-hoosier-merchant-marine-veteran.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Merchant_Marine.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4520",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "15",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100765",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-hoosier-navy-veteran",
+      "slug": "hoosier-navy-veteran",
+      "name": "Hoosier Navy Veteran",
+      "displayName": "Hoosier Navy Veteran",
+      "baseName": "Hoosier Navy Veteran",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-hoosier-navy-veteran.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Navy_Veteran.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4520",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "15",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100732",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-huntington-university",
+      "slug": "huntington-university",
+      "name": "Huntington University",
+      "displayName": "Huntington University",
+      "baseName": "Huntington University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-huntington-university.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_hu-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Huntington University2303 College AvenueHuntington, IN 46750(260) 359-4048 Fax: (260) 358-3700",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100100",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-in-god-we-trust",
+      "slug": "in-god-we-trust",
+      "name": "In God We Trust",
+      "displayName": "In God We Trust",
+      "baseName": "In God We Trust",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/indiana/plates/in-in-god-we-trust.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/standplate_igwt-large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": null,
+        "adminFee": null,
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100762",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-association-of-chiefs-of-police-foundation",
+      "slug": "indiana-association-of-chiefs-of-police-foundation",
+      "name": "Indiana Association of Chiefs of Police Foundation",
+      "displayName": "Indiana Association of Chiefs of Police Foundation",
+      "baseName": "Indiana Association of Chiefs of Police Foundation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-association-of-chiefs-of-police-foundation.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/chief-of-police-plate.png"
+      },
+      "sponsor": null,
+      "notes": "4011 N. Pennsylvania St. STE 100Indianapolis, IN 46205",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPACP4",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-association-of-pregnancy-centers",
+      "slug": "indiana-association-of-pregnancy-centers",
+      "name": "Indiana Association of Pregnancy Centers",
+      "displayName": "Indiana Association of Pregnancy Centers",
+      "baseName": "Indiana Association of Pregnancy Centers",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-association-of-pregnancy-centers.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_iapc-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Association of Pregnancy Centers732 Smith St.Columbus, IN 47201(812) 378-4114",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100248",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-association-of-realtors-inc",
+      "slug": "indiana-association-of-realtors-inc",
+      "name": "Indiana Association of Realtors, Inc.",
+      "displayName": "Indiana Association of Realtors, Inc.",
+      "baseName": "Indiana Association of Realtors, Inc.",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-association-of-realtors-inc.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/realtors-lp.png"
+      },
+      "sponsor": null,
+      "notes": "Indiana Association of Realtors, Inc.143 W Market StreetIndianapolis, IN 46204(800) 284-0084",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPIAR7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-bicycle-coalition",
+      "slug": "indiana-bicycle-coalition",
+      "name": "Indiana Bicycle Coalition",
+      "displayName": "Indiana Bicycle Coalition",
+      "baseName": "Indiana Bicycle Coalition",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-bicycle-coalition.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_ibc-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Bicycle Coalition242 E. Market Street, E 102Indianapolis, IN 46204(317) 466-9701",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100595",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-coal-mining-institute",
+      "slug": "indiana-coal-mining-institute",
+      "name": "Indiana Coal Mining Institute",
+      "displayName": "Indiana Coal Mining Institute",
+      "baseName": "Indiana Coal Mining Institute",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-coal-mining-institute.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Coal-Mining-Insitute_Formatted_2017.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Coal Mining Institute, Inc.250 Cross Pointe Blvd.Evansville, IN 47715",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "20",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100297",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-department-of-education",
+      "slug": "indiana-department-of-education",
+      "name": "Indiana Department of Education",
+      "displayName": "Indiana Department of Education",
+      "baseName": "Indiana Department of Education",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-department-of-education.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_ide.jpg"
+      },
+      "sponsor": null,
+      "notes": "250 Cross Pointe Blvd.Evansville, IN 47715",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100098",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-emergency-medical-services-association-iemsa",
+      "slug": "indiana-emergency-medical-services-association-iemsa",
+      "name": "Indiana Emergency Medical Services Association (IEMSA)",
+      "displayName": "Indiana Emergency Medical Services Association (IEMSA)",
+      "baseName": "Indiana Emergency Medical Services Association (IEMSA)",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-emergency-medical-services-association-iemsa.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/IEMSA_Plate.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Emergency Medical Services Association (IEMSA)P.O. Box KGriffith, IN 46319",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100823",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-fever",
+      "slug": "indiana-fever",
+      "name": "Indiana Fever",
+      "displayName": "Indiana Fever",
+      "baseName": "Indiana Fever",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-fever.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/indiana-fever-plate.png"
+      },
+      "sponsor": null,
+      "notes": "Pacers Foundation125 S. Pennsylvania StreetIndianapolis, IN 46204(317) 917-2500",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "<p>INBMVPFVR7</p>",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-institute-of-technology",
+      "slug": "indiana-institute-of-technology",
+      "name": "Indiana Institute of Technology",
+      "displayName": "Indiana Institute of Technology",
+      "baseName": "Indiana Institute of Technology",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-institute-of-technology.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/collegeplate_intech.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Institute of Technology1600 East Washington BoulevardFort Wayne, IN 46803(260) 422-5561",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100238",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-motor-truck-association",
+      "slug": "indiana-motor-truck-association",
+      "name": "Indiana Motor Truck Association",
+      "displayName": "Indiana Motor Truck Association",
+      "baseName": "Indiana Motor Truck Association",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-motor-truck-association.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Indiana_Motor_Truck.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Motor Truck AssociationOne North Capitol Ave.Suite 460Indianapolis,IN 46204",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100690",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-music-education-association-foundation",
+      "slug": "indiana-music-education-association-foundation",
+      "name": "Indiana Music Education Association Foundation",
+      "displayName": "Indiana Music Education Association Foundation",
+      "baseName": "Indiana Music Education Association Foundation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-music-education-association-foundation.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Music-in-our-schools-2017.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Music Education Association Foundation100 E Thompson RoadIndianapolis, IN 46227",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100861",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-organization-for-nursing-leadership",
+      "slug": "indiana-organization-for-nursing-leadership",
+      "name": "Indiana Organization for Nursing Leadership",
+      "displayName": "Indiana Organization for Nursing Leadership",
+      "baseName": "Indiana Organization for Nursing Leadership",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-organization-for-nursing-leadership.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_ione-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Organization for Nursing Leadership500 North Meridian, Suite 250Indianapolis, IN 46204(317) 423-7731",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100017",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-patriot-guard-riders",
+      "slug": "indiana-patriot-guard-riders",
+      "name": "Indiana Patriot Guard Riders",
+      "displayName": "Indiana Patriot Guard Riders",
+      "baseName": "Indiana Patriot Guard Riders",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-patriot-guard-riders.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Indiana_Patriot_Guard_Riders.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Patriot Guard Riders, Inc.1218 Southhampton DriveDecatur, IN 46733",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100708",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-sheriff-s-association",
+      "slug": "indiana-sheriff-s-association",
+      "name": "Indiana Sheriff's Association",
+      "displayName": "Indiana Sheriff's Association",
+      "baseName": "Indiana Sheriff's Association",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-sheriff-s-association.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_isa-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Sheriffs' Association147 East Maryland StreetIndianapolis, IN 46204-3608(317) 356-3633 (800) 622-4779",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100625",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-shrine-association",
+      "slug": "indiana-shrine-association",
+      "name": "Indiana Shrine Association",
+      "displayName": "Indiana Shrine Association",
+      "baseName": "Indiana Shrine Association",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-shrine-association.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/orgplate_sa-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Shrine Association510 North New Jersey StreetIndianapolis, IN 46204(317) 635-2433",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "0",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": false
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "232",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-soccer",
+      "slug": "indiana-soccer",
+      "name": "Indiana Soccer",
+      "displayName": "Indiana Soccer",
+      "baseName": "Indiana Soccer",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-soccer.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Indiana_soccer.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Soccer9333 N. Meridian Street Suite 225Indianapolis, IN 46260",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100672",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-society-for-respiratory-care",
+      "slug": "indiana-society-for-respiratory-care",
+      "name": "Indiana Society for Respiratory Care",
+      "displayName": "Indiana Society for Respiratory Care",
+      "baseName": "Indiana Society for Respiratory Care",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-society-for-respiratory-care.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/respiratory-society-lp.png"
+      },
+      "sponsor": null,
+      "notes": "Indiana Society for Respiratory CareP.O. Box 951Indianapolis, IN 46206-0951(812) 230-2305",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "10",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPRTS7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-state-council-knights-of-columbus-charity-fund-inc",
+      "slug": "indiana-state-council-knights-of-columbus-charity-fund-inc",
+      "name": "Indiana State Council Knights of Columbus Charity Fund Inc.",
+      "displayName": "Indiana State Council Knights of Columbus Charity Fund Inc.",
+      "baseName": "Indiana State Council Knights of Columbus Charity Fund Inc.",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-state-council-knights-of-columbus-charity-fund-inc.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/in-knights.jpg"
+      },
+      "sponsor": null,
+      "notes": "4974 Roxbury Ct.Pittsboro, IN 46167(317) 939-1958",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "15",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100903",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-state-police-memorial",
+      "slug": "indiana-state-police-memorial",
+      "name": "Indiana State Police Memorial",
+      "displayName": "Indiana State Police Memorial",
+      "baseName": "Indiana State Police Memorial",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-state-police-memorial.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/state-police-memorial.png"
+      },
+      "sponsor": null,
+      "notes": "Indiana State PoliceIGCN - 100 North Senate AvenueIndianapolis, IN 46204-2259317-232-0064",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "425",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-state-university",
+      "slug": "indiana-state-university",
+      "name": "Indiana State University",
+      "displayName": "Indiana State University",
+      "baseName": "Indiana State University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-state-university.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_isu-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "ISU Alumni Association30 North 5th StreetTerre Haute, IN 47809(812) 237-6100or alumni@indstate.edu\"",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "220",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-university",
+      "slug": "indiana-university",
+      "name": "Indiana University",
+      "displayName": "Indiana University",
+      "baseName": "Indiana University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-university.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_iu-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "IU Alumni Association1000 E. 17th StreetBloomington, IN 47408-1521(800) 824-3044 or (812) 855-2980",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "216",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-university-indianapolis",
+      "slug": "indiana-university-indianapolis",
+      "name": "Indiana University Indianapolis",
+      "displayName": "Indiana University Indianapolis",
+      "baseName": "Indiana University Indianapolis",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-university-indianapolis.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/iu-indianapolis-plate.png"
+      },
+      "sponsor": null,
+      "notes": "IU Alumni Relations301 University Blvd., Suite 1031Indianapolis, IN 46202",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "292",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-volunteer-firefighter",
+      "slug": "indiana-volunteer-firefighter",
+      "name": "Indiana Volunteer Firefighter",
+      "displayName": "Indiana Volunteer Firefighter",
+      "baseName": "Indiana Volunteer Firefighter",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-volunteer-firefighter.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_ivfa-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Volunteer Firefighters AssociationP.O. Box 4797Evansville, IN 47724(877) 606-4832",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "20",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "212",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indiana-wesleyan-university",
+      "slug": "indiana-wesleyan-university",
+      "name": "Indiana Wesleyan University",
+      "displayName": "Indiana Wesleyan University",
+      "baseName": "Indiana Wesleyan University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indiana-wesleyan-university.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Wesleyan-Univ-2017.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Wesleyan University4201 South Washington StreetMarion, IN 46953(765) 677-2110",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "238",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indianapolis-colts",
+      "slug": "indianapolis-colts",
+      "name": "Indianapolis Colts",
+      "displayName": "Indianapolis Colts",
+      "baseName": "Indianapolis Colts",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indianapolis-colts.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/orgplate-colts2020.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Finance AuthorityOne North Capitol, Suite 900Indianapolis, IN 46204",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "20",
+        "adminFee": "10",
+        "personalizationFee": null,
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100193",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indianapolis-motor-speedway-museum",
+      "slug": "indianapolis-motor-speedway-museum",
+      "name": "Indianapolis Motor Speedway Museum",
+      "displayName": "Indianapolis Motor Speedway Museum",
+      "baseName": "Indianapolis Motor Speedway Museum",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indianapolis-motor-speedway-museum.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/IMS-2017.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indianapolis Motor Speedway Museum4750 W 16th St.Indianapolis, IN 46222(317) 492-6779",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "270",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-indianapolis-zoological-society",
+      "slug": "indianapolis-zoological-society",
+      "name": "Indianapolis Zoological Society",
+      "displayName": "Indianapolis Zoological Society",
+      "baseName": "Indianapolis Zoological Society",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/indiana/plates/in-indianapolis-zoological-society.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Indianapolis_zoo.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indianapolis Zoological Society 1200 West WashingtonIndianapolis, IN 46222",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100702",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-insuring-foster-youth-foster-success",
+      "slug": "insuring-foster-youth-foster-success",
+      "name": "Insuring Foster Youth (Foster Success)",
+      "displayName": "Insuring Foster Youth (Foster Success)",
+      "baseName": "Insuring Foster Youth (Foster Success)",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-insuring-foster-youth-foster-success.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/insuring-foster-youth-plate.png"
+      },
+      "sponsor": null,
+      "notes": "Insuring Foster Youth (Foster Success)546 East 17th StreetSte. 206Indianapolis, IN 46202(317) 917-8940",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPIFY6",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-ista",
+      "slug": "ista",
+      "name": "ISTA",
+      "displayName": "ISTA",
+      "baseName": "ISTA",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/indiana/plates/in-ista.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/ista-plate.png"
+      },
+      "sponsor": null,
+      "notes": "Indiana State Teachers Association150 W. Market Street. Ste 900Indianapolis, IN 46204(844) 275-4782",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPTSA7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-iuoe-local-150-scholarship-fund-inc",
+      "slug": "iuoe-local-150-scholarship-fund-inc",
+      "name": "IUOE Local 150 Scholarship Fund, Inc.",
+      "displayName": "IUOE Local 150 Scholarship Fund, Inc.",
+      "baseName": "IUOE Local 150 Scholarship Fund, Inc.",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Schools",
+      "image": {
+        "path": "state-packs/indiana/plates/in-iuoe-local-150-scholarship-fund-inc.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/operating-engineers.jpg"
+      },
+      "sponsor": null,
+      "notes": "IUOE Local 150 Scholarship Fund, Inc.2193 W. 84th PlaceMerrillville, IN 46410(219) 736-7710",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "15",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100905",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-ivy-tech-community-college",
+      "slug": "ivy-tech-community-college",
+      "name": "Ivy Tech Community College",
+      "displayName": "Ivy Tech Community College",
+      "baseName": "Ivy Tech Community College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-ivy-tech-community-college.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/collegeplate_ivt-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Ivy Tech Community College50 West Fall Creek Parkway, North DriveIndianapolis, IN 46208(317) 921-4895",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100244",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-iyg-group",
+      "slug": "iyg-group",
+      "name": "IYG Group",
+      "displayName": "IYG Group",
+      "baseName": "IYG Group",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-iyg-group.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Indiana_Youth_Group.jpg"
+      },
+      "sponsor": null,
+      "notes": "IYG3733 N. Meridian St.Indianapolis, IN 46235(317) 541-8726",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100684",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-kids-first-trust",
+      "slug": "kids-first-trust",
+      "name": "Kids First Trust",
+      "displayName": "Kids First Trust",
+      "baseName": "Kids First Trust",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-kids-first-trust.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Kids-First_Formatted_2017.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Child Services 302 West Washington Street, Room E306Indianapolis, IN 46204(317) 232-3477",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "242",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-lewis-and-clark-expedition",
+      "slug": "lewis-and-clark-expedition",
+      "name": "Lewis and Clark Expedition",
+      "displayName": "Lewis and Clark Expedition",
+      "baseName": "Lewis and Clark Expedition",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/indiana/plates/in-lewis-and-clark-expedition.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_cfcctb-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Lewis and Clark Expedition315 Southern Indiana AvenueJeffersonville, IN 47130(812) 282-6654",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "302",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-lions-of-indiana",
+      "slug": "lions-of-indiana",
+      "name": "Lions of Indiana",
+      "displayName": "Lions of Indiana",
+      "baseName": "Lions of Indiana",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-lions-of-indiana.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_lions-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Lions of Indiana 119 North Pendleton AvenuePendleton, IN 46064(765) 564-3707",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "236",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-little-red-door-cancer-agency",
+      "slug": "little-red-door-cancer-agency",
+      "name": "Little Red Door Cancer Agency",
+      "displayName": "Little Red Door Cancer Agency",
+      "baseName": "Little Red Door Cancer Agency",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-little-red-door-cancer-agency.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/little-red-door-plate.png"
+      },
+      "sponsor": null,
+      "notes": "Little Red Door Cancer Agency1801 N. Meridian StreetIndianapolis, IN 46202(317) 925-5595",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPLRD7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-manchester-university",
+      "slug": "manchester-university",
+      "name": "Manchester University",
+      "displayName": "Manchester University",
+      "baseName": "Manchester University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-manchester-university.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_mc-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Manchester University604 East College AvenueNorth Manchester, IN 46962(260) 982-5223",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "240",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-marian-university",
+      "slug": "marian-university",
+      "name": "Marian University",
+      "displayName": "Marian University",
+      "baseName": "Marian University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-marian-university.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/collegeplate_mu-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Marian University3200 Cold Spring RoadIndianapolis, IN 46222-1997(800) 952-3917",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100579",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-marine-foundation-of-indiana",
+      "slug": "marine-foundation-of-indiana",
+      "name": "Marine Foundation of Indiana",
+      "displayName": "Marine Foundation of Indiana",
+      "baseName": "Marine Foundation of Indiana",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-marine-foundation-of-indiana.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Marine_Foundation.jpg"
+      },
+      "sponsor": null,
+      "notes": "Marine Foundation of Indiana, Inc.550 South Audubon RoadIndianapolis, IN 46219-8110(317) 546-7228",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100696",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-martin-university",
+      "slug": "martin-university",
+      "name": "Martin University",
+      "displayName": "Martin University",
+      "baseName": "Martin University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-martin-university.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/martin-university-plate.png"
+      },
+      "sponsor": null,
+      "notes": "Martin UniversityOffice of Institutional Advancement2186 North Sherman DriveIndianapolis, IN 46218(317) 543-3093",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPMTU6",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-meals-on-wheels",
+      "slug": "meals-on-wheels",
+      "name": "Meals on Wheels",
+      "displayName": "Meals on Wheels",
+      "baseName": "Meals on Wheels",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-meals-on-wheels.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/meals-on-wheels-plate.png"
+      },
+      "sponsor": null,
+      "notes": "LaPorte County Meals on Wheels301 E. 8th Street, Suite 110Michigan City, IN 46360(219) 872-9117",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPMOW7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-mini-truck",
+      "slug": "mini-truck",
+      "name": "Mini Truck",
+      "displayName": "Mini Truck",
+      "baseName": "Mini Truck",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-mini-truck.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/mini-truck-license-plate.png"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": null,
+        "adminFee": null,
+        "personalizationFee": null,
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPMIN7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-national-guard",
+      "slug": "national-guard",
+      "name": "National Guard",
+      "displayName": "National Guard",
+      "baseName": "National Guard",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-national-guard.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/national-guard-plate.png"
+      },
+      "sponsor": null,
+      "notes": "Headquarters Indiana National Guard2002 S. Holt RoadIndianapolis, IN 46241(317) 247-3300",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "0",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": false
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "9257638",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-national-ovarian-cancer-coalition",
+      "slug": "national-ovarian-cancer-coalition",
+      "name": "National Ovarian Cancer Coalition",
+      "displayName": "National Ovarian Cancer Coalition",
+      "baseName": "National Ovarian Cancer Coalition",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-national-ovarian-cancer-coalition.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/ovarian-cancer-lp.png"
+      },
+      "sponsor": null,
+      "notes": "National Ovarian Cancer CoalitionP.O. Box 3362Munster, IN 46321(708) 883-6654",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPOCC7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-national-rifle-association",
+      "slug": "national-rifle-association",
+      "name": "National Rifle Association",
+      "displayName": "National Rifle Association",
+      "baseName": "National Rifle Association",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Civic",
+      "image": {
+        "path": "state-packs/indiana/plates/in-national-rifle-association.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_nra-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "National Rifle Association7795 Big Bend Rd.Martinsville, IN 46151",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100658",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-national-sisterhood-united-for-journeymen-linemen",
+      "slug": "national-sisterhood-united-for-journeymen-linemen",
+      "name": "National Sisterhood United for Journeymen Linemen",
+      "displayName": "National Sisterhood United for Journeymen Linemen",
+      "baseName": "National Sisterhood United for Journeymen Linemen",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-national-sisterhood-united-for-journeymen-linemen.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/sisterhood-journeymen-plate.png"
+      },
+      "sponsor": null,
+      "notes": "3645 S East St Indianapolis, IN 46227317-791-1362",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "20",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "101004",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-native-american",
+      "slug": "native-american",
+      "name": "Native American",
+      "displayName": "Native American",
+      "baseName": "Native American",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/indiana/plates/in-native-american.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Native-American_PA_Formatted.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Native American Trust100 North Senate Ave, Rm N103Indianapolis, IN 46204",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100907",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-notre-dame",
+      "slug": "notre-dame",
+      "name": "Notre Dame",
+      "displayName": "Notre Dame",
+      "baseName": "Notre Dame",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-notre-dame.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_und-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "University of Notre Dame Alumni Association100 Eck Center Notre Dame, IN 46556(574) 631-6000",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "224",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-pacers-foundation",
+      "slug": "pacers-foundation",
+      "name": "Pacers Foundation",
+      "displayName": "Pacers Foundation",
+      "baseName": "Pacers Foundation",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/indiana/plates/in-pacers-foundation.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Pacers-Foundation_Formatted_2017.jpg"
+      },
+      "sponsor": null,
+      "notes": "Pacers Foundation, Inc.125 S Pennsylvania StreetIndianapolis, IN 46204",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100846",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-pearl-harbor-survivor",
+      "slug": "pearl-harbor-survivor",
+      "name": "Pearl Harbor Survivor",
+      "displayName": "Pearl Harbor Survivor",
+      "baseName": "Pearl Harbor Survivor",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-pearl-harbor-survivor.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/millitaryplate_ph-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4520",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "0",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "211",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-permanent-trailer-3-000lb",
+      "slug": "permanent-trailer-3-000lb",
+      "name": "Permanent Trailer 3,000lb",
+      "displayName": "Permanent Trailer 3,000lb",
+      "baseName": "Permanent Trailer 3,000lb",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-permanent-trailer-3-000lb.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/permanent-trailer.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": null,
+        "adminFee": null,
+        "personalizationFee": null,
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPTRP7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-pet-friendly-services-of-indiana",
+      "slug": "pet-friendly-services-of-indiana",
+      "name": "Pet Friendly Services of Indiana",
+      "displayName": "Pet Friendly Services of Indiana",
+      "baseName": "Pet Friendly Services of Indiana",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/indiana/plates/in-pet-friendly-services-of-indiana.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_snsi-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Spay and Neuter Services of Indiana1100 W. 42nd Street,Indianapolis, IN 46208Voice Mail: (317) 767-7771",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100613",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-peyton-manning-st-vincent",
+      "slug": "peyton-manning-st-vincent",
+      "name": "Peyton Manning St Vincent",
+      "displayName": "Peyton Manning St Vincent",
+      "baseName": "Peyton Manning St Vincent",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-peyton-manning-st-vincent.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/peyton-manning-stvin-plate.jpg"
+      },
+      "sponsor": null,
+      "notes": "Peyton Manning Children's Hospital at St. Vincent2001 West 86th StreetIndianapolis, IN 46260(317) 338-KIDS (5437)",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100607",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-pollinator-partnership",
+      "slug": "pollinator-partnership",
+      "name": "Pollinator Partnership",
+      "displayName": "Pollinator Partnership",
+      "baseName": "Pollinator Partnership",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/indiana/plates/in-pollinator-partnership.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/pollinator-partnership-plate.png"
+      },
+      "sponsor": null,
+      "notes": "582 Market Street, Ste. 1215San Francisco, CA 94104(415) 362-1137",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPPOL7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-pow-mia",
+      "slug": "pow-mia",
+      "name": "POW-MIA",
+      "displayName": "POW-MIA",
+      "baseName": "POW-MIA",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-pow-mia.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/POWMIA.jpg"
+      },
+      "sponsor": null,
+      "notes": "Rolling Thunder IndianaP.O. Box 26458Indianapolis, IN 46226",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100559",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-professional-firefighters",
+      "slug": "professional-firefighters",
+      "name": "Professional Firefighters",
+      "displayName": "Professional Firefighters",
+      "baseName": "Professional Firefighters",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "First Responders",
+      "image": {
+        "path": "state-packs/indiana/plates/in-professional-firefighters.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/orgplate_pf-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "The Professional Fire Fighters Union of IndianaP.O. Box 15735Fort Wayne, IN 46885(260) 414-6889 or (317) 630-1840",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100020",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-purdue-university",
+      "slug": "purdue-university",
+      "name": "Purdue University",
+      "displayName": "Purdue University",
+      "baseName": "Purdue University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-purdue-university.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/collegeplate_pu-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Purdue for Life Foundation403 W. Wood St West Lafayette, IN 47907(800) 319-2199 or (765)494-2727plpp@purdueforlife.org",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "264",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-purdue-university-fort-wayne",
+      "slug": "purdue-university-fort-wayne",
+      "name": "Purdue University Fort Wayne",
+      "displayName": "Purdue University Fort Wayne",
+      "baseName": "Purdue University Fort Wayne",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-purdue-university-fort-wayne.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/purdue-fort-wayne-plate.png"
+      },
+      "sponsor": null,
+      "notes": "2101 E. Coliseum Blvd.Fort Wayne, IN 46805(260) 481-6100",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPFWP7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-purdue-university-northwest",
+      "slug": "purdue-university-northwest",
+      "name": "Purdue University Northwest",
+      "displayName": "Purdue University Northwest",
+      "baseName": "Purdue University Northwest",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-purdue-university-northwest.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/purdue-northwest-plate.png"
+      },
+      "sponsor": null,
+      "notes": "2200 169th Street Hammond, IN 46323(219) 989-2323Giving@PNW.edu",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPNWP7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-purple-heart",
+      "slug": "purple-heart",
+      "name": "Purple Heart",
+      "displayName": "Purple Heart",
+      "baseName": "Purple Heart",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-purple-heart.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/millitaryplate_purh-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4522",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "0",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100536",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-purple-heart-disability",
+      "slug": "purple-heart-disability",
+      "name": "Purple Heart Disability",
+      "displayName": "Purple Heart Disability",
+      "baseName": "Purple Heart Disability",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-purple-heart-disability.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/millitaryplate_purh-large_disable.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910 or (800) 400-4522",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "0",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100779",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-riley-hospital",
+      "slug": "riley-hospital",
+      "name": "Riley Hospital",
+      "displayName": "Riley Hospital",
+      "baseName": "Riley Hospital",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-riley-hospital.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_rcf-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Riley Children's Foundation30 S. Meridian Street, Suite 200Indianapolis, IN 46204(317) 634-4474 Fax: 317-634-4480",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "296",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-rose-hulman",
+      "slug": "rose-hulman",
+      "name": "Rose Hulman",
+      "displayName": "Rose Hulman",
+      "baseName": "Rose Hulman",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-rose-hulman.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_rhit-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Rose-Hulman Institute of Technology5500 Wabash AvenueCampus Box 13Terre Haute, IN 47803(812) 877-8468",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "244",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-rv",
+      "slug": "rv",
+      "name": "RV",
+      "displayName": "RV",
+      "baseName": "RV",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-rv.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/standplate_rv-large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": null,
+        "adminFee": null,
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100540",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-saint-mary-of-the-woods",
+      "slug": "saint-mary-of-the-woods",
+      "name": "Saint Mary of the Woods",
+      "displayName": "Saint Mary of the Woods",
+      "baseName": "Saint Mary of the Woods",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-saint-mary-of-the-woods.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_smwc-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Saint Mary-of-the-Woods CollegeP.O. Box 70Saint Mary-of-the-Woods, IN 47876(812) 535-5270",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "248",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-saint-mary-s-college",
+      "slug": "saint-mary-s-college",
+      "name": "Saint Mary's College",
+      "displayName": "Saint Mary's College",
+      "baseName": "Saint Mary's College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-saint-mary-s-college.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_smaryc-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "St. Mary's College 110 Le Mans HallNotre Dame, IN 46556",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100240",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-semi-tractor",
+      "slug": "semi-tractor",
+      "name": "Semi-Tractor",
+      "displayName": "Semi-Tractor",
+      "baseName": "Semi-Tractor",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-semi-tractor.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/SemiTractor_plate.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": null,
+        "adminFee": null,
+        "personalizationFee": null,
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100545",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-semi-trailer-permanent",
+      "slug": "semi-trailer-permanent",
+      "name": "Semi-Trailer Permanent",
+      "displayName": "Semi-Trailer Permanent",
+      "baseName": "Semi-Trailer Permanent",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-semi-trailer-permanent.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/semi-trailer-plate.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": null,
+        "adminFee": null,
+        "personalizationFee": null,
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100544",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-semiquincentennial",
+      "slug": "semiquincentennial",
+      "name": "Semiquincentennial",
+      "displayName": "Semiquincentennial",
+      "baseName": "Semiquincentennial",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Heritage",
+      "image": {
+        "path": "state-packs/indiana/plates/in-semiquincentennial.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/semiquin-plate.png"
+      },
+      "sponsor": null,
+      "notes": "Semiquincentennial Trust Fund",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": null,
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPSQC7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-special-machinery",
+      "slug": "special-machinery",
+      "name": "Special Machinery",
+      "displayName": "Special Machinery",
+      "baseName": "Special Machinery",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-special-machinery.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/standplate_specmachine-large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Other"
+        ],
+        "groupFee": null,
+        "adminFee": null,
+        "personalizationFee": null,
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100546",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-special-olympics",
+      "slug": "special-olympics",
+      "name": "Special Olympics",
+      "displayName": "Special Olympics",
+      "baseName": "Special Olympics",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Sports",
+      "image": {
+        "path": "state-packs/indiana/plates/in-special-olympics.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_so-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Special Olympics Indiana6200 Technology Center, Suite 105Indianapolis, IN 46278(317) 328-2000",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100336",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-standard-passenger",
+      "slug": "standard-passenger",
+      "name": "Standard Passenger",
+      "displayName": "Standard Passenger",
+      "baseName": "Standard Passenger",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Standard",
+      "image": {
+        "path": "state-packs/indiana/plates/in-standard-passenger.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/plate-placeholder.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": null,
+        "adminFee": null,
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "1",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-support-our-troops",
+      "slug": "support-our-troops",
+      "name": "Support Our Troops",
+      "displayName": "Support Our Troops",
+      "baseName": "Support Our Troops",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Military",
+      "image": {
+        "path": "state-packs/indiana/plates/in-support-our-troops.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/millitaryplate_sot-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Indiana Department of Veterans Affairs777 North Meridian Street Suite 300Indianapolis, IN 46204(317) 232-3910",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Military"
+        ],
+        "groupFee": "20",
+        "adminFee": "0",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100290",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-taylor-university",
+      "slug": "taylor-university",
+      "name": "Taylor University",
+      "displayName": "Taylor University",
+      "baseName": "Taylor University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-taylor-university.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/collegeplate_tu-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Taylor University236 West Reade AvenueUpland, IN 46989",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "226",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-teamsters",
+      "slug": "teamsters",
+      "name": "Teamsters",
+      "displayName": "Teamsters",
+      "baseName": "Teamsters",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-teamsters.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/teamsters-plate.png"
+      },
+      "sponsor": null,
+      "notes": "Teamsters Local Union No. 142 Training and Apprenticeship Trust Fund1300 Clark RoadGary, IN 46404(219) 949-1550 Ext. 309",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPTEA7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-the-milk-bank",
+      "slug": "the-milk-bank",
+      "name": "The Milk Bank",
+      "displayName": "The Milk Bank",
+      "baseName": "The Milk Bank",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Health",
+      "image": {
+        "path": "state-packs/indiana/plates/in-the-milk-bank.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/the-milk-bank-plate.png"
+      },
+      "sponsor": null,
+      "notes": "The Milk Bank8020 Castleway DriveIndianapolis, IN 46250(317) 536-1670",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "INBMVPTMB7",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-trine-university",
+      "slug": "trine-university",
+      "name": "Trine University",
+      "displayName": "Trine University",
+      "baseName": "Trine University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-trine-university.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/collegeplate_trine-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Trine UniversityOffice of Alumni and Development1 University AvenueAngola, Indiana 46703",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100242",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-truck",
+      "slug": "truck",
+      "name": "Truck",
+      "displayName": "Truck",
+      "baseName": "Truck",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Commercial",
+      "image": {
+        "path": "state-packs/indiana/plates/in-truck.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/standplate_truck-large.jpg"
+      },
+      "sponsor": null,
+      "notes": null,
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Standard"
+        ],
+        "groupFee": null,
+        "adminFee": null,
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100771",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-university-of-evansville",
+      "slug": "university-of-evansville",
+      "name": "University of Evansville",
+      "displayName": "University of Evansville",
+      "baseName": "University of Evansville",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-university-of-evansville.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/collegeplate_ue.jpg"
+      },
+      "sponsor": null,
+      "notes": "University of Evansville1800 Lincoln Avenue Evansville, IN 47722 (812) 488-2586",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "246",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-university-of-indianapolis",
+      "slug": "university-of-indianapolis",
+      "name": "University of Indianapolis",
+      "displayName": "University of Indianapolis",
+      "baseName": "University of Indianapolis",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-university-of-indianapolis.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/uofindy-plate.png"
+      },
+      "sponsor": null,
+      "notes": "University of Indianapolis Alumni Association1400 East Hanna AvenueIndianapolis, IN 46227-3697",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "262",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-university-of-saint-francis",
+      "slug": "university-of-saint-francis",
+      "name": "University of Saint Francis",
+      "displayName": "University of Saint Francis",
+      "baseName": "University of Saint Francis",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-university-of-saint-francis.png",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/university-of-saint-francis-plate.png"
+      },
+      "sponsor": null,
+      "notes": "University of Saint Francis2701 Spring StreetFort Wayne, IN 46808",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100246",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-university-of-southern-indiana",
+      "slug": "university-of-southern-indiana",
+      "name": "University of Southern Indiana",
+      "displayName": "University of Southern Indiana",
+      "baseName": "University of Southern Indiana",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-university-of-southern-indiana.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_usi-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "University of Southern Indiana8600 University BoulevardEvansville, IN 47712",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "254",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-valparaiso-university",
+      "slug": "valparaiso-university",
+      "name": "Valparaiso University",
+      "displayName": "Valparaiso University",
+      "baseName": "Valparaiso University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-valparaiso-university.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/Valparaiso-Univ_PA_Formatted-2015.jpg"
+      },
+      "sponsor": null,
+      "notes": "The Lutheran University Association Inc.1100 Campus Dr. S.Valparaiso, IN 46383(800) 833-6792",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "162",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-vincennes-university",
+      "slug": "vincennes-university",
+      "name": "Vincennes University",
+      "displayName": "Vincennes University",
+      "baseName": "Vincennes University",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-vincennes-university.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_vinu-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Vincennes University Foundation1002 North First StreetVincennes, IN 47591-9986(812) 885-4510",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "222",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-wabash-college",
+      "slug": "wabash-college",
+      "name": "Wabash College",
+      "displayName": "Wabash College",
+      "baseName": "Wabash College",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Universities",
+      "image": {
+        "path": "state-packs/indiana/plates/in-wabash-college.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/specplate_wc-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "Wabash CollegeP.O. Box 352Crawfordsville, IN 47933(765) 361-6100",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "College"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "228",
+          "versionId": null
+        }
+      ]
+    },
+    {
+      "id": "in-wild-turkey",
+      "slug": "wild-turkey",
+      "name": "Wild Turkey",
+      "displayName": "Wild Turkey",
+      "baseName": "Wild Turkey",
+      "variantLabel": null,
+      "plateType": "passenger",
+      "isCurrent": true,
+      "isActive": true,
+      "category": "Wildlife & Nature",
+      "image": {
+        "path": "state-packs/indiana/plates/in-wild-turkey.jpg",
+        "remoteUrl": "https://www.in.gov/bmv/registration-plates/images/plates/orgplate_wtf-large.jpg"
+      },
+      "sponsor": null,
+      "notes": "National Wild Turkey Federation2626 Vance Ave.Fort Wayne, IN 46805",
+      "searchTerms": [],
+      "variantOf": null,
+      "relatedPlates": [],
+      "metadataBlob": {
+        "sourceCategories": [
+          "Organization"
+        ],
+        "groupFee": "25",
+        "adminFee": "15",
+        "personalizationFee": "45",
+        "renewOnline": true
+      },
+      "sourceRefs": [
+        {
+          "source": "Indiana BMV",
+          "sourceId": "100601",
+          "versionId": null
+        }
+      ]
+    }
+  ]
+}

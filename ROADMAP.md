@@ -274,6 +274,7 @@ Active state expansion is the primary development track. The multi-state archite
 | South Carolina | 236 | Complete | **v1.9** (SC DMV, single-page Drupal scrape) |
 | Kentucky | 230 | Complete | v1.7 |
 | Tennessee | 209 | Complete | v1.7 |
+| Indiana | 150 | Complete | **v1.9** (IN BMV, PapaParse-driven CSV; 4 source-side 404 images dropped) |
 | Missouri | 166 | Complete | v1.7 (audited to DMV parity in v1.9) |
 | Arizona | 132 | Complete | v1.8 |
 | Arkansas | 129 | Complete | v1.7 |
@@ -291,9 +292,9 @@ Active state expansion is the primary development track. The multi-state archite
 |-------|--------|--------|-------|
 | USA 50-State Challenge | 50 | Complete | **v1.9** — classic road-trip game, one standard plate per state |
 
-**Running totals:** 17 specialty state packs + 1 national-mode pack = **2,965 plates across 18 packs.**
+**Running totals:** 18 specialty state packs + 1 national-mode pack = **3,115 plates across 19 packs.**
 
-Remaining: 33 states (Idaho, Illinois, Indiana, Louisiana, Maine, Maryland, Massachusetts, Michigan, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Dakota, Texas, Utah, Vermont, Virginia, Washington, Wisconsin, Wyoming, Colorado, Connecticut, Delaware, Hawaii). Their standard plates are already in the USA mode; Phase B (per-state specialty catalogs) is the next scaling arc.
+Remaining: 32 states (Idaho, Illinois, Louisiana, Maine, Maryland, Massachusetts, Michigan, Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Dakota, Texas, Utah, Vermont, Virginia, Washington, Wisconsin, Wyoming, Colorado, Connecticut, Delaware, Hawaii). Their standard plates are already in the USA mode; Phase B (per-state specialty catalogs) is the next scaling arc.
 
 ## Post-v1.9: Path to 50 Specialty Packs
 

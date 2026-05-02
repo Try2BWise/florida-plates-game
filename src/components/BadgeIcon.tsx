@@ -167,6 +167,13 @@ const customBadgeArtById: Record<string, string> = {
   "sc-pee-dee-explorer": "chequered-flag.png",
   "sc-lowcountry-explorer": "anchor.png",
   "all-around-south-carolina": "all-around-south-carolina.svg",
+  // Indiana regions
+  "in-northwest-explorer": "cityscape.png",
+  "in-northeast-explorer": "fish.png",
+  "in-central-explorer": "chequered-flag.png",
+  "in-southwest-explorer": "corn.png",
+  "in-southeast-explorer": "mountain.png",
+  "all-around-indiana": "all-around-indiana.svg",
   // Iowa regions
   "ia-northwest-explorer": "wheat.png",
   "ia-northeast-explorer": "fish.png",

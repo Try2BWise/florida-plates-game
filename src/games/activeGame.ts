@@ -214,6 +214,18 @@ import {
   southCarolinaMixedBagCategories,
   southCarolinaRegionScoutCounties
 } from "../config/southCarolinaGame";
+import indianaDriverData from "../data/generated/indiana-plate-driver.generated.json";
+import indianaLegacyIdMap from "../data/generated/indiana-legacy-id-map.generated.json";
+import {
+  indianaBadgeCounties,
+  indianaBadgeGroupLabels,
+  indianaBadgeGroupSymbols,
+  indianaBadgeIds,
+  indianaBadgePlateSets,
+  indianaGame,
+  indianaMixedBagCategories,
+  indianaRegionScoutCounties
+} from "../config/indianaGame";
 import { plateCategories, type Plate, type PlateCategory } from "../types";
 import { getItem, setItem } from "../lib/persistentStorage";
 
@@ -563,6 +575,23 @@ function loadSouthCarolinaPack() {
   };
 }
 
+function loadIndianaPack() {
+  const plates = buildPlates(indianaDriverData);
+  return {
+    game: indianaGame,
+    badgeCounties: indianaBadgeCounties,
+    badgeGroupLabels: indianaBadgeGroupLabels,
+    badgeGroupSymbols: indianaBadgeGroupSymbols,
+    mixedBagCategories: indianaMixedBagCategories,
+    badgePlateSets: indianaBadgePlateSets,
+    badgeIds: indianaBadgeIds,
+    panhandleScoutCounties: indianaRegionScoutCounties,
+    legacyIdMap: indianaLegacyIdMap as Record<string, string>,
+    plates,
+    groupedPlates: buildGroupedPlates(plates),
+  };
+}
+
 function loadStatePack(stateId: string) {
   switch (stateId) {
     case "mississippi": return loadMississippiPack();
@@ -575,6 +604,7 @@ function loadStatePack(stateId: string) {
     case "california": return loadCaliforniaPack();
     case "georgia": return loadGeorgiaPack();
     case "kansas": return loadKansasPack();
+    case "indiana": return loadIndianaPack();
     case "iowa": return loadIowaPack();
     case "kentucky": return loadKentuckyPack();
     case "minnesota": return loadMinnesotaPack();
@@ -611,6 +641,7 @@ export const plateCountsByState: Record<string, number> = {
   california: californiaDriverData.plates.length,
   florida: floridaDriverData.plates.length,
   georgia: georgiaDriverData.plates.length,
+  indiana: indianaDriverData.plates.length,
   iowa: iowaDriverData.plates.length,
   kansas: kansasDriverData.plates.length,
   kentucky: kentuckyDriverData.plates.length,

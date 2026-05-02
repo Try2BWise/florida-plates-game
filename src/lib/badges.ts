@@ -1077,6 +1077,49 @@ export const badgeDefinitions: BadgeDefinition[] = [
     group: "regional",
     availableIn: "v1.4"
   },
+  // Indiana Explorer region badges
+  {
+    id: "in-northwest-explorer",
+    name: "Northwest Indiana Explorer",
+    description: "Find a plate in a Northwest Indiana (Calumet / Wabash Valley) county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "in-northeast-explorer",
+    name: "Northeast Indiana Explorer",
+    description: "Find a plate in a Northeast Indiana (Fort Wayne / Lakes Country) county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "in-central-explorer",
+    name: "Central Indiana Explorer",
+    description: "Find a plate in a Central Indiana (Indianapolis metro) county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "in-southwest-explorer",
+    name: "Southwest Indiana Explorer",
+    description: "Find a plate in a Southwest Indiana (Evansville / Bloomington) county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "in-southeast-explorer",
+    name: "Southeast Indiana Explorer",
+    description: "Find a plate in a Southeast Indiana (Madison / Knobs hill country) county.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
+  {
+    id: "all-around-indiana",
+    name: "All Around Indiana",
+    description: "Earn every regional explorer badge.",
+    group: "regional",
+    availableIn: "v1.4"
+  },
   // Iowa Explorer region badges
   {
     id: "ia-northwest-explorer",

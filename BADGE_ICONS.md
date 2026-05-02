@@ -103,6 +103,7 @@ These would require new badge definitions in `badges.ts` AND new evaluation logi
 | Iowa | **all 5 regions unique** ✅ | NW→wheat, NE→fish (Driftless), Central→cityscape (Des Moines), SW→corn, SE→water-wave (Mississippi) |
 | Minnesota | 4 of 5 unique | NW→wheat (Red River Valley), NE (Arrowhead)→water-wave, Central→fish (10k lakes), Metro→cityscape, Southern→corn |
 | South Carolina | **all 4 regions unique** ✅ | Upstate→mountain (Blue Ridge), Midlands→cityscape (Columbia), Pee Dee→chequered-flag (Darlington Raceway), Lowcountry→anchor (Charleston) |
+| Indiana | **all 5 regions unique** ✅ | NW→cityscape (Calumet/Gary), NE→fish (Lakes Country), Central→chequered-flag (Indy 500), SW→corn (farm belt), SE→mountain (Knobs hill country) |
 
 ### USA 50-State Challenge mode
 

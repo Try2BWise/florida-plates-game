@@ -23,6 +23,7 @@ Pick one state and hunt its full specialty catalog — dozens to hundreds of des
 | California | 94 | 5 + all-around | CA DMV |
 | Florida | 338 | 9 + all-around | FL DHSMV |
 | Georgia | 287 | 5 + all-around | GA DOR |
+| Indiana | 150 | 5 + all-around | IN BMV |
 | Iowa | 72 | 5 + all-around | Iowa DOT |
 | Kansas | 85 | 5 + all-around | KS DOR |
 | Kentucky | 230 | 6 + all-around | KY KYTC |
@@ -35,7 +36,7 @@ Pick one state and hunt its full specialty catalog — dozens to hundreds of des
 | West Virginia | 101 | 5 + all-around | WV DMV |
 | **USA (50-State)** | **50** | **5 regions + 2 iconic + all-around** | **Aggregate** |
 
-**18 packs · ~2,965 plates total**
+**19 packs · ~3,115 plates total**
 
 ## Features
 
